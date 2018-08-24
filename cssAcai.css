@@ -1,7 +1,11 @@
 
 .bgimg-1 {
+<<<<<<< HEAD
 	background-image: url('https://images.unsplash.com/photo-1527515862127-a4fc05baf7a5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=94bc060b3ea71111a8caeb6e1ace30f0&auto=format&fit=crop&w=1050&q=80');
     min-height: 100%;
+=======
+    min-height: 10%;
+>>>>>>> fd78c9be4462a8f99b509561929de40ee4cd0b91
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -11,12 +15,23 @@
 
 body, html {height: 100%}
 
+<<<<<<< HEAD
 @media only screen and (max-device-width: 1024px) {
     .bgimg-1 {
         background-attachment: scroll;
     }
 }
 
+=======
+
+
+@media (min-width: 990px) { 
+    .bgimg-1{ 
+      margin-left: 25%;
+      margin-right: 25%;
+      
+      } }
+>>>>>>> fd78c9be4462a8f99b509561929de40ee4cd0b91
 @media only screen and (max-width: 750px) {
 
 #prato-1 {
@@ -25,15 +40,27 @@ body, html {height: 100%}
 
  }
 
+<<<<<<< HEAD
 #imagem-fundo {
 
 width: 80%;
 
+=======
+
+#imagem-fundo {
+
+width: 72%;
+>>>>>>> fd78c9be4462a8f99b509561929de40ee4cd0b91
 
 }
 
 h1 {
+<<<<<<< HEAD
 	font-size: 25em;
+=======
+	font-size: 16px;
+
+>>>>>>> fd78c9be4462a8f99b509561929de40ee4cd0b91
 }
 
 #plus {
@@ -79,10 +106,19 @@ margin-top: 3%;
     margin-top: -8%;
  }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  width: 150%;
+}
+
+=======
+>>>>>>> fd78c9be4462a8f99b509561929de40ee4cd0b91
  #preco-1 {
     width: 33%;
     float: right;
  }
+<<<<<<< HEAD
 
  #finalizacao {
 
@@ -104,3 +140,7 @@ margin-top: 3%;
 border-radius: 7%;
 font-size: 50%;
  }
+=======
+ 
+>>>>>>> e1dd27482aa74cea034fb7c1465d461dda74b5c6
+>>>>>>> fd78c9be4462a8f99b509561929de40ee4cd0b91
