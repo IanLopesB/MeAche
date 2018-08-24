@@ -11,12 +11,24 @@
 body, html {height: 100%}
 
 
+<<<<<<< HEAD
 @media (min-width: 990px) { 
     .bgimg-1{ 
       margin-left: 25%;
       margin-right: 25%;
       width: 50%;
       } }
+=======
+@media only screen and (max-width: 750px) {
+
+#prato-1 {
+    font-size: 10px;
+}
+
+ }
+
+#imagem-fundo {
+>>>>>>> e1dd27482aa74cea034fb7c1465d461dda74b5c6
 
 #imagem-fundo {
 
@@ -30,28 +42,56 @@ h1 {
 }
 
 #plus {
-
-  width: 0%;
-  height: 0%;
-  text-align: center;  
-
+float: left;
+    border: none;
+    background-color: white;
 }
 
 #minus{
-width: 0%;
-  height: 0%;
-  text-align: center;  
+
+
+ border: none;
+ background-color: white;
   
 }
 
 #quant {
-font-size: 20px;
-    width: 3%;
-    height: 2%;
+
+border: none;
+    
 }
 
 #quantidade {
+    float: left;
+width: 33%;
+margin-top: 3%;
+ }
 
+ #preco-1 {
+
+    margin-top: 2%;
+ }
+
+ #informacoes {
+
+    width: 100%;
+    height: 0%;
+ }
+
+ #nome-prato  {
+
+    width: 33%;
+    margin-top: -8%;
+ }
+
+<<<<<<< HEAD
   width: 150%;
 }
 
+=======
+ #preco-1 {
+    width: 33%;
+    float: right;
+ }
+ 
+>>>>>>> e1dd27482aa74cea034fb7c1465d461dda74b5c6
