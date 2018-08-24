@@ -1,0 +1,17 @@
+body {
+  font-family: Segoe UI;
+}
+
+@media (min-width: 320px) {
+  #img-logo {
+      height: 135px;
+  }
+  .users-table {
+      margin-top: 2em;
+  }
+
+@media (min-width: 990px) {
+  #img-logo {
+      height: 50px;
+  }
+}
