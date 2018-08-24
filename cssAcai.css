@@ -1,0 +1,106 @@
+
+.bgimg-1 {
+	background-image: url('https://images.unsplash.com/photo-1527515862127-a4fc05baf7a5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=94bc060b3ea71111a8caeb6e1ace30f0&auto=format&fit=crop&w=1050&q=80');
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+body, html {height: 100%}
+
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1 {
+        background-attachment: scroll;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+
+#prato-1 {
+    font-size: 10px;
+}
+
+ }
+
+#imagem-fundo {
+
+width: 80%;
+
+
+}
+
+h1 {
+	font-size: 25em;
+}
+
+#plus {
+float: left;
+    border: none;
+    background-color: white;
+}
+
+#minus{
+
+
+ border: none;
+ background-color: white;
+  
+}
+
+#quant {
+
+border: none;
+    
+}
+
+#quantidade {
+    float: left;
+width: 33%;
+margin-top: 3%;
+ }
+
+ #preco-1 {
+
+    margin-top: 2%;
+ }
+
+ #informacoes {
+
+    width: 100%;
+    height: 0%;
+ }
+
+ #nome-prato  {
+
+    width: 33%;
+    margin-top: -8%;
+ }
+
+ #preco-1 {
+    width: 33%;
+    float: right;
+ }
+
+ #finalizacao {
+
+    border-radius: 20px;
+    height: 100%;
+ }
+ 
+ #valor-pedido {
+
+    float: left;
+ }
+
+ #confirmar-pedido {
+
+    float: right;
+ }
+
+ #botao-confirmar {
+border-radius: 7%;
+font-size: 50%;
+ }
