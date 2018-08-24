@@ -106,19 +106,11 @@ margin-top: 3%;
     margin-top: -8%;
  }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-  width: 150%;
-}
-
-=======
->>>>>>> fd78c9be4462a8f99b509561929de40ee4cd0b91
  #preco-1 {
     width: 33%;
     float: right;
  }
-<<<<<<< HEAD
+
 
  #finalizacao {
 
@@ -128,11 +120,11 @@ margin-top: 3%;
  
  #valor-pedido {
 
-    float: left;
+    float: right;
  }
 
  #confirmar-pedido {
-
+   
     float: right;
  }
 
@@ -140,7 +132,6 @@ margin-top: 3%;
 border-radius: 7%;
 font-size: 50%;
  }
-=======
- 
->>>>>>> e1dd27482aa74cea034fb7c1465d461dda74b5c6
->>>>>>> fd78c9be4462a8f99b509561929de40ee4cd0b91
+
+
+
