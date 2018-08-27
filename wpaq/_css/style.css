@@ -13,14 +13,7 @@ body {
 @media (min-height: 640px) {
   .users-table {
       margin-top: 2em;
-      font-size: 20px;
-  }  
-}
-
-@media (min-height: 900px) {
-  .users-table {
-      margin-top: 2em;
-      font-size: 25px;
+      font-size: 18px;
   }  
 }
 
@@ -33,7 +26,6 @@ body {
       font-size: 25px;
   }
 
-
 @media (min-width: 720px) {
   #img-logo {
       height: 235px;
@@ -42,6 +34,15 @@ body {
       margin-top: 2em;
       font-size: 35px;
   }
+
+@media (min-height: 900px) {
+  .users-table {
+      margin-top: 2em;
+      font-size: 25px;
+  }  
+}
+
+
 
 @media (min-width: 1024px) {
   #img-logo {
@@ -54,16 +55,16 @@ body {
 
 @media (min-width: 1200px) {
   #img-logo {
-      height:155px;
+      height:225px;
   }
   .users-table {
       margin-top: 2em;
-      font-size: 22px;
+      font-size: 33px;
   }
 
 @media (min-width: 1440px) {
   #img-logo {
-      height:255px;
+      height:225px;
   }
   .users-table {
       margin-top: 2em;
@@ -72,10 +73,5 @@ body {
      @media (min-height: 900px) {
         .users-table {
           font-size: 37px;
-        }
-      }
-      @media (min-height: 800px) {
-        .users-table {
-          font-size: 57px;
         }
       }
