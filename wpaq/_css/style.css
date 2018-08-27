@@ -10,8 +10,38 @@ body {
       margin-top: 2em;
   }
 
-@media (min-width: 990px) {
-  #img-logo {
-      height: 50px;
-  }
+@media (min-height: 640px) {
+  .users-table {
+      margin-top: 2em;
+      font-size: 20px;
+  }  
 }
+
+@media (min-width: 600px) {
+  #img-logo {
+      height: 200px;
+  }
+  .users-table {
+      margin-top: 2em;
+      font-size: 25px;
+  }
+
+
+@media (min-width: 720px) {
+  #img-logo {
+      height: 235px;
+  }
+  .users-table {
+      margin-top: 2em;
+      font-size: 35px;
+  }
+
+@media (min-width: 1024px) {
+  #img-logo {
+      height: 335px;
+  }
+  .users-table {
+      margin-top: 2em;
+      font-size: 45px;
+  }
+
