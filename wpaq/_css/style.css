@@ -17,6 +17,13 @@ body {
   }  
 }
 
+@media (min-height: 900px) {
+  .users-table {
+      margin-top: 2em;
+      font-size: 25px;
+  }  
+}
+
 @media (min-width: 600px) {
   #img-logo {
       height: 200px;
@@ -43,5 +50,14 @@ body {
   .users-table {
       margin-top: 2em;
       font-size: 45px;
+  }
+
+@media (min-width: 1260px) {
+  #img-logo {
+      height:155px;
+  }
+  .users-table {
+      margin-top: 2em;
+      font-size: 22px;
   }
 
