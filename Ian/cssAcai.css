@@ -135,3 +135,23 @@ font-size: 50%;
 
 
 
+#pedido-numero {
+
+    width: 20%;
+    height: 30%;
+    background-color: black;
+
+}
+
+#pedido {
+    width: 10%;
+}
+
+
+@media (min-width: 320px) {
+
+    #pedido-numero {
+
+        width: 1000px;
+    }
+}
