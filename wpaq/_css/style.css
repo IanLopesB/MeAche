@@ -52,7 +52,7 @@ body {
       font-size: 45px;
   }
 
-@media (min-width: 1260px) {
+@media (min-width: 1200px) {
   #img-logo {
       height:155px;
   }
@@ -61,3 +61,21 @@ body {
       font-size: 22px;
   }
 
+@media (min-width: 1440px) {
+  #img-logo {
+      height:255px;
+  }
+  .users-table {
+      margin-top: 2em;
+      font-size: 22px;
+  }
+     @media (min-height: 900px) {
+        .users-table {
+          font-size: 37px;
+        }
+      }
+      @media (min-height: 800px) {
+        .users-table {
+          font-size: 57px;
+        }
+      }
