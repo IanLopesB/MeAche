@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Me Ache Açaí e Petiscaria</title>
+<link rel="stylesheet" type="text/css" href="_css/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css" href="cssAcai.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="utf-8">
+</head>
+
+
+<body>
+
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-xxlarge" style="margin-bottom:64px">THE MENU</h1>
+    <div class=" w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class=" tablink w3-padding-large w3-hover-red w3-large ">Pizza
+        </div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class=" tablink w3-padding-large w3-hover-red w3-large">Salads
+        </div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class=" tablink w3-padding-large w3-hover-red w3-large">Starter
+        </div>
+      </a>
+    </div>
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white w3-small" data-toggle="collapse" data-target=" mar">
+
+      <div id="informacoes" class="w3-row ">
+
+      <div id="mar" class="collapse w3-xlarge"> <h1 ><b class="w3-xlarge collapse">Margherita</b></div> 
+
+
+<div class=" collapse w3-xlarge" id="preco-1"><span class="w3-right w3-tag w3-dark-grey w3-round w3-small collapse">$12.50</span></h1></div> 
+ </div>
+      <hr>
+   
+      <h1><b class="w3-xlarge collapse">Formaggio</b> <span class="w3-right w3-tag w3-dark-grey w3-round w3-large collapse">$15.50</span></h1>
+      
+      <hr>
+      
+      <h1><b class="w3-xlarge collapse">Chicken</b> <span class="w3-right w3-tag w3-dark-grey w3-round w3-large collapse">$17.00</span></h1>
+      
+      <hr>
+
+      <h1><b class="w3-xlarge collapse">Pineapple'o'clock</b> <span class="w3-right w3-tag w3-dark-grey w3-round w3-large collapse">$16.50</span></h1>
+      
+      <hr>
+
+      <h1><b class="w3-xlarge collapse">Meat Town</b> <span class="w3-right w3-tag w3-dark-grey w3-round w3-large collapse">$20.00</span></h1>
+      
+      <hr>
+
+      <h1><b class="w3-xlarge collapse">Parma</b> <span class="w3-right w3-tag w3-dark-grey w3-round w3-large collapse  in">$21.50</span></h1>
+      
+    </div>
+
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white w3-small">
+      <h1><b class="w3-xlarge">Lasagna</b>  <span class="w3-right w3-tag w3-dark-grey w3-round w3-large">$13.50</span></h1>
+      
+      <hr>
+   
+      <h1><b class="w3-xlarge">Ravioli</b> <span class="w3-right w3-tag w3-dark-grey w3-round w3-large">$14.50</span></h1>
+      
+      <hr>
+      
+      <h1><b class="w3-xlarge">Spaghetti Classica</b> <span class="w3-right w3-tag w3-dark-grey w3-round w3-large">$11.00</span></h1>
+      
+      <hr>
+
+      <h1><b class="w3-xlarge">Seafood pasta</b> <span class="w3-right w3-tag w3-dark-grey w3-round w3-large">$25.50</span></h1>
+     
+    </div>
+
+
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b class="w3-xlarge">Today's Soup</b> <span class="w3-right w3-tag w3-dark-grey w3-round w3-large">$5.50</span></h1>
+      
+      <hr>
+   
+      <h1><b class="w3-xlarge">Bruschetta</b> <span class="w3-right w3-tag w3-dark-grey w3-round w3-large">$8.50</span></h1>
+    
+      <hr>
+      
+      <h1><b class="w3-xlarge">Garlic bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round w3-large">$9.50</span></h1>
+     
+      <hr>
+      
+      <h1><b class="w3-xlarge">Tomozzarella</b> <span class="w3-right w3-tag w3-dark-grey w3-round w3-large">$10.50</span></h1>
+     
+    </div>
+
+
+
+    <script type="text/javascript">
+
+   	function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+
+</script>
+
+
+	</body>
+</html>
