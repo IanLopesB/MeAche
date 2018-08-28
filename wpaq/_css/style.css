@@ -2,6 +2,13 @@ body {
   font-family: Segoe UI;
 }
 
+.cardap {
+	text-decoration: none;
+	margin-top: 4em;
+	font-size: 16px;
+}
+
+
 @media (min-width: 320px) {
   #img-logo {
       height: 135px;
@@ -10,11 +17,26 @@ body {
       margin-top: 2em;
   }
 
+  .cardap a {
+	background-color: #000000;
+	padding: 10% 47%;
+		text-decoration: none;
+	margin-top: 4em;
+	font-size: 16px;
+}
+
 @media (min-height: 640px) {
   .users-table {
       margin-top: 2em;
       font-size: 18px;
   }  
+
+	.cardap a {
+		padding: 10% 44.8%;
+			text-decoration: none;
+	margin-top: 4em;
+	font-size: 16px;
+}
 }
 
 @media (min-width: 600px) {
@@ -34,6 +56,16 @@ body {
       margin-top: 2em;
       font-size: 35px;
   }
+
+    .cardap a {
+	background-color: #000000;
+	padding: 10% 47%;
+		text-decoration: none;
+	margin-top: 4em;
+	font-size: 32px;
+}
+
+
 
 @media (min-height: 900px) {
   .users-table {
@@ -70,8 +102,14 @@ body {
       margin-top: 2em;
       font-size: 22px;
   }
-     @media (min-height: 900px) {
-        .users-table {
-          font-size: 37px;
+
+@media (min-height: 900px) {
+	.users-table {
+    	font-size: 37px;
         }
       }
+
+.cardap a {
+	background-color: #000000;
+	padding: 2em;
+}
