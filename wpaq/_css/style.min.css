@@ -4,14 +4,18 @@
 }
 
 .hehe {
-	margin-top: -9.5em;
+	margin-top: 5.5em;
 	
 }
 
 .hehehe {
-	margin-top: -4em;
+	margin-top: 4em;
 }
 
 .hehehehe {
-	margin-top: 1.5em;
+	margin-top: 11.5em;
 }
+
+<a class="dropdown-item" href="#pizza" data-toggle="collapse" data-parent="#accordione">Pizza</a>
+        <a class="dropdown-item" href="#sasha" data-toggle="collapse" data-parent="#accordione">Sasha</a>
+        <a class="dropdown-item" href="#sushi" data-toggle="collapse" data-parent="#accordione">Sushi</a>

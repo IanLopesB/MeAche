@@ -2,11 +2,52 @@ body {
   font-family: Segoe UI;
 }
 
+#accordion {
+	margin-top: 2em;
+}
+
+#accordion h1 {
+	font-size: 18px;
+}
+
+#collapse1 h1 {
+  font-size: 16px;
+}
+
+
 .cardap {
 	text-decoration: none;
 	margin-top: 4em;
 	font-size: 16px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (min-width: 320px) {
@@ -28,7 +69,6 @@ body {
   .cardap a:hover {
   	background-color: #FF8C00;
   }
-
 
 
 @media (min-height: 640px) {
