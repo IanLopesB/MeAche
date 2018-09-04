@@ -1,0 +1,28 @@
+body {
+  font-family: Segoe UI;
+}
+
+.strikethrough:checked + .strikeThis {
+  text-decoration:line-through
+}
+
+input[type = "checkbox"]:checked + label {
+    text-decoration: line-through;
+    color: grey;
+}
+
+
+
+@media (min-width: 320px) {
+  #img-logo {
+      height: 135px;
+  }
+  .users-table {
+      margin-top: 2em;
+  }
+
+@media (min-width: 990px) {
+  #img-logo {
+      height: 50px;
+  }
+}
