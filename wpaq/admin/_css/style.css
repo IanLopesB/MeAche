@@ -2,7 +2,9 @@ body {
   font-family: Segoe UI;
 }
 
-
+table tbody tr #tb2 {
+  position: fixed;
+}
 
 input[type = "checkbox"]:checked + label {
     text-decoration: line-through;
