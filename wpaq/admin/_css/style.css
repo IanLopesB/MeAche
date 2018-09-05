@@ -15,6 +15,7 @@ input[type = "checkbox"]:checked + label {
 
 @media (min-width: 320px) {
   #img-logo {
+      margin-top: 2em;
       height: 135px;
   }
   .users-table {
