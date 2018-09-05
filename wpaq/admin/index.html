@@ -38,9 +38,12 @@
       function check_tb1() {
         var ch = document.getElementById("checkb1");
         if (ch.checked == true) {
+          var str = document.getElementById("");
           document.getElementById("tb1").style.textDecoration = "line-through";
-          document.getElementById("tb1").style.display = "none";
+          
           document.getElementById("tb1").style.color = "grey";
+          document.getElementById("demo").innerHTML = str ;
+
         }
         else {
           document.getElementById("tb1").style.textDecoration = "none";
