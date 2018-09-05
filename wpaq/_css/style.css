@@ -50,9 +50,9 @@ body {
 
 
 
-@media (min-width: 320px) {
+@media (max-width: 600px) {
   #img-logo {
-  	height: 135px;
+  	height: 235px;
   }
   .users-table {
   	margin-top: 2em;
