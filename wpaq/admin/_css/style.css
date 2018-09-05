@@ -2,9 +2,7 @@ body {
   font-family: Segoe UI;
 }
 
-.strikethrough:checked + .strikeThis {
-  text-decoration:line-through
-}
+
 
 input[type = "checkbox"]:checked + label {
     text-decoration: line-through;

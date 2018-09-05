@@ -24,29 +24,49 @@
 <table class="table users-table">
  
   <tbody>
-
-<div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <div class="input-group-text">
-      <input type="checkbox" aria-label="Checkbox for following text input">
-    </div>
-  </div>
-  <input type="table" class="form-control" aria-label="Text input with checkbox">
-  
-</div>
-    <tr>
+    <tr id="tb1">
       <th scope="row">
-      	1
+      <input name="packersOff" id="checkb1" class="strikethrough" value="1" type="checkbox" onclick="check_tb1(); check_tb2()">
+      <label for="packersOff" class="strikeThis">1</label>
   	  </th>
-      <td><input name="packersOff" class="strikethrough" value="1" type="checkbox"> 
-      <label for="packersOff" class="strikeThis">Mark</label></td>
+      <td>Mark</td>
       <td>Otto</td>
       <td>@mdo</td>
     </tr>
 
+    <script type="text/javascript">
+      function check_tb1() {
+        var ch = document.getElementById("checkb1");
+        if (ch.checked == true) {
+          document.getElementById("tb1").style.textDecoration = "line-through";
+          document.getElementById("tb1").style.display = "none";
+          document.getElementById("tb1").style.color = "grey";
+        }
+        else {
+          document.getElementById("tb1").style.textDecoration = "none";
+          document.getElementById("tb1").style.color = "black";
+        }
+      }
 
-    <tr>
-      <th scope="row">2</th>
+      function check_tb2() {
+        var ch = document.getElementById("checkb2");
+        if (ch.checked == true) {
+          document.getElementById("tb2").style.textDecoration = "line-through";
+          document.getElementById("tb2").style.color = "grey";
+        }
+        else {
+          document.getElementById("tb2").style.textDecoration = "none";
+          document.getElementById("tb2").style.color = "black";
+        }
+      }
+    </script>
+
+
+    <tr id="tb2">
+      <th scope="row">
+      <input name="packersOff" id="checkb2" class="strikethrough" value="1" type="checkbox" onclick="check_tb2()">
+      <label for="packersOff" class="strikeThis">2</label>
+      </th>
       <td>Jacob</td>
       <td>Thornton</td>
       <td>@fat</td>
@@ -107,6 +127,9 @@
     </tr>
   </tbody>
 </table>
+
+<div id="demo"></div>
+
 </div>
 </div>
 </body>
