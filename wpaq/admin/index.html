@@ -119,7 +119,8 @@
         <td>the Bird</td>
         <td>@twitter</td>
       </tr>
-      <tr id="tb12">
+
+      <tr id="tb12" class="accordion-toggle"  data-toggle="collapse" data-target="#collapseOne">
         <th scope="row">
           <input name="packersOff" id="checkb12" class="strikethrough" value="12" type="checkbox" onclick="check_tb12()">
           <label for="packersOff" class="strikeThis">12</label> </th>
@@ -127,6 +128,18 @@
         <td>Pablo</td>
         <td>Ian</td>
       </tr>
+
+      <tr>
+      <td></td>
+      <td colspan="3">
+        <div id="collapseOne" class="collapse in">
+          Details 1 <br>
+          Details 2 <br>
+          Details 3
+        </div>
+      </td>
+      </tr>
+      
     </tbody>
   </table>
 </div>
