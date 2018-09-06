@@ -98,8 +98,8 @@
       }
 
             function check_tb8() {
-        var checkBox = document.getElementById("checkb4");
-        var id = document.getElementById("tb4");
+        var checkBox = document.getElementById("checkb8");
+        var id = document.getElementById("tb8");
 
         if (checkBox.checked == true) {
           id.style.textDecoration = "line-through";
@@ -112,8 +112,8 @@
       }
 
             function check_tb9() {
-        var checkBox = document.getElementById("checkb4");
-        var id = document.getElementById("tb4");
+        var checkBox = document.getElementById("checkb9");
+        var id = document.getElementById("tb9");
 
         if (checkBox.checked == true) {
           id.style.textDecoration = "line-through";
@@ -154,8 +154,8 @@
       }
 
             function check_tb12() {
-        var checkBox = document.getElementById("checkb4");
-        var id = document.getElementById("tb4");
+        var checkBox = document.getElementById("checkb12");
+        var id = document.getElementById("tb12");
 
         if (checkBox.checked == true) {
           id.style.textDecoration = "line-through";
