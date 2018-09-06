@@ -16,8 +16,8 @@ table tbody tr #tb2 {
 
 #barra {
 
- margin-left: 37%;
-  width: 25%;
+ margin-left: 27%;
+  width: 44%;
   border-width: 4px;
   border-color: #F05F40;
 }
@@ -29,9 +29,9 @@ input[type = "checkbox"]:checked + label {
 
 @media (min-width: 320px) {
   #img-logo {
-      margin-top: 2em;
-      height: 10%;
-      width: 10%;
+      margin-top: 6%;
+      height: 20%;
+      width: 20%;
   }
   .users-table {
       margin-top: 2em;
