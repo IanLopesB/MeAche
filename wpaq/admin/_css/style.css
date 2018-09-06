@@ -10,24 +10,13 @@ img {
     border: 0;
 }
 
-table tbody tr #tb2 {
-  position: fixed;
-}
-
 #barra {
 
- margin-left: 37%;
+  margin-left: 37%;
   width: 25%;
   border-width: 4px;
   border-color: #F05F40;
 }
-
-input[type = "checkbox"]:checked + label {
-    text-decoration: line-through;
-    color: grey;
-}
-
-
 
 @media (min-width: 320px) {
   #img-logo {
@@ -40,6 +29,6 @@ input[type = "checkbox"]:checked + label {
 
 @media (min-width: 990px) {
   #img-logo {
-      height: 50px;
+      width: 7%;
   }
 }
