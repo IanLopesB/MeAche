@@ -2,8 +2,24 @@ body {
   font-family: Segoe UI;
 }
 
+img {
+    vertical-align: middle;
+}
+
+img {
+    border: 0;
+}
+
 table tbody tr #tb2 {
   position: fixed;
+}
+
+#barra {
+
+ margin-left: 37%;
+  width: 25%;
+  border-width: 4px;
+  border-color: #F05F40;
 }
 
 input[type = "checkbox"]:checked + label {
@@ -16,7 +32,7 @@ input[type = "checkbox"]:checked + label {
 @media (min-width: 320px) {
   #img-logo {
       margin-top: 2em;
-      height: 135px;
+      width: 25%;
   }
   .users-table {
       margin-top: 2em;
