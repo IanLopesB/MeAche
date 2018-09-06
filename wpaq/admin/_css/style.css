@@ -12,8 +12,8 @@ img {
 
 #barra {
 
-  margin-left: 37%;
-  width: 25%;
+  margin-left: 27%;
+  width: 45%;
   border-width: 4px;
   border-color: #F05F40;
 }
@@ -31,4 +31,11 @@ img {
   #img-logo {
       width: 7%;
   }
+  #barra {
+
+  margin-left: 37%;
+  width: 25%;
+  border-width: 4px;
+  border-color: #F05F40;
+}
 }
