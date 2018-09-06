@@ -18,6 +18,10 @@ img {
   border-color: #F05F40;
 }
 
+.thc {
+  display: none;
+}
+
 @media (min-width: 320px) {
   #img-logo {
       margin-top: 2em;
