@@ -5,7 +5,6 @@
         if (checkBox.checked == true) {
           id.style.textDecoration = "line-through";
           id.style.color = "grey";
-          id.style.display = "none";
         }
         else {
           id.style.textDecoration = "none";
@@ -55,3 +54,116 @@
           id.style.color = "black";
         }
       }
+
+            function check_tb5() {
+        var checkBox = document.getElementById("checkb5");
+        var id = document.getElementById("tb5");
+
+        if (checkBox.checked == true) {
+          id.style.textDecoration = "line-through";
+          id.style.color = "grey";
+        }
+        else {
+          id.style.textDecoration = "none";
+          id.style.color = "black";
+        }
+      }
+
+            function check_tb6() {
+        var checkBox = document.getElementById("checkb6");
+        var id = document.getElementById("tb6");
+
+        if (checkBox.checked == true) {
+          id.style.textDecoration = "line-through";
+          id.style.color = "grey";
+        }
+        else {
+          id.style.textDecoration = "none";
+          id.style.color = "black";
+        }
+      }
+
+            function check_tb7() {
+        var checkBox = document.getElementById("checkb7");
+        var id = document.getElementById("tb7");
+
+        if (checkBox.checked == true) {
+          id.style.textDecoration = "line-through";
+          id.style.color = "grey";
+        }
+        else {
+          id.style.textDecoration = "none";
+          id.style.color = "black";
+        }
+      }
+
+            function check_tb8() {
+        var checkBox = document.getElementById("checkb8");
+        var id = document.getElementById("tb8");
+
+        if (checkBox.checked == true) {
+          id.style.textDecoration = "line-through";
+          id.style.color = "grey";
+        }
+        else {
+          id.style.textDecoration = "none";
+          id.style.color = "black";
+        }
+      }
+
+            function check_tb9() {
+        var checkBox = document.getElementById("checkb8");
+        var id = document.getElementById("tb8");
+
+        if (checkBox.checked == true) {
+          id.style.textDecoration = "line-through";
+          id.style.color = "grey";
+        }
+        else {
+          id.style.textDecoration = "none";
+          id.style.color = "black";
+        }
+      }
+
+            function check_tb10() {
+        var checkBox = document.getElementById("checkb10");
+        var id = document.getElementById("tb10");
+
+        if (checkBox.checked == true) {
+          id.style.textDecoration = "line-through";
+          id.style.color = "grey";
+        }
+        else {
+          id.style.textDecoration = "none";
+          id.style.color = "black";
+        }
+      }
+
+            function check_tb11() {
+        var checkBox = document.getElementById("checkb11");
+        var id = document.getElementById("tb11");
+
+        if (checkBox.checked == true) {
+          id.style.textDecoration = "line-through";
+          id.style.color = "grey";
+        }
+        else {
+          id.style.textDecoration = "none";
+          id.style.color = "black";
+        }
+      }
+
+            function check_tb12() {
+        var checkBox = document.getElementById("checkb4");
+        var id = document.getElementById("tb4");
+
+        if (checkBox.checked == true) {
+          id.style.textDecoration = "line-through";
+          id.style.color = "grey";
+        }
+        else {
+          id.style.textDecoration = "none";
+          id.style.color = "black";
+        }
+      }
+

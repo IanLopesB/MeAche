@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Button | Me Ache</title>
+
+	<link rel="stylesheet" type="text/css" href="_css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="_css/button-hehe.css">
+	<script type="text/javascript" src="_js/bootstrap.js"></script>
+
+</head>
+<body>
+<div class="container button-hehe">
+  <div class=" w3-col s4" id="quantidade">
+  	<input  type="button" id="plus" value='-' onclick="process(-1)" > 
+  	<input id="quant" name="quant" class="text w3-center" size="1" type="text" value="0" maxlength="2">
+  	<input  type="button" id="minus" value='+' onclick="process(1)"> 
+  </div>
+</div>
+
+
+</body>
+
+<script type="text/javascript">
+
+   	function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+
+  function process(quant){
+    var value = parseInt(document.getElementById("quant").value);
+    value+=quant;
+    if(value < 1){
+      document.getElementById("quant").value = 0;
+    }else{
+    document.getElementById("quant").value = value;
+    }
+  }
+</script>
+
+</html>
