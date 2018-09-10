@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS</title>
+<title>Me Ache!</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -10,42 +10,24 @@
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="">
-<body >
-
+<body>
 
 <br>
 <br>
-
-
 <div id="logo" class="w3-center">
-	
 	<img id="img-logo" class="img-fluid w3-center" src="http://pluspng.com/img-png/beats-electronics-logo-vector-png-beats-electronics-logo-png-828.png" >
 </div>
 
 <br>
-
-
 <div id="categorias">
 
-<div class="w3-center "><h3> categoria1</h3> 
-
-	<hr class="w3-center barra">
-
-
+    <div class="w3-center ">
+	    <h3> categoria1</h3> 
+        <hr class="w3-center barra">
+    </div>
 </div>
-	
-
-</div>
-
-</div>
-
-</div>
-
 
 <div  id="pratos" class="w3-container">
-
-
-
   <ul class="w3-ul w3-xlarge">
     <li>Jill <span class="w3-right w3-tag w3-dark-grey w3-round w3-large"> R$ 10,0</span></li>
     <li>Eve <span class="w3-right w3-tag w3-dark-grey w3-round w3-large"> R$ 5,00 </span></li>
@@ -54,21 +36,134 @@
     <li>Eve <span class="w3-right w3-tag w3-dark-grey w3-round w3-large"> R$ 5,00 </span></li>
     <li>Adam <span class="w3-right w3-tag w3-dark-grey w3-round w3-large"> R$ 7,00</span></li>  
   </ul>
-
 </div>
 
-
 <br>
 <br>
 
-<div id="subtotal" class="footer w3-center w3-black w3-opacity w3-hover-opacity-off">
+<div id="subtotal" class="footer w3-center w3-black w3-opacity w3-hover-opacity-off" onclick="mostrarSubtotal()">
+    <h3 class="w3-center"> <i class="glyphicon glyphicon-shopping-cart"></i>   Subtotal:</h3>
+</div>
 
+ <div id="id01" class="modal">
+     <form class="modal-content animate" action="/action_page.php">
+         <div class="imgcontainer">
+             <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+         </div>
+         <div class="container">
+             <h3 class="w3-center w3-text-white"><b> Meu pedido:</b></h3>
+         <div id="tabela" class=" w3-text-white">
+ <hr>
+                     <table id="tabela" class="table">
+                         <thead>
+                             <tr>  
+                                 <th scope="col">Quantidade</th>
+                                 <th scope="col">Pedido</th>
+                                 <th scope="col">Preço</th>
+                             </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <th scope="row">1</th>
+                                      <td>Arroz</td>
+                                      <td>R$: 5,00</td>
+                              </tr>
+                              <tr>
+                                  <th scope="row">2</th>
+                                      <td>Frango</td>
+                                      <td>R$: 10,00</td>
+                              </tr>
+                            </tbody>
+                      </table>
+                
+         </div>
+ <br>
+
+ <div class="container" style="background-color:#f7f7f7; border-bottom-right-radius: 10px; border-bottom-left-radius:10px;">
+     <div id="" class="">
+       <h4 class=" w3-text-black"><b>Total: </b> <b>R$ </b></h4>
+     </div>        
+ </div>
+ </div>
+     </form>
+				
+ <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Login</button>
+
+ <div id="id02" class="modal">
+     <form class="modal-content animate" action="/action_page.php">
+         <div class="imgcontainer">
+             <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+         </div>
+         <div class="container">
+             <h3 class="w3-center w3-text-white"><b> Meu pedido: </b> </h3>
+    
+                                  <div id="tabela" class=" w3-text-white">
+                                    <hr>
+                                   <table id="tabela" class="table">
+                                      <thead>
+                                        <tr>
+                                          <th scope="col">Quantidade</th>
+                                          <th scope="col">Pedido</th>
+                                          <th scope="col">Preço</th>
+                                          
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <th scope="row">1</th>
+                                          <td>Arroz</td>
+                                          <td>R$: 5,00</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">2</th>
+                                          <td>Frango</td>
+                                          <td>R$: 10,00</td>
+                                        </tr>
+                                    
+                                      </tbody>
+                                    </table>
+                            </div>
+
+                        </div>
+                        <br>
+
+                        <div class="container" style="background-color:#f7f7f7; border-bottom-right-radius: 10px; border-bottom-left-radius:10px;">
+
+                          
+
+
+                            <div id="" class="">
+                                    
+                                        <h4 class=" w3-text-black"><b>Total: </b>
+                                            <b>R$ </b>
+                                        </h4>
+                                                                        
+                                </div>
+
+
+                                <div id="" class="">
+                                    
+                                        <h4 class=" w3-text-black"><b>Número do pedido: </b>
+                                            <b>1234 </b>
+                                        </h4>
+                                
+                        </div>
+                    </form>
+                </div>
+
+<script type="text/javascript">
 	
-<h3 class="w3-center"> <i class="glyphicon glyphicon-shopping-cart"></i>   Subtotal:</h3>
+	function mostrarSubtotal() {
 
-</div>
+  var x = document.getElementById("id01");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
 
-
+</script>
 
 </body>
 </html> 
