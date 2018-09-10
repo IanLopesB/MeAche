@@ -21,7 +21,18 @@ img {
 .titleP {
   font-size: 17px;
   font-variant: small-caps;
-} 
+}
+
+.tdN{
+text-align: center;
+}
+
+.td{
+  max-width: 10ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 
 @media (min-width: 320px) {
   #img-logo {
