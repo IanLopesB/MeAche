@@ -18,28 +18,6 @@ img {
 }
 /* end style hr*/
 
-<<<<<<< HEAD
-.espec {
-  background-color: #F05F40;
-  font-size: 16px;
- 
-}
-
-.espec p {
-  padding: 10px 7.7%;
-  text-align: center;
-  display: inline-block;
- 
-}
-
-
-
-
-  
-
-
-=======
->>>>>>> 654556a0f82a701e6290422a041d6e908f2b2f6f
 @media (min-width: 320px) {
   #img-logo {
       margin-top: 2em;
