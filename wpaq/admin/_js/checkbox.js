@@ -18,7 +18,7 @@
 
         if (checkBox.checked == true) {
           id.style.textDecoration = "line-through";
-          id.style.color = "grey";
+          id.style.color = "red";
         }
         else {
           id.style.textDecoration = "none";
@@ -33,7 +33,7 @@
 
         if (checkBox.checked == true) {
           id.style.textDecoration = "line-through";
-          id.style.color = "grey";
+          id.style.color = "red";
         }
         else {
           id.style.textDecoration = "none";
@@ -47,7 +47,7 @@
 
         if (checkBox.checked == true) {
           id.style.textDecoration = "line-through";
-          id.style.color = "grey";
+          id.style.color = "red";
         }
         else {
           id.style.textDecoration = "none";
@@ -61,7 +61,7 @@
 
         if (checkBox.checked == true) {
           id.style.textDecoration = "line-through";
-          id.style.color = "grey";
+          id.style.color = "red";
         }
         else {
           id.style.textDecoration = "none";
@@ -75,7 +75,7 @@
 
         if (checkBox.checked == true) {
           id.style.textDecoration = "line-through";
-          id.style.color = "grey";
+          id.style.color = "red";
         }
         else {
           id.style.textDecoration = "none";
@@ -89,7 +89,7 @@
 
         if (checkBox.checked == true) {
           id.style.textDecoration = "line-through";
-          id.style.color = "grey";
+          id.style.color = "red";
         }
         else {
           id.style.textDecoration = "none";
@@ -103,7 +103,7 @@
 
         if (checkBox.checked == true) {
           id.style.textDecoration = "line-through";
-          id.style.color = "grey";
+          id.style.color = "red";
         }
         else {
           id.style.textDecoration = "none";
@@ -117,7 +117,7 @@
 
         if (checkBox.checked == true) {
           id.style.textDecoration = "line-through";
-          id.style.color = "grey";
+          id.style.color = "red";
         }
         else {
           id.style.textDecoration = "none";
@@ -131,7 +131,7 @@
 
         if (checkBox.checked == true) {
           id.style.textDecoration = "line-through";
-          id.style.color = "grey";
+          id.style.color = "red";
         }
         else {
           id.style.textDecoration = "none";
@@ -145,7 +145,7 @@
 
         if (checkBox.checked == true) {
           id.style.textDecoration = "line-through";
-          id.style.color = "grey";
+          id.style.color = "red";
         }
         else {
           id.style.textDecoration = "none";
@@ -159,7 +159,7 @@
 
         if (checkBox.checked == true) {
           id.style.textDecoration = "line-through";
-          id.style.color = "grey";
+          id.style.color = "red";
         }
         else {
           id.style.textDecoration = "none";
