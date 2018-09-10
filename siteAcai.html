@@ -28,7 +28,7 @@
     </div>
     <div  id="pratos" class="w3-container">
         <ul class="w3-ul w3-xlarge">
-            <li>Jill <span class="w3-right w3-tag w3-dark-grey w3-round w3-large"> R$ 10,0</span></li>
+            <li onclick="mostrarPrato1()">Jill <span class="w3-right w3-tag w3-dark-grey w3-round w3-large" > R$ 10,0</span></li>
             <li>Eve <span class="w3-right w3-tag w3-dark-grey w3-round w3-large"> R$ 5,00 </span></li>
             <li>Adam <span class="w3-right w3-tag w3-dark-grey w3-round w3-large"> R$ 7,00</span></li>
             <li>Jill <span class="w3-right w3-tag w3-dark-grey w3-round w3-large"> R$ 10,0</span></li>
@@ -126,7 +126,51 @@
              </div>
          </form>
     </div>
+
+
                
+    <div id="prato1" class="fundo-span-2">
+       <div  class="fundo-span-conteudo-2 animate">
+          <div id="botao-fechar-span">
+             <span onclick="document.getElementById('prato1').style.display='none'" class="close1" title=" Fechar Span">&times;</span>
+          </div>
+          <div id="nome-prato" class="w3-container w3-text-white">
+<br>
+             <h3> Nome do Prato</h3>
+          </div>
+<br>
+          <div id="textos" class="w3-container">
+            <div id="descricao">
+               <h5>Descrição do prato .............................       ...........       ....... ....... .......</h5>
+            </div>
+<br>
+          <div id="requisicao">
+             <h5><b>+</b>  Observações do Cliente</h5>
+             <input type="text" name="" id="input-requisiçoes" class="w3-input">
+          </div>
+ <br>
+ <br>
+          <div id="quantidade">
+             <div data-app="product.quantity" id="quantidade">
+                <label><b>Quantidade:</b></label>      
+                <input type="button" id="menos" value='-' onclick="process(-1)"/> 
+                <input id="quant" name="quant" class="text w3-center" size="1" type="text" value="0" maxlength="5" />
+                <input type="button" id="mais" class="" value='+' onclick="process(1)"/>
+             </div>
+<br>
+<br>             
+            <div id="botao-adicionar"><button class="w3-button w3-green"> Adicionar</button>
+            </div>
+<br>
+<br>  
+<br>
+          </div>
+          </div>
+      </div>
+  </div>
+
+
+
 
    <script type="text/javascript">
    	
@@ -139,8 +183,32 @@
            x.style.display = "none";
        }
    }
+
+   function mostrarPrato1() {
+
+var x = document.getElementById("prato1");
+       if (x.style.display === "none") {
+           x.style.display = "block";
+       } else {
+           x.style.display = "none";
+       }
    
-   </script>
+   }
+function process(quant){
+    var value = parseInt(document.getElementById("quant").value);
+    value+=quant;
+    if(value < 1){
+      document.getElementById("quant").value = 0;
+    }else{
+    document.getElementById("quant").value = value;
+    }
+  }
+
+</script>
+   
+
+
+
 
 </body>
 </html> 
