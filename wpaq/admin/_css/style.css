@@ -18,20 +18,34 @@ img {
 }
 /* end style hr*/
 
+.titleP {
+  font-size: 17px;
+  font-variant: small-caps;
+} 
+
 @media (min-width: 320px) {
   #img-logo {
-      margin-top: 2em;
-      width: 25%;
+    margin-top: 2em;
+    width: 25%;
   }
   .users-table {
-      margin-top: 2em;
+    margin-top: 2em;
   }
 
+<<<<<<< HEAD
 .estiloButton{
 width: 100%;
 height: 10%;
 background-color: "grey";
 margin-bottom:  -15%;
+=======
+  .estiloButton{
+    width: 100%;
+    height: 10%;
+    background-color: "grey";
+    font-size: 18px;
+    font-variant: small-caps;
+>>>>>>> 923d3b68bf3dbe8f7167e05c292928b2c630b219
  }
 
 @media (min-width: 990px) {
