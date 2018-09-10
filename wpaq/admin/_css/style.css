@@ -18,6 +18,20 @@ img {
 }
 /* end style hr*/
 
+.espec {
+  background-color: #F05F40;
+  font-size: 16px;
+ 
+}
+
+.espec p {
+  padding: 10px 7.7%;
+  text-align: center;
+  display: inline-block;
+ 
+}
+
+
 
 
   
