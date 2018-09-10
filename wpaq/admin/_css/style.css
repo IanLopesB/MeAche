@@ -18,19 +18,23 @@ img {
 }
 /* end style hr*/
 
+ 
+
+
 @media (min-width: 320px) {
   #img-logo {
-      margin-top: 2em;
-      width: 25%;
+    margin-top: 2em;
+    width: 25%;
   }
   .users-table {
-      margin-top: 2em;
+    margin-top: 2em;
   }
 
-.estiloButton{
-width: 100%;
-height: 10%;
-background-color: "grey";
+  .estiloButton{
+    width: 100%;
+    height: 10%;
+    background-color: "grey";
+    font-size: 18px;
  }
 
 @media (min-width: 990px) {
