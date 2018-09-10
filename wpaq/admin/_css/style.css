@@ -18,8 +18,10 @@ img {
 }
 /* end style hr*/
 
- 
-
+.titleP {
+  font-size: 17px;
+  font-variant: small-caps;
+} 
 
 @media (min-width: 320px) {
   #img-logo {
@@ -35,6 +37,7 @@ img {
     height: 10%;
     background-color: "grey";
     font-size: 18px;
+    font-variant: small-caps;
  }
 
 @media (min-width: 990px) {
