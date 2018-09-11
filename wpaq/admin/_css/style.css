@@ -9,6 +9,19 @@ img {
     border: 0;
 }
 
+td p{
+  max-width: 10ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+  
+}
+
+td p:hover {
+  white-space: normal;
+}
+
 /* style hr */
 #barra {
   margin-left: 27%;
@@ -26,14 +39,6 @@ img {
 
 .tdN{
 text-align: center;
-}
-
-.td{
-  max-width: 10ch;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  text-align: center;
 }
 
 @media (min-width: 320px) {
