@@ -21,6 +21,7 @@ img {
 .titleP {
   font-size: 17px;
   font-variant: small-caps;
+  text-align: center;
 }
 
 .tdN{
@@ -32,6 +33,7 @@ text-align: center;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  text-align: center;
 }
 
 @media (min-width: 320px) {
