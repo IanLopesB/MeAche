@@ -78,6 +78,7 @@ body {
 #input-requisiçoes {
 
   width: 100%;
+  display: none;
 }
 
 .botao-fechar-span { 
@@ -213,14 +214,20 @@ border: none;
 #quantidade {
 
   width: 100%;
+
+}
+#nome-requisicao {
+
+ display: block;
 }
 
 #nome-prato {
 
 top: 0%;
-background-color: grey;
+background-color: #C2C2C2;
 border-bottom: solid;
-border-bottom-color: green;
+border-width: 2px;
+border-bottom-color: black;
 }
 
 .fundo-span-2 {
@@ -246,7 +253,26 @@ border-bottom-color: green;
   border-radius : 10px;
 }
 
+#input-requisicoes {
+
+
+  width: 100%;
+}
+
+#input-req-real {
+
+  width: 81%;
+}
+
+#nome-requisicao {
+
+width: 60%;
+
+}
 
 input[type=text]{outline:none}
 
 input[type=button]{outline:none}
+
+textarea {outline: none;
+}
