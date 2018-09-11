@@ -82,7 +82,7 @@
          </div>        
          </div>
          </form>
-   		 <button onclick="document.getElementById('id02').style.display='block'" id="botao-span2" class="w3-button w3-green">Pedir</button>
+   		 <button onclick="document.getElementById('id02').style.display='block'; document.getElementById('id01').style.display='none'" id="botao-span2" class="w3-button w3-green">Pedir</button>
     </div>
    
     <div id="id02" class="fundo-span">
@@ -134,9 +134,9 @@
           <div id="botao-fechar-span">
              <span onclick="document.getElementById('prato1').style.display='none'" class="close1" title=" Fechar Span">&times;</span>
           </div>
-          <div id="nome-prato" class="w3-container w3-text-white">
+          <div id="nome-prato" class="w3-container w3-text-black ">
 <br>
-             <h3> Nome do Prato</h3>
+             <h3 class="animate"><b> Nome do Prato</b></h3>
           </div>
 <br>
           <div id="textos" class="w3-container">
@@ -144,13 +144,23 @@
                <h5>Descrição do prato .............................       ...........       ....... ....... .......</h5>
             </div>
 <br>
-          <div id="requisicao">
-             <h5><b>+</b>  Observações do Cliente</h5>
-             <input type="text" name="" id="input-requisiçoes" class="w3-input">
-          </div>
+
+
+
+<div id="requisicao">
+  <div id="nome-requisicao" class="animate" onclick="mostrarInputReq()" >
+                <h5><i class="fa fa-plus"></i>  Observações do Cliente</h5>
+             </div>
+    <div id="input-requisiçoes" class="input-group animate">
+      <textarea id="input-req-real" type="" class="form-control " placeholder="Entre com a informação aqui..."  rows="1"> </textarea>
+      <span><button class="btn btn-default" type="button" onclick="mostrarNomeReq()">OK</button></span>
+    </div>
+  </div>
+
+
  <br>
  <br>
-          <div id="quantidade">
+          <div id="quantidade" class="animate">
              <div data-app="product.quantity" id="quantidade">
                 <label><b>Quantidade:</b></label>      
                 <input type="button" id="menos" value='-' onclick="process(-1)"/> 
@@ -159,11 +169,13 @@
              </div>
 <br>
 <br>             
-            <div id="botao-adicionar"><button class="w3-button w3-green"> Adicionar</button>
+            <div id="botao-adicionar" class="animate"><button class="w3-button w3-green" onclick="fecharPrato1()"> Adicionar</button>
             </div>
 <br>
 <br>  
 <br>
+
+
           </div>
           </div>
       </div>
@@ -171,44 +183,8 @@
 
 
 
-
-   <script type="text/javascript">
-   	
-   	function mostrarSubtotal() {
+<script type="text/javascript" src="Site.js"></script>
    
-     var x = document.getElementById("id01");
-       if (x.style.display === "none") {
-           x.style.display = "block";
-       } else {
-           x.style.display = "none";
-       }
-   }
-
-   function mostrarPrato1() {
-
-var x = document.getElementById("prato1");
-       if (x.style.display === "none") {
-           x.style.display = "block";
-       } else {
-           x.style.display = "none";
-       }
-   
-   }
-function process(quant){
-    var value = parseInt(document.getElementById("quant").value);
-    value+=quant;
-    if(value < 1){
-      document.getElementById("quant").value = 0;
-    }else{
-    document.getElementById("quant").value = value;
-    }
-  }
-
-</script>
-   
-
-
-
 
 </body>
 </html> 
