@@ -1,375 +1,193 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Me Ache Açaí e Petiscaria</title>
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-
-<link rel="stylesheet" type="text/css" href="cssAcai.css">
+<title>Me Ache!</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<meta charset="utf-8">
-</head>
-<body >
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-<div class="bgimg-1 w3-display-container w3-opacity-min ">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-wide w3-animate-opacity img-fluid"> <img src="https://i.pinimg.com/originals/19/c2/3a/19c23a33978fd31b47d17c6b902ef968.png" alt="logo" id="imagem-fundo"></span>
-  </div>
-</div>
+<link rel="stylesheet" type="text/css" href="cssSite.css">
 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-
-<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
-  <div class="w3-content">
-  
-    <h1 class="w3-center w3-xxlarge" style="margin-bottom:64px">THE MENU</h1>
-    <div class="w3-row w3-center w3-border w3-border-dark-grey">
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-large ">Pizza
-        </div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-large">Salads
-        </div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-large">Starter
-        </div>
-      </a>
-    </div>
-
-    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white w3-small">
-
-      <div id="informacoes" class="w3-row ">
-<div class=" w3-col s4" id="quantidade">
-      <input  type="button" id="plus" value='-' onclick="process(-1)" > 
-  <input id="quant" name="quant" class="text w3-center" size="1" type="text" value="0" maxlength="2">
-  <input  type="button" id="minus" value='+' onclick="process(1)"> 
-  </div>
-      
-      <div id="nome-prato" class="w3-col s4"> <h1 ><b class="w3-xlarge">Margherita</b></div> 
-
-
-<div class="w3-col s4" id="preco-1"><span class="w3-right w3-tag w3-dark-grey w3-round w3-small">$12.50</span></h1></div> 
- </div>
-      <hr>
-   
-      <h1><b class="w3-xlarge">Formaggio</b> <span class="w3-right w3-tag w3-dark-grey w3-round w3-large">$15.50</span></h1>
-      
-      <hr>
-      
-      <h1><b class="w3-xlarge">Chicken</b> <span class="w3-right w3-tag w3-dark-grey w3-round w3-large">$17.00</span></h1>
-      
-      <hr>
-
-      <h1><b class="w3-xlarge">Pineapple'o'clock</b> <span class="w3-right w3-tag w3-dark-grey w3-round w3-large">$16.50</span></h1>
-      
-      <hr>
-
-      <h1><b class="w3-xlarge">Meat Town</b> <span class="w3-right w3-tag w3-dark-grey w3-round w3-large">$20.00</span></h1>
-      
-      <hr>
-
-      <h1><b class="w3-xlarge">Parma</b> <span class="w3-right w3-tag w3-dark-grey w3-round w3-large">$21.50</span></h1>
-      
-    </div>
-
-    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white w3-small">
-      <h1><b class="w3-xlarge">Lasagna</b>  <span class="w3-right w3-tag w3-dark-grey w3-round w3-large">$13.50</span></h1>
-      
-      <hr>
-   
-      <h1><b class="w3-xlarge">Ravioli</b> <span class="w3-right w3-tag w3-dark-grey w3-round w3-large">$14.50</span></h1>
-      
-      <hr>
-      
-      <h1><b class="w3-xlarge">Spaghetti Classica</b> <span class="w3-right w3-tag w3-dark-grey w3-round w3-large">$11.00</span></h1>
-      
-      <hr>
-
-      <h1><b class="w3-xlarge">Seafood pasta</b> <span class="w3-right w3-tag w3-dark-grey w3-round w3-large">$25.50</span></h1>
-     
-    </div>
-
-
-    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
-      <h1><b class="w3-xlarge">Today's Soup</b> <span class="w3-right w3-tag w3-dark-grey w3-round w3-large">$5.50</span></h1>
-      
-      <hr>
-   
-      <h1><b class="w3-xlarge">Bruschetta</b> <span class="w3-right w3-tag w3-dark-grey w3-round w3-large">$8.50</span></h1>
-    
-      <hr>
-      
-      <h1><b class="w3-xlarge">Garlic bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round w3-large">$9.50</span></h1>
-     
-      <hr>
-      
-      <h1><b class="w3-xlarge">Tomozzarella</b> <span class="w3-right w3-tag w3-dark-grey w3-round w3-large">$10.50</span></h1>
-     
-    </div><br>
-
-
-    <div id="finalizacao" class=" w3-container w3-padding-32 w3-white">
-  
-<div id="valor-pedido">
-  
-  <h4><b>Valor do Pedido : </b><b></b></h4>
-</div>
-
-<div id="confirmar-pedido">
-  
-  <button class="w3-button w3-green" id="botao-confirmar">Pedir</button>
-</div>
-
-</div>
-
-
-   <script type="text/javascript">
-
-   	function openMenu(evt, menuName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("menu");
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
-  }
-  document.getElementById(menuName).style.display = "block";
-  evt.currentTarget.firstElementChild.className += " w3-red";
-}
-document.getElementById("myLink").click();
-
-  function process(quant){
-    var value = parseInt(document.getElementById("quant").value);
-    value+=quant;
-    if(value < 1){
-      document.getElementById("quant").value = 0;
-    }else{
-    document.getElementById("quant").value = value;
-    }
-  }
-</script>
-
-  </div>
-</div>
-<br>
-<br>
-<br>
-<br>
-
-<style type="text/css">
-  
-
- #pedido-numero {
-
-
- 
-  width: 40%;
-  background-color: #ffd933;
-
-
-}
- 
- @media (max-width: 800px) {
-
-    #pedido-numero {
-
-        width: 60%;
-    }
-
-
- } 
-</style>
-
-<center><div id="pedido-numero" class=" w3-center w3-container w3-round-size-10 w3-border w3-border-dark-yellow w3-border  w3-round-xlarge"> <h4><b>O Número do seu pedido é: </b></h4>
-
-
-<br></center>
-
-<br>
-
-
-</div>
-
-<style>
-body {font-family: Arial, Helvetica, sans-serif;}
-
-/* Full-width input fields */
-
-#id01 {
-
-}
-input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-
-/* Set a style for all buttons */
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-}
-
-button:hover {
-    opacity: 0.8;
-}
-
-/* Extra styles for the cancel button */
-.cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #5c5757;
-}
-
-/* Center the image and position the close button */
-.imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-    position: relative;
-}
-
-img.avatar {
-    width: 40%;
-    border-radius: 50%;
-}
-
-.container {
-    padding: 16px;
-}
-
-span.psw {
-    float: right;
-    padding-top: 16px;
-}
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    padding-top: 60px;
-    
-}
-
-/* Modal Content/Box */
-.modal-content {
-    background-color: #5c636e;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-    
-border-radius : 10px;
-}
-
-/* The Close Button (x) */
-.close {
-    position: absolute;
-    right: 25px;
-    top: 0;
-    color: #000;
-    font-size: 35px;
-    font-weight: bold;
-    
-}
-
-.close:hover,
-.close:focus {
-    color: red;
-    cursor: pointer;
-}
-
-/* Add Zoom Animation */
-.animate {
-    -webkit-animation: animatezoom 0.6s;
-    animation: animatezoom 0.6s
-}
-
-@-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0)} 
-    to {-webkit-transform: scale(1)}
-}
-    
-@keyframes animatezoom {
-    from {transform: scale(0)} 
-    to {transform: scale(1)}
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-    span.psw {
-       display: block;
-       float: none;
-    }
-    .cancelbtn {
-       width: 100%;
-    }
-}
-</style>
-</head>
 <body>
 
-<h2>Modal Login Form</h2>
+ <br>
+ <br>
+    <div id="logo" class="w3-center">
+	     <img id="img-logo" class="img-fluid w3-center" src="http://pluspng.com/img-png/beats-electronics-logo-vector-png-beats-electronics-logo-png-828.png" >
+    </div>
+ <br>
+    <div id="categorias">
+        <div class="w3-center ">
+	          <h3> categoria1</h3> 
+            <hr class="w3-center barra">
+        </div>
+    </div>
+    <div  id="pratos" class="w3-container">
+        <ul class="w3-ul w3-xlarge">
+            <li onclick="mostrarPrato1()">Jill <span class="w3-right w3-tag w3-dark-grey w3-round w3-large" > R$ 10,0</span></li>
+            <li>Eve <span class="w3-right w3-tag w3-dark-grey w3-round w3-large"> R$ 5,00 </span></li>
+            <li>Adam <span class="w3-right w3-tag w3-dark-grey w3-round w3-large"> R$ 7,00</span></li>
+            <li>Jill <span class="w3-right w3-tag w3-dark-grey w3-round w3-large"> R$ 10,0</span></li>
+            <li>Eve <span class="w3-right w3-tag w3-dark-grey w3-round w3-large"> R$ 5,00 </span></li>
+            <li>Adam <span class="w3-right w3-tag w3-dark-grey w3-round w3-large"> R$ 7,00</span></li>  
+        </ul>
+    </div>
+ <br>
+ <br>
+    <div id="subtotal" class="footer w3-center w3-black w3-opacity w3-hover-opacity-off" onclick="mostrarSubtotal()">
+        <h3 class="w3-center"> <i class="glyphicon glyphicon-shopping-cart"></i>   Subtotal:</h3>
+    </div>
+ 
+    <div id="id01" class="fundo-span">
+        <form class="fundo-span-conteudo animate" action="/action_page.php">
+            <div id="botao-fechar-span">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close1" title=" Fechar Span">&times;</span>
+            </div>
+            <div class="infos-pedido">
 
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+                <h3 class="w3-center w3-text-white"><b> Meu pedido:</b></h3>
+            <div id="tabela-pedidos" class="w3-text-white">
 
-<div id="id01" class="modal">
-  
-  <form class="modal-content animate" action="/action_page.php">
-    <div class="imgcontainer">
-      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-     
+    <hr>
+                <table id="tabela" class="table">
+                    <thead>
+                        <tr>  
+                            <th scope="col">Quantidade</th>
+                            <th scope="col">Pedido</th>
+                            <th scope="col">Preço</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                                <td>Arroz</td>
+                                <td>R$: 5,00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                                <td>Frango</td>
+                                <td>R$: 10,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    <br>
+         <div id="total-parcial" class=" infos-pedido">
+             <h4 class=" w3-text-black"><b>Total: </b> <b>R$ </b></h4>
+
+         </div>  
+         </form>      
+         </div>
+         
+   		 <button onclick="document.getElementById('id02').style.display='block'; document.getElementById('id01').style.display='none'" id="botao-span2" class="w3-button w3-green">Pedir</button>
+    </div>
+   
+    <div id="id02" class="fundo-span">
+        <form class="fundo-span-conteudo animate" action="/action_page.php">
+            <div class="botao-fechar-span">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close2" title="Fechar Span">&times;</span>
+            </div>
+            <div class="infos-pedido">
+                <h3 class="w3-center w3-text-white"><b> Meu pedido: </b> </h3>
+                <div id="tabela" class=" w3-text-white">
+     <hr>
+                    <table id="tabela" class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Quantidade</th>
+                                <th scope="col">Pedido</th>
+                                <th scope="col">Preço</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Arroz</td>
+                                <td>R$: 5,00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Frango</td>
+                                <td>R$: 10,00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+      <br>
+   
+       
+            <div id="total-pedido" class="infos-pedido">
+                <h4 class=" w3-text-black"><b>Total: </b><b>R$ </b></h4>
+                <h4 class=" w3-text-black"><b>Número do pedido: </b><b>1234 </b></h4>
+             </div>
+         </form>
     </div>
 
-    <div class="container">
-    
-       <h3 class="w3-center w3-text-white"><b> Número do Pedido: </b> </h3>
+
+               
+    <div id="prato1" class="fundo-span-2">
+       <div  class="fundo-span-conteudo-2 animate">
+          <div id="botao-fechar-span">
+             <span onclick="document.getElementById('prato1').style.display='none'" class="close1" title=" Fechar Span">&times;</span>
+          </div>
+          <div id="nome-prato" class="w3-container w3-text-white">
+<br>
+             <h3 class="animate"><b> Nome do Prato</b></h3>
+          </div>
+<br>
+          <div id="textos" class="w3-container">
+            <div id="descricao">
+               <h5>Descrição do prato .............................       ...........       ....... ....... .......</h5>
+            </div>
+<br>
+
+
+
+<div id="requisicao">
+  <div id="nome-requisicao" class="animate" onclick="mostrarInputReq()" >
+                <h5><i class="fa fa-plus"></i>  Observações do Cliente</h5>
+             </div>
+    <div id="input-requisiçoes" class="input-group animate">
+      <textarea id="input-req-real" type="" class="form-control " placeholder="Observações"  rows="1"> </textarea>
+      <span><button class="btn btn-default" type="button" onclick="mostrarNomeReq()">OK</button></span>
     </div>
-
-    <div class="container" style="background-color:#f7f7f7; border-bottom-right-radius: 10px; border-bottom-left-radius:10px;
-">
-    
-      <i class="fa fa-spoon"></i><h3 class="w3-center"><b>1234 </b></h3><i class="fa fa-spoon"></i>
-    </div>
-  </form>
-</div>
-
-<script>
-// Get the modal
-var modal = document.getElementById('id01');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-</script>
+  </div>
 
 
+ <br>
+ <br>
+          <div id="quantidade" class="animate">
+             <div data-app="product.quantity" id="quantidade">
+                <label><b>Quantidade:</b></label>      
+                <input type="button" id="menos" value='-' onclick="process(-1)"/> 
+                <input id="quant" name="quant" class="text w3-center" size="1" type="text" value="0" maxlength="2" />
+                <input type="button" id="mais" class="" value='+' onclick="process(1)"/>
+             </div>
+<br>
+<br>             
+            <div id="botao-adicionar" class="animate"><button class="w3-button w3-black" onclick="fecharPrato1()"> Adicionar</button>
+            </div>
+<br>
+<br>  
+<br>
 
-<script src="js/bootstrap.min.js"></script>
+
+          </div>
+          </div>
+      </div>
+  </div>
+
+
+
+<script type="text/javascript" src="Site.js"></script>
+   
 
 </body>
-</html>
+</html> 
+
+
