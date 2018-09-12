@@ -283,11 +283,24 @@ textarea {
   resize: none;
 }
 
+a {
+
+  text-decoration: none;
+
+}
+
+a[link] {text-decoration: none}
+a[visited] {text-decoration: none}
+a[hover] {text-decoration: underline;}
+a[active] {text-decoration: none}
+
+
+
 
 .w3-select {
--webkit-appearance: none;  /* Remove estilo padrão do Chrome */
--moz-appearance: none; /* Remove estilo padrão do FireFox */
-appearance: none; /* Remove estilo padrão do FireFox*/
+-webkit-appearance: none;  
+-moz-appearance: none; 
+appearance: none; 
 outline: none
 
 
@@ -337,7 +350,7 @@ option {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 100px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -345,7 +358,7 @@ option {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 100px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
