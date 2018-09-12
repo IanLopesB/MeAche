@@ -38,7 +38,7 @@ body {
   width:100%;
 }
 
-@media only screen and (max-height: 700px) {
+@media only screen and (max-height: 600px) {
 
   .footer {
 
@@ -177,8 +177,10 @@ span.psw {
     border-bottom-left-radius:10px;
 }
 
+
 #botao-span2 {
 
+float: right;
 
 
 }
@@ -278,4 +280,20 @@ input[type=button]{outline:none}
 textarea {
   outline: none;
   resize: none;
+}
+
+
+.w3-select {
+-webkit-appearance: none;  /* Remove estilo padrão do Chrome */
+-moz-appearance: none; /* Remove estilo padrão do FireFox */
+appearance: none; /* Remove estilo padrão do FireFox*/
+outline: none
+
+
+
+}
+
+option {
+
+  border: none;
 }

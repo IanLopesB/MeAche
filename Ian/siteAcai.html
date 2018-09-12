@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html><head>
 <title>Me Ache!</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,6 +12,7 @@
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+</head>
 <body>
 
  <br>
@@ -24,6 +25,7 @@
         <div class="w3-center ">
 	          <h3> categoria1</h3> 
             <hr class="w3-center barra">
+           
         </div>
     </div>
     <div  id="pratos" class="w3-container">
@@ -43,7 +45,7 @@
     </div>
  
     <div id="id01" class="fundo-span">
-        <form class="fundo-span-conteudo animate" action="/action_page.php">
+        <div class="fundo-span-conteudo animate">
             <div id="botao-fechar-span">
                 <span onclick="document.getElementById('id01').style.display='none'" class="close1" title=" Fechar Span">&times;</span>
             </div>
@@ -80,11 +82,16 @@
              <h4 class=" w3-text-black"><b>Total: </b> <b>R$ </b></h4>
 
          </div>  
-         </form>      
+         <br>
+
+                <button onclick="document.getElementById('id02').style.display='block'; document.getElementById('id01').style.display='none'" id="botao-span2" class="w3-button w3-green ">Pedir</button>
          </div>
          
-   		 <button onclick="document.getElementById('id02').style.display='block'; document.getElementById('id01').style.display='none'" id="botao-span2" class="w3-button w3-green">Pedir</button>
+          <br>
+          <br>
+         </div>
     </div>
+    
    
     <div id="id02" class="fundo-span">
         <form class="fundo-span-conteudo animate" action="/action_page.php">
@@ -146,19 +153,15 @@
             </div>
 <br>
 
-
-
-<div id="requisicao">
-  <div id="nome-requisicao" class="animate" onclick="mostrarInputReq()" >
-                <h5><i class="fa fa-plus"></i>  Observações do Cliente</h5>
-             </div>
-    <div id="input-requisiçoes" class="input-group animate">
-      <textarea id="input-req-real" type="" class="form-control " placeholder="Observações"  rows="1"> </textarea>
-      <span><button class="btn btn-default" type="button" onclick="mostrarNomeReq()">OK</button></span>
-    </div>
-  </div>
-
-
+       <div id="requisicao">
+          <div id="nome-requisicao" class="animate" onclick="mostrarInputReq()" >
+             <h5><i class="fa fa-plus"></i>  Observações do Cliente</h5>
+          </div>
+          <div id="input-requisiçoes" class="input-group animate">
+             <textarea id="input-req-real" type="" class="form-control" placeholder="Observações"  rows="1"> </textarea>
+             <span><button class="btn btn-default" type="button" onclick="mostrarNomeReq()">OK</button></span>
+          </div>
+       </div>
  <br>
  <br>
           <div id="quantidade" class="animate">
@@ -175,18 +178,13 @@
 <br>
 <br>  
 <br>
-
-
           </div>
           </div>
       </div>
   </div>
 
-
-
 <script type="text/javascript" src="Site.js"></script>
-   
-
+  
 </body>
 </html> 
 
