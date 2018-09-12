@@ -1,2 +1,2 @@
-/*var trs = document.querySelector("p");
+var trs = document.querySelector("p");
 trs.textContent = "Feijão, batata, arroz";
