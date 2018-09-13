@@ -21,31 +21,25 @@
 	     <img id="img-logo" class="img-fluid w3-center" src="http://pluspng.com/img-png/beats-electronics-logo-vector-png-beats-electronics-logo-png-828.png" >
     </div>
  <br>
-    <div id="categorias">
-        <div class="w3-center ">
-	     
-           
-
-
-
-<center><div class="topnav" id="myTopnav">
-  <a href="javascript:void(0)" class="active tablink " onclick="openMenu(event, 'Categoria1');" id="Cat1"><center> Categoria 1 </center></a>
-  <a href="javascript:void(0)" class="active tablink w3-hover-red" onclick="openMenu(event, 'Categoria2');"><center> Categoria 2 </center></a>
-  <a href="javascript:void(0)" class="active tablink w3-hover-red" onclick="openMenu(event, 'Categoria3');"><center> Categoria 3 </center></a>
-  <a href="javascript:void(0);" class="icon" onclick="abrirMenu()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
-</center>
-
     
-            <hr class="w3-center barra">
-
-
-
-        </div>
+	     
+<div class="w3-container " id="menu">
+  
+    <div id="categorias" class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Categoria1');" id="Cat1">
+        <div id="categorias1" class="w3-col s4 tablink w3-padding-large w3-hover-red">Pizza</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Categoria2');">
+        <div id="categorias2" class="w3-col s4 tablink w3-padding-large w3-hover-red">Salads</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Categoria3');">
+        <diva id="categorias3" class="w3-col s4 tablink w3-padding-large w3-hover-red">Starter</div>
+      </a>
     </div>
-    <div  id="Categoria1" class="w3-container menu">
+
+<hr class="barra">
+
+   <div  id="Categoria1" class="w3-container menu">
         <ul class="w3-ul w3-xlarge">
             <li onclick="mostrarPrato1()">Jill <span class="w3-right w3-tag w3-dark-grey w3-round w3-large" > R$ 10,0</span></li>
             <li>Eve <span class="w3-right w3-tag w3-dark-grey w3-round w3-large"> R$ 5,00 </span></li>
@@ -77,7 +71,13 @@
             <li>Adam <span class="w3-right w3-tag w3-dark-grey w3-round w3-large"> R$ 7,00</span></li>  
         </ul>
     </div>
+ 
 
+
+<br>
+
+
+</div>
 
 
 
