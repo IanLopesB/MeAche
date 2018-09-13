@@ -25,6 +25,43 @@
 
 <div class="container">
 
+
+	<pre id="object"></pre>
+
+  <div id="myDiv"></div>
+  <button onclick="createTable()">Click</button>
+  <button onclick="defId()">Add ID</button>
+
+  <script type="text/javascript">
+    function createTable(){
+      var tr = document.createElement('tr');
+      var th = document.createElement('th');
+      var input = document.createElement('input');
+      var td = document.createElement('td');
+      var p = document.createElement('p');
+
+      tr.appendChild(th);
+      th.appendChild(input);
+      input.appendChild(td);
+      td.appendChild(p);
+
+      input.setAttribute("type", "checkbox");
+      input.setAttribute("class", "InputCheck");
+      input.setAttribute("onclick", "check_tb1");
+
+      document.getElementById('myDiv').appendChild(tr);
+    }  
+  </script>
+
+  <script type="text/javascript">
+    function defId(){
+      var list = document.getElementsByClassName("InputCheck");
+        for (var i = 0; i < list.length; i++) {
+          list[i].id = "box" + (i + 1);
+      }
+    }
+  </script>
+
   <button class="btn btn-secondary dropdown-toggle accordion-toggle estiloButton" type="button" id="dropdownMenuButton" data-toggle="collapse" aria-haspopup="true" aria-expanded="false" data-target="#collapseTwo">Lista de pedidos</button>
   <div class="collapse in show " id="collapseTwo">
   <table class="table users-table">
@@ -160,9 +197,9 @@
 </div>
 </body>
 
-  <!-- Connection JS -->
- <script type="text/javascript" src="_js/Connection.js"></script>
- <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+  <!-- Connection JS --> 
+  <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+  <script type="text/javascript" src="_js/connection.js"></script>
 
   <!-- Custom JS -->
   <script type="text/javascript" src="_js/checkbox.js"></script>
