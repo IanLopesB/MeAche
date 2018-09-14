@@ -19,104 +19,195 @@
 
 <body>
 	<div id="logo" class="w3-center">
-	
-	<img id="img-logo" class="img-fluid w3-center" src="http://pluspng.com/img-png/beats-electronics-logo-vector-png-beats-electronics-logo-png-828.png" >
-</div>
+	  <img id="img-logo" class="img-fluid w3-center" src="http://pluspng.com/img-png/beats-electronics-logo-vector-png-beats-electronics-logo-png-828.png" >
+  </div>
 	<hr id="barra">
 
 <div class="container">
-<table class="table users-table">
- 
-  <tbody>
-  	<div id="div1">
-    <tr id="tb1">
-      <th scope="row">
-      <input name="packersOff" id="checkb1" class="strikethrough" value="1" type="checkbox" onclick="check_tb1()">
-      <label for="packersOff" class="strikeThis">1</label>
-  	  </th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-</div>
-    <tr id="tb2">
-      <th scope="row">
-      <input name="packersOff" id="checkb2" class="strikethrough" value="2" type="checkbox" onclick="check_tb2()">
-      <label for="packersOff" class="strikeThis">2</label>
-      </th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr id="tb3">
-      <th scope="row">
-      <input name="packersOff" id="checkb3" class="strikethrough" value="3" type="checkbox" onclick="check_tb3()">
-      <label for="packersOff" class="strikeThis">3</label>
-      </th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-    <tr id="tb4">
-      <th scope="row">
-      <input name="packersOff" id="checkb4" class="strikethrough" value="4" type="checkbox" onclick="check_tb4()">
-      <label for="packersOff" class="strikeThis">4</label>	
-      </th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-    <tr>
-      <th scope="row">5</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-    <tr>
-      <th scope="row">6</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-    <tr>
-      <th scope="row">7</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-    <tr>
-      <th scope="row">8</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-    <tr>
-      <th scope="row">9</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-    <tr>
-      <th scope="row">10</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-    <tr>
-      <th scope="row">11</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
 
-<div></div>
+	<pre id="object"></pre>
 
-</div>
+  <div id="myDiv"></div>
+  <button onclick="createTable()">Click</button>
+  <button onclick="defId()">Add ID</button>
+
+  <script type="text/javascript">
+    function createTable(){
+      var tr = document.createElement('tr');
+      var th = document.createElement('th');
+      var input = document.createElement('input');
+      var td = document.createElement('td');
+      var p = document.createElement('p');
+
+      tr.appendChild(th);
+      th.appendChild(input);
+      input.appendChild(td);
+      td.appendChild(p);
+
+      input.setAttribute("type", "checkbox");
+      input.setAttribute("class", "InputCheck");
+      input.setAttribute("onclick", "check_tb1");
+
+      document.getElementById('myDiv').appendChild(tr);
+    }  
+  </script>
+
+  <script type="text/javascript">
+    function defId(){
+      var list = document.getElementsByClassName("InputCheck");
+        for (var i = 0; i < list.length; i++) {
+          list[i].id = "box" + (i + 1);
+      }
+    }
+  </script>
+
+  <button class="btn btn-secondary dropdown-toggle accordion-toggle estiloButton" type="button" id="dropdownMenuButton" data-toggle="collapse" aria-haspopup="true" aria-expanded="false" data-target="#collapseTwo">Lista de pedidos</button>
+  <div class="collapse in show " id="collapseTwo">
+  <table id="tableAdm" class="table users-table">
+    <tbody>
+      <tr >
+      	<th scope="row">
+      	</th>
+      	<td colspan="2" class="titleP">Pedidos</td>
+      	<td colspan="2" class="titleP">Nº Pedidos</td>
+      </tr>
+
+
+      <tr id="tb1">
+        <th scope="row">
+          <input name="packersOff" id="checkb1" value="1" type="checkbox" onclick="check_tb1()">
+        </th>
+        <td colspan="2">
+        	<p>Arroz, Feijão, Batata, Carne</p>
+        </td>
+        <td colspan="2"class="tdN">1</td>
+      </tr>
+      <tr id="tb2" class="tr">
+        <th scope="row">
+          <input name="packersOff" id="checkb2" value="2" type="checkbox" onclick="check_tb2()">
+        </th>
+        <td " colspan="2">
+        	<p>Arroz, Feijão, Batata</p>
+        </td>
+
+        <td colspan="2"class="tdN">2</td>
+      </tr>
+      <tr id="tb3" class="tr">
+        <th scope="row">
+          <input name="packersOff" id="checkb3"value="3" type="checkbox" onclick="check_tb3()">
+        </th>
+        <td colspan="2">
+        	<p>Arroz, Feijão, Batata</p>
+        </td>
+        <td colspan="2"class="tdN">3</td>
+      </tr>
+
+      <tr id="tb4"class="tr">
+        <th scope="row">
+          <input name="packersOff" id="checkb4"  value="4" type="checkbox" onclick="check_tb4()">
+        </th>
+        <td colspan="2">
+        	<p>Arroz, Feijão, Batata</p>
+        </td>
+        <td colspan="2"class="tdN">4</td>
+      </tr>
+
+      <tr id="tb5"class="tr">
+        <th scope="row">
+          <input name="packersOff" id="checkb5"  value="5" type="checkbox" onclick="check_tb5()">
+        </th>
+        <td colspan="2">
+        	<p>Arroz, Feijão, Batata</p>
+        </td>
+        <td colspan="2"class="tdN">5</td>
+      </tr>
+
+      <tr id="tb6"class="tr">
+        <th scope="row">
+          <input name="packersOff" id="checkb6" value="6" type="checkbox" onclick="check_tb6()">
+        </th>
+        <td colspan="2">
+        	<p>Arroz, Feijão, Batata</p>
+        </td>
+        <td colspan="2"class="tdN">6</td>
+      </tr>
+      <tr>
+      <tr id="tb7"class="tr">
+        <th scope="row">
+          <input name="packersOff" id="checkb7"  value="7" type="checkbox" onclick="check_tb7()">
+        </th>
+        <td colspan="2">
+        	<p>Arroz, Feijão, Batata</p>
+        </td>
+        <td colspan="2"class="tdN">7</td>
+
+      </tr>
+      <tr id="tbt8"class="tr">
+        <th scope="row">
+          <input name="packersOff" id="checkb8" value="8" type="checkbox" onclick="check_tb8()">
+        </th>
+        <td colspan="2">
+        	<p>Arroz, Feijão, Batata</p>
+        </td>
+        <td colspan="2"class="tdN">8</td>
+
+      </tr>
+      <tr id="tb9"class="tr">
+        <th scope="row">
+          <input name="packersOff" id="checkb9" value="9" type="checkbox" onclick="check_tb9()">
+        </th>
+        <td colspan="2">
+        	<p>Arroz, Feijão, Batata</p>
+    	</td>
+        <td colspan="2"class="tdN">9</td>
+
+      </tr>
+      <tr id="tb10"class="tr">
+        <th scope="row">
+          <input name="packersOff" id="checkb10"  value="10" type="checkbox" onclick="check_tb10()">
+        </th>
+        <td colspan="2">
+        	<p>Arroz, Feijão, Batata</p>
+        </td>
+        <td colspan="2" class="tdN">10</td>
+
+      </tr>
+      <tr id="tb11"class="tr">
+        <th scope="row">
+          <input name="packersOff" id="checkb11" value="11" type="checkbox" onclick="check_tb11()">
+        </th>
+        <td colspan="2">
+        	<p>Arroz, Feijão, Batata</p>
+        </td>
+        <td colspan="2" class="tdN">11</td>
+      </tr>
+
+      <tr id="tb12" class="tr">
+        <th scope="row">
+          <input name="packersOff" id="checkb12"  value="12" type="checkbox" onclick="check_tb12()">
+        </th>
+        <td colspan="2">
+        	<p>Arroz, Feijão, Batata</p>
+        </td>
+        <td colspan="2" class="tdN">12</td>
+      </tr>
+    </tbody>
+  </table>
+   </div>
+  </div>
 </div>
 </body>
 
-<script type="text/javascript" src="_js/checkbox.js"></script>
+  <!-- Connection JS --> 
+  <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+  <script type="text/javascript" src="_js/connection.js"></script>
 
-</html> 
+  <!-- Custom JS -->
+  <script type="text/javascript" src="_js/checkbox.js"></script>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</html>

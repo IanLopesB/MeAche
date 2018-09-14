@@ -9,7 +9,7 @@ img {
     border: 0;
 }
 
-td p{
+.td-pedidos p{
   max-width: 10ch;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -18,7 +18,7 @@ td p{
   margin-bottom:  1%;
 }
 
-td p:hover {
+.td-pedidos p:hover {
   white-space: normal;
 }
 
@@ -31,13 +31,13 @@ td p:hover {
 }
 /* end style hr*/
 
-.titleP {
-  font-size: 17px;
-  font-variant: small-caps;
+.info-title {
+  font-weight: bold;
+  font-size: 125%;
   text-align: center;
 }
 
-.tdN{
+.td-num{
 text-align: center;
 }
 
