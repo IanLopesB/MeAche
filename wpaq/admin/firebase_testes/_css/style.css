@@ -9,8 +9,8 @@ img {
     border: 0;
 }
 
-.td-pedidos p{
-  max-width: 18ch;
+td p{
+  max-width: 10ch;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -18,7 +18,7 @@ img {
   margin-bottom:  1%;
 }
 
-.td-pedidos p:hover {
+td p:hover {
   white-space: normal;
 }
 
@@ -31,13 +31,13 @@ img {
 }
 /* end style hr*/
 
-.info-title {
-  font-weight: bold;
-  font-size: 110%;
+.titleP {
+  font-size: 17px;
+  font-variant: small-caps;
   text-align: center;
 }
 
-.td-num{
+.tdN{
 text-align: center;
 }
 
@@ -72,13 +72,3 @@ text-align: center;
 }
 }
 
-.p-none {
-text-decoration:none;
-color:black;
-}
-
-.p-red{
-  color:red;
-text-decoration:  line-through;
-
-}
