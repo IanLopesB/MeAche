@@ -9,22 +9,29 @@
         else {
           id.style.textDecoration = "none";
           id.style.color = "black";
+
         }
       }
 
-      function check_tb2() {
-        var checkBox = document.getElementById("checkb2");
-        var id = document.getElementById("tb2");
+      
 
-        if (checkBox.checked == true) {
-          id.style.textDecoration = "line-through";
-          id.style.color = "red";
-        }
-        else {
-          id.style.textDecoration = "none";
-          id.style.color = "black";
+      function check_tb() { 
 
-        }
+        var checkBox = document.getElementById('checkBox');
+        var trClass = document.getElementByTagName('tr');
+
+            if (checkBox.checked == true) {            
+              trClass.style.textDecoration = "line-through";
+              trClass.style.color = "red";
+            }  
+          
+          else {
+            trClass.style.textDecoration = "none";
+            trClass.style.color = "black";
+          }  
+          
+               
+        
       }
 
       function check_tb3() {
