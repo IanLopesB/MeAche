@@ -26,18 +26,18 @@
     "firstName": fname,
     "presenter": lname,
     "nasc": nasc
-  });
-};
+    });
+  };
 
-// When the window is fully loaded, call this function.
-// Note: because we are attaching an event listener to a particular HTML element
-// in this function, we can't do that until the HTML element in question has
-// been loaded. Otherwise, we're attaching our listener to nothing, and no code
-// will run when the submit button is clicked.
-$(window).load(function () {
+  // When the window is fully loaded, call this function.
+  // Note: because we are attaching an event listener to a particular HTML element
+  // in this function, we can't do that until the HTML element in question has
+  // been loaded. Otherwise, we're attaching our listener to nothing, and no code
+  // will run when the submit button is clicked.
+  $(window).load(function () {
 
   // Find the HTML element with the id recommendationForm, and when the submit
   // event is triggered on that element, call submitRecommendation.
-  $("#recommendationForm").submit(submitProducts);
+  $("#productsForm").submit(submitProducts);
 
 });
