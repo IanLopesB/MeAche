@@ -206,8 +206,17 @@ span.psw {
     border-bottom-left-radius:10px;
 }
 
+.nome1{
+  font-size: 18px;
+}
+
+.nome2{
+  font-size: 15px;
+}
+
 #botao-span2 {
 float: right;
+font-size: 18px;
 }
 
 /* Span Prato */
