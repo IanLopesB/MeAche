@@ -13,6 +13,16 @@
   // Reference to your entire Firebase database
   var products = firebase.database().ref("products");
 
+  function process(quantA) {
+    var value = parseInt(document.getElementById("quantA").value);
+    value += quantA;
+    if (value < 1) {
+      document.getElementById("quantA").value = 0;
+    }else {
+      document.getElementById("quantA").value = value;
+    }
+  }
+
   // Save a new recommendation to the database, using the input in the form
   var submitProducts = function () {
 
@@ -21,16 +31,17 @@
   var lname = $("#lname").val();
   var nasc = $("#nasc").val();
 
-  var quantA = $("#quantA").val();
-  var quantB = $("#quantB").val();
+  var quanttB = $("#feijQuant").val();
+
+  var arroz = $("#quantA").val();
 
   // Push a new recommendation to the database using those values
   products.push({
-    "First Name": fname,
-    "Last Name": lname,
+    "FirstName": fname,
+    "LastName": lname,
     "Nac": nasc,
-    "Arroz": quantA,
-    "Feijão": quantB
+    "Arroz": arroz,
+    "Feijão": quanttB
     });
   };
 

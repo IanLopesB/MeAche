@@ -13,24 +13,25 @@
   // Reference to your entire Firebase database
   var products = firebase.database().ref("products");
 
+  function process(quantA){
+    var value = parseInt(document.getElementById("quantA").value);
+    value += quantA;
+    if(value < 1){
+      document.getElementById("quantA").value = 0;
+    }else{
+    document.getElementById("quantA").value = value;
+    }
+  }
+
   // Save a new recommendation to the database, using the input in the form
   var submitProducts = function () {
 
   // Get input values from each of the form elements
-  var fname = $("#fname").val();
-  var lname = $("#lname").val();
-  var nasc = $("#nasc").val();
-
-  var quantA = $("#quantA").val();
-  var quantB = $("#quantB").val();
+  var arroz = $("#quantA").val();
 
   // Push a new recommendation to the database using those values
   products.push({
-    "First Name": fname,
-    "Last Name": lname,
-    "Nac": nasc,
-    "Arroz": quantA,
-    "Feijão": quantB
+    "Arroz": arroz
     });
   };
 
@@ -43,6 +44,6 @@
 
   // Find the HTML element with the id recommendationForm, and when the submit
   // event is triggered on that element, call submitRecommendation.
-  $("#productsForm").submit(submitProducts);
+  $("#prato1").submit(submitProducts);
 
 });

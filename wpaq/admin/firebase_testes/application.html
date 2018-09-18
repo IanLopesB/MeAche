@@ -38,13 +38,18 @@
         <hr>
 
         <div class="form-group">
-          <label for="quantA">Arroz Quant: </label>
-          <input class="form-control" id="quantA" placeholder="Quantas Unidades..."> 
+          <div data-app="product.quantity" id="quantidade">
+             <label for="quantA">Arroz Quant: </label>
+             
+             <input type="button" id="menos" value='-' onclick="process(-1)"/> 
+             <input id="quantA" name="quantA" class="text w3-center" size="1" type="text" value="0" maxlength="2" />
+             <input type="button" id="mais" class="" value='+' onclick="process(1)"/>
+        </div>
         </div>
         <hr>
         <div class="form-group">
           <label for="quantF">Feijão Quant: </label>
-          <input class="form-control" id="quantF" placeholder="Quantas Unidades..."> 
+          <input class="form-control" id="feijQuant" placeholder="Quantas Unidades..."> 
         </div>
         <hr>
 
