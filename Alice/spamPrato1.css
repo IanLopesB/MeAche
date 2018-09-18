@@ -28,5 +28,8 @@ body {
 	border-width: 2px;
 }
 #plus{
-	color: white;
+	size: 20%;
+}
+span{
+	height: 10%;
 }
