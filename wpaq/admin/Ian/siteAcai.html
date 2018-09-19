@@ -12,6 +12,13 @@
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+<!-- Load the Firebase library before loading the body. -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
+
+    <!-- Load the jQuery library, which we'll use to manipulate HTML elements with Javascript. -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+
 </head>
 <body class="body">
 
@@ -27,20 +34,19 @@
 <div class="w3-container" id="menu">
    <div id="categorias" class="w3-row w3-center w3-border w3-border-dark-grey">
       <a class="a" href="javascript:void(0)" onclick="openMenu(event, 'Categoria1');" id="Cat1">
-      <div id="categorias1" class="w3-col s4 tablink w3-padding-large w3-hover-black"><h4 class="Cor">Pizza</h4></div>
+      <div id="categorias1" class="w3-col s4 tablink w3-padding-large w3-hover-red"><h4 class="">Pizza</h4></div>
       </a>
-      <a class="a" href="javascript:void(0)" onclick="openMenu(event, 'Categoria2');" id="">
-      <div id="categorias2" class="w3-col s4 tablink w3-padding-large w3-hover-black"><h4 class="Cor">Salads</h4></div>
+      <a class="a" href="javascript:void(0)" onclick="openMenu(event, 'Categoria2');">
+      <div id="categorias2" class="w3-col s4 tablink w3-padding-large w3-hover-red"><h4 class="">Salads</h4></div>
       </a>
-      <a class="a" href="javascript:void(0)" onclick="openMenu(event, 'Categoria3');" id="">
-      <div id="categorias3" class="w3-col s4 tablink w3-padding-large w3-hover-black"><h4 class="Cor">Starter</h4></div>
+      <a class="a" href="javascript:void(0)" onclick="openMenu(event, 'Categoria3');">
+      <div id="categorias3" class="w3-col s4 tablink w3-padding-large w3-hover-red"><h4 class="">Starter</h4></div>
       </a>
    </div>
 </div>
 
 <hr class="barra">
 
-<div id="categoria" class="">
 <div id="Categoria1" class="w3-container menu">
    <ul class="w3-ul w3-xlarge">
       <li class="w3-text-black" onclick="mostrarPrato1()">Jill <span class="w3-right w3-tag  w3-round w3-large w3-dark-grey" > R$ 10,0</span></li>
@@ -73,13 +79,13 @@
       <li>J <span class="w3-right w3-tag w3-dark-grey w3-round w3-large"> R$ 7,00</span></li>  
    </ul>
 </div>
- </div>
+ 
 <br>
 <br>
 <br>
 
-<div id="subtotal" class="footer w3-center w3-hover-opacity-off " onclick="mostrarSubtotal()">
-   <h3 class="w3-center w3-text-white"> <i class="glyphicon glyphicon-shopping-cart w3-text-white"></i>   Subtotal:</h3>
+<div id="subtotal" class="footer w3-center w3-hover-opacity-off w3-dark-grey" onclick="mostrarSubtotal()">
+   <h3 class="w3-center"> <i class="glyphicon glyphicon-shopping-cart"></i>   Subtotal:</h3>
 </div>
  
 <div id="id01" class="fundo-span">
@@ -95,21 +101,21 @@
          <table id="tabela" class="table">
             <thead>
                <tr>  
-                  <th scope="col" class="nome1">Quantidade</th>
-                  <th scope="col" class="nome1">Pedido</th>
-                  <th scope="col" class="nome1">Preço</th>
+                  <th scope="col">Quantidade</th>
+                  <th scope="col">Pedido</th>
+                  <th scope="col">Preço</th>
                </tr>
             </thead>
             <tbody>
                <tr>
                   <th scope="row">1</th>
-                  <td class="nome2">Arroz</td>
-                  <td class="nome2">R$:5,00</td>
+                  <td>Arroz</td>
+                  <td>R$: 5,00</td>
                </tr>
                <tr>
                   <th scope="row">2</th>
-                  <td class="nome2">Frango</td>
-                  <td class="nome2">R$:10,00</td>
+                  <td>Frango</td>
+                  <td>R$: 10,00</td>
                </tr>
             </tbody>
          </table>
@@ -146,21 +152,21 @@
             <table id="tabela" class="table">
                <thead>
                   <tr>
-                     <th scope="col" class="nome1">Quantidade</th>
-                     <th scope="col" class="nome1">Pedido</th>
-                     <th scope="col" class="nome1">Preço</th>
+                     <th scope="col">Quantidade</th>
+                     <th scope="col">Pedido</th>
+                     <th scope="col">Preço</th>
                   </tr>
                </thead>
                <tbody>
                   <tr>
                      <th scope="row">1</th>
-                     <td class="nome2">Arroz</td>
-                     <td class="nome2">R$:5,00</td>
+                     <td>Arroz</td>
+                     <td>R$: 5,00</td>
                   </tr>
                   <tr>
                      <th scope="row">2</th>
-                     <td class="nome2">Frango</td>
-                     <td class="nome2">R$:10,00</td>
+                     <td>Frango</td>
+                     <td>R$: 10,00</td>
                   </tr>
                </tbody>
             </table>
@@ -176,6 +182,8 @@
   </div>
 </div>
            
+<script type="text/javascript" src="application.js"></script>
+
 <div id="prato1" class="fundo-span-2">
    <div  class="fundo-span-conteudo-2 animate">
       <div id="botao-fechar-span">
@@ -185,14 +193,15 @@
 
 <br>
 
-         <h3 class="animate"><b> Nome do Prato</b></h3>
+         <h3 class="animate"><b><label for="qunatA">Arroz</label></b></h3>
       </div>
 
 <br>
 
       <div id="textos" class="w3-container">
          <div id="descricao">
-            <h5 class="descPrato">Descrição do prato .......................................................</h5>
+            <h5>Descrição do prato ..........................................................................
+            ....................</h5>
          </div>
 
 <br>
@@ -212,16 +221,16 @@
 
        <div id="quantidade" class="animate">
           <div data-app="product.quantity" id="quantidade">
-             <label><b>Quantidade:</b></label>      
+             <label>Quantidade:</label>      
              <input type="button" id="menos" value='-' onclick="process(-1)"/> 
-             <input id="quant" name="quant" class="text w3-center" size="1" type="text" value="0" maxlength="2" />
+             <input id="quantA" name="quantA" class="text w3-center" size="1" type="text" value="0" maxlength="2" />
              <input type="button" id="mais" class="" value='+' onclick="process(1)"/>
           </div>
 
 <br>
 <br>            
 
-       <div id="botao-adicionar" class="animate"><button class="w3-button w3-black" onclick="fecharPrato1()"> Adicionar</button></div>
+       <div id="botao-adicionar" class="animate"><button type="submit" class="w3-button w3-black" onclick="submitProducts()"> Adicionar</button></div>
 
 <br>
 <br>  

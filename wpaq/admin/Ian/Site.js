@@ -18,15 +18,6 @@ var x = document.getElementById("prato1");
        }
    
    }
-function process(quant){
-    var value = parseInt(document.getElementById("quant").value);
-    value+=quant;
-    if(value < 1){
-      document.getElementById("quant").value = 0;
-    }else{
-    document.getElementById("quant").value = value;
-    }
-  }
 
 function mostrarInputReq() {
 
@@ -93,9 +84,9 @@ function openMenu(evt, menuName) {
   }
   tablinks = document.getElementsByClassName("tablink");
   for (i = 0; i < x.length; i++) {
-     tablinks[i].className = tablinks[i].className.replace(" w3-black", "");
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
   }
   document.getElementById(menuName).style.display = "block";
-  evt.currentTarget.firstElementChild.className += " w3-black";
+  evt.currentTarget.firstElementChild.className += " w3-red";
 }
 document.getElementById("Cat1").click();

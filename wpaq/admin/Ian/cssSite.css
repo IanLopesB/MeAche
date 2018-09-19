@@ -1,20 +1,10 @@
 
 .body {
   width: 100%;
-  background-color: #94618E;
-   font-family: Segoe UI;
 }
-
 
 #img-logo {
   width: 25%;
-}
-
-.Cor{
-  text-decoration-color: black;
-  color: white;
-  font-size: 20px;
-  font-family: Segoe UI;
 }
 
 #menu {
@@ -24,30 +14,15 @@
 
 .menu {
    display: none;
-    font-family: Segoe UI;
-  font-size: 18px; 
 }
 
 .barra {
   margin-left: 37%;
   width: 25%;
   border-width: 4px;
-  border-color: black;
+
+  border-color: #F05F40;
 }
-
-#categoria {
-
-  width: 100%;
-}
-
-
-@media only screen and (min-height: 700px) {
-
-  #categoria {
-
-    width: 70%;
-  }
-} 
 
 .spam {
 
@@ -56,7 +31,7 @@
 
 #subtotal {
   height: 10%;
-    background-color: #49274A;
+    background-color: #F7F2F7;
 }
 
 
@@ -92,31 +67,23 @@
 
 #categorias {
   border-radius: 10px;
-  font-size: 18px;
-  font-family: Segoe UI;
 }
 
 #categorias1 {
   border-top-left-radius: 9px;
   border-bottom-left-radius: 9px;
-  font-size: 18px;
-  font-family: Segoe UI;
-  
 }
 
 #categorias3 {
  border-top-right-radius: 9px;
  border-bottom-right-radius: 9px;
- font-size: 18px;
- font-family: Segoe UI;
-}
 
+}
 
 /*Spans*/
 
 #botao-adicionar {
   float: right;
-  font-size: 18px;
 }
 
 #input-requisiçoes {
@@ -132,7 +99,6 @@
 
 .infos-pedido{
   padding: 16px;
-  font-family: Segoe UI;
 }
 
 span.psw {
@@ -208,10 +174,6 @@ span.psw {
     to {transform: scale(1)}
 }
 
-.descPrato{
-  font-size:20px ;
-}
-
 #total-parcial {
     background-color:#f7f7f7; 
     border-radius: 10px; 
@@ -223,17 +185,8 @@ span.psw {
     border-bottom-left-radius:10px;
 }
 
-.nome1{
-  font-size: 18px;
-}
-
-.nome2{
-  font-size: 15px;
-}
-
 #botao-span2 {
 float: right;
-font-size: 18px;
 }
 
 /* Span Prato */
@@ -260,7 +213,6 @@ border: none;
 
 #quantidade {
   width: 100%;
-  font-size: 18px;
 }
 
 #nome-requisicao {
@@ -316,8 +268,4 @@ border: none;
 input[type=text]{outline:none}
 input[type=button]{outline:none}
 textarea {outline: none;resize: none;}
-
-
-
-
 
