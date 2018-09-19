@@ -1,0 +1,28 @@
+[debug] [2018-09-19T17:07:55.836Z] ----------------------------------------------------------------------
+[debug] [2018-09-19T17:07:55.889Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ADERSON BORGES\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-09-19T17:07:55.889Z] CLI Version:   4.2.1
+[debug] [2018-09-19T17:07:55.889Z] Platform:      win32
+[debug] [2018-09-19T17:07:55.890Z] Node Version:  v8.11.4
+[debug] [2018-09-19T17:07:55.890Z] Time:          Wed Sep 19 2018 14:07:55 GMT-0300 (Hora oficial do Brasil)
+[debug] [2018-09-19T17:07:55.890Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-09-19T17:07:55.917Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-09-19T17:07:55.918Z] > authorizing via signed-in user
+[debug] [2018-09-19T17:07:55.921Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-09-19T17:07:55.921Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+
+[debug] [2018-09-19T17:07:56.919Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-19T17:07:56.999Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/me-ache-6c62e  
+ 
+[debug] [2018-09-19T17:07:58.377Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-19T17:07:58.379Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/me-ache-6c62e  
+ 
+[debug] [2018-09-19T17:08:00.308Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\ADERSON BORGES\Downloads\MeAche\WPAQ'...
+[info] 
+[debug] [2018-09-19T17:08:00.311Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/164197814660/clients/_:getWebAppConfig  
+ 
+[debug] [2018-09-19T17:08:01.863Z] <<< HTTP RESPONSE 200
+[info] i  hosting[me-ache-6c62e]: Serving hosting files from: admin
+[info] +  hosting[me-ache-6c62e]: Local server: http://localhost:5000

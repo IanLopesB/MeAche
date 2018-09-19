@@ -8,6 +8,10 @@
 
 	<title>Me Ache | Pestiscararias e Açaí</title>
 
+  <!-- Load the Firebase library before loading the body. -->
+  <script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
+
+
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" type="text/css" href="_css/bootstrap.css">
 
@@ -36,126 +40,9 @@
       	<td colspan="2" class="titleP">Nº Pedidos</td>
       </tr>
 
-      <tr class="trClass">
-        <th scope="row">
-          <input name="" id="checkClass" value="1" type="checkbox" onclick="check_tb()">
-        </th>
-        <td colspan="2">
-        	<p>Arroz, Feijão, Batata, Carne</p>
-        </td>
-        <td colspan="2"class="tdN">1</td>
-      </tr>
+      <button onclick="createTable()"> Click</button>
 
-      <tr class="trClass">
-        <th scope="row">
-          <input name="" class="checkClass" value="2" type="checkbox" onclick="check_tb()">
-        </th>
-        <td " colspan="2">
-        	<p>Arroz, Feijão, Batata</p>
-        </td>
 
-        <td colspan="2"class="tdN">2</td>
-      </tr>
-
-      <tr class="trClass">
-        <th scope="row">
-          <input name="" class="checkClass" value="3" type="checkbox" onclick="check_tb()">
-        </th>
-        <td colspan="2">
-        	<p>Arroz, Feijão, Batata</p>
-        </td>
-        <td colspan="2"class="tdN">3</td>
-      </tr>
-
-      <tr class="trClass">
-        <th scope="row">
-          <input name="packersOff" class="checkClass" value="4" type="checkbox" onclick="check_tb()">
-        </th>
-        <td colspan="2">
-        	<p>Arroz, Feijão, Batata</p>
-        </td>
-        <td colspan="2"class="tdN">4</td>
-      </tr>
-
-      <tr id="tb5"class="tr">
-        <th scope="row">
-          <input name="packersOff" id="checkb5"  value="5" type="checkbox" onclick="check_tb5()">
-        </th>
-        <td colspan="2">
-        	<p>Arroz, Feijão, Batata</p>
-        </td>
-        <td colspan="2"class="tdN">5</td>
-      </tr>
-
-      <tr id="tb6"class="tr">
-        <th scope="row">
-          <input name="packersOff" id="checkb6" value="6" type="checkbox" onclick="check_tb6()">
-        </th>
-        <td colspan="2">
-        	<p>Arroz, Feijão, Batata</p>
-        </td>
-        <td colspan="2"class="tdN">6</td>
-      </tr>
-      <tr>
-      <tr id="tb7"class="tr">
-        <th scope="row">
-          <input name="packersOff" id="checkb7"  value="7" type="checkbox" onclick="check_tb7()">
-        </th>
-        <td colspan="2">
-        	<p>Arroz, Feijão, Batata</p>
-        </td>
-        <td colspan="2"class="tdN">7</td>
-
-      </tr>
-      <tr id="tbt8"class="tr">
-        <th scope="row">
-          <input name="packersOff" id="checkb8" value="8" type="checkbox" onclick="check_tb8()">
-        </th>
-        <td colspan="2">
-        	<p>Arroz, Feijão, Batata</p>
-        </td>
-        <td colspan="2"class="tdN">8</td>
-
-      </tr>
-      <tr id="tb9"class="tr">
-        <th scope="row">
-          <input name="packersOff" id="checkb9" value="9" type="checkbox" onclick="check_tb9()">
-        </th>
-        <td colspan="2">
-        	<p>Arroz, Feijão, Batata</p>
-    	</td>
-        <td colspan="2"class="tdN">9</td>
-
-      </tr>
-      <tr id="tb10"class="tr">
-        <th scope="row">
-          <input name="packersOff" id="checkb10"  value="10" type="checkbox" onclick="check_tb10()">
-        </th>
-        <td colspan="2">
-        	<p>Arroz, Feijão, Batata</p>
-        </td>
-        <td colspan="2" class="tdN">10</td>
-
-      </tr>
-      <tr id="tb11"class="tr">
-        <th scope="row">
-          <input name="packersOff" id="checkb11" value="11" type="checkbox" onclick="check_tb11()">
-        </th>
-        <td colspan="2">
-        	<p>Arroz, Feijão, Batata</p>
-        </td>
-        <td colspan="2" class="tdN">11</td>
-      </tr>
-
-      <tr id="tb12" class="tr">
-        <th scope="row">
-          <input name="packersOff" id="checkb12"  value="12" type="checkbox" onclick="check_tb12()">
-        </th>
-        <td colspan="2">
-        	<p>Arroz, Feijão, Batata</p>
-        </td>
-        <td colspan="2" class="tdN">12</td>
-      </tr>
     </tbody>
   </table>
    </div>
@@ -164,11 +51,12 @@
 </body>
 
   <!-- Connection JS --> 
-  <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
   <script type="text/javascript" src="_js/connection.js"></script>
 
   <!-- Custom JS -->
   <script type="text/javascript" src="_js/checkbox.js"></script>
+  <script type="text/javascript" src="_js/createTable.js"></script>
+  <script type="text/javascript" src="Ian/application.js"></script>
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

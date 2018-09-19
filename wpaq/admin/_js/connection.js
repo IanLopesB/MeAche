@@ -9,6 +9,7 @@
   };
   firebase.initializeApp(config);
 
+  /*
   // Get elements
   const preObject = document.getElementById('object');
   const ulList = document.getElementById('list');
@@ -43,6 +44,9 @@
     liToRemove.remove();
 
   });
+
+  */
+
 
   
 
