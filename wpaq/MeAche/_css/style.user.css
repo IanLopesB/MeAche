@@ -1,15 +1,14 @@
-#img-logo {
-  width: 25%;
-}
-
-#menu {
-  width: 100%;
-  height: 10%;
+#categorias {
+  margin : 15px;
 }
 
 .menu {
-   display: none;
+  margin: 17px;
+  display: none;
 }
+
+
+
 
 .spam {
 
@@ -29,20 +28,7 @@
 }
 
 
-#categorias {
-  border-radius: 1000px;
-}
 
-#categorias1 {
-  border-top-left-radius: 90px;
-  border-bottom-left-radius: 9px;
-}
-
-#categorias3 {
- border-top-right-radius: 9px;
- border-bottom-right-radius: 9px;
-
-}
 
 /*Spans*/
 
