@@ -1,51 +1,58 @@
 <!DOCTYPE html>
-<html><head>
-<title>Me Ache!</title>
+<html lang="pt-br">
+<head>
+  <title>Me Ache | Pestiscararias e Açaí</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="_css/bootstrap.min.css">
 
-<link rel="stylesheet" type="text/css" href="cssSite.css">
+  <!-- Custom style CSS -->
+  <link rel="stylesheet" type="text/css" href="_css/style.user.css">
+  <link rel="stylesheet" type="text/css" href="_css/style.admin.css">
+  <link rel="stylesheet" href="_css/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="_css/icon.css">
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Load the Firebase library before loading the body. -->
+  <script src="_js/firebase.js"></script>
 
-<!-- Load the Firebase library before loading the body. -->
-    <script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
-
-    <!-- Load the jQuery library, which we'll use to manipulate HTML elements with Javascript. -->
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-
-
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="_jquery/jquery-2.2.0.min.js"></script>
+  <script src="_jquery/popper.min.js"></script>
+  <script src="_js/bootstrap.min.js"></script>
 </head>
+
 <body class="body">
-
-<br>
-<br>
-
-<div id="logo" class="w3-center">
-   <img id="img-logo" class="img-fluid w3-center" src="http://pluspng.com/img-png/beats-electronics-logo-vector-png-beats-electronics-logo-png-828.png" >
-</div>
+  <div id="logo" class="w3-center">
+    <img id="img-logo" class="img-fluid w3-center" src="http://pluspng.com/img-png/beats-electronics-logo-vector-png-beats-electronics-logo-png-828.png" >
+  </div>
+  <hr id="barra">
  
-<br>
-
-<div class="w3-container" id="menu">
+ <div class="container">  
+  <div class="w3-container" id="menu">
    <div id="categorias" class="w3-row w3-center w3-border w3-border-dark-grey">
       <a class="a" href="javascript:void(0)" onclick="openMenu(event, 'Categoria1');" id="Cat1">
-      <div id="categorias1" class="w3-col s4 tablink w3-padding-large w3-hover-red"><h4 class="">Pizza</h4></div>
+        <div id="categorias1" class="w3-col s4 tablink w3-padding-large w3-hover-red">
+          <h4 class="">Break</h4>
+        </div>
       </a>
       <a class="a" href="javascript:void(0)" onclick="openMenu(event, 'Categoria2');">
-      <div id="categorias2" class="w3-col s4 tablink w3-padding-large w3-hover-red"><h4 class="">Salads</h4></div>
+        <div id="categorias2" class="w3-col s4 tablink w3-padding-large w3-hover-red">
+          <h4 class="">Lunch</h4>
+        </div>
       </a>
       <a class="a" href="javascript:void(0)" onclick="openMenu(event, 'Categoria3');">
-      <div id="categorias3" class="w3-col s4 tablink w3-padding-large w3-hover-red"><h4 class="">Starter</h4></div>
+        <div id="categorias3" class="w3-col s4 tablink w3-padding-large w3-hover-red">
+          <h4 class="">Dinner</h4>
+        </div>
       </a>
    </div>
-</div>
-
-<hr class="barra">
+  </div>
 
 <div id="Categoria1" class="w3-container menu">
    <ul class="w3-ul w3-xlarge">
@@ -182,7 +189,6 @@
   </div>
 </div>
            
-<script type="text/javascript" src="application.js"></script>
 
 <div id="prato1" class="fundo-span-2">
    <div  class="fundo-span-conteudo-2 animate">
@@ -231,7 +237,7 @@
 <br>            
 
        <div id="botao-adicionar" class="animate"><button type="submit" class="w3-button w3-black" 
-        onclick="submitProducts(); createTable();"> Adicionar</button></div>
+        onclick="submitProducts()">Adicionar</button></div>
 
 <br>
 <br>  
@@ -241,12 +247,16 @@
        </div>
    </div>
 </div>
-  
-
-
-<script type="text/javascript" src="Site.js"></script>
-<script type="text/javascript" src="../_js/createTable.js"></script>
+</div>
 </body>
+
+  <!-- Connection Firebase JS --> 
+  <script type="text/javascript" src="_js/connection.firebase.js"></script>
+
+  <!-- Functions JS -->
+  <script type="text/javascript" src="_js/checkbox.js"></script>
+  <script type="text/javascript" src="_js/user.functions.js"></script>
+
 </html> 
 
 

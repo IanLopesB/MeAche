@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "admin",
+    "public": "MeAche",
     "ignore": [
       "firebase.json",
       "**/.*",
