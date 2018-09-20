@@ -1,12 +1,20 @@
+.menuTitle {
+  font-size: 20px;
+  font-style: bold;
+}
+
 #categorias {
   margin : 15px;
 }
 
 .menu {
-  margin: 17px;
+  margin: 12px;
   display: none;
 }
 
+.menu ul li span {
+  font-size: 18px;
+}
 
 
 
