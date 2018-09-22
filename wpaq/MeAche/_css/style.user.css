@@ -1,6 +1,7 @@
 .menuTitle {
   font-size: 20px;
   font-style: bold;
+  display: inline-block;
 }
 
 #categorias {
@@ -8,14 +9,13 @@
 }
 
 .menu {
-  margin: 12px;
   display: none;
+  margin: 25px 15px 120px 15px;
 }
 
 .menu ul li span {
   font-size: 18px;
 }
-
 
 
 .spam {
@@ -24,15 +24,19 @@
 }
 
 #subtotal {
-  height: 10%;
-    background-color: #F7F2F7;
+  height: 12%;
+  background-color: #F7F2F7;
 }
 
 
 .footer {
-  position:absolute;
+  position: fixed;
   bottom: 0;
   width:100%;
+}
+.footer h3 span {
+  font-size: 20px;
+  vertical-align: middle; 
 }
 
 

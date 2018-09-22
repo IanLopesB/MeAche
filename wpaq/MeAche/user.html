@@ -35,25 +35,30 @@
  
  <div class="container">  
    <div id="menuCategorias" class="w3-row w3-center w3-border w3-border-dark-grey">
-      <a class="a" href="javascript:void(0)" onclick="openMenu(event, 'Break');" id="Cat1">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">
-          <h4 class="menuTitle">Break</h4>
+      <a class="a" href="javascript:void(0)" onclick="openMenu(event, 'Petiscos');">
+        <div class="w3-col tablink w3-padding-large w3-hover-red">
+          <h4 class="menuTitle">Petiscos</h4>
         </div>
       </a>
-      <a class="a" href="javascript:void(0)" onclick="openMenu(event, 'Lunch');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">
-          <h4 class="menuTitle">Lunch</h4>
+      <a class="a" href="javascript:void(0)" onclick="openMenu(event, 'Espetos');">
+        <div class="w3-col tablink w3-padding-large w3-hover-red">
+          <h4 class="menuTitle">Espetos</h4>
         </div>
       </a>
-      <a class="a" href="javascript:void(0)" onclick="openMenu(event, 'Dinner');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">
-          <h4 class="menuTitle">Dinner</h4>
+      <a class="a" href="javascript:void(0)" onclick="openMenu(event, 'Refrigerantes');">
+        <div class="w3-col tablink w3-padding-large w3-hover-red">
+          <h4 class="menuTitle">Refrigerantes</h4>
+        </div>
+      </a>
+      <a class="a" href="javascript:void(0)" onclick="openMenu(event, 'Cervejas');">
+        <div class="w3-col tablink w3-padding-large w3-hover-red">
+          <h4 class="menuTitle">Cervejas</h4>
         </div>
       </a>
    </div>
   </div>
 
-  <div id="Break" class="menu">
+  <div id="Petiscos" class="menu">
    <ul class="w3-ul w3-xlarge">
       <li class="w3-text-black" onclick="mostrarPrato1()">
         <span class="pratos">Arroz</span>
@@ -82,7 +87,7 @@
    </ul>
   </div>
 
-  <div id="Lunch" class="menu">
+  <div id="Espetos" class="menu">
    <ul class="w3-ul w3-xlarge">
       <li class="w3-text-black" onclick="mostrarPrato1()">
         <span class="pratos">Feijão</span>
@@ -111,7 +116,36 @@
    </ul>
   </div>
 
-  <div id="Dinner" class="menu">
+  <div id="Refrigerantes" class="menu">
+   <ul class="w3-ul w3-xlarge">
+      <li class="w3-text-black" onclick="mostrarPrato1()">
+        <span class="pratos">A</span>
+        <span class="w3-right w3-tag  w3-round w3-large w3-dark-grey">R$ 10,0</span>
+      </li>
+      <li class="w3-text-black">
+        <span>B</span>
+        <span class=" w3-right w3-tag w3-round w3-large w3-dark-grey">R$ 5,00</span>
+      </li>
+      <li class="w3-text-black">
+        <span>C</span>
+        <span class=" w3-right w3-tag  w3-round w3-large w3-dark-grey">R$ 17,00</span>
+      </li>
+      <li class="w3-text-black">
+        <span>D</span> 
+        <span class=" w3-right w3-tag  w3-round w3-large w3-dark-grey">R$ 100,0</span>
+      </li>
+      <li class="w3-text-black">
+        <span>E</span> 
+        <span class=" w3-right w3-tag w3-round w3-large w3-dark-grey">R$ 5,00 </span>
+      </li>
+      <li class="w3-text-black">
+        <span>F</span> 
+        <span class=" w3-right w3-tag  w3-round w3-large w3-dark-grey">R$ 7,00</span>
+      </li>  
+   </ul>
+  </div>
+
+  <div id="Cervejas" class="menu">
    <ul class="w3-ul w3-xlarge">
       <li class="w3-text-black" onclick="mostrarPrato1()">
         <span class="pratos">A</span>
@@ -143,7 +177,7 @@
   <div id="subtotal" class="footer w3-center w3-hover-opacity-off w3-dark-grey" onclick="mostrarSubtotal()">
     <h3 class="w3-center"> 
       <i class="glyphicon glyphicon-shopping-cart"></i>
-      <span>Subtotal:</span>
+      <span>Subtotal: R$</span>
     </h3>
   </div>
  
