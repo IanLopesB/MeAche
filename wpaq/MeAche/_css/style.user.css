@@ -1,3 +1,12 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.pratos {
+  text-align: center;
+}
+
 .menuTitle {
   font-size: 20px;
   font-style: bold;
@@ -8,14 +17,22 @@
   margin : 15px;
 }
 
+#menuCategorias {
+  margin-top: 30px;
+}
+
 .menu {
-  display: none;
-  margin: 25px 15px 120px 15px;
+  margin: 15px;
+}
+
+#Cervejas {
+  margin-bottom: 120px;
 }
 
 .menu ul li span {
   font-size: 18px;
 }
+
 
 
 .spam {
@@ -30,6 +47,7 @@
 
 
 .footer {
+  margin: -15px;
   position: fixed;
   bottom: 0;
   width:100%;
