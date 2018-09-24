@@ -12,13 +12,13 @@
 
   var alimentsList = document.getElementById('alimentsList');
   var asinha = document.getElementById('quantPet1');
-  var addButton = document.getElementById('addButton');
 
-  addButton.addEventListener('click', function () {
+  function  pegarValue () {
     create(asinha.value);
-  });
+  };
 
   function create(alimento) {
+
     var data = {
       alimento: alimento  
     };
@@ -28,9 +28,9 @@
   firebase.database().ref('alimentos').on('value', function (snapshot) {
     alimentsList.innerHTML = '';
     snapshot.forEach(function (item) {
-      var h1 = document.createElement('h1');
-      h1.appendChild(document.createTextNode(item.val().alimento));
-      alimentsList.appendChild(h1);
+      var td = document.createElement('td');
+      td.appendChild(document.createTextNode("Asinha de Frango: " + item.val().alimento));
+      alimentsList.appendChild(td);
     });
   });
 
