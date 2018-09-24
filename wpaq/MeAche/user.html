@@ -32,6 +32,9 @@
     <img id="img-logo" class="img-fluid w3-center" src="http://pluspng.com/img-png/beats-electronics-logo-vector-png-beats-electronics-logo-png-828.png" >
   </div>
   <hr id="barra">
+  <ul id="alimentsList">
+  
+</ul>
  
  <div class="container">  
 
@@ -274,7 +277,7 @@
   </div>
 </div>
            
-
+<!-- Pratos Functions -->
 <div id="prato1" class="fundo-span-2">
   <div  class="fundo-span-conteudo-2 animate">
     <div id="botao-fechar-span">
@@ -315,24 +318,26 @@
           <div data-app="product.quantity" id="quantidade">
              <label>Quantidade:</label>      
              <input type="button" id="menos" value='-' onclick="process(-1)"/> 
-             <input id="quantA" name="quantA" class="text w3-center" size="1" type="text" value="0" maxlength="2" />
+             <input id="quantPet1" name="quantPet1" class="text w3-center" size="1" type="text" value="0" maxlength="2" />
              <input type="button" id="mais" class="" value='+' onclick="process(1)"/>
           </div>
 
-<br>
-<br>            
+          <br>
+          <br>            
 
-       <div id="botao-adicionar" class="animate"><button type="submit" class="w3-button w3-black" 
-        onclick="submitProducts(); fecharPrato1();">Adicionar</button></div>
+          <div id="botao-adicionar" class="animate">
+            <button type="submit" id="addButton" class="w3-button w3-black" onclick="fecharPrato1();">Adicionar</button>
+          </div>
 
-<br>
-<br>  
-<br>
-
+          <br>
+          <br>  
+          <br>
        </div>
-       </div>
-   </div>
+    </div>
+  </div>
 </div>
+<!-- //Pratos Functions -->
+ 
 </div>
 </body>
 
