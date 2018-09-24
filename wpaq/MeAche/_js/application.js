@@ -1,4 +1,3 @@
-  var alimentsList = document.getElementById('alimentsList');
   var asinha = document.getElementById('quantPet1');
 
   function  pegarValue () {
@@ -14,22 +13,52 @@
   }
 
   firebase.database().ref('alimentos').on('value', function (snapshot) {
-    alimentsList.innerHTML = '';
+    
     snapshot.forEach(function (item) {
-      var td = document.createElement('td');
-      td.appendChild(document.createTextNode("Asinha de Frango: " + item.val().alimento));
-      alimentsList.appendChild(td);
+
+  var tr = document.createElement('tr');
+  var th = document.createElement('th');
+  var input = document.createElement('input');
+  var td = document.createElement('td');
+  var td1 = document.createElement('td');
+  var p = document.createElement('p');
+  var text = document.createTextNode("Asinha de Frango: " + item.val().alimento + "x");
+
+
+  document.getElementById('tableAdm').appendChild(tr);
+  tr.appendChild(th);
+  tr.appendChild(td);
+  tr.appendChild(td1);
+  th.appendChild(input);
+  td.appendChild(p);
+  th.setAttribute("scope", "row");
+
+  input.setAttribute("type", "checkbox");
+  input.setAttribute("onclick", "check_tb(this.value)");
+
+  tr.setAttribute("class", "trClass");
+
+
+  var trId = document.getElementsByClassName("trClass");
+    for (var i = 0; i < trId.length; i++) {
+      trId[i].id = "tr" + (i + 1);
+  }
+
+  input.setAttribute("class", "inputClass");
+  var inputId = document.getElementsByClassName("inputClass");
+    for (var i = 0; i < trId.length; i++) {
+      inputId[i].id = "checkb" + (i + 1);
+  }
+
+  td.setAttribute("colspan", "2");
+  p.appendChild(text);
+
+  input.setAttribute("name", "number");
+
+  $("input[name='number']").each(function(ind) {
+   $(this).val(ind + 1);
+  });
+      
+
     });
   });
-
-
-
-  function process(quantPet1){
-    var value = parseInt(document.getElementById("quantPet1").value);
-    value += quantPet1;
-    if(value < 1){
-      document.getElementById("quantPet1").value = 0;
-    }else{
-    document.getElementById("quantPet1").value = value;
-    }
-  }
