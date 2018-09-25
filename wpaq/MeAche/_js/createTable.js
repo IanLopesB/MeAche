@@ -11,7 +11,9 @@ firebase.database().ref('alimentos').on('value', function (snapshot) {
   var text = document.createTextNode("Asinha de Frango: " + item.val().alimento + "x");
 
 
-  document.getElementById('tableAdm').appendChild(tr);
+  var trbody = document.getElementById('tableAdm');
+
+  trbody.appendChild(tr);
   tr.appendChild(th);
   tr.appendChild(td);
   tr.appendChild(td1);
