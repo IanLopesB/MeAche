@@ -1,8 +1,8 @@
 
 .body {
   width: 100%;
-  background-color: #94618E;
    font-family: Segoe UI;
+   background-color: white;
 }
 
 
@@ -11,7 +11,7 @@
 }
 
 .Cor{
-  text-decoration-color: black;
+  text-decoration-color:red;
   color: white;
   font-size: 20px;
   font-family: Segoe UI;
@@ -21,6 +21,7 @@
   width: 100%;
   height: 10%;
 }
+
 
 .menu {
    display: none;
@@ -56,7 +57,7 @@
 
 #subtotal {
   height: 10%;
-    background-color: #49274A;
+    background-color: darkmagenta;
 }
 
 
@@ -75,6 +76,7 @@
 @media only screen and (min-height: 700px) {
   #img-logo {
     width: 13%;
+
   }
 }
 
@@ -100,14 +102,20 @@
   border-top-left-radius: 9px;
   border-bottom-left-radius: 9px;
   font-size: 18px;
+  background-color: darkmagenta;
   font-family: Segoe UI;
   
+}
+
+#categorias2 {
+  background-color: darkmagenta;
 }
 
 #categorias3 {
  border-top-right-radius: 9px;
  border-bottom-right-radius: 9px;
  font-size: 18px;
+ background-color: darkmagenta;
  font-family: Segoe UI;
 }
 
@@ -261,7 +269,9 @@ border: none;
 #quantidade {
   width: 100%;
   font-size: 18px;
+  color: black;
 }
+
 
 #nome-requisicao {
  display: block;
@@ -317,7 +327,11 @@ input[type=text]{outline:none}
 input[type=button]{outline:none}
 textarea {outline: none;resize: none;}
 
+#descricao{
+  color: black;
+}
 
-
-
+#requisicao{
+  color: black;
+}
 
