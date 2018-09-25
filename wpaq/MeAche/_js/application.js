@@ -8,7 +8,7 @@
   function create(alimento) {
 
     var data = {
-      alimento: alimento  
+      alimento: alimento
     };
     return firebase.database().ref().child('alimentos').push(data);
   }
@@ -21,6 +21,25 @@
       alimentsList.appendChild(td);
     });
   });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
