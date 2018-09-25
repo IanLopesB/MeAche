@@ -1,4 +1,3 @@
-  var alimentsList = document.getElementById('alimentsList');
   var asinha = document.getElementById('quantPet1');
 
   function  pegarValue () {
@@ -6,24 +5,16 @@
   };
 
   function create(alimento) {
-
     var data = {
       alimento: alimento
     };
     return firebase.database().ref().child('alimentos').push(data);
   }
 
-  firebase.database().ref('alimentos').on('value', function (snapshot) {
-    alimentsList.innerHTML = '';
-    snapshot.forEach(function (item) {
-      var td = document.createElement('td');
-      td.appendChild(document.createTextNode("Asinha de Frango: " + item.val().alimento));
-      alimentsList.appendChild(td);
-    });
-  });
 
+      
 
-
+<<<<<<< HEAD
 
 
 
@@ -52,3 +43,6 @@
     document.getElementById("quantPet1").value = value;
     }
   }
+=======
+  
+>>>>>>> refs/remotes/origin/master
