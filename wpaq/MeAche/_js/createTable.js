@@ -12,7 +12,9 @@ firebase.database().ref('alimentos').on('value', function (snapshot) {
   var text = document.createTextNode("Camarão Alho e Óleo:  " + item.val().cao + "x");
 
 
-  document.getElementById('tableAdm').appendChild(tr);
+  var trbody = document.getElementById('tableAdm');
+
+  trbody.appendChild(tr);
   tr.appendChild(th);
   tr.appendChild(td);
   tr.appendChild(td1);
