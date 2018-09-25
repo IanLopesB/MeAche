@@ -1,48 +1,14 @@
   var asinha = document.getElementById('quantPet1');
+    var cao = document.getElementById('quantPet2');
 
   function  pegarValue () {
-    create(asinha.value);
+    create(asinha.value, cao.value);
   };
 
-  function create(alimento) {
+  function create(asinha, cao) {
     var data = {
-      alimento: alimento
+      Asinha_de_frango: asinha,
+      Camarao_Alho_Oleo: cao
     };
-    return firebase.database().ref().child('alimentos').push(data);
+    return firebase.database().ref().child('pedidos').push(data);
   }
-
-
-      
-
-<<<<<<< HEAD
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  function process(quantPet1){
-    var value = parseInt(document.getElementById("quantPet1").value);
-    value += quantPet1;
-    if(value < 1){
-      document.getElementById("quantPet1").value = 0;
-    }else{
-    document.getElementById("quantPet1").value = value;
-    }
-  }
-=======
-  
->>>>>>> refs/remotes/origin/master

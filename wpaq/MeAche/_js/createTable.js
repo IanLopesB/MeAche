@@ -1,6 +1,6 @@
-firebase.database().ref('alimentos').on('value', function (snapshot) { 
-    
-  snapshot.forEach(function (item) { 
+firebase.database().ref('alimentos').on('value', function (snapshot) {
+
+  snapshot.forEach(function (item) {
 
   var tr = document.createElement('tr');
   var th = document.createElement('th');
@@ -8,7 +8,8 @@ firebase.database().ref('alimentos').on('value', function (snapshot) {
   var td = document.createElement('td');
   var td1 = document.createElement('td');
   var p = document.createElement('p');
-  var text = document.createTextNode("Asinha de Frango: " + item.val().alimento + "x");
+  var text = document.createTextNode("Asinha de Frango: " + item.val().asinha + "x");
+  var text = document.createTextNode("Camarão Alho e Óleo:  " + item.val().cao + "x");
 
 
   document.getElementById('tableAdm').appendChild(tr);
@@ -45,8 +46,6 @@ firebase.database().ref('alimentos').on('value', function (snapshot) {
    $(this).val(ind + 1);
   });
 
-  
   });
 
 });
-
