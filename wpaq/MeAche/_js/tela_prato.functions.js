@@ -59,11 +59,27 @@ function process6(quantPet6){
 }
 
 function mandardados(){
-var text = document.getElementById('quantPet2').value;
-var qtd = document.getElementById('qtd2');
-qtd.innerText = text;
+var value = document.getElementById('quantPet2').value;
+
+var trbody = document.getElementById('tablePedidos');
+
+var th = document.createElement('th')
+th.setAttribute("scope", "row");
+th.setAttribute("id", "qtd2");
+
+
+var td = document.createElement('td');
+td.setAttribute("id", "petisco_2");
+
+trbody.appendChild(th);
+trbody.appendChild(td);
+
+
+var td = document.getElementById("qtd2");
+td.innerText = value;
+
 
 var camarao = document.getElementById('camarao').firstChild.innerHTML;
-document.getElementById('Pedido2').innerHTML = camarao;
+document.getElementById('petisco_2').innerHTML = camarao;
 
 }

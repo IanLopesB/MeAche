@@ -200,37 +200,8 @@
                 <th scope="col">Preço</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <th scope="row" id="qtd1"></th>
-                <td id="Pedido1"></td>
-                <td>R$: 5,00</td>
-              </tr>
-              <tr>
-                <th scope="row" id="qtd2"></th>
-                <td id="Pedido2"></td>
-                <td>R$: 10,00</td>
-              </tr>
-              <tr>
-                <th scope="row" id="qtd3"></th>
-                <td id="Pedido3"></td>
-                <td>R$: 10,00</td>
-              </tr>
-              <tr>
-                <th scope="row" id="qtd4"></th>
-                <td id="Pedido4"></td>
-                <td>R$: 10,00</td>
-              </tr>
-              <tr>
-                <th scope="row" id="qtd5"></th>
-                <td id="Pedido5"></td>
-                <td>R$: 10,00</td>
-              </tr>
-              <tr>
-                <th scope="row" id="qtd6"></th>
-                <td id="Pedido6"></td>
-                <td>R$: 10,00</td>
-              </tr>
+            <tbody id="tablePedidos">
+          
             </tbody>
           </table>
         </div>
@@ -329,24 +300,22 @@
         </div>
       </div>
 
-      <br>
-      <br>
+      <br><br>
 
        <div id="quantidade" class="animate">
           <div data-app="product.quantity" id="quantidade">
              <label>Quantidade:</label>
              <input type="button" id="menos" value='-' onclick="process(-1)"/>
              <input id="quantPet1" name="quantPet1" class="text w3-center" size="1" type="text" value="0" maxlength="2" />
-             <input type="button" id="mais" class="" value='+' onclick="process(1)"/>
+             <input type="button" id="mais" class="" value='+' onclick="process2(1)"/>
           </div>
 
           <br>
           <br>
 
           <div id="botao-adicionar" class="animate">
-            <button type="submit" id="addButton" class="w3-button w3-black" onclick="fecharPrato1();">Adicionar</button>
+            <button type="submit" id="addButton" class="w3-button w3-black" onclick="fecharPrato(); mandardados();">Adicionar</button>
           </div>
-
           <br>
           <br>
           <br>

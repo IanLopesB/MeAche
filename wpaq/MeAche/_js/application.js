@@ -1,5 +1,5 @@
   var asinha = document.getElementById('quantPet1');
-    var camarao = document.getElementById('quantPet2');
+  var camarao = document.getElementById('quantPet2');
 
   function  pegarValue () {
     create(asinha.value, camarao.value);
