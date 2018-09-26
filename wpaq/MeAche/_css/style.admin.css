@@ -11,6 +11,7 @@ img {
 
 td p{
   max-width: 15ch;
+  max-height: 2.5ch;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -20,6 +21,7 @@ td p{
 
 td p:hover {
   white-space: normal;
+  max-height: none;
 }
 
 /* style hr */
