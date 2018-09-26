@@ -17,6 +17,10 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
 
   var trbody = document.getElementById('tableAdm');
 
+  if (item.val().Asinha_de_frango == 0){
+    p.appendChild(space);
+  }
+
   trbody.appendChild(tr);
   tr.appendChild(th);
   tr.appendChild(td_pedidos);

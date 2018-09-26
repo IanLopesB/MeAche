@@ -60,10 +60,10 @@ function process6(quantPet6){
 
 function mandardados(){
 var text = document.getElementById('quantPet2').value;
-var qtd = document.getElementById('qtd');
+var qtd = document.getElementById('qtd2');
 qtd.innerText = text;
 
-var asinha = document.getElementById('camarao').firstChild.innerHTML;
-document.getElementById('Pedido1').innerHTML = asinha;
+var camarao = document.getElementById('camarao').firstChild.innerHTML;
+document.getElementById('Pedido2').innerHTML = camarao;
 
 }
