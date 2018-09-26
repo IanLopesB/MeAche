@@ -12,12 +12,11 @@
   <link rel="stylesheet" type="text/css" href="_css/bootstrap.min.css">
 
   <!-- Custom style CSS -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" type="text/css" href="_css/style.user.css">
   <link rel="stylesheet" href="_css/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="_css/icon.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
   <!-- Load the Firebase library before loading the body. -->
   <script src="_js/firebase.js"></script>
@@ -28,14 +27,13 @@
   <script src="_js/bootstrap.min.js"></script>
 </head>
 
-<body class="body">
-
+<body >
 <br>
 
   <div id="logo" class="w3-center">
     <img id="img-logo" class="img-fluid w3-center" src="http://pluspng.com/img-png/beats-electronics-logo-vector-png-beats-electronics-logo-png-828.png" >
   </div>
-  <hr id="barra">
+  <hr  id="barra" >
  
  <div class="w3-container">  
 
@@ -59,7 +57,7 @@
       </li>
       <li class="w3-text-black pratos">
         <span>Carne de Sol C/ Macaxeira</span><br> 
-        <span class="w3-tag w3-round w3-dark-grey span">R$ 20,00</span>
+        <span class="w3-tag w3-dark-grey span">R$ 20,00</span>
       </li>
       <li class="w3-text-black pratos">
         <span>Torresmo</span><br> 
@@ -79,41 +77,109 @@
   </a>
   <div id="Espetos" class="menu">
    <ul id="collapseEsp" class="collapse in show w3-ul w3-xlarge">
-      <li class="w3-text-black pratos" onclick="mostrarPrato1()">
-        <span class="">Boi</span><br>
-        <span class=" w3-tag  w3-round w3-large w3-dark-grey">R$ 10,0</span>
+      <li class="w3-text-black" onclick="mostrarPrato1()">
+        <span class="pratos">Feijão</span>
+        <span class="w3-right w3-tag  w3-round w3-large w3-dark-grey">R$ 10,0</span>
       </li>
-      <li class="w3-text-black pratos">
-        <span>Franbacon</span><br>
-        <span class=" w3-tag w3-round w3-large w3-dark-grey">R$ 5,00</span>
+      <li class="w3-text-black">
+        <span>Batata</span>
+        <span class=" w3-right w3-tag w3-round w3-large w3-dark-grey">R$ 5,00</span>
       </li>
-      <li class="w3-text-black pratos">
-        <span>Frango</span><br>
-        <span class=" w3-tag w3-round w3-large w3-dark-grey">R$ 7,00</span>
+      <li class="w3-text-black">
+        <span>Adam</span>
+        <span class="w3-right w3-tag w3-round w3-large w3-dark-grey">R$ 7,00</span>
       </li>
-      <li class="w3-text-black pratos">
-        <span>Coração de Frango</span><br> 
-        <span class=" w3-tag  w3-round w3-large w3-dark-grey">R$ 10,0</span>
+      <li class="w3-text-black">
+        <span>Jill</span> 
+        <span class=" w3-right w3-tag  w3-round w3-large w3-dark-grey">R$ 10,0</span>
       </li>
-      <li class="w3-text-black pratos">
-        <span>Porco</span><br> 
-        <span class=" w3-tag w3-round w3-large w3-dark-grey">R$ 5,00 </span>
+      <li class="w3-text-black">
+        <span>Eve</span> 
+        <span class=" w3-right w3-tag w3-round w3-large w3-dark-grey">R$ 5,00 </span>
       </li>
-      
+      <li class="w3-text-black">
+        <span>Adam</span> 
+        <span class=" w3-right w3-tag  w3-round w3-large w3-dark-grey">R$ 7,00</span>
+      </li>  
+   </ul>
+  </div>
+
+  <a class="w3-row w3-center" data-toggle="collapse" data-target="#collapseRef">
+    <div class="w3-col tablink w3-padding-large w3-red w3-border">
+      <h4 class="menuTitle">Refrigerantes</h4>
+    </div>
+  </a>
+  <div id="Refrigerantes" class="menu">
+   <ul id="collapseRef" class="collapse in show w3-ul w3-xlarge">
+      <li class="w3-text-black" onclick="mostrarPrato1()">
+        <span class="pratos">A</span>
+        <span class="w3-right w3-tag  w3-round w3-large w3-dark-grey">R$ 10,0</span>
+      </li>
+      <li class="w3-text-black">
+        <span>B</span>
+        <span class=" w3-right w3-tag w3-round w3-large w3-dark-grey">R$ 5,00</span>
+      </li>
+      <li class="w3-text-black">
+        <span>C</span>
+        <span class=" w3-right w3-tag  w3-round w3-large w3-dark-grey">R$ 17,00</span>
+      </li>
+      <li class="w3-text-black">
+        <span>D</span> 
+        <span class=" w3-right w3-tag  w3-round w3-large w3-dark-grey">R$ 100,0</span>
+      </li>
+      <li class="w3-text-black">
+        <span>E</span> 
+        <span class=" w3-right w3-tag w3-round w3-large w3-dark-grey">R$ 5,00 </span>
+      </li>
+      <li class="w3-text-black">
+        <span>F</span> 
+        <span class=" w3-right w3-tag  w3-round w3-large w3-dark-grey">R$ 7,00</span>
+      </li>  
+   </ul>
+  </div>
+
+  <a class="w3-row w3-center" data-toggle="collapse" data-target="#collapseCer">
+    <div class="w3-col tablink w3-padding-large w3-red w3-border">
+      <h4 class="menuTitle">Cervejas</h4>
+    </div>
+  </a>
+  <div id="Cervejas" class="menu">
+   <ul id="collapseCer" class="collapse show in w3-ul w3-xlarge">
+      <li class="w3-text-black" onclick="mostrarPrato1()">
+        <span class="pratos">A</span>
+        <span class="w3-right w3-tag  w3-round w3-large w3-dark-grey">R$ 10,0</span>
+      </li>
+      <li class="w3-text-black">
+        <span>B</span>
+        <span class=" w3-right w3-tag w3-round w3-large w3-dark-grey">R$ 5,00</span>
+      </li>
+      <li class="w3-text-black">
+        <span>C</span>
+        <span class=" w3-right w3-tag  w3-round w3-large w3-dark-grey">R$ 17,00</span>
+      </li>
+      <li class="w3-text-black">
+        <span>D</span> 
+        <span class=" w3-right w3-tag  w3-round w3-large w3-dark-grey">R$ 100,0</span>
+      </li>
+      <li class="w3-text-black">
+        <span>E</span> 
+        <span class=" w3-right w3-tag w3-round w3-large w3-dark-grey">R$ 5,00 </span>
+      </li>
+      <li class="w3-text-black">
+        <span>F</span> 
+        <span class=" w3-right w3-tag  w3-round w3-large w3-dark-grey">R$ 7,00</span>
+      </li>  
    </ul>
   </div>
 </div>
-  <br>
-  <br>
-  <br>
+
 
   <div id="subtotal" class="footer w3-center w3-hover-opacity-off w3-dark-grey" onclick="mostrarSubtotal()">
-    <h3 class="w3-center w3-text-white"> <i class="glyphicon glyphicon-shopping-cart w3-text-white"></i>
-      <span>Subtotal: R$</span>
-    </h3>
-    <br>
+    <h2 class="w3-center"><b> 
+      <i class="glyphicon glyphicon-shopping-cart"></i>
+      <span>Subtotal:</span>
+    </h2></b>
   </div>
- 
  
   <div id="id01" class="fundo-span">
     <div class="fundo-span-conteudo animate">
@@ -219,22 +285,22 @@
        </span>
     </div>
     <div id="nome-prato" class="w3-container w3-text-white">
-      <h2 class="animate"><b><label for="qunatA">Asinha de Frango</label></b></h2>
+      <h3 class="animate"><b><label for="qunatA">Asinha de Frango</label></b></h3>
     </div>
 
     <br>
 
     <div id="textos" class="w3-container">
       <div id="descricao">
-        <h4>Descrição do prato ..........................................................................
-        </h4>
+        <h5>Descrição do prato ..........................................................................
+        </h5>
       </div>
 
       <br>
 
       <div id="requisicao">
         <div id="nome-requisicao" class="animate" onclick="mostrarInputReq()" >
-          <h5><i class="fa fa-plus"></i> Observações do Cliente</h5>
+          <h5><i class="fa fa-plus"></i>Observações do Cliente</h5>
         </div>
         <div id="input-requisiçoes" class="input-group animate">
           <textarea id="input-req-real" type="" class="form-control" placeholder="Observações"  rows="1"> 
@@ -277,8 +343,11 @@
 
   <!-- Connection Firebase JS --> 
   <script type="text/javascript" src="_js/connection.firebase.js"></script>
+  <script type="text/javascript" src="_js/application.js"></script>
 
-  <!-- Functions JS -->
+  <!-- Functions JS --> 
+  <script type="text/javascript" src="_js/createTable.js"></script>
+  <script type="text/javascript" src="_js/checkbox.js"></script>
   <script type="text/javascript" src="_js/user.functions.js"></script>
 
 </html> 

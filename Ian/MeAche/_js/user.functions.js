@@ -8,6 +8,16 @@ function mostrarSubtotal() {
        }
    }
 
+function process(quantPet1){
+  var value = parseInt(document.getElementById("quantPet1").value);
+  value += quantPet1;
+  if(value < 1){
+    document.getElementById("quantPet1").value = 0;
+  }else{
+  document.getElementById("quantPet1").value = value;
+  }
+}
+
 function mostrarPrato1() {
   var x = document.getElementById("prato1");
     if (x.style.display === "none") {
@@ -72,17 +82,6 @@ var x = document.getElementById("prato1");
         x.className = "topnav";
     }
 }
-
-
-function process(quantPet1){
-    var value = parseInt(document.getElementById("quantPet1").value);
-    value+=quantPet1;
-    if(value < 1){
-      document.getElementById("quantPet1").value = 0;
-    }else{
-    document.getElementById("quantPet1").value = value;
-    }
-  }
 
 
 function openMenu(evt, menuName) {
