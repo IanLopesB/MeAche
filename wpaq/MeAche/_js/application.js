@@ -1,14 +1,14 @@
   var asinha = document.getElementById('quantPet1');
-    var cao = document.getElementById('quantPet2');
+    var camarao = document.getElementById('quantPet2');
 
   function  pegarValue () {
-    create(asinha.value, cao.value);
+    create(asinha.value, camarao.value);
   };
 
-  function create(asinha, cao) {
+  function create(asinha, camarao) {
     var data = {
       Asinha_de_frango: asinha,
-      Camarao_Alho_Oleo: cao
+      Camarao_Alho_Oleo: camarao
     };
     return firebase.database().ref().child('pedidos').push(data);
   }

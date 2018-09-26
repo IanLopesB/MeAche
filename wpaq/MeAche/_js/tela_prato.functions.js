@@ -18,12 +18,52 @@ function process2(quantPet2){
   }
 }
 
+function process3(quantPet3){
+  var value = parseInt(document.getElementById("quantPet3").value);
+  value += quantPet3;
+  if(value < 1){
+    document.getElementById("quantPet3").value = 0;
+  }else{
+  document.getElementById("quantPet3").value = value;
+  }
+}
+
+function process4(quantPet4){
+  var value = parseInt(document.getElementById("quantPet2").value);
+  value += quantPet4;
+  if(value < 1){
+    document.getElementById("quantPet4").value = 0;
+  }else{
+  document.getElementById("quantPet4").value = value;
+  }
+}
+
+function process5(quantPet5){
+  var value = parseInt(document.getElementById("quantPet5").value);
+  value += quantPet5;
+  if(value < 1){
+    document.getElementById("quantPet5").value = 0;
+  }else{
+  document.getElementById("quantPet5").value = value;
+  }
+}
+
+function process6(quantPet6){
+  var value = parseInt(document.getElementById("quantPet6").value);
+  value += quantPet6;
+  if(value < 1){
+    document.getElementById("quantPet6").value = 0;
+  }else{
+  document.getElementById("quantPet6").value = value;
+  }
+}
+
 function mandardados(){
 var text = document.getElementById('quantPet2').value;
-var qt = document.getElementById('quantPrat');
-qt.innerText = text;
+var qtd = document.getElementById('qtd');
+qtd.innerText = text;
 
-var text1 = document.getElementById('camarao').firstChild.innerHTML;
-document.getElementById('attPedido').innerHTML = text1;
+var asinha = document.getElementById('camarao').firstChild.innerHTML;
+document.getElementById('Pedido1').innerHTML = asinha;
 
 }
