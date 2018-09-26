@@ -10,7 +10,7 @@ img {
 }
 
 td p{
-  max-width: 10ch;
+  max-width: 15ch;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

@@ -1,4 +1,4 @@
-firebase.database().ref('alimentos').on('value', function (snapshot) {
+firebase.database().ref('pedidos').on('value', function (snapshot) {
 
   snapshot.forEach(function (item) {
 
@@ -8,8 +8,9 @@ firebase.database().ref('alimentos').on('value', function (snapshot) {
   var td = document.createElement('td');
   var td1 = document.createElement('td');
   var p = document.createElement('p');
-  var text = document.createTextNode("Asinha de Frango: " + item.val().asinha + "x");
-  var text = document.createTextNode("Camarão Alho e Óleo:  " + item.val().cao + "x");
+  var br = document.createElement('br');
+  var text = document.createTextNode("Asinha de Frango: " + item.val().Asinha_de_frango + "x");
+  var text1 = document.createTextNode("Camarão Alho e Óleo:  " + item.val().Camarao_Alho_Oleo + "x");
 
 
   var trbody = document.getElementById('tableAdm');
@@ -40,7 +41,8 @@ firebase.database().ref('alimentos').on('value', function (snapshot) {
   }
 
   td.setAttribute("colspan", "2");
-  p.appendChild(text);
+  p.appendChild(text).innerHTML = "<br>";
+  p.appendChild(text1);
 
   input.setAttribute("name", "number");
 
