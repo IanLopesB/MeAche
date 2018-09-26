@@ -23,7 +23,7 @@ var text = document.getElementById('quantPet2').value;
 var qt = document.getElementById('quantPrat');
 qt.innerText = text;
 
-var text1 = document.getElementById('camarao').value;
-var qt1 = document.getElementById('attPedido');
-qt1.innerText = text1;
+var text1 = document.getElementById('camarao').firstChild.innerHTML;
+document.getElementById('attPedido').innerHTML = text1;
+
 }
