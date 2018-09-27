@@ -58,6 +58,8 @@ function process6(quantPet6){
   }
 }
 
+
+
 function mandardados(){
 
 var value = document.getElementById('quantPet2').value;

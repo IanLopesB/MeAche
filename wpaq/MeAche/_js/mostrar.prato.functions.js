@@ -1,4 +1,4 @@
-//Prato 01
+  //Prato 01
 function mostrarPrato1() {
   var x = document.getElementById("prato1");
     if (x.style.display === "none") {
@@ -18,7 +18,7 @@ var x = document.getElementById("prato1");
 
    }
 
-   //Prato 02
+  //Prato 02
 function mostrarPrato2() {
   var x = document.getElementById("prato2");
     if (x.style.display === "none") {
@@ -38,7 +38,7 @@ var x = document.getElementById("prato2");
 
    }
 
-   //Prato 03
+  //Prato 03
 function mostrarPrato3() {
   var x = document.getElementById("prato3");
     if (x.style.display === "none") {
@@ -58,7 +58,7 @@ var x = document.getElementById("prato3");
 
    }
 
-   //Prato 04
+  //Prato 04
 function mostrarPrato4() {
   var x = document.getElementById("prato4");
     if (x.style.display === "none") {
