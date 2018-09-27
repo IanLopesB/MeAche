@@ -59,7 +59,7 @@ function process6(quantPet6){
 }
 
 function mandardados(){
-<<<<<<< HEAD:wpaq/MeAche/_js/tela_prato.functions.js
+
 var value = document.getElementById('quantPet2').value;
 
 var trbody = document.getElementById('tablePedidos');
@@ -78,17 +78,4 @@ trbody.appendChild(td);
 
 var td = document.getElementById("qtd2");
 td.innerText = value;
-
-
-var camarao = document.getElementById('camarao').firstChild.innerHTML;
-document.getElementById('petisco_2').innerHTML = camarao;
-=======
-var text = document.getElementById('quantPet2').value;
-var qtd = document.getElementById('qtd');
-qtd.innerText = text;
-
-var asinha = document.getElementById('camarao').firstChild.innerHTML;
-document.getElementById('Pedido1').innerHTML = asinha;
->>>>>>> a1cc9526e44002dafe776022c8b28175b675bd83:wpaq/MeAche/_js/tela.prato.functions.js
-
 }
