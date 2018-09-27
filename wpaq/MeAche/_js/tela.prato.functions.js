@@ -66,7 +66,7 @@ var trbody = document.getElementById('tablePedidos');
 
 var th = document.createElement('th')
 th.setAttribute("scope", "row");
-th.setAttribute("id", "qtd2");
+th.setAttribute("id", "qtd");
 
 
 var td = document.createElement('td');
@@ -76,6 +76,10 @@ trbody.appendChild(th);
 trbody.appendChild(td);
 
 
-var td = document.getElementById("qtd2");
-td.innerText = value;
+var td = document.getElementById("qtd");
+var camarao = document.getElementById('camarao').firstChild.innerHTML;
+
+document.getElementById('qtd').innerText = value;
+td.innerHTML = camarao;
+
 }
