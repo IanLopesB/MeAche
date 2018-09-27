@@ -11,15 +11,11 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
 
   var linebreak = document.createElement('br');
   var space = document.createTextNode('');
-
-  var petiscos_1 = document.createTextNode(item.val().Asinha_de_frango + "x" + " Asinha de Frango" );
-  var petiscos_2 = document.createTextNode(item.val().Camarao_Alho_Oleo + "x" + "Camarão Alho e Óleo");
+  
+  var petiscos_1 = document.createTextNode(item.val().Asinha_de_frango + "x" + " Asinha de Frango" ); 
+  var petiscos_2 = document.createTextNode(item.val().Camarao_Alho_Oleo + "x" + "Camarão Alho e Óleo" );
 
   var trbody = document.getElementById('tableAdm');
-
-  if (item.val().Asinha_de_frango == 0){
-    p.appendChild(space);
-  }
 
   trbody.appendChild(tr);
   tr.appendChild(th);
