@@ -79,3 +79,4 @@ trbody.appendChild(td);
 var td = document.getElementById("qtd2");
 td.innerText = value;
 }
+s
