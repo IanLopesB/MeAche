@@ -58,6 +58,7 @@ function process6(quantPet6){
   }
 }
 
+<<<<<<< HEAD
 
 
 function mandardados(){
@@ -85,3 +86,5 @@ document.getElementById('qtd').innerText = value;
 td.innerHTML = camarao;
 
 }
+=======
+>>>>>>> 68ae486fc422eea73f66904300977edabf3a6f08

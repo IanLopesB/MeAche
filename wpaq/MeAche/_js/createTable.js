@@ -11,9 +11,9 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
 
   var linebreak = document.createElement('br');
   var space = document.createTextNode('');
-  
-  var petiscos_1 = document.createTextNode(item.val().Asinha_de_frango + "x" + " Asinha de Frango" ); 
-  var petiscos_2 = document.createTextNode("Camarão Alho e Óleo:  " + item.val().Camarao_Alho_Oleo + "x");
+
+  var petiscos_1 = document.createTextNode(item.val().Asinha_de_frango + "x" + " Asinha de Frango" );
+  var petiscos_2 = document.createTextNode(item.val().Camarao_Alho_Oleo + "x" + "Camarão Alho e Óleo");
 
   var trbody = document.getElementById('tableAdm');
 
