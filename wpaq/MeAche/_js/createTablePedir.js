@@ -24,6 +24,6 @@ qtd.innerText = value1;
 var asinha = document.getElementById('asinha').firstChild.innerHTML;
 document.getElementById('petisco_1.1').innerHTML = asinha;
 
-value1.style.textAlign="center";
-asinha.style.textAlign="center";
+td_Qtd1.style.textAlign="center";
+td_nameQtd1.style.textAlign="center";
 }
