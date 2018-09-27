@@ -9,19 +9,20 @@ img {
     border: 0;
 }
 
-td p{
+#ulAdmin {
   max-width: 15ch;
   max-height: 2.5ch;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  text-align: center;
-  margin-bottom:  1%; 
+  text-align: left;
+  margin-top: -16px;
+  margin-bottom: 5px;
 }
-
-td p:hover {
+#ulAdmin:hover {
   white-space: normal;
   max-height: none;
+  max-width: none;
 }
 
 /* style hr */
@@ -36,12 +37,8 @@ td p:hover {
 .titleP {
   font-size: 17px;
   font-variant: small-caps;
-  text-align: center;
 }
 
-.tdN{
-text-align: center;
-}
 
 @media (min-width: 320px) {
   #img-logo {
