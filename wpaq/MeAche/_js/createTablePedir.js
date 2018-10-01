@@ -130,7 +130,7 @@ qtd4.innerText = value4;
 var carneSol= document.getElementById('carneSol').firstChild.innerHTML;
 document.getElementById('petisco_4.4').innerHTML = carneSol;
 
-var  preco4 = document.getElementById('preco4').innerHTML;
+var preco4 = document.getElementById('preco4').innerHTML;
 document.getElementById('petisco_4.4.4').innerHTML = preco4;
 
 td_Qtd4.style.textAlign="center";
