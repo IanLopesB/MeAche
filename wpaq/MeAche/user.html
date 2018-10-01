@@ -44,26 +44,26 @@
    <ul  id="collapsePet" class="collapse in show w3-ul w3-xlarge">
       <li class="w3-text-black pratos" onclick="mostrarPrato1()">
         <span>Asinha de Frango</span><br>
-        <span class="w3-tag w3-round w3-large w3-dark-grey" id="preco1" value="13,5">R$ 13,50</span>
+        <span class="w3-tag w3-round w3-large w3-dark-grey">R$ 13,00</span>
       </li>
       <li class="w3-text-black pratos" onclick="mostrarPrato2()" >
         <span id="cam">Camarão Alho e Óleo</span><br>
-        <span class="w3-tag w3-round w3-large w3-dark-grey"  id="preco2" value="25,5">R$ 25,50</span><br>
+        <span class="w3-tag w3-round w3-large w3-dark-grey">R$ 25,00</span><br>
       <li class="w3-text-black pratos" onclick="mostrarPrato3()">
         <span>Calabresa com Fritas</span><br>
-        <span class="w3-tag w3-round w3-large w3-dark-grey"  id="preco3" value="15">R$ 15,00</span>
+        <span class="w3-tag w3-round w3-large w3-dark-grey">R$ 15,00</span>
       </li>
       <li class="w3-text-black pratos" onclick="mostrarPrato4()">
         <span>Carne de Sol C/ Macaxeira</span><br>
-        <span class="w3-tag w3-round w3-large w3-dark-grey"  id="preco4" value="20">R$ 20,00</span>
+        <span class="w3-tag w3-dark-grey span">R$ 20,00</span>
       </li>
       <li class="w3-text-black pratos"onclick="mostrarPrato5()">
         <span>Torresmo</span><br>
-        <span class="w3-tag w3-round w3-large w3-dark-grey"  id="preco5" value="10">R$ 10,00 </span>
+        <span class="w3-tag w3-round w3-large w3-dark-grey">R$ 10,00 </span>
       </li>
       <li class="w3-text-black pratos"onclick="mostrarPrato6()">
         <span>Batata Frita (C/ Sheddar)</span><br>
-        <span class="w3-tag w3-round w3-large w3-dark-grey"  id="preco6" value="10">R$ 10,00</span>
+        <span class="w3-tag w3-round w3-large w3-dark-grey">R$ 10,00</span>
       </li>
    </ul>
   </div>
@@ -75,7 +75,7 @@
   </a>
   <div id="Espetos" class="menu">
    <ul id="collapseEsp" class="collapse in show w3-ul w3-xlarge">
-      <li class="w3-text-black" onclick="mostrarPrato()">
+      <li class="w3-text-black" onclick="mostrarPrato1()">
         <span class="pratos">Feijão</span>
         <span class="w3-right w3-tag  w3-round w3-large w3-dark-grey">R$ 10,0</span>
       </li>
@@ -109,7 +109,7 @@
   </a>
   <div id="Refrigerantes" class="menu">
    <ul id="collapseRef" class="collapse in show w3-ul w3-xlarge">
-      <li class="w3-text-black" onclick="mostrarPrato()">
+      <li class="w3-text-black" onclick="mostrarPrato1()">
         <span class="pratos">A</span>
         <span class="w3-right w3-tag  w3-round w3-large w3-dark-grey">R$ 10,0</span>
       </li>
@@ -143,7 +143,7 @@
   </a>
   <div id="Cervejas" class="menu">
    <ul id="collapseCer" class="collapse show in w3-ul w3-xlarge">
-      <li class="w3-text-black" onclick="mostrarPrato()">
+      <li class="w3-text-black" onclick="mostrarPrato1()">
         <span class="pratos">A</span>
         <span class="w3-right w3-tag  w3-round w3-large w3-dark-grey">R$ 10,0</span>
       </li>
@@ -173,7 +173,7 @@
   <div id="subtotal" class="footer w3-center w3-hover-opacity-off w3-dark-grey" onclick="mostrarSubtotal()">
     <h3 class="w3-center">
       <i class="glyphicon glyphicon-shopping-cart"></i>
-      <span>Total: R$</span>
+      <span>Subtotal: R$</span>
     </h3>
   </div>
 </div>
@@ -270,13 +270,9 @@
           <br>
 
           <div id="botao-adicionar" class="animate">
-<<<<<<< HEAD
-            <button type="submit" id="addButton" class="w3-button w3-black" onclick="mandardados1(this.value); fecharPrato1();">Adicionar</button>
-=======
             <button type="submit" id="addButton" class="w3-button w3-black" onclick="fecharPrato1(); mandardados1();">
               Adicionar
             </button>
->>>>>>> 2bfc7a4e2fcebcc151fe7157a30fff3b2b42c544
           </div>
           <br>
           <br>
@@ -301,7 +297,7 @@
 
     <div id="textos" class="w3-container">
       <div id="descricao">
-        <h5>Descrição do prato .....................................
+        <h5>Descrição do prato ..........................................................................
         </h5>
       </div>
 

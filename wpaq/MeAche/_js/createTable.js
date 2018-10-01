@@ -18,6 +18,7 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
   var li6 = document.createElement('li');
 
   var p = document.createElement('p');
+  var space = document.createTextNode('');
 
   ul.setAttribute("id", "ulAdmin");
 
@@ -68,12 +69,55 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
 
   td_pedidos.setAttribute("colspan", "2");
 
-  li1.appendChild(petiscos_1);  
-  li2.appendChild(petiscos_2);
-  li3.appendChild(petiscos_3);
-  li4.appendChild(petiscos_4);
-  li5.appendChild(petiscos_5);
-  li6.appendChild(petiscos_6); 
+  // If Value == 0 Firebase
+  // Petiscos
+  if (item.val().Asinha_de_frango == 0){
+    delete petiscos_1;
+    delete li1;
+    li1.style.listStyle = "none";
+  }else {
+    li1.appendChild(petiscos_1);
+  }
+
+  if (item.val().Camarao_Alho_Oleo == 0){
+    delete petiscos_2;
+    delete li2;
+    li2.style.listStyle = "none";
+  }else {
+    li2.appendChild(petiscos_2);
+  }
+
+  if (item.val().Calabresa == 0){
+    delete petiscos_3;
+    delete li3;
+    li3.style.listStyle = "none";
+  }else {
+    li3.appendChild(petiscos_3);
+  }
+
+  if (item.val().Carne_de_Sol == 0){
+    delete petiscos_4;
+    delete li4;
+    li4.style.listStyle = "none";
+  }else {
+    li4.appendChild(petiscos_4);
+  } 
+
+  if (item.val().Torresmo == 0){
+    delete petiscos_5;
+    delete li5;
+    li5.style.listStyle = "none";
+  }else {
+    li5.appendChild(petiscos_5);
+  } 
+
+  if (item.val().Batata_Frita == 0){
+    delete petiscos_6;
+    delete li6;
+    li6.style.listStyle = "none";
+  }else {
+    li6.appendChild(petiscos_6);
+  }   
 
 
   input_checkbox.setAttribute("name", "number");

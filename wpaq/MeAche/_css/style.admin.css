@@ -10,11 +10,11 @@ img {
 }
 
 #ulAdmin {
-  max-width: 15ch;
+  max-width: 12ch;
   max-height: 2.5ch;
   overflow: hidden;
-  text-overflow: ellipsis;
   white-space: nowrap;
+  text-overflow: ellipsis;
   text-align: left;
   margin-top: -16px;
   margin-bottom: 5px;
