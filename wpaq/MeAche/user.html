@@ -171,12 +171,12 @@
   </div>
 
   <div id="subtotal" class="footer w3-center w3-hover-opacity-off w3-dark-grey" onclick="mostrarSubtotal()">
-    <h3 class="w3-center">
-      <i class="glyphicon glyphicon-shopping-cart"></i>
+    <!-- <img heigth="50" width="50"src="img/14_104869.png"></img>-->
+    <h3 class="w3-center w3-text-white"> <i class="glyphicon glyphicon-shopping-cart w3-text-white"></i>
       <span>Total: R$</span>
     </h3>
+    <br>
   </div>
-</div>
 
   <div id="id01" class="fundo-span">
     <div class="fundo-span-conteudo animate">
@@ -195,9 +195,9 @@
           <table id="tabela" class="table">
             <thead>
               <tr>
-                <th scope="col">Quantidade</th>
-                <th scope="col">Pedido</th>
-                <th scope="col">Preço</th>
+                <th scope="col" class="w3-center">Quant</th>
+                <th scope="col" class="w3-center">Pedido</th>
+                <th scope="col" class="w3-center">Preço</th>
               </tr>
             </thead>
             <tbody id="tablePedidos">
@@ -270,13 +270,7 @@
           <br>
 
           <div id="botao-adicionar" class="animate">
-<<<<<<< HEAD
             <button type="submit" id="addButton" class="w3-button w3-black" onclick="mandardados1(this.value); fecharPrato1();">Adicionar</button>
-=======
-            <button type="submit" id="addButton" class="w3-button w3-black" onclick="fecharPrato1(); mandardados1();">
-              Adicionar
-            </button>
->>>>>>> 2bfc7a4e2fcebcc151fe7157a30fff3b2b42c544
           </div>
           <br>
           <br>
