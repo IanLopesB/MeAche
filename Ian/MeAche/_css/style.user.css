@@ -1,10 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-  margin: 0;
-  padding: 0;
   font-family: Segoe UI;
+  max-height: 1200px;
 }
+
+/*Imagem*/
 
 img {
     vertical-align: middle;
@@ -14,38 +15,6 @@ img {
 #img-logo {
   width: 25%;
 }
-td p{
-  max-width: 10ch;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  text-align: center;
-  margin-bottom:  1%; 
-}
-
-td p:hover {
-  white-space: normal;
-}
-
-/* style hr */
-#barra {
-  margin-left: 37%;
-  width: 25%;
-  border-width: 4px;
-  border-color: #F05F40;
-}
-/* end style hr*/
-
-.titleP {
-  font-size: 17px;
-  font-variant: small-caps;
-  text-align: center;
-}
-
-.tdN{
-text-align: center;
-}
-
 
 
 @media only screen and (min-height: 700px) {
@@ -67,81 +36,54 @@ text-align: center;
 }
 
 
-.pratos {
-  text-align: center;
+/* HR */
+
+#barra {
+  margin-left: 37%;
+  width: 25%;
+  border-width: 4px;
+  border-color: #F05F40;
 }
 
-.menuTitle {
-  font-size: 20px;
+
+/* Cardápio*/
+
+.menuTitulo {
+  font-size: 200%;
   font-style: bold;
   display: inline-block;
-}
-
-#categorias {
-  margin : 15px;
-}
-
-#menuCategorias {
-  margin-top: 30px;
 }
 
 .menu {
   margin: 15px;
 }
 
-#Cervejas {
-  margin-bottom: 120px;
-}
-
-.menu ul li span {
-  font-size: 18px;
+.pratos {
+  text-align: center;
+  font-size: 80%;
 }
 
 
-
-.spam {
-
-  background-color: #702D46;
-}
+/*Barra do Subtotal*/
 
 #subtotal {
   background-color: #F7F2F7;
+  height: 10%;
+  bottom: 0;
 }
 
-
 .footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
   width:100%;
 }
+
 .footer h3 span {
   font-size: 20px;
   vertical-align: middle; 
 }
 
-
-
-
-/*Spans*/
-
-#botao-adicionar {
-  float: right;
-}
-
-#input-requisiçoes {
-  width: 100%;
-  display: none;
-}
-
-.botao-fechar-span { 
-  text-align: center;
-  margin: 24px 0 12px 0;
-  position: relative;
-}
-
-.infos-pedido{
-  padding: 16px;
-}
+/*Span Pedido Parte 1 e 2*/
 
 span.psw {
   float: right;
@@ -179,15 +121,6 @@ span.psw {
    font-weight: bold;
 }
 
-.close2 {
-   float: right;
-   margin-right: 5%;
-   margin-top: -2%;
-   color: white;
-   font-size: 35px;
-   font-weight: bold;
-    
-}
 
 .close1:hover,
 .close1:focus {
@@ -195,11 +128,6 @@ span.psw {
     cursor: pointer;
 }
 
-.close2:hover,
-.close2:focus {
-    color: red;
-    cursor: pointer;
-}
 
 .animate {
     -webkit-animation: animatezoom 0.6s;
@@ -216,10 +144,14 @@ span.psw {
     to {transform: scale(1)}
 }
 
+
+
 #total-parcial {
     background-color:#f7f7f7; 
     border-radius: 10px; 
 }
+
+/* Span Pedido Parte 2*/
 
 #total-pedido {
     background-color:#f7f7f7;
@@ -227,14 +159,31 @@ span.psw {
     border-bottom-left-radius:10px;
 }
 
+.close2:hover,
+.close2:focus {
+    color: red;
+    cursor: pointer;
+}
+
+.close2 {
+   float: right;
+   margin-right: 5%;
+   margin-top: -2%;
+   color: white;
+   font-size: 35px;
+   font-weight: bold;
+    
+}
+
+
 #botao-span2 {
 float: right;
 }
 
-/* Span Prato */
+/* Span Detalhes do Prato */
 
 #menos {
-  width: 8%;
+  width: 25px;
   border: solid;
   border-width: 1px;
   border-radius: 15px;
@@ -242,7 +191,7 @@ float: right;
 }
 
 #mais {
-  width: 8%;
+  width: 25px;
   border: solid;
   border-width: 1px;
   border-radius: 15px;
@@ -307,7 +256,32 @@ border: none;
   width: 60%;
 }
 
+#botao-adicionar {
+  float: right;
+}
+
+#input-requisiçoes {
+  width: 100%;
+  display: none;
+}
+
+.botao-fechar-span { 
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+.infos-pedido{
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+}
+
+
+/* Estilização dos Inputs*/
+
 input[type=text]{outline:none}
 input[type=button]{outline:none}
 textarea {outline: none;resize: none;}
-
