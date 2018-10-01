@@ -57,4 +57,3 @@ function process6(quantPet6){
   document.getElementById("quantPet6").value = value;
   }
 }
-

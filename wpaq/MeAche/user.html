@@ -212,57 +212,13 @@
 
 <br>
 
-      <button onclick="pegarValue();document.getElementById('id02').style.display='block'; document.getElementById('id01').style.display='none'" id="botao-span2" class="w3-button w3-green ">Pedir</button>
+      <button onclick="pegarValue()" id="botao-span2" class="w3-button w3-green ">Pedir</button>
    </div>
 
 <br>
 <br>
 
    </div>
-</div>
-
-<div id="id02" class="fundo-span">
-   <div class="fundo-span-conteudo animate">
-      <div class="botao-fechar-span">
-         <span onclick="document.getElementById('id02').style.display='none'" class="close2" title="Fechar Span">&times;</span>
-      </div>
-      <div class="infos-pedido">
-         <h3 class="w3-center w3-text-white"><b> Meu pedido: </b> </h3>
-         <div id="tabela" class=" w3-text-white">
-
-<hr>
-
-            <table id="tabela" class="table">
-               <thead>
-                  <tr>
-                     <th scope="col">Quantidade</th>
-                     <th scope="col">Pedido</th>
-                     <th scope="col">Preço</th>
-                  </tr>
-               </thead>
-               <tbody>
-                  <tr>
-                     <th scope="row" id="quantPrat"></th>
-                     <td>Arroz</td>
-                     <td>R$: 5,00</td>
-                  </tr>
-                  <tr>
-                     <th scope="row">2</th>
-                     <td>Frango</td>
-                     <td>R$: 10,00</td>
-                  </tr>
-               </tbody>
-            </table>
-         </div>
-     </div>
-
-<br>
-
-     <div id="total-pedido" class="infos-pedido">
-        <h4 class=" w3-text-black"><b>Total: </b><b>R$ </b></h4>
-        <h4 class=" w3-text-black"><b>Número do pedido: </b><b>1234 </b></h4>
-     </div>
-  </div>
 </div>
 
 <!-- Pratos Functions -->
@@ -314,7 +270,13 @@
           <br>
 
           <div id="botao-adicionar" class="animate">
+<<<<<<< HEAD
             <button type="submit" id="addButton" class="w3-button w3-black" onclick="mandardados1(this.value); fecharPrato1();">Adicionar</button>
+=======
+            <button type="submit" id="addButton" class="w3-button w3-black" onclick="fecharPrato1(); mandardados1();">
+              Adicionar
+            </button>
+>>>>>>> 2bfc7a4e2fcebcc151fe7157a30fff3b2b42c544
           </div>
           <br>
           <br>
@@ -382,7 +344,6 @@
     </div>
   </div>
 </div>
-
 
 <!-- Tela-Prato 03 -->
 <div id="prato3" class="fundo-span-2">
@@ -602,7 +563,7 @@
           <div data-app="product.quantity" id="quantidade">
              <label>Quantidade:</label>
              <input type="button" id="menos" value='-' onclick="process6(-1)"/>
-             <input id="quantPet5" name="" class="text w3-center" size="1" type="text" value="0" maxlength="2" />
+             <input id="quantPet6" name="" class="text w3-center" size="1" type="text" value="0" maxlength="2" />
              <input type="button" id="mais" class="" value='+' onclick="process6(1)"/>
           </div>
 
@@ -619,9 +580,7 @@
     </div>
   </div>
 </div>
-
-
- <!-- //Pratos Functions -->
+<!-- //Pratos Functions -->
 
 </div>
 </body>
