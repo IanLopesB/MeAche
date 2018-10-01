@@ -22,7 +22,7 @@ tr.appendChild(td_preco1);
 
 var qtd1 = document.getElementById('petisco_1');
 qtd1.innerText = value1;
-var asinha = document.getElementById('asinha').firstChild.innerHTML;
+var asinha = document.getElementBmyId('asinha').firstChild.innerHTML;
 document.getElementById('petisco_1.1').innerHTML = asinha;
 var precoValue1 = document.getElementById('petisco_1.1.1');
 precoValue1.innerText = preco1;
