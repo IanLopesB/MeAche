@@ -111,7 +111,7 @@ var trbody = document.getElementById('tablePedidos');
 var tr = document.createElement('tr')
 var th = document.createElement('th')
 th.setAttribute("scope", "row");
-th.setAttribute("id", "th_qtd1");
+th.setAttribute("id", "th_qtd4");
 var td_Qtd4 = document.createElement('td');
 td_Qtd4.setAttribute("id", "petisco_4");
 var td_nameQtd4 = document.createElement('td');
@@ -140,13 +140,13 @@ td_preco4.style.textAlign="center";
 
 function mandardados5(){
 
-var value4 = document.getElementById('quantPet4').value;
+var value5 = document.getElementById('quantPet5').value;
 var trbody = document.getElementById('tablePedidos');
 
 var tr = document.createElement('tr')
 var th = document.createElement('th')
 th.setAttribute("scope", "row");
-th.setAttribute("id", "th_qtd4");
+th.setAttribute("id", "th_qtd5");
 var td_Qtd5 = document.createElement('td');
 td_Qtd5.setAttribute("id", "petisco_5");
 var td_nameQtd5 = document.createElement('td');
