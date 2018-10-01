@@ -1,4 +1,4 @@
-function mandardados1(value){
+function mandardados1(){
 
 var value1 = document.getElementById('quantPet1').value;
 var preco1 = document.getElementById('preco1').value;
