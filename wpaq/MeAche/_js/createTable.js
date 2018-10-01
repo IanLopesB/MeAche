@@ -66,6 +66,7 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
     for (var i = 0; i < trId.length; i++) {
       inputId[i].id = "checkb" + (i + 1);
   }
+  /* //Function Checkbox */
 
   td_pedidos.setAttribute("colspan", "2");
 
