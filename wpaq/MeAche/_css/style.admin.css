@@ -9,6 +9,7 @@ img {
     border: 0;
 }
 
+
 #ulAdmin {
   max-width: 12ch;
   max-height: 2.5ch;
@@ -35,7 +36,7 @@ img {
 /* end style hr*/
 
 .titleP {
-  font-size: 17px;
+  font-size: 16px;
   font-variant: small-caps;
 }
 
