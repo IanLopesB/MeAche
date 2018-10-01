@@ -50,15 +50,15 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
 
   th.setAttribute("scope", "row");
 
+  // Function Checkbox
   input_checkbox.setAttribute("type", "checkbox");
   input_checkbox.setAttribute("onclick", "check_tb(this.value)");
 
   tr.setAttribute("class", "trClass");
 
-
   var trId = document.getElementsByClassName("trClass");
-    for (var i = 0; i < trId.length; i++) {
-      trId[i].id = "tr" + (i + 1);
+  for (var i = 0; i < trId.length; i++) {
+    trId[i].id = "tr" + (i + 1);
   }
 
   input_checkbox.setAttribute("class", "inputClass");
