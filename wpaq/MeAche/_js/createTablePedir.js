@@ -25,7 +25,9 @@ qtd1.innerText = value1;
 var asinha = document.getElementById('asinha').firstChild.innerHTML;
 document.getElementById('petisco_1.1').innerHTML = asinha;
 
-var  preco1 = document.getElementById('preco1').innerHTML;
+var preco1 = document.getElementById('preco1').innerHTML;
+
+
 document.getElementById('petisco_1.1.1').innerHTML = preco1;
 
 td_Qtd1.style.textAlign="center";
