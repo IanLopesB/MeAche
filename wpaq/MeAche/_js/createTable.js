@@ -18,6 +18,7 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
   var li6 = document.createElement('li');
 
   var p = document.createElement('p');
+  var space = document.createTextNode('');
 
   ul.setAttribute("id", "ulAdmin");
 
@@ -25,8 +26,8 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
   
   var petiscos_1 = document.createTextNode(item.val().Asinha_de_frango + "x" + " Asinha de Frango"); 
   var petiscos_2 = document.createTextNode(item.val().Camarao_Alho_Oleo + "x" + " Camarão Alho e Óleo");
-  var petiscos_3 = document.createTextNode(item.val().Calabresa + "x" + " Calabresa");
-  var petiscos_4 = document.createTextNode(item.val().Carne_de_Sol + "x" + " Carne de Sol");
+  var petiscos_3 = document.createTextNode(item.val().Calabresa + "x" + " Calabresa com Fritas");
+  var petiscos_4 = document.createTextNode(item.val().Carne_de_Sol + "x" + " Carne de Sol C/ Macaxeira");
   var petiscos_5 = document.createTextNode(item.val().Torresmo + "x" + " Torresmo");
   var petiscos_6 = document.createTextNode(item.val().Batata_Frita + "x" + " Batata Frita");
 
@@ -49,15 +50,15 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
 
   th.setAttribute("scope", "row");
 
+  // Function Checkbox
   input_checkbox.setAttribute("type", "checkbox");
   input_checkbox.setAttribute("onclick", "check_tb(this.value)");
 
   tr.setAttribute("class", "trClass");
 
-
   var trId = document.getElementsByClassName("trClass");
-    for (var i = 0; i < trId.length; i++) {
-      trId[i].id = "tr" + (i + 1);
+  for (var i = 0; i < trId.length; i++) {
+    trId[i].id = "tr" + (i + 1);
   }
 
   input_checkbox.setAttribute("class", "inputClass");
@@ -65,15 +66,59 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
     for (var i = 0; i < trId.length; i++) {
       inputId[i].id = "checkb" + (i + 1);
   }
+  /* //Function Checkbox */
 
   td_pedidos.setAttribute("colspan", "2");
 
-  li1.appendChild(petiscos_1);  
-  li2.appendChild(petiscos_2);
-  li3.appendChild(petiscos_3);
-  li4.appendChild(petiscos_4);
-  li5.appendChild(petiscos_5);
-  li6.appendChild(petiscos_6); 
+  // If Value == 0 Firebase
+  // Petiscos
+  if (item.val().Asinha_de_frango == 0){
+    delete petiscos_1;
+    delete li1;
+    li1.style.listStyle = "none";
+  }else {
+    li1.appendChild(petiscos_1);
+  }
+
+  if (item.val().Camarao_Alho_Oleo == 0){
+    delete petiscos_2;
+    delete li2;
+    li2.style.listStyle = "none";
+  }else {
+    li2.appendChild(petiscos_2);
+  }
+
+  if (item.val().Calabresa == 0){
+    delete petiscos_3;
+    delete li3;
+    li3.style.listStyle = "none";
+  }else {
+    li3.appendChild(petiscos_3);
+  }
+
+  if (item.val().Carne_de_Sol == 0){
+    delete petiscos_4;
+    delete li4;
+    li4.style.listStyle = "none";
+  }else {
+    li4.appendChild(petiscos_4);
+  } 
+
+  if (item.val().Torresmo == 0){
+    delete petiscos_5;
+    delete li5;
+    li5.style.listStyle = "none";
+  }else {
+    li5.appendChild(petiscos_5);
+  } 
+
+  if (item.val().Batata_Frita == 0){
+    delete petiscos_6;
+    delete li6;
+    li6.style.listStyle = "none";
+  }else {
+    li6.appendChild(petiscos_6);
+  }   
 
 
   input_checkbox.setAttribute("name", "number");

@@ -29,7 +29,7 @@ function process3(quantPet3){
 }
 
 function process4(quantPet4){
-  var value = parseInt(document.getElementById("quantPet2").value);
+  var value = parseInt(document.getElementById("quantPet4").value);
   value += quantPet4;
   if(value < 1){
     document.getElementById("quantPet4").value = 0;

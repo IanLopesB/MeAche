@@ -6,11 +6,16 @@
   var batataFrita = document.getElementById('quantPet6');
 
   function  pegarValue () {
-    create(asinha.value, camarao.value, calabresa.value, carneDeSol.value, torresmo.value, batataFrita.value);
+    create (
+      // Petiscos Value
+        asinha.value, camarao.value, calabresa.value, carneDeSol.value, torresmo.value, batataFrita.value
+      // Espetos Value
+
+      );
   };
 
   function create(asinha, camarao, calabresa, carneDeSol, torresmo, batataFrita) {
-    var data = {
+    var petiscos = {
       Asinha_de_frango: asinha,
       Camarao_Alho_Oleo: camarao,
       Calabresa: calabresa,
@@ -18,5 +23,5 @@
       Torresmo: torresmo,
       Batata_Frita: batataFrita
     };
-    return firebase.database().ref().child('pedidos').push(data);
+    return firebase.database().ref().child('pedidos').push(petiscos);
   }
