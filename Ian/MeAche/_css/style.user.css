@@ -2,7 +2,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: Segoe UI;
-  max-height: 1200px;
 }
 
 /*Imagem*/
@@ -83,7 +82,7 @@ img {
   vertical-align: middle; 
 }
 
-/*Span Pedido Parte 1 e 2*/
+/*Span Pedido Parte 1*/
 
 span.psw {
   float: right;
@@ -110,6 +109,12 @@ span.psw {
   border: 1px solid #888;
   width: 80%; 
   border-radius : 10px;
+}
+
+@media only screen and (min-width: 800px) {
+  .fundo-span-conteudo {
+    width: 10%;
+  }
 }
 
 .close1 {
@@ -149,6 +154,11 @@ span.psw {
 #total-parcial {
     background-color:#f7f7f7; 
     border-radius: 10px; 
+}
+
+#tabela-pedidos {
+
+
 }
 
 /* Span Pedido Parte 2*/
@@ -285,3 +295,5 @@ span.psw {
 input[type=text]{outline:none}
 input[type=button]{outline:none}
 textarea {outline: none;resize: none;}
+
+
