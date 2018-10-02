@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Me Ache | Pestiscararias e Açaí</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="_css/bootstrap.min.css">
+
+  <!-- Custom style CSS -->
+  <link rel="stylesheet" type="text/css" href="_css/style.user.css">
+  <link rel="stylesheet" href="_css/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="_css/icon.css">
+  
+
+  <!-- Load the Firebase library before loading the body. -->
+  <script src="_js/firebase.js"></script>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="_jquery/jquery-2.2.0.min.js"></script>
+  <script src="_jquery/popper.min.js"></script>
+  <script src="_js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<br>
+
+  <div id="logo" class="w3-center">
+    <img id="img-logo" class="img-fluid w3-center" src="http://pluspng.com/img-png/beats-electronics-logo-vector-png-beats-electronics-logo-png-828.png" >
+  </div>
+  <hr  id="barra" >
+ 
+ <div class="w3-container">  
+
+  <a class="w3-row w3-center" data-toggle="collapse" data-target="#collapsePet">
+    <div class="w3-col tablink w3-padding-large w3-red w3-border">
+      <h4 class="menuTitulo">Petiscos</h4>
+    </div>
+  </a>
+  <div id="Petiscos" class="menu">
+   <ul  id="collapsePet" class="collapse in show w3-ul w3-xlarge">
+      <li class="w3-text-black pratos" onclick="mostrarPrato1()">
+        <span>Asinha de Frango</span><br>
+        <span class="w3-tag w3-round w3-large w3-dark-grey">R$ 13,00</span>
+      </li>
+      <li class="w3-text-black pratos">
+        <span>Camarão Alho e Óleo</span><br>
+        <span class="w3-tag w3-round w3-large w3-dark-grey">R$ 25,00</span><br>
+      <li class="w3-text-black pratos">
+        <span>Calabresa com Fritas</span><br>
+        <span class="w3-tag w3-round w3-large w3-dark-grey">R$ 15,00</span>
+      </li>
+      <li class="w3-text-black pratos">
+        <span>Carne de Sol C/ Macaxeira</span><br> 
+        <span class="w3-tag w3-round w3-dark-grey span">R$ 20,00</span>
+      </li>
+      <li class="w3-text-black pratos">
+        <span>Torresmo</span><br> 
+        <span class="w3-tag w3-round w3-large w3-dark-grey">R$ 10,00 </span>
+      </li>
+      <li class="w3-text-black pratos">
+        <span>Batata Frita (C/ Sheddar)</span><br> 
+        <span class="w3-tag w3-round w3-large w3-dark-grey">R$ 10,00</span>
+      </li>  
+   </ul>
+  </div>
+
+  <a class="w3-row w3-center" data-toggle="collapse" data-target="#collapseEsp" aria-haspopup="true" aria-expanded="false">
+    <div class="w3-col tablink w3-padding-large w3-red w3-border">
+      <h4 class="menuTitulo">Espetos</h4>
+    </div>
+  </a>
+  <div id="Espetos" class="menu">
+   <ul id="collapseEsp" class="collapse in show w3-ul w3-xlarge">
+      <li class="w3-text-black pratos" onclick="mostrarPrato1()">
+        <span>Boi</span><br>
+        <span class=" w3-tag  w3-round w3-large w3-dark-grey">R$ 4,0</span>
+      </li>
+      <li class="w3-text-black pratos">
+        <span>Franbacon</span><br>
+        <span class=" w3-tag w3-round w3-large w3-dark-grey">R$ 4,00</span>
+      </li>
+      <li class="w3-text-black pratos">
+        <span>Frango</span><br>
+        <span class=" w3-tag w3-round w3-large w3-dark-grey">R$ 4,00</span>
+      </li>
+      <li class="w3-text-black pratos">
+        <span>Coração de Frango</span><br>
+        <span class=" w3-tag  w3-round w3-large w3-dark-grey">R$ 4,00</span>
+      </li>
+      <li class="w3-text-black pratos">
+        <span>Porco</span><br>
+        <span class=" w3-tag w3-round w3-large w3-dark-grey">R$ 4,00 </span>
+      </li>  
+   </ul>
+  </div>
+  </div>
+
+  <footer id="subtotal" class="footer w3-center w3-hover-opacity-off w3-dark-grey" onclick="mostrarSubtotal()">
+    <h2 class="w3-center">
+      <i class="glyphicon glyphicon-shopping-cart"></i>
+      <span><b>Subtotal:</b></span>
+    </h2>
+  </footer>
+
+  <div id="id01" class="fundo-span">
+    <div class="fundo-span-conteudo animate">
+      <div id="botao-fechar-span">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close1" title=" Fechar Span">
+          &times;
+        </span>
+      </div>
+
+      <div class="infos-pedido">
+        <h3 class="w3-center w3-text-white">
+          <b>Meu pedido:</b>
+        </h3>
+        <div id="tabela-pedidos" class="w3-text-white">
+          <hr>
+          <table id="tabela" class="table">
+            <thead>
+              <tr>  
+                <th scope="col">Quantidade</th>
+                <th scope="col">Pedido</th>
+                <th scope="col">Preço</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Arroz</td>
+                <td>R$: 5,00</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Frango</td>
+                <td>R$: 10,00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      <div id="total-parcial" class=" infos-pedido">
+         <h4 class=" w3-text-black"><b>Total: </b> <b>R$ </b></h4>
+      </div>  
+         
+<br>
+
+      <button onclick="document.getElementById('id02').style.display='block'; document.getElementById('id01').style.display='none'" id="botao-span2" class="w3-button w3-green ">Pedir</button>
+   </div>
+         
+<br>
+<br>
+
+   </div>
+</div>
+    
+<div id="id02" class="fundo-span">
+   <div class="fundo-span-conteudo animate">
+      <div class="botao-fechar-span">
+         <span onclick="document.getElementById('id02').style.display='none'" class="close2" title="Fechar Span">&times;</span>
+      </div>
+      <div class="infos-pedido">
+         <h3 class="w3-center w3-text-white"><b> Meu pedido: </b> </h3>
+         
+         <div  class=" w3-text-white">
+            <table class="table">
+               <thead>
+                  <tr>
+                     <th scope="col">Quantidade</th>
+                     <th scope="col">Pedido</th>
+                     <th scope="col">Preço</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <th scope="row">1</th>
+                     <td>Arroz</td>
+                     <td>R$: 5,00</td>
+                  </tr>
+                  <tr>
+                     <th scope="row">2</th>
+                     <td>Frango</td>
+                     <td>R$: 10,00</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+     </div>
+      
+<br>
+   
+     <div id="total-pedido" class="infos-pedido">
+        <h4 class=" w3-text-black"><b>Total: </b><b>R$ </b></h4>
+        <h4 class=" w3-text-black"><b>Número do pedido: </b><b>1234 </b></h4>
+     </div>
+  </div>
+</div>
+           
+<!-- Pratos Functions -->
+<div id="prato1" class="fundo-span-2">
+  <div  class="fundo-span-conteudo-2 animate">
+    <div id="botao-fechar-span">
+       <span onclick="document.getElementById('prato1').style.display='none'" class="close1" title=" Fechar Span">&times;
+       </span>
+    </div>
+    <div id="nome-prato" class="w3-container w3-text-white">
+      <h3 class="animate"><b><label for="qunatA">Asinha de Frango</label></b></h3>
+    </div>
+
+    <br>
+
+    <div id="textos" class="w3-container">
+      <div id="descricao">
+        <h5>Descrição do prato .............................
+          .......................
+          ......................
+        </h5>
+      </div>
+
+      <br>
+
+      <div id="requisicao">
+        <div id="nome-requisicao" class="animate" onclick="mostrarInputReq()" >
+          <h5><i class="fa fa-plus"></i> Observações do Cliente</h5>
+        </div>
+        <div id="input-requisiçoes" class="input-group animate">
+          <textarea id="input-req-real" type="" class="form-control" placeholder="Observações"  rows="2"> 
+          </textarea>
+          <span>
+            <button class="btn btn-default " type="button" onclick="mostrarNomeReq()">OK</button>
+          </span>
+        </div>
+      </div>
+
+      <br>
+      <br>
+
+       <div id="quantidade" class="animate">
+          <div data-app="product.quantity" id="quantidade">
+             <label>Quantidade:</label>      
+             <input type="button" id="menos" value='-' onclick="process(-1)"/> 
+             <input id="quantPet1" name="quantPet1" class="text w3-center" size="1" type="text" value="0" maxlength="2" />
+             <input type="button" id="mais" class="" value='+' onclick="process(1)"/>
+          </div>
+
+          <br>
+          <br>            
+
+          <div id="botao-adicionar" class="animate">
+            <button type="submit" id="addButton" class="w3-button w3-black" onclick="pegarValue(); fecharPrato1();">Adicionar</button>
+          </div>
+
+          <br>
+          <br>  
+          <br>
+       </div>
+    </div>
+  </div>
+</div>
+ 
+</div>
+</body>
+
+  <!-- Connection Firebase JS --> 
+  <script type="text/javascript" src="_js/connection.firebase.js"></script>
+  <script type="text/javascript" src="_js/application.js"></script>
+
+  <!-- Functions JS --> 
+  <script type="text/javascript" src="_js/createTable.js"></script>
+  <script type="text/javascript" src="_js/checkbox.js"></script>
+  <script type="text/javascript" src="_js/user.functions.js"></script>
+
+</html> 
+
+

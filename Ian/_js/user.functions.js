@@ -74,6 +74,17 @@ var x = document.getElementById("prato1");
 }
 
 
+function process(quantPet1){
+    var value = parseInt(document.getElementById("quantPet1").value);
+    value+=quantPet1;
+    if(value < 1){
+      document.getElementById("quantPet1").value = 0;
+    }else{
+    document.getElementById("quantPet1").value = value;
+    }
+  }
+
+
 function openMenu(evt, menuName) {
   var i, x, tablinks;
   x = document.getElementsByClassName("menu");
