@@ -1,51 +1,50 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Segoe UI
+    font-family: Segoe UI;
 }
 
 img {
     vertical-align: middle;
-    border: 0
+    border: 0;
 }
 
 #ulAdmin {
-    max-width: 12ch;
-    max-height: 2.5ch;
     overflow: hidden;
-    white-space: nowrap;
     text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 120px;
+    max-height: 2.5ch;
     text-align: left;
     margin-top: -16px;
     margin-left: -17px;
-    margin-bottom: 5px
+    margin-bottom: 5px;
 }
 
 #ulAdmin:hover {
     white-space: normal;
     max-height: none;
-    max-width: none
 }
 
 #barra {
     margin-left: 27%;
     width: 45%;
     border-width: 4px;
-    border-color: #F05F40
+    border-color: #F05F40;
 }
 
-.titleP {
-    font-size: 16px;
-    font-variant: small-caps
+#trAdm {
+    white-space: nowrap;
+    text-align: center;
 }
 
 @media (min-width: 320px) {
     #img-logo {
         margin-top: 2em;
-        width: 25%
+        width: 25%;
     }
     .users-table {
-        margin-top: 2em
+        margin-top: 2em;
     }
     .estiloButton {
         width: 100%;
@@ -53,18 +52,18 @@ img {
         background-color: grey;
         font-size: 18px;
         font-variant: small-caps;
-        margin-bottom: -11%
+        margin-bottom: -11%;
     }
 }
 
 @media (min-width: 990px) {
     #img-logo {
-        width: 7%
+        width: 7%;
     }
     #barra {
         margin-left: 37%;
         width: 25%;
         border-width: 4px;
-        border-color: #F05F40
+        border-color: #F05F40;
     }
 }
