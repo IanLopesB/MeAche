@@ -17,7 +17,6 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
   var li5 = document.createElement('li');
   var li6 = document.createElement('li');
 
-  var p = document.createElement('p');
   var space = document.createTextNode('');
 
   ul.setAttribute("id", "ulAdmin");
@@ -38,7 +37,6 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
   tr.appendChild(td_pedidos);
   tr.appendChild(td_num_pedidos);
   th.appendChild(input_checkbox);
-  td_pedidos.appendChild(p);
 
   td_pedidos.appendChild(ul);
   ul.appendChild(li1); 
@@ -69,6 +67,7 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
   /* //Function Checkbox */
 
   td_pedidos.setAttribute("colspan", "2");
+  td_pedidos.setAttribute('id', 'td_pedidos')
 
   // If Value == 0 Firebase
   // Petiscos
