@@ -13,6 +13,16 @@
   // Reference to your entire Firebase database
   var products = firebase.database().ref("products");
 
+  function process(quantA) {
+    var value = parseInt(document.getElementById("quantA").value);
+    value += quantA;
+    if (value < 1) {
+      document.getElementById("quantA").value = 0;
+    }else {
+      document.getElementById("quantA").value = value;
+    }
+  }
+
   // Save a new recommendation to the database, using the input in the form
   var submitProducts = function () {
 
@@ -21,23 +31,29 @@
   var lname = $("#lname").val();
   var nasc = $("#nasc").val();
 
+  var quanttB = $("#feijQuant").val();
+
+  var arroz = $("#quantA").val();
+
   // Push a new recommendation to the database using those values
   products.push({
-    "firstName": fname,
-    "presenter": lname,
-    "nasc": nasc
-  });
-};
+    "FirstName": fname,
+    "LastName": lname,
+    "Nac": nasc,
+    "Arroz": arroz,
+    "Feijão": quanttB
+    });
+  };
 
-// When the window is fully loaded, call this function.
-// Note: because we are attaching an event listener to a particular HTML element
-// in this function, we can't do that until the HTML element in question has
-// been loaded. Otherwise, we're attaching our listener to nothing, and no code
-// will run when the submit button is clicked.
-$(window).load(function () {
+  // When the window is fully loaded, call this function.
+  // Note: because we are attaching an event listener to a particular HTML element
+  // in this function, we can't do that until the HTML element in question has
+  // been loaded. Otherwise, we're attaching our listener to nothing, and no code
+  // will run when the submit button is clicked.
+  $(window).load(function () {
 
   // Find the HTML element with the id recommendationForm, and when the submit
   // event is triggered on that element, call submitRecommendation.
-  $("#recommendationForm").submit(submitProducts);
+  $("#productsForm").submit(submitProducts);
 
 });

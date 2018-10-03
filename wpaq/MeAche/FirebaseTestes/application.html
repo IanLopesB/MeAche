@@ -1,7 +1,7 @@
 <html>
   <head>
     <!-- Load the Firebase library before loading the body. -->
-    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
 
     <!-- Load the jQuery library, which we'll use to manipulate HTML elements with Javascript. -->
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
@@ -18,7 +18,7 @@
       <h1>Firebase - Add Data From Form</h1>
       <hr>      
 
-      <form id="recommendationForm">
+      <form id="productsForm">
         <div class="form-group">
           <label for="fname">First Name: </label>
           <input class="form-control" id="fname" placeholder="Your First Name...">
@@ -34,6 +34,22 @@
         <div class="form-group">
           <label for="nasc">Date: </label>
           <input type="date" class="form-control" id="nasc" placeholder="Your Date">
+        </div>
+        <hr>
+
+        <div class="form-group">
+          <div data-app="product.quantity" id="quantidade">
+             <label for="quantA">Arroz Quant: </label>
+             
+             <input type="button" id="menos" value='-' onclick="process(-1)"/> 
+             <input id="quantA" name="quantA" class="text w3-center" size="1" type="text" value="0" maxlength="2" />
+             <input type="button" id="mais" class="" value='+' onclick="process(1)"/>
+        </div>
+        </div>
+        <hr>
+        <div class="form-group">
+          <label for="quantF">Feijão Quant: </label>
+          <input class="form-control" id="feijQuant" placeholder="Quantas Unidades..."> 
         </div>
         <hr>
 
