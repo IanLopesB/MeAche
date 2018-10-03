@@ -26,7 +26,7 @@
 <body class="body">
     <div id="logo" class="w3-center"> <img id="img-logo" class="img-fluid w3-center" src="http://pluspng.com/img-png/beats-electronics-logo-vector-png-beats-electronics-logo-png-828.png"> </div>
     <hr id="barra">
-    <div class="container">
+    <div class="w3-container">
         <a class="w3-row w3-center" data-toggle="collapse" data-target="#collapsePet">
             <div class="w3-col tablink w3-padding-large w3-red w3-border">
                 <h4 class="menuTitle">Petiscos</h4> </div>
@@ -39,18 +39,18 @@
                 <li class="w3-text-black pratos" onclick="mostrarPrato2()"> <span>Camarão Alho e Óleo</span>
                     <br> <span class="w3-tag w3-round w3-large w3-dark-grey">R$ <span id="preco2"> 25,50</span></span>
                     <br>
-                    <li class="w3-text-black pratos" onclick="mostrarPrato3()"> <span>Calabresa com Fritas</span>
-                        <br> <span class="w3-tag w3-round w3-large w3-dark-grey">R$ <span id="preco3"> 15,00</span></span>
-                    </li>
-                    <li class="w3-text-black pratos" onclick="mostrarPrato4()"> <span>Carne de Sol C/ Macaxeira</span>
-                        <br> <span class="w3-tag w3-round w3-large w3-dark-grey">R$ <span id="preco4"> 20,00</span></span>
-                    </li>
-                    <li class="w3-text-black pratos" onclick="mostrarPrato5()"> <span>Torresmo</span>
-                        <br> <span class="w3-tag w3-round w3-large w3-dark-grey">R$ <span id="preco5"> 10,00</span> </span>
-                    </li>
-                    <li class="w3-text-black pratos" onclick="mostrarPrato6()"> <span>Batata Frita (C/ Sheddar)</span>
-                        <br> <span class="w3-tag w3-round w3-large w3-dark-grey">R$ <span id="preco6"> 10,00</span></span>
-                    </li>
+                <li class="w3-text-black pratos" onclick="mostrarPrato3()"> <span>Calabresa com Fritas</span>
+                    <br> <span class="w3-tag w3-round w3-large w3-dark-grey">R$ <span id="preco3"> 15,00</span></span>
+                </li>
+                <li class="w3-text-black pratos" onclick="mostrarPrato4()"> <span>Carne de Sol C/ Macaxeira</span>
+                    <br> <span class="w3-tag w3-round w3-large w3-dark-grey">R$ <span id="preco4"> 20,00</span></span>
+                </li>
+                <li class="w3-text-black pratos" onclick="mostrarPrato5()"> <span>Torresmo</span>
+                    <br> <span class="w3-tag w3-round w3-large w3-dark-grey">R$ <span id="preco5"> 10,00</span> </span>
+                </li>
+                <li class="w3-text-black pratos" onclick="mostrarPrato6()"> <span>Batata Frita (C/ Sheddar)</span>
+                    <br> <span class="w3-tag w3-round w3-large w3-dark-grey">R$ <span id="preco6"> 10,00</span></span>
+                </li>
             </ul>
         </div>
         <a class="w3-row w3-center" data-toggle="collapse" data-target="#collapseEsp" aria-haspopup="true" aria-expanded="false">
@@ -96,10 +96,14 @@
             </ul>
         </div>
         <div id="subtotal" class="footer w3-center w3-hover-opacity-off w3-dark-grey" onclick="mostrarSubtotal()">
-            <!-- <img heigth="50" width="50"src="img/14_104869.png"></img>-->
-            <h3 class="w3-center w3-text-white"> <i class="glyphicon glyphicon-shopping-cart w3-text-white"></i> <span>Total: R$</span> </h3>
-            <br> </div>
-        <div id="id01" class="fundo-span">
+        <!-- <img heigth="50" width="50"src="img/14_104869.png"></img>-->
+            <h3 class="w3-center w3-text-white"> 
+                <i class="glyphicon glyphicon-shopping-cart w3-text-white"></i> 
+                <span>Total: R$</span> 
+            </h3>
+            <br> 
+        </div>
+        <div id="id01" style="display: none;" class="fundo-span">
             <div class="fundo-span-conteudo animate">
                 <div id="botao-fechar-span"> <span onclick="document.getElementById('id01').style.display='none'" class="close1" title=" Fechar Span"> &times; </span> </div>
                 <div class="infos-pedido">
@@ -127,7 +131,7 @@
         </div>
         <!-- Pratos Functions -->
         <!-- Tela-Prato 01 -->
-        <div id="prato1" class="fundo-span-2" value="1">
+        <div id="prato1" style="display: none;" class="fundo-span-2" value="1">
             <div class="fundo-span-conteudo-2 animate">
                 <div id="botao-fechar-span"> <span onclick="document.getElementById('prato1').style.display='none'" class="close1" title=" Fechar Span">&times; </span> </div>
                 <div id="nome-prato" class="w3-container w3-text-white">
@@ -163,7 +167,7 @@
             </div>
         </div>
         <!-- Tela-Prato 02 -->
-        <div id="prato2" class="fundo-span-2">
+        <div id="prato2" style="display: none;" class="fundo-span-2">
             <div class="fundo-span-conteudo-2 animate">
                 <div id="botao-fechar-span"> <span onclick="document.getElementById('prato2').style.display='none'" class="close1" title=" Fechar Span">&times; </span> </div>
                 <div id="nome-prato" class="w3-container w3-text-white">
@@ -199,7 +203,7 @@
             </div>
         </div>
         <!-- Tela-Prato 03 -->
-        <div id="prato3" class="fundo-span-2">
+        <div id="prato3" style="display: none;" class="fundo-span-2">
             <div class="fundo-span-conteudo-2 animate">
                 <div id="botao-fechar-span"> <span onclick="document.getElementById('prato3').style.display='none'" class="close1" title=" Fechar Span">&times; </span> </div>
                 <div id="nome-prato" class="w3-container w3-text-white">
@@ -235,7 +239,7 @@
             </div>
         </div>
         <!-- Tela-Prato 04 -->
-        <div id="prato4" class="fundo-span-2">
+        <div id="prato4" style="display: none;" class="fundo-span-2">
             <div class="fundo-span-conteudo-2 animate">
                 <div id="botao-fechar-span"> <span onclick="document.getElementById('prato4').style.display='none'" class="close1" title=" Fechar Span">&times; </span> </div>
                 <div id="nome-prato" class="w3-container w3-text-white">
@@ -271,7 +275,7 @@
             </div>
         </div>
         <!-- Tela-Prato 05 -->
-        <div id="prato5" class="fundo-span-2">
+        <div id="prato5" style="display: none;" class="fundo-span-2">
             <div class="fundo-span-conteudo-2 animate">
                 <div id="botao-fechar-span"> <span onclick="document.getElementById('prato5').style.display='none'" class="close1" title=" Fechar Span">&times; </span> </div>
                 <div id="nome-prato" class="w3-container w3-text-white">
@@ -307,7 +311,7 @@
             </div>
         </div>
         <!-- Tela-Prato 06 -->
-        <div id="prato6" class="fundo-span-2">
+        <div id="prato6" style="display: none;" class="fundo-span-2">
             <div class="fundo-span-conteudo-2 animate">
                 <div id="botao-fechar-span"> <span onclick="document.getElementById('prato6').style.display='none'" class="close1" title=" Fechar Span">&times; </span> </div>
                 <div id="nome-prato" class="w3-container w3-text-white">

@@ -22,26 +22,33 @@
   <!-- Load the Firebase library before loading the body. -->
   <script src="_js/firebase.js"></script>
 
+
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="_jquery/jquery-2.2.0.min.js"></script>
   <script src="_jquery/popper.min.js"></script>
   <script src="_js/bootstrap.min.js"></script>
 </head>
 
-<body >
+<body>
 
 <br>
 
+<!-- Logo do ME Ache  -->
   <div id="logo" class="w3-center">
     <img id="img-logo" class="img-fluid w3-center" src="http://pluspng.com/img-png/beats-electronics-logo-vector-png-beats-electronics-logo-png-828.png" >
   </div>
-  <hr id="barra">
 
- <div class="w3-container">
+ <!-- Barra da Logo --> 
+
+  <hr id="barra">
+ 
+ <!-- Cardápio -->
+
+ <div class="w3-container">  
 
   <a class="w3-row w3-center" data-toggle="collapse" data-target="#collapsePet">
-    <div class="w3-col tablink w3-padding-large w3-red w3-border">
-      <h4 class="menuTitle">Petiscos</h4>
+    <div class="w3-col tablink w3-padding-large w3-text-white w3-round" style="background-color: #E50914;">
+      <h3 class="menuTitle"><b>Petiscos</b></h3>
     </div>
   </a>
   <div id="Petiscos" class="menu">
@@ -58,23 +65,23 @@
         <span class="w3-tag w3-round w3-large w3-dark-grey">R$ 15,00</span>
       </li>
       <li class="w3-text-black pratos">
-        <span>Carne de Sol C/ Macaxeira</span><br>
+        <span>Carne de Sol C/ Macaxeira</span><br> 
         <span class="w3-tag w3-round w3-dark-grey span">R$ 20,00</span>
       </li>
       <li class="w3-text-black pratos">
-        <span>Torresmo</span><br>
+        <span>Torresmo</span><br> 
         <span class="w3-tag w3-round w3-large w3-dark-grey">R$ 10,00 </span>
       </li>
       <li class="w3-text-black pratos">
-        <span>Batata Frita (C/ Sheddar)</span><br>
+        <span>Batata Frita (C/ Sheddar)</span><br> 
         <span class="w3-tag w3-round w3-large w3-dark-grey">R$ 10,00</span>
-      </li>
+      </li>  
    </ul>
   </div>
 
   <a class="w3-row w3-center" data-toggle="collapse" data-target="#collapseEsp" aria-haspopup="true" aria-expanded="false">
-    <div class="w3-col tablink w3-padding-large w3-red w3-border">
-      <h4 class="menuTitle">Espetos</h4>
+    <div class="w3-col tablink w3-padding-large w3-text-white w3-round" style="background-color: #E50914;">
+      <h3 class="menuTitle"><b>Espetos</b></h3>
     </div>
   </a>
   <div id="Espetos" class="menu">
@@ -92,28 +99,123 @@
         <span class=" w3-tag w3-round w3-large w3-dark-grey">R$ 7,00</span>
       </li>
       <li class="w3-text-black pratos">
-        <span>Coração de Frango</span><br>
+        <span>Coração de Frango</span><br> 
         <span class=" w3-tag  w3-round w3-large w3-dark-grey">R$ 10,0</span>
       </li>
       <li class="w3-text-black pratos">
-        <span>Porco</span><br>
+        <span>Porco</span><br> 
         <span class=" w3-tag w3-round w3-large w3-dark-grey">R$ 5,00 </span>
       </li>
-
+      
    </ul>
   </div>
+
+  <a class="w3-row w3-center" data-toggle="collapse" data-target="#collapseSuco">
+    <div class="w3-col tablink w3-padding-large  w3-text-white w3-round" style="background-color: #E50914;">
+      <h3 class="menuTitle"><b>Sucos</b></h3>
+    </div>
+  </a>
+  <div id="Sucos" class="menu">
+   <ul  id="collapseSuco" class="collapse in show w3-ul w3-xlarge">
+      <li class="w3-text-black pratos" onclick="mostrarPrato1()">
+        <span>Cajá</span><br>
+        <span class="w3-tag w3-round w3-large w3-dark-grey">R$ 13,00</span>
+      </li>
+      <li class="w3-text-black pratos">
+        <span>Laranja</span><br>
+        <span class="w3-tag w3-round w3-large w3-dark-grey">R$ 25,00</span><br>
+      <li class="w3-text-black pratos">
+        <span>Maracujá</span><br>
+        <span class="w3-tag w3-round w3-large w3-dark-grey">R$ 15,00</span>
+      </li>
+      <li class="w3-text-black pratos">
+        <span>Acerola</span><br> 
+        <span class="w3-tag w3-round w3-dark-grey span">R$ 20,00</span>
+      </li>
+      <li class="w3-text-black pratos">
+        <span>Goiaba</span><br> 
+        <span class="w3-tag w3-round w3-large w3-dark-grey">R$ 10,00 </span>
+      </li>
+      <li class="w3-text-black pratos">
+        <span>Jarra </span><br> 
+        <span class="w3-tag w3-round w3-large w3-dark-grey">R$ 10,00</span>
+      </li>  
+   </ul>
+  </div>
+  <a class="w3-row w3-center" data-toggle="collapse" data-target="#collapseRefri">
+    <div class="w3-col tablink w3-padding-large w3-text-white w3-round" style="background-color: #E50914;">
+      <h3 class="menuTitle"><b>Refrigerantes</b></h3>
+    </div>
+  </a>
+  <div id="Refrigerantes" class="menu">
+   <ul  id="collapseRefri" class="collapse in show w3-ul w3-xlarge">
+      <li class="w3-text-black pratos" onclick="mostrarPrato1()">
+        <span>Coca-Cola</span><br>
+        <span class="w3-tag w3-round w3-large w3-dark-grey">R$ 13,00</span>
+      </li>
+      <li class="w3-text-black pratos">
+        <span>Guaraná</span><br>
+        <span class="w3-tag w3-round w3-large w3-dark-grey">R$ 25,00</span><br>
+      <li class="w3-text-black pratos">
+        <span>Fanta</span><br>
+        <span class="w3-tag w3-round w3-large w3-dark-grey">R$ 15,00</span>
+      </li>
+      <li class="w3-text-black pratos">
+        <span>Água Mineral</span><br> 
+        <span class="w3-tag w3-round w3-dark-grey span">R$ 20,00</span>
+      </li>
+   </ul>
+  </div>
+<a class="w3-row w3-center" data-toggle="collapse" data-target="#collapseCerveja">
+    <div class="w3-col tablink w3-padding-large w3-text-white w3-round" style="background-color: #E50914;">
+      <h3 class="menuTitle"><b>Cervejas</b></h3>
+    </div>
+  </a>
+  <div id="Cervejas" class="menu">
+   <ul  id="collapseCerveja" class="collapse in show w3-ul w3-xlarge">
+      <li class="w3-text-black pratos" onclick="mostrarPrato1()">
+        <span>Skol</span><br>
+        <span class="w3-tag w3-round w3-large w3-dark-grey">R$ 13,00</span>
+      </li>
+      <li class="w3-text-black pratos">
+        <span>Itaipava</span><br>
+        <span class="w3-tag w3-round w3-large w3-dark-grey">R$ 25,00</span><br>
+      <li class="w3-text-black pratos">
+        <span>Original</span><br>
+        <span class="w3-tag w3-round w3-large w3-dark-grey">R$ 15,00</span>
+      </li>
+      <li class="w3-text-black pratos">
+        <span>Burdweiser</span><br> 
+        <span class="w3-tag w3-round w3-dark-grey span">R$ 20,00</span>
+      </li>
+      <li class="w3-text-black pratos">
+        <span>Eisenbahn</span><br> 
+        <span class="w3-tag w3-round w3-large w3-dark-grey">R$ 10,00 </span>
+      </li>
+      <li class="w3-text-black pratos">
+        <span>Heineken</span><br> 
+        <span class="w3-tag w3-round w3-large w3-dark-grey">R$ 10,00</span>
+      </li>  
+   </ul>
+  </div>
+
 </div>
   <br>
   <br>
   <br>
 
+<!-- Subtotal -->
   <div id="subtotal" class="footer w3-center w3-hover-opacity-off w3-dark-grey" onclick="mostrarSubtotal()">
-    <h3 class="w3-center w3-text-white"> <i class="glyphicon glyphicon-shopping-cart w3-text-white"></i>
-      <span>Total: R$</span>
+  	<hr>
+    <h3 class="w3-center w3-text-white">
+
+     <i class="fa fa-shopping-cart w3-text-white"></i>
+      <span> <b>R$:</b></span>
     </h3>
     <br>
   </div>
-
+ 
+ <!-- Span 1 do Subtotal -->
 
   <div id="id01" class="fundo-span">
     <div class="fundo-span-conteudo animate">
@@ -128,12 +230,12 @@
           <b>Meu pedido:</b>
         </h3>
         <div id="tabela-pedidos" class="w3-text-white">
-          <table id="" class="table">
+          <table id="tabela" class="table">
             <thead>
-              <tr>
-                <th scope="col" class="w3-center">Quant</th>
-                <th scope="col" class="w3-center">Pedido</th>
-                <th scope="col" class="w3-center">Preço</th>
+              <tr>  
+                <th scope="col" class="w3-center w3-container">Quant</th>
+                <th scope="col" class="w3-center w3-container">Pedido</th>
+                <th scope="col" class="w3-center w3-container">Preço</th>
               </tr>
             </thead>
             <tbody>
@@ -153,19 +255,21 @@
 
       <div id="total-parcial" class=" infos-pedido">
          <h4 class=" w3-text-black"><b>Total: </b> <b>R$ </b></h4>
-      </div>
-
+      </div>  
+         
 <br>
 
       <button onclick="document.getElementById('id02').style.display='block'; document.getElementById('id01').style.display='none'" id="botao-span2" class="w3-button w3-green ">Pedir</button>
    </div>
-
+         
 <br>
 <br>
 
    </div>
 </div>
 
+ <!-- Span 2 do Subtotal -->
+    
 <div id="id02" class="fundo-span">
    <div class="fundo-span-conteudo animate">
       <div class="botao-fechar-span">
@@ -174,50 +278,50 @@
       <div class="infos-pedido">
          <h3 class="w3-center w3-text-white"><b> Meu pedido: </b> </h3>
          <div id="tabela" class=" w3-text-white">
-
-<hr>
+            
 
             <table id="tabela" class="table">
                <thead>
                   <tr>
-                     <th scope="col">Quantidade</th>
-                     <th scope="col">Pedido</th>
-                     <th scope="col">Preço</th>
+                     <th scope="col" class="w3-center">Quant</th>
+                     <th scope="col" class="w3-center">Pedido</th>
+                     <th scope="col" class="w3-center">Preço</th>
                   </tr>
                </thead>
                <tbody>
                   <tr>
-                     <th scope="row">1</th>
-                     <td>Arroz</td>
-                     <td>R$: 5,00</td>
+                     <th scope="row" class="w3-center">1</th>
+                     <td class="w3-center">Arroz</td>
+                     <td class="w3-center">R$: 5,00</td>
                   </tr>
                   <tr>
-                     <th scope="row">2</th>
-                     <td>Frango</td>
-                     <td>R$: 10,00</td>
+                     <th scope="row" class="w3-center">2</th>
+                     <td class="w3-center">Frango</td>
+                     <td class="w3-center">R$: 10,00</td>
                   </tr>
                </tbody>
             </table>
          </div>
      </div>
-
+      
 <br>
-
+   
      <div id="total-pedido" class="infos-pedido">
         <h4 class=" w3-text-black"><b>Total: </b><b>R$ </b></h4>
         <h4 class=" w3-text-black"><b>Número do pedido: </b><b>1234 </b></h4>
      </div>
   </div>
 </div>
+           
+<!-- Span da Descrição do Prato -->
 
-<!-- Pratos Functions -->
 <div id="prato1" class="fundo-span-2">
   <div  class="fundo-span-conteudo-2 animate">
     <div id="botao-fechar-span">
        <span onclick="document.getElementById('prato1').style.display='none'" class="close1" title=" Fechar Span">&times;
        </span>
     </div>
-    <div id="nome-prato" class="w3-container w3-text-white">
+    <div id="nome-prato" class="w3-container w3-text-white dark-red">
       <h2 class="animate"><b><label for="qunatA">Asinha de Frango</label></b></h2>
     </div>
 
@@ -231,6 +335,8 @@
         </h4>
       </div>
 
+
+
       <br>
 
       <div id="requisicao">
@@ -238,10 +344,10 @@
           <h5><i class="fa fa-plus"></i> Observações do Cliente</h5>
         </div>
         <div id="input-requisiçoes" class="input-group animate">
-          <textarea id="input-req-real" type="" class="form-control" placeholder="Observações"  rows="1">
+          <textarea id="input-req-real" type="" class="form-control" placeholder="Observações"  rows="1"> 
           </textarea>
           <span>
-            <button class="btn btn-default" type="button" onclick="mostrarNomeReq()">OK</button>
+            <button class="w3-button" type="button"  onclick="mostrarNomeReq()">OK</button>
           </span>
         </div>
       </div>
@@ -251,37 +357,37 @@
 
        <div id="quantidade" class="animate">
           <div data-app="product.quantity" id="quantidade">
-             <label>Quantidade:</label>
-             <input type="button" id="menos" value='-' onclick="process(-1)"/>
+             <label>Quantidade:</label>      
+             <input type="button" id="menos" value='-' onclick="process(-1)"/> 
              <input id="quantPet1" name="quantPet1" class="text w3-center" size="1" type="text" value="0" maxlength="2" />
              <input type="button" id="mais" class="" value='+' onclick="process(1)"/>
           </div>
 
           <br>
-          <br>
+          <br>            
 
           <div id="botao-adicionar" class="animate">
-            <button type="submit" id="addButton" class="w3-button w3-black" onclick="pegarValue(); fecharPrato1();">Adicionar</button>
+            <button type="submit" id="addButton" class="w3-button w3-text-white"  onclick="pegarValue(); fecharPrato1();">Adicionar</button>
           </div>
 
           <br>
-          <br>
+          <br>  
           <br>
        </div>
     </div>
   </div>
 </div>
 <!-- //Pratos Functions -->
-
+ 
 </div>
 </body>
 
-  <!-- Connection Firebase JS -->
+  <!-- Connection Firebase JS --> 
   <script type="text/javascript" src="_js/connection.firebase.js"></script>
 
   <!-- Functions JS -->
   <script type="text/javascript" src="_js/user.functions.js"></script>
 
-</html>
+</html> 
 
 
