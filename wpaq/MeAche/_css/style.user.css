@@ -53,16 +53,13 @@ img {
   display: inline-block;
 }
 
-<<<<<<< HEAD
 #prato1 {
   display: none;
 }
 
-=======
 .menu {
   margin: 15px;
 }
->>>>>>> 8079c293f8fd9650185a1d7e74b25c2c66b37b72
 
 .pratos {
   text-align: center;
@@ -72,15 +69,10 @@ img {
 
 /*Barra do Subtotal*/
 
-#subtotal {
-  background-color: #F7F2F7;
-  height: 10%;
-  bottom: 0;
-}
-
 .footer {
-  position: relative;
+  position: fixed;
   bottom: 0;
+  left: 0;
   width:100%;
 }
 
