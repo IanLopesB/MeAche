@@ -1,4 +1,3 @@
-
 .body {
   width: 100%;
    font-family: Segoe UI;
@@ -35,9 +34,15 @@
   border-width: 4px;
   border-color: black;
 }
+<<<<<<< HEAD
 
 #categoria {
 
+=======
+
+#categoria {
+
+>>>>>>> fe402419192aab32f37b9faceb57c18ca2b779f8
   width: 100%;
 }
 
@@ -58,7 +63,11 @@
 #subtotal {
   height: 10%;
 <<<<<<< HEAD
+<<<<<<< HEAD
     background-color: darkmagenta;
+=======
+    background-color: #49274A;
+>>>>>>> 5265a322b784efdc7f9cc66f506c641d7205b62a
 =======
   background-color: #49274A;
 >>>>>>> fe402419192aab32f37b9faceb57c18ca2b779f8
@@ -339,6 +348,8 @@ border: none;
 input[type=text]{outline:none}
 input[type=button]{outline:none}
 textarea {outline: none;resize: none;}
+<<<<<<< HEAD
+=======
 
 #descricao{
   color: black;
@@ -348,3 +359,4 @@ textarea {outline: none;resize: none;}
   color: black;
 }
 
+>>>>>>> fe402419192aab32f37b9faceb57c18ca2b779f8

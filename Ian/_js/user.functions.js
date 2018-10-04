@@ -1,21 +1,12 @@
-function mostrarSubtotal() {
-   
+function mostrarSubtotal(){
      var x = document.getElementById("id01");
        if (x.style.display === "none") {
            x.style.display = "block";
        } else {
            x.style.display = "none";
        }
-   }
-
-function mostrarPrato1() {
-  var x = document.getElementById("prato1");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-        x.style.display = "none";
-      }
 }
+
 
 function mostrarInputReq() {
 
@@ -25,7 +16,7 @@ var x = document.getElementById("input-requisiçoes");
        } else {
            x.style.display = "block";
        }
-   
+
 var x = document.getElementById("nome-requisicao");
        if (x.style.display === "block") {
            x.style.display = "none";
@@ -50,19 +41,8 @@ var x = document.getElementById("nome-requisicao");
        } else {
            x.style.display = "none";
        }
-         
-       }
 
-function fecharPrato1() {
-
-var x = document.getElementById("prato1");
-       if (x.style.display === "none") {
-           x.style.display = "block";
-       } else {
-           x.style.display = "none";
        }
-   
-   }
 
    function abrirMenu() {
     var x = document.getElementById("myTopnav");
@@ -72,18 +52,6 @@ var x = document.getElementById("prato1");
         x.className = "topnav";
     }
 }
-
-
-function process(quantPet1){
-    var value = parseInt(document.getElementById("quantPet1").value);
-    value+=quantPet1;
-    if(value < 1){
-      document.getElementById("quantPet1").value = 0;
-    }else{
-    document.getElementById("quantPet1").value = value;
-    }
-  }
-
 
 function openMenu(evt, menuName) {
   var i, x, tablinks;
