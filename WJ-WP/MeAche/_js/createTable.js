@@ -47,6 +47,7 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
   ul.appendChild(li6);
 
   th.setAttribute("scope", "row");
+  th.setAttribute('class', 'input_checkbox');
 
   // Function Checkbox
   input_checkbox.setAttribute("type", "checkbox");
@@ -67,7 +68,11 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
   /* //Function Checkbox */
 
   td_pedidos.setAttribute("colspan", "2");
-  td_pedidos.setAttribute('id', 'td_pedidos')
+  td_pedidos.setAttribute('id', 'td_pedidos');
+  td_pedidos.setAttribute('class', 'td_pedidos');
+
+  td_num_pedidos.setAttribute("colspan", "2");
+  td_num_pedidos.setAttribute('id', 'td_num_pedidos');
 
   // If Value == 0 Firebase
   // Petiscos

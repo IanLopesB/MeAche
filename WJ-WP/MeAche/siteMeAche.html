@@ -1,115 +1,223 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <title>Me Ache | Pestiscararias e Açaí</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="_css/bootstrap.min.css">
-    <!-- Custom style CSS -->
-    <link rel="stylesheet" type="text/css" href="_css/style.user.css">
-    <link rel="stylesheet" type="text/css" href="_css/style.admin.css">
-    <link rel="stylesheet" href="_css/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="_css/icon.css">
-    <!-- Load the Firebase library before loading the body. -->
-    <script src="_js/firebase.js"></script>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="_jquery/jquery-2.2.0.min.js"></script>
-    <script src="_jquery/popper.min.js"></script>
-    <script src="_js/bootstrap.min.js"></script>
+  <title>Me Ache | Pestiscararias e Açaí</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="_css/bootstrap.min.css">
+
+  <!-- Custom style CSS -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" type="text/css" href="_css/style.user.css">
+  <link rel="stylesheet" href="_css/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="_css/icon.css">
+
+  <!-- Load the Firebase library before loading the body. -->
+  <script src="_js/firebase.js"></script>
+
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="_jquery/jquery-2.2.0.min.js"></script>
+  <script src="_jquery/popper.min.js"></script>
+  <script src="_js/bootstrap.min.js"></script>
 </head>
 
-<body class="body">
-    <div id="logo" class="w3-center"> <img id="img-logo" class="img-fluid w3-center" src="http://pluspng.com/img-png/beats-electronics-logo-vector-png-beats-electronics-logo-png-828.png"> </div>
-    <hr id="barra">
-    <div class="w3-container">
-        <a class="w3-row w3-center" data-toggle="collapse" data-target="#collapsePet">
-            <div class="w3-col tablink w3-padding-large w3-red w3-border">
-                <h4 class="menuTitle">Petiscos</h4> </div>
-        </a>
-        <div id="Petiscos" class="menu">
-            <ul id="collapsePet" class="collapse in show w3-ul w3-xlarge">
-                <li class="w3-text-black pratos" onclick="mostrarPrato1()"> <span>Asinha de Frango</span>
-                    <br> <span class="w3-tag w3-round w3-large w3-dark-grey">R$ <span id="preco1">13.50</span></span>
-                </li>
-                <li class="w3-text-black pratos" onclick="mostrarPrato2()"> <span>Camarão Alho e Óleo</span>
-                    <br> <span class="w3-tag w3-round w3-large w3-dark-grey">R$ <span id="preco2"> 25,50</span></span>
-                    <br>
-                <li class="w3-text-black pratos" onclick="mostrarPrato3()"> <span>Calabresa com Fritas</span>
-                    <br> <span class="w3-tag w3-round w3-large w3-dark-grey">R$ <span id="preco3"> 15,00</span></span>
-                </li>
-                <li class="w3-text-black pratos" onclick="mostrarPrato4()"> <span>Carne de Sol C/ Macaxeira</span>
-                    <br> <span class="w3-tag w3-round w3-large w3-dark-grey">R$ <span id="preco4"> 20,00</span></span>
-                </li>
-                <li class="w3-text-black pratos" onclick="mostrarPrato5()"> <span>Torresmo</span>
-                    <br> <span class="w3-tag w3-round w3-large w3-dark-grey">R$ <span id="preco5"> 10,00</span> </span>
-                </li>
-                <li class="w3-text-black pratos" onclick="mostrarPrato6()"> <span>Batata Frita (C/ Sheddar)</span>
-                    <br> <span class="w3-tag w3-round w3-large w3-dark-grey">R$ <span id="preco6"> 10,00</span></span>
-                </li>
-            </ul>
-        </div>
-        <a class="w3-row w3-center" data-toggle="collapse" data-target="#collapseEsp" aria-haspopup="true" aria-expanded="false">
-            <div class="w3-col tablink w3-padding-large w3-red w3-border">
-                <h4 class="menuTitle">Espetos</h4> </div>
-        </a>
-        <div id="Espetos" class="menu">
-            <ul id="collapseEsp" class="collapse in show w3-ul w3-xlarge">
-                <li class="w3-text-black" onclick="mostrarPrato()"> <span class="pratos">Feijão</span> <span class="w3-right w3-tag w3-round w3-large w3-dark-grey">R$ 10,0</span> </li>
-                <li class="w3-text-black"> <span>Batata</span> <span class=" w3-right w3-tag w3-round w3-large w3-dark-grey">R$ 5,00</span> </li>
-                <li class="w3-text-black"> <span>Adam</span> <span class="w3-right w3-tag w3-round w3-large w3-dark-grey">R$ 7,00</span> </li>
-                <li class="w3-text-black"> <span>Jill</span> <span class=" w3-right w3-tag w3-round w3-large w3-dark-grey">R$ 10,0</span> </li>
-                <li class="w3-text-black"> <span>Eve</span> <span class=" w3-right w3-tag w3-round w3-large w3-dark-grey">R$ 5,00 </span> </li>
-                <li class="w3-text-black"> <span>Adam</span> <span class=" w3-right w3-tag w3-round w3-large w3-dark-grey">R$ 7,00</span> </li>
-            </ul>
-        </div>
-        <a class="w3-row w3-center" data-toggle="collapse" data-target="#collapseRef">
-            <div class="w3-col tablink w3-padding-large w3-red w3-border">
-                <h4 class="menuTitle">Refrigerantes</h4> </div>
-        </a>
-        <div id="Refrigerantes" class="menu">
-            <ul id="collapseRef" class="collapse in show w3-ul w3-xlarge">
-                <li class="w3-text-black" onclick="mostrarPrato()"> <span class="pratos">A</span> <span class="w3-right w3-tag w3-round w3-large w3-dark-grey">R$ 10,0</span> </li>
-                <li class="w3-text-black"> <span>B</span> <span class=" w3-right w3-tag w3-round w3-large w3-dark-grey">R$ 5,00</span> </li>
-                <li class="w3-text-black"> <span>C</span> <span class=" w3-right w3-tag w3-round w3-large w3-dark-grey">R$ 17,00</span> </li>
-                <li class="w3-text-black"> <span>D</span> <span class=" w3-right w3-tag w3-round w3-large w3-dark-grey">R$ 100,0</span> </li>
-                <li class="w3-text-black"> <span>E</span> <span class=" w3-right w3-tag w3-round w3-large w3-dark-grey">R$ 5,00 </span> </li>
-                <li class="w3-text-black"> <span>F</span> <span class=" w3-right w3-tag w3-round w3-large w3-dark-grey">R$ 7,00</span> </li>
-            </ul>
-        </div>
-        <a class="w3-row w3-center" data-toggle="collapse" data-target="#collapseCer">
-            <div class="w3-col tablink w3-padding-large w3-red w3-border">
-                <h4 class="menuTitle">Cervejas</h4> </div>
-        </a>
-        <div id="Cervejas" class="menu">
-            <ul id="collapseCer" class="collapse show in w3-ul w3-xlarge">
-                <li class="w3-text-black" onclick="mostrarPrato()"> <span class="pratos">A</span> <span class="w3-right w3-tag w3-round w3-large w3-dark-grey">R$ 10,0</span> </li>
-                <li class="w3-text-black"> <span>B</span> <span class=" w3-right w3-tag w3-round w3-large w3-dark-grey">R$ 5,00</span> </li>
-                <li class="w3-text-black"> <span>C</span> <span class=" w3-right w3-tag w3-round w3-large w3-dark-grey">R$ 17,00</span> </li>
-                <li class="w3-text-black"> <span>D</span> <span class=" w3-right w3-tag w3-round w3-large w3-dark-grey">R$ 100,0</span> </li>
-                <li class="w3-text-black"> <span>E</span> <span class=" w3-right w3-tag w3-round w3-large w3-dark-grey">R$ 5,00 </span> </li>
-                <li class="w3-text-black"> <span>F</span> <span class=" w3-right w3-tag w3-round w3-large w3-dark-grey">R$ 7,00</span> </li>
-            </ul>
-        </div>
-        <div id="subtotal" class="footer w3-center w3-hover-opacity-off w3-dark-grey" onclick="mostrarSubtotal()">
-        <!-- <img heigth="50" width="50"src="img/14_104869.png"></img>-->
-            <h3 class="w3-center w3-text-white"> 
-                <i class="glyphicon glyphicon-shopping-cart w3-text-white"></i> 
-                <span id="total"> Total: R$ <span id="totalValue"></span></span> 
-            </h3>
-            <br> 
-        </div>
-        <div id="id01" style="display: none;" class="fundo-span">
+<body>
+
+<br>
+
+<!-- Logo do ME Ache  -->
+  <div id="logo" class="w3-center">
+    <img id="img-logo" class="img-fluid w3-center" src="http://pluspng.com/img-png/beats-electronics-logo-vector-png-beats-electronics-logo-png-828.png" >
+  </div>
+
+ <!-- Barra da Logo --> 
+  <hr id="barra">
+ 
+ <!-- Cardápio -->
+ <div class="w3-container">  
+  <a class="w3-row w3-center" data-toggle="collapse" data-target="#collapsePet">
+    <div class="w3-col tablink w3-padding-large w3-text-white w3-round" style="background-color: #E50914;">
+      <h3 class="menuTitle"><b>Petiscos</b></h3>
+    </div>
+  </a>
+ <div id="Petiscos" class="menu">
+   <ul  id="collapsePet" class="collapse in show w3-ul w3-xlarge">
+      <li class="w3-text-black pratos" onclick="mostrarPrato1()">
+        <span>Asinha de Frango</span><br>
+        <span class="w3-tag w3-round w3-large w3-dark-grey">R$ <span id="preco1">13,00</span></span>
+      </li>
+      <li class="w3-text-black pratos" onclick="mostrarPrato2()">
+        <span>Camarão Alho e Óleo</span><br>
+        <span class="w3-tag w3-round w3-large w3-dark-grey">R$<span id="preco2"> 25,00</span></span><br>
+      <li class="w3-text-black pratos" onclick="mostrarPrato3()">
+        <span>Calabresa com Fritas</span><br>
+        <span class="w3-tag w3-round w3-large w3-dark-grey">R$<span id="preco3"> 15,00</span></span>
+      </li>
+      <li class="w3-text-black pratos" onclick="mostrarPrato4()">
+        <span>Carne de Sol C/ Macaxeira</span><br> 
+        <span class="w3-tag w3-round w3-dark-grey span">R$<span id="preco4"> 20,00</span></span>
+      </li>
+      <li class="w3-text-black pratos" onclick="mostrarPrato5()">
+        <span>Torresmo</span><br> 
+        <span class="w3-tag w3-round w3-large w3-dark-grey">R$<span id="preco5"> 10,00 </span></span>
+      </li>
+      <li class="w3-text-black pratos" onclick="mostrarPrato6()">
+        <span>Batata Frita (C/ Sheddar)</span><br> 
+        <span class="w3-tag w3-round w3-large w3-dark-grey">R$<span id="preco6"> 10,00</span></span>
+      </li>  
+   </ul>
+  </div>
+
+  <a class="w3-row w3-center" data-toggle="collapse" data-target="#collapseEsp" aria-haspopup="true" aria-expanded="false">
+    <div class="w3-col tablink w3-padding-large w3-text-white w3-round" style="background-color: #E50914;">
+      <h3 class="menuTitle"><b>Espetos</b></h3>
+    </div>
+  </a>
+  <div id="Espetos" class="menu">
+   <ul id="collapseEsp" class="collapse in show w3-ul w3-xlarge">
+      <li class="w3-text-black pratos">
+        <span >Boi</span><br>
+        <span class=" w3-tag  w3-round w3-large w3-dark-grey">R$ 4,00</span>
+      </li>
+      <li class="w3-text-black pratos">
+        <span>Franbacon</span><br>
+        <span class=" w3-tag w3-round w3-large w3-dark-grey">R$ 4,00</span>
+      </li>
+      <li class="w3-text-black pratos">
+        <span>Frango</span><br>
+        <span class=" w3-tag w3-round w3-large w3-dark-grey">R$ 4,00</span>
+      </li>
+      <li class="w3-text-black pratos">
+        <span>Coração de Frango</span><br> 
+        <span class=" w3-tag  w3-round w3-large w3-dark-grey">R$ 4,00</span>
+      </li>
+      <li class="w3-text-black pratos">
+        <span>Porco</span><br> 
+        <span class=" w3-tag w3-round w3-large w3-dark-grey">R$ 5,00 </span>
+      </li>
+      
+   </ul>
+  </div>
+
+  <a class="w3-row w3-center" data-toggle="collapse" data-target="#collapseSuco">
+    <div class="w3-col tablink w3-padding-large  w3-text-white w3-round" style="background-color: #E50914;">
+      <h3 class="menuTitle"><b>Sucos</b></h3>
+    </div>
+  </a>
+  <div id="Sucos" class="menu">
+   <ul  id="collapseSuco" class="collapse in show w3-ul w3-xlarge">
+      <li class="w3-text-black pratos" >
+        <span>Cajá</span><br>
+        <span class="w3-tag w3-round w3-large w3-dark-grey">R$ 13,00</span>
+      </li>
+      <li class="w3-text-black pratos">
+        <span>Laranja</span><br>
+        <span class="w3-tag w3-round w3-large w3-dark-grey">R$ 25,00</span><br>
+      <li class="w3-text-black pratos">
+        <span>Maracujá</span><br>
+        <span class="w3-tag w3-round w3-large w3-dark-grey">R$ 15,00</span>
+      </li>
+      <li class="w3-text-black pratos">
+        <span>Acerola</span><br> 
+        <span class="w3-tag w3-round w3-dark-grey span">R$ 20,00</span>
+      </li>
+      <li class="w3-text-black pratos">
+        <span>Goiaba</span><br> 
+        <span class="w3-tag w3-round w3-large w3-dark-grey">R$ 10,00 </span>
+      </li>
+      <li class="w3-text-black pratos">
+        <span>Jarra </span><br> 
+        <span class="w3-tag w3-round w3-large w3-dark-grey">R$ 10,00</span>
+      </li>  
+   </ul>
+  </div>
+  <a class="w3-row w3-center" data-toggle="collapse" data-target="#collapseRefri">
+    <div class="w3-col tablink w3-padding-large w3-text-white w3-round" style="background-color: #E50914;">
+      <h3 class="menuTitle"><b>Refrigerantes</b></h3>
+    </div>
+  </a>
+  <div id="Refrigerantes" class="menu">
+   <ul  id="collapseRefri" class="collapse in show w3-ul w3-xlarge">
+      <li class="w3-text-black pratos" onclck="mostrarPrato1()">
+        <span>Coca-Cola</span><br>
+        <span class="w3-tag w3-round w3-large w3-dark-grey">R$ 13,00</span>
+      </li>
+      <li class="w3-text-black pratos">
+        <span>Guaraná</span><br>
+        <span class="w3-tag w3-round w3-large w3-dark-grey">R$ 25,00</span><br>
+      <li class="w3-text-black pratos">
+        <span>Fanta</span><br>
+        <span class="w3-tag w3-round w3-large w3-dark-grey">R$ 15,00</span>
+      </li>
+      <li class="w3-text-black pratos">
+        <span>Água Mineral</span><br> 
+        <span class="w3-tag w3-round w3-dark-grey span">R$ 20,00</span>
+      </li>
+   </ul>
+  </div>
+<a class="w3-row w3-center" data-toggle="collapse" data-target="#collapseCerveja">
+    <div class="w3-col tablink w3-padding-large w3-text-white w3-round" style="background-color: #E50914;">
+      <h3 class="menuTitle"><b>Cervejas</b></h3>
+    </div>
+  </a>
+  <div id="Cervejas" class="menu">
+   <ul  id="collapseCerveja" class="collapse in show w3-ul w3-xlarge">
+      <li class="w3-text-black pratos" >
+        <span>Skol</span><br>
+        <span class="w3-tag w3-round w3-large w3-dark-grey">R$ 13,00</span>
+      </li>
+      <li class="w3-text-black pratos">
+        <span>Itaipava</span><br>
+        <span class="w3-tag w3-round w3-large w3-dark-grey">R$ 25,00</span><br>
+      <li class="w3-text-black pratos">
+        <span>Original</span><br>
+        <span class="w3-tag w3-round w3-large w3-dark-grey">R$ 15,00</span>
+      </li>
+      <li class="w3-text-black pratos">
+        <span>Burdweiser</span><br> 
+        <span class="w3-tag w3-round w3-dark-grey span">R$ 20,00</span>
+      </li>
+      <li class="w3-text-black pratos">
+        <span>Eisenbahn</span><br> 
+        <span class="w3-tag w3-round w3-large w3-dark-grey">R$ 10,00 </span>
+      </li>
+      <li class="w3-text-black pratos">
+        <span>Heineken</span><br> 
+        <span class="w3-tag w3-round w3-large w3-dark-grey">R$ 10,00</span>
+      </li>  
+   </ul>
+  </div>
+</div>
+
+  <br>
+  <br>
+  <br>
+
+<!-- Subtotal -->
+  <div id="subtotal" class="footer w3-center w3-hover-opacity-off w3-dark-grey" onclick="mostrarSubtotal()">
+
+    <h3 class="w3-center w3-text-white">
+     <i class="fa fa-shopping-cart w3-text-white"></i>
+      <span> <b>R$:</b> <b id="totalValue"></b></span>
+    </h3>
+  </div>
+ 
+ <!-- Span 1 do Subtotal -->
+   <div id="id01" style="display: none;" class="fundo-span">
             <div class="fundo-span-conteudo animate">
                 <div id="botao-fechar-span"> <span onclick="document.getElementById('id01').style.display='none'" class="close1" title=" Fechar Span"> &times; </span> </div>
                 <div class="infos-pedido">
                     <h3 class="w3-center w3-text-white"> <b>Meu pedido:</b> </h3>
                     <div id="tabela-pedidos" class="w3-text-white">
-                        <hr>
+              
                         <table id="tabela" class="table">
                             <thead>
                                 <tr>
@@ -129,12 +237,55 @@
                 <br>
                 <br> </div>
         </div>
-        <!-- Pratos Functions -->
-        <!-- Tela-Prato 01 -->
-        <div id="prato1" style="display: none;" class="fundo-span-2" value="1">
+
+ <!-- Span 2 do Subtotal -->
+<div id="id02" class="fundo-span">
+   <div class="fundo-span-conteudo animate">
+      <div class="botao-fechar-span">
+         <span onclick="document.getElementById('id02').style.display='none'" class="close2" title="Fechar Span">&times;</span>
+      </div>
+      <div class="infos-pedido">
+         <h3 class="w3-center w3-text-white"><b> Meu pedido: </b> </h3>
+         <div id="tabela" class=" w3-text-white">
+            <table id="tabela" class="table">
+               <thead>
+                  <tr>
+                     <th scope="col" class="w3-center">Quant</th>
+                     <th scope="col" class="w3-center">Pedido</th>
+                     <th scope="col" class="w3-center">Preço</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <th scope="row" class="w3-center">1</th>
+                     <td class="w3-center">Arroz</td>
+                     <td class="w3-center">R$: 5,00</td>
+                  </tr>
+                  <tr>
+                     <th scope="row" class="w3-center">2</th>
+                     <td class="w3-center">Frango</td>
+                     <td class="w3-center">R$: 10,00</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+     </div>
+      
+<br>
+   
+     <div id="total-pedido" class="infos-pedido">
+        <h4 class=" w3-text-black"><b>Total: </b><b>R$ </b></h4>
+        <h4 class=" w3-text-black"><b>Número do pedido: </b><b>1234 </b></h4>
+     </div>
+  </div>
+</div>
+           
+<!-- Span da Descrição do Prato 1-->
+
+ <div id="prato1" style="display: none;" class="fundo-span-2" value="1">
             <div class="fundo-span-conteudo-2 animate">
                 <div id="botao-fechar-span"> <span onclick="document.getElementById('prato1').style.display='none'" class="close1" title=" Fechar Span">&times; </span> </div>
-                <div id="nome-prato" class="w3-container w3-text-white">
+                <div id="nome-prato" class="w3-container w3-text-white dark-red">
                     <h3 class="animate"><b><label id="asinha"><li>Asinha de Frango</li></label></b></h3> </div>
                 <br>
                 <div id="textos" class="w3-container">
@@ -158,7 +309,7 @@
                         <br>
                         <br>
                         <div id="botao-adicionar" class="animate">
-                            <button type="submit" id="addButton" class="w3-button w3-black" onclick="mandardados1(); fecharPrato1();">Adicionar</button>
+                            <button type="submit" id="addButton" class="w3-button w3-text-white" onclick="mandardados1(); fecharPrato1();">Adicionar</button>
                         </div>
                         <br>
                         <br>
@@ -166,11 +317,13 @@
                 </div>
             </div>
         </div>
-        <!-- Tela-Prato 02 -->
-        <div id="prato2" style="display: none;" class="fundo-span-2">
+ 
+ <!-- Span da Descrição do Prato 2 -->
+
+ <div id="prato2" style="display: none;" class="fundo-span-2">
             <div class="fundo-span-conteudo-2 animate">
                 <div id="botao-fechar-span"> <span onclick="document.getElementById('prato2').style.display='none'" class="close1" title=" Fechar Span">&times; </span> </div>
-                <div id="nome-prato" class="w3-container w3-text-white">
+                <div id="nome-prato" class="w3-container w3-text-white dark-red">
                     <h3 class="animate"><b><label id="camarao"><li>Camarão Alho e Óleo</li></label></b></h3> </div>
                 <br>
                 <div id="textos" class="w3-container">
@@ -194,7 +347,7 @@
                         <br>
                         <br>
                         <div id="botao-adicionar" class="animate">
-                            <button type="submit" id="addButton" class="w3-button w3-black" onclick="fecharPrato2(); mandardados2();">Adicionar</button>
+                            <button type="submit" id="addButton" class="w3-button w3-text-white" onclick="fecharPrato2(); mandardados2();">Adicionar</button>
                         </div>
                         <br>
                         <br>
@@ -202,12 +355,14 @@
                 </div>
             </div>
         </div>
-        <!-- Tela-Prato 03 -->
+        
+<!-- Span da Descrição do Prato 1-->
+
         <div id="prato3" style="display: none;" class="fundo-span-2">
             <div class="fundo-span-conteudo-2 animate">
                 <div id="botao-fechar-span"> <span onclick="document.getElementById('prato3').style.display='none'" class="close1" title=" Fechar Span">&times; </span> </div>
-                <div id="nome-prato" class="w3-container w3-text-white">
-                    <h3 class="animate"><b><label id="calabresa"><li>Calabresa com Fritas</li></label></b></h3> </div>
+                <div id="nome-prato" class="w3-container w3-text-white dark-red">
+                    <h3 class="animate"><b><label id="calabresa"><li style="list-style-type: none;">Calabresa com Fritas</li></label></b></h3> </div>
                 <br>
                 <div id="textos" class="w3-container">
                     <div id="descricao">
@@ -230,7 +385,7 @@
                         <br>
                         <br>
                         <div id="botao-adicionar" class="animate">
-                            <button type="submit" id="addButton" class="w3-button w3-black" onclick="fecharPrato3(); mandardados3();">Adicionar</button>
+                            <button type="submit" id="addButton" class="w3-button w3-text-white" onclick="fecharPrato3(); mandardados3();">Adicionar</button>
                         </div>
                         <br>
                         <br>
@@ -238,12 +393,14 @@
                 </div>
             </div>
         </div>
-        <!-- Tela-Prato 04 -->
+   
+   <!-- Span da Descrição do Prato 1-->
+
         <div id="prato4" style="display: none;" class="fundo-span-2">
             <div class="fundo-span-conteudo-2 animate">
                 <div id="botao-fechar-span"> <span onclick="document.getElementById('prato4').style.display='none'" class="close1" title=" Fechar Span">&times; </span> </div>
-                <div id="nome-prato" class="w3-container w3-text-white">
-                    <h3 class="animate"><b><label id="carneSol"><li>Carne de Sol C/ Macaxeira</li></label></b></h3> </div>
+                <div id="nome-prato" class="w3-container w3-text-white dark-red">
+                    <h2 class="animate"><b><label id="carneSol"><li>Carne de Sol C/ Macaxeira</li></label></b></h2> </div>
                 <br>
                 <div id="textos" class="w3-container">
                     <div id="descricao">
@@ -266,7 +423,7 @@
                         <br>
                         <br>
                         <div id="botao-adicionar" class="animate">
-                            <button type="submit" id="addButton" class="w3-button w3-black" onclick="fecharPrato4(); mandardados4();">Adicionar</button>
+                            <button type="submit" id="addButton" class="w3-button w3-text-white" onclick="fecharPrato4(); mandardados4();">Adicionar</button>
                         </div>
                         <br>
                         <br>
@@ -274,12 +431,14 @@
                 </div>
             </div>
         </div>
-        <!-- Tela-Prato 05 -->
+
+<!-- Span da Descrição do Prato 1-->
+
         <div id="prato5" style="display: none;" class="fundo-span-2">
             <div class="fundo-span-conteudo-2 animate">
                 <div id="botao-fechar-span"> <span onclick="document.getElementById('prato5').style.display='none'" class="close1" title=" Fechar Span">&times; </span> </div>
-                <div id="nome-prato" class="w3-container w3-text-white">
-                    <h3 class="animate"><b><label id="torresmo"><li>Torresmo</li></label></b></h3> </div>
+                <div id="nome-prato" class="w3-container w3-text-white dark-red">
+                    <h2 class="animate"><b><label id="torresmo"><li>Torresmo</li></label></b></h2> </div>
                 <br>
                 <div id="textos" class="w3-container">
                     <div id="descricao">
@@ -302,7 +461,7 @@
                         <br>
                         <br>
                         <div id="botao-adicionar" class="animate">
-                            <button type="submit" id="addButton" class="w3-button w3-black" onclick="fecharPrato5(); mandardados5();">Adicionar</button>
+                            <button type="submit" id="addButton" class="w3-button w3-text-white" onclick="fecharPrato5(); mandardados5();">Adicionar</button>
                         </div>
                         <br>
                         <br>
@@ -310,12 +469,14 @@
                 </div>
             </div>
         </div>
-        <!-- Tela-Prato 06 -->
+     
+<!-- Span da Descrição do Prato 1-->
+
         <div id="prato6" style="display: none;" class="fundo-span-2">
             <div class="fundo-span-conteudo-2 animate">
                 <div id="botao-fechar-span"> <span onclick="document.getElementById('prato6').style.display='none'" class="close1" title=" Fechar Span">&times; </span> </div>
-                <div id="nome-prato" class="w3-container w3-text-white">
-                    <h3 class="animate"><b><label id="batata"><li>Batata Frita (C/ Sheddar)</li></label></b></h3> </div>
+                <div id="nome-prato" class="w3-container w3-text-white dark-red">
+                    <h2 class="animate"><b><label id="batata"><li>Batata Frita (C/ Sheddar)</li></label></b></h2> </div>
                 <br>
                 <div id="textos" class="w3-container">
                     <div id="descricao">
@@ -338,7 +499,7 @@
                         <br>
                         <br>
                         <div id="botao-adicionar" class="animate">
-                            <button type="submit" id="addButton" class="w3-button w3-black" onclick="fecharPrato6(); mandardados6();">Adicionar</button>
+                            <button type="submit" id="addButton" class="w3-button w3-text-white" onclick="fecharPrato6(); mandardados6();">Adicionar</button>
                         </div>
                         <br>
                         <br>
@@ -346,9 +507,15 @@
                 </div>
             </div>
         </div>
-        <!-- //Pratos Functions -->
-    </div>
+</div>
 </body>
+
+<!-- Connection Firebase JS --> 
+<script type="text/javascript" src="_js/connection.firebase.js"></script>
+
+<!-- Functions JS -->
+<script type="text/javascript" src="_js/user.functions.js"></script>
+
 <!-- Connection Firebase JS -->
 <script type="text/javascript" src="_js/connection.firebase.js"></script>
 <script type="text/javascript" src="_js/application.js"></script>
@@ -360,4 +527,6 @@
 <script type="text/javascript" src="_js/mostrar.prato.functions.js"></script>
 <script type="text/javascript" src="_js/createTablePedir.js"></script>
 
-</html>
+</html> 
+
+

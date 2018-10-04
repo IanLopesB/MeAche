@@ -5,17 +5,14 @@ body {
 }
 
 /*Imagem*/
-img {
-    vertical-align: middle;
-    border: 0;
-}
+
 
 #img-logo {
   width: 25%;
 }
 
 
-@media only screen and (min-height: 700px) {
+@media only screen and (min-height: 750px) {
   #img-logo {
     width: 13%;
   }
@@ -35,6 +32,7 @@ img {
 
 
 /* HR */
+
 #barra {
   margin-left: 37%;
   width: 25%;
@@ -51,10 +49,6 @@ img {
   display: inline-block;
 }
 
-#prato1 {
-  display: none;
-}
-
 .menu {
   margin: 15px;
 }
@@ -66,6 +60,11 @@ img {
 
 
 /*Barra do Subtotal*/
+
+#subtotal {
+  background-color: #F7F2F7;
+  height: 70px;
+}
 
 .footer {
   position: fixed;
@@ -101,17 +100,11 @@ span.psw {
 }
 
 .fundo-span-conteudo {
-  background-color: #3D0318;
+  background-color: grey;
   margin: 5% auto 15% auto; 
   border: 1px solid #888;
-  width: 80%; 
+  width: 90%; 
   border-radius : 10px;
-}
-
-@media only screen and (min-width: 800px) {
-  .fundo-span-conteudo {
-    width: 10%;
-  }
 }
 
 .close1 {
@@ -153,10 +146,13 @@ span.psw {
     border-radius: 10px; 
 }
 
-#tabela-pedidos {
 
-
+@media only screen and (min-height: 750px) {
+  .fundo-span-conteudo {
+    width: 50%;
+  }
 }
+
 
 /* Span Pedido Parte 2*/
 
@@ -219,7 +215,7 @@ border: none;
 
 #nome-prato {
   top: 0%;
-  background-color: black;
+  background-color:;
   border-bottom: solid;
   border-width: 2px;
   border-top-left-radius: 10px ;
@@ -245,7 +241,6 @@ border: none;
 .fundo-span-conteudo-2 {
   background-color: white;
   margin: 5% auto 15% auto; 
-  border: 1px solid #888;
   width: 90%; 
   border-radius : 10px;
 }
@@ -256,7 +251,7 @@ border: none;
 }
 
 #nome-requisicao {
-  width: 60%;
+  width: 90%;
 }
 
 #botao-adicionar {
@@ -283,10 +278,35 @@ span.psw {
 }
 
 
-/* Estilização dos Inputs*/
+@media only screen and (min-height: 750px) {
+  .fundo-span-conteudo-2 {
+    width: 50%;
+  }
+}
+
+
+/* Estilização dos Inputs e Extras*/
 
 input[type=text]{outline:none}
 input[type=button]{outline:none}
 textarea {outline: none;resize: none;}
 
 
+.dark-red {
+  background-color: #8B0000 ;
+}
+
+#addButton {
+
+   background-color: #8B0000 ;
+}
+
+.pratos {
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 23px;
+}
+
+li {
+list-style-type: none;
+}
