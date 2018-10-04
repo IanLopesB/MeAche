@@ -6,10 +6,6 @@ body {
 
 /*Imagem*/
 
-img {
-    vertical-align: middle;
-    border: 0;
-}
 
 #img-logo {
   width: 25%;
@@ -151,7 +147,7 @@ span.psw {
 }
 
 
-@media only screen and (min-height: 700px) {
+@media only screen and (min-height: 750px) {
   .fundo-span-conteudo {
     width: 50%;
   }
@@ -282,7 +278,7 @@ span.psw {
 }
 
 
-@media only screen and (min-height: 700px) {
+@media only screen and (min-height: 750px) {
   .fundo-span-conteudo-2 {
     width: 50%;
   }
@@ -297,11 +293,16 @@ textarea {outline: none;resize: none;}
 
 
 .dark-red {
-
   background-color: #8B0000 ;
 }
 
 #addButton {
 
    background-color: #8B0000 ;
+}
+
+.pratos {
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 23px;
 }
