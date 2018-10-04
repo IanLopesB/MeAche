@@ -67,12 +67,13 @@ img {
 
 #subtotal {
   background-color: #F7F2F7;
-  height: 10%;
+  height: 70px;
 }
 
 .footer {
-  position: relative;
+  position: fixed;
   bottom: 0;
+  left: 0;
   width:100%;
 }
 
@@ -103,17 +104,11 @@ span.psw {
 }
 
 .fundo-span-conteudo {
-  background-color: #8B0000;
+  background-color: grey;
   margin: 5% auto 15% auto; 
   border: 1px solid #888;
-  width: 80%; 
+  width: 90%; 
   border-radius : 10px;
-}
-
-@media only screen and (min-width: 800px) {
-  .fundo-span-conteudo {
-    width: 10%;
-  }
 }
 
 .close1 {
@@ -155,10 +150,13 @@ span.psw {
     border-radius: 10px; 
 }
 
-#tabela-pedidos {
 
-
+@media only screen and (min-height: 700px) {
+  .fundo-span-conteudo {
+    width: 50%;
+  }
 }
+
 
 /* Span Pedido Parte 2*/
 
@@ -281,6 +279,13 @@ border: none;
 
 span.psw {
   float: right;
+}
+
+
+@media only screen and (min-height: 700px) {
+  .fundo-span-conteudo-2 {
+    width: 50%;
+  }
 }
 
 
