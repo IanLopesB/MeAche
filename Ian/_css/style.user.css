@@ -285,7 +285,7 @@ span.psw {
 }
 
 
-/* Estilização dos Inputs*/
+/* Estilização dos Inputs e Extras*/
 
 input[type=text]{outline:none}
 input[type=button]{outline:none}
@@ -305,4 +305,8 @@ textarea {outline: none;resize: none;}
   font-family: cursive;
   font-weight: bold;
   font-size: 23px;
+}
+
+li {
+list-style-type: none;
 }
