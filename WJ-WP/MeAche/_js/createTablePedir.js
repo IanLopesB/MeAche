@@ -1,45 +1,43 @@
 function mandardados1(){
 
-var value1 = document.getElementById('quantPet1').value;
-var trbody = document.getElementById('tablePedidos');
+	var preco1, 
+		preco2;
 
-var tr1 = document.createElement('tr')
-var th = document.createElement('th')
-th.setAttribute("scope", "row");
-th.setAttribute("id", "th_qtd1");
-var td_Qtd1 = document.createElement('td');
-td_Qtd1.setAttribute("id", "petisco_1");
-var td_nameQtd1 = document.createElement('td');
-td_nameQtd1.setAttribute("id", "petisco_1.1");
-var td_preco1 = document.createElement('td');
-td_preco1.setAttribute("id","petisco_1.1.1");
+	var value1 = document.getElementById('quantPet1').value, 
+		value2 = document.getElementById('quantPet2').value,
+		trbody = document.getElementById('tablePedidos');
 
-trbody.appendChild(tr1);
-tr1.appendChild(td_Qtd1);
-tr1.appendChild(td_nameQtd1);
-tr1.appendChild(td_preco1);
+	if (value1 == 0){preco1 = 0;} else {preco1 = 13.00;}
+	if (value2 == 0){preco2 = 0;} else {preco2 = 25.00;}
 
-var qtd1 = document.getElementById('petisco_1');
-qtd1.innerText = value1;
+	var tr = document.createElement('tr'), 
+		td_qtd = document.createElement('td'),
+		td_namePrato= document.createElement('td'), 
+		td_preco = document.createElement('td');
 
-var asinha = document.getElementById('asinha').firstChild.innerHTML;
-document.getElementById('petisco_1.1').innerHTML = asinha;
 
-var preco1 = 13.50;
-var result = preco1*value1;
+	td_qtd.setAttribute("id", "Qtd"); 
+	td_namePrato.setAttribute("id", "namePrato"); 
+	td_preco.setAttribute("id","preco");
 
-document.getElementById('petisco_1.1.1').innerHTML = result.toFixed(2);
-document.getElementById('totalValue').innerHTML = result.toFixed(2);
+	trbody.appendChild(tr);
+	tr.appendChild(td_qtd);
+	tr.appendChild(td_namePrato);
+	tr.appendChild(td_preco);
 
-td_Qtd1.style.textAlign="center";
-td_nameQtd1.style.textAlign="center";
-td_preco1.style.textAlign="center";
+	var qtd = document.getElementById('Qtd');
+	qtd.innerText = value1;
+
+	var asinha = document.getElementById('asinha').firstChild.innerHTML;
+	document.getElementById('namePrato').innerHTML = asinha;
+
+	var result = (preco1 * value1 + preco2 * value2);
+
+	document.getElementById('preco').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue').innerHTML = result.toFixed(2);
 }
 
 function mandardados2(){
-
-var value2 = document.getElementById('quantPet2').value;
-var trbody = document.getElementById('tablePedidos');
 
 var tr2 = document.createElement('tr')
 var th = document.createElement('th')
