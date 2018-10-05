@@ -1,27 +1,34 @@
-  var asinha = document.getElementById('quantPet1');
-  var camarao = document.getElementById('quantPet2');
-  var calabresa = document.getElementById('quantPet3');
-  var carneDeSol = document.getElementById('quantPet4');
-  var torresmo = document.getElementById('quantPet5');
-  var batataFrita = document.getElementById('quantPet6');
+//Value Petiscos
+var asinha = document.getElementById('quantPet1'),
+    camarao = document.getElementById('quantPet2'),
+    calabresa = document.getElementById('quantPet3'),
+    carneDeSol = document.getElementById('quantPet4'),
+    torresmo = document.getElementById('quantPet5'),
+    batataFrita = document.getElementById('quantPet6');
 
-  function  pegarValue () {
-    create (
-      // Petiscos Value
-        asinha.value, camarao.value, calabresa.value, carneDeSol.value, torresmo.value, batataFrita.value
-      // Espetos Value
+//Value Espetos
+var boi = document.getElementById('quantPet7'),
+    franbacon = document.getElementById('quantPet8'),
+    frango = document.getElementById('quantPet9'),
+    coreFrango = document.getElementById('quantPet10'),
+    porco = document.getElementById('quantPet11');
 
-      );
-  };
 
-  function create(asinha, camarao, calabresa, carneDeSol, torresmo, batataFrita) {
-    var petiscos = {
-      Asinha_de_frango: asinha,
-      Camarao_Alho_Oleo: camarao,
-      Calabresa: calabresa,
-      Carne_de_Sol: carneDeSol,
-      Torresmo: torresmo,
-      Batata_Frita: batataFrita
+  function sendPedido() {
+    var pedido = {
+      //Petidscos
+      Asinha_de_frango: asinha.value,
+      Camarao_Alho_Oleo: camarao.value,
+      Calabresa: calabresa.value,
+      Carne_de_Sol: carneDeSol.value,
+      Torresmo: torresmo.value,
+      Batata_Frita: batataFrita.value,
+
+      //Espetos
+      Boi: boi.value,
+      Franbacon: franbacon.value,
+      Coracao_de_Frango: coreFrango.value,
+      Porco: porco.value
     };
-    return firebase.database().ref().child('pedidos').push(petiscos);
+    return firebase.database().ref().child('pedidos').push(pedido);
   }
