@@ -164,6 +164,12 @@ span.psw {
   }
 }
 
+.infos-pedido{
+  padding: 16px;
+  font-family: cursive;
+  font-size: 18px;
+}
+
 
 /* Span Pedido Parte 2*/
 
@@ -280,9 +286,6 @@ border: none;
   position: relative;
 }
 
-.infos-pedido{
-  padding: 16px;
-}
 
 span.psw {
   float: right;
