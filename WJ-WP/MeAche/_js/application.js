@@ -4,14 +4,16 @@ var asinha = document.getElementById('quantPet1'),
     calabresa = document.getElementById('quantPet3'),
     carneDeSol = document.getElementById('quantPet4'),
     torresmo = document.getElementById('quantPet5'),
-    batataFrita = document.getElementById('quantPet6');
+    batataFrita = document.getElementById('quantPet6'),
+    macaxeira = document.getElementById('quantPet7'),
+    baiaoDeDois = document.getElementById('quantPet8');
 
 //Value Espetos
-var boi = document.getElementById('quantPet7'),
-    franbacon = document.getElementById('quantPet8'),
-    frango = document.getElementById('quantPet9'),
-    coreFrango = document.getElementById('quantPet10'),
-    porco = document.getElementById('quantPet11');
+var boi = document.getElementById('quantPet9'),
+    franbacon = document.getElementById('quantPet10'),
+    frango = document.getElementById('quantPet11'),
+    coreFrango = document.getElementById('quantPet12'),
+    porco = document.getElementById('quantPet13');
 
 
   function sendPedido() {
