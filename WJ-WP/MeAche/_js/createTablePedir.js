@@ -1,10 +1,111 @@
-function mandardados1(){
+function mandardados(íd, value){
+
+var value1 = document.getElementById('quantPet1').value;
+var value2 = document.getElementById('quantPet2').value;
+var value3 = document.getElementById('quantPet3').value;
+var value4 = document.getElementById('quantPet4').value;
+var value5 = document.getElementById('quantPet5').value;
+var value6 = document.getElementById('quantPet6').value;
+var trbody = document.getElementById('tablePedidos');
+
+var tr = document.createElement('tr');
+var th = document.createElement('th');
+
+if (value1>=1 || value2>=1 ||  value3>=1 ||  value4>=1 ||  value5>=1 ||  value6>=1){
+tr.setAttribute("class", "tr_qtd");
+th.setAttribute("scope", "row");
+th.setAttribute("id", "th_qtd1");
+var td_quant = document.createElement('td');
+td_quant.setAttribute("class", "quantPetisco");
+var td_name = document.createElement('td');
+td_name.setAttribute("class", "namePetisco");
+var td_preco = document.createElement('td');
+td_preco.setAttribute("class","precoPetisco");
+
+trbody.appendChild(tr);
+tr.appendChild(td_quant);
+tr.appendChild(td_name);
+tr.appendChild(td_preco);
+
+var idquant =  document.getElementsByClassName("quantPetisco");
+  for (var i = 0; i < idquant.length; i++) {
+    idquant[i].id = "td-quant" + (i + 1);}
+
+    if (value1>=1){
+      idquant[i].innerText = value1;
+        /*var idname =  document.getElementsByClassName("namePetisco");
+          for (var j = 0; j < idname.length; j++) {
+            idname[j].id = "td-name" + (j+ 1);
+              var asinha = document.getElementById('asinha').innerHTML;
+              document.getElementById('td-name'+(j+1)).innerHTML= asinha;
+            }*/ }
+     else if (value2>=1){
+      idquant[i].innerText = value2;
+        /*var idname =  document.getElementsByClassName("namePetisco");
+          for (var j = 1; j < idname.length; j++) {
+            idname[j].id = "td-name" + (j+ 1);
+              var camarao = document.getElementById('camarao').innerHTML;
+              document.getElementById('td-name'+(j+1)).innerHTML= camarao;
+            }*/ }
+     /*else if (value3>=1){
+      idquant[i].innerText = value3;
+        var idname =  document.getElementsByClassName("namePetisco");
+          for (var j = 2; j < idname.length; j++) {
+            idname[j].id = "td-name" + (j+ 1);
+              var calabresa = document.getElementById('calabresa').innerHTML;
+              document.getElementById('td-name'+(j+1)).innerHTML= calabresa;
+            } }
+     else if (value4>=1){
+      idquant[i].innerText = value4;
+        var idname =  document.getElementsByClassName("namePetisco");
+          for (var j = 3; j < idname.length; j++) {
+            idname[j].id = "td-name" + (j+ 1);
+              var carneSol = document.getElementById('carneSol').innerHTML;
+              document.getElementById('td-name'+(j+1)).innerHTML= carneSol;
+            } }
+     else if (value5>=1){
+      idquant[i].innerText = value5;
+        var idname =  document.getElementsByClassName("namePetisco");
+          for (var j = 4; j < idname.length; j++) {
+            idname[j].id = "td-name" + (j+ 1);
+              var torresmo = document.getElementById('torresmo').innerHTML;
+              document.getElementById('td-name'+(j+1)).innerHTML= torresmo;
+            } }
+       else if (value6>=1){
+        idquant[i].innerText = value6;
+          var idname =  document.getElementsByClassName("namePetisco");
+            for (var j = 5; j < idname.length; j++) {
+              idname[j].id = "td-name" + (j+ 1);
+                var batata = document.getElementById('batata').innerHTML;
+                document.getElementById('td-name'+(j+1)).innerHTML= batata;
+    }
+    }*/
+
+td_quant.style.textAlign="center";
+td_name.style.textAlign="center";
+td_preco.style.textAlign="center";
+  }
+}
+
+
+
+
+
+
+
+
+/*function mandardados1(){
 
 var value1 = document.getElementById('quantPet1').value;
 var trbody = document.getElementById('tablePedidos');
+var validar = false;
 
+if (value1<=0 || value1!=document.getElementById('quantPet1').value){
+  return ;
+}else{
 var tr1 = document.createElement('tr')
 var th = document.createElement('th')
+tr.setAttribute("class", "tr_qtd")
 th.setAttribute("scope", "row");
 th.setAttribute("id", "th_qtd1");
 var td_Qtd1 = document.createElement('td');
@@ -26,14 +127,22 @@ var asinha = document.getElementById('asinha').firstChild.innerHTML;
 document.getElementById('petisco_1.1').innerHTML = asinha;
 
 var preco1 = document.getElementById('preco1').innerHTML;
-
-
 document.getElementById('petisco_1.1.1').innerHTML = preco1;
 
 td_Qtd1.style.textAlign="center";
 td_nameQtd1.style.textAlign="center";
 td_preco1.style.textAlign="center";
-}
+
+  var trqtd = document.getElementsByClassName("tr_qtd");
+  for (var i = 0; i < trqtd.length; i++) {
+    trqtd[i].id = "tr" + (i + 1);
+    validar == true;
+  }
+  if (validar==true){
+
+  }
+  }
+  }
 
 function mandardados2(){
 
@@ -208,4 +317,4 @@ document.getElementById('petisco_6.6.6').innerHTML = preco6;
 td_Qtd6.style.textAlign="center";
 td_nameQtd6.style.textAlign="center";
 td_preco6.style.textAlign="center";
-}
+}*/
