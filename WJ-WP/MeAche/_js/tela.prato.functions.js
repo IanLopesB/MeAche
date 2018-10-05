@@ -101,7 +101,7 @@ function process10(quantPet10){
 function process11(quantPet11){
   var value = parseInt(document.getElementById("quantPet11").value);
   value += quantPet11;
-  if(value < 11){
+  if(value < 1){
     document.getElementById("quantPet11").value = 0;
   }else{
   document.getElementById("quantPet11").value = value;
