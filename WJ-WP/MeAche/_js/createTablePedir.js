@@ -1,23 +1,27 @@
 function mandardados1(){
 
-	var preco1, 
-		preco2;
+	var value1 = document.getElementById('quantPet1').value,
+				value2 = document.getElementById('quantPet2').value,
+				value3 = document.getElementById('quantPet3').value,
+				value4 = document.getElementById('quantPet4').value,
+				value5 = document.getElementById('quantPet5').value,
+				value6 = document.getElementById('quantPet6').value,
+				trbody = document.getElementById('tablePedidos');
 
-	var value1 = document.getElementById('quantPet1').value, 
-		value2 = document.getElementById('quantPet2').value,
-		trbody = document.getElementById('tablePedidos');
+	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
+	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
+	if (value3 == 0){var preco3 = 0;} else {preco1 = 15.00;}
+	if (value4 == 0){var preco4 = 0;} else {preco2 = 20.00;}
+	if (value5 == 0){var preco5 = 0;} else {preco1 = 10.00;}
+	if (value6 == 0){var preco6 = 0;} else {preco2 = 10.00;}
 
-	if (value1 == 0){preco1 = 0;} else {preco1 = 13.00;}
-	if (value2 == 0){preco2 = 0;} else {preco2 = 25.00;}
-
-	var tr = document.createElement('tr'), 
+	var tr = document.createElement('tr'),
 		td_qtd = document.createElement('td'),
-		td_namePrato= document.createElement('td'), 
+		td_namePrato= document.createElement('td'),
 		td_preco = document.createElement('td');
 
-
-	td_qtd.setAttribute("id", "Qtd"); 
-	td_namePrato.setAttribute("id", "namePrato"); 
+	td_qtd.setAttribute("id", "Qtd");
+	td_namePrato.setAttribute("id", "namePrato");
 	td_preco.setAttribute("id","preco");
 
 	trbody.appendChild(tr);
@@ -31,7 +35,7 @@ function mandardados1(){
 	var asinha = document.getElementById('asinha').firstChild.innerHTML;
 	document.getElementById('namePrato').innerHTML = asinha;
 
-	var result = (preco1 * value1 + preco2 * value2);
+	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) + (preco5 * value5) + (preco6 * value6));
 
 	document.getElementById('preco').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
