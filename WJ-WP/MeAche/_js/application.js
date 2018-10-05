@@ -41,7 +41,7 @@ var skol = document.getElementById('quantPet24'),
   function sendPedido() {
     var pedido = {
       //Petidscos
-      Asinha_de_frango: asinha.value,
+      "Asinha_de_frango": asinha.value,
       Camarao_Alho_Oleo: camarao.value,
       Calabresa: calabresa.value,
       Carne_de_Sol: carneDeSol.value,
@@ -56,5 +56,8 @@ var skol = document.getElementById('quantPet24'),
       Coracao_de_Frango: coreFrango.value,
       Porco: porco.value
     };
+    
+      delete ;
+    
     return firebase.database().ref().child('pedidos').push(pedido);
   }
