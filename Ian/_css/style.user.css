@@ -43,6 +43,10 @@ body {
 
 /* Cardápio*/
 
+.categoria{
+  background-color: #E50914;
+}
+
 .menuTitulo {
   font-size: 200%;
   font-style: bold;
@@ -56,6 +60,13 @@ body {
 .pratos {
   text-align: center;
   font-size: 80%;
+}
+
+@media only screen and (min-height: 750px) {
+  #categorias {
+    width: 80%;
+    margin-left: 10%;
+  }
 }
 
 
@@ -305,8 +316,17 @@ textarea {outline: none;resize: none;}
   font-family: cursive;
   font-weight: bold;
   font-size: 23px;
+
+}
+
+.pratos-descricao {
+
+  font-family: cursive;
+  text-align: left;
 }
 
 li {
 list-style-type: none;
 }
+
+
