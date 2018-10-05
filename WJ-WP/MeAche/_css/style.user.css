@@ -48,7 +48,9 @@ body {
 }
 
 .menuTitulo {
-  font-size: 200%;
+
+  font-family: cursive;
+  font-size: 175%;
   font-style: bold;
   display: inline-block;
 }
