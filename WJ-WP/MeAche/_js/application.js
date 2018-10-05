@@ -47,6 +47,8 @@ var skol = document.getElementById('quantPet24'),
       Carne_de_Sol: carneDeSol.value,
       Torresmo: torresmo.value,
       Batata_Frita: batataFrita.value,
+      Macaxeira: macaxeira.value,
+      Baiao_de_Dois: baiaoDeDois.value,
 
       //Espetos
       Boi: boi.value,
