@@ -208,7 +208,7 @@ function process21(quantPet21){
   }
 }
 
-function process2(quantPet22){
+function process22(quantPet22){
   var value = parseInt(document.getElementById("quantPet22").value);
   value += quantPet22;
   if(value < 1){

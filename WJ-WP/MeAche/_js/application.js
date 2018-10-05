@@ -15,6 +15,28 @@ var boi = document.getElementById('quantPet9'),
     coreFrango = document.getElementById('quantPet12'),
     porco = document.getElementById('quantPet13');
 
+//Value Sucos 
+var caja = document.getElementById('quantPet14'),
+    laranja = document.getElementById('quantPet15'),
+    maracuja = document.getElementById('quantPet16'),
+    acerola = document.getElementById('quantPet17'),
+    goiaba = document.getElementById('quantPet18'),
+    jarra = document.getElementById('quantPet19');
+
+//Vallue Refrigerantes
+var coca_cola = document.getElementById('quantPet20'),
+    guarana = document.getElementById('quantPet21'),
+    fanta = document.getElementById('quantPet22'),
+    agua_mineral = document.getElementById('quantPet23');
+
+// Values Cervejas
+var skol = document.getElementById('quantPet24'),
+    itaipava = document.getElementById('quantPet25'),
+    original = document.getElementById('quantPet26'),
+    burdweiser = document.getElementById('quantPet27'),
+    eisenbahn = document.getElementById('quantPet28'),
+    heineken = document.getElementById('quantPet29');
+
 
   function sendPedido() {
     var pedido = {
