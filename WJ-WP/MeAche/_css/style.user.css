@@ -89,6 +89,8 @@ body {
   vertical-align: middle; 
 }
 
+
+
 /*Span Pedido Parte 1*/
 
 span.psw {
@@ -111,7 +113,8 @@ span.psw {
 }
 
 .fundo-span-conteudo {
-  background-color: grey;
+  background-color: 
+#462B2E;
   margin: 5% auto 15% auto; 
   border: 1px solid #888;
   width: 90%; 
