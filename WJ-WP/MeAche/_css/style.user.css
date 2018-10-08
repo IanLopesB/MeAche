@@ -112,11 +112,11 @@ span.psw {
 }
 
 .fundo-span-conteudo {
-  background-color: 
-#462B2E;
+  background-color: #462B2E;
   margin: 5% auto 15% auto; 
   border: 1px solid #888;
-  width: 90%; 
+  width: 90%;
+
   border-radius : 10px;
 }
 
@@ -168,7 +168,6 @@ span.psw {
 
 .infos-pedido{
   padding: 16px;
-  font-family: cursive;
   font-size: 18px;
 }
 
