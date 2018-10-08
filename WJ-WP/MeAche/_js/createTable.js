@@ -192,13 +192,12 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
     li12.appendChild(espetos_4);
   }
 
-
   input_checkbox.setAttribute("name", "number");
 
   $("input[name='number']").each(function(ind) {
    $(this).val(ind + 1);
   });
 
-  });
 
+  });
 });
