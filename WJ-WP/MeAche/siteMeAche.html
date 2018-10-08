@@ -249,6 +249,34 @@
      <i class="fa fa-shopping-cart w3-text-white"></i>
       <span> <b>R$:</b> <b id="totalValue">0.00</b></span>
     </h3>
+<<<<<<< HEAD
+  </div>
+
+ <!-- Span 1 do Subtotal -->
+   <div id="id01" style="display: none;" class="fundo-span">
+            <div class="fundo-span-conteudo animate">
+                <div id="botao-fechar-span"> <span onclick="document.getElementById('id01').style.display='none'" class="close1" title=" Fechar Span"> &times; </span> </div>
+                <div class="infos-pedido">
+                    <h3 class="w3-center w3-text-white"> <b>Meu pedido:</b> </h3>
+                    <br>
+                    <div id="tabela-pedidos" class="w3-text-white">
+
+                        <table id="tabela" class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="w3-center">Quant</th>
+                                    <th scope="col" class="w3-center">Pedido</th>
+                                    <th scope="col" class="w3-center">Preço</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tablePedidos"> </tbody>
+                        </table>
+                    </div>
+                    <div id="total-parcial" class=" infos-pedido">
+                        <h4 class=" w3-text-black"><b>Total: </b> <b>R$ </b></h4> </div>
+                    <br>
+                    <button onclick="sendPedido()" id="botao-span2" class="w3-button w3-green ">Pedir</button>
+=======
     </div>
 
     <!-- Span 1 do Subtotal -->
@@ -269,6 +297,7 @@
                         </thead>
                         <tbody id="tablePedidos"> </tbody>
                     </table>
+>>>>>>> b096ac43725d3140760f6e8bfc1d79e21914e2bc
                 </div>
                 <div id="total-parcial" class=" infos-pedido">
                     <h4 class=" w3-text-black"><b>Total: </b> <b>R$ </b></h4> </div>
@@ -321,6 +350,69 @@
         </div>
     </div>
 
+<<<<<<< HEAD
+ <!-- Span 2 do Subtotal -->
+<div id="id02" class="fundo-span">
+   <div class="fundo-span-conteudo animate">
+      <div class="botao-fechar-span">
+         <span onclick="document.getElementById('id02').style.display='none'" class="close2" title="Fechar Span">&times;</span>
+      </div>
+      <div class="infos-pedido">
+         <h3 class="w3-center w3-text-white"><b> Meu pedido: </b> </h3>
+         <div id="tabela" class=" w3-text-white">
+            <table id="tabela" class="table">
+               <thead>
+                  <tr>
+                     <th scope="col" class="w3-center">Quant</th>
+                     <th scope="col" class="w3-center">Pedido</th>
+                     <th scope="col" class="w3-center">Preço</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <th scope="row" class="w3-center">1</th>
+                     <td class="w3-center">Arroz</td>
+                     <td class="w3-center">R$: 5,00</td>
+                  </tr>
+                  <tr>
+                     <th scope="row" class="w3-center">2</th>
+                     <td class="w3-center">Frango</td>
+                     <td class="w3-center">R$: 10,00</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+     </div>
+
+<br>
+
+     <div id="total-pedido" class="infos-pedido">
+        <h4 class=" w3-text-black"><b>Total: </b><b>R$ </b></h4>
+        <h4 class=" w3-text-black"><b>Número do pedido: </b><b>1234 </b></h4>
+     </div>
+  </div>
+</div>
+
+<!-- Span da Descrição do Prato 1-->
+
+ <div id="prato1" style="display: none;" class="fundo-span-2" value="1">
+            <div class="fundo-span-conteudo-2 animate">
+                <div id="botao-fechar-span"> <span onclick="document.getElementById('prato1').style.display='none'" class="close1" title=" Fechar Span">&times; </span> </div>
+                <div id="nome-prato" class="w3-container w3-text-white dark-red">
+                    <h3 class="animate pratos-descricao"><b><label id="asinha"><li>Asinha de Frango</li></label></b></h3> </div>
+                <br>
+                <div id="textos" class="w3-container">
+                    <div id="descricao">
+                        <h5>Asa de um galináceo com o tamanho redizido, frita em óleo.</h5> </div>
+                    <br>
+
+
+                    <div id="requisicao">
+                        <div id="nome-requisicao" class="animate" onclick="mostrarInputReq()">
+                            <h5><i class="fa fa-plus"></i>Observações do Cliente</h5> </div>
+                        <div id="input-requisiçoes" class="input-group animate">
+                            <textarea id="input-req-real" type="" class="form-control" placeholder="Observações" rows="1"> </textarea> <span> <button class="btn btn-default" type="button" onclick="mostrarNomeReq()">OK</button> </span> </div>
+=======
     <!-- Span da Descrição do Prato 1-->
 
     <div id="prato1" style="display: none;" class="fundo-span-2" value="1">
@@ -351,6 +443,7 @@
                     <br>
                     <div id="botao-adicionar" class="animate">
                         <button type="submit" id="addButton" class="w3-button w3-text-white" onclick="fecharPrato1();mandardados1();">Adicionar</button>
+>>>>>>> b096ac43725d3140760f6e8bfc1d79e21914e2bc
                     </div>
                     <br>
                     <br>
