@@ -15,7 +15,7 @@ var boi = document.getElementById('quantPet9'),
     coreFrango = document.getElementById('quantPet12'),
     porco = document.getElementById('quantPet13');
 
-//Value Sucos 
+//Value Sucos
 var caja = document.getElementById('quantPet14'),
     laranja = document.getElementById('quantPet15'),
     maracuja = document.getElementById('quantPet16'),
@@ -64,6 +64,8 @@ var skol = document.getElementById('quantPet24'),
     if (carneDeSol.value == 0){delete pedido.Carne_de_Sol};
     if (torresmo.value == 0){delete pedido.Torresmo};
     if (batataFrita.value == 0){delete pedido.Batata_Frita};
+    if (macaxeira.value == 0){delete pedido.Macaxeira};
+    if (baiaoDeDois.value == 0){delete pedido.Baiao_de_Dois};
 
     // Espetos
     if (boi.value == 0){delete pedido.Boi};
@@ -71,6 +73,6 @@ var skol = document.getElementById('quantPet24'),
     if (coreFrango.value == 0){delete pedido.Coracao_de_Frango};
     if (porco.value == 0){delete pedido.Porco};
 
-    
+
     return firebase.database().ref().child('pedidos').push(pedido);
   }
