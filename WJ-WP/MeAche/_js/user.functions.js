@@ -7,6 +7,16 @@ function mostrarSubtotal(){
        }
 }
 
+function confirma(){
+  alert("Enviando pedido...");
+  var x = document.getElementById('id01');
+
+  if (x.style.display === "block"){
+    x.style.display = "none";
+  }
+  location.reload();
+}
+
 
 function mostrarInputReq() {
 
