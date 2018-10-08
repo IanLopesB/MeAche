@@ -198,6 +198,6 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
    $(this).val(ind + 1);
   });
 
-
+  
   });
 });
