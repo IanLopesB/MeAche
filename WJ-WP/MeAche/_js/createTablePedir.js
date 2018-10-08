@@ -8,6 +8,27 @@ function mandardados1(){
 				value6 = document.getElementById('quantPet6').value,
 				value7 = document.getElementById('quantPet7').value,
 				value8 = document.getElementById('quantPet8').value,
+				value9 = document.getElementById('quantPet9').value,
+				value10 = document.getElementById('quantPet10').value,
+				value11 = document.getElementById('quantPet11').value,
+				value12 = document.getElementById('quantPet12').value,
+				value13 = document.getElementById('quantPet13').value,
+				value14 = document.getElementById('quantPet14').value,
+				value15 = document.getElementById('quantPet15').value,
+				value16 = document.getElementById('quantPet16').value,
+				value17 = document.getElementById('quantPet17').value,
+				value18 = document.getElementById('quantPet18').value,
+				value19 = document.getElementById('quantPet19').value,
+				value20 = document.getElementById('quantPet20').value,
+				value21 = document.getElementById('quantPet21').value,
+				value22 = document.getElementById('quantPet22').value,
+				value23 = document.getElementById('quantPet23').value,
+				value24 = document.getElementById('quantPet24').value,
+				value25 = document.getElementById('quantPet25').value,
+				value26 = document.getElementById('quantPet26').value,
+				value27 = document.getElementById('quantPet27').value,
+				value28 = document.getElementById('quantPet28').value,
+				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
 
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -18,6 +39,28 @@ function mandardados1(){
 	if (value6 == 0){var preco6 = 0;} else {preco6 = 10.00;}
 	if (value7 == 0){var preco7 = 0;} else {preco7 = 6.00;}
 	if (value8 == 0){var preco8 = 0;} else {preco8 = 10.00;}
+	if (value9 == 0){var preco9 = 0;} else {preco9 = 4.00;}
+	if (value10 == 0){var preco10 = 0;} else {preco10 = 4.00;}
+	if (value11 == 0){var preco11 = 0;} else {preco11 = 4.00;}
+	if (value12 == 0){var preco12 = 0;} else {preco12 = 4.00;}
+	if (value13 == 0){var preco13 = 0;} else {preco13 = 4.00;}
+	if (value14 == 0){var preco14 = 0;} else {preco14= 3.00;}
+	if (value15 == 0){var preco15 = 0;} else {preco15 = 3.00;}
+	if (value16 == 0){var preco16 = 0;} else {preco16 = 3.00;}
+	if (value17 == 0){var preco17 = 0;} else {preco17 = 3.00;}
+	if (value18 == 0){var preco18 = 0;} else {preco18 = 3.00;}
+	if (value19 == 0){var preco19 = 0;} else {preco19 = 10.00;}
+	if (value20 == 0){var preco20 = 0;} else {preco20 = 3.50;}
+	if (value21 == 0){var preco21 = 0;} else {preco21 = 3.50;}
+	if (value22 == 0){var preco22 = 0;} else {preco22 = 3.50;}
+	if (value23 == 0){var preco23 = 0;} else {preco23 = 1.50;}
+	if (value24 == 0){var preco24 = 0;} else {preco24 = 3.00;}
+	if (value25 == 0){var preco25 = 0;} else {preco25 = 3.00;}
+	if (value26 == 0){var preco26 = 0;} else {preco26 = 5.00;}
+	if (value27 == 0){var preco27 = 0;} else {preco27 = 6.00;}
+	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
+	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
+
 
 	var tr = document.createElement('tr'),
 		td_quantPetisco1 = document.createElement('td'),
@@ -40,8 +83,13 @@ function mandardados1(){
 	document.getElementById('namePrato').innerHTML = asinha;
 
 	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
-		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8));
-
+		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
+		(preco9 * value9) + (preco10 * value10) + (preco11 * value11) + (preco12 * value12) +
+		(preco13 * value13) + (preco14 * value14) + (preco15 * value15) + (preco16 * value16) +
+		(preco17 * value17) + (preco18 * value18) + (preco19 * value19) + (preco20 * value20) +
+		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
+		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
+		(preco29 * value29));
 	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
 
@@ -60,6 +108,27 @@ function mandardados2(){
 				value6 = document.getElementById('quantPet6').value,
 				value7 = document.getElementById('quantPet7').value,
 				value8 = document.getElementById('quantPet8').value,
+				value9 = document.getElementById('quantPet9').value,
+				value10 = document.getElementById('quantPet10').value,
+				value11 = document.getElementById('quantPet11').value,
+				value12 = document.getElementById('quantPet12').value,
+				value13 = document.getElementById('quantPet13').value,
+				value14 = document.getElementById('quantPet14').value,
+				value15 = document.getElementById('quantPet15').value,
+				value16 = document.getElementById('quantPet16').value,
+				value17 = document.getElementById('quantPet17').value,
+				value18 = document.getElementById('quantPet18').value,
+				value19 = document.getElementById('quantPet19').value,
+				value20 = document.getElementById('quantPet20').value,
+				value21 = document.getElementById('quantPet21').value,
+				value22 = document.getElementById('quantPet22').value,
+				value23 = document.getElementById('quantPet23').value,
+				value24 = document.getElementById('quantPet24').value,
+				value25 = document.getElementById('quantPet25').value,
+				value26 = document.getElementById('quantPet26').value,
+				value27 = document.getElementById('quantPet27').value,
+				value28 = document.getElementById('quantPet28').value,
+				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
 
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -70,6 +139,29 @@ function mandardados2(){
 	if (value6 == 0){var preco6 = 0;} else {preco6 = 10.00;}
 	if (value7 == 0){var preco7 = 0;} else {preco7 = 6.00;}
 	if (value8 == 0){var preco8 = 0;} else {preco8 = 10.00;}
+	if (value9 == 0){var preco9 = 0;} else {preco9 = 4.00;}
+	if (value10 == 0){var preco10 = 0;} else {preco10 = 4.00;}
+	if (value11 == 0){var preco11 = 0;} else {preco11 = 4.00;}
+	if (value12 == 0){var preco12 = 0;} else {preco12 = 4.00;}
+	if (value13 == 0){var preco13 = 0;} else {preco13 = 4.00;}
+	if (value14 == 0){var preco14 = 0;} else {preco14= 3.00;}
+	if (value15 == 0){var preco15 = 0;} else {preco15 = 3.00;}
+	if (value16 == 0){var preco16 = 0;} else {preco16 = 3.00;}
+	if (value17 == 0){var preco17 = 0;} else {preco17 = 3.00;}
+	if (value18 == 0){var preco18 = 0;} else {preco18 = 3.00;}
+	if (value19 == 0){var preco19 = 0;} else {preco19 = 10.00;}
+	if (value20 == 0){var preco20 = 0;} else {preco20 = 3.50;}
+	if (value21 == 0){var preco21 = 0;} else {preco21 = 3.50;}
+	if (value22 == 0){var preco22 = 0;} else {preco22 = 3.50;}
+	if (value23 == 0){var preco23 = 0;} else {preco23 = 1.50;}
+	if (value24 == 0){var preco24 = 0;} else {preco24 = 3.00;}
+	if (value25 == 0){var preco25 = 0;} else {preco25 = 3.00;}
+	if (value26 == 0){var preco26 = 0;} else {preco26 = 5.00;}
+	if (value27 == 0){var preco27 = 0;} else {preco27 = 6.00;}
+	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
+	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
+
+
 
 	var tr = document.createElement('tr'),
 		td_quantPetisco2 = document.createElement('td'),
@@ -92,7 +184,13 @@ function mandardados2(){
 	document.getElementById('namePrato').innerHTML = camarao;
 
 	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
-		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8));
+		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
+		(preco9 * value9) + (preco10 * value10) + (preco11 * value11) + (preco12 * value12) +
+		(preco13 * value13) + (preco14 * value14) + (preco15 * value15) + (preco16 * value16) +
+		(preco17 * value17) + (preco18 * value18) + (preco19 * value19) + (preco20 * value20) +
+		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
+		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
+		(preco29 * value29));
 
 	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
@@ -112,6 +210,27 @@ function mandardados3(){
 				value6 = document.getElementById('quantPet6').value,
 				value7 = document.getElementById('quantPet7').value,
 				value8 = document.getElementById('quantPet8').value,
+				value9 = document.getElementById('quantPet9').value,
+				value10 = document.getElementById('quantPet10').value,
+				value11 = document.getElementById('quantPet11').value,
+				value12 = document.getElementById('quantPet12').value,
+				value13 = document.getElementById('quantPet13').value,
+				value14 = document.getElementById('quantPet14').value,
+				value15 = document.getElementById('quantPet15').value,
+				value16 = document.getElementById('quantPet16').value,
+				value17 = document.getElementById('quantPet17').value,
+				value18 = document.getElementById('quantPet18').value,
+				value19 = document.getElementById('quantPet19').value,
+				value20 = document.getElementById('quantPet20').value,
+				value21 = document.getElementById('quantPet21').value,
+				value22 = document.getElementById('quantPet22').value,
+				value23 = document.getElementById('quantPet23').value,
+				value24 = document.getElementById('quantPet24').value,
+				value25 = document.getElementById('quantPet25').value,
+				value26 = document.getElementById('quantPet26').value,
+				value27 = document.getElementById('quantPet27').value,
+				value28 = document.getElementById('quantPet28').value,
+				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
 
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -122,6 +241,29 @@ function mandardados3(){
 	if (value6 == 0){var preco6 = 0;} else {preco6 = 10.00;}
 	if (value7 == 0){var preco7 = 0;} else {preco7 = 6.00;}
 	if (value8 == 0){var preco8 = 0;} else {preco8 = 10.00;}
+	if (value9 == 0){var preco9 = 0;} else {preco9 = 4.00;}
+	if (value10 == 0){var preco10 = 0;} else {preco10 = 4.00;}
+	if (value11 == 0){var preco11 = 0;} else {preco11 = 4.00;}
+	if (value12 == 0){var preco12 = 0;} else {preco12 = 4.00;}
+	if (value13 == 0){var preco13 = 0;} else {preco13 = 4.00;}
+	if (value14 == 0){var preco14 = 0;} else {preco14= 3.00;}
+	if (value15 == 0){var preco15 = 0;} else {preco15 = 3.00;}
+	if (value16 == 0){var preco16 = 0;} else {preco16 = 3.00;}
+	if (value17 == 0){var preco17 = 0;} else {preco17 = 3.00;}
+	if (value18 == 0){var preco18 = 0;} else {preco18 = 3.00;}
+	if (value19 == 0){var preco19 = 0;} else {preco19 = 10.00;}
+	if (value20 == 0){var preco20 = 0;} else {preco20 = 3.50;}
+	if (value21 == 0){var preco21 = 0;} else {preco21 = 3.50;}
+	if (value22 == 0){var preco22 = 0;} else {preco22 = 3.50;}
+	if (value23 == 0){var preco23 = 0;} else {preco23 = 1.50;}
+	if (value24 == 0){var preco24 = 0;} else {preco24 = 3.00;}
+	if (value25 == 0){var preco25 = 0;} else {preco25 = 3.00;}
+	if (value26 == 0){var preco26 = 0;} else {preco26 = 5.00;}
+	if (value27 == 0){var preco27 = 0;} else {preco27 = 6.00;}
+	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
+	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
+
+
 
 	var tr = document.createElement('tr'),
 		td_quantPetisco3 = document.createElement('td'),
@@ -144,7 +286,13 @@ function mandardados3(){
 	document.getElementById('namePrato').innerHTML = calabresa;
 
 	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
-		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8));
+		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
+		(preco9 * value9) + (preco10 * value10) + (preco11 * value11) + (preco12 * value12) +
+		(preco13 * value13) + (preco14 * value14) + (preco15 * value15) + (preco16 * value16) +
+		(preco17 * value17) + (preco18 * value18) + (preco19 * value19) + (preco20 * value20) +
+		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
+		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
+		(preco29 * value29));
 
 	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
@@ -164,6 +312,27 @@ function mandardados4(){
 				value6 = document.getElementById('quantPet6').value,
 				value7 = document.getElementById('quantPet7').value,
 				value8 = document.getElementById('quantPet8').value,
+				value9 = document.getElementById('quantPet9').value,
+				value10 = document.getElementById('quantPet10').value,
+				value11 = document.getElementById('quantPet11').value,
+				value12 = document.getElementById('quantPet12').value,
+				value13 = document.getElementById('quantPet13').value,
+				value14 = document.getElementById('quantPet14').value,
+				value15 = document.getElementById('quantPet15').value,
+				value16 = document.getElementById('quantPet16').value,
+				value17 = document.getElementById('quantPet17').value,
+				value18 = document.getElementById('quantPet18').value,
+				value19 = document.getElementById('quantPet19').value,
+				value20 = document.getElementById('quantPet20').value,
+				value21 = document.getElementById('quantPet21').value,
+				value22 = document.getElementById('quantPet22').value,
+				value23 = document.getElementById('quantPet23').value,
+				value24 = document.getElementById('quantPet24').value,
+				value25 = document.getElementById('quantPet25').value,
+				value26 = document.getElementById('quantPet26').value,
+				value27 = document.getElementById('quantPet27').value,
+				value28 = document.getElementById('quantPet28').value,
+				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
 
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -174,6 +343,28 @@ function mandardados4(){
 	if (value6 == 0){var preco6 = 0;} else {preco6 = 10.00;}
 	if (value7 == 0){var preco7 = 0;} else {preco7 = 6.00;}
 	if (value8 == 0){var preco8 = 0;} else {preco8 = 10.00;}
+	if (value9 == 0){var preco9 = 0;} else {preco9 = 4.00;}
+	if (value10 == 0){var preco10 = 0;} else {preco10 = 4.00;}
+	if (value11 == 0){var preco11 = 0;} else {preco11 = 4.00;}
+	if (value12 == 0){var preco12 = 0;} else {preco12 = 4.00;}
+	if (value13 == 0){var preco13 = 0;} else {preco13 = 4.00;}
+	if (value14 == 0){var preco14 = 0;} else {preco14= 3.00;}
+	if (value15 == 0){var preco15 = 0;} else {preco15 = 3.00;}
+	if (value16 == 0){var preco16 = 0;} else {preco16 = 3.00;}
+	if (value17 == 0){var preco17 = 0;} else {preco17 = 3.00;}
+	if (value18 == 0){var preco18 = 0;} else {preco18 = 3.00;}
+	if (value19 == 0){var preco19 = 0;} else {preco19 = 10.00;}
+	if (value20 == 0){var preco20 = 0;} else {preco20 = 3.50;}
+	if (value21 == 0){var preco21 = 0;} else {preco21 = 3.50;}
+	if (value22 == 0){var preco22 = 0;} else {preco22 = 3.50;}
+	if (value23 == 0){var preco23 = 0;} else {preco23 = 1.50;}
+	if (value24 == 0){var preco24 = 0;} else {preco24 = 3.00;}
+	if (value25 == 0){var preco25 = 0;} else {preco25 = 3.00;}
+	if (value26 == 0){var preco26 = 0;} else {preco26 = 5.00;}
+	if (value27 == 0){var preco27 = 0;} else {preco27 = 6.00;}
+	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
+	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
+
 
 	var tr = document.createElement('tr'),
 		td_quantPetisco4 = document.createElement('td'),
@@ -196,7 +387,13 @@ function mandardados4(){
 	document.getElementById('namePrato').innerHTML = carneSol;
 
 	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
-		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8));
+		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
+		(preco9 * value9) + (preco10 * value10) + (preco11 * value11) + (preco12 * value12) +
+		(preco13 * value13) + (preco14 * value14) + (preco15 * value15) + (preco16 * value16) +
+		(preco17 * value17) + (preco18 * value18) + (preco19 * value19) + (preco20 * value20) +
+		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
+		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
+		(preco29 * value29));
 
 	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
@@ -216,6 +413,27 @@ function mandardados5(){
 				value6 = document.getElementById('quantPet6').value,
 				value7 = document.getElementById('quantPet7').value,
 				value8 = document.getElementById('quantPet8').value,
+				value9 = document.getElementById('quantPet9').value,
+				value10 = document.getElementById('quantPet10').value,
+				value11 = document.getElementById('quantPet11').value,
+				value12 = document.getElementById('quantPet12').value,
+				value13 = document.getElementById('quantPet13').value,
+				value14 = document.getElementById('quantPet14').value,
+				value15 = document.getElementById('quantPet15').value,
+				value16 = document.getElementById('quantPet16').value,
+				value17 = document.getElementById('quantPet17').value,
+				value18 = document.getElementById('quantPet18').value,
+				value19 = document.getElementById('quantPet19').value,
+				value20 = document.getElementById('quantPet20').value,
+				value21 = document.getElementById('quantPet21').value,
+				value22 = document.getElementById('quantPet22').value,
+				value23 = document.getElementById('quantPet23').value,
+				value24 = document.getElementById('quantPet24').value,
+				value25 = document.getElementById('quantPet25').value,
+				value26 = document.getElementById('quantPet26').value,
+				value27 = document.getElementById('quantPet27').value,
+				value28 = document.getElementById('quantPet28').value,
+				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
 
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -226,6 +444,29 @@ function mandardados5(){
 	if (value6 == 0){var preco6 = 0;} else {preco6 = 10.00;}
 	if (value7 == 0){var preco7 = 0;} else {preco7 = 6.00;}
 	if (value8 == 0){var preco8 = 0;} else {preco8 = 10.00;}
+	if (value9 == 0){var preco9 = 0;} else {preco9 = 4.00;}
+	if (value10 == 0){var preco10 = 0;} else {preco10 = 4.00;}
+	if (value11 == 0){var preco11 = 0;} else {preco11 = 4.00;}
+	if (value12 == 0){var preco12 = 0;} else {preco12 = 4.00;}
+	if (value13 == 0){var preco13 = 0;} else {preco13 = 4.00;}
+	if (value14 == 0){var preco14 = 0;} else {preco14= 3.00;}
+	if (value15 == 0){var preco15 = 0;} else {preco15 = 3.00;}
+	if (value16 == 0){var preco16 = 0;} else {preco16 = 3.00;}
+	if (value17 == 0){var preco17 = 0;} else {preco17 = 3.00;}
+	if (value18 == 0){var preco18 = 0;} else {preco18 = 3.00;}
+	if (value19 == 0){var preco19 = 0;} else {preco19 = 10.00;}
+	if (value20 == 0){var preco20 = 0;} else {preco20 = 3.50;}
+	if (value21 == 0){var preco21 = 0;} else {preco21 = 3.50;}
+	if (value22 == 0){var preco22 = 0;} else {preco22 = 3.50;}
+	if (value23 == 0){var preco23 = 0;} else {preco23 = 1.50;}
+	if (value24 == 0){var preco24 = 0;} else {preco24 = 3.00;}
+	if (value25 == 0){var preco25 = 0;} else {preco25 = 3.00;}
+	if (value26 == 0){var preco26 = 0;} else {preco26 = 5.00;}
+	if (value27 == 0){var preco27 = 0;} else {preco27 = 6.00;}
+	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
+	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
+
+
 
 	var tr = document.createElement('tr'),
 		td_quantPetisco5 = document.createElement('td'),
@@ -248,7 +489,13 @@ function mandardados5(){
 	document.getElementById('namePrato').innerHTML = torresmo;
 
 	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
-		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8));
+		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
+		(preco9 * value9) + (preco10 * value10) + (preco11 * value11) + (preco12 * value12) +
+		(preco13 * value13) + (preco14 * value14) + (preco15 * value15) + (preco16 * value16) +
+		(preco17 * value17) + (preco18 * value18) + (preco19 * value19) + (preco20 * value20) +
+		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
+		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
+		(preco29 * value29));;
 
 	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
@@ -268,6 +515,27 @@ function mandardados6(){
 				value6 = document.getElementById('quantPet6').value,
 				value7 = document.getElementById('quantPet7').value,
 				value8 = document.getElementById('quantPet8').value,
+				value9 = document.getElementById('quantPet9').value,
+				value10 = document.getElementById('quantPet10').value,
+				value11 = document.getElementById('quantPet11').value,
+				value12 = document.getElementById('quantPet12').value,
+				value13 = document.getElementById('quantPet13').value,
+				value14 = document.getElementById('quantPet14').value,
+				value15 = document.getElementById('quantPet15').value,
+				value16 = document.getElementById('quantPet16').value,
+				value17 = document.getElementById('quantPet17').value,
+				value18 = document.getElementById('quantPet18').value,
+				value19 = document.getElementById('quantPet19').value,
+				value20 = document.getElementById('quantPet20').value,
+				value21 = document.getElementById('quantPet21').value,
+				value22 = document.getElementById('quantPet22').value,
+				value23 = document.getElementById('quantPet23').value,
+				value24 = document.getElementById('quantPet24').value,
+				value25 = document.getElementById('quantPet25').value,
+				value26 = document.getElementById('quantPet26').value,
+				value27 = document.getElementById('quantPet27').value,
+				value28 = document.getElementById('quantPet28').value,
+				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
 
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -278,6 +546,29 @@ function mandardados6(){
 	if (value6 == 0){var preco6 = 0;} else {preco6 = 10.00;}
 	if (value7 == 0){var preco7 = 0;} else {preco7 = 6.00;}
 	if (value8 == 0){var preco8 = 0;} else {preco8 = 10.00;}
+	if (value9 == 0){var preco9 = 0;} else {preco9 = 4.00;}
+	if (value10 == 0){var preco10 = 0;} else {preco10 = 4.00;}
+	if (value11 == 0){var preco11 = 0;} else {preco11 = 4.00;}
+	if (value12 == 0){var preco12 = 0;} else {preco12 = 4.00;}
+	if (value13 == 0){var preco13 = 0;} else {preco13 = 4.00;}
+	if (value14 == 0){var preco14 = 0;} else {preco14= 3.00;}
+	if (value15 == 0){var preco15 = 0;} else {preco15 = 3.00;}
+	if (value16 == 0){var preco16 = 0;} else {preco16 = 3.00;}
+	if (value17 == 0){var preco17 = 0;} else {preco17 = 3.00;}
+	if (value18 == 0){var preco18 = 0;} else {preco18 = 3.00;}
+	if (value19 == 0){var preco19 = 0;} else {preco19 = 10.00;}
+	if (value20 == 0){var preco20 = 0;} else {preco20 = 3.50;}
+	if (value21 == 0){var preco21 = 0;} else {preco21 = 3.50;}
+	if (value22 == 0){var preco22 = 0;} else {preco22 = 3.50;}
+	if (value23 == 0){var preco23 = 0;} else {preco23 = 1.50;}
+	if (value24 == 0){var preco24 = 0;} else {preco24 = 3.00;}
+	if (value25 == 0){var preco25 = 0;} else {preco25 = 3.00;}
+	if (value26 == 0){var preco26 = 0;} else {preco26 = 5.00;}
+	if (value27 == 0){var preco27 = 0;} else {preco27 = 6.00;}
+	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
+	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
+
+
 
 	var tr = document.createElement('tr'),
 		td_quantPetisco6 = document.createElement('td'),
@@ -300,7 +591,13 @@ function mandardados6(){
 	document.getElementById('namePrato').innerHTML = batata;
 
 	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
-		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8));
+		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
+		(preco9 * value9) + (preco10 * value10) + (preco11 * value11) + (preco12 * value12) +
+		(preco13 * value13) + (preco14 * value14) + (preco15 * value15) + (preco16 * value16) +
+		(preco17 * value17) + (preco18 * value18) + (preco19 * value19) + (preco20 * value20) +
+		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
+		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
+		(preco29 * value29));
 
 	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
@@ -320,9 +617,29 @@ function mandardados7(){
 				value6 = document.getElementById('quantPet6').value,
 				value7 = document.getElementById('quantPet7').value,
 				value8 = document.getElementById('quantPet8').value,
+				value9 = document.getElementById('quantPet9').value,
+				value10 = document.getElementById('quantPet10').value,
+				value11 = document.getElementById('quantPet11').value,
+				value12 = document.getElementById('quantPet12').value,
+				value13 = document.getElementById('quantPet13').value,
+				value14 = document.getElementById('quantPet14').value,
+				value15 = document.getElementById('quantPet15').value,
+				value16 = document.getElementById('quantPet16').value,
+				value17 = document.getElementById('quantPet17').value,
+				value18 = document.getElementById('quantPet18').value,
+				value19 = document.getElementById('quantPet19').value,
+				value20 = document.getElementById('quantPet20').value,
+				value21 = document.getElementById('quantPet21').value,
+				value22 = document.getElementById('quantPet22').value,
+				value23 = document.getElementById('quantPet23').value,
+				value24 = document.getElementById('quantPet24').value,
+				value25 = document.getElementById('quantPet25').value,
+				value26 = document.getElementById('quantPet26').value,
+				value27 = document.getElementById('quantPet27').value,
+				value28 = document.getElementById('quantPet28').value,
+				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
 
-	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
 	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
@@ -331,6 +648,29 @@ function mandardados7(){
 	if (value6 == 0){var preco6 = 0;} else {preco6 = 10.00;}
 	if (value7 == 0){var preco7 = 0;} else {preco7 = 6.00;}
 	if (value8 == 0){var preco8 = 0;} else {preco8 = 10.00;}
+	if (value9 == 0){var preco9 = 0;} else {preco9 = 4.00;}
+	if (value10 == 0){var preco10 = 0;} else {preco10 = 4.00;}
+	if (value11 == 0){var preco11 = 0;} else {preco11 = 4.00;}
+	if (value12 == 0){var preco12 = 0;} else {preco12 = 4.00;}
+	if (value13 == 0){var preco13 = 0;} else {preco13 = 4.00;}
+	if (value14 == 0){var preco14 = 0;} else {preco14= 3.00;}
+	if (value15 == 0){var preco15 = 0;} else {preco15 = 3.00;}
+	if (value16 == 0){var preco16 = 0;} else {preco16 = 3.00;}
+	if (value17 == 0){var preco17 = 0;} else {preco17 = 3.00;}
+	if (value18 == 0){var preco18 = 0;} else {preco18 = 3.00;}
+	if (value19 == 0){var preco19 = 0;} else {preco19 = 10.00;}
+	if (value20 == 0){var preco20 = 0;} else {preco20 = 3.50;}
+	if (value21 == 0){var preco21 = 0;} else {preco21 = 3.50;}
+	if (value22 == 0){var preco22 = 0;} else {preco22 = 3.50;}
+	if (value23 == 0){var preco23 = 0;} else {preco23 = 1.50;}
+	if (value24 == 0){var preco24 = 0;} else {preco24 = 3.00;}
+	if (value25 == 0){var preco25 = 0;} else {preco25 = 3.00;}
+	if (value26 == 0){var preco26 = 0;} else {preco26 = 5.00;}
+	if (value27 == 0){var preco27 = 0;} else {preco27 = 6.00;}
+	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
+	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
+
+
 
 	var tr = document.createElement('tr'),
 		td_quantPetisco7 = document.createElement('td'),
@@ -353,7 +693,13 @@ function mandardados7(){
 	document.getElementById('namePrato').innerHTML = batata;
 
 	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
-		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8));
+		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
+		(preco9 * value9) + (preco10 * value10) + (preco11 * value11) + (preco12 * value12) +
+		(preco13 * value13) + (preco14 * value14) + (preco15 * value15) + (preco16 * value16) +
+		(preco17 * value17) + (preco18 * value18) + (preco19 * value19) + (preco20 * value20) +
+		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
+		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
+		(preco29 * value29));
 
 	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
@@ -373,6 +719,27 @@ function mandardados8(){
 				value6 = document.getElementById('quantPet6').value,
 				value7 = document.getElementById('quantPet7').value,
 				value8 = document.getElementById('quantPet8').value,
+				value9 = document.getElementById('quantPet9').value,
+				value10 = document.getElementById('quantPet10').value,
+				value11 = document.getElementById('quantPet11').value,
+				value12 = document.getElementById('quantPet12').value,
+				value13 = document.getElementById('quantPet13').value,
+				value14 = document.getElementById('quantPet14').value,
+				value15 = document.getElementById('quantPet15').value,
+				value16 = document.getElementById('quantPet16').value,
+				value17 = document.getElementById('quantPet17').value,
+				value18 = document.getElementById('quantPet18').value,
+				value19 = document.getElementById('quantPet19').value,
+				value20 = document.getElementById('quantPet20').value,
+				value21 = document.getElementById('quantPet21').value,
+				value22 = document.getElementById('quantPet22').value,
+				value23 = document.getElementById('quantPet23').value,
+				value24 = document.getElementById('quantPet24').value,
+				value25 = document.getElementById('quantPet25').value,
+				value26 = document.getElementById('quantPet26').value,
+				value27 = document.getElementById('quantPet27').value,
+				value28 = document.getElementById('quantPet28').value,
+				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
 
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -383,6 +750,28 @@ function mandardados8(){
 	if (value6 == 0){var preco6 = 0;} else {preco6 = 10.00;}
 	if (value7 == 0){var preco7 = 0;} else {preco7 = 6.00;}
 	if (value8 == 0){var preco8 = 0;} else {preco8 = 10.00;}
+	if (value9 == 0){var preco9 = 0;} else {preco9 = 4.00;}
+	if (value10 == 0){var preco10 = 0;} else {preco10 = 4.00;}
+	if (value11 == 0){var preco11 = 0;} else {preco11 = 4.00;}
+	if (value12 == 0){var preco12 = 0;} else {preco12 = 4.00;}
+	if (value13 == 0){var preco13 = 0;} else {preco13 = 4.00;}
+	if (value14 == 0){var preco14 = 0;} else {preco14= 3.00;}
+	if (value15 == 0){var preco15 = 0;} else {preco15 = 3.00;}
+	if (value16 == 0){var preco16 = 0;} else {preco16 = 3.00;}
+	if (value17 == 0){var preco17 = 0;} else {preco17 = 3.00;}
+	if (value18 == 0){var preco18 = 0;} else {preco18 = 3.00;}
+	if (value19 == 0){var preco19 = 0;} else {preco19 = 10.00;}
+	if (value20 == 0){var preco20 = 0;} else {preco20 = 3.50;}
+	if (value21 == 0){var preco21 = 0;} else {preco21 = 3.50;}
+	if (value22 == 0){var preco22 = 0;} else {preco22 = 3.50;}
+	if (value23 == 0){var preco23 = 0;} else {preco23 = 1.50;}
+	if (value24 == 0){var preco24 = 0;} else {preco24 = 3.00;}
+	if (value25 == 0){var preco25 = 0;} else {preco25 = 3.00;}
+	if (value26 == 0){var preco26 = 0;} else {preco26 = 5.00;}
+	if (value27 == 0){var preco27 = 0;} else {preco27 = 6.00;}
+	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
+	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
+
 
 	var tr = document.createElement('tr'),
 		td_quantPetisco8 = document.createElement('td'),
@@ -405,7 +794,13 @@ function mandardados8(){
 	document.getElementById('namePrato').innerHTML = batata;
 
 	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
-		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8));
+		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
+		(preco9 * value9) + (preco10 * value10) + (preco11 * value11) + (preco12 * value12) +
+		(preco13 * value13) + (preco14 * value14) + (preco15 * value15) + (preco16 * value16) +
+		(preco17 * value17) + (preco18 * value18) + (preco19 * value19) + (preco20 * value20) +
+		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
+		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
+		(preco29 * value29));
 
 	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
@@ -414,3 +809,2133 @@ td_quantPetisco8.style.textAlign="center";
 td_namePetisco8.style.textAlign="center";
 td_precoPetisco8.style.textAlign="center";
 }
+
+function mandardados9(){
+
+	var value1 = document.getElementById('quantPet1').value,
+				value2 = document.getElementById('quantPet2').value,
+				value3 = document.getElementById('quantPet3').value,
+				value4 = document.getElementById('quantPet4').value,
+				value5 = document.getElementById('quantPet5').value,
+				value6 = document.getElementById('quantPet6').value,
+				value7 = document.getElementById('quantPet7').value,
+				value8 = document.getElementById('quantPet8').value,
+				value9 = document.getElementById('quantPet9').value,
+				value10 = document.getElementById('quantPet10').value,
+				value11 = document.getElementById('quantPet11').value,
+				value12 = document.getElementById('quantPet12').value,
+				value13 = document.getElementById('quantPet13').value,
+				value14 = document.getElementById('quantPet14').value,
+				value15 = document.getElementById('quantPet15').value,
+				value16 = document.getElementById('quantPet16').value,
+				value17 = document.getElementById('quantPet17').value,
+				value18 = document.getElementById('quantPet18').value,
+				value19 = document.getElementById('quantPet19').value,
+				value20 = document.getElementById('quantPet20').value,
+				value21 = document.getElementById('quantPet21').value,
+				value22 = document.getElementById('quantPet22').value,
+				value23 = document.getElementById('quantPet23').value,
+				value24 = document.getElementById('quantPet24').value,
+				value25 = document.getElementById('quantPet25').value,
+				value26 = document.getElementById('quantPet26').value,
+				value27 = document.getElementById('quantPet27').value,
+				value28 = document.getElementById('quantPet28').value,
+				value29 = document.getElementById('quantPet29').value,
+				trbody = document.getElementById('tablePedidos');
+
+	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
+	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
+	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
+	if (value4 == 0){var preco4 = 0;} else {preco4 = 20.00;}
+	if (value5 == 0){var preco5 = 0;} else {preco5 = 10.00;}
+	if (value6 == 0){var preco6 = 0;} else {preco6 = 10.00;}
+	if (value7 == 0){var preco7 = 0;} else {preco7 = 6.00;}
+	if (value8 == 0){var preco8 = 0;} else {preco8 = 10.00;}
+	if (value9 == 0){var preco9 = 0;} else {preco9 = 4.00;}
+	if (value10 == 0){var preco10 = 0;} else {preco10 = 4.00;}
+	if (value11 == 0){var preco11 = 0;} else {preco11 = 4.00;}
+	if (value12 == 0){var preco12 = 0;} else {preco12 = 4.00;}
+	if (value13 == 0){var preco13 = 0;} else {preco13 = 4.00;}
+	if (value14 == 0){var preco14 = 0;} else {preco14= 3.00;}
+	if (value15 == 0){var preco15 = 0;} else {preco15 = 3.00;}
+	if (value16 == 0){var preco16 = 0;} else {preco16 = 3.00;}
+	if (value17 == 0){var preco17 = 0;} else {preco17 = 3.00;}
+	if (value18 == 0){var preco18 = 0;} else {preco18 = 3.00;}
+	if (value19 == 0){var preco19 = 0;} else {preco19 = 10.00;}
+	if (value20 == 0){var preco20 = 0;} else {preco20 = 3.50;}
+	if (value21 == 0){var preco21 = 0;} else {preco21 = 3.50;}
+	if (value22 == 0){var preco22 = 0;} else {preco22 = 3.50;}
+	if (value23 == 0){var preco23 = 0;} else {preco23 = 1.50;}
+	if (value24 == 0){var preco24 = 0;} else {preco24 = 3.00;}
+	if (value25 == 0){var preco25 = 0;} else {preco25 = 3.00;}
+	if (value26 == 0){var preco26 = 0;} else {preco26 = 5.00;}
+	if (value27 == 0){var preco27 = 0;} else {preco27 = 6.00;}
+	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
+	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
+
+
+	var tr = document.createElement('tr'),
+		td_quantPetisco9 = document.createElement('td'),
+		td_namePetisco9= document.createElement('td'),
+		td_precoPetisco9 = document.createElement('td');
+
+	td_quantPetisco9.setAttribute("id", "quantPetisco");
+	td_namePetisco9.setAttribute("id", "namePrato");
+	td_precoPetisco9.setAttribute("id", "precoPetisco");
+
+	trbody.appendChild(tr);
+	tr.appendChild(td_quantPetisco9);
+	tr.appendChild(td_namePetisco9);
+	tr.appendChild(td_precoPetisco9);
+
+	var quantPetisco9 = document.getElementById('quantPetisco');
+	quantPetisco9.innerText = value9;
+
+	var boi = document.getElementById('boi').firstChild.innerHTML;
+	document.getElementById('namePrato').innerHTML = boi;
+
+	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
+		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
+		(preco9 * value9) + (preco10 * value10) + (preco11 * value11) + (preco12 * value12) +
+		(preco13 * value13) + (preco14 * value14) + (preco15 * value15) + (preco16 * value16) +
+		(preco17 * value17) + (preco18 * value18) + (preco19 * value19) + (preco20 * value20) +
+		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
+		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
+		(preco29 * value29));
+	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+
+td_quantPetisco9.style.textAlign="center";
+td_namePetisco9.style.textAlign="center";
+td_precoPetisco9.style.textAlign="center";
+}
+
+function mandardados10(){
+
+	var value1 = document.getElementById('quantPet1').value,
+				value2 = document.getElementById('quantPet2').value,
+				value3 = document.getElementById('quantPet3').value,
+				value4 = document.getElementById('quantPet4').value,
+				value5 = document.getElementById('quantPet5').value,
+				value6 = document.getElementById('quantPet6').value,
+				value7 = document.getElementById('quantPet7').value,
+				value8 = document.getElementById('quantPet8').value,
+				value9 = document.getElementById('quantPet9').value,
+				value10 = document.getElementById('quantPet10').value,
+				value11 = document.getElementById('quantPet11').value,
+				value12 = document.getElementById('quantPet12').value,
+				value13 = document.getElementById('quantPet13').value,
+				value14 = document.getElementById('quantPet14').value,
+				value15 = document.getElementById('quantPet15').value,
+				value16 = document.getElementById('quantPet16').value,
+				value17 = document.getElementById('quantPet17').value,
+				value18 = document.getElementById('quantPet18').value,
+				value19 = document.getElementById('quantPet19').value,
+				value20 = document.getElementById('quantPet20').value,
+				value21 = document.getElementById('quantPet21').value,
+				value22 = document.getElementById('quantPet22').value,
+				value23 = document.getElementById('quantPet23').value,
+				value24 = document.getElementById('quantPet24').value,
+				value25 = document.getElementById('quantPet25').value,
+				value26 = document.getElementById('quantPet26').value,
+				value27 = document.getElementById('quantPet27').value,
+				value28 = document.getElementById('quantPet28').value,
+				value29 = document.getElementById('quantPet29').value,
+				trbody = document.getElementById('tablePedidos');
+
+	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
+	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
+	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
+	if (value4 == 0){var preco4 = 0;} else {preco4 = 20.00;}
+	if (value5 == 0){var preco5 = 0;} else {preco5 = 10.00;}
+	if (value6 == 0){var preco6 = 0;} else {preco6 = 10.00;}
+	if (value7 == 0){var preco7 = 0;} else {preco7 = 6.00;}
+	if (value8 == 0){var preco8 = 0;} else {preco8 = 10.00;}
+	if (value9 == 0){var preco9 = 0;} else {preco9 = 4.00;}
+	if (value10 == 0){var preco10 = 0;} else {preco10 = 4.00;}
+	if (value11 == 0){var preco11 = 0;} else {preco11 = 4.00;}
+	if (value12 == 0){var preco12 = 0;} else {preco12 = 4.00;}
+	if (value13 == 0){var preco13 = 0;} else {preco13 = 4.00;}
+	if (value14 == 0){var preco14 = 0;} else {preco14= 3.00;}
+	if (value15 == 0){var preco15 = 0;} else {preco15 = 3.00;}
+	if (value16 == 0){var preco16 = 0;} else {preco16 = 3.00;}
+	if (value17 == 0){var preco17 = 0;} else {preco17 = 3.00;}
+	if (value18 == 0){var preco18 = 0;} else {preco18 = 3.00;}
+	if (value19 == 0){var preco19 = 0;} else {preco19 = 10.00;}
+	if (value20 == 0){var preco20 = 0;} else {preco20 = 3.50;}
+	if (value21 == 0){var preco21 = 0;} else {preco21 = 3.50;}
+	if (value22 == 0){var preco22 = 0;} else {preco22 = 3.50;}
+	if (value23 == 0){var preco23 = 0;} else {preco23 = 1.50;}
+	if (value24 == 0){var preco24 = 0;} else {preco24 = 3.00;}
+	if (value25 == 0){var preco25 = 0;} else {preco25 = 3.00;}
+	if (value26 == 0){var preco26 = 0;} else {preco26 = 5.00;}
+	if (value27 == 0){var preco27 = 0;} else {preco27 = 6.00;}
+	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
+	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
+
+
+
+	var tr = document.createElement('tr'),
+		td_quantPetisco10 = document.createElement('td'),
+		td_namePetisco10= document.createElement('td'),
+		td_precoPetisco10 = document.createElement('td');
+
+	td_quantPetisco10.setAttribute("id", "quantPetisco");
+	td_namePetisco10.setAttribute("id", "namePrato");
+	td_precoPetisco10.setAttribute("id", "precoPetisco");
+
+	trbody.appendChild(tr);
+	tr.appendChild(td_quantPetisco10);
+	tr.appendChild(td_namePetisco10);
+	tr.appendChild(td_precoPetisco10);
+
+	var quantPetisco10 = document.getElementById('quantPetisco');
+	quantPetisco10.innerText = value10;
+
+	var franbacon= document.getElementById('franbacon').firstChild.innerHTML;
+	document.getElementById('namePrato').innerHTML = franbacon;
+
+	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
+		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
+		(preco9 * value9) + (preco10 * value10) + (preco11 * value11) + (preco12 * value12) +
+		(preco13 * value13) + (preco14 * value14) + (preco15 * value15) + (preco16 * value16) +
+		(preco17 * value17) + (preco18 * value18) + (preco19 * value19) + (preco20 * value20) +
+		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
+		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
+		(preco29 * value29));
+
+	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+
+td_quantPetisco10.style.textAlign="center";
+td_namePetisco10.style.textAlign="center";
+td_precoPetisco10.style.textAlign="center";
+}
+
+function mandardados11(){
+
+	var value1 = document.getElementById('quantPet1').value,
+				value2 = document.getElementById('quantPet2').value,
+				value3 = document.getElementById('quantPet3').value,
+				value4 = document.getElementById('quantPet4').value,
+				value5 = document.getElementById('quantPet5').value,
+				value6 = document.getElementById('quantPet6').value,
+				value7 = document.getElementById('quantPet7').value,
+				value8 = document.getElementById('quantPet8').value,
+				value9 = document.getElementById('quantPet9').value,
+				value10 = document.getElementById('quantPet10').value,
+				value11 = document.getElementById('quantPet11').value,
+				value12 = document.getElementById('quantPet12').value,
+				value13 = document.getElementById('quantPet13').value,
+				value14 = document.getElementById('quantPet14').value,
+				value15 = document.getElementById('quantPet15').value,
+				value16 = document.getElementById('quantPet16').value,
+				value17 = document.getElementById('quantPet17').value,
+				value18 = document.getElementById('quantPet18').value,
+				value19 = document.getElementById('quantPet19').value,
+				value20 = document.getElementById('quantPet20').value,
+				value21 = document.getElementById('quantPet21').value,
+				value22 = document.getElementById('quantPet22').value,
+				value23 = document.getElementById('quantPet23').value,
+				value24 = document.getElementById('quantPet24').value,
+				value25 = document.getElementById('quantPet25').value,
+				value26 = document.getElementById('quantPet26').value,
+				value27 = document.getElementById('quantPet27').value,
+				value28 = document.getElementById('quantPet28').value,
+				value29 = document.getElementById('quantPet29').value,
+				trbody = document.getElementById('tablePedidos');
+
+	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
+	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
+	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
+	if (value4 == 0){var preco4 = 0;} else {preco4 = 20.00;}
+	if (value5 == 0){var preco5 = 0;} else {preco5 = 10.00;}
+	if (value6 == 0){var preco6 = 0;} else {preco6 = 10.00;}
+	if (value7 == 0){var preco7 = 0;} else {preco7 = 6.00;}
+	if (value8 == 0){var preco8 = 0;} else {preco8 = 10.00;}
+	if (value9 == 0){var preco9 = 0;} else {preco9 = 4.00;}
+	if (value10 == 0){var preco10 = 0;} else {preco10 = 4.00;}
+	if (value11 == 0){var preco11 = 0;} else {preco11 = 4.00;}
+	if (value12 == 0){var preco12 = 0;} else {preco12 = 4.00;}
+	if (value13 == 0){var preco13 = 0;} else {preco13 = 4.00;}
+	if (value14 == 0){var preco14 = 0;} else {preco14= 3.00;}
+	if (value15 == 0){var preco15 = 0;} else {preco15 = 3.00;}
+	if (value16 == 0){var preco16 = 0;} else {preco16 = 3.00;}
+	if (value17 == 0){var preco17 = 0;} else {preco17 = 3.00;}
+	if (value18 == 0){var preco18 = 0;} else {preco18 = 3.00;}
+	if (value19 == 0){var preco19 = 0;} else {preco19 = 10.00;}
+	if (value20 == 0){var preco20 = 0;} else {preco20 = 3.50;}
+	if (value21 == 0){var preco21 = 0;} else {preco21 = 3.50;}
+	if (value22 == 0){var preco22 = 0;} else {preco22 = 3.50;}
+	if (value23 == 0){var preco23 = 0;} else {preco23 = 1.50;}
+	if (value24 == 0){var preco24 = 0;} else {preco24 = 3.00;}
+	if (value25 == 0){var preco25 = 0;} else {preco25 = 3.00;}
+	if (value26 == 0){var preco26 = 0;} else {preco26 = 5.00;}
+	if (value27 == 0){var preco27 = 0;} else {preco27 = 6.00;}
+	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
+	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
+
+
+
+	var tr = document.createElement('tr'),
+		td_quantPetisco11 = document.createElement('td'),
+		td_namePetisco11= document.createElement('td'),
+		td_precoPetisco11 = document.createElement('td');
+
+	td_quantPetisco11.setAttribute("id", "quantPetisco");
+	td_namePetisco11.setAttribute("id", "namePrato");
+	td_precoPetisco11.setAttribute("id", "precoPetisco");
+
+	trbody.appendChild(tr);
+	tr.appendChild(td_quantPetisco11);
+	tr.appendChild(td_namePetisco11);
+	tr.appendChild(td_precoPetisco11);
+
+	var quantPetisco11 = document.getElementById('quantPetisco');
+	quantPetisco11.innerText = value11;
+
+	var frango = document.getElementById('frango').firstChild.innerHTML;
+	document.getElementById('namePrato').innerHTML = frango;
+
+	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
+		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
+		(preco9 * value9) + (preco10 * value10) + (preco11 * value11) + (preco12 * value12) +
+		(preco13 * value13) + (preco14 * value14) + (preco15 * value15) + (preco16 * value16) +
+		(preco17 * value17) + (preco18 * value18) + (preco19 * value19) + (preco20 * value20) +
+		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
+		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
+		(preco29 * value29));
+
+	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+
+td_quantPetisco11.style.textAlign="center";
+td_namePetisco11.style.textAlign="center";
+td_precoPetisco11.style.textAlign="center";
+}
+
+function mandardados12(){
+
+	var value1 = document.getElementById('quantPet1').value,
+				value2 = document.getElementById('quantPet2').value,
+				value3 = document.getElementById('quantPet3').value,
+				value4 = document.getElementById('quantPet4').value,
+				value5 = document.getElementById('quantPet5').value,
+				value6 = document.getElementById('quantPet6').value,
+				value7 = document.getElementById('quantPet7').value,
+				value8 = document.getElementById('quantPet8').value,
+				value9 = document.getElementById('quantPet9').value,
+				value10 = document.getElementById('quantPet10').value,
+				value11 = document.getElementById('quantPet11').value,
+				value12 = document.getElementById('quantPet12').value,
+				value13 = document.getElementById('quantPet13').value,
+				value14 = document.getElementById('quantPet14').value,
+				value15 = document.getElementById('quantPet15').value,
+				value16 = document.getElementById('quantPet16').value,
+				value17 = document.getElementById('quantPet17').value,
+				value18 = document.getElementById('quantPet18').value,
+				value19 = document.getElementById('quantPet19').value,
+				value20 = document.getElementById('quantPet20').value,
+				value21 = document.getElementById('quantPet21').value,
+				value22 = document.getElementById('quantPet22').value,
+				value23 = document.getElementById('quantPet23').value,
+				value24 = document.getElementById('quantPet24').value,
+				value25 = document.getElementById('quantPet25').value,
+				value26 = document.getElementById('quantPet26').value,
+				value27 = document.getElementById('quantPet27').value,
+				value28 = document.getElementById('quantPet28').value,
+				value29 = document.getElementById('quantPet29').value,
+				trbody = document.getElementById('tablePedidos');
+
+	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
+	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
+	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
+	if (value4 == 0){var preco4 = 0;} else {preco4 = 20.00;}
+	if (value5 == 0){var preco5 = 0;} else {preco5 = 10.00;}
+	if (value6 == 0){var preco6 = 0;} else {preco6 = 10.00;}
+	if (value7 == 0){var preco7 = 0;} else {preco7 = 6.00;}
+	if (value8 == 0){var preco8 = 0;} else {preco8 = 10.00;}
+	if (value9 == 0){var preco9 = 0;} else {preco9 = 4.00;}
+	if (value10 == 0){var preco10 = 0;} else {preco10 = 4.00;}
+	if (value11 == 0){var preco11 = 0;} else {preco11 = 4.00;}
+	if (value12 == 0){var preco12 = 0;} else {preco12 = 4.00;}
+	if (value13 == 0){var preco13 = 0;} else {preco13 = 4.00;}
+	if (value14 == 0){var preco14 = 0;} else {preco14= 3.00;}
+	if (value15 == 0){var preco15 = 0;} else {preco15 = 3.00;}
+	if (value16 == 0){var preco16 = 0;} else {preco16 = 3.00;}
+	if (value17 == 0){var preco17 = 0;} else {preco17 = 3.00;}
+	if (value18 == 0){var preco18 = 0;} else {preco18 = 3.00;}
+	if (value19 == 0){var preco19 = 0;} else {preco19 = 10.00;}
+	if (value20 == 0){var preco20 = 0;} else {preco20 = 3.50;}
+	if (value21 == 0){var preco21 = 0;} else {preco21 = 3.50;}
+	if (value22 == 0){var preco22 = 0;} else {preco22 = 3.50;}
+	if (value23 == 0){var preco23 = 0;} else {preco23 = 1.50;}
+	if (value24 == 0){var preco24 = 0;} else {preco24 = 3.00;}
+	if (value25 == 0){var preco25 = 0;} else {preco25 = 3.00;}
+	if (value26 == 0){var preco26 = 0;} else {preco26 = 5.00;}
+	if (value27 == 0){var preco27 = 0;} else {preco27 = 6.00;}
+	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
+	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
+
+
+	var tr = document.createElement('tr'),
+		td_quantPetisco12 = document.createElement('td'),
+		td_namePetisco12= document.createElement('td'),
+		td_precoPetisco12 = document.createElement('td');
+
+	td_quantPetisco12.setAttribute("id", "quantPetisco");
+	td_namePetisco12.setAttribute("id", "namePrato");
+	td_precoPetisco12.setAttribute("id", "precoPetisco");
+
+	trbody.appendChild(tr);
+	tr.appendChild(td_quantPetisco12);
+	tr.appendChild(td_namePetisco12);
+	tr.appendChild(td_precoPetisco12);
+
+	var quantPetisco12 = document.getElementById('quantPetisco');
+	quantPetisco12.innerText = value12;
+
+	var coracaoDeFrango= document.getElementById('coracaoDeFrango').firstChild.innerHTML;
+	document.getElementById('namePrato').innerHTML = coracaoDeFrango;
+
+	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
+		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
+		(preco9 * value9) + (preco10 * value10) + (preco11 * value11) + (preco12 * value12) +
+		(preco13 * value13) + (preco14 * value14) + (preco15 * value15) + (preco16 * value16) +
+		(preco17 * value17) + (preco18 * value18) + (preco19 * value19) + (preco20 * value20) +
+		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
+		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
+		(preco29 * value29));
+
+	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+
+td_quantPetisco12.style.textAlign="center";
+td_namePetisco12.style.textAlign="center";
+td_precoPetisco12.style.textAlign="center";
+}
+
+function mandardados13(){
+
+	var value1 = document.getElementById('quantPet1').value,
+				value2 = document.getElementById('quantPet2').value,
+				value3 = document.getElementById('quantPet3').value,
+				value4 = document.getElementById('quantPet4').value,
+				value5 = document.getElementById('quantPet5').value,
+				value6 = document.getElementById('quantPet6').value,
+				value7 = document.getElementById('quantPet7').value,
+				value8 = document.getElementById('quantPet8').value,
+				value9 = document.getElementById('quantPet9').value,
+				value10 = document.getElementById('quantPet10').value,
+				value11 = document.getElementById('quantPet11').value,
+				value12 = document.getElementById('quantPet12').value,
+				value13 = document.getElementById('quantPet13').value,
+				value14 = document.getElementById('quantPet14').value,
+				value15 = document.getElementById('quantPet15').value,
+				value16 = document.getElementById('quantPet16').value,
+				value17 = document.getElementById('quantPet17').value,
+				value18 = document.getElementById('quantPet18').value,
+				value19 = document.getElementById('quantPet19').value,
+				value20 = document.getElementById('quantPet20').value,
+				value21 = document.getElementById('quantPet21').value,
+				value22 = document.getElementById('quantPet22').value,
+				value23 = document.getElementById('quantPet23').value,
+				value24 = document.getElementById('quantPet24').value,
+				value25 = document.getElementById('quantPet25').value,
+				value26 = document.getElementById('quantPet26').value,
+				value27 = document.getElementById('quantPet27').value,
+				value28 = document.getElementById('quantPet28').value,
+				value29 = document.getElementById('quantPet29').value,
+				trbody = document.getElementById('tablePedidos');
+
+	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
+	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
+	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
+	if (value4 == 0){var preco4 = 0;} else {preco4 = 20.00;}
+	if (value5 == 0){var preco5 = 0;} else {preco5 = 10.00;}
+	if (value6 == 0){var preco6 = 0;} else {preco6 = 10.00;}
+	if (value7 == 0){var preco7 = 0;} else {preco7 = 6.00;}
+	if (value8 == 0){var preco8 = 0;} else {preco8 = 10.00;}
+	if (value9 == 0){var preco9 = 0;} else {preco9 = 4.00;}
+	if (value10 == 0){var preco10 = 0;} else {preco10 = 4.00;}
+	if (value11 == 0){var preco11 = 0;} else {preco11 = 4.00;}
+	if (value12 == 0){var preco12 = 0;} else {preco12 = 4.00;}
+	if (value13 == 0){var preco13 = 0;} else {preco13 = 4.00;}
+	if (value14 == 0){var preco14 = 0;} else {preco14= 3.00;}
+	if (value15 == 0){var preco15 = 0;} else {preco15 = 3.00;}
+	if (value16 == 0){var preco16 = 0;} else {preco16 = 3.00;}
+	if (value17 == 0){var preco17 = 0;} else {preco17 = 3.00;}
+	if (value18 == 0){var preco18 = 0;} else {preco18 = 3.00;}
+	if (value19 == 0){var preco19 = 0;} else {preco19 = 10.00;}
+	if (value20 == 0){var preco20 = 0;} else {preco20 = 3.50;}
+	if (value21 == 0){var preco21 = 0;} else {preco21 = 3.50;}
+	if (value22 == 0){var preco22 = 0;} else {preco22 = 3.50;}
+	if (value23 == 0){var preco23 = 0;} else {preco23 = 1.50;}
+	if (value24 == 0){var preco24 = 0;} else {preco24 = 3.00;}
+	if (value25 == 0){var preco25 = 0;} else {preco25 = 3.00;}
+	if (value26 == 0){var preco26 = 0;} else {preco26 = 5.00;}
+	if (value27 == 0){var preco27 = 0;} else {preco27 = 6.00;}
+	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
+	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
+
+
+
+	var tr = document.createElement('tr'),
+		td_quantPetisco13 = document.createElement('td'),
+		td_namePetisco13= document.createElement('td'),
+		td_precoPetisco13 = document.createElement('td');
+
+	td_quantPetisco13.setAttribute("id", "quantPetisco");
+	td_namePetisco13.setAttribute("id", "namePrato");
+	td_precoPetisco13.setAttribute("id", "precoPetisco");
+
+	trbody.appendChild(tr);
+	tr.appendChild(td_quantPetisco13);
+	tr.appendChild(td_namePetisco13);
+	tr.appendChild(td_precoPetisco13);
+
+	var quantPetisco13 = document.getElementById('quantPetisco');
+	quantPetisco13.innerText = value13;
+
+	var porco = document.getElementById('porco').firstChild.innerHTML;
+	document.getElementById('namePrato').innerHTML = porco;
+
+	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
+		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
+		(preco9 * value9) + (preco10 * value10) + (preco11 * value11) + (preco12 * value12) +
+		(preco13 * value13) + (preco14 * value14) + (preco15 * value15) + (preco16 * value16) +
+		(preco17 * value17) + (preco18 * value18) + (preco19 * value19) + (preco20 * value20) +
+		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
+		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
+		(preco29 * value29));;
+
+	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+
+td_quantPetisco13.style.textAlign="center";
+td_namePetisco13.style.textAlign="center";
+td_precoPetisco13.style.textAlign="center";
+}
+
+function mandardados14(){
+
+	var value1 = document.getElementById('quantPet1').value,
+				value2 = document.getElementById('quantPet2').value,
+				value3 = document.getElementById('quantPet3').value,
+				value4 = document.getElementById('quantPet4').value,
+				value5 = document.getElementById('quantPet5').value,
+				value6 = document.getElementById('quantPet6').value,
+				value7 = document.getElementById('quantPet7').value,
+				value8 = document.getElementById('quantPet8').value,
+				value9 = document.getElementById('quantPet9').value,
+				value10 = document.getElementById('quantPet10').value,
+				value11 = document.getElementById('quantPet11').value,
+				value12 = document.getElementById('quantPet12').value,
+				value13 = document.getElementById('quantPet13').value,
+				value14 = document.getElementById('quantPet14').value,
+				value15 = document.getElementById('quantPet15').value,
+				value16 = document.getElementById('quantPet16').value,
+				value17 = document.getElementById('quantPet17').value,
+				value18 = document.getElementById('quantPet18').value,
+				value19 = document.getElementById('quantPet19').value,
+				value20 = document.getElementById('quantPet20').value,
+				value21 = document.getElementById('quantPet21').value,
+				value22 = document.getElementById('quantPet22').value,
+				value23 = document.getElementById('quantPet23').value,
+				value24 = document.getElementById('quantPet24').value,
+				value25 = document.getElementById('quantPet25').value,
+				value26 = document.getElementById('quantPet26').value,
+				value27 = document.getElementById('quantPet27').value,
+				value28 = document.getElementById('quantPet28').value,
+				value29 = document.getElementById('quantPet29').value,
+				trbody = document.getElementById('tablePedidos');
+
+	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
+	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
+	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
+	if (value4 == 0){var preco4 = 0;} else {preco4 = 20.00;}
+	if (value5 == 0){var preco5 = 0;} else {preco5 = 10.00;}
+	if (value6 == 0){var preco6 = 0;} else {preco6 = 10.00;}
+	if (value7 == 0){var preco7 = 0;} else {preco7 = 6.00;}
+	if (value8 == 0){var preco8 = 0;} else {preco8 = 10.00;}
+	if (value9 == 0){var preco9 = 0;} else {preco9 = 4.00;}
+	if (value10 == 0){var preco10 = 0;} else {preco10 = 4.00;}
+	if (value11 == 0){var preco11 = 0;} else {preco11 = 4.00;}
+	if (value12 == 0){var preco12 = 0;} else {preco12 = 4.00;}
+	if (value13 == 0){var preco13 = 0;} else {preco13 = 4.00;}
+	if (value14 == 0){var preco14 = 0;} else {preco14= 3.00;}
+	if (value15 == 0){var preco15 = 0;} else {preco15 = 3.00;}
+	if (value16 == 0){var preco16 = 0;} else {preco16 = 3.00;}
+	if (value17 == 0){var preco17 = 0;} else {preco17 = 3.00;}
+	if (value18 == 0){var preco18 = 0;} else {preco18 = 3.00;}
+	if (value19 == 0){var preco19 = 0;} else {preco19 = 10.00;}
+	if (value20 == 0){var preco20 = 0;} else {preco20 = 3.50;}
+	if (value21 == 0){var preco21 = 0;} else {preco21 = 3.50;}
+	if (value22 == 0){var preco22 = 0;} else {preco22 = 3.50;}
+	if (value23 == 0){var preco23 = 0;} else {preco23 = 1.50;}
+	if (value24 == 0){var preco24 = 0;} else {preco24 = 3.00;}
+	if (value25 == 0){var preco25 = 0;} else {preco25 = 3.00;}
+	if (value26 == 0){var preco26 = 0;} else {preco26 = 5.00;}
+	if (value27 == 0){var preco27 = 0;} else {preco27 = 6.00;}
+	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
+	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
+
+
+
+	var tr = document.createElement('tr'),
+		td_quantPetisco14 = document.createElement('td'),
+		td_namePetisco14= document.createElement('td'),
+		td_precoPetisco14 = document.createElement('td');
+
+	td_quantPetisco14.setAttribute("id", "quantPetisco");
+	td_namePetisco14.setAttribute("id", "namePrato");
+	td_precoPetisco14.setAttribute("id", "precoPetisco");
+
+	trbody.appendChild(tr);
+	tr.appendChild(td_quantPetisco14);
+	tr.appendChild(td_namePetisco14);
+	tr.appendChild(td_precoPetisco14);
+
+	var quantPetisco14 = document.getElementById('quantPetisco');
+	quantPetisco14.innerText = value14;
+
+	var caja = document.getElementById('caja').firstChild.innerHTML;
+	document.getElementById('namePrato').innerHTML = caja;
+
+	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
+		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
+		(preco9 * value9) + (preco10 * value10) + (preco11 * value11) + (preco12 * value12) +
+		(preco13 * value13) + (preco14 * value14) + (preco15 * value15) + (preco16 * value16) +
+		(preco17 * value17) + (preco18 * value18) + (preco19 * value19) + (preco20 * value20) +
+		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
+		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
+		(preco29 * value29));
+
+	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+
+td_quantPetisco14.style.textAlign="center";
+td_namePetisco14.style.textAlign="center";
+td_precoPetisco14.style.textAlign="center";
+}
+
+function mandardados15(){
+
+	var value1 = document.getElementById('quantPet1').value,
+				value2 = document.getElementById('quantPet2').value,
+				value3 = document.getElementById('quantPet3').value,
+				value4 = document.getElementById('quantPet4').value,
+				value5 = document.getElementById('quantPet5').value,
+				value6 = document.getElementById('quantPet6').value,
+				value7 = document.getElementById('quantPet7').value,
+				value8 = document.getElementById('quantPet8').value,
+				value9 = document.getElementById('quantPet9').value,
+				value10 = document.getElementById('quantPet10').value,
+				value11 = document.getElementById('quantPet11').value,
+				value12 = document.getElementById('quantPet12').value,
+				value13 = document.getElementById('quantPet13').value,
+				value14 = document.getElementById('quantPet14').value,
+				value15 = document.getElementById('quantPet15').value,
+				value16 = document.getElementById('quantPet16').value,
+				value17 = document.getElementById('quantPet17').value,
+				value18 = document.getElementById('quantPet18').value,
+				value19 = document.getElementById('quantPet19').value,
+				value20 = document.getElementById('quantPet20').value,
+				value21 = document.getElementById('quantPet21').value,
+				value22 = document.getElementById('quantPet22').value,
+				value23 = document.getElementById('quantPet23').value,
+				value24 = document.getElementById('quantPet24').value,
+				value25 = document.getElementById('quantPet25').value,
+				value26 = document.getElementById('quantPet26').value,
+				value27 = document.getElementById('quantPet27').value,
+				value28 = document.getElementById('quantPet28').value,
+				value29 = document.getElementById('quantPet29').value,
+				trbody = document.getElementById('tablePedidos');
+
+	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
+	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
+	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
+	if (value4 == 0){var preco4 = 0;} else {preco4 = 20.00;}
+	if (value5 == 0){var preco5 = 0;} else {preco5 = 10.00;}
+	if (value6 == 0){var preco6 = 0;} else {preco6 = 10.00;}
+	if (value7 == 0){var preco7 = 0;} else {preco7 = 6.00;}
+	if (value8 == 0){var preco8 = 0;} else {preco8 = 10.00;}
+	if (value9 == 0){var preco9 = 0;} else {preco9 = 4.00;}
+	if (value10 == 0){var preco10 = 0;} else {preco10 = 4.00;}
+	if (value11 == 0){var preco11 = 0;} else {preco11 = 4.00;}
+	if (value12 == 0){var preco12 = 0;} else {preco12 = 4.00;}
+	if (value13 == 0){var preco13 = 0;} else {preco13 = 4.00;}
+	if (value14 == 0){var preco14 = 0;} else {preco14= 3.00;}
+	if (value15 == 0){var preco15 = 0;} else {preco15 = 3.00;}
+	if (value16 == 0){var preco16 = 0;} else {preco16 = 3.00;}
+	if (value17 == 0){var preco17 = 0;} else {preco17 = 3.00;}
+	if (value18 == 0){var preco18 = 0;} else {preco18 = 3.00;}
+	if (value19 == 0){var preco19 = 0;} else {preco19 = 10.00;}
+	if (value20 == 0){var preco20 = 0;} else {preco20 = 3.50;}
+	if (value21 == 0){var preco21 = 0;} else {preco21 = 3.50;}
+	if (value22 == 0){var preco22 = 0;} else {preco22 = 3.50;}
+	if (value23 == 0){var preco23 = 0;} else {preco23 = 1.50;}
+	if (value24 == 0){var preco24 = 0;} else {preco24 = 3.00;}
+	if (value25 == 0){var preco25 = 0;} else {preco25 = 3.00;}
+	if (value26 == 0){var preco26 = 0;} else {preco26 = 5.00;}
+	if (value27 == 0){var preco27 = 0;} else {preco27 = 6.00;}
+	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
+	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
+
+
+	var tr = document.createElement('tr'),
+		td_quantPetisco15 = document.createElement('td'),
+		td_namePetisco15= document.createElement('td'),
+		td_precoPetisco15 = document.createElement('td');
+
+	td_quantPetisco15.setAttribute("id", "quantPetisco");
+	td_namePetisco15.setAttribute("id", "namePrato");
+	td_precoPetisco15.setAttribute("id", "precoPetisco");
+
+	trbody.appendChild(tr);
+	tr.appendChild(td_quantPetisco15);
+	tr.appendChild(td_namePetisco15);
+	tr.appendChild(td_precoPetisco15);
+
+	var quantPetisco15 = document.getElementById('quantPetisco');
+	quantPetisco15.innerText = value15;
+
+	var laranja = document.getElementById('laranja').firstChild.innerHTML;
+	document.getElementById('namePrato').innerHTML = laranja;
+
+	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
+		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
+		(preco9 * value9) + (preco10 * value10) + (preco11 * value11) + (preco12 * value12) +
+		(preco13 * value13) + (preco14 * value14) + (preco15 * value15) + (preco16 * value16) +
+		(preco17 * value17) + (preco18 * value18) + (preco19 * value19) + (preco20 * value20) +
+		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
+		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
+		(preco29 * value29));
+
+	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+
+td_quantPetisco15.style.textAlign="center";
+td_namePetisco15.style.textAlign="center";
+td_precoPetisco15.style.textAlign="center";
+}
+
+function mandardados16(){
+
+	var value1 = document.getElementById('quantPet1').value,
+				value2 = document.getElementById('quantPet2').value,
+				value3 = document.getElementById('quantPet3').value,
+				value4 = document.getElementById('quantPet4').value,
+				value5 = document.getElementById('quantPet5').value,
+				value6 = document.getElementById('quantPet6').value,
+				value7 = document.getElementById('quantPet7').value,
+				value8 = document.getElementById('quantPet8').value,
+				value9 = document.getElementById('quantPet9').value,
+				value10 = document.getElementById('quantPet10').value,
+				value11 = document.getElementById('quantPet11').value,
+				value12 = document.getElementById('quantPet12').value,
+				value13 = document.getElementById('quantPet13').value,
+				value14 = document.getElementById('quantPet14').value,
+				value15 = document.getElementById('quantPet15').value,
+				value16 = document.getElementById('quantPet16').value,
+				value17 = document.getElementById('quantPet17').value,
+				value18 = document.getElementById('quantPet18').value,
+				value19 = document.getElementById('quantPet19').value,
+				value20 = document.getElementById('quantPet20').value,
+				value21 = document.getElementById('quantPet21').value,
+				value22 = document.getElementById('quantPet22').value,
+				value23 = document.getElementById('quantPet23').value,
+				value24 = document.getElementById('quantPet24').value,
+				value25 = document.getElementById('quantPet25').value,
+				value26 = document.getElementById('quantPet26').value,
+				value27 = document.getElementById('quantPet27').value,
+				value28 = document.getElementById('quantPet28').value,
+				value29 = document.getElementById('quantPet29').value,
+				trbody = document.getElementById('tablePedidos');
+
+	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
+	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
+	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
+	if (value4 == 0){var preco4 = 0;} else {preco4 = 20.00;}
+	if (value5 == 0){var preco5 = 0;} else {preco5 = 10.00;}
+	if (value6 == 0){var preco6 = 0;} else {preco6 = 10.00;}
+	if (value7 == 0){var preco7 = 0;} else {preco7 = 6.00;}
+	if (value8 == 0){var preco8 = 0;} else {preco8 = 10.00;}
+	if (value9 == 0){var preco9 = 0;} else {preco9 = 4.00;}
+	if (value10 == 0){var preco10 = 0;} else {preco10 = 4.00;}
+	if (value11 == 0){var preco11 = 0;} else {preco11 = 4.00;}
+	if (value12 == 0){var preco12 = 0;} else {preco12 = 4.00;}
+	if (value13 == 0){var preco13 = 0;} else {preco13 = 4.00;}
+	if (value14 == 0){var preco14 = 0;} else {preco14= 3.00;}
+	if (value15 == 0){var preco15 = 0;} else {preco15 = 3.00;}
+	if (value16 == 0){var preco16 = 0;} else {preco16 = 3.00;}
+	if (value17 == 0){var preco17 = 0;} else {preco17 = 3.00;}
+	if (value18 == 0){var preco18 = 0;} else {preco18 = 3.00;}
+	if (value19 == 0){var preco19 = 0;} else {preco19 = 10.00;}
+	if (value20 == 0){var preco20 = 0;} else {preco20 = 3.50;}
+	if (value21 == 0){var preco21 = 0;} else {preco21 = 3.50;}
+	if (value22 == 0){var preco22 = 0;} else {preco22 = 3.50;}
+	if (value23 == 0){var preco23 = 0;} else {preco23 = 1.50;}
+	if (value24 == 0){var preco24 = 0;} else {preco24 = 3.00;}
+	if (value25 == 0){var preco25 = 0;} else {preco25 = 3.00;}
+	if (value26 == 0){var preco26 = 0;} else {preco26 = 5.00;}
+	if (value27 == 0){var preco27 = 0;} else {preco27 = 6.00;}
+	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
+	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
+
+	var tr = document.createElement('tr'),
+		td_quantPetisco16 = document.createElement('td'),
+		td_namePetisco16= document.createElement('td'),
+		td_precoPetisco16 = document.createElement('td');
+
+	td_quantPetisco16.setAttribute("id", "quantPetisco");
+	td_namePetisco16.setAttribute("id", "namePrato");
+	td_precoPetisco16.setAttribute("id", "precoPetisco");
+
+	trbody.appendChild(tr);
+	tr.appendChild(td_quantPetisco16);
+	tr.appendChild(td_namePetisco16);
+	tr.appendChild(td_precoPetisco16);
+
+	var quantPetisco16 = document.getElementById('quantPetisco');
+	quantPetisco16.innerText = value16;
+
+	var maracuja = document.getElementById('maracuja').firstChild.innerHTML;
+	document.getElementById('namePrato').innerHTML = maracuja;
+
+	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
+		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
+		(preco9 * value9) + (preco10 * value10) + (preco11 * value11) + (preco12 * value12) +
+		(preco13 * value13) + (preco14 * value14) + (preco15 * value15) + (preco16 * value16) +
+		(preco17 * value17) + (preco18 * value18) + (preco19 * value19) + (preco20 * value20) +
+		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
+		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
+		(preco29 * value29));
+
+	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+
+td_quantPetisco16.style.textAlign="center";
+td_namePetisco16.style.textAlign="center";
+td_precoPetisco16.style.textAlign="center";
+}
+
+function mandardados17(){
+
+	var value1 = document.getElementById('quantPet1').value,
+				value2 = document.getElementById('quantPet2').value,
+				value3 = document.getElementById('quantPet3').value,
+				value4 = document.getElementById('quantPet4').value,
+				value5 = document.getElementById('quantPet5').value,
+				value6 = document.getElementById('quantPet6').value,
+				value7 = document.getElementById('quantPet7').value,
+				value8 = document.getElementById('quantPet8').value,
+				value9 = document.getElementById('quantPet9').value,
+				value10 = document.getElementById('quantPet10').value,
+				value11 = document.getElementById('quantPet11').value,
+				value12 = document.getElementById('quantPet12').value,
+				value13 = document.getElementById('quantPet13').value,
+				value14 = document.getElementById('quantPet14').value,
+				value15 = document.getElementById('quantPet15').value,
+				value16 = document.getElementById('quantPet16').value,
+				value17 = document.getElementById('quantPet17').value,
+				value18 = document.getElementById('quantPet18').value,
+				value19 = document.getElementById('quantPet19').value,
+				value20 = document.getElementById('quantPet20').value,
+				value21 = document.getElementById('quantPet21').value,
+				value22 = document.getElementById('quantPet22').value,
+				value23 = document.getElementById('quantPet23').value,
+				value24 = document.getElementById('quantPet24').value,
+				value25 = document.getElementById('quantPet25').value,
+				value26 = document.getElementById('quantPet26').value,
+				value27 = document.getElementById('quantPet27').value,
+				value28 = document.getElementById('quantPet28').value,
+				value29 = document.getElementById('quantPet29').value,
+				trbody = document.getElementById('tablePedidos');
+
+	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
+	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
+	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
+	if (value4 == 0){var preco4 = 0;} else {preco4 = 20.00;}
+	if (value5 == 0){var preco5 = 0;} else {preco5 = 10.00;}
+	if (value6 == 0){var preco6 = 0;} else {preco6 = 10.00;}
+	if (value7 == 0){var preco7 = 0;} else {preco7 = 6.00;}
+	if (value8 == 0){var preco8 = 0;} else {preco8 = 10.00;}
+	if (value9 == 0){var preco9 = 0;} else {preco9 = 4.00;}
+	if (value10 == 0){var preco10 = 0;} else {preco10 = 4.00;}
+	if (value11 == 0){var preco11 = 0;} else {preco11 = 4.00;}
+	if (value12 == 0){var preco12 = 0;} else {preco12 = 4.00;}
+	if (value13 == 0){var preco13 = 0;} else {preco13 = 4.00;}
+	if (value14 == 0){var preco14 = 0;} else {preco14= 3.00;}
+	if (value15 == 0){var preco15 = 0;} else {preco15 = 3.00;}
+	if (value16 == 0){var preco16 = 0;} else {preco16 = 3.00;}
+	if (value17 == 0){var preco17 = 0;} else {preco17 = 3.00;}
+	if (value18 == 0){var preco18 = 0;} else {preco18 = 3.00;}
+	if (value19 == 0){var preco19 = 0;} else {preco19 = 10.00;}
+	if (value20 == 0){var preco20 = 0;} else {preco20 = 3.50;}
+	if (value21 == 0){var preco21 = 0;} else {preco21 = 3.50;}
+	if (value22 == 0){var preco22 = 0;} else {preco22 = 3.50;}
+	if (value23 == 0){var preco23 = 0;} else {preco23 = 1.50;}
+	if (value24 == 0){var preco24 = 0;} else {preco24 = 3.00;}
+	if (value25 == 0){var preco25 = 0;} else {preco25 = 3.00;}
+	if (value26 == 0){var preco26 = 0;} else {preco26 = 5.00;}
+	if (value27 == 0){var preco27 = 0;} else {preco27 = 6.00;}
+	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
+	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
+
+
+
+	var tr = document.createElement('tr'),
+		td_quantPetisco17 = document.createElement('td'),
+		td_namePetisco17= document.createElement('td'),
+		td_precoPetisco17 = document.createElement('td');
+
+	td_quantPetisco17.setAttribute("id", "quantPetisco");
+	td_namePetisco17.setAttribute("id", "namePrato");
+	td_precoPetisco17.setAttribute("id", "precoPetisco");
+
+	trbody.appendChild(tr);
+	tr.appendChild(td_quantPetisco17);
+	tr.appendChild(td_namePetisco17);
+	tr.appendChild(td_precoPetisco17);
+
+	var quantPetisco17 = document.getElementById('quantPetisco');
+	quantPetisco17.innerText = value17;
+
+	var acerola= document.getElementById('acerola').firstChild.innerHTML;
+	document.getElementById('namePrato').innerHTML = acerola;
+
+	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
+		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
+		(preco9 * value9) + (preco10 * value10) + (preco11 * value11) + (preco12 * value12) +
+		(preco13 * value13) + (preco14 * value14) + (preco15 * value15) + (preco16 * value16) +
+		(preco17 * value17) + (preco18 * value18) + (preco19 * value19) + (preco20 * value20) +
+		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
+		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
+		(preco29 * value29));
+
+	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+
+td_quantPetisco17.style.textAlign="center";
+td_namePetisco17.style.textAlign="center";
+td_precoPetisco17.style.textAlign="center";
+}
+
+function mandardados18(){
+
+	var value1 = document.getElementById('quantPet1').value,
+				value2 = document.getElementById('quantPet2').value,
+				value3 = document.getElementById('quantPet3').value,
+				value4 = document.getElementById('quantPet4').value,
+				value5 = document.getElementById('quantPet5').value,
+				value6 = document.getElementById('quantPet6').value,
+				value7 = document.getElementById('quantPet7').value,
+				value8 = document.getElementById('quantPet8').value,
+				value9 = document.getElementById('quantPet9').value,
+				value10 = document.getElementById('quantPet10').value,
+				value11 = document.getElementById('quantPet11').value,
+				value12 = document.getElementById('quantPet12').value,
+				value13 = document.getElementById('quantPet13').value,
+				value14 = document.getElementById('quantPet14').value,
+				value15 = document.getElementById('quantPet15').value,
+				value16 = document.getElementById('quantPet16').value,
+				value17 = document.getElementById('quantPet17').value,
+				value18 = document.getElementById('quantPet18').value,
+				value19 = document.getElementById('quantPet19').value,
+				value20 = document.getElementById('quantPet20').value,
+				value21 = document.getElementById('quantPet21').value,
+				value22 = document.getElementById('quantPet22').value,
+				value23 = document.getElementById('quantPet23').value,
+				value24 = document.getElementById('quantPet24').value,
+				value25 = document.getElementById('quantPet25').value,
+				value26 = document.getElementById('quantPet26').value,
+				value27 = document.getElementById('quantPet27').value,
+				value28 = document.getElementById('quantPet28').value,
+				value29 = document.getElementById('quantPet29').value,
+				trbody = document.getElementById('tablePedidos');
+
+	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
+	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
+	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
+	if (value4 == 0){var preco4 = 0;} else {preco4 = 20.00;}
+	if (value5 == 0){var preco5 = 0;} else {preco5 = 10.00;}
+	if (value6 == 0){var preco6 = 0;} else {preco6 = 10.00;}
+	if (value7 == 0){var preco7 = 0;} else {preco7 = 6.00;}
+	if (value8 == 0){var preco8 = 0;} else {preco8 = 10.00;}
+	if (value9 == 0){var preco9 = 0;} else {preco9 = 4.00;}
+	if (value10 == 0){var preco10 = 0;} else {preco10 = 4.00;}
+	if (value11 == 0){var preco11 = 0;} else {preco11 = 4.00;}
+	if (value12 == 0){var preco12 = 0;} else {preco12 = 4.00;}
+	if (value13 == 0){var preco13 = 0;} else {preco13 = 4.00;}
+	if (value14 == 0){var preco14 = 0;} else {preco14= 3.00;}
+	if (value15 == 0){var preco15 = 0;} else {preco15 = 3.00;}
+	if (value16 == 0){var preco16 = 0;} else {preco16 = 3.00;}
+	if (value17 == 0){var preco17 = 0;} else {preco17 = 3.00;}
+	if (value18 == 0){var preco18 = 0;} else {preco18 = 3.00;}
+	if (value19 == 0){var preco19 = 0;} else {preco19 = 10.00;}
+	if (value20 == 0){var preco20 = 0;} else {preco20 = 3.50;}
+	if (value21 == 0){var preco21 = 0;} else {preco21 = 3.50;}
+	if (value22 == 0){var preco22 = 0;} else {preco22 = 3.50;}
+	if (value23 == 0){var preco23 = 0;} else {preco23 = 1.50;}
+	if (value24 == 0){var preco24 = 0;} else {preco24 = 3.00;}
+	if (value25 == 0){var preco25 = 0;} else {preco25 = 3.00;}
+	if (value26 == 0){var preco26 = 0;} else {preco26 = 5.00;}
+	if (value27 == 0){var preco27 = 0;} else {preco27 = 6.00;}
+	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
+	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
+
+
+
+	var tr = document.createElement('tr'),
+		td_quantPetisco18 = document.createElement('td'),
+		td_namePetisco18= document.createElement('td'),
+		td_precoPetisco18 = document.createElement('td');
+
+	td_quantPetisco18.setAttribute("id", "quantPetisco");
+	td_namePetisco18.setAttribute("id", "namePrato");
+	td_precoPetisco18.setAttribute("id", "precoPetisco");
+
+	trbody.appendChild(tr);
+	tr.appendChild(td_quantPetisco18);
+	tr.appendChild(td_namePetisco18);
+	tr.appendChild(td_precoPetisco18);
+
+	var quantPetisco18 = document.getElementById('quantPetisco');
+	quantPetisco18.innerText = value18;
+
+	var goiaba = document.getElementById('goiaba').firstChild.innerHTML;
+	document.getElementById('namePrato').innerHTML = goiaba;
+
+	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
+		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
+		(preco9 * value9) + (preco10 * value10) + (preco11 * value11) + (preco12 * value12) +
+		(preco13 * value13) + (preco14 * value14) + (preco15 * value15) + (preco16 * value16) +
+		(preco17 * value17) + (preco18 * value18) + (preco19 * value19) + (preco20 * value20) +
+		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
+		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
+		(preco29 * value29));
+
+	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+
+td_quantPetisco18.style.textAlign="center";
+td_namePetisco18.style.textAlign="center";
+td_precoPetisco18.style.textAlign="center";
+}
+
+function mandardados19(){
+
+	var value1 = document.getElementById('quantPet1').value,
+				value2 = document.getElementById('quantPet2').value,
+				value3 = document.getElementById('quantPet3').value,
+				value4 = document.getElementById('quantPet4').value,
+				value5 = document.getElementById('quantPet5').value,
+				value6 = document.getElementById('quantPet6').value,
+				value7 = document.getElementById('quantPet7').value,
+				value8 = document.getElementById('quantPet8').value,
+				value9 = document.getElementById('quantPet9').value,
+				value10 = document.getElementById('quantPet10').value,
+				value11 = document.getElementById('quantPet11').value,
+				value12 = document.getElementById('quantPet12').value,
+				value13 = document.getElementById('quantPet13').value,
+				value14 = document.getElementById('quantPet14').value,
+				value15 = document.getElementById('quantPet15').value,
+				value16 = document.getElementById('quantPet16').value,
+				value17 = document.getElementById('quantPet17').value,
+				value18 = document.getElementById('quantPet18').value,
+				value19 = document.getElementById('quantPet19').value,
+				value20 = document.getElementById('quantPet20').value,
+				value21 = document.getElementById('quantPet21').value,
+				value22 = document.getElementById('quantPet22').value,
+				value23 = document.getElementById('quantPet23').value,
+				value24 = document.getElementById('quantPet24').value,
+				value25 = document.getElementById('quantPet25').value,
+				value26 = document.getElementById('quantPet26').value,
+				value27 = document.getElementById('quantPet27').value,
+				value28 = document.getElementById('quantPet28').value,
+				value29 = document.getElementById('quantPet29').value,
+				trbody = document.getElementById('tablePedidos');
+
+	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
+	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
+	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
+	if (value4 == 0){var preco4 = 0;} else {preco4 = 20.00;}
+	if (value5 == 0){var preco5 = 0;} else {preco5 = 10.00;}
+	if (value6 == 0){var preco6 = 0;} else {preco6 = 10.00;}
+	if (value7 == 0){var preco7 = 0;} else {preco7 = 6.00;}
+	if (value8 == 0){var preco8 = 0;} else {preco8 = 10.00;}
+	if (value9 == 0){var preco9 = 0;} else {preco9 = 4.00;}
+	if (value10 == 0){var preco10 = 0;} else {preco10 = 4.00;}
+	if (value11 == 0){var preco11 = 0;} else {preco11 = 4.00;}
+	if (value12 == 0){var preco12 = 0;} else {preco12 = 4.00;}
+	if (value13 == 0){var preco13 = 0;} else {preco13 = 4.00;}
+	if (value14 == 0){var preco14 = 0;} else {preco14= 3.00;}
+	if (value15 == 0){var preco15 = 0;} else {preco15 = 3.00;}
+	if (value16 == 0){var preco16 = 0;} else {preco16 = 3.00;}
+	if (value17 == 0){var preco17 = 0;} else {preco17 = 3.00;}
+	if (value18 == 0){var preco18 = 0;} else {preco18 = 3.00;}
+	if (value19 == 0){var preco19 = 0;} else {preco19 = 10.00;}
+	if (value20 == 0){var preco20 = 0;} else {preco20 = 3.50;}
+	if (value21 == 0){var preco21 = 0;} else {preco21 = 3.50;}
+	if (value22 == 0){var preco22 = 0;} else {preco22 = 3.50;}
+	if (value23 == 0){var preco23 = 0;} else {preco23 = 1.50;}
+	if (value24 == 0){var preco24 = 0;} else {preco24 = 3.00;}
+	if (value25 == 0){var preco25 = 0;} else {preco25 = 3.00;}
+	if (value26 == 0){var preco26 = 0;} else {preco26 = 5.00;}
+	if (value27 == 0){var preco27 = 0;} else {preco27 = 6.00;}
+	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
+	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
+
+
+	var tr = document.createElement('tr'),
+		td_quantPetisco19 = document.createElement('td'),
+		td_namePetisco19= document.createElement('td'),
+		td_precoPetisco19 = document.createElement('td');
+
+	td_quantPetisco19.setAttribute("id", "quantPetisco");
+	td_namePetisco19.setAttribute("id", "namePrato");
+	td_precoPetisco19.setAttribute("id", "precoPetisco");
+
+	trbody.appendChild(tr);
+	tr.appendChild(td_quantPetisco19);
+	tr.appendChild(td_namePetisco19);
+	tr.appendChild(td_precoPetisco19);
+
+	var quantPetisco19 = document.getElementById('quantPetisco');
+	quantPetisco19.innerText = value19;
+
+	var jarra= document.getElementById('jarra').firstChild.innerHTML;
+	document.getElementById('namePrato').innerHTML = jarra;
+
+	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
+		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
+		(preco9 * value9) + (preco10 * value10) + (preco11 * value11) + (preco12 * value12) +
+		(preco13 * value13) + (preco14 * value14) + (preco15 * value15) + (preco16 * value16) +
+		(preco17 * value17) + (preco18 * value18) + (preco19 * value19) + (preco20 * value20) +
+		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
+		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
+		(preco29 * value29));
+
+	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+
+td_quantPetisco19.style.textAlign="center";
+td_namePetisco19.style.textAlign="center";
+td_precoPetisco19.style.textAlign="center";
+}
+
+function mandardados20(){
+
+	var value1 = document.getElementById('quantPet1').value,
+				value2 = document.getElementById('quantPet2').value,
+				value3 = document.getElementById('quantPet3').value,
+				value4 = document.getElementById('quantPet4').value,
+				value5 = document.getElementById('quantPet5').value,
+				value6 = document.getElementById('quantPet6').value,
+				value7 = document.getElementById('quantPet7').value,
+				value8 = document.getElementById('quantPet8').value,
+				value9 = document.getElementById('quantPet9').value,
+				value10 = document.getElementById('quantPet10').value,
+				value11 = document.getElementById('quantPet11').value,
+				value12 = document.getElementById('quantPet12').value,
+				value13 = document.getElementById('quantPet13').value,
+				value14 = document.getElementById('quantPet14').value,
+				value15 = document.getElementById('quantPet15').value,
+				value16 = document.getElementById('quantPet16').value,
+				value17 = document.getElementById('quantPet17').value,
+				value18 = document.getElementById('quantPet18').value,
+				value19 = document.getElementById('quantPet19').value,
+				value20 = document.getElementById('quantPet20').value,
+				value21 = document.getElementById('quantPet21').value,
+				value22 = document.getElementById('quantPet22').value,
+				value23 = document.getElementById('quantPet23').value,
+				value24 = document.getElementById('quantPet24').value,
+				value25 = document.getElementById('quantPet25').value,
+				value26 = document.getElementById('quantPet26').value,
+				value27 = document.getElementById('quantPet27').value,
+				value28 = document.getElementById('quantPet28').value,
+				value29 = document.getElementById('quantPet29').value,
+				trbody = document.getElementById('tablePedidos');
+
+	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
+	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
+	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
+	if (value4 == 0){var preco4 = 0;} else {preco4 = 20.00;}
+	if (value5 == 0){var preco5 = 0;} else {preco5 = 10.00;}
+	if (value6 == 0){var preco6 = 0;} else {preco6 = 10.00;}
+	if (value7 == 0){var preco7 = 0;} else {preco7 = 6.00;}
+	if (value8 == 0){var preco8 = 0;} else {preco8 = 10.00;}
+	if (value9 == 0){var preco9 = 0;} else {preco9 = 4.00;}
+	if (value10 == 0){var preco10 = 0;} else {preco10 = 4.00;}
+	if (value11 == 0){var preco11 = 0;} else {preco11 = 4.00;}
+	if (value12 == 0){var preco12 = 0;} else {preco12 = 4.00;}
+	if (value13 == 0){var preco13 = 0;} else {preco13 = 4.00;}
+	if (value14 == 0){var preco14 = 0;} else {preco14= 3.00;}
+	if (value15 == 0){var preco15 = 0;} else {preco15 = 3.00;}
+	if (value16 == 0){var preco16 = 0;} else {preco16 = 3.00;}
+	if (value17 == 0){var preco17 = 0;} else {preco17 = 3.00;}
+	if (value18 == 0){var preco18 = 0;} else {preco18 = 3.00;}
+	if (value19 == 0){var preco19 = 0;} else {preco19 = 10.00;}
+	if (value20 == 0){var preco20 = 0;} else {preco20 = 3.50;}
+	if (value21 == 0){var preco21 = 0;} else {preco21 = 3.50;}
+	if (value22 == 0){var preco22 = 0;} else {preco22 = 3.50;}
+	if (value23 == 0){var preco23 = 0;} else {preco23 = 1.50;}
+	if (value24 == 0){var preco24 = 0;} else {preco24 = 3.00;}
+	if (value25 == 0){var preco25 = 0;} else {preco25 = 3.00;}
+	if (value26 == 0){var preco26 = 0;} else {preco26 = 5.00;}
+	if (value27 == 0){var preco27 = 0;} else {preco27 = 6.00;}
+	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
+	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
+
+
+
+
+	var tr = document.createElement('tr'),
+		td_quantPetisco20 = document.createElement('td'),
+		td_namePetisco20= document.createElement('td'),
+		td_precoPetisco20 = document.createElement('td');
+
+	td_quantPetisco20.setAttribute("id", "quantPetisco");
+	td_namePetisco20.setAttribute("id", "namePrato");
+	td_precoPetisco20.setAttribute("id", "precoPetisco");
+
+	trbody.appendChild(tr);
+	tr.appendChild(td_quantPetisco20);
+	tr.appendChild(td_namePetisco20);
+	tr.appendChild(td_precoPetisco20);
+
+	var quantPetisco20 = document.getElementById('quantPetisco');
+	quantPetisco20.innerText = value20;
+
+	var cocaCola = document.getElementById('cocaCola').firstChild.innerHTML;
+	document.getElementById('namePrato').innerHTML = cocaCola;
+
+	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
+		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
+		(preco9 * value9) + (preco10 * value10) + (preco11 * value11) + (preco12 * value12) +
+		(preco13 * value13) + (preco14 * value14) + (preco15 * value15) + (preco16 * value16) +
+		(preco17 * value17) + (preco18 * value18) + (preco19 * value19) + (preco20 * value20) +
+		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
+		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
+		(preco29 * value29));;
+
+	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+
+td_quantPetisco20.style.textAlign="center";
+td_namePetisco20.style.textAlign="center";
+td_precoPetisco20.style.textAlign="center";
+}
+
+function mandardados21(){
+
+	var value1 = document.getElementById('quantPet1').value,
+				value2 = document.getElementById('quantPet2').value,
+				value3 = document.getElementById('quantPet3').value,
+				value4 = document.getElementById('quantPet4').value,
+				value5 = document.getElementById('quantPet5').value,
+				value6 = document.getElementById('quantPet6').value,
+				value7 = document.getElementById('quantPet7').value,
+				value8 = document.getElementById('quantPet8').value,
+				value9 = document.getElementById('quantPet9').value,
+				value10 = document.getElementById('quantPet10').value,
+				value11 = document.getElementById('quantPet11').value,
+				value12 = document.getElementById('quantPet12').value,
+				value13 = document.getElementById('quantPet13').value,
+				value14 = document.getElementById('quantPet14').value,
+				value15 = document.getElementById('quantPet15').value,
+				value16 = document.getElementById('quantPet16').value,
+				value17 = document.getElementById('quantPet17').value,
+				value18 = document.getElementById('quantPet18').value,
+				value19 = document.getElementById('quantPet19').value,
+				value20 = document.getElementById('quantPet20').value,
+				value21 = document.getElementById('quantPet21').value,
+				value22 = document.getElementById('quantPet22').value,
+				value23 = document.getElementById('quantPet23').value,
+				value24 = document.getElementById('quantPet24').value,
+				value25 = document.getElementById('quantPet25').value,
+				value26 = document.getElementById('quantPet26').value,
+				value27 = document.getElementById('quantPet27').value,
+				value28 = document.getElementById('quantPet28').value,
+				value29 = document.getElementById('quantPet29').value,
+				trbody = document.getElementById('tablePedidos');
+
+	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
+	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
+	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
+	if (value4 == 0){var preco4 = 0;} else {preco4 = 20.00;}
+	if (value5 == 0){var preco5 = 0;} else {preco5 = 10.00;}
+	if (value6 == 0){var preco6 = 0;} else {preco6 = 10.00;}
+	if (value7 == 0){var preco7 = 0;} else {preco7 = 6.00;}
+	if (value8 == 0){var preco8 = 0;} else {preco8 = 10.00;}
+	if (value9 == 0){var preco9 = 0;} else {preco9 = 4.00;}
+	if (value10 == 0){var preco10 = 0;} else {preco10 = 4.00;}
+	if (value11 == 0){var preco11 = 0;} else {preco11 = 4.00;}
+	if (value12 == 0){var preco12 = 0;} else {preco12 = 4.00;}
+	if (value13 == 0){var preco13 = 0;} else {preco13 = 4.00;}
+	if (value14 == 0){var preco14 = 0;} else {preco14= 3.00;}
+	if (value15 == 0){var preco15 = 0;} else {preco15 = 3.00;}
+	if (value16 == 0){var preco16 = 0;} else {preco16 = 3.00;}
+	if (value17 == 0){var preco17 = 0;} else {preco17 = 3.00;}
+	if (value18 == 0){var preco18 = 0;} else {preco18 = 3.00;}
+	if (value19 == 0){var preco19 = 0;} else {preco19 = 10.00;}
+	if (value20 == 0){var preco20 = 0;} else {preco20 = 3.50;}
+	if (value21 == 0){var preco21 = 0;} else {preco21 = 3.50;}
+	if (value22 == 0){var preco22 = 0;} else {preco22 = 3.50;}
+	if (value23 == 0){var preco23 = 0;} else {preco23 = 1.50;}
+	if (value24 == 0){var preco24 = 0;} else {preco24 = 3.00;}
+	if (value25 == 0){var preco25 = 0;} else {preco25 = 3.00;}
+	if (value26 == 0){var preco26 = 0;} else {preco26 = 5.00;}
+	if (value27 == 0){var preco27 = 0;} else {preco27 = 6.00;}
+	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
+	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
+
+
+
+	var tr = document.createElement('tr'),
+		td_quantPetisco21 = document.createElement('td'),
+		td_namePetisco21= document.createElement('td'),
+		td_precoPetisco21 = document.createElement('td');
+
+	td_quantPetisco21.setAttribute("id", "quantPetisco");
+	td_namePetisco21.setAttribute("id", "namePrato");
+	td_precoPetisco21.setAttribute("id", "precoPetisco");
+
+	trbody.appendChild(tr);
+	tr.appendChild(td_quantPetisco21);
+	tr.appendChild(td_namePetisco21);
+	tr.appendChild(td_precoPetisco21);
+
+	var quantPetisco21 = document.getElementById('quantPetisco');
+	quantPetisco21.innerText = value21;
+
+	var guarana = document.getElementById('guarana').firstChild.innerHTML;
+	document.getElementById('namePrato').innerHTML = guarana;
+
+	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
+		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
+		(preco9 * value9) + (preco10 * value10) + (preco11 * value11) + (preco12 * value12) +
+		(preco13 * value13) + (preco14 * value14) + (preco15 * value15) + (preco16 * value16) +
+		(preco17 * value17) + (preco18 * value18) + (preco19 * value19) + (preco20 * value20) +
+		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
+		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
+		(preco29 * value29));
+
+	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+
+td_quantPetisco21.style.textAlign="center";
+td_namePetisco21.style.textAlign="center";
+td_precoPetisco21.style.textAlign="center";
+}
+
+function mandardados22(){
+
+	var value1 = document.getElementById('quantPet1').value,
+				value2 = document.getElementById('quantPet2').value,
+				value3 = document.getElementById('quantPet3').value,
+				value4 = document.getElementById('quantPet4').value,
+				value5 = document.getElementById('quantPet5').value,
+				value6 = document.getElementById('quantPet6').value,
+				value7 = document.getElementById('quantPet7').value,
+				value8 = document.getElementById('quantPet8').value,
+				value9 = document.getElementById('quantPet9').value,
+				value10 = document.getElementById('quantPet10').value,
+				value11 = document.getElementById('quantPet11').value,
+				value12 = document.getElementById('quantPet12').value,
+				value13 = document.getElementById('quantPet13').value,
+				value14 = document.getElementById('quantPet14').value,
+				value15 = document.getElementById('quantPet15').value,
+				value16 = document.getElementById('quantPet16').value,
+				value17 = document.getElementById('quantPet17').value,
+				value18 = document.getElementById('quantPet18').value,
+				value19 = document.getElementById('quantPet19').value,
+				value20 = document.getElementById('quantPet20').value,
+				value21 = document.getElementById('quantPet21').value,
+				value22 = document.getElementById('quantPet22').value,
+				value23 = document.getElementById('quantPet23').value,
+				value24 = document.getElementById('quantPet24').value,
+				value25 = document.getElementById('quantPet25').value,
+				value26 = document.getElementById('quantPet26').value,
+				value27 = document.getElementById('quantPet27').value,
+				value28 = document.getElementById('quantPet28').value,
+				value29 = document.getElementById('quantPet29').value,
+				trbody = document.getElementById('tablePedidos');
+
+	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
+	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
+	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
+	if (value4 == 0){var preco4 = 0;} else {preco4 = 20.00;}
+	if (value5 == 0){var preco5 = 0;} else {preco5 = 10.00;}
+	if (value6 == 0){var preco6 = 0;} else {preco6 = 10.00;}
+	if (value7 == 0){var preco7 = 0;} else {preco7 = 6.00;}
+	if (value8 == 0){var preco8 = 0;} else {preco8 = 10.00;}
+	if (value9 == 0){var preco9 = 0;} else {preco9 = 4.00;}
+	if (value10 == 0){var preco10 = 0;} else {preco10 = 4.00;}
+	if (value11 == 0){var preco11 = 0;} else {preco11 = 4.00;}
+	if (value12 == 0){var preco12 = 0;} else {preco12 = 4.00;}
+	if (value13 == 0){var preco13 = 0;} else {preco13 = 4.00;}
+	if (value14 == 0){var preco14 = 0;} else {preco14= 3.00;}
+	if (value15 == 0){var preco15 = 0;} else {preco15 = 3.00;}
+	if (value16 == 0){var preco16 = 0;} else {preco16 = 3.00;}
+	if (value17 == 0){var preco17 = 0;} else {preco17 = 3.00;}
+	if (value18 == 0){var preco18 = 0;} else {preco18 = 3.00;}
+	if (value19 == 0){var preco19 = 0;} else {preco19 = 10.00;}
+	if (value20 == 0){var preco20 = 0;} else {preco20 = 3.50;}
+	if (value21 == 0){var preco21 = 0;} else {preco21 = 3.50;}
+	if (value22 == 0){var preco22 = 0;} else {preco22 = 3.50;}
+	if (value23 == 0){var preco23 = 0;} else {preco23 = 1.50;}
+	if (value24 == 0){var preco24 = 0;} else {preco24 = 3.00;}
+	if (value25 == 0){var preco25 = 0;} else {preco25 = 3.00;}
+	if (value26 == 0){var preco26 = 0;} else {preco26 = 5.00;}
+	if (value27 == 0){var preco27 = 0;} else {preco27 = 6.00;}
+	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
+	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
+
+
+
+	var tr = document.createElement('tr'),
+		td_quantPetisco22 = document.createElement('td'),
+		td_namePetisco22= document.createElement('td'),
+		td_precoPetisco22 = document.createElement('td');
+
+	td_quantPetisco22.setAttribute("id", "quantPetisco");
+	td_namePetisco22.setAttribute("id", "namePrato");
+	td_precoPetisco22.setAttribute("id", "precoPetisco");
+
+	trbody.appendChild(tr);
+	tr.appendChild(td_quantPetisco22);
+	tr.appendChild(td_namePetisco22);
+	tr.appendChild(td_precoPetisco22);
+
+	var quantPetisco22 = document.getElementById('quantPetisco');
+	quantPetisco22.innerText = value22;
+
+	var fanta = document.getElementById('fanta').firstChild.innerHTML;
+	document.getElementById('namePrato').innerHTML = fanta;
+
+	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
+		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
+		(preco9 * value9) + (preco10 * value10) + (preco11 * value11) + (preco12 * value12) +
+		(preco13 * value13) + (preco14 * value14) + (preco15 * value15) + (preco16 * value16) +
+		(preco17 * value17) + (preco18 * value18) + (preco19 * value19) + (preco20 * value20) +
+		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
+		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
+		(preco29 * value29));
+
+	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+
+td_quantPetisco22.style.textAlign="center";
+td_namePetisco22.style.textAlign="center";
+td_precoPetisco22.style.textAlign="center";
+}
+
+function mandardados23(){
+
+	var value1 = document.getElementById('quantPet1').value,
+				value2 = document.getElementById('quantPet2').value,
+				value3 = document.getElementById('quantPet3').value,
+				value4 = document.getElementById('quantPet4').value,
+				value5 = document.getElementById('quantPet5').value,
+				value6 = document.getElementById('quantPet6').value,
+				value7 = document.getElementById('quantPet7').value,
+				value8 = document.getElementById('quantPet8').value,
+				value9 = document.getElementById('quantPet9').value,
+				value10 = document.getElementById('quantPet10').value,
+				value11 = document.getElementById('quantPet11').value,
+				value12 = document.getElementById('quantPet12').value,
+				value13 = document.getElementById('quantPet13').value,
+				value14 = document.getElementById('quantPet14').value,
+				value15 = document.getElementById('quantPet15').value,
+				value16 = document.getElementById('quantPet16').value,
+				value17 = document.getElementById('quantPet17').value,
+				value18 = document.getElementById('quantPet18').value,
+				value19 = document.getElementById('quantPet19').value,
+				value20 = document.getElementById('quantPet20').value,
+				value21 = document.getElementById('quantPet21').value,
+				value22 = document.getElementById('quantPet22').value,
+				value23 = document.getElementById('quantPet23').value,
+				value24 = document.getElementById('quantPet24').value,
+				value25 = document.getElementById('quantPet25').value,
+				value26 = document.getElementById('quantPet26').value,
+				value27 = document.getElementById('quantPet27').value,
+				value28 = document.getElementById('quantPet28').value,
+				value29 = document.getElementById('quantPet29').value,
+				trbody = document.getElementById('tablePedidos');
+
+	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
+	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
+	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
+	if (value4 == 0){var preco4 = 0;} else {preco4 = 20.00;}
+	if (value5 == 0){var preco5 = 0;} else {preco5 = 10.00;}
+	if (value6 == 0){var preco6 = 0;} else {preco6 = 10.00;}
+	if (value7 == 0){var preco7 = 0;} else {preco7 = 6.00;}
+	if (value8 == 0){var preco8 = 0;} else {preco8 = 10.00;}
+	if (value9 == 0){var preco9 = 0;} else {preco9 = 4.00;}
+	if (value10 == 0){var preco10 = 0;} else {preco10 = 4.00;}
+	if (value11 == 0){var preco11 = 0;} else {preco11 = 4.00;}
+	if (value12 == 0){var preco12 = 0;} else {preco12 = 4.00;}
+	if (value13 == 0){var preco13 = 0;} else {preco13 = 4.00;}
+	if (value14 == 0){var preco14 = 0;} else {preco14= 3.00;}
+	if (value15 == 0){var preco15 = 0;} else {preco15 = 3.00;}
+	if (value16 == 0){var preco16 = 0;} else {preco16 = 3.00;}
+	if (value17 == 0){var preco17 = 0;} else {preco17 = 3.00;}
+	if (value18 == 0){var preco18 = 0;} else {preco18 = 3.00;}
+	if (value19 == 0){var preco19 = 0;} else {preco19 = 10.00;}
+	if (value20 == 0){var preco20 = 0;} else {preco20 = 3.50;}
+	if (value21 == 0){var preco21 = 0;} else {preco21 = 3.50;}
+	if (value22 == 0){var preco22 = 0;} else {preco22 = 3.50;}
+	if (value23 == 0){var preco23 = 0;} else {preco23 = 1.50;}
+	if (value24 == 0){var preco24 = 0;} else {preco24 = 3.00;}
+	if (value25 == 0){var preco25 = 0;} else {preco25 = 3.00;}
+	if (value26 == 0){var preco26 = 0;} else {preco26 = 5.00;}
+	if (value27 == 0){var preco27 = 0;} else {preco27 = 6.00;}
+	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
+	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
+
+
+
+	var tr = document.createElement('tr'),
+		td_quantPetisco23 = document.createElement('td'),
+		td_namePetisco23= document.createElement('td'),
+		td_precoPetisco23 = document.createElement('td');
+
+	td_quantPetisco23.setAttribute("id", "quantPetisco");
+	td_namePetisco23.setAttribute("id", "namePrato");
+	td_precoPetisco23.setAttribute("id", "precoPetisco");
+
+	trbody.appendChild(tr);
+	tr.appendChild(td_quantPetisco23);
+	tr.appendChild(td_namePetisco23);
+	tr.appendChild(td_precoPetisco23);
+
+	var quantPetisco23 = document.getElementById('quantPetisco');
+	quantPetisco23.innerText = value23;
+
+	var aguaMineral = document.getElementById('aguaMineral').firstChild.innerHTML;
+	document.getElementById('namePrato').innerHTML = aguaMineral;
+
+	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
+		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
+		(preco9 * value9) + (preco10 * value10) + (preco11 * value11) + (preco12 * value12) +
+		(preco13 * value13) + (preco14 * value14) + (preco15 * value15) + (preco16 * value16) +
+		(preco17 * value17) + (preco18 * value18) + (preco19 * value19) + (preco20 * value20) +
+		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
+		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
+		(preco29 * value29));
+
+	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+
+td_quantPetisco23.style.textAlign="center";
+td_namePetisco23.style.textAlign="center";
+td_precoPetisco23.style.textAlign="center";
+}
+
+function mandardados24(){
+
+	var value1 = document.getElementById('quantPet1').value,
+				value2 = document.getElementById('quantPet2').value,
+				value3 = document.getElementById('quantPet3').value,
+				value4 = document.getElementById('quantPet4').value,
+				value5 = document.getElementById('quantPet5').value,
+				value6 = document.getElementById('quantPet6').value,
+				value7 = document.getElementById('quantPet7').value,
+				value8 = document.getElementById('quantPet8').value,
+				value9 = document.getElementById('quantPet9').value,
+				value10 = document.getElementById('quantPet10').value,
+				value11 = document.getElementById('quantPet11').value,
+				value12 = document.getElementById('quantPet12').value,
+				value13 = document.getElementById('quantPet13').value,
+				value14 = document.getElementById('quantPet14').value,
+				value15 = document.getElementById('quantPet15').value,
+				value16 = document.getElementById('quantPet16').value,
+				value17 = document.getElementById('quantPet17').value,
+				value18 = document.getElementById('quantPet18').value,
+				value19 = document.getElementById('quantPet19').value,
+				value20 = document.getElementById('quantPet20').value,
+				value21 = document.getElementById('quantPet21').value,
+				value22 = document.getElementById('quantPet22').value,
+				value23 = document.getElementById('quantPet23').value,
+				value24 = document.getElementById('quantPet24').value,
+				value25 = document.getElementById('quantPet25').value,
+				value26 = document.getElementById('quantPet26').value,
+				value27 = document.getElementById('quantPet27').value,
+				value28 = document.getElementById('quantPet28').value,
+				value29 = document.getElementById('quantPet29').value,
+				trbody = document.getElementById('tablePedidos');
+
+	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
+	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
+	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
+	if (value4 == 0){var preco4 = 0;} else {preco4 = 20.00;}
+	if (value5 == 0){var preco5 = 0;} else {preco5 = 10.00;}
+	if (value6 == 0){var preco6 = 0;} else {preco6 = 10.00;}
+	if (value7 == 0){var preco7 = 0;} else {preco7 = 6.00;}
+	if (value8 == 0){var preco8 = 0;} else {preco8 = 10.00;}
+	if (value9 == 0){var preco9 = 0;} else {preco9 = 4.00;}
+	if (value10 == 0){var preco10 = 0;} else {preco10 = 4.00;}
+	if (value11 == 0){var preco11 = 0;} else {preco11 = 4.00;}
+	if (value12 == 0){var preco12 = 0;} else {preco12 = 4.00;}
+	if (value13 == 0){var preco13 = 0;} else {preco13 = 4.00;}
+	if (value14 == 0){var preco14 = 0;} else {preco14= 3.00;}
+	if (value15 == 0){var preco15 = 0;} else {preco15 = 3.00;}
+	if (value16 == 0){var preco16 = 0;} else {preco16 = 3.00;}
+	if (value17 == 0){var preco17 = 0;} else {preco17 = 3.00;}
+	if (value18 == 0){var preco18 = 0;} else {preco18 = 3.00;}
+	if (value19 == 0){var preco19 = 0;} else {preco19 = 10.00;}
+	if (value20 == 0){var preco20 = 0;} else {preco20 = 3.50;}
+	if (value21 == 0){var preco21 = 0;} else {preco21 = 3.50;}
+	if (value22 == 0){var preco22 = 0;} else {preco22 = 3.50;}
+	if (value23 == 0){var preco23 = 0;} else {preco23 = 1.50;}
+	if (value24 == 0){var preco24 = 0;} else {preco24 = 3.00;}
+	if (value25 == 0){var preco25 = 0;} else {preco25 = 3.00;}
+	if (value26 == 0){var preco26 = 0;} else {preco26 = 5.00;}
+	if (value27 == 0){var preco27 = 0;} else {preco27 = 6.00;}
+	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
+	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
+
+
+	var tr = document.createElement('tr'),
+		td_quantPetisco24 = document.createElement('td'),
+		td_namePetisco24= document.createElement('td'),
+		td_precoPetisco24 = document.createElement('td');
+
+	td_quantPetisco24.setAttribute("id", "quantPetisco");
+	td_namePetisco24.setAttribute("id", "namePrato");
+	td_precoPetisco24.setAttribute("id", "precoPetisco");
+
+	trbody.appendChild(tr);
+	tr.appendChild(td_quantPetisco24);
+	tr.appendChild(td_namePetisco24);
+	tr.appendChild(td_precoPetisco24);
+
+	var quantPetisco24 = document.getElementById('quantPetisco');
+	quantPetisco24.innerText = value24;
+
+	var skol = document.getElementById('skol').firstChild.innerHTML;
+	document.getElementById('namePrato').innerHTML = skol;
+
+	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
+		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
+		(preco9 * value9) + (preco10 * value10) + (preco11 * value11) + (preco12 * value12) +
+		(preco13 * value13) + (preco14 * value14) + (preco15 * value15) + (preco16 * value16) +
+		(preco17 * value17) + (preco18 * value18) + (preco19 * value19) + (preco20 * value20) +
+		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
+		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
+		(preco29 * value29));
+	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+
+td_quantPetisco24.style.textAlign="center";
+td_namePetisco24.style.textAlign="center";
+td_precoPetisco24.style.textAlign="center";
+}
+
+function mandardados25(){
+
+	var value1 = document.getElementById('quantPet1').value,
+				value2 = document.getElementById('quantPet2').value,
+				value3 = document.getElementById('quantPet3').value,
+				value4 = document.getElementById('quantPet4').value,
+				value5 = document.getElementById('quantPet5').value,
+				value6 = document.getElementById('quantPet6').value,
+				value7 = document.getElementById('quantPet7').value,
+				value8 = document.getElementById('quantPet8').value,
+				value9 = document.getElementById('quantPet9').value,
+				value10 = document.getElementById('quantPet10').value,
+				value11 = document.getElementById('quantPet11').value,
+				value12 = document.getElementById('quantPet12').value,
+				value13 = document.getElementById('quantPet13').value,
+				value14 = document.getElementById('quantPet14').value,
+				value15 = document.getElementById('quantPet15').value,
+				value16 = document.getElementById('quantPet16').value,
+				value17 = document.getElementById('quantPet17').value,
+				value18 = document.getElementById('quantPet18').value,
+				value19 = document.getElementById('quantPet19').value,
+				value20 = document.getElementById('quantPet20').value,
+				value21 = document.getElementById('quantPet21').value,
+				value22 = document.getElementById('quantPet22').value,
+				value23 = document.getElementById('quantPet23').value,
+				value24 = document.getElementById('quantPet24').value,
+				value25 = document.getElementById('quantPet25').value,
+				value26 = document.getElementById('quantPet26').value,
+				value27 = document.getElementById('quantPet27').value,
+				value28 = document.getElementById('quantPet28').value,
+				value29 = document.getElementById('quantPet29').value,
+				trbody = document.getElementById('tablePedidos');
+
+	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
+	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
+	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
+	if (value4 == 0){var preco4 = 0;} else {preco4 = 20.00;}
+	if (value5 == 0){var preco5 = 0;} else {preco5 = 10.00;}
+	if (value6 == 0){var preco6 = 0;} else {preco6 = 10.00;}
+	if (value7 == 0){var preco7 = 0;} else {preco7 = 6.00;}
+	if (value8 == 0){var preco8 = 0;} else {preco8 = 10.00;}
+	if (value9 == 0){var preco9 = 0;} else {preco9 = 4.00;}
+	if (value10 == 0){var preco10 = 0;} else {preco10 = 4.00;}
+	if (value11 == 0){var preco11 = 0;} else {preco11 = 4.00;}
+	if (value12 == 0){var preco12 = 0;} else {preco12 = 4.00;}
+	if (value13 == 0){var preco13 = 0;} else {preco13 = 4.00;}
+	if (value14 == 0){var preco14 = 0;} else {preco14= 3.00;}
+	if (value15 == 0){var preco15 = 0;} else {preco15 = 3.00;}
+	if (value16 == 0){var preco16 = 0;} else {preco16 = 3.00;}
+	if (value17 == 0){var preco17 = 0;} else {preco17 = 3.00;}
+	if (value18 == 0){var preco18 = 0;} else {preco18 = 3.00;}
+	if (value19 == 0){var preco19 = 0;} else {preco19 = 10.00;}
+	if (value20 == 0){var preco20 = 0;} else {preco20 = 3.50;}
+	if (value21 == 0){var preco21 = 0;} else {preco21 = 3.50;}
+	if (value22 == 0){var preco22 = 0;} else {preco22 = 3.50;}
+	if (value23 == 0){var preco23 = 0;} else {preco23 = 1.50;}
+	if (value24 == 0){var preco24 = 0;} else {preco24 = 3.00;}
+	if (value25 == 0){var preco25 = 0;} else {preco25 = 3.00;}
+	if (value26 == 0){var preco26 = 0;} else {preco26 = 5.00;}
+	if (value27 == 0){var preco27 = 0;} else {preco27 = 6.00;}
+	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
+	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
+
+
+	var tr = document.createElement('tr'),
+		td_quantPetisco25 = document.createElement('td'),
+		td_namePetisco25= document.createElement('td'),
+		td_precoPetisco25 = document.createElement('td');
+
+	td_quantPetisco25.setAttribute("id", "quantPetisco");
+	td_namePetisco25.setAttribute("id", "namePrato");
+	td_precoPetisco25.setAttribute("id", "precoPetisco");
+
+	trbody.appendChild(tr);
+	tr.appendChild(td_quantPetisco25);
+	tr.appendChild(td_namePetisco25);
+	tr.appendChild(td_precoPetisco25);
+
+	var quantPetisco25 = document.getElementById('quantPetisco');
+	quantPetisco25.innerText = value25;
+
+	var itaipava= document.getElementById('itaipava').firstChild.innerHTML;
+	document.getElementById('namePrato').innerHTML = itaipava;
+
+	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
+		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
+		(preco9 * value9) + (preco10 * value10) + (preco11 * value11) + (preco12 * value12) +
+		(preco13 * value13) + (preco14 * value14) + (preco15 * value15) + (preco16 * value16) +
+		(preco17 * value17) + (preco18 * value18) + (preco19 * value19) + (preco20 * value20) +
+		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
+		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
+		(preco29 * value29));
+
+	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+
+td_quantPetisco25.style.textAlign="center";
+td_namePetisco25.style.textAlign="center";
+td_precoPetisco25.style.textAlign="center";
+}
+
+function mandardados26(){
+
+	var value1 = document.getElementById('quantPet1').value,
+				value2 = document.getElementById('quantPet2').value,
+				value3 = document.getElementById('quantPet3').value,
+				value4 = document.getElementById('quantPet4').value,
+				value5 = document.getElementById('quantPet5').value,
+				value6 = document.getElementById('quantPet6').value,
+				value7 = document.getElementById('quantPet7').value,
+				value8 = document.getElementById('quantPet8').value,
+				value9 = document.getElementById('quantPet9').value,
+				value10 = document.getElementById('quantPet10').value,
+				value11 = document.getElementById('quantPet11').value,
+				value12 = document.getElementById('quantPet12').value,
+				value13 = document.getElementById('quantPet13').value,
+				value14 = document.getElementById('quantPet14').value,
+				value15 = document.getElementById('quantPet15').value,
+				value16 = document.getElementById('quantPet16').value,
+				value17 = document.getElementById('quantPet17').value,
+				value18 = document.getElementById('quantPet18').value,
+				value19 = document.getElementById('quantPet19').value,
+				value20 = document.getElementById('quantPet20').value,
+				value21 = document.getElementById('quantPet21').value,
+				value22 = document.getElementById('quantPet22').value,
+				value23 = document.getElementById('quantPet23').value,
+				value24 = document.getElementById('quantPet24').value,
+				value25 = document.getElementById('quantPet25').value,
+				value26 = document.getElementById('quantPet26').value,
+				value27 = document.getElementById('quantPet27').value,
+				value28 = document.getElementById('quantPet28').value,
+				value29 = document.getElementById('quantPet29').value,
+				trbody = document.getElementById('tablePedidos');
+
+	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
+	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
+	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
+	if (value4 == 0){var preco4 = 0;} else {preco4 = 20.00;}
+	if (value5 == 0){var preco5 = 0;} else {preco5 = 10.00;}
+	if (value6 == 0){var preco6 = 0;} else {preco6 = 10.00;}
+	if (value7 == 0){var preco7 = 0;} else {preco7 = 6.00;}
+	if (value8 == 0){var preco8 = 0;} else {preco8 = 10.00;}
+	if (value9 == 0){var preco9 = 0;} else {preco9 = 4.00;}
+	if (value10 == 0){var preco10 = 0;} else {preco10 = 4.00;}
+	if (value11 == 0){var preco11 = 0;} else {preco11 = 4.00;}
+	if (value12 == 0){var preco12 = 0;} else {preco12 = 4.00;}
+	if (value13 == 0){var preco13 = 0;} else {preco13 = 4.00;}
+	if (value14 == 0){var preco14 = 0;} else {preco14= 3.00;}
+	if (value15 == 0){var preco15 = 0;} else {preco15 = 3.00;}
+	if (value16 == 0){var preco16 = 0;} else {preco16 = 3.00;}
+	if (value17 == 0){var preco17 = 0;} else {preco17 = 3.00;}
+	if (value18 == 0){var preco18 = 0;} else {preco18 = 3.00;}
+	if (value19 == 0){var preco19 = 0;} else {preco19 = 10.00;}
+	if (value20 == 0){var preco20 = 0;} else {preco20 = 3.50;}
+	if (value21 == 0){var preco21 = 0;} else {preco21 = 3.50;}
+	if (value22 == 0){var preco22 = 0;} else {preco22 = 3.50;}
+	if (value23 == 0){var preco23 = 0;} else {preco23 = 1.50;}
+	if (value24 == 0){var preco24 = 0;} else {preco24 = 3.00;}
+	if (value25 == 0){var preco25 = 0;} else {preco25 = 3.00;}
+	if (value26 == 0){var preco26 = 0;} else {preco26 = 5.00;}
+	if (value27 == 0){var preco27 = 0;} else {preco27 = 6.00;}
+	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
+	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
+
+
+
+	var tr = document.createElement('tr'),
+		td_quantPetisco26 = document.createElement('td'),
+		td_namePetisco26= document.createElement('td'),
+		td_precoPetisco26 = document.createElement('td');
+
+	td_quantPetisco26.setAttribute("id", "quantPetisco");
+	td_namePetisco26.setAttribute("id", "namePrato");
+	td_precoPetisco26.setAttribute("id", "precoPetisco");
+
+	trbody.appendChild(tr);
+	tr.appendChild(td_quantPetisco26);
+	tr.appendChild(td_namePetisco26);
+	tr.appendChild(td_precoPetisco26);
+
+	var quantPetisco26 = document.getElementById('quantPetisco');
+	quantPetisco26.innerText = value26;
+
+	var original = document.getElementById('original').firstChild.innerHTML;
+	document.getElementById('namePrato').innerHTML = original;
+
+	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
+		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
+		(preco9 * value9) + (preco10 * value10) + (preco11 * value11) + (preco12 * value12) +
+		(preco13 * value13) + (preco14 * value14) + (preco15 * value15) + (preco16 * value16) +
+		(preco17 * value17) + (preco18 * value18) + (preco19 * value19) + (preco20 * value20) +
+		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
+		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
+		(preco29 * value29));
+
+	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+
+td_quantPetisco26.style.textAlign="center";
+td_namePetisco26.style.textAlign="center";
+td_precoPetisco26.style.textAlign="center";
+}
+
+function mandardados27(){
+
+	var value1 = document.getElementById('quantPet1').value,
+				value2 = document.getElementById('quantPet2').value,
+				value3 = document.getElementById('quantPet3').value,
+				value4 = document.getElementById('quantPet4').value,
+				value5 = document.getElementById('quantPet5').value,
+				value6 = document.getElementById('quantPet6').value,
+				value7 = document.getElementById('quantPet7').value,
+				value8 = document.getElementById('quantPet8').value,
+				value9 = document.getElementById('quantPet9').value,
+				value10 = document.getElementById('quantPet10').value,
+				value11 = document.getElementById('quantPet11').value,
+				value12 = document.getElementById('quantPet12').value,
+				value13 = document.getElementById('quantPet13').value,
+				value14 = document.getElementById('quantPet14').value,
+				value15 = document.getElementById('quantPet15').value,
+				value16 = document.getElementById('quantPet16').value,
+				value17 = document.getElementById('quantPet17').value,
+				value18 = document.getElementById('quantPet18').value,
+				value19 = document.getElementById('quantPet19').value,
+				value20 = document.getElementById('quantPet20').value,
+				value21 = document.getElementById('quantPet21').value,
+				value22 = document.getElementById('quantPet22').value,
+				value23 = document.getElementById('quantPet23').value,
+				value24 = document.getElementById('quantPet24').value,
+				value25 = document.getElementById('quantPet25').value,
+				value26 = document.getElementById('quantPet26').value,
+				value27 = document.getElementById('quantPet27').value,
+				value28 = document.getElementById('quantPet28').value,
+				value29 = document.getElementById('quantPet29').value,
+				trbody = document.getElementById('tablePedidos');
+
+	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
+	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
+	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
+	if (value4 == 0){var preco4 = 0;} else {preco4 = 20.00;}
+	if (value5 == 0){var preco5 = 0;} else {preco5 = 10.00;}
+	if (value6 == 0){var preco6 = 0;} else {preco6 = 10.00;}
+	if (value7 == 0){var preco7 = 0;} else {preco7 = 6.00;}
+	if (value8 == 0){var preco8 = 0;} else {preco8 = 10.00;}
+	if (value9 == 0){var preco9 = 0;} else {preco9 = 4.00;}
+	if (value10 == 0){var preco10 = 0;} else {preco10 = 4.00;}
+	if (value11 == 0){var preco11 = 0;} else {preco11 = 4.00;}
+	if (value12 == 0){var preco12 = 0;} else {preco12 = 4.00;}
+	if (value13 == 0){var preco13 = 0;} else {preco13 = 4.00;}
+	if (value14 == 0){var preco14 = 0;} else {preco14= 3.00;}
+	if (value15 == 0){var preco15 = 0;} else {preco15 = 3.00;}
+	if (value16 == 0){var preco16 = 0;} else {preco16 = 3.00;}
+	if (value17 == 0){var preco17 = 0;} else {preco17 = 3.00;}
+	if (value18 == 0){var preco18 = 0;} else {preco18 = 3.00;}
+	if (value19 == 0){var preco19 = 0;} else {preco19 = 10.00;}
+	if (value20 == 0){var preco20 = 0;} else {preco20 = 3.50;}
+	if (value21 == 0){var preco21 = 0;} else {preco21 = 3.50;}
+	if (value22 == 0){var preco22 = 0;} else {preco22 = 3.50;}
+	if (value23 == 0){var preco23 = 0;} else {preco23 = 1.50;}
+	if (value24 == 0){var preco24 = 0;} else {preco24 = 3.00;}
+	if (value25 == 0){var preco25 = 0;} else {preco25 = 3.00;}
+	if (value26 == 0){var preco26 = 0;} else {preco26 = 5.00;}
+	if (value27 == 0){var preco27 = 0;} else {preco27 = 6.00;}
+	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
+	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
+
+
+	var tr = document.createElement('tr'),
+		td_quantPetisco27 = document.createElement('td'),
+		td_namePetisco27= document.createElement('td'),
+		td_precoPetisco27= document.createElement('td');
+
+	td_quantPetisco27.setAttribute("id", "quantPetisco");
+	td_namePetisco27.setAttribute("id", "namePrato");
+	td_precoPetisco27.setAttribute("id", "precoPetisco");
+
+	trbody.appendChild(tr);
+	tr.appendChild(td_quantPetisco27);
+	tr.appendChild(td_namePetisco27);
+	tr.appendChild(td_precoPetisco27);
+
+	var quantPetisco27 = document.getElementById('quantPetisco');
+	quantPetisco27.innerText = value27;
+
+	var burdweiser= document.getElementById('burdweiser').firstChild.innerHTML;
+	document.getElementById('namePrato').innerHTML = burdweiser;
+
+	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
+		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
+		(preco9 * value9) + (preco10 * value10) + (preco11 * value11) + (preco12 * value12) +
+		(preco13 * value13) + (preco14 * value14) + (preco15 * value15) + (preco16 * value16) +
+		(preco17 * value17) + (preco18 * value18) + (preco19 * value19) + (preco20 * value20) +
+		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
+		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
+		(preco29 * value29));
+
+	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+
+td_quantPetisco27.style.textAlign="center";
+td_namePetisco27.style.textAlign="center";
+td_precoPetisco27.style.textAlign="center";
+}
+
+function mandardados28(){
+
+	var value1 = document.getElementById('quantPet1').value,
+				value2 = document.getElementById('quantPet2').value,
+				value3 = document.getElementById('quantPet3').value,
+				value4 = document.getElementById('quantPet4').value,
+				value5 = document.getElementById('quantPet5').value,
+				value6 = document.getElementById('quantPet6').value,
+				value7 = document.getElementById('quantPet7').value,
+				value8 = document.getElementById('quantPet8').value,
+				value9 = document.getElementById('quantPet9').value,
+				value10 = document.getElementById('quantPet10').value,
+				value11 = document.getElementById('quantPet11').value,
+				value12 = document.getElementById('quantPet12').value,
+				value13 = document.getElementById('quantPet13').value,
+				value14 = document.getElementById('quantPet14').value,
+				value15 = document.getElementById('quantPet15').value,
+				value16 = document.getElementById('quantPet16').value,
+				value17 = document.getElementById('quantPet17').value,
+				value18 = document.getElementById('quantPet18').value,
+				value19 = document.getElementById('quantPet19').value,
+				value20 = document.getElementById('quantPet20').value,
+				value21 = document.getElementById('quantPet21').value,
+				value22 = document.getElementById('quantPet22').value,
+				value23 = document.getElementById('quantPet23').value,
+				value24 = document.getElementById('quantPet24').value,
+				value25 = document.getElementById('quantPet25').value,
+				value26 = document.getElementById('quantPet26').value,
+				value27 = document.getElementById('quantPet27').value,
+				value28 = document.getElementById('quantPet28').value,
+				value29 = document.getElementById('quantPet29').value,
+				trbody = document.getElementById('tablePedidos');
+
+	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
+	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
+	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
+	if (value4 == 0){var preco4 = 0;} else {preco4 = 20.00;}
+	if (value5 == 0){var preco5 = 0;} else {preco5 = 10.00;}
+	if (value6 == 0){var preco6 = 0;} else {preco6 = 10.00;}
+	if (value7 == 0){var preco7 = 0;} else {preco7 = 6.00;}
+	if (value8 == 0){var preco8 = 0;} else {preco8 = 10.00;}
+	if (value9 == 0){var preco9 = 0;} else {preco9 = 4.00;}
+	if (value10 == 0){var preco10 = 0;} else {preco10 = 4.00;}
+	if (value11 == 0){var preco11 = 0;} else {preco11 = 4.00;}
+	if (value12 == 0){var preco12 = 0;} else {preco12 = 4.00;}
+	if (value13 == 0){var preco13 = 0;} else {preco13 = 4.00;}
+	if (value14 == 0){var preco14 = 0;} else {preco14= 3.00;}
+	if (value15 == 0){var preco15 = 0;} else {preco15 = 3.00;}
+	if (value16 == 0){var preco16 = 0;} else {preco16 = 3.00;}
+	if (value17 == 0){var preco17 = 0;} else {preco17 = 3.00;}
+	if (value18 == 0){var preco18 = 0;} else {preco18 = 3.00;}
+	if (value19 == 0){var preco19 = 0;} else {preco19 = 10.00;}
+	if (value20 == 0){var preco20 = 0;} else {preco20 = 3.50;}
+	if (value21 == 0){var preco21 = 0;} else {preco21 = 3.50;}
+	if (value22 == 0){var preco22 = 0;} else {preco22 = 3.50;}
+	if (value23 == 0){var preco23 = 0;} else {preco23 = 1.50;}
+	if (value24 == 0){var preco24 = 0;} else {preco24 = 3.00;}
+	if (value25 == 0){var preco25 = 0;} else {preco25 = 3.00;}
+	if (value26 == 0){var preco26 = 0;} else {preco26 = 5.00;}
+	if (value27 == 0){var preco27 = 0;} else {preco27 = 6.00;}
+	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
+	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
+
+
+
+	var tr = document.createElement('tr'),
+		td_quantPetisco28 = document.createElement('td'),
+		td_namePetisco28= document.createElement('td'),
+		td_precoPetisco28 = document.createElement('td');
+
+	td_quantPetisco28.setAttribute("id", "quantPetisco");
+	td_namePetisco28.setAttribute("id", "namePrato");
+	td_precoPetisco28.setAttribute("id", "precoPetisco");
+
+	trbody.appendChild(tr);
+	tr.appendChild(td_quantPetisco28);
+	tr.appendChild(td_namePetisco28);
+	tr.appendChild(td_precoPetisco28);
+
+	var quantPetisco28 = document.getElementById('quantPetisco');
+	quantPetisco28.innerText = value28;
+
+	var eisenbahn = document.getElementById('eisenbahn').firstChild.innerHTML;
+	document.getElementById('namePrato').innerHTML = eisenbahn;
+
+	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
+		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
+		(preco9 * value9) + (preco10 * value10) + (preco11 * value11) + (preco12 * value12) +
+		(preco13 * value13) + (preco14 * value14) + (preco15 * value15) + (preco16 * value16) +
+		(preco17 * value17) + (preco18 * value18) + (preco19 * value19) + (preco20 * value20) +
+		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
+		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
+		(preco29 * value29));;
+
+	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+
+td_quantPetisco28.style.textAlign="center";
+td_namePetisco28.style.textAlign="center";
+td_precoPetisco28.style.textAlign="center";
+}
+
+function mandardados29(){
+
+	var value1 = document.getElementById('quantPet1').value,
+				value2 = document.getElementById('quantPet2').value,
+				value3 = document.getElementById('quantPet3').value,
+				value4 = document.getElementById('quantPet4').value,
+				value5 = document.getElementById('quantPet5').value,
+				value6 = document.getElementById('quantPet6').value,
+				value7 = document.getElementById('quantPet7').value,
+				value8 = document.getElementById('quantPet8').value,
+				value9 = document.getElementById('quantPet9').value,
+				value10 = document.getElementById('quantPet10').value,
+				value11 = document.getElementById('quantPet11').value,
+				value12 = document.getElementById('quantPet12').value,
+				value13 = document.getElementById('quantPet13').value,
+				value14 = document.getElementById('quantPet14').value,
+				value15 = document.getElementById('quantPet15').value,
+				value16 = document.getElementById('quantPet16').value,
+				value17 = document.getElementById('quantPet17').value,
+				value18 = document.getElementById('quantPet18').value,
+				value19 = document.getElementById('quantPet19').value,
+				value20 = document.getElementById('quantPet20').value,
+				value21 = document.getElementById('quantPet21').value,
+				value22 = document.getElementById('quantPet22').value,
+				value23 = document.getElementById('quantPet23').value,
+				value24 = document.getElementById('quantPet24').value,
+				value25 = document.getElementById('quantPet25').value,
+				value26 = document.getElementById('quantPet26').value,
+				value27 = document.getElementById('quantPet27').value,
+				value28 = document.getElementById('quantPet28').value,
+				value29 = document.getElementById('quantPet29').value,
+				trbody = document.getElementById('tablePedidos');
+
+	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
+	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
+	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
+	if (value4 == 0){var preco4 = 0;} else {preco4 = 20.00;}
+	if (value5 == 0){var preco5 = 0;} else {preco5 = 10.00;}
+	if (value6 == 0){var preco6 = 0;} else {preco6 = 10.00;}
+	if (value7 == 0){var preco7 = 0;} else {preco7 = 6.00;}
+	if (value8 == 0){var preco8 = 0;} else {preco8 = 10.00;}
+	if (value9 == 0){var preco9 = 0;} else {preco9 = 4.00;}
+	if (value10 == 0){var preco10 = 0;} else {preco10 = 4.00;}
+	if (value11 == 0){var preco11 = 0;} else {preco11 = 4.00;}
+	if (value12 == 0){var preco12 = 0;} else {preco12 = 4.00;}
+	if (value13 == 0){var preco13 = 0;} else {preco13 = 4.00;}
+	if (value14 == 0){var preco14 = 0;} else {preco14= 3.00;}
+	if (value15 == 0){var preco15 = 0;} else {preco15 = 3.00;}
+	if (value16 == 0){var preco16 = 0;} else {preco16 = 3.00;}
+	if (value17 == 0){var preco17 = 0;} else {preco17 = 3.00;}
+	if (value18 == 0){var preco18 = 0;} else {preco18 = 3.00;}
+	if (value19 == 0){var preco19 = 0;} else {preco19 = 10.00;}
+	if (value20 == 0){var preco20 = 0;} else {preco20 = 3.50;}
+	if (value21 == 0){var preco21 = 0;} else {preco21 = 3.50;}
+	if (value22 == 0){var preco22 = 0;} else {preco22 = 3.50;}
+	if (value23 == 0){var preco23 = 0;} else {preco23 = 1.50;}
+	if (value24 == 0){var preco24 = 0;} else {preco24 = 3.00;}
+	if (value25 == 0){var preco25 = 0;} else {preco25 = 3.00;}
+	if (value26 == 0){var preco26 = 0;} else {preco26 = 5.00;}
+	if (value27 == 0){var preco27 = 0;} else {preco27 = 6.00;}
+	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
+	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
+
+	var tr = document.createElement('tr'),
+		td_quantPetisco29 = document.createElement('td'),
+		td_namePetisco29= document.createElement('td'),
+		td_precoPetisco29 = document.createElement('td');
+
+	td_quantPetisco29.setAttribute("id", "quantPetisco");
+	td_namePetisco29.setAttribute("id", "namePrato");
+	td_precoPetisco29.setAttribute("id", "precoPetisco");
+
+	trbody.appendChild(tr);
+	tr.appendChild(td_quantPetisco29);
+	tr.appendChild(td_namePetisco29);
+	tr.appendChild(td_precoPetisco29);
+
+	var quantPetisco29 = document.getElementById('quantPetisco');
+	quantPetisco29.innerText = value29;
+
+	var heineken = document.getElementById('heineken').firstChild.innerHTML;
+	document.getElementById('namePrato').innerHTML = heineken;
+
+	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
+		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
+		(preco9 * value9) + (preco10 * value10) + (preco11 * value11) + (preco12 * value12) +
+		(preco13 * value13) + (preco14 * value14) + (preco15 * value15) + (preco16 * value16) +
+		(preco17 * value17) + (preco18 * value18) + (preco19 * value19) + (preco20 * value20) +
+		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
+		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
+		(preco29 * value29));
+	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+
+td_quantPetisco29.style.textAlign="center";
+td_namePetisco29.style.textAlign="center";
+td_precoPetisco29.style.textAlign="center";
+}
+
