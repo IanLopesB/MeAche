@@ -47,6 +47,11 @@ body {
 }
 
 .menuTitulo {
+<<<<<<< HEAD
+=======
+
+  font-family: cursive;
+>>>>>>> 6f5e947eb09c90d37a90383cdf1e5e056cf35e57
   font-size: 175%;
   font-style: bold;
   display: inline-block;
@@ -168,6 +173,7 @@ span.psw {
 
 .infos-pedido{
   padding: 16px;
+  font-family: cursive;
   font-size: 18px;
 }
 
@@ -316,6 +322,7 @@ textarea {outline: none;resize: none;}
    background-color: #8B0000 ;
 }
 
+<<<<<<< HEAD
 .pratos {
   font-size: 20px;
 }
@@ -324,6 +331,8 @@ textarea {outline: none;resize: none;}
 
   text-align: left;
 }
+=======
+>>>>>>> 6f5e947eb09c90d37a90383cdf1e5e056cf35e57
 
 li {
 list-style-type: none;
