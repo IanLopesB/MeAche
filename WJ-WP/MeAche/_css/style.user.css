@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Segoe UI;
 }
 
 /*Imagem*/
@@ -49,6 +48,7 @@ body {
 
 .menuTitulo {
 
+  font-family: cursive;
   font-size: 175%;
   font-style: bold;
   display: inline-block;
@@ -170,6 +170,7 @@ span.psw {
 
 .infos-pedido{
   padding: 16px;
+  font-family: cursive;
   font-size: 18px;
 }
 
@@ -316,19 +317,6 @@ textarea {outline: none;resize: none;}
    background-color: #8B0000 ;
 }
 
-<<<<<<< HEAD
-=======
-.pratos {
-  font-weight: bold;
-  font-size: 23px;
-
-}
-
-.pratos-descricao {
-
-  text-align: left;
-}
->>>>>>> b096ac43725d3140760f6e8bfc1d79e21914e2bc
 
 li {
 list-style-type: none;

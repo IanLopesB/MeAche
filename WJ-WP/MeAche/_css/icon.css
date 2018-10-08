@@ -1,11 +1,12 @@
 @font-face {
+  font-family: 'Material Icons';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/materialicons/v41/flUhRq6tzZclQEJ-Vdg-IuiaDsNZ.ttf) format('truetype');
-  font-family: 'Material Icons';
 }
 
 .material-icons {
+  font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
   font-size: 24px;
@@ -17,5 +18,4 @@
   word-wrap: normal;
   direction: ltr;
   -webkit-font-smoothing: antialiased;
-  font-family: 'Material Icons';
 }
