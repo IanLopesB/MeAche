@@ -83,7 +83,7 @@ function mostrarPrato9() {
 }
 
 function fecharPrato9() {
-    var e = document.getElementById("prato6");
+    var e = document.getElementById("prato9");
     "none" === e.style.display ? e.style.display = "block" : e.style.display = "none"
 }
 function mostrarPrato10() {
