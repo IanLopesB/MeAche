@@ -47,6 +47,8 @@ body {
 }
 
 .menuTitulo {
+
+  font-family: cursive;
   font-size: 175%;
   font-style: bold;
   display: inline-block;
@@ -207,7 +209,6 @@ float: right;
 #menos {
   width: 25px;
   border: solid;
-  border-radius: 11px;
   border-width: 1px;
   background-color: white;
 }
@@ -215,7 +216,6 @@ float: right;
 #mais {
   width: 25px;
   border: solid;
-  border-radius: 11px;
   border-width: 1px;
   background-color: white;
 }
@@ -316,14 +316,7 @@ textarea {outline: none;resize: none;}
 
    background-color: #8B0000 ;
 }
-.pratos {
-  font-size: 20px;
-}
 
-.pratos-descricao {
-
-  text-align: left;
-}
 
 li {
 list-style-type: none;
