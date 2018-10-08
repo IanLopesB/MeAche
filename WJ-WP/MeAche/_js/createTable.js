@@ -179,9 +179,9 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
   if (item.val().Coracao_de_Frango == undefined){
     delete espetos_3;
     delete li11;
-    li9.style.listStyle = "none";
+    li11.style.listStyle = "none";
   }else {
-    li9.appendChild(espetos_3);
+    l11.appendChild(espetos_3);
   }
 
   if (item.val().Porco == undefined){
