@@ -67,20 +67,20 @@ function mandardados1(){
 		td_namePetisco1= document.createElement('td'),
 		td_precoPetisco1 = document.createElement('td');
 
-	td_quantPetisco1.setAttribute("id", "quantPetisco");
-	td_namePetisco1.setAttribute("id", "namePrato");
-	td_precoPetisco1.setAttribute("id", "precoPetisco");
+	td_quantPetisco1.setAttribute("id", "quantPetisco1");
+	td_namePetisco1.setAttribute("id", "namePrato1");
+	td_precoPetisco1.setAttribute("id", "precoPetisco1");
 
 	trbody.appendChild(tr);
 	tr.appendChild(td_quantPetisco1);
 	tr.appendChild(td_namePetisco1);
 	tr.appendChild(td_precoPetisco1);
 
-	var quantPetisco1 = document.getElementById('quantPetisco');
+	var quantPetisco1 = document.getElementById('quantPetisco1');
 	quantPetisco1.innerText = value1;
 
 	var asinha = document.getElementById('asinha').firstChild.innerHTML;
-	document.getElementById('namePrato').innerHTML = asinha;
+	document.getElementById('namePrato1').innerHTML = asinha;
 
 	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
 		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
@@ -90,7 +90,7 @@ function mandardados1(){
 		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
-	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('precoPetisco1').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
 
 td_quantPetisco1.style.textAlign="center";
