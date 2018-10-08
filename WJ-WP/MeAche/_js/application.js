@@ -40,8 +40,8 @@ var skol = document.getElementById('quantPet24'),
 
   function sendPedido() {
     var pedido = {
-      //Petidscos
-      "Asinha_de_frango": asinha.value,
+      // Petiscos
+      Asinha_de_frango: asinha.value,
       Camarao_Alho_Oleo: camarao.value,
       Calabresa: calabresa.value,
       Carne_de_Sol: carneDeSol.value,
@@ -50,14 +50,27 @@ var skol = document.getElementById('quantPet24'),
       Macaxeira: macaxeira.value,
       Baiao_de_Dois: baiaoDeDois.value,
 
-      //Espetos
+      // Espetos
       Boi: boi.value,
       Franbacon: franbacon.value,
       Coracao_de_Frango: coreFrango.value,
       Porco: porco.value
     };
-    
-      delete ;
+
+    // Petiscos
+    if (asinha.value == 0){delete pedido.Asinha_de_frango};
+    if (camarao.value == 0){delete pedido.Camarao_Alho_Oleo};
+    if (calabresa.value == 0){delete pedido.Calabresa};
+    if (carneDeSol.value == 0){delete pedido.Carne_de_Sol};
+    if (torresmo.value == 0){delete pedido.Torresmo};
+    if (batataFrita.value == 0){delete pedido.Batata_Frita};
+
+    // Espetos
+    if (boi.value == 0){delete pedido.Boi};
+    if (franbacon.value == 0){delete pedido.Franbacon};
+    if (coreFrango.value == 0){delete pedido.Coracao_de_Frango};
+    if (porco.value == 0){delete pedido.Porco};
+
     
     return firebase.database().ref().child('pedidos').push(pedido);
   }
