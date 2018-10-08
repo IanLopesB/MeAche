@@ -8,7 +8,7 @@ function mostrarSubtotal(){
 }
 
 function confirma(){
-  alert("Enviando pedido...");
+  alert("Pedido Enviado!");
   var x = document.getElementById('id01');
 
   if (x.style.display === "block"){

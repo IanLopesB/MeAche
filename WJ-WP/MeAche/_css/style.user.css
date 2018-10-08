@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Segoe UI;
 }
 
 /*Imagem*/
@@ -49,7 +48,6 @@ body {
 
 .menuTitulo {
 
-  font-family: cursive;
   font-size: 175%;
   font-style: bold;
   display: inline-block;
@@ -171,7 +169,6 @@ span.psw {
 
 .infos-pedido{
   padding: 16px;
-  font-family: cursive;
   font-size: 18px;
 }
 
@@ -321,7 +318,6 @@ textarea {outline: none;resize: none;}
 }
 
 .pratos {
-  font-family: cursive;
   font-weight: bold;
   font-size: 23px;
 
@@ -329,7 +325,6 @@ textarea {outline: none;resize: none;}
 
 .pratos-descricao {
 
-  font-family: cursive;
   text-align: left;
 }
 
