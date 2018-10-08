@@ -47,7 +47,6 @@ body {
 }
 
 .menuTitulo {
-
   font-size: 175%;
   font-style: bold;
   display: inline-block;
@@ -207,6 +206,7 @@ float: right;
 #menos {
   width: 25px;
   border: solid;
+  border-radius: 11px;
   border-width: 1px;
   background-color: white;
 }
@@ -214,6 +214,7 @@ float: right;
 #mais {
   width: 25px;
   border: solid;
+  border-radius: 11px;
   border-width: 1px;
   background-color: white;
 }
@@ -315,19 +316,14 @@ textarea {outline: none;resize: none;}
    background-color: #8B0000 ;
 }
 
-<<<<<<< HEAD
-=======
 .pratos {
-  font-weight: bold;
-  font-size: 23px;
-
+  font-size: 20px;
 }
 
 .pratos-descricao {
 
   text-align: left;
 }
->>>>>>> b096ac43725d3140760f6e8bfc1d79e21914e2bc
 
 li {
 list-style-type: none;
