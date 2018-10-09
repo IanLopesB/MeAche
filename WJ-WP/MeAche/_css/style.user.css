@@ -89,7 +89,12 @@ body {
   vertical-align: middle; 
 }
 
+.btn {
 
+  border: solid;
+  border-width: 0.5px;
+  border-color: #D3D3D3;
+}
 
 /*Span Pedido Parte 1*/
 
