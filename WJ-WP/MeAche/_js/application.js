@@ -93,6 +93,7 @@ function sendPedido() {
   // Espetos
   if (boi.value == 0){delete pedido.Boi};
   if (franbacon.value == 0){delete pedido.Franbacon};
+  if (frango.value == 0){delete pedido.Frango};
   if (coreFrango.value == 0){delete pedido.Coracao_de_Frango};
   if (porco.value == 0){delete pedido.Porco};
 

@@ -317,37 +317,37 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
   }
 
   // Cervejas
-  if (item.val().Porco == undefined){
+  if (item.val().Skol == undefined){
     delete cerv_1;
     li23.parentNode.removeChild(li23);
   }else {
     li23.appendChild(cerv_1);
   }
-  if (item.val().Porco == undefined){
+  if (item.val().Itaipava == undefined){
     delete cerv_2;
     li24.parentNode.removeChild(li24);
   }else {
     li24.appendChild(cerv_2);
   }
-  if (item.val().Porco == undefined){
+  if (item.val().Original == undefined){
     delete cerv_3;
     li25.parentNode.removeChild(li25);
   }else {
     li25.appendChild(cerv_3);
   }
-  if (item.val().Porco == undefined){
+  if (item.val().Burdweiser == undefined){
     delete cerv_4;
     li26.parentNode.removeChild(li26);
   }else {
     li26.appendChild(cerv_4);
   }
-  if (item.val().Porco == undefined){
+  if (item.val().Eisenbahn == undefined){
     delete cerv_5;
     li27.parentNode.removeChild(li27);
   }else {
     li27.appendChild(cerv_5);
   }
-  if (item.val().Porco == undefined){
+  if (item.val().Heineken == undefined){
     delete cerv_6;
     li28.parentNode.removeChild(li28);
   }else {
