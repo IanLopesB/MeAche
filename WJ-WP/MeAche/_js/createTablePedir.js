@@ -31,8 +31,12 @@ function mandardados1(){
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
 
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
-	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+				 if ($("#tr1").length){
+        console.log("O elemento existe no DOM");
+    } else {
+
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
@@ -64,20 +68,20 @@ if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 |
 	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
 	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
 
-	var tr1 = document.createElement('tr'),
-		
+	var tr = document.createElement('tr'),
+
 		td_quantPetisco1 = document.createElement('td'),
 		td_namePetisco1= document.createElement('td'),
 		td_precoPetisco1 = document.createElement('td');
-	tr1.setAttribute("id","tr1");
+	tr.setAttribute("id","tr1");
 	td_quantPetisco1.setAttribute("id", "quantPetisco1");
 	td_namePetisco1.setAttribute("id", "namePrato1");
 	td_precoPetisco1.setAttribute("id", "precoPetisco1");
 
-	trbody.appendChild(tr1);
-	tr1.appendChild(td_quantPetisco1);
-	tr1.appendChild(td_namePetisco1);
-	tr1.appendChild(td_precoPetisco1);
+	trbody.appendChild(tr);
+	tr.appendChild(td_quantPetisco1);
+	tr.appendChild(td_namePetisco1);
+	tr.appendChild(td_precoPetisco1);
 
 	var quantPetisco1 = document.getElementById('quantPetisco1');
 	quantPetisco1.innerText = value1;
@@ -102,11 +106,8 @@ if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 |
 td_quantPetisco1.style.textAlign="center";
 td_namePetisco1.style.textAlign="center";
 td_precoPetisco1.style.textAlign="center";
-
-if ($('tr1')[0]) {
-    $($('tr1')[0]).remove();
-}			
-}
+};
+};
 }
 
 function mandardados2(){
@@ -141,8 +142,12 @@ function mandardados2(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
-	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+
+								 if ($("#tr2").length){
+        console.log("O elemento existe no DOM");
+    } else {
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
@@ -179,6 +184,7 @@ if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 |
 		td_namePetisco2= document.createElement('td'),
 		td_precoPetisco2 = document.createElement('td');
 
+	tr.setAttribute("id","tr2");
 	td_quantPetisco2.setAttribute("id", "quantPetisco2");
 	td_namePetisco2.setAttribute("id", "namePrato2");
 	td_precoPetisco2.setAttribute("id", "precoPetisco2");
@@ -211,7 +217,9 @@ if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 |
 td_quantPetisco2.style.textAlign="center";
 td_namePetisco2.style.textAlign="center";
 td_precoPetisco2.style.textAlign="center";
-}}
+}
+}
+}
 
 function mandardados3(){
 
@@ -245,8 +253,12 @@ function mandardados3(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
-	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+
+				 if ($("#tr3").length){
+        console.log("O elemento existe no DOM");
+    } else {
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
@@ -278,13 +290,12 @@ if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 |
 	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
 	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
 
-
-
 	var tr = document.createElement('tr'),
 		td_quantPetisco3 = document.createElement('td'),
 		td_namePetisco3= document.createElement('td'),
 		td_precoPetisco3 = document.createElement('td');
 
+	tr.setAttribute("id","tr3");
 	td_quantPetisco3.setAttribute("id", "quantPetisco3");
 	td_namePetisco3.setAttribute("id", "namePrato3");
 	td_precoPetisco3.setAttribute("id", "precoPetisco3");
@@ -319,6 +330,7 @@ td_namePetisco3.style.textAlign="center";
 td_precoPetisco3.style.textAlign="center";
 }
 }
+}
 function mandardados4(){
 
 	var value1 = document.getElementById('quantPet1').value,
@@ -351,8 +363,12 @@ function mandardados4(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
-	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+
+								 if ($("#tr4").length){
+        console.log("O elemento existe no DOM");
+    } else {
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
@@ -390,6 +406,7 @@ if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 |
 		td_namePetisco4= document.createElement('td'),
 		td_precoPetisco4 = document.createElement('td');
 
+	tr.setAttribute("id","tr4");
 	td_quantPetisco4.setAttribute("id", "quantPetisco4");
 	td_namePetisco4.setAttribute("id", "namePrato4");
 	td_precoPetisco4.setAttribute("id", "precoPetisco4");
@@ -421,6 +438,7 @@ document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 td_quantPetisco4.style.textAlign="center";
 td_namePetisco4.style.textAlign="center";
 td_precoPetisco4.style.textAlign="center";
+}
 }
 }
 function mandardados5(){
@@ -455,8 +473,12 @@ function mandardados5(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
-	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+
+								 if ($("#tr5").length){
+        console.log("O elemento existe no DOM");
+    } else {
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
@@ -495,6 +517,7 @@ if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 |
 		td_namePetisco5= document.createElement('td'),
 		td_precoPetisco5 = document.createElement('td');
 
+	tr.setAttribute("id","tr5");
 	td_quantPetisco5.setAttribute("id", "quantPetisco5");
 	td_namePetisco5.setAttribute("id", "namePrato5");
 	td_precoPetisco5.setAttribute("id", "precoPetisco5");
@@ -526,6 +549,7 @@ document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 td_quantPetisco5.style.textAlign="center";
 td_namePetisco5.style.textAlign="center";
 td_precoPetisco5.style.textAlign="center";
+}
 }
 }
 function mandardados6(){
@@ -560,8 +584,12 @@ function mandardados6(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
-	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+
+								 if ($("#tr6").length){
+        console.log("O elemento existe no DOM");
+    } else {
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
@@ -599,6 +627,7 @@ if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 |
 		td_namePetisco6= document.createElement('td'),
 		td_precoPetisco6 = document.createElement('td');
 
+	tr.setAttribute("id","tr6");
 	td_quantPetisco6.setAttribute("id", "quantPetisco6");
 	td_namePetisco6.setAttribute("id", "namePrato6");
 	td_precoPetisco6.setAttribute("id", "precoPetisco6");
@@ -630,6 +659,7 @@ document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 td_quantPetisco6.style.textAlign="center";
 td_namePetisco6.style.textAlign="center";
 td_precoPetisco6.style.textAlign="center";
+}
 }
 }
 function mandardados7(){
@@ -664,8 +694,12 @@ function mandardados7(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
-	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+
+								 if ($("#tr7").length){
+        console.log("O elemento existe no DOM");
+    } else {
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
@@ -697,13 +731,12 @@ if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 |
 	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
 	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
 
-
-
 	var tr = document.createElement('tr'),
 		td_quantPetisco7 = document.createElement('td'),
 		td_namePetisco7= document.createElement('td'),
 		td_precoPetisco7 = document.createElement('td');
 
+	tr.setAttribute("id","tr7");
 	td_quantPetisco7.setAttribute("id", "quantPetisco7");
 	td_namePetisco7.setAttribute("id", "namePrato7");
 	td_precoPetisco7.setAttribute("id", "precoPetisco7");
@@ -716,8 +749,8 @@ if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 |
 	var quantPetisco7 = document.getElementById('quantPetisco7');
 	quantPetisco7.innerText = value7;
 
-	var batata = document.getElementById('batata').firstChild.innerHTML;
-	document.getElementById('namePrato7').innerHTML = batata;
+	var macaxeira = document.getElementById('macaxeira').firstChild.innerHTML;
+	document.getElementById('namePrato7').innerHTML =  macaxeira;
 
 	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
 		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
@@ -735,6 +768,7 @@ document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 td_quantPetisco7.style.textAlign="center";
 td_namePetisco7.style.textAlign="center";
 td_precoPetisco7.style.textAlign="center";
+}
 }
 }
 function mandardados8(){
@@ -769,8 +803,12 @@ function mandardados8(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
-	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+
+								 if ($("#tr8").length){
+        console.log("O elemento existe no DOM");
+    } else {
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
@@ -808,6 +846,7 @@ if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 |
 		td_namePetisco8= document.createElement('td'),
 		td_precoPetisco8 = document.createElement('td');
 
+	tr.setAttribute("id","tr8");
 	td_quantPetisco8.setAttribute("id", "quantPetisco8");
 	td_namePetisco8.setAttribute("id", "namePrato8");
 	td_precoPetisco8.setAttribute("id", "precoPetisco8");
@@ -839,6 +878,7 @@ document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 td_quantPetisco8.style.textAlign="center";
 td_namePetisco8.style.textAlign="center";
 td_precoPetisco8.style.textAlign="center";
+}
 }
 }
 function mandardados9(){
@@ -873,8 +913,12 @@ function mandardados9(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
-	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+
+								 if ($("#tr9").length){
+        console.log("O elemento existe no DOM");
+    } else {
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
@@ -911,7 +955,7 @@ if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 |
 		td_quantPetisco9 = document.createElement('td'),
 		td_namePetisco9= document.createElement('td'),
 		td_precoPetisco9 = document.createElement('td');
-
+	tr.setAttribute("id","tr9");
 	td_quantPetisco9.setAttribute("id", "quantPetisco9");
 	td_namePetisco9.setAttribute("id", "namePrato9");
 	td_precoPetisco9.setAttribute("id", "precoPetisco9");
@@ -943,6 +987,7 @@ document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 td_quantPetisco9.style.textAlign="center";
 td_namePetisco9.style.textAlign="center";
 td_precoPetisco9.style.textAlign="center";
+}
 }
 }
 function mandardados10(){
@@ -977,8 +1022,12 @@ function mandardados10(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
-	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+
+								 if ($("#tr10").length){
+        console.log("O elemento existe no DOM");
+    } else {
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
@@ -1010,13 +1059,12 @@ if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 |
 	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
 	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
 
-
-
 	var tr = document.createElement('tr'),
 		td_quantPetisco10 = document.createElement('td'),
 		td_namePetisco10= document.createElement('td'),
 		td_precoPetisco10 = document.createElement('td');
 
+	tr.setAttribute("id","tr10");
 	td_quantPetisco10.setAttribute("id", "quantPetisco10");
 	td_namePetisco10.setAttribute("id", "namePrato10");
 	td_precoPetisco10.setAttribute("id", "precoPetisco10");
@@ -1048,6 +1096,7 @@ document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 td_quantPetisco10.style.textAlign="center";
 td_namePetisco10.style.textAlign="center";
 td_precoPetisco10.style.textAlign="center";
+}
 }
 }
 function mandardados11(){
@@ -1082,8 +1131,12 @@ function mandardados11(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
-	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+
+								 if ($("#tr11").length){
+        console.log("O elemento existe no DOM");
+    } else {
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
@@ -1120,6 +1173,7 @@ if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 |
 		td_namePetisco11= document.createElement('td'),
 		td_precoPetisco11 = document.createElement('td');
 
+	tr.setAttribute("id","tr11");
 	td_quantPetisco11.setAttribute("id", "quantPetisco11");
 	td_namePetisco11.setAttribute("id", "namePrato11");
 	td_precoPetisco11.setAttribute("id", "precoPetisco11");
@@ -1151,6 +1205,7 @@ document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 td_quantPetisco11.style.textAlign="center";
 td_namePetisco11.style.textAlign="center";
 td_precoPetisco11.style.textAlign="center";
+}
 }
 }
 function mandardados12(){
@@ -1185,8 +1240,12 @@ function mandardados12(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
-	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+
+								 if ($("#tr12").length){
+        console.log("O elemento existe no DOM");
+    } else {
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
@@ -1224,6 +1283,7 @@ if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 |
 		td_namePetisco12= document.createElement('td'),
 		td_precoPetisco12 = document.createElement('td');
 
+	tr.setAttribute("id","tr12");
 	td_quantPetisco12.setAttribute("id", "quantPetisco12");
 	td_namePetisco12.setAttribute("id", "namePrato12");
 	td_precoPetisco12.setAttribute("id", "precoPetisco12");
@@ -1255,6 +1315,7 @@ document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 td_quantPetisco12.style.textAlign="center";
 td_namePetisco12.style.textAlign="center";
 td_precoPetisco12.style.textAlign="center";
+}
 }
 }
 function mandardados13(){
@@ -1289,8 +1350,12 @@ function mandardados13(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
-	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+
+								 if ($("#tr13").length){
+        console.log("O elemento existe no DOM");
+    } else {
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
@@ -1327,6 +1392,7 @@ if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 |
 		td_namePetisco13= document.createElement('td'),
 		td_precoPetisco13 = document.createElement('td');
 
+	tr.setAttribute("id","tr13");
 	td_quantPetisco13.setAttribute("id", "quantPetisco13");
 	td_namePetisco13.setAttribute("id", "namePrato13");
 	td_precoPetisco13.setAttribute("id", "precoPetisco13");
@@ -1358,6 +1424,7 @@ document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 td_quantPetisco13.style.textAlign="center";
 td_namePetisco13.style.textAlign="center";
 td_precoPetisco13.style.textAlign="center";
+}
 }
 }
 function mandardados14(){
@@ -1392,8 +1459,12 @@ function mandardados14(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
-	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+
+								 if ($("#tr14").length){
+        console.log("O elemento existe no DOM");
+    } else {
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
@@ -1430,6 +1501,7 @@ if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 |
 		td_namePetisco14= document.createElement('td'),
 		td_precoPetisco14 = document.createElement('td');
 
+	tr.setAttribute("id","tr14");
 	td_quantPetisco14.setAttribute("id", "quantPetisco14");
 	td_namePetisco14.setAttribute("id", "namePrato14");
 	td_precoPetisco14.setAttribute("id", "precoPetisco14");
@@ -1461,6 +1533,7 @@ document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 td_quantPetisco14.style.textAlign="center";
 td_namePetisco14.style.textAlign="center";
 td_precoPetisco14.style.textAlign="center";
+}
 }
 }
 function mandardados15(){
@@ -1495,8 +1568,12 @@ function mandardados15(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
-	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+
+								 if ($("#tr15").length){
+        console.log("O elemento existe no DOM");
+    } else {
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
@@ -1534,6 +1611,7 @@ if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 |
 		td_namePetisco15= document.createElement('td'),
 		td_precoPetisco15 = document.createElement('td');
 
+	tr.setAttribute("id","tr15");
 	td_quantPetisco15.setAttribute("id", "quantPetisco15");
 	td_namePetisco15.setAttribute("id", "namePrato15");
 	td_precoPetisco15.setAttribute("id", "precoPetisco15");
@@ -1565,6 +1643,7 @@ document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 td_quantPetisco15.style.textAlign="center";
 td_namePetisco15.style.textAlign="center";
 td_precoPetisco15.style.textAlign="center";
+}
 }
 }
 function mandardados16(){
@@ -1599,8 +1678,12 @@ function mandardados16(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
-	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+
+								 if ($("#tr16").length){
+        console.log("O elemento existe no DOM");
+    } else {
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
@@ -1637,6 +1720,7 @@ if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 |
 		td_namePetisco16= document.createElement('td'),
 		td_precoPetisco16 = document.createElement('td');
 
+	tr.setAttribute("id","tr16");
 	td_quantPetisco16.setAttribute("id", "quantPetisco16");
 	td_namePetisco16.setAttribute("id", "namePrato16");
 	td_precoPetisco16.setAttribute("id", "precoPetisco16");
@@ -1668,6 +1752,7 @@ document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 td_quantPetisco16.style.textAlign="center";
 td_namePetisco16.style.textAlign="center";
 td_precoPetisco16.style.textAlign="center";
+}
 }
 }
 function mandardados17(){
@@ -1702,8 +1787,12 @@ function mandardados17(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
-	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+
+								 if ($("#tr17").length){
+        console.log("O elemento existe no DOM");
+    } else {
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
@@ -1740,6 +1829,7 @@ if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 |
 		td_namePetisco17= document.createElement('td'),
 		td_precoPetisco17 = document.createElement('td');
 
+	tr.setAttribute("id","tr17");
 	td_quantPetisco17.setAttribute("id", "quantPetisco17");
 	td_namePetisco17.setAttribute("id", "namePrato17");
 	td_precoPetisco17.setAttribute("id", "precoPetisco17");
@@ -1771,6 +1861,7 @@ document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 td_quantPetisco17.style.textAlign="center";
 td_namePetisco17.style.textAlign="center";
 td_precoPetisco17.style.textAlign="center";
+}
 }
 }
 function mandardados18(){
@@ -1805,8 +1896,12 @@ function mandardados18(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
-	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+
+								 if ($("#tr18").length){
+        console.log("O elemento existe no DOM");
+    } else {
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
@@ -1843,6 +1938,7 @@ if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 |
 		td_namePetisco18= document.createElement('td'),
 		td_precoPetisco18 = document.createElement('td');
 
+	tr.setAttribute("id","tr18");
 	td_quantPetisco18.setAttribute("id", "quantPetisco18");
 	td_namePetisco18.setAttribute("id", "namePrato18");
 	td_precoPetisco18.setAttribute("id", "precoPetisco18");
@@ -1874,6 +1970,7 @@ document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 td_quantPetisco18.style.textAlign="center";
 td_namePetisco18.style.textAlign="center";
 td_precoPetisco18.style.textAlign="center";
+}
 }
 }
 function mandardados19(){
@@ -1908,8 +2005,12 @@ function mandardados19(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
-	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+
+								 if ($("#tr19").length){
+        console.log("O elemento existe no DOM");
+    } else {
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
@@ -1947,6 +2048,7 @@ if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 |
 		td_namePetisco19= document.createElement('td'),
 		td_precoPetisco19 = document.createElement('td');
 
+	tr.setAttribute("id","tr19");
 	td_quantPetisco19.setAttribute("id", "quantPetisco19");
 	td_namePetisco19.setAttribute("id", "namePrato19");
 	td_precoPetisco19.setAttribute("id", "precoPetisco19");
@@ -1981,6 +2083,7 @@ td_namePetisco19.style.textAlign="center";
 td_precoPetisco19.style.textAlign="center";
 }
 }
+}
 function mandardados20(){
 
 	var value1 = document.getElementById('quantPet1').value,
@@ -2013,8 +2116,12 @@ function mandardados20(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
-	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+
+								 if ($("#tr20").length){
+        console.log("O elemento existe no DOM");
+    } else {
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
@@ -2051,6 +2158,7 @@ if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 |
 		td_namePetisco20= document.createElement('td'),
 		td_precoPetisco20 = document.createElement('td');
 
+	tr.setAttribute("id","tr20");
 	td_quantPetisco20.setAttribute("id", "quantPetisco20");
 	td_namePetisco20.setAttribute("id", "namePrato20");
 	td_precoPetisco20.setAttribute("id", "precoPetisco20");
@@ -2082,6 +2190,7 @@ document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 td_quantPetisco20.style.textAlign="center";
 td_namePetisco20.style.textAlign="center";
 td_precoPetisco20.style.textAlign="center";
+}
 }
 }
 function mandardados21(){
@@ -2116,8 +2225,12 @@ function mandardados21(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
-	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+
+    					 if ($("#tr21").length){
+        console.log("O elemento existe no DOM");
+    } else {
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
@@ -2154,6 +2267,7 @@ if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 |
 		td_namePetisco21= document.createElement('td'),
 		td_precoPetisco21 = document.createElement('td');
 
+	tr.setAttribute("id","tr21");
 	td_quantPetisco21.setAttribute("id", "quantPetisco21");
 	td_namePetisco21.setAttribute("id", "namePrato21");
 	td_precoPetisco21.setAttribute("id", "precoPetisco21");
@@ -2185,6 +2299,7 @@ document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 td_quantPetisco21.style.textAlign="center";
 td_namePetisco21.style.textAlign="center";
 td_precoPetisco21.style.textAlign="center";
+}
 }
 }
 function mandardados22(){
@@ -2219,8 +2334,12 @@ function mandardados22(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
-	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+
+								 if ($("#tr22").length){
+        console.log("O elemento existe no DOM");
+    } else {
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
@@ -2257,6 +2376,7 @@ if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 |
 		td_namePetisco22= document.createElement('td'),
 		td_precoPetisco22 = document.createElement('td');
 
+	tr.setAttribute("id","tr22");
 	td_quantPetisco22.setAttribute("id", "quantPetisco22");
 	td_namePetisco22.setAttribute("id", "namePrato22");
 	td_precoPetisco22.setAttribute("id", "precoPetisco22");
@@ -2290,6 +2410,8 @@ td_namePetisco22.style.textAlign="center";
 td_precoPetisco22.style.textAlign="center";
 }
 }
+}
+
 function mandardados23(){
 
 	var value1 = document.getElementById('quantPet1').value,
@@ -2322,8 +2444,12 @@ function mandardados23(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
-	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+
+								 if ($("#tr23").length){
+        console.log("O elemento existe no DOM");
+    } else {
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
@@ -2360,6 +2486,7 @@ if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 |
 		td_namePetisco23= document.createElement('td'),
 		td_precoPetisco23 = document.createElement('td');
 
+	tr.setAttribute("id","tr23");
 	td_quantPetisco23.setAttribute("id", "quantPetisco23");
 	td_namePetisco23.setAttribute("id", "namePrato23");
 	td_precoPetisco23.setAttribute("id", "precoPetisco23");
@@ -2391,6 +2518,7 @@ document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 td_quantPetisco23.style.textAlign="center";
 td_namePetisco23.style.textAlign="center";
 td_precoPetisco23.style.textAlign="center";
+}
 }
 }
 function mandardados24(){
@@ -2425,8 +2553,12 @@ function mandardados24(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
-	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+
+								 if ($("#tr24").length){
+        console.log("O elemento existe no DOM");
+    } else {
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
@@ -2464,6 +2596,7 @@ if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 |
 		td_namePetisco24= document.createElement('td'),
 		td_precoPetisco24 = document.createElement('td');
 
+	tr.setAttribute("id","tr24");
 	td_quantPetisco24.setAttribute("id", "quantPetisco24");
 	td_namePetisco24.setAttribute("id", "namePrato24");
 	td_precoPetisco24.setAttribute("id", "precoPetisco24");
@@ -2495,6 +2628,7 @@ document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 td_quantPetisco24.style.textAlign="center";
 td_namePetisco24.style.textAlign="center";
 td_precoPetisco24.style.textAlign="center";
+}
 }
 }
 function mandardados25(){
@@ -2529,8 +2663,12 @@ function mandardados25(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
-	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+
+								 if ($("#tr25").length){
+        console.log("O elemento existe no DOM");
+    } else {
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
@@ -2567,6 +2705,7 @@ if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 |
 		td_namePetisco25= document.createElement('td'),
 		td_precoPetisco25 = document.createElement('td');
 
+	tr.setAttribute("id","tr25");
 	td_quantPetisco25.setAttribute("id", "quantPetisco25");
 	td_namePetisco25.setAttribute("id", "namePrato25");
 	td_precoPetisco25.setAttribute("id", "precoPetisco25");
@@ -2598,6 +2737,7 @@ document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 td_quantPetisco25.style.textAlign="center";
 td_namePetisco25.style.textAlign="center";
 td_precoPetisco25.style.textAlign="center";
+}
 }
 }
 function mandardados26(){
@@ -2632,8 +2772,12 @@ function mandardados26(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
-	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+
+								 if ($("#tr26").length){
+        console.log("O elemento existe no DOM");
+    } else {
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
@@ -2670,6 +2814,7 @@ if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 |
 		td_namePetisco26= document.createElement('td'),
 		td_precoPetisco26 = document.createElement('td');
 
+	tr.setAttribute("id","tr26");
 	td_quantPetisco26.setAttribute("id", "quantPetisco26");
 	td_namePetisco26.setAttribute("id", "namePrato26");
 	td_precoPetisco26.setAttribute("id", "precoPetisco26");
@@ -2701,6 +2846,7 @@ document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 td_quantPetisco26.style.textAlign="center";
 td_namePetisco26.style.textAlign="center";
 td_precoPetisco26.style.textAlign="center";
+}
 }
 }
 function mandardados27(){
@@ -2735,8 +2881,12 @@ function mandardados27(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
-	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+
+								 if ($("#tr27").length){
+        console.log("O elemento existe no DOM");
+    } else {
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
@@ -2774,6 +2924,7 @@ if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 |
 		td_namePetisco27= document.createElement('td'),
 		td_precoPetisco27= document.createElement('td');
 
+	tr.setAttribute("id","tr27");
 	td_quantPetisco27.setAttribute("id", "quantPetisco27");
 	td_namePetisco27.setAttribute("id", "namePrato27");
 	td_precoPetisco27.setAttribute("id", "precoPetisco27");
@@ -2805,6 +2956,7 @@ document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 td_quantPetisco27.style.textAlign="center";
 td_namePetisco27.style.textAlign="center";
 td_precoPetisco27.style.textAlign="center";
+}
 }
 }
 function mandardados28(){
@@ -2839,8 +2991,12 @@ function mandardados28(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
-	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+
+								 if ($("#tr28").length){
+        console.log("O elemento existe no DOM");
+    } else {
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
@@ -2877,6 +3033,7 @@ if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 |
 		td_namePetisco28= document.createElement('td'),
 		td_precoPetisco28 = document.createElement('td');
 
+	tr.setAttribute("id","tr28");
 	td_quantPetisco28.setAttribute("id", "quantPetisco28");
 	td_namePetisco28.setAttribute("id", "namePrato28");
 	td_precoPetisco28.setAttribute("id", "precoPetisco28");
@@ -2908,6 +3065,7 @@ document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 td_quantPetisco28.style.textAlign="center";
 td_namePetisco28.style.textAlign="center";
 td_precoPetisco28.style.textAlign="center";
+}
 }
 }
 function mandardados29(){
@@ -2942,8 +3100,12 @@ function mandardados29(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
-	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+
+								 if ($("#tr29").length){
+        console.log("O elemento existe no DOM");
+    } else {
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
@@ -2980,6 +3142,7 @@ if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 |
 		td_namePetisco29= document.createElement('td'),
 		td_precoPetisco29 = document.createElement('td');
 
+	tr.setAttribute("id","tr29");
 	td_quantPetisco29.setAttribute("id", "quantPetisco29");
 	td_namePetisco29.setAttribute("id", "namePrato29");
 	td_precoPetisco29.setAttribute("id", "precoPetisco29");
@@ -3011,6 +3174,7 @@ document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 td_quantPetisco29.style.textAlign="center";
 td_namePetisco29.style.textAlign="center";
 td_precoPetisco29.style.textAlign="center";
+}
 }
 }
 
