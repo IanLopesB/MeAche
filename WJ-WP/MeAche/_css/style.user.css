@@ -242,8 +242,8 @@ font-size: 17px;
 }
 
 #nome-prato {
+  height: 5%;
   top: 0%;
-  background-color:;
   border-bottom: solid;
   border-width: 2px;
   border-top-left-radius: 10px ;
@@ -292,6 +292,7 @@ font-size: 17px;
 }
 
 .botao-fechar-span { 
+  float: right;
   text-align: center;
   margin: 24px 0 12px 0;
   position: relative;
