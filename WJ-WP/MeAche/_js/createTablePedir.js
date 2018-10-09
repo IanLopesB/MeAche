@@ -31,6 +31,9 @@ function mandardados1(){
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
 
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
 	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
@@ -61,20 +64,20 @@ function mandardados1(){
 	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
 	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
 
-
-	var tr = document.createElement('tr'),
+	var tr1 = document.createElement('tr'),
+		
 		td_quantPetisco1 = document.createElement('td'),
 		td_namePetisco1= document.createElement('td'),
 		td_precoPetisco1 = document.createElement('td');
-
+	tr1.setAttribute("id","tr1");
 	td_quantPetisco1.setAttribute("id", "quantPetisco1");
 	td_namePetisco1.setAttribute("id", "namePrato1");
 	td_precoPetisco1.setAttribute("id", "precoPetisco1");
 
-	trbody.appendChild(tr);
-	tr.appendChild(td_quantPetisco1);
-	tr.appendChild(td_namePetisco1);
-	tr.appendChild(td_precoPetisco1);
+	trbody.appendChild(tr1);
+	tr1.appendChild(td_quantPetisco1);
+	tr1.appendChild(td_namePetisco1);
+	tr1.appendChild(td_precoPetisco1);
 
 	var quantPetisco1 = document.getElementById('quantPetisco1');
 	quantPetisco1.innerText = value1;
@@ -99,6 +102,11 @@ function mandardados1(){
 td_quantPetisco1.style.textAlign="center";
 td_namePetisco1.style.textAlign="center";
 td_precoPetisco1.style.textAlign="center";
+
+if ($('tr1')[0]) {
+    $($('tr1')[0]).remove();
+}			
+}
 }
 
 function mandardados2(){
@@ -133,7 +141,9 @@ function mandardados2(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
 	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
@@ -163,8 +173,6 @@ function mandardados2(){
 	if (value27 == 0){var preco27 = 0;} else {preco27 = 6.00;}
 	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
 	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
-
-
 
 	var tr = document.createElement('tr'),
 		td_quantPetisco2 = document.createElement('td'),
@@ -203,7 +211,7 @@ function mandardados2(){
 td_quantPetisco2.style.textAlign="center";
 td_namePetisco2.style.textAlign="center";
 td_precoPetisco2.style.textAlign="center";
-}
+}}
 
 function mandardados3(){
 
@@ -237,7 +245,9 @@ function mandardados3(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
 	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
@@ -308,7 +318,7 @@ td_quantPetisco3.style.textAlign="center";
 td_namePetisco3.style.textAlign="center";
 td_precoPetisco3.style.textAlign="center";
 }
-
+}
 function mandardados4(){
 
 	var value1 = document.getElementById('quantPet1').value,
@@ -341,7 +351,9 @@ function mandardados4(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
 	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
@@ -410,7 +422,7 @@ td_quantPetisco4.style.textAlign="center";
 td_namePetisco4.style.textAlign="center";
 td_precoPetisco4.style.textAlign="center";
 }
-
+}
 function mandardados5(){
 
 	var value1 = document.getElementById('quantPet1').value,
@@ -443,7 +455,9 @@ function mandardados5(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
 	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
@@ -513,7 +527,7 @@ td_quantPetisco5.style.textAlign="center";
 td_namePetisco5.style.textAlign="center";
 td_precoPetisco5.style.textAlign="center";
 }
-
+}
 function mandardados6(){
 
 	var value1 = document.getElementById('quantPet1').value,
@@ -546,7 +560,9 @@ function mandardados6(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
 	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
@@ -576,7 +592,6 @@ function mandardados6(){
 	if (value27 == 0){var preco27 = 0;} else {preco27 = 6.00;}
 	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
 	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
-
 
 
 	var tr = document.createElement('tr'),
@@ -616,7 +631,7 @@ td_quantPetisco6.style.textAlign="center";
 td_namePetisco6.style.textAlign="center";
 td_precoPetisco6.style.textAlign="center";
 }
-
+}
 function mandardados7(){
 
 	var value1 = document.getElementById('quantPet1').value,
@@ -649,7 +664,9 @@ function mandardados7(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
 	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
@@ -719,7 +736,7 @@ td_quantPetisco7.style.textAlign="center";
 td_namePetisco7.style.textAlign="center";
 td_precoPetisco7.style.textAlign="center";
 }
-
+}
 function mandardados8(){
 
 	var value1 = document.getElementById('quantPet1').value,
@@ -752,7 +769,9 @@ function mandardados8(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
 	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
@@ -821,7 +840,7 @@ td_quantPetisco8.style.textAlign="center";
 td_namePetisco8.style.textAlign="center";
 td_precoPetisco8.style.textAlign="center";
 }
-
+}
 function mandardados9(){
 
 	var value1 = document.getElementById('quantPet1').value,
@@ -854,7 +873,9 @@ function mandardados9(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
 	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
@@ -923,7 +944,7 @@ td_quantPetisco9.style.textAlign="center";
 td_namePetisco9.style.textAlign="center";
 td_precoPetisco9.style.textAlign="center";
 }
-
+}
 function mandardados10(){
 
 	var value1 = document.getElementById('quantPet1').value,
@@ -956,7 +977,9 @@ function mandardados10(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
 	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
@@ -1026,7 +1049,7 @@ td_quantPetisco10.style.textAlign="center";
 td_namePetisco10.style.textAlign="center";
 td_precoPetisco10.style.textAlign="center";
 }
-
+}
 function mandardados11(){
 
 	var value1 = document.getElementById('quantPet1').value,
@@ -1059,7 +1082,9 @@ function mandardados11(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
 	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
@@ -1127,7 +1152,7 @@ td_quantPetisco11.style.textAlign="center";
 td_namePetisco11.style.textAlign="center";
 td_precoPetisco11.style.textAlign="center";
 }
-
+}
 function mandardados12(){
 
 	var value1 = document.getElementById('quantPet1').value,
@@ -1160,7 +1185,9 @@ function mandardados12(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
 	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
@@ -1229,7 +1256,7 @@ td_quantPetisco12.style.textAlign="center";
 td_namePetisco12.style.textAlign="center";
 td_precoPetisco12.style.textAlign="center";
 }
-
+}
 function mandardados13(){
 
 	var value1 = document.getElementById('quantPet1').value,
@@ -1262,7 +1289,9 @@ function mandardados13(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
 	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
@@ -1330,7 +1359,7 @@ td_quantPetisco13.style.textAlign="center";
 td_namePetisco13.style.textAlign="center";
 td_precoPetisco13.style.textAlign="center";
 }
-
+}
 function mandardados14(){
 
 	var value1 = document.getElementById('quantPet1').value,
@@ -1363,7 +1392,9 @@ function mandardados14(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
 	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
@@ -1431,7 +1462,7 @@ td_quantPetisco14.style.textAlign="center";
 td_namePetisco14.style.textAlign="center";
 td_precoPetisco14.style.textAlign="center";
 }
-
+}
 function mandardados15(){
 
 	var value1 = document.getElementById('quantPet1').value,
@@ -1464,7 +1495,9 @@ function mandardados15(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
 	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
@@ -1533,7 +1566,7 @@ td_quantPetisco15.style.textAlign="center";
 td_namePetisco15.style.textAlign="center";
 td_precoPetisco15.style.textAlign="center";
 }
-
+}
 function mandardados16(){
 
 	var value1 = document.getElementById('quantPet1').value,
@@ -1566,7 +1599,9 @@ function mandardados16(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
 	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
@@ -1634,7 +1669,7 @@ td_quantPetisco16.style.textAlign="center";
 td_namePetisco16.style.textAlign="center";
 td_precoPetisco16.style.textAlign="center";
 }
-
+}
 function mandardados17(){
 
 	var value1 = document.getElementById('quantPet1').value,
@@ -1667,7 +1702,9 @@ function mandardados17(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
 	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
@@ -1735,7 +1772,7 @@ td_quantPetisco17.style.textAlign="center";
 td_namePetisco17.style.textAlign="center";
 td_precoPetisco17.style.textAlign="center";
 }
-
+}
 function mandardados18(){
 
 	var value1 = document.getElementById('quantPet1').value,
@@ -1768,7 +1805,9 @@ function mandardados18(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
 	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
@@ -1836,7 +1875,7 @@ td_quantPetisco18.style.textAlign="center";
 td_namePetisco18.style.textAlign="center";
 td_precoPetisco18.style.textAlign="center";
 }
-
+}
 function mandardados19(){
 
 	var value1 = document.getElementById('quantPet1').value,
@@ -1869,7 +1908,9 @@ function mandardados19(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
 	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
@@ -1939,7 +1980,7 @@ td_quantPetisco19.style.textAlign="center";
 td_namePetisco19.style.textAlign="center";
 td_precoPetisco19.style.textAlign="center";
 }
-
+}
 function mandardados20(){
 
 	var value1 = document.getElementById('quantPet1').value,
@@ -1972,7 +2013,9 @@ function mandardados20(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
 	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
@@ -2040,7 +2083,7 @@ td_quantPetisco20.style.textAlign="center";
 td_namePetisco20.style.textAlign="center";
 td_precoPetisco20.style.textAlign="center";
 }
-
+}
 function mandardados21(){
 
 	var value1 = document.getElementById('quantPet1').value,
@@ -2073,7 +2116,9 @@ function mandardados21(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
 	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
@@ -2141,7 +2186,7 @@ td_quantPetisco21.style.textAlign="center";
 td_namePetisco21.style.textAlign="center";
 td_precoPetisco21.style.textAlign="center";
 }
-
+}
 function mandardados22(){
 
 	var value1 = document.getElementById('quantPet1').value,
@@ -2174,7 +2219,9 @@ function mandardados22(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
 	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
@@ -2242,7 +2289,7 @@ td_quantPetisco22.style.textAlign="center";
 td_namePetisco22.style.textAlign="center";
 td_precoPetisco22.style.textAlign="center";
 }
-
+}
 function mandardados23(){
 
 	var value1 = document.getElementById('quantPet1').value,
@@ -2275,7 +2322,9 @@ function mandardados23(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
 	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
@@ -2343,7 +2392,7 @@ td_quantPetisco23.style.textAlign="center";
 td_namePetisco23.style.textAlign="center";
 td_precoPetisco23.style.textAlign="center";
 }
-
+}
 function mandardados24(){
 
 	var value1 = document.getElementById('quantPet1').value,
@@ -2376,7 +2425,9 @@ function mandardados24(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
 	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
@@ -2445,7 +2496,7 @@ td_quantPetisco24.style.textAlign="center";
 td_namePetisco24.style.textAlign="center";
 td_precoPetisco24.style.textAlign="center";
 }
-
+}
 function mandardados25(){
 
 	var value1 = document.getElementById('quantPet1').value,
@@ -2478,7 +2529,9 @@ function mandardados25(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
 	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
@@ -2546,7 +2599,7 @@ td_quantPetisco25.style.textAlign="center";
 td_namePetisco25.style.textAlign="center";
 td_precoPetisco25.style.textAlign="center";
 }
-
+}
 function mandardados26(){
 
 	var value1 = document.getElementById('quantPet1').value,
@@ -2579,7 +2632,9 @@ function mandardados26(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
 	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
@@ -2647,7 +2702,7 @@ td_quantPetisco26.style.textAlign="center";
 td_namePetisco26.style.textAlign="center";
 td_precoPetisco26.style.textAlign="center";
 }
-
+}
 function mandardados27(){
 
 	var value1 = document.getElementById('quantPet1').value,
@@ -2680,7 +2735,9 @@ function mandardados27(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
 	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
@@ -2749,7 +2806,7 @@ td_quantPetisco27.style.textAlign="center";
 td_namePetisco27.style.textAlign="center";
 td_precoPetisco27.style.textAlign="center";
 }
-
+}
 function mandardados28(){
 
 	var value1 = document.getElementById('quantPet1').value,
@@ -2782,7 +2839,9 @@ function mandardados28(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
 	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
@@ -2850,7 +2909,7 @@ td_quantPetisco28.style.textAlign="center";
 td_namePetisco28.style.textAlign="center";
 td_precoPetisco28.style.textAlign="center";
 }
-
+}
 function mandardados29(){
 
 	var value1 = document.getElementById('quantPet1').value,
@@ -2883,7 +2942,9 @@ function mandardados29(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 || 
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 || 
+	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
 	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
@@ -2950,5 +3011,6 @@ document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 td_quantPetisco29.style.textAlign="center";
 td_namePetisco29.style.textAlign="center";
 td_precoPetisco29.style.textAlign="center";
+}
 }
 
