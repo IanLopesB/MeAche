@@ -117,7 +117,6 @@ span.psw {
   margin: 5% auto 15% auto; 
   border: 1px solid #888;
   width: 90%;
-
   border-radius : 10px;
 }
 
@@ -228,7 +227,7 @@ float: right;
 
 
 
-#quantPet1 {
+.numero {
 border: none;
 font-size: 17px;
 }
