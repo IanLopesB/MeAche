@@ -89,12 +89,6 @@ body {
   vertical-align: middle; 
 }
 
-.btn {
-
-  border: solid;
-  border-width: 0.5px;
-  border-color: #D3D3D3;
-}
 
 /*Span Pedido Parte 1*/
 
@@ -224,9 +218,18 @@ float: right;
   border-width: 1px;
   background-color: white;
 }
+.btn {
 
-#quant {
+  border: solid;
+  border-width: 0.5px;
+  border-color: #D3D3D3;
+}
+
+
+
+#quantPet1 {
 border: none;
+font-size: 17px;
 }
 
 #quantidade {
