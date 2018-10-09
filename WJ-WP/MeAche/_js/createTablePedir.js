@@ -90,10 +90,9 @@ function mandardados1(){
 		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
-	var mult = (preco1 * value1);
-
-	document.getElementById('precoPetisco1').innerHTML = mult.toFixed(2);
+	document.getElementById('precoPetisco1').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 
 td_quantPetisco1.style.textAlign="center";
 td_namePetisco1.style.textAlign="center";
@@ -193,10 +192,10 @@ function mandardados2(){
 		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
-	var mult = (preco2 * value2);
 
-	document.getElementById('precoPetisco2').innerHTML = mult.toFixed(2);
+	document.getElementById('precoPetisco2').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 
 td_quantPetisco2.style.textAlign="center";
 td_namePetisco2.style.textAlign="center";
@@ -296,11 +295,10 @@ function mandardados3(){
 		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
-	var mult = (preco3 * value3);
 
-
-	document.getElementById('precoPetisco3').innerHTML = mult.toFixed(2);
+	document.getElementById('precoPetisco3').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 
 td_quantPetisco3.style.textAlign="center";
 td_namePetisco3.style.textAlign="center";
@@ -399,10 +397,10 @@ function mandardados4(){
 		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
-	var mult = (preco4 * value4);
 
-	document.getElementById('precoPetisco4').innerHTML = mult.toFixed(2);
+	document.getElementById('precoPetisco4').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 
 td_quantPetisco4.style.textAlign="center";
 td_namePetisco4.style.textAlign="center";
@@ -502,10 +500,10 @@ function mandardados5(){
 		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));;
-	var mult = (preco5 * value5);
 
-	document.getElementById('precoPetisco5').innerHTML = mult.toFixed(2);
+	document.getElementById('precoPetisco5').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 
 td_quantPetisco5.style.textAlign="center";
 td_namePetisco5.style.textAlign="center";
@@ -605,10 +603,10 @@ function mandardados6(){
 		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
-	var mult = (preco6 * value6);
 
-	document.getElementById('precoPetisco6').innerHTML = mult.toFixed(2);
+	document.getElementById('precoPetisco6').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 
 td_quantPetisco6.style.textAlign="center";
 td_namePetisco6.style.textAlign="center";
@@ -708,10 +706,10 @@ function mandardados7(){
 		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
-	var mult = (preco7 * value7);
 
-	document.getElementById('precoPetisco7').innerHTML = mult.toFixed(2);
+	document.getElementById('precoPetisco7').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 
 td_quantPetisco7.style.textAlign="center";
 td_namePetisco7.style.textAlign="center";
@@ -810,10 +808,10 @@ function mandardados8(){
 		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
-	var mult = (preco8 * value8);
 
-	document.getElementById('precoPetisco8').innerHTML = mult.toFixed(2);
+	document.getElementById('precoPetisco8').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 
 td_quantPetisco8.style.textAlign="center";
 td_namePetisco8.style.textAlign="center";
@@ -912,10 +910,9 @@ function mandardados9(){
 		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
-	var mult = (preco9 * value9);
-
-	document.getElementById('precoPetisco9').innerHTML = mult.toFixed(2);
+	document.getElementById('precoPetisco9').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 
 td_quantPetisco9.style.textAlign="center";
 td_namePetisco9.style.textAlign="center";
@@ -1015,10 +1012,10 @@ function mandardados10(){
 		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
-	var mult = (preco10 * value10);
 
-	document.getElementById('precoPetisco10').innerHTML = mult.toFixed(2);
+	document.getElementById('precoPetisco10').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 
 td_quantPetisco10.style.textAlign="center";
 td_namePetisco10.style.textAlign="center";
@@ -1088,6 +1085,8 @@ function mandardados11(){
 	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
 	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
 
+
+
 	var tr = document.createElement('tr'),
 		td_quantPetisco11 = document.createElement('td'),
 		td_namePetisco11= document.createElement('td'),
@@ -1116,10 +1115,10 @@ function mandardados11(){
 		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
-	var mult = (preco11 * value11);
 
-	document.getElementById('precoPetisco11').innerHTML = mult.toFixed(2);
+	document.getElementById('precoPetisco11').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 
 td_quantPetisco11.style.textAlign="center";
 td_namePetisco11.style.textAlign="center";
@@ -1218,10 +1217,10 @@ function mandardados12(){
 		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
-	var mult = (preco12 * value12);
 
-	document.getElementById('precoPetisco12').innerHTML = mult.toFixed(2);
+	document.getElementById('precoPetisco12').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 
 td_quantPetisco12.style.textAlign="center";
 td_namePetisco12.style.textAlign="center";
@@ -1291,6 +1290,8 @@ function mandardados13(){
 	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
 	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
 
+
+
 	var tr = document.createElement('tr'),
 		td_quantPetisco13 = document.createElement('td'),
 		td_namePetisco13= document.createElement('td'),
@@ -1318,11 +1319,11 @@ function mandardados13(){
 		(preco17 * value17) + (preco18 * value18) + (preco19 * value19) + (preco20 * value20) +
 		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
-		(preco29 * value29));
-	var mult = (preco13 * value13);
+		(preco29 * value29));;
 
-	document.getElementById('precoPetisco13').innerHTML = mult.toFixed(2);
+	document.getElementById('precoPetisco13').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 
 td_quantPetisco13.style.textAlign="center";
 td_namePetisco13.style.textAlign="center";
@@ -1392,6 +1393,8 @@ function mandardados14(){
 	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
 	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
 
+
+
 	var tr = document.createElement('tr'),
 		td_quantPetisco14 = document.createElement('td'),
 		td_namePetisco14= document.createElement('td'),
@@ -1420,10 +1423,10 @@ function mandardados14(){
 		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
-	var mult = (preco14 * value14);
 
-	document.getElementById('precoPetisco14').innerHTML = mult.toFixed(2);
+	document.getElementById('precoPetisco14').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 
 td_quantPetisco14.style.textAlign="center";
 td_namePetisco14.style.textAlign="center";
@@ -1522,10 +1525,10 @@ function mandardados15(){
 		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
-	var mult = (preco15 * value15);
 
-	document.getElementById('precoPetisco15').innerHTML = mult.toFixed(2);
+	document.getElementById('precoPetisco15').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 
 td_quantPetisco15.style.textAlign="center";
 td_namePetisco15.style.textAlign="center";
@@ -1623,10 +1626,10 @@ function mandardados16(){
 		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
-	var mult = (preco16 * value16);
 
-	document.getElementById('precoPetisco16').innerHTML = mult.toFixed(2);
+	document.getElementById('precoPetisco16').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 
 td_quantPetisco16.style.textAlign="center";
 td_namePetisco16.style.textAlign="center";
@@ -1696,6 +1699,8 @@ function mandardados17(){
 	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
 	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
 
+
+
 	var tr = document.createElement('tr'),
 		td_quantPetisco17 = document.createElement('td'),
 		td_namePetisco17= document.createElement('td'),
@@ -1724,10 +1729,10 @@ function mandardados17(){
 		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
-	var mult = (preco17 * value17);
 
-	document.getElementById('precoPetisco17').innerHTML = mult.toFixed(2);
+	document.getElementById('precoPetisco17').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 
 td_quantPetisco17.style.textAlign="center";
 td_namePetisco17.style.textAlign="center";
@@ -1797,6 +1802,8 @@ function mandardados18(){
 	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
 	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
 
+
+
 	var tr = document.createElement('tr'),
 		td_quantPetisco18 = document.createElement('td'),
 		td_namePetisco18= document.createElement('td'),
@@ -1825,10 +1832,10 @@ function mandardados18(){
 		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
-	var mult = (preco18 * value18);
 
-	document.getElementById('precoPetisco18').innerHTML = mult.toFixed(2);
+	document.getElementById('precoPetisco18').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 
 td_quantPetisco18.style.textAlign="center";
 td_namePetisco18.style.textAlign="center";
@@ -1927,11 +1934,10 @@ function mandardados19(){
 		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
-	var mult = (preco19 * value19);
 
-
-	document.getElementById('precoPetisco19').innerHTML = mult.toFixed(2);
+	document.getElementById('precoPetisco19').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 
 td_quantPetisco19.style.textAlign="center";
 td_namePetisco19.style.textAlign="center";
@@ -2001,6 +2007,9 @@ function mandardados20(){
 	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
 	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
 
+
+
+
 	var tr = document.createElement('tr'),
 		td_quantPetisco20 = document.createElement('td'),
 		td_namePetisco20= document.createElement('td'),
@@ -2028,11 +2037,11 @@ function mandardados20(){
 		(preco17 * value17) + (preco18 * value18) + (preco19 * value19) + (preco20 * value20) +
 		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
-		(preco29 * value29));
-	var mult = (preco20 * value20);
+		(preco29 * value29));;
 
-	document.getElementById('precoPetisco20').innerHTML = mult.toFixed(2);
+	document.getElementById('precoPetisco20').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 
 td_quantPetisco20.style.textAlign="center";
 td_namePetisco20.style.textAlign="center";
@@ -2102,6 +2111,8 @@ function mandardados21(){
 	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
 	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
 
+
+
 	var tr = document.createElement('tr'),
 		td_quantPetisco21 = document.createElement('td'),
 		td_namePetisco21= document.createElement('td'),
@@ -2130,10 +2141,10 @@ function mandardados21(){
 		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
-	var mult = (preco21 * value21);
 
-	document.getElementById('precoPetisco21').innerHTML = mult.toFixed(2);
+	document.getElementById('precoPetisco21').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 
 td_quantPetisco21.style.textAlign="center";
 td_namePetisco21.style.textAlign="center";
@@ -2203,6 +2214,8 @@ function mandardados22(){
 	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
 	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
 
+
+
 	var tr = document.createElement('tr'),
 		td_quantPetisco22 = document.createElement('td'),
 		td_namePetisco22= document.createElement('td'),
@@ -2231,10 +2244,10 @@ function mandardados22(){
 		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
-	var mult = (preco22 * value22);
 
-	document.getElementById('precoPetisco22').innerHTML = mult.toFixed(2);
+	document.getElementById('precoPetisco22').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 
 td_quantPetisco22.style.textAlign="center";
 td_namePetisco22.style.textAlign="center";
@@ -2304,6 +2317,8 @@ function mandardados23(){
 	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
 	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
 
+
+
 	var tr = document.createElement('tr'),
 		td_quantPetisco23 = document.createElement('td'),
 		td_namePetisco23= document.createElement('td'),
@@ -2332,10 +2347,10 @@ function mandardados23(){
 		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
-	var mult = (preco23 * value23);
 
-	document.getElementById('precoPetisco23').innerHTML = mult.toFixed(2);
+	document.getElementById('precoPetisco23').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 
 td_quantPetisco23.style.textAlign="center";
 td_namePetisco23.style.textAlign="center";
@@ -2434,10 +2449,9 @@ function mandardados24(){
 		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
-	var mult = (preco24 * value24);
-
-	document.getElementById('precoPetisco24').innerHTML = mult.toFixed(2);
+	document.getElementById('precoPetisco24').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 
 td_quantPetisco24.style.textAlign="center";
 td_namePetisco24.style.textAlign="center";
@@ -2507,6 +2521,7 @@ function mandardados25(){
 	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
 	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
 
+
 	var tr = document.createElement('tr'),
 		td_quantPetisco25 = document.createElement('td'),
 		td_namePetisco25= document.createElement('td'),
@@ -2535,10 +2550,10 @@ function mandardados25(){
 		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
-	var mult = (preco25 * value25);
 
-	document.getElementById('precoPetisco25').innerHTML = mult.toFixed(2);
+	document.getElementById('precoPetisco25').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 
 td_quantPetisco25.style.textAlign="center";
 td_namePetisco25.style.textAlign="center";
@@ -2608,6 +2623,8 @@ function mandardados26(){
 	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
 	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
 
+
+
 	var tr = document.createElement('tr'),
 		td_quantPetisco26 = document.createElement('td'),
 		td_namePetisco26= document.createElement('td'),
@@ -2636,10 +2653,10 @@ function mandardados26(){
 		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
-	var mult = (preco26 * value26);
 
-	document.getElementById('precoPetisco26').innerHTML = mult.toFixed(2);
+	document.getElementById('precoPetisco26').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 
 td_quantPetisco26.style.textAlign="center";
 td_namePetisco26.style.textAlign="center";
@@ -2738,10 +2755,10 @@ function mandardados27(){
 		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
-	var mult = (preco27 * value27);
 
-	document.getElementById('precoPetisco27').innerHTML = mult.toFixed(2);
+	document.getElementById('precoPetisco27').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 
 td_quantPetisco27.style.textAlign="center";
 td_namePetisco27.style.textAlign="center";
@@ -2811,6 +2828,8 @@ function mandardados28(){
 	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
 	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
 
+
+
 	var tr = document.createElement('tr'),
 		td_quantPetisco28 = document.createElement('td'),
 		td_namePetisco28= document.createElement('td'),
@@ -2838,11 +2857,11 @@ function mandardados28(){
 		(preco17 * value17) + (preco18 * value18) + (preco19 * value19) + (preco20 * value20) +
 		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
-		(preco29 * value29));
-	var mult = (preco28 * value28);
+		(preco29 * value29));;
 
-	document.getElementById('precoPetisco28').innerHTML = mult.toFixed(2);
+	document.getElementById('precoPetisco28').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 
 td_quantPetisco28.style.textAlign="center";
 td_namePetisco28.style.textAlign="center";
@@ -2940,10 +2959,9 @@ function mandardados29(){
 		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
-	var mult = (preco29 * value29);
-
-	document.getElementById('precoPetisco29').innerHTML = mult.toFixed(2);
+	document.getElementById('precoPetisco29').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 
 td_quantPetisco29.style.textAlign="center";
 td_namePetisco29.style.textAlign="center";
