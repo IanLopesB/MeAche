@@ -53,8 +53,31 @@ function sendPedido() {
     // Espetos
     Boi: boi.value,
     Franbacon: franbacon.value,
+    Frango: frango.value,
     Coracao_de_Frango: coreFrango.value,
-    Porco: porco.value
+    Porco: porco.value,
+
+    // Sucos
+    Caja: caja.value,
+    Laranja: laranja.value,
+    Maracuja: maracuja.value,
+    Acerola: acerola.value,
+    Goiaba: goiaba.value,
+    Jarra_de_Suco: jarra.value,
+
+    // Refrigerantes
+    Coca_cola: coca_cola.value,
+    Guarana: guarana.value,
+    Fanta: fanta.value,
+    Agua_Mineral: agua_mineral.value,
+
+    // Cervejas
+    Skol: skol.value,
+    Itaipava: itaipava.value,
+    Original: original.value,
+    Burdweiser: burdweiser.value,
+    Eisenbahn: eisenbahn.value,
+    Heineken: heineken.value
   };
 
   // Petiscos
@@ -73,6 +96,27 @@ function sendPedido() {
   if (coreFrango.value == 0){delete pedido.Coracao_de_Frango};
   if (porco.value == 0){delete pedido.Porco};
 
+  // Sucos
+  if (caja.value == 0){delete pedido.Caja};
+  if (laranja.value == 0){delete pedido.Laranja};
+  if (maracuja.value == 0){delete pedido.Maracuja};
+  if (acerola.value == 0){delete pedido.Acerola};
+  if (goiaba.value == 0){delete pedido.Goiaba};
+  if (jarra.value == 0){delete pedido.Jarra_de_Suco};
+
+  // Refrigerantes
+  if (coca_cola.value == 0){delete pedido.Coca_cola};
+  if (guarana.value == 0){delete pedido.Guarana};
+  if (fanta.value == 0){delete pedido.Fanta};
+  if (agua_mineral.value == 0){delete pedido.Agua_Mineral};
+
+  // Cervejas
+  if (skol.value == 0){delete pedido.Skol};
+  if (itaipava.value == 0){delete pedido.Itaipava};
+  if (original.value == 0){delete pedido.Original};
+  if (burdweiser.value == 0){delete pedido.Burdweiser};
+  if (eisenbahn.value == 0){delete pedido.Eisenbahn};
+  if (heineken.value == 0){delete pedido.Heineken};
 
   return firebase.database().ref().child('pedidos').push(pedido);
 }
