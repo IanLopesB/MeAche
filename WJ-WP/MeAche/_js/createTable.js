@@ -98,96 +98,84 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
   // Petiscos
   if (item.val().Asinha_de_frango == undefined){
     delete petiscos_1;
-    delete li1;
-    li1.style.listStyle = "none";
+    li1.parentNode.removeChild(li1);
   }else {
     li1.appendChild(petiscos_1);
   }
 
   if (item.val().Camarao_Alho_Oleo == undefined){
     delete petiscos_2;
-    delete li2;
-    li2.style.listStyle = "none";
+    li2.parentNode.removeChild(li2);
   }else {
     li2.appendChild(petiscos_2);
   }
 
   if (item.val().Calabresa == undefined){
     delete petiscos_3;
-    delete li3;
-    li3.style.listStyle = "none";
+    li3.parentNode.removeChild(li3);
   }else {
     li3.appendChild(petiscos_3);
   }
 
   if (item.val().Carne_de_Sol == undefined){
     delete petiscos_4;
-    delete li4;
-    li4.style.listStyle = "none";
+    li4.parentNode.removeChild(li4);
   }else {
     li4.appendChild(petiscos_4);
   }
 
   if (item.val().Torresmo == undefined){
     delete petiscos_5;
-    delete li5;
-    li5.style.listStyle = "none";
+    li5.parentNode.removeChild(li5);
   }else {
     li5.appendChild(petiscos_5);
   }
 
   if (item.val().Batata_Frita == undefined){
     delete petiscos_6;
-    delete li6;
-    li6.style.listStyle = "none";
+    li6.parentNode.removeChild(li6);
   }else {
     li6.appendChild(petiscos_6);
   }
 
     if (item.val().Macaxeira == undefined){
     delete petiscos_7;
-    delete li7;
-    li7.style.listStyle = "none";
+    li7.parentNode.removeChild(li7);
   }else {
     li7.appendChild(petiscos_7);
   }
 
     if (item.val().Baiao_de_Dois == undefined){
     delete petiscos_8;
-    delete li8;
-    li8.style.listStyle = "none";
+    li8.parentNode.removeChild(li8);
   }else {
     li8.appendChild(petiscos_8);
   }
 
   if (item.val().Boi == undefined){
     delete espetos_1;
-    delete li9;
-    li9.style.listStyle = "none";
+    li9.parentNode.removeChild(li9);
   }else {
     li9.appendChild(espetos_1);
   }
 
   if (item.val().Franbacon == undefined){
     delete espetos_2;
-    delete li10;
-    li10.style.listStyle = "none";
+    li10.parentNode.removeChild(li10);
   }else {
     li10.appendChild(espetos_2);
   }
 
   if (item.val().Coracao_de_Frango == undefined){
     delete espetos_3;
-    delete li11;
-    li11.style.listStyle = "none";
+    li11.parentNode.removeChild(li11);
   }else {
     li11.appendChild(espetos_3);
   }
 
   if (item.val().Porco == undefined){
     delete espetos_4;
-    delete li12;
-    li12.style.listStyle = "none";
+    li12.parentNode.removeChild(li12);
   }else {
     li12.appendChild(espetos_4);
   }
