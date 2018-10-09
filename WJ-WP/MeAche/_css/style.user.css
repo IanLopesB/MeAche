@@ -74,7 +74,7 @@ body {
 /*Barra do Subtotal*/
 
 #subtotal {
-  background-color: #F7F2F7;
+  background-color: #2a2829;
   height: 70px;
 }
 
@@ -113,7 +113,7 @@ span.psw {
 }
 
 .fundo-span-conteudo {
-  background-color: #462B2E;
+  background-color: #2a2829;
   margin: 5% auto 15% auto; 
   border: 1px solid #888;
   width: 90%;
