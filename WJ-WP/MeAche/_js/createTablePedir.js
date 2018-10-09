@@ -168,20 +168,20 @@ function mandardados2(){
 		td_namePetisco2= document.createElement('td'),
 		td_precoPetisco2 = document.createElement('td');
 
-	td_quantPetisco2.setAttribute("id", "quantPetisco");
-	td_namePetisco2.setAttribute("id", "namePrato");
-	td_precoPetisco2.setAttribute("id", "precoPetisco");
+	td_quantPetisco2.setAttribute("id", "quantPetisco2");
+	td_namePetisco2.setAttribute("id", "namePrato2");
+	td_precoPetisco2.setAttribute("id", "precoPetisco2");
 
 	trbody.appendChild(tr);
 	tr.appendChild(td_quantPetisco2);
 	tr.appendChild(td_namePetisco2);
 	tr.appendChild(td_precoPetisco2);
 
-	var quantPetisco2 = document.getElementById('quantPetisco');
+	var quantPetisco2 = document.getElementById('quantPetisco2');
 	quantPetisco2.innerText = value2;
 
 	var camarao= document.getElementById('camarao').firstChild.innerHTML;
-	document.getElementById('namePrato').innerHTML = camarao;
+	document.getElementById('namePrato2').innerHTML = camarao;
 
 	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
 		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
@@ -192,7 +192,7 @@ function mandardados2(){
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
 
-	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('precoPetisco2').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
 
 td_quantPetisco2.style.textAlign="center";
@@ -270,20 +270,20 @@ function mandardados3(){
 		td_namePetisco3= document.createElement('td'),
 		td_precoPetisco3 = document.createElement('td');
 
-	td_quantPetisco3.setAttribute("id", "quantPetisco");
-	td_namePetisco3.setAttribute("id", "namePrato");
-	td_precoPetisco3.setAttribute("id", "precoPetisco");
+	td_quantPetisco3.setAttribute("id", "quantPetisco3");
+	td_namePetisco3.setAttribute("id", "namePrato3");
+	td_precoPetisco3.setAttribute("id", "precoPetisco3");
 
 	trbody.appendChild(tr);
 	tr.appendChild(td_quantPetisco3);
 	tr.appendChild(td_namePetisco3);
 	tr.appendChild(td_precoPetisco3);
 
-	var quantPetisco3 = document.getElementById('quantPetisco');
+	var quantPetisco3 = document.getElementById('quantPetisco3');
 	quantPetisco3.innerText = value3;
 
 	var calabresa = document.getElementById('calabresa').firstChild.innerHTML;
-	document.getElementById('namePrato').innerHTML = calabresa;
+	document.getElementById('namePrato3').innerHTML = calabresa;
 
 	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
 		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
@@ -294,7 +294,7 @@ function mandardados3(){
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
 
-	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('precoPetisco3').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
 
 td_quantPetisco3.style.textAlign="center";
@@ -371,20 +371,20 @@ function mandardados4(){
 		td_namePetisco4= document.createElement('td'),
 		td_precoPetisco4 = document.createElement('td');
 
-	td_quantPetisco4.setAttribute("id", "quantPetisco");
-	td_namePetisco4.setAttribute("id", "namePrato");
-	td_precoPetisco4.setAttribute("id", "precoPetisco");
+	td_quantPetisco4.setAttribute("id", "quantPetisco4");
+	td_namePetisco4.setAttribute("id", "namePrato4");
+	td_precoPetisco4.setAttribute("id", "precoPetisco4");
 
 	trbody.appendChild(tr);
 	tr.appendChild(td_quantPetisco4);
 	tr.appendChild(td_namePetisco4);
 	tr.appendChild(td_precoPetisco4);
 
-	var quantPetisco4 = document.getElementById('quantPetisco');
+	var quantPetisco4 = document.getElementById('quantPetisco4');
 	quantPetisco4.innerText = value4;
 
 	var carneSol= document.getElementById('carneSol').firstChild.innerHTML;
-	document.getElementById('namePrato').innerHTML = carneSol;
+	document.getElementById('namePrato4').innerHTML = carneSol;
 
 	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
 		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
@@ -395,7 +395,7 @@ function mandardados4(){
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
 
-	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('precoPetisco4').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
 
 td_quantPetisco4.style.textAlign="center";
@@ -473,20 +473,20 @@ function mandardados5(){
 		td_namePetisco5= document.createElement('td'),
 		td_precoPetisco5 = document.createElement('td');
 
-	td_quantPetisco5.setAttribute("id", "quantPetisco");
-	td_namePetisco5.setAttribute("id", "namePrato");
-	td_precoPetisco5.setAttribute("id", "precoPetisco");
+	td_quantPetisco5.setAttribute("id", "quantPetisco5");
+	td_namePetisco5.setAttribute("id", "namePrato5");
+	td_precoPetisco5.setAttribute("id", "precoPetisco5");
 
 	trbody.appendChild(tr);
 	tr.appendChild(td_quantPetisco5);
 	tr.appendChild(td_namePetisco5);
 	tr.appendChild(td_precoPetisco5);
 
-	var quantPetisco5 = document.getElementById('quantPetisco');
+	var quantPetisco5 = document.getElementById('quantPetisco5');
 	quantPetisco5.innerText = value5;
 
 	var torresmo = document.getElementById('torresmo').firstChild.innerHTML;
-	document.getElementById('namePrato').innerHTML = torresmo;
+	document.getElementById('namePrato5').innerHTML = torresmo;
 
 	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
 		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
@@ -497,7 +497,7 @@ function mandardados5(){
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));;
 
-	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('precoPetisco5').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
 
 td_quantPetisco5.style.textAlign="center";
@@ -575,20 +575,20 @@ function mandardados6(){
 		td_namePetisco6= document.createElement('td'),
 		td_precoPetisco6 = document.createElement('td');
 
-	td_quantPetisco6.setAttribute("id", "quantPetisco");
-	td_namePetisco6.setAttribute("id", "namePrato");
-	td_precoPetisco6.setAttribute("id", "precoPetisco");
+	td_quantPetisco6.setAttribute("id", "quantPetisco6");
+	td_namePetisco6.setAttribute("id", "namePrato6");
+	td_precoPetisco6.setAttribute("id", "precoPetisco6");
 
 	trbody.appendChild(tr);
 	tr.appendChild(td_quantPetisco6);
 	tr.appendChild(td_namePetisco6);
 	tr.appendChild(td_precoPetisco6);
 
-	var quantPetisco6 = document.getElementById('quantPetisco');
+	var quantPetisco6 = document.getElementById('quantPetisco6');
 	quantPetisco6.innerText = value6;
 
 	var batata = document.getElementById('batata').firstChild.innerHTML;
-	document.getElementById('namePrato').innerHTML = batata;
+	document.getElementById('namePrato6').innerHTML = batata;
 
 	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
 		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
@@ -599,7 +599,7 @@ function mandardados6(){
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
 
-	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('precoPetisco6').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
 
 td_quantPetisco6.style.textAlign="center";
@@ -677,20 +677,20 @@ function mandardados7(){
 		td_namePetisco7= document.createElement('td'),
 		td_precoPetisco7 = document.createElement('td');
 
-	td_quantPetisco7.setAttribute("id", "quantPetisco");
-	td_namePetisco7.setAttribute("id", "namePrato");
-	td_precoPetisco7.setAttribute("id", "precoPetisco");
+	td_quantPetisco7.setAttribute("id", "quantPetisco7");
+	td_namePetisco7.setAttribute("id", "namePrato7");
+	td_precoPetisco7.setAttribute("id", "precoPetisco7");
 
 	trbody.appendChild(tr);
 	tr.appendChild(td_quantPetisco7);
 	tr.appendChild(td_namePetisco7);
 	tr.appendChild(td_precoPetisco7);
 
-	var quantPetisco7 = document.getElementById('quantPetisco');
+	var quantPetisco7 = document.getElementById('quantPetisco7');
 	quantPetisco7.innerText = value7;
 
 	var batata = document.getElementById('batata').firstChild.innerHTML;
-	document.getElementById('namePrato').innerHTML = batata;
+	document.getElementById('namePrato7').innerHTML = batata;
 
 	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
 		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
@@ -701,7 +701,7 @@ function mandardados7(){
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
 
-	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('precoPetisco7').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
 
 td_quantPetisco7.style.textAlign="center";
@@ -778,20 +778,20 @@ function mandardados8(){
 		td_namePetisco8= document.createElement('td'),
 		td_precoPetisco8 = document.createElement('td');
 
-	td_quantPetisco8.setAttribute("id", "quantPetisco");
-	td_namePetisco8.setAttribute("id", "namePrato");
-	td_precoPetisco8.setAttribute("id", "precoPetisco");
+	td_quantPetisco8.setAttribute("id", "quantPetisco8");
+	td_namePetisco8.setAttribute("id", "namePrato8");
+	td_precoPetisco8.setAttribute("id", "precoPetisco8");
 
 	trbody.appendChild(tr);
 	tr.appendChild(td_quantPetisco8);
 	tr.appendChild(td_namePetisco8);
 	tr.appendChild(td_precoPetisco8);
 
-	var quantPetisco8 = document.getElementById('quantPetisco');
+	var quantPetisco8 = document.getElementById('quantPetisco8');
 	quantPetisco8.innerText = value8;
 
 	var batata = document.getElementById('batata').firstChild.innerHTML;
-	document.getElementById('namePrato').innerHTML = batata;
+	document.getElementById('namePrato8').innerHTML = batata;
 
 	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
 		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
@@ -802,7 +802,7 @@ function mandardados8(){
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
 
-	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('precoPetisco8').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
 
 td_quantPetisco8.style.textAlign="center";
@@ -879,20 +879,20 @@ function mandardados9(){
 		td_namePetisco9= document.createElement('td'),
 		td_precoPetisco9 = document.createElement('td');
 
-	td_quantPetisco9.setAttribute("id", "quantPetisco");
-	td_namePetisco9.setAttribute("id", "namePrato");
-	td_precoPetisco9.setAttribute("id", "precoPetisco");
+	td_quantPetisco9.setAttribute("id", "quantPetisco9");
+	td_namePetisco9.setAttribute("id", "namePrato9");
+	td_precoPetisco9.setAttribute("id", "precoPetisco9");
 
 	trbody.appendChild(tr);
 	tr.appendChild(td_quantPetisco9);
 	tr.appendChild(td_namePetisco9);
 	tr.appendChild(td_precoPetisco9);
 
-	var quantPetisco9 = document.getElementById('quantPetisco');
+	var quantPetisco9 = document.getElementById('quantPetisco9');
 	quantPetisco9.innerText = value9;
 
 	var boi = document.getElementById('boi').firstChild.innerHTML;
-	document.getElementById('namePrato').innerHTML = boi;
+	document.getElementById('namePrato9').innerHTML = boi;
 
 	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
 		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
@@ -902,7 +902,7 @@ function mandardados9(){
 		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
-	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('precoPetisco9').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
 
 td_quantPetisco9.style.textAlign="center";
@@ -980,20 +980,20 @@ function mandardados10(){
 		td_namePetisco10= document.createElement('td'),
 		td_precoPetisco10 = document.createElement('td');
 
-	td_quantPetisco10.setAttribute("id", "quantPetisco");
-	td_namePetisco10.setAttribute("id", "namePrato");
-	td_precoPetisco10.setAttribute("id", "precoPetisco");
+	td_quantPetisco10.setAttribute("id", "quantPetisco10");
+	td_namePetisco10.setAttribute("id", "namePrato10");
+	td_precoPetisco10.setAttribute("id", "precoPetisco10");
 
 	trbody.appendChild(tr);
 	tr.appendChild(td_quantPetisco10);
 	tr.appendChild(td_namePetisco10);
 	tr.appendChild(td_precoPetisco10);
 
-	var quantPetisco10 = document.getElementById('quantPetisco');
+	var quantPetisco10 = document.getElementById('quantPetisco10');
 	quantPetisco10.innerText = value10;
 
 	var franbacon= document.getElementById('franbacon').firstChild.innerHTML;
-	document.getElementById('namePrato').innerHTML = franbacon;
+	document.getElementById('namePrato10').innerHTML = franbacon;
 
 	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
 		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
@@ -1004,7 +1004,7 @@ function mandardados10(){
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
 
-	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('precoPetisco10').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
 
 td_quantPetisco10.style.textAlign="center";
@@ -1082,20 +1082,20 @@ function mandardados11(){
 		td_namePetisco11= document.createElement('td'),
 		td_precoPetisco11 = document.createElement('td');
 
-	td_quantPetisco11.setAttribute("id", "quantPetisco");
-	td_namePetisco11.setAttribute("id", "namePrato");
-	td_precoPetisco11.setAttribute("id", "precoPetisco");
+	td_quantPetisco11.setAttribute("id", "quantPetisco11");
+	td_namePetisco11.setAttribute("id", "namePrato11");
+	td_precoPetisco11.setAttribute("id", "precoPetisco11");
 
 	trbody.appendChild(tr);
 	tr.appendChild(td_quantPetisco11);
 	tr.appendChild(td_namePetisco11);
 	tr.appendChild(td_precoPetisco11);
 
-	var quantPetisco11 = document.getElementById('quantPetisco');
+	var quantPetisco11 = document.getElementById('quantPetisco11');
 	quantPetisco11.innerText = value11;
 
 	var frango = document.getElementById('frango').firstChild.innerHTML;
-	document.getElementById('namePrato').innerHTML = frango;
+	document.getElementById('namePrato11').innerHTML = frango;
 
 	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
 		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
@@ -1106,7 +1106,7 @@ function mandardados11(){
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
 
-	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('precoPetisco11').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
 
 td_quantPetisco11.style.textAlign="center";
@@ -1183,20 +1183,20 @@ function mandardados12(){
 		td_namePetisco12= document.createElement('td'),
 		td_precoPetisco12 = document.createElement('td');
 
-	td_quantPetisco12.setAttribute("id", "quantPetisco");
-	td_namePetisco12.setAttribute("id", "namePrato");
-	td_precoPetisco12.setAttribute("id", "precoPetisco");
+	td_quantPetisco12.setAttribute("id", "quantPetisco12");
+	td_namePetisco12.setAttribute("id", "namePrato12");
+	td_precoPetisco12.setAttribute("id", "precoPetisco12");
 
 	trbody.appendChild(tr);
 	tr.appendChild(td_quantPetisco12);
 	tr.appendChild(td_namePetisco12);
 	tr.appendChild(td_precoPetisco12);
 
-	var quantPetisco12 = document.getElementById('quantPetisco');
+	var quantPetisco12 = document.getElementById('quantPetisco12');
 	quantPetisco12.innerText = value12;
 
 	var coracaoDeFrango= document.getElementById('coracaoDeFrango').firstChild.innerHTML;
-	document.getElementById('namePrato').innerHTML = coracaoDeFrango;
+	document.getElementById('namePrato12').innerHTML = coracaoDeFrango;
 
 	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
 		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
@@ -1207,7 +1207,7 @@ function mandardados12(){
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
 
-	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('precoPetisco12').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
 
 td_quantPetisco12.style.textAlign="center";
@@ -1285,20 +1285,20 @@ function mandardados13(){
 		td_namePetisco13= document.createElement('td'),
 		td_precoPetisco13 = document.createElement('td');
 
-	td_quantPetisco13.setAttribute("id", "quantPetisco");
-	td_namePetisco13.setAttribute("id", "namePrato");
-	td_precoPetisco13.setAttribute("id", "precoPetisco");
+	td_quantPetisco13.setAttribute("id", "quantPetisco13");
+	td_namePetisco13.setAttribute("id", "namePrato13");
+	td_precoPetisco13.setAttribute("id", "precoPetisco13");
 
 	trbody.appendChild(tr);
 	tr.appendChild(td_quantPetisco13);
 	tr.appendChild(td_namePetisco13);
 	tr.appendChild(td_precoPetisco13);
 
-	var quantPetisco13 = document.getElementById('quantPetisco');
+	var quantPetisco13 = document.getElementById('quantPetisco13');
 	quantPetisco13.innerText = value13;
 
 	var porco = document.getElementById('porco').firstChild.innerHTML;
-	document.getElementById('namePrato').innerHTML = porco;
+	document.getElementById('namePrato13').innerHTML = porco;
 
 	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
 		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
@@ -1309,7 +1309,7 @@ function mandardados13(){
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));;
 
-	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('precoPetisco13').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
 
 td_quantPetisco13.style.textAlign="center";
@@ -1387,20 +1387,20 @@ function mandardados14(){
 		td_namePetisco14= document.createElement('td'),
 		td_precoPetisco14 = document.createElement('td');
 
-	td_quantPetisco14.setAttribute("id", "quantPetisco");
-	td_namePetisco14.setAttribute("id", "namePrato");
-	td_precoPetisco14.setAttribute("id", "precoPetisco");
+	td_quantPetisco14.setAttribute("id", "quantPetisco14");
+	td_namePetisco14.setAttribute("id", "namePrato14");
+	td_precoPetisco14.setAttribute("id", "precoPetisco14");
 
 	trbody.appendChild(tr);
 	tr.appendChild(td_quantPetisco14);
 	tr.appendChild(td_namePetisco14);
 	tr.appendChild(td_precoPetisco14);
 
-	var quantPetisco14 = document.getElementById('quantPetisco');
+	var quantPetisco14 = document.getElementById('quantPetisco14');
 	quantPetisco14.innerText = value14;
 
 	var caja = document.getElementById('caja').firstChild.innerHTML;
-	document.getElementById('namePrato').innerHTML = caja;
+	document.getElementById('namePrato14').innerHTML = caja;
 
 	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
 		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
@@ -1411,7 +1411,7 @@ function mandardados14(){
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
 
-	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('precoPetisco14').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
 
 td_quantPetisco14.style.textAlign="center";
@@ -1488,20 +1488,20 @@ function mandardados15(){
 		td_namePetisco15= document.createElement('td'),
 		td_precoPetisco15 = document.createElement('td');
 
-	td_quantPetisco15.setAttribute("id", "quantPetisco");
-	td_namePetisco15.setAttribute("id", "namePrato");
-	td_precoPetisco15.setAttribute("id", "precoPetisco");
+	td_quantPetisco15.setAttribute("id", "quantPetisco15");
+	td_namePetisco15.setAttribute("id", "namePrato15");
+	td_precoPetisco15.setAttribute("id", "precoPetisco15");
 
 	trbody.appendChild(tr);
 	tr.appendChild(td_quantPetisco15);
 	tr.appendChild(td_namePetisco15);
 	tr.appendChild(td_precoPetisco15);
 
-	var quantPetisco15 = document.getElementById('quantPetisco');
+	var quantPetisco15 = document.getElementById('quantPetisco15');
 	quantPetisco15.innerText = value15;
 
 	var laranja = document.getElementById('laranja').firstChild.innerHTML;
-	document.getElementById('namePrato').innerHTML = laranja;
+	document.getElementById('namePrato15').innerHTML = laranja;
 
 	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
 		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
@@ -1512,7 +1512,7 @@ function mandardados15(){
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
 
-	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('precoPetisco15').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
 
 td_quantPetisco15.style.textAlign="center";
@@ -1588,20 +1588,20 @@ function mandardados16(){
 		td_namePetisco16= document.createElement('td'),
 		td_precoPetisco16 = document.createElement('td');
 
-	td_quantPetisco16.setAttribute("id", "quantPetisco");
-	td_namePetisco16.setAttribute("id", "namePrato");
-	td_precoPetisco16.setAttribute("id", "precoPetisco");
+	td_quantPetisco16.setAttribute("id", "quantPetisco16");
+	td_namePetisco16.setAttribute("id", "namePrato16");
+	td_precoPetisco16.setAttribute("id", "precoPetisco16");
 
 	trbody.appendChild(tr);
 	tr.appendChild(td_quantPetisco16);
 	tr.appendChild(td_namePetisco16);
 	tr.appendChild(td_precoPetisco16);
 
-	var quantPetisco16 = document.getElementById('quantPetisco');
+	var quantPetisco16 = document.getElementById('quantPetisco16');
 	quantPetisco16.innerText = value16;
 
 	var maracuja = document.getElementById('maracuja').firstChild.innerHTML;
-	document.getElementById('namePrato').innerHTML = maracuja;
+	document.getElementById('namePrato16').innerHTML = maracuja;
 
 	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
 		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
@@ -1612,7 +1612,7 @@ function mandardados16(){
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
 
-	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('precoPetisco16').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
 
 td_quantPetisco16.style.textAlign="center";
@@ -1690,20 +1690,20 @@ function mandardados17(){
 		td_namePetisco17= document.createElement('td'),
 		td_precoPetisco17 = document.createElement('td');
 
-	td_quantPetisco17.setAttribute("id", "quantPetisco");
-	td_namePetisco17.setAttribute("id", "namePrato");
-	td_precoPetisco17.setAttribute("id", "precoPetisco");
+	td_quantPetisco17.setAttribute("id", "quantPetisco17");
+	td_namePetisco17.setAttribute("id", "namePrato17");
+	td_precoPetisco17.setAttribute("id", "precoPetisco17");
 
 	trbody.appendChild(tr);
 	tr.appendChild(td_quantPetisco17);
 	tr.appendChild(td_namePetisco17);
 	tr.appendChild(td_precoPetisco17);
 
-	var quantPetisco17 = document.getElementById('quantPetisco');
+	var quantPetisco17 = document.getElementById('quantPetisco17');
 	quantPetisco17.innerText = value17;
 
 	var acerola= document.getElementById('acerola').firstChild.innerHTML;
-	document.getElementById('namePrato').innerHTML = acerola;
+	document.getElementById('namePrato17').innerHTML = acerola;
 
 	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
 		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
@@ -1714,7 +1714,7 @@ function mandardados17(){
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
 
-	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('precoPetisco17').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
 
 td_quantPetisco17.style.textAlign="center";
@@ -1792,20 +1792,20 @@ function mandardados18(){
 		td_namePetisco18= document.createElement('td'),
 		td_precoPetisco18 = document.createElement('td');
 
-	td_quantPetisco18.setAttribute("id", "quantPetisco");
-	td_namePetisco18.setAttribute("id", "namePrato");
-	td_precoPetisco18.setAttribute("id", "precoPetisco");
+	td_quantPetisco18.setAttribute("id", "quantPetisco18");
+	td_namePetisco18.setAttribute("id", "namePrato18");
+	td_precoPetisco18.setAttribute("id", "precoPetisco18");
 
 	trbody.appendChild(tr);
 	tr.appendChild(td_quantPetisco18);
 	tr.appendChild(td_namePetisco18);
 	tr.appendChild(td_precoPetisco18);
 
-	var quantPetisco18 = document.getElementById('quantPetisco');
+	var quantPetisco18 = document.getElementById('quantPetisco18');
 	quantPetisco18.innerText = value18;
 
 	var goiaba = document.getElementById('goiaba').firstChild.innerHTML;
-	document.getElementById('namePrato').innerHTML = goiaba;
+	document.getElementById('namePrato18').innerHTML = goiaba;
 
 	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
 		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
@@ -1816,7 +1816,7 @@ function mandardados18(){
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
 
-	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('precoPetisco18').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
 
 td_quantPetisco18.style.textAlign="center";
@@ -1893,20 +1893,20 @@ function mandardados19(){
 		td_namePetisco19= document.createElement('td'),
 		td_precoPetisco19 = document.createElement('td');
 
-	td_quantPetisco19.setAttribute("id", "quantPetisco");
-	td_namePetisco19.setAttribute("id", "namePrato");
-	td_precoPetisco19.setAttribute("id", "precoPetisco");
+	td_quantPetisco19.setAttribute("id", "quantPetisco19");
+	td_namePetisco19.setAttribute("id", "namePrato19");
+	td_precoPetisco19.setAttribute("id", "precoPetisco19");
 
 	trbody.appendChild(tr);
 	tr.appendChild(td_quantPetisco19);
 	tr.appendChild(td_namePetisco19);
 	tr.appendChild(td_precoPetisco19);
 
-	var quantPetisco19 = document.getElementById('quantPetisco');
+	var quantPetisco19 = document.getElementById('quantPetisco19');
 	quantPetisco19.innerText = value19;
 
 	var jarra= document.getElementById('jarra').firstChild.innerHTML;
-	document.getElementById('namePrato').innerHTML = jarra;
+	document.getElementById('namePrato19').innerHTML = jarra;
 
 	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
 		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
@@ -1917,7 +1917,7 @@ function mandardados19(){
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
 
-	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('precoPetisco19').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
 
 td_quantPetisco19.style.textAlign="center";
@@ -1996,20 +1996,20 @@ function mandardados20(){
 		td_namePetisco20= document.createElement('td'),
 		td_precoPetisco20 = document.createElement('td');
 
-	td_quantPetisco20.setAttribute("id", "quantPetisco");
-	td_namePetisco20.setAttribute("id", "namePrato");
-	td_precoPetisco20.setAttribute("id", "precoPetisco");
+	td_quantPetisco20.setAttribute("id", "quantPetisco20");
+	td_namePetisco20.setAttribute("id", "namePrato20");
+	td_precoPetisco20.setAttribute("id", "precoPetisco20");
 
 	trbody.appendChild(tr);
 	tr.appendChild(td_quantPetisco20);
 	tr.appendChild(td_namePetisco20);
 	tr.appendChild(td_precoPetisco20);
 
-	var quantPetisco20 = document.getElementById('quantPetisco');
+	var quantPetisco20 = document.getElementById('quantPetisco20');
 	quantPetisco20.innerText = value20;
 
 	var cocaCola = document.getElementById('cocaCola').firstChild.innerHTML;
-	document.getElementById('namePrato').innerHTML = cocaCola;
+	document.getElementById('namePrato20').innerHTML = cocaCola;
 
 	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
 		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
@@ -2020,7 +2020,7 @@ function mandardados20(){
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));;
 
-	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('precoPetisco20').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
 
 td_quantPetisco20.style.textAlign="center";
@@ -2098,20 +2098,20 @@ function mandardados21(){
 		td_namePetisco21= document.createElement('td'),
 		td_precoPetisco21 = document.createElement('td');
 
-	td_quantPetisco21.setAttribute("id", "quantPetisco");
-	td_namePetisco21.setAttribute("id", "namePrato");
-	td_precoPetisco21.setAttribute("id", "precoPetisco");
+	td_quantPetisco21.setAttribute("id", "quantPetisco21");
+	td_namePetisco21.setAttribute("id", "namePrato21");
+	td_precoPetisco21.setAttribute("id", "precoPetisco21");
 
 	trbody.appendChild(tr);
 	tr.appendChild(td_quantPetisco21);
 	tr.appendChild(td_namePetisco21);
 	tr.appendChild(td_precoPetisco21);
 
-	var quantPetisco21 = document.getElementById('quantPetisco');
+	var quantPetisco21 = document.getElementById('quantPetisco21');
 	quantPetisco21.innerText = value21;
 
 	var guarana = document.getElementById('guarana').firstChild.innerHTML;
-	document.getElementById('namePrato').innerHTML = guarana;
+	document.getElementById('namePrato21').innerHTML = guarana;
 
 	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
 		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
@@ -2122,7 +2122,7 @@ function mandardados21(){
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
 
-	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('precoPetisco21').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
 
 td_quantPetisco21.style.textAlign="center";
@@ -2200,20 +2200,20 @@ function mandardados22(){
 		td_namePetisco22= document.createElement('td'),
 		td_precoPetisco22 = document.createElement('td');
 
-	td_quantPetisco22.setAttribute("id", "quantPetisco");
-	td_namePetisco22.setAttribute("id", "namePrato");
-	td_precoPetisco22.setAttribute("id", "precoPetisco");
+	td_quantPetisco22.setAttribute("id", "quantPetisco22");
+	td_namePetisco22.setAttribute("id", "namePrato22");
+	td_precoPetisco22.setAttribute("id", "precoPetisco22");
 
 	trbody.appendChild(tr);
 	tr.appendChild(td_quantPetisco22);
 	tr.appendChild(td_namePetisco22);
 	tr.appendChild(td_precoPetisco22);
 
-	var quantPetisco22 = document.getElementById('quantPetisco');
+	var quantPetisco22 = document.getElementById('quantPetisco22');
 	quantPetisco22.innerText = value22;
 
 	var fanta = document.getElementById('fanta').firstChild.innerHTML;
-	document.getElementById('namePrato').innerHTML = fanta;
+	document.getElementById('namePrato22').innerHTML = fanta;
 
 	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
 		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
@@ -2224,7 +2224,7 @@ function mandardados22(){
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
 
-	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('precoPetisco22').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
 
 td_quantPetisco22.style.textAlign="center";
@@ -2302,20 +2302,20 @@ function mandardados23(){
 		td_namePetisco23= document.createElement('td'),
 		td_precoPetisco23 = document.createElement('td');
 
-	td_quantPetisco23.setAttribute("id", "quantPetisco");
-	td_namePetisco23.setAttribute("id", "namePrato");
-	td_precoPetisco23.setAttribute("id", "precoPetisco");
+	td_quantPetisco23.setAttribute("id", "quantPetisco23");
+	td_namePetisco23.setAttribute("id", "namePrato23");
+	td_precoPetisco23.setAttribute("id", "precoPetisco23");
 
 	trbody.appendChild(tr);
 	tr.appendChild(td_quantPetisco23);
 	tr.appendChild(td_namePetisco23);
 	tr.appendChild(td_precoPetisco23);
 
-	var quantPetisco23 = document.getElementById('quantPetisco');
+	var quantPetisco23 = document.getElementById('quantPetisco23');
 	quantPetisco23.innerText = value23;
 
 	var aguaMineral = document.getElementById('aguaMineral').firstChild.innerHTML;
-	document.getElementById('namePrato').innerHTML = aguaMineral;
+	document.getElementById('namePrato23').innerHTML = aguaMineral;
 
 	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
 		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
@@ -2326,7 +2326,7 @@ function mandardados23(){
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
 
-	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('precoPetisco23').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
 
 td_quantPetisco23.style.textAlign="center";
@@ -2403,20 +2403,20 @@ function mandardados24(){
 		td_namePetisco24= document.createElement('td'),
 		td_precoPetisco24 = document.createElement('td');
 
-	td_quantPetisco24.setAttribute("id", "quantPetisco");
-	td_namePetisco24.setAttribute("id", "namePrato");
-	td_precoPetisco24.setAttribute("id", "precoPetisco");
+	td_quantPetisco24.setAttribute("id", "quantPetisco24");
+	td_namePetisco24.setAttribute("id", "namePrato24");
+	td_precoPetisco24.setAttribute("id", "precoPetisco24");
 
 	trbody.appendChild(tr);
 	tr.appendChild(td_quantPetisco24);
 	tr.appendChild(td_namePetisco24);
 	tr.appendChild(td_precoPetisco24);
 
-	var quantPetisco24 = document.getElementById('quantPetisco');
+	var quantPetisco24 = document.getElementById('quantPetisco24');
 	quantPetisco24.innerText = value24;
 
 	var skol = document.getElementById('skol').firstChild.innerHTML;
-	document.getElementById('namePrato').innerHTML = skol;
+	document.getElementById('namePrato24').innerHTML = skol;
 
 	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
 		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
@@ -2426,7 +2426,7 @@ function mandardados24(){
 		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
-	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('precoPetisco24').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
 
 td_quantPetisco24.style.textAlign="center";
@@ -2503,20 +2503,20 @@ function mandardados25(){
 		td_namePetisco25= document.createElement('td'),
 		td_precoPetisco25 = document.createElement('td');
 
-	td_quantPetisco25.setAttribute("id", "quantPetisco");
-	td_namePetisco25.setAttribute("id", "namePrato");
-	td_precoPetisco25.setAttribute("id", "precoPetisco");
+	td_quantPetisco25.setAttribute("id", "quantPetisco25");
+	td_namePetisco25.setAttribute("id", "namePrato25");
+	td_precoPetisco25.setAttribute("id", "precoPetisco25");
 
 	trbody.appendChild(tr);
 	tr.appendChild(td_quantPetisco25);
 	tr.appendChild(td_namePetisco25);
 	tr.appendChild(td_precoPetisco25);
 
-	var quantPetisco25 = document.getElementById('quantPetisco');
+	var quantPetisco25 = document.getElementById('quantPetisco25');
 	quantPetisco25.innerText = value25;
 
 	var itaipava= document.getElementById('itaipava').firstChild.innerHTML;
-	document.getElementById('namePrato').innerHTML = itaipava;
+	document.getElementById('namePrato25').innerHTML = itaipava;
 
 	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
 		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
@@ -2527,7 +2527,7 @@ function mandardados25(){
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
 
-	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('precoPetisco25').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
 
 td_quantPetisco25.style.textAlign="center";
@@ -2605,20 +2605,20 @@ function mandardados26(){
 		td_namePetisco26= document.createElement('td'),
 		td_precoPetisco26 = document.createElement('td');
 
-	td_quantPetisco26.setAttribute("id", "quantPetisco");
-	td_namePetisco26.setAttribute("id", "namePrato");
-	td_precoPetisco26.setAttribute("id", "precoPetisco");
+	td_quantPetisco26.setAttribute("id", "quantPetisco26");
+	td_namePetisco26.setAttribute("id", "namePrato26");
+	td_precoPetisco26.setAttribute("id", "precoPetisco26");
 
 	trbody.appendChild(tr);
 	tr.appendChild(td_quantPetisco26);
 	tr.appendChild(td_namePetisco26);
 	tr.appendChild(td_precoPetisco26);
 
-	var quantPetisco26 = document.getElementById('quantPetisco');
+	var quantPetisco26 = document.getElementById('quantPetisco26');
 	quantPetisco26.innerText = value26;
 
 	var original = document.getElementById('original').firstChild.innerHTML;
-	document.getElementById('namePrato').innerHTML = original;
+	document.getElementById('namePrato26').innerHTML = original;
 
 	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
 		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
@@ -2629,7 +2629,7 @@ function mandardados26(){
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
 
-	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('precoPetisco26').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
 
 td_quantPetisco26.style.textAlign="center";
@@ -2706,20 +2706,20 @@ function mandardados27(){
 		td_namePetisco27= document.createElement('td'),
 		td_precoPetisco27= document.createElement('td');
 
-	td_quantPetisco27.setAttribute("id", "quantPetisco");
-	td_namePetisco27.setAttribute("id", "namePrato");
-	td_precoPetisco27.setAttribute("id", "precoPetisco");
+	td_quantPetisco27.setAttribute("id", "quantPetisco27");
+	td_namePetisco27.setAttribute("id", "namePrato27");
+	td_precoPetisco27.setAttribute("id", "precoPetisco27");
 
 	trbody.appendChild(tr);
 	tr.appendChild(td_quantPetisco27);
 	tr.appendChild(td_namePetisco27);
 	tr.appendChild(td_precoPetisco27);
 
-	var quantPetisco27 = document.getElementById('quantPetisco');
+	var quantPetisco27 = document.getElementById('quantPetisco27');
 	quantPetisco27.innerText = value27;
 
 	var burdweiser= document.getElementById('burdweiser').firstChild.innerHTML;
-	document.getElementById('namePrato').innerHTML = burdweiser;
+	document.getElementById('namePrato27').innerHTML = burdweiser;
 
 	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
 		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
@@ -2730,7 +2730,7 @@ function mandardados27(){
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
 
-	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('precoPetisco27').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
 
 td_quantPetisco27.style.textAlign="center";
@@ -2808,20 +2808,20 @@ function mandardados28(){
 		td_namePetisco28= document.createElement('td'),
 		td_precoPetisco28 = document.createElement('td');
 
-	td_quantPetisco28.setAttribute("id", "quantPetisco");
-	td_namePetisco28.setAttribute("id", "namePrato");
-	td_precoPetisco28.setAttribute("id", "precoPetisco");
+	td_quantPetisco28.setAttribute("id", "quantPetisco28");
+	td_namePetisco28.setAttribute("id", "namePrato28");
+	td_precoPetisco28.setAttribute("id", "precoPetisco28");
 
 	trbody.appendChild(tr);
 	tr.appendChild(td_quantPetisco28);
 	tr.appendChild(td_namePetisco28);
 	tr.appendChild(td_precoPetisco28);
 
-	var quantPetisco28 = document.getElementById('quantPetisco');
+	var quantPetisco28 = document.getElementById('quantPetisco28');
 	quantPetisco28.innerText = value28;
 
 	var eisenbahn = document.getElementById('eisenbahn').firstChild.innerHTML;
-	document.getElementById('namePrato').innerHTML = eisenbahn;
+	document.getElementById('namePrato28').innerHTML = eisenbahn;
 
 	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
 		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
@@ -2832,7 +2832,7 @@ function mandardados28(){
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));;
 
-	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('precoPetisco28').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
 
 td_quantPetisco28.style.textAlign="center";
@@ -2908,20 +2908,20 @@ function mandardados29(){
 		td_namePetisco29= document.createElement('td'),
 		td_precoPetisco29 = document.createElement('td');
 
-	td_quantPetisco29.setAttribute("id", "quantPetisco");
-	td_namePetisco29.setAttribute("id", "namePrato");
-	td_precoPetisco29.setAttribute("id", "precoPetisco");
+	td_quantPetisco29.setAttribute("id", "quantPetisco29");
+	td_namePetisco29.setAttribute("id", "namePrato29");
+	td_precoPetisco29.setAttribute("id", "precoPetisco29");
 
 	trbody.appendChild(tr);
 	tr.appendChild(td_quantPetisco29);
 	tr.appendChild(td_namePetisco29);
 	tr.appendChild(td_precoPetisco29);
 
-	var quantPetisco29 = document.getElementById('quantPetisco');
+	var quantPetisco29 = document.getElementById('quantPetisco29');
 	quantPetisco29.innerText = value29;
 
 	var heineken = document.getElementById('heineken').firstChild.innerHTML;
-	document.getElementById('namePrato').innerHTML = heineken;
+	document.getElementById('namePrato29').innerHTML = heineken;
 
 	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
 		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
@@ -2931,7 +2931,7 @@ function mandardados29(){
 		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
 		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
 		(preco29 * value29));
-	document.getElementById('precoPetisco').innerHTML = result.toFixed(2);
+	document.getElementById('precoPetisco29').innerHTML = result.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
 
 td_quantPetisco29.style.textAlign="center";
