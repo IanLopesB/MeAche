@@ -10,7 +10,6 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
   var space = document.createTextNode('');
   var linebreak = document.createElement('br');
 
-
   var ul = document.createElement('ul');
   ul.setAttribute("id", "ulAdmin");
 
@@ -62,7 +61,7 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
   var petiscos_6 = document.createTextNode(item.val().Batata_Frita + "x" + " Batata Frita");
   var petiscos_7 = document.createTextNode(item.val().Macaxeira + "x" + " Torresmo");
   var petiscos_8 = document.createTextNode(item.val().Baiao_de_Dois + "x" + " Batata Frita");
-  
+
   // Espetos
   var espetos_1 = document.createTextNode(item.val().Boi + "x" + " Boi"),
       espetos_2 = document.createTextNode(item.val().Franbacon + "x" + " Franbacon"),
@@ -217,6 +216,7 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
     li8.appendChild(petiscos_8);
   }
 
+
   // Espetos
 
   if (item.val().Boi == undefined){
@@ -358,7 +358,7 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
     li29.parentNode.removeChild(li29);
   }else {
     li29.appendChild(espetos_3);
-  } 
+  }
 
   input_checkbox.setAttribute("name", "number");
 
@@ -366,6 +366,5 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
    $(this).val(ind + 1);
   });
 
-  
   });
 });
