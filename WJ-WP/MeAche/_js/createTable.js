@@ -181,7 +181,7 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
     delete li11;
     li11.style.listStyle = "none";
   }else {
-    l11.appendChild(espetos_3);
+    li11.appendChild(espetos_3);
   }
 
   if (item.val().Porco == undefined){
