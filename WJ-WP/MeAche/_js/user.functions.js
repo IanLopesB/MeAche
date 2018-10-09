@@ -8,13 +8,17 @@ function mostrarSubtotal(){
 }
 
 function confirma(){
-  alert("Pedido Enviado!");
-  var x = document.getElementById('id01');
+  var meuPedido = document.getElementById('id01');
 
-  if (x.style.display === "block"){
-    x.style.display = "none";
+  if (document.getElementById('totalValue2').innerHTML != 0.00 ){
+    alert("Pedido enviado com sucesso!");
+    meuPedido.style.display = "none";
+    location.reload();
   }
-  location.reload();
+  else {
+    alert("Nada Selecionado");    
+    meuPedido.style.display = "none";    
+  }
 }
 
 
