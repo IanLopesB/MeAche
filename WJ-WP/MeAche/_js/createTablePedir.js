@@ -32,7 +32,60 @@ function mandardados1(){
 				trbody = document.getElementById('tablePedidos');
 
 				 if ($("#tr1").length){
-        console.log("O elemento existe no DOM");
+
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
+	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
+	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
+	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
+	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
+	if (value4 == 0){var preco4 = 0;} else {preco4 = 20.00;}
+	if (value5 == 0){var preco5 = 0;} else {preco5 = 10.00;}
+	if (value6 == 0){var preco6 = 0;} else {preco6 = 10.00;}
+	if (value7 == 0){var preco7 = 0;} else {preco7 = 6.00;}
+	if (value8 == 0){var preco8 = 0;} else {preco8 = 10.00;}
+	if (value9 == 0){var preco9 = 0;} else {preco9 = 4.00;}
+	if (value10 == 0){var preco10 = 0;} else {preco10 = 4.00;}
+	if (value11 == 0){var preco11 = 0;} else {preco11 = 4.00;}
+	if (value12 == 0){var preco12 = 0;} else {preco12 = 4.00;}
+	if (value13 == 0){var preco13 = 0;} else {preco13 = 4.00;}
+	if (value14 == 0){var preco14 = 0;} else {preco14= 3.00;}
+	if (value15 == 0){var preco15 = 0;} else {preco15 = 3.00;}
+	if (value16 == 0){var preco16 = 0;} else {preco16 = 3.00;}
+	if (value17 == 0){var preco17 = 0;} else {preco17 = 3.00;}
+	if (value18 == 0){var preco18 = 0;} else {preco18 = 3.00;}
+	if (value19 == 0){var preco19 = 0;} else {preco19 = 10.00;}
+	if (value20 == 0){var preco20 = 0;} else {preco20 = 3.50;}
+	if (value21 == 0){var preco21 = 0;} else {preco21 = 3.50;}
+	if (value22 == 0){var preco22 = 0;} else {preco22 = 3.50;}
+	if (value23 == 0){var preco23 = 0;} else {preco23 = 1.50;}
+	if (value24 == 0){var preco24 = 0;} else {preco24 = 3.00;}
+	if (value25 == 0){var preco25 = 0;} else {preco25 = 3.00;}
+	if (value26 == 0){var preco26 = 0;} else {preco26 = 5.00;}
+	if (value27 == 0){var preco27 = 0;} else {preco27 = 6.00;}
+	if (value28 == 0){var preco28 = 0;} else {preco28 = 6.00;}
+	if (value29 == 0){var preco29 = 0;} else {preco29 = 6.00;}
+
+	var quantPetisco1 = document.getElementById('quantPetisco1');
+	quantPetisco1.innerText = value1;
+
+	var asinha = document.getElementById('asinha').firstChild.innerHTML;
+	document.getElementById('namePrato1').innerHTML = asinha;
+
+	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
+		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
+		(preco9 * value9) + (preco10 * value10) + (preco11 * value11) + (preco12 * value12) +
+		(preco13 * value13) + (preco14 * value14) + (preco15 * value15) + (preco16 * value16) +
+		(preco17 * value17) + (preco18 * value18) + (preco19 * value19) + (preco20 * value20) +
+		(preco21 * value21) + (preco22 * value22) + (preco23 * value23) + (preco24 * value24) +
+		(preco25 * value25) + (preco26 * value26) + (preco27 * value27) + (preco28 * value28) +
+		(preco29 * value29));
+	var mult = (preco1 * value1);
+
+	document.getElementById('totalValue2').innerHTML = result.toFixed(2);
+	document.getElementById('precoPetisco1').innerHTML = mult.toFixed(2);
+	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+}
     } else {
 
 if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
