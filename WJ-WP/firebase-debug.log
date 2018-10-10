@@ -1,0 +1,605 @@
+[debug] [2018-10-09T20:54:18.430Z] ----------------------------------------------------------------------
+[debug] [2018-10-09T20:54:18.433Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ADERSON BORGES\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-10-09T20:54:18.434Z] CLI Version:   4.2.1
+[debug] [2018-10-09T20:54:18.434Z] Platform:      win32
+[debug] [2018-10-09T20:54:18.434Z] Node Version:  v8.11.4
+[debug] [2018-10-09T20:54:18.434Z] Time:          Tue Oct 09 2018 17:54:18 GMT-0300 (Hora oficial do Brasil)
+[debug] [2018-10-09T20:54:18.434Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-10-09T20:54:18.447Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-10-09T20:54:18.447Z] > authorizing via signed-in user
+[debug] [2018-10-09T20:54:18.450Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-10-09T20:54:18.450Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+
+[debug] [2018-10-09T20:54:18.976Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-09T20:54:19.018Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/huehue-bfa99  
+ 
+[debug] [2018-10-09T20:54:19.942Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'huehue-bfa99'...
+[info] 
+[info] i  deploying database, hosting
+[info] i  database: checking rules syntax...
+[debug] [2018-10-09T20:54:19.960Z] >>> HTTP REQUEST PUT https://huehue-bfa99.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  "rules": {
+    ".read": "true",
+    ".write": "true"
+  }
+}
+[debug] [2018-10-09T20:54:20.895Z] <<< HTTP RESPONSE 200
+[info] +  database: rules syntax for database huehue-bfa99 is valid
+[debug] [2018-10-09T20:54:20.902Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/huehue-bfa99/versions  
+
+[debug] [2018-10-09T20:54:22.568Z] <<< HTTP RESPONSE 200
+[info] i  hosting[huehue-bfa99]: beginning deploy...
+[info] i  hosting[huehue-bfa99]: found 32 files in MeAche
+[debug] [2018-10-09T20:54:22.620Z] [hosting] hash cache [TWVBY2hl] stored for 32 files
+[debug] [2018-10-09T20:54:22.620Z] [hosting][hash queue][FINAL]
+[debug] [2018-10-09T20:54:22.621Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/huehue-bfa99/versions/cd7c0e8c201f7203:populateFiles  
+ <request body omitted>
+[debug] [2018-10-09T20:54:24.492Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-09T20:54:24.505Z] [hosting][populate queue][FINAL]
+[debug] [2018-10-09T20:54:24.505Z] [hosting] uploads queued: 17
+[debug] [2018-10-09T20:54:24.906Z] [uploadQueue] Retrying task cb6362ef192178d7b27fe23d608dc36d7ba2fb22b4439e4ac4b5de0c41b0421f
+[debug] [2018-10-09T20:54:24.907Z] [uploadQueue] Retrying task b2c79cc972a562ba7851d026ee147db3fa7d349f51c32e4384e67731302894c5
+[debug] [2018-10-09T20:54:24.907Z] [uploadQueue] Retrying task ff62d092de1422a681b67c2bca781f273f9dc07a90ac3cf1f83fde18c94802ac
+[debug] [2018-10-09T20:54:24.907Z] [uploadQueue] Retrying task 2d33af09cec4c40b7be1a373f42543b1c4ea39f1c8fc5844bdb54e7af04ff318
+[debug] [2018-10-09T20:54:24.907Z] [uploadQueue] Retrying task 27f348e2933ec8417c089a41847591e5ee1417418b17ec8df3c321c1dcf2cab4
+[debug] [2018-10-09T20:54:24.908Z] [uploadQueue] Retrying task 96c262add6d2cf9061dbda30515819709c109796fe79bc62a95a4b6db9447b5f
+[debug] [2018-10-09T20:54:24.908Z] [uploadQueue] Retrying task 059633f4b012472a43e8ce88eac12e45bea92d716d01fd551181ad2c2f0bcc25
+[debug] [2018-10-09T20:54:24.908Z] [uploadQueue] Retrying task e5982b7a4ccc4a5b71f8dbfbf6a5abcd036d7d20128f00496fad7c460a90e113
+[debug] [2018-10-09T20:54:24.908Z] [uploadQueue] Retrying task 7a3a1ad55b428edebb75cd610805676fe2dfe5eff96f2bf862a843573d630c11
+[debug] [2018-10-09T20:54:24.909Z] [uploadQueue] Retrying task 7d96fcaa2ffd769944761ab8878a193781e6fe3b9112e8dcdb7b89ab6d129607
+[debug] [2018-10-09T20:54:24.909Z] [uploadQueue] Retrying task 15742fca1b8f46e8a8afac0abc06af24aebee9a7fc7cd3aaac653d08e95adf20
+[debug] [2018-10-09T20:54:24.909Z] [uploadQueue] Retrying task af90eaedd58fee4c368d173a592eb8f85b6168cc6535e68e4c3c2e9a7cc684ef
+[debug] [2018-10-09T20:54:24.913Z] [uploadQueue] Retrying task 6183c3369de484d1bdedb0400d31cdc92206863d69e60f7773b249aec96808c7
+[debug] [2018-10-09T20:54:24.913Z] [uploadQueue] Retrying task d4449064f4a74857e72fd9048f5e9c689bea882df8e51e0a8ab233132ee1d766
+[debug] [2018-10-09T20:54:24.913Z] [uploadQueue] Retrying task 15fead32db45fb9f833c8681de6be70bdcda31dc9a766103ce337ace88375847
+[debug] [2018-10-09T20:54:24.914Z] [uploadQueue] Retrying task 91fd34d2075dd08eb493933d70b82dbf3c7d5d93a63d05e080d59198375e17ae
+[debug] [2018-10-09T20:54:25.707Z] [uploadQueue] Retrying task cb6362ef192178d7b27fe23d608dc36d7ba2fb22b4439e4ac4b5de0c41b0421f
+[debug] [2018-10-09T20:54:25.712Z] [uploadQueue] Retrying task b2c79cc972a562ba7851d026ee147db3fa7d349f51c32e4384e67731302894c5
+[debug] [2018-10-09T20:54:25.712Z] [uploadQueue] Retrying task ff62d092de1422a681b67c2bca781f273f9dc07a90ac3cf1f83fde18c94802ac
+[debug] [2018-10-09T20:54:25.712Z] [uploadQueue] Retrying task 2d33af09cec4c40b7be1a373f42543b1c4ea39f1c8fc5844bdb54e7af04ff318
+[debug] [2018-10-09T20:54:25.712Z] [uploadQueue] Retrying task 27f348e2933ec8417c089a41847591e5ee1417418b17ec8df3c321c1dcf2cab4
+[debug] [2018-10-09T20:54:25.713Z] [uploadQueue] Retrying task 96c262add6d2cf9061dbda30515819709c109796fe79bc62a95a4b6db9447b5f
+[debug] [2018-10-09T20:54:25.713Z] [uploadQueue] Retrying task 059633f4b012472a43e8ce88eac12e45bea92d716d01fd551181ad2c2f0bcc25
+[debug] [2018-10-09T20:54:25.713Z] [uploadQueue] Retrying task e5982b7a4ccc4a5b71f8dbfbf6a5abcd036d7d20128f00496fad7c460a90e113
+[debug] [2018-10-09T20:54:25.713Z] [uploadQueue] Retrying task 7a3a1ad55b428edebb75cd610805676fe2dfe5eff96f2bf862a843573d630c11
+[debug] [2018-10-09T20:54:25.713Z] [uploadQueue] Retrying task 7d96fcaa2ffd769944761ab8878a193781e6fe3b9112e8dcdb7b89ab6d129607
+[debug] [2018-10-09T20:54:25.714Z] [uploadQueue] Retrying task 15742fca1b8f46e8a8afac0abc06af24aebee9a7fc7cd3aaac653d08e95adf20
+[debug] [2018-10-09T20:54:25.714Z] [uploadQueue] Retrying task af90eaedd58fee4c368d173a592eb8f85b6168cc6535e68e4c3c2e9a7cc684ef
+[debug] [2018-10-09T20:54:25.717Z] [uploadQueue] Retrying task 6183c3369de484d1bdedb0400d31cdc92206863d69e60f7773b249aec96808c7
+[debug] [2018-10-09T20:54:25.717Z] [uploadQueue] Retrying task d4449064f4a74857e72fd9048f5e9c689bea882df8e51e0a8ab233132ee1d766
+[debug] [2018-10-09T20:54:25.718Z] [uploadQueue] Retrying task 15fead32db45fb9f833c8681de6be70bdcda31dc9a766103ce337ace88375847
+[debug] [2018-10-09T20:54:25.718Z] [uploadQueue] Retrying task 91fd34d2075dd08eb493933d70b82dbf3c7d5d93a63d05e080d59198375e17ae
+[debug] [2018-10-09T20:54:27.308Z] [uploadQueue] Retrying task cb6362ef192178d7b27fe23d608dc36d7ba2fb22b4439e4ac4b5de0c41b0421f
+[debug] [2018-10-09T20:54:27.317Z] [uploadQueue] Retrying task b2c79cc972a562ba7851d026ee147db3fa7d349f51c32e4384e67731302894c5
+[debug] [2018-10-09T20:54:27.317Z] [uploadQueue] Retrying task ff62d092de1422a681b67c2bca781f273f9dc07a90ac3cf1f83fde18c94802ac
+[debug] [2018-10-09T20:54:27.317Z] [uploadQueue] Retrying task 2d33af09cec4c40b7be1a373f42543b1c4ea39f1c8fc5844bdb54e7af04ff318
+[debug] [2018-10-09T20:54:27.318Z] [uploadQueue] Retrying task 27f348e2933ec8417c089a41847591e5ee1417418b17ec8df3c321c1dcf2cab4
+[debug] [2018-10-09T20:54:27.318Z] [uploadQueue] Retrying task 96c262add6d2cf9061dbda30515819709c109796fe79bc62a95a4b6db9447b5f
+[debug] [2018-10-09T20:54:27.318Z] [uploadQueue] Retrying task 059633f4b012472a43e8ce88eac12e45bea92d716d01fd551181ad2c2f0bcc25
+[debug] [2018-10-09T20:54:27.318Z] [uploadQueue] Retrying task e5982b7a4ccc4a5b71f8dbfbf6a5abcd036d7d20128f00496fad7c460a90e113
+[debug] [2018-10-09T20:54:27.319Z] [uploadQueue] Retrying task 7a3a1ad55b428edebb75cd610805676fe2dfe5eff96f2bf862a843573d630c11
+[debug] [2018-10-09T20:54:27.319Z] [uploadQueue] Retrying task 7d96fcaa2ffd769944761ab8878a193781e6fe3b9112e8dcdb7b89ab6d129607
+[debug] [2018-10-09T20:54:27.319Z] [uploadQueue] Retrying task 15742fca1b8f46e8a8afac0abc06af24aebee9a7fc7cd3aaac653d08e95adf20
+[debug] [2018-10-09T20:54:27.319Z] [uploadQueue] Retrying task af90eaedd58fee4c368d173a592eb8f85b6168cc6535e68e4c3c2e9a7cc684ef
+[debug] [2018-10-09T20:54:27.322Z] [uploadQueue] Retrying task 6183c3369de484d1bdedb0400d31cdc92206863d69e60f7773b249aec96808c7
+[debug] [2018-10-09T20:54:27.323Z] [uploadQueue] Retrying task d4449064f4a74857e72fd9048f5e9c689bea882df8e51e0a8ab233132ee1d766
+[debug] [2018-10-09T20:54:27.323Z] [uploadQueue] Retrying task 15fead32db45fb9f833c8681de6be70bdcda31dc9a766103ce337ace88375847
+[debug] [2018-10-09T20:54:27.323Z] [uploadQueue] Retrying task 91fd34d2075dd08eb493933d70b82dbf3c7d5d93a63d05e080d59198375e17ae
+[debug] [2018-10-09T20:54:30.509Z] [uploadQueue] Retrying task cb6362ef192178d7b27fe23d608dc36d7ba2fb22b4439e4ac4b5de0c41b0421f
+[debug] [2018-10-09T20:54:30.522Z] [uploadQueue] Retrying task b2c79cc972a562ba7851d026ee147db3fa7d349f51c32e4384e67731302894c5
+[debug] [2018-10-09T20:54:30.522Z] [uploadQueue] Retrying task ff62d092de1422a681b67c2bca781f273f9dc07a90ac3cf1f83fde18c94802ac
+[debug] [2018-10-09T20:54:30.522Z] [uploadQueue] Retrying task 2d33af09cec4c40b7be1a373f42543b1c4ea39f1c8fc5844bdb54e7af04ff318
+[debug] [2018-10-09T20:54:30.522Z] [uploadQueue] Retrying task 27f348e2933ec8417c089a41847591e5ee1417418b17ec8df3c321c1dcf2cab4
+[debug] [2018-10-09T20:54:30.523Z] [uploadQueue] Retrying task 96c262add6d2cf9061dbda30515819709c109796fe79bc62a95a4b6db9447b5f
+[debug] [2018-10-09T20:54:30.523Z] [uploadQueue] Retrying task 059633f4b012472a43e8ce88eac12e45bea92d716d01fd551181ad2c2f0bcc25
+[debug] [2018-10-09T20:54:30.523Z] [uploadQueue] Retrying task e5982b7a4ccc4a5b71f8dbfbf6a5abcd036d7d20128f00496fad7c460a90e113
+[debug] [2018-10-09T20:54:30.523Z] [uploadQueue] Retrying task 7a3a1ad55b428edebb75cd610805676fe2dfe5eff96f2bf862a843573d630c11
+[debug] [2018-10-09T20:54:30.524Z] [uploadQueue] Retrying task 7d96fcaa2ffd769944761ab8878a193781e6fe3b9112e8dcdb7b89ab6d129607
+[debug] [2018-10-09T20:54:30.524Z] [uploadQueue] Retrying task 15742fca1b8f46e8a8afac0abc06af24aebee9a7fc7cd3aaac653d08e95adf20
+[debug] [2018-10-09T20:54:30.524Z] [uploadQueue] Retrying task af90eaedd58fee4c368d173a592eb8f85b6168cc6535e68e4c3c2e9a7cc684ef
+[debug] [2018-10-09T20:54:30.527Z] [uploadQueue] Retrying task 6183c3369de484d1bdedb0400d31cdc92206863d69e60f7773b249aec96808c7
+[debug] [2018-10-09T20:54:30.528Z] [uploadQueue] Retrying task d4449064f4a74857e72fd9048f5e9c689bea882df8e51e0a8ab233132ee1d766
+[debug] [2018-10-09T20:54:30.528Z] [uploadQueue] Retrying task 15fead32db45fb9f833c8681de6be70bdcda31dc9a766103ce337ace88375847
+[debug] [2018-10-09T20:54:30.528Z] [uploadQueue] Retrying task 91fd34d2075dd08eb493933d70b82dbf3c7d5d93a63d05e080d59198375e17ae
+[debug] [2018-10-09T20:54:36.911Z] [uploadQueue] Retrying task cb6362ef192178d7b27fe23d608dc36d7ba2fb22b4439e4ac4b5de0c41b0421f
+[debug] [2018-10-09T20:54:36.912Z] [uploadQueue] Retries exhausted for task cb6362ef192178d7b27fe23d608dc36d7ba2fb22b4439e4ac4b5de0c41b0421f :
+[debug] [2018-10-09T20:54:36.913Z] [hosting][upload queue][FINAL]
+[debug] [2018-10-09T20:54:36.936Z] [uploadQueue] Retrying task b2c79cc972a562ba7851d026ee147db3fa7d349f51c32e4384e67731302894c5
+[debug] [2018-10-09T20:54:36.936Z] [uploadQueue] Retrying task ff62d092de1422a681b67c2bca781f273f9dc07a90ac3cf1f83fde18c94802ac
+[debug] [2018-10-09T20:54:36.936Z] [uploadQueue] Retrying task 2d33af09cec4c40b7be1a373f42543b1c4ea39f1c8fc5844bdb54e7af04ff318
+[debug] [2018-10-09T20:54:36.936Z] [uploadQueue] Retrying task 27f348e2933ec8417c089a41847591e5ee1417418b17ec8df3c321c1dcf2cab4
+[debug] [2018-10-09T20:54:36.936Z] [uploadQueue] Retrying task 96c262add6d2cf9061dbda30515819709c109796fe79bc62a95a4b6db9447b5f
+[debug] [2018-10-09T20:54:36.937Z] [uploadQueue] Retrying task 059633f4b012472a43e8ce88eac12e45bea92d716d01fd551181ad2c2f0bcc25
+[debug] [2018-10-09T20:54:36.937Z] [uploadQueue] Retrying task e5982b7a4ccc4a5b71f8dbfbf6a5abcd036d7d20128f00496fad7c460a90e113
+[debug] [2018-10-09T20:54:36.937Z] [uploadQueue] Retrying task 7a3a1ad55b428edebb75cd610805676fe2dfe5eff96f2bf862a843573d630c11
+[debug] [2018-10-09T20:54:36.937Z] [uploadQueue] Retrying task 7d96fcaa2ffd769944761ab8878a193781e6fe3b9112e8dcdb7b89ab6d129607
+[debug] [2018-10-09T20:54:36.937Z] [uploadQueue] Retrying task 15742fca1b8f46e8a8afac0abc06af24aebee9a7fc7cd3aaac653d08e95adf20
+[debug] [2018-10-09T20:54:36.937Z] [uploadQueue] Retrying task af90eaedd58fee4c368d173a592eb8f85b6168cc6535e68e4c3c2e9a7cc684ef
+[debug] [2018-10-09T20:54:36.937Z] [uploadQueue] Retrying task 6183c3369de484d1bdedb0400d31cdc92206863d69e60f7773b249aec96808c7
+[debug] [2018-10-09T20:54:36.937Z] [uploadQueue] Retrying task d4449064f4a74857e72fd9048f5e9c689bea882df8e51e0a8ab233132ee1d766
+[debug] [2018-10-09T20:54:36.938Z] [uploadQueue] Retrying task 15fead32db45fb9f833c8681de6be70bdcda31dc9a766103ce337ace88375847
+[debug] [2018-10-09T20:54:36.938Z] [uploadQueue] Retrying task 91fd34d2075dd08eb493933d70b82dbf3c7d5d93a63d05e080d59198375e17ae
+[debug] [2018-10-09T20:54:36.940Z] [uploadQueue] Retries exhausted for task b2c79cc972a562ba7851d026ee147db3fa7d349f51c32e4384e67731302894c5 :
+[debug] [2018-10-09T20:54:36.940Z] [uploadQueue] Retries exhausted for task ff62d092de1422a681b67c2bca781f273f9dc07a90ac3cf1f83fde18c94802ac :
+[debug] [2018-10-09T20:54:36.940Z] [uploadQueue] Retries exhausted for task 2d33af09cec4c40b7be1a373f42543b1c4ea39f1c8fc5844bdb54e7af04ff318 :
+[debug] [2018-10-09T20:54:36.940Z] [uploadQueue] Retries exhausted for task 27f348e2933ec8417c089a41847591e5ee1417418b17ec8df3c321c1dcf2cab4 :
+[debug] [2018-10-09T20:54:36.940Z] [uploadQueue] Retries exhausted for task 96c262add6d2cf9061dbda30515819709c109796fe79bc62a95a4b6db9447b5f :
+[debug] [2018-10-09T20:54:36.940Z] [uploadQueue] Retries exhausted for task 059633f4b012472a43e8ce88eac12e45bea92d716d01fd551181ad2c2f0bcc25 :
+[debug] [2018-10-09T20:54:36.941Z] [uploadQueue] Retries exhausted for task e5982b7a4ccc4a5b71f8dbfbf6a5abcd036d7d20128f00496fad7c460a90e113 :
+[debug] [2018-10-09T20:54:36.941Z] [uploadQueue] Retries exhausted for task 7a3a1ad55b428edebb75cd610805676fe2dfe5eff96f2bf862a843573d630c11 :
+[debug] [2018-10-09T20:54:36.941Z] [uploadQueue] Retries exhausted for task 7d96fcaa2ffd769944761ab8878a193781e6fe3b9112e8dcdb7b89ab6d129607 :
+[debug] [2018-10-09T20:54:36.941Z] [uploadQueue] Retries exhausted for task 15742fca1b8f46e8a8afac0abc06af24aebee9a7fc7cd3aaac653d08e95adf20 :
+[debug] [2018-10-09T20:54:36.941Z] [uploadQueue] Retries exhausted for task af90eaedd58fee4c368d173a592eb8f85b6168cc6535e68e4c3c2e9a7cc684ef :
+[debug] [2018-10-09T20:54:36.941Z] [uploadQueue] Retries exhausted for task 6183c3369de484d1bdedb0400d31cdc92206863d69e60f7773b249aec96808c7 :
+[debug] [2018-10-09T20:54:36.941Z] [uploadQueue] Retries exhausted for task d4449064f4a74857e72fd9048f5e9c689bea882df8e51e0a8ab233132ee1d766 :
+[debug] [2018-10-09T20:54:36.941Z] [uploadQueue] Retries exhausted for task 15fead32db45fb9f833c8681de6be70bdcda31dc9a766103ce337ace88375847 :
+[debug] [2018-10-09T20:54:36.942Z] [uploadQueue] Retries exhausted for task 91fd34d2075dd08eb493933d70b82dbf3c7d5d93a63d05e080d59198375e17ae :
+[debug] [2018-10-09T20:54:37.447Z] TypeError: Path must be a string. Received undefined
+    at assertPath (path.js:28:11)
+    at Object.resolve (path.js:211:7)
+    at Uploader._zipStream (C:\Users\ADERSON BORGES\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\uploader.js:253:37)
+    at C:\Users\ADERSON BORGES\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\uploader.js:223:16
+    at new Promise (<anonymous>)
+    at C:\Users\ADERSON BORGES\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\uploader.js:222:16
+    at <anonymous>
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2018-10-09T20:56:40.693Z] ----------------------------------------------------------------------
+[debug] [2018-10-09T20:56:40.696Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ADERSON BORGES\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-10-09T20:56:40.697Z] CLI Version:   4.2.1
+[debug] [2018-10-09T20:56:40.697Z] Platform:      win32
+[debug] [2018-10-09T20:56:40.697Z] Node Version:  v8.11.4
+[debug] [2018-10-09T20:56:40.697Z] Time:          Tue Oct 09 2018 17:56:40 GMT-0300 (Hora oficial do Brasil)
+[debug] [2018-10-09T20:56:40.697Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-10-09T20:56:40.710Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-10-09T20:56:40.711Z] > authorizing via signed-in user
+[debug] [2018-10-09T20:56:40.713Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/huehue-bfa99  
+ 
+[debug] [2018-10-09T20:56:41.739Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'huehue-bfa99'...
+[info] 
+[info] i  deploying database, hosting
+[info] i  database: checking rules syntax...
+[debug] [2018-10-09T20:56:41.757Z] >>> HTTP REQUEST PUT https://huehue-bfa99.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  "rules": {
+    ".read": "true",
+    ".write": "true"
+  }
+}
+[debug] [2018-10-09T20:56:42.685Z] <<< HTTP RESPONSE 200
+[info] +  database: rules syntax for database huehue-bfa99 is valid
+[debug] [2018-10-09T20:56:42.692Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/huehue-bfa99/versions  
+
+[debug] [2018-10-09T20:56:44.369Z] <<< HTTP RESPONSE 200
+[info] i  hosting[huehue-bfa99]: beginning deploy...
+[info] i  hosting[huehue-bfa99]: found 32 files in MeAche
+[debug] [2018-10-09T20:56:44.429Z] [hosting] hash cache [TWVBY2hl] stored for 32 files
+[debug] [2018-10-09T20:56:44.430Z] [hosting][hash queue][FINAL]
+[debug] [2018-10-09T20:56:44.430Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/huehue-bfa99/versions/2b27b832100fbcf7:populateFiles  
+ <request body omitted>
+[debug] [2018-10-09T20:56:46.753Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-09T20:56:46.760Z] [hosting][populate queue][FINAL]
+[debug] [2018-10-09T20:56:46.760Z] [hosting] uploads queued: 16
+[debug] [2018-10-09T20:56:47.161Z] [uploadQueue] Retrying task d4449064f4a74857e72fd9048f5e9c689bea882df8e51e0a8ab233132ee1d766
+[debug] [2018-10-09T20:56:47.162Z] [uploadQueue] Retrying task af90eaedd58fee4c368d173a592eb8f85b6168cc6535e68e4c3c2e9a7cc684ef
+[debug] [2018-10-09T20:56:47.162Z] [uploadQueue] Retrying task ff62d092de1422a681b67c2bca781f273f9dc07a90ac3cf1f83fde18c94802ac
+[debug] [2018-10-09T20:56:47.162Z] [uploadQueue] Retrying task 059633f4b012472a43e8ce88eac12e45bea92d716d01fd551181ad2c2f0bcc25
+[debug] [2018-10-09T20:56:47.162Z] [uploadQueue] Retrying task 7a3a1ad55b428edebb75cd610805676fe2dfe5eff96f2bf862a843573d630c11
+[debug] [2018-10-09T20:56:47.163Z] [uploadQueue] Retrying task 7d96fcaa2ffd769944761ab8878a193781e6fe3b9112e8dcdb7b89ab6d129607
+[debug] [2018-10-09T20:56:47.163Z] [uploadQueue] Retrying task 15742fca1b8f46e8a8afac0abc06af24aebee9a7fc7cd3aaac653d08e95adf20
+[debug] [2018-10-09T20:56:47.163Z] [uploadQueue] Retrying task 27f348e2933ec8417c089a41847591e5ee1417418b17ec8df3c321c1dcf2cab4
+[debug] [2018-10-09T20:56:47.163Z] [uploadQueue] Retrying task cb6362ef192178d7b27fe23d608dc36d7ba2fb22b4439e4ac4b5de0c41b0421f
+[debug] [2018-10-09T20:56:47.164Z] [uploadQueue] Retrying task 6183c3369de484d1bdedb0400d31cdc92206863d69e60f7773b249aec96808c7
+[debug] [2018-10-09T20:56:47.164Z] [uploadQueue] Retrying task 96c262add6d2cf9061dbda30515819709c109796fe79bc62a95a4b6db9447b5f
+[debug] [2018-10-09T20:56:47.164Z] [uploadQueue] Retrying task e5982b7a4ccc4a5b71f8dbfbf6a5abcd036d7d20128f00496fad7c460a90e113
+[debug] [2018-10-09T20:56:47.164Z] [uploadQueue] Retrying task 91fd34d2075dd08eb493933d70b82dbf3c7d5d93a63d05e080d59198375e17ae
+[debug] [2018-10-09T20:56:47.165Z] [uploadQueue] Retrying task 2d33af09cec4c40b7be1a373f42543b1c4ea39f1c8fc5844bdb54e7af04ff318
+[debug] [2018-10-09T20:56:47.165Z] [uploadQueue] Retrying task b2c79cc972a562ba7851d026ee147db3fa7d349f51c32e4384e67731302894c5
+[debug] [2018-10-09T20:56:47.169Z] [uploadQueue] Retrying task 15fead32db45fb9f833c8681de6be70bdcda31dc9a766103ce337ace88375847
+[debug] [2018-10-09T20:56:47.968Z] [uploadQueue] Retrying task d4449064f4a74857e72fd9048f5e9c689bea882df8e51e0a8ab233132ee1d766
+[debug] [2018-10-09T20:56:47.968Z] [uploadQueue] Retrying task af90eaedd58fee4c368d173a592eb8f85b6168cc6535e68e4c3c2e9a7cc684ef
+[debug] [2018-10-09T20:56:47.968Z] [uploadQueue] Retrying task ff62d092de1422a681b67c2bca781f273f9dc07a90ac3cf1f83fde18c94802ac
+[debug] [2018-10-09T20:56:47.969Z] [uploadQueue] Retrying task 059633f4b012472a43e8ce88eac12e45bea92d716d01fd551181ad2c2f0bcc25
+[debug] [2018-10-09T20:56:47.969Z] [uploadQueue] Retrying task 7a3a1ad55b428edebb75cd610805676fe2dfe5eff96f2bf862a843573d630c11
+[debug] [2018-10-09T20:56:47.969Z] [uploadQueue] Retrying task 7d96fcaa2ffd769944761ab8878a193781e6fe3b9112e8dcdb7b89ab6d129607
+[debug] [2018-10-09T20:56:47.969Z] [uploadQueue] Retrying task 15742fca1b8f46e8a8afac0abc06af24aebee9a7fc7cd3aaac653d08e95adf20
+[debug] [2018-10-09T20:56:47.970Z] [uploadQueue] Retrying task 27f348e2933ec8417c089a41847591e5ee1417418b17ec8df3c321c1dcf2cab4
+[debug] [2018-10-09T20:56:47.970Z] [uploadQueue] Retrying task cb6362ef192178d7b27fe23d608dc36d7ba2fb22b4439e4ac4b5de0c41b0421f
+[debug] [2018-10-09T20:56:47.970Z] [uploadQueue] Retrying task 6183c3369de484d1bdedb0400d31cdc92206863d69e60f7773b249aec96808c7
+[debug] [2018-10-09T20:56:47.970Z] [uploadQueue] Retrying task 96c262add6d2cf9061dbda30515819709c109796fe79bc62a95a4b6db9447b5f
+[debug] [2018-10-09T20:56:47.971Z] [uploadQueue] Retrying task e5982b7a4ccc4a5b71f8dbfbf6a5abcd036d7d20128f00496fad7c460a90e113
+[debug] [2018-10-09T20:56:47.971Z] [uploadQueue] Retrying task 91fd34d2075dd08eb493933d70b82dbf3c7d5d93a63d05e080d59198375e17ae
+[debug] [2018-10-09T20:56:47.971Z] [uploadQueue] Retrying task 2d33af09cec4c40b7be1a373f42543b1c4ea39f1c8fc5844bdb54e7af04ff318
+[debug] [2018-10-09T20:56:47.971Z] [uploadQueue] Retrying task b2c79cc972a562ba7851d026ee147db3fa7d349f51c32e4384e67731302894c5
+[debug] [2018-10-09T20:56:47.975Z] [uploadQueue] Retrying task 15fead32db45fb9f833c8681de6be70bdcda31dc9a766103ce337ace88375847
+[debug] [2018-10-09T20:56:49.575Z] [uploadQueue] Retrying task d4449064f4a74857e72fd9048f5e9c689bea882df8e51e0a8ab233132ee1d766
+[debug] [2018-10-09T20:56:49.575Z] [uploadQueue] Retrying task af90eaedd58fee4c368d173a592eb8f85b6168cc6535e68e4c3c2e9a7cc684ef
+[debug] [2018-10-09T20:56:49.575Z] [uploadQueue] Retrying task ff62d092de1422a681b67c2bca781f273f9dc07a90ac3cf1f83fde18c94802ac
+[debug] [2018-10-09T20:56:49.575Z] [uploadQueue] Retrying task 059633f4b012472a43e8ce88eac12e45bea92d716d01fd551181ad2c2f0bcc25
+[debug] [2018-10-09T20:56:49.576Z] [uploadQueue] Retrying task 7a3a1ad55b428edebb75cd610805676fe2dfe5eff96f2bf862a843573d630c11
+[debug] [2018-10-09T20:56:49.576Z] [uploadQueue] Retrying task 7d96fcaa2ffd769944761ab8878a193781e6fe3b9112e8dcdb7b89ab6d129607
+[debug] [2018-10-09T20:56:49.576Z] [uploadQueue] Retrying task 15742fca1b8f46e8a8afac0abc06af24aebee9a7fc7cd3aaac653d08e95adf20
+[debug] [2018-10-09T20:56:49.576Z] [uploadQueue] Retrying task 27f348e2933ec8417c089a41847591e5ee1417418b17ec8df3c321c1dcf2cab4
+[debug] [2018-10-09T20:56:49.576Z] [uploadQueue] Retrying task cb6362ef192178d7b27fe23d608dc36d7ba2fb22b4439e4ac4b5de0c41b0421f
+[debug] [2018-10-09T20:56:49.576Z] [uploadQueue] Retrying task 6183c3369de484d1bdedb0400d31cdc92206863d69e60f7773b249aec96808c7
+[debug] [2018-10-09T20:56:49.576Z] [uploadQueue] Retrying task 96c262add6d2cf9061dbda30515819709c109796fe79bc62a95a4b6db9447b5f
+[debug] [2018-10-09T20:56:49.577Z] [uploadQueue] Retrying task e5982b7a4ccc4a5b71f8dbfbf6a5abcd036d7d20128f00496fad7c460a90e113
+[debug] [2018-10-09T20:56:49.577Z] [uploadQueue] Retrying task 91fd34d2075dd08eb493933d70b82dbf3c7d5d93a63d05e080d59198375e17ae
+[debug] [2018-10-09T20:56:49.577Z] [uploadQueue] Retrying task 2d33af09cec4c40b7be1a373f42543b1c4ea39f1c8fc5844bdb54e7af04ff318
+[debug] [2018-10-09T20:56:49.577Z] [uploadQueue] Retrying task b2c79cc972a562ba7851d026ee147db3fa7d349f51c32e4384e67731302894c5
+[debug] [2018-10-09T20:56:49.579Z] [uploadQueue] Retrying task 15fead32db45fb9f833c8681de6be70bdcda31dc9a766103ce337ace88375847
+[debug] [2018-10-09T20:56:52.779Z] [uploadQueue] Retrying task d4449064f4a74857e72fd9048f5e9c689bea882df8e51e0a8ab233132ee1d766
+[debug] [2018-10-09T20:56:52.779Z] [uploadQueue] Retrying task af90eaedd58fee4c368d173a592eb8f85b6168cc6535e68e4c3c2e9a7cc684ef
+[debug] [2018-10-09T20:56:52.780Z] [uploadQueue] Retrying task ff62d092de1422a681b67c2bca781f273f9dc07a90ac3cf1f83fde18c94802ac
+[debug] [2018-10-09T20:56:52.780Z] [uploadQueue] Retrying task 059633f4b012472a43e8ce88eac12e45bea92d716d01fd551181ad2c2f0bcc25
+[debug] [2018-10-09T20:56:52.780Z] [uploadQueue] Retrying task 7a3a1ad55b428edebb75cd610805676fe2dfe5eff96f2bf862a843573d630c11
+[debug] [2018-10-09T20:56:52.781Z] [uploadQueue] Retrying task 7d96fcaa2ffd769944761ab8878a193781e6fe3b9112e8dcdb7b89ab6d129607
+[debug] [2018-10-09T20:56:52.781Z] [uploadQueue] Retrying task 15742fca1b8f46e8a8afac0abc06af24aebee9a7fc7cd3aaac653d08e95adf20
+[debug] [2018-10-09T20:56:52.781Z] [uploadQueue] Retrying task 27f348e2933ec8417c089a41847591e5ee1417418b17ec8df3c321c1dcf2cab4
+[debug] [2018-10-09T20:56:52.781Z] [uploadQueue] Retrying task cb6362ef192178d7b27fe23d608dc36d7ba2fb22b4439e4ac4b5de0c41b0421f
+[debug] [2018-10-09T20:56:52.782Z] [uploadQueue] Retrying task 6183c3369de484d1bdedb0400d31cdc92206863d69e60f7773b249aec96808c7
+[debug] [2018-10-09T20:56:52.782Z] [uploadQueue] Retrying task 96c262add6d2cf9061dbda30515819709c109796fe79bc62a95a4b6db9447b5f
+[debug] [2018-10-09T20:56:52.782Z] [uploadQueue] Retrying task e5982b7a4ccc4a5b71f8dbfbf6a5abcd036d7d20128f00496fad7c460a90e113
+[debug] [2018-10-09T20:56:52.783Z] [uploadQueue] Retrying task 91fd34d2075dd08eb493933d70b82dbf3c7d5d93a63d05e080d59198375e17ae
+[debug] [2018-10-09T20:56:52.783Z] [uploadQueue] Retrying task 2d33af09cec4c40b7be1a373f42543b1c4ea39f1c8fc5844bdb54e7af04ff318
+[debug] [2018-10-09T20:56:52.783Z] [uploadQueue] Retrying task b2c79cc972a562ba7851d026ee147db3fa7d349f51c32e4384e67731302894c5
+[debug] [2018-10-09T20:56:52.788Z] [uploadQueue] Retrying task 15fead32db45fb9f833c8681de6be70bdcda31dc9a766103ce337ace88375847
+[debug] [2018-10-09T20:56:59.188Z] [uploadQueue] Retrying task d4449064f4a74857e72fd9048f5e9c689bea882df8e51e0a8ab233132ee1d766
+[debug] [2018-10-09T20:56:59.188Z] [uploadQueue] Retrying task af90eaedd58fee4c368d173a592eb8f85b6168cc6535e68e4c3c2e9a7cc684ef
+[debug] [2018-10-09T20:56:59.189Z] [uploadQueue] Retrying task ff62d092de1422a681b67c2bca781f273f9dc07a90ac3cf1f83fde18c94802ac
+[debug] [2018-10-09T20:56:59.189Z] [uploadQueue] Retrying task 059633f4b012472a43e8ce88eac12e45bea92d716d01fd551181ad2c2f0bcc25
+[debug] [2018-10-09T20:56:59.191Z] [uploadQueue] Retries exhausted for task d4449064f4a74857e72fd9048f5e9c689bea882df8e51e0a8ab233132ee1d766 :
+[debug] [2018-10-09T20:56:59.192Z] [uploadQueue] Retries exhausted for task af90eaedd58fee4c368d173a592eb8f85b6168cc6535e68e4c3c2e9a7cc684ef :
+[debug] [2018-10-09T20:56:59.192Z] [uploadQueue] Retries exhausted for task ff62d092de1422a681b67c2bca781f273f9dc07a90ac3cf1f83fde18c94802ac :
+[debug] [2018-10-09T20:56:59.192Z] [uploadQueue] Retries exhausted for task 059633f4b012472a43e8ce88eac12e45bea92d716d01fd551181ad2c2f0bcc25 :
+[debug] [2018-10-09T20:56:59.193Z] [hosting][upload queue][FINAL]
+[debug] [2018-10-09T20:56:59.214Z] [uploadQueue] Retrying task 7a3a1ad55b428edebb75cd610805676fe2dfe5eff96f2bf862a843573d630c11
+[debug] [2018-10-09T20:56:59.214Z] [uploadQueue] Retrying task 7d96fcaa2ffd769944761ab8878a193781e6fe3b9112e8dcdb7b89ab6d129607
+[debug] [2018-10-09T20:56:59.215Z] [uploadQueue] Retrying task 15742fca1b8f46e8a8afac0abc06af24aebee9a7fc7cd3aaac653d08e95adf20
+[debug] [2018-10-09T20:56:59.215Z] [uploadQueue] Retrying task 27f348e2933ec8417c089a41847591e5ee1417418b17ec8df3c321c1dcf2cab4
+[debug] [2018-10-09T20:56:59.215Z] [uploadQueue] Retrying task cb6362ef192178d7b27fe23d608dc36d7ba2fb22b4439e4ac4b5de0c41b0421f
+[debug] [2018-10-09T20:56:59.215Z] [uploadQueue] Retrying task 6183c3369de484d1bdedb0400d31cdc92206863d69e60f7773b249aec96808c7
+[debug] [2018-10-09T20:56:59.216Z] [uploadQueue] Retrying task 96c262add6d2cf9061dbda30515819709c109796fe79bc62a95a4b6db9447b5f
+[debug] [2018-10-09T20:56:59.216Z] [uploadQueue] Retrying task e5982b7a4ccc4a5b71f8dbfbf6a5abcd036d7d20128f00496fad7c460a90e113
+[debug] [2018-10-09T20:56:59.216Z] [uploadQueue] Retrying task 91fd34d2075dd08eb493933d70b82dbf3c7d5d93a63d05e080d59198375e17ae
+[debug] [2018-10-09T20:56:59.216Z] [uploadQueue] Retrying task 2d33af09cec4c40b7be1a373f42543b1c4ea39f1c8fc5844bdb54e7af04ff318
+[debug] [2018-10-09T20:56:59.217Z] [uploadQueue] Retrying task b2c79cc972a562ba7851d026ee147db3fa7d349f51c32e4384e67731302894c5
+[debug] [2018-10-09T20:56:59.217Z] [uploadQueue] Retrying task 15fead32db45fb9f833c8681de6be70bdcda31dc9a766103ce337ace88375847
+[debug] [2018-10-09T20:56:59.219Z] [uploadQueue] Retries exhausted for task 7a3a1ad55b428edebb75cd610805676fe2dfe5eff96f2bf862a843573d630c11 :
+[debug] [2018-10-09T20:56:59.220Z] [uploadQueue] Retries exhausted for task 7d96fcaa2ffd769944761ab8878a193781e6fe3b9112e8dcdb7b89ab6d129607 :
+[debug] [2018-10-09T20:56:59.220Z] [uploadQueue] Retries exhausted for task 15742fca1b8f46e8a8afac0abc06af24aebee9a7fc7cd3aaac653d08e95adf20 :
+[debug] [2018-10-09T20:56:59.220Z] [uploadQueue] Retries exhausted for task 27f348e2933ec8417c089a41847591e5ee1417418b17ec8df3c321c1dcf2cab4 :
+[debug] [2018-10-09T20:56:59.220Z] [uploadQueue] Retries exhausted for task cb6362ef192178d7b27fe23d608dc36d7ba2fb22b4439e4ac4b5de0c41b0421f :
+[debug] [2018-10-09T20:56:59.220Z] [uploadQueue] Retries exhausted for task 6183c3369de484d1bdedb0400d31cdc92206863d69e60f7773b249aec96808c7 :
+[debug] [2018-10-09T20:56:59.221Z] [uploadQueue] Retries exhausted for task 96c262add6d2cf9061dbda30515819709c109796fe79bc62a95a4b6db9447b5f :
+[debug] [2018-10-09T20:56:59.221Z] [uploadQueue] Retries exhausted for task e5982b7a4ccc4a5b71f8dbfbf6a5abcd036d7d20128f00496fad7c460a90e113 :
+[debug] [2018-10-09T20:56:59.221Z] [uploadQueue] Retries exhausted for task 91fd34d2075dd08eb493933d70b82dbf3c7d5d93a63d05e080d59198375e17ae :
+[debug] [2018-10-09T20:56:59.221Z] [uploadQueue] Retries exhausted for task 2d33af09cec4c40b7be1a373f42543b1c4ea39f1c8fc5844bdb54e7af04ff318 :
+[debug] [2018-10-09T20:56:59.221Z] [uploadQueue] Retries exhausted for task b2c79cc972a562ba7851d026ee147db3fa7d349f51c32e4384e67731302894c5 :
+[debug] [2018-10-09T20:56:59.222Z] [uploadQueue] Retries exhausted for task 15fead32db45fb9f833c8681de6be70bdcda31dc9a766103ce337ace88375847 :
+[debug] [2018-10-09T20:56:59.652Z] TypeError: Path must be a string. Received undefined
+    at assertPath (path.js:28:11)
+    at Object.resolve (path.js:211:7)
+    at Uploader._zipStream (C:\Users\ADERSON BORGES\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\uploader.js:253:37)
+    at C:\Users\ADERSON BORGES\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\uploader.js:223:16
+    at new Promise (<anonymous>)
+    at C:\Users\ADERSON BORGES\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\uploader.js:222:16
+    at <anonymous>
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2018-10-09T21:11:28.160Z] ----------------------------------------------------------------------
+[debug] [2018-10-09T21:11:28.163Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ADERSON BORGES\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-10-09T21:11:28.163Z] CLI Version:   4.2.1
+[debug] [2018-10-09T21:11:28.163Z] Platform:      win32
+[debug] [2018-10-09T21:11:28.163Z] Node Version:  v8.11.4
+[debug] [2018-10-09T21:11:28.164Z] Time:          Tue Oct 09 2018 18:11:28 GMT-0300 (Hora oficial do Brasil)
+[debug] [2018-10-09T21:11:28.164Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-10-09T21:11:28.177Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-10-09T21:11:28.177Z] > authorizing via signed-in user
+[debug] [2018-10-09T21:11:28.180Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/huehue-bfa99  
+ 
+[debug] [2018-10-09T21:11:31.444Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'huehue-bfa99'...
+[info] 
+[info] i  deploying database, hosting
+[info] i  database: checking rules syntax...
+[debug] [2018-10-09T21:11:31.460Z] >>> HTTP REQUEST PUT https://huehue-bfa99.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  "rules": {
+    ".read": "true",
+    ".write": "true"
+  }
+}
+[debug] [2018-10-09T21:11:32.723Z] <<< HTTP RESPONSE 200
+[info] +  database: rules syntax for database huehue-bfa99 is valid
+[debug] [2018-10-09T21:11:32.730Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/huehue-bfa99/versions  
+
+[debug] [2018-10-09T21:11:34.736Z] <<< HTTP RESPONSE 200
+[info] i  hosting[huehue-bfa99]: beginning deploy...
+[info] i  hosting[huehue-bfa99]: found 31 files in MeAche
+[debug] [2018-10-09T21:11:34.787Z] [hosting] hash cache [TWVBY2hl] stored for 31 files
+[debug] [2018-10-09T21:11:34.788Z] [hosting][hash queue][FINAL]
+[debug] [2018-10-09T21:11:34.788Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/huehue-bfa99/versions/4572fa908473e771:populateFiles  
+ <request body omitted>
+[debug] [2018-10-09T21:11:36.672Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-09T21:11:36.684Z] [hosting][populate queue][FINAL]
+[debug] [2018-10-09T21:11:36.685Z] [hosting] uploads queued: 16
+[debug] [2018-10-09T21:11:37.086Z] [uploadQueue] Retrying task 27f348e2933ec8417c089a41847591e5ee1417418b17ec8df3c321c1dcf2cab4
+[debug] [2018-10-09T21:11:37.087Z] [uploadQueue] Retrying task d4449064f4a74857e72fd9048f5e9c689bea882df8e51e0a8ab233132ee1d766
+[debug] [2018-10-09T21:11:37.087Z] [uploadQueue] Retrying task e5982b7a4ccc4a5b71f8dbfbf6a5abcd036d7d20128f00496fad7c460a90e113
+[debug] [2018-10-09T21:11:37.088Z] [uploadQueue] Retrying task 059633f4b012472a43e8ce88eac12e45bea92d716d01fd551181ad2c2f0bcc25
+[debug] [2018-10-09T21:11:37.088Z] [uploadQueue] Retrying task b2c79cc972a562ba7851d026ee147db3fa7d349f51c32e4384e67731302894c5
+[debug] [2018-10-09T21:11:37.088Z] [uploadQueue] Retrying task 15742fca1b8f46e8a8afac0abc06af24aebee9a7fc7cd3aaac653d08e95adf20
+[debug] [2018-10-09T21:11:37.088Z] [uploadQueue] Retrying task 96c262add6d2cf9061dbda30515819709c109796fe79bc62a95a4b6db9447b5f
+[debug] [2018-10-09T21:11:37.089Z] [uploadQueue] Retrying task 91fd34d2075dd08eb493933d70b82dbf3c7d5d93a63d05e080d59198375e17ae
+[debug] [2018-10-09T21:11:37.089Z] [uploadQueue] Retrying task af90eaedd58fee4c368d173a592eb8f85b6168cc6535e68e4c3c2e9a7cc684ef
+[debug] [2018-10-09T21:11:37.089Z] [uploadQueue] Retrying task 7d96fcaa2ffd769944761ab8878a193781e6fe3b9112e8dcdb7b89ab6d129607
+[debug] [2018-10-09T21:11:37.090Z] [uploadQueue] Retrying task 15fead32db45fb9f833c8681de6be70bdcda31dc9a766103ce337ace88375847
+[debug] [2018-10-09T21:11:37.090Z] [uploadQueue] Retrying task cb6362ef192178d7b27fe23d608dc36d7ba2fb22b4439e4ac4b5de0c41b0421f
+[debug] [2018-10-09T21:11:37.090Z] [uploadQueue] Retrying task 6183c3369de484d1bdedb0400d31cdc92206863d69e60f7773b249aec96808c7
+[debug] [2018-10-09T21:11:37.091Z] [uploadQueue] Retrying task 2d33af09cec4c40b7be1a373f42543b1c4ea39f1c8fc5844bdb54e7af04ff318
+[debug] [2018-10-09T21:11:37.091Z] [uploadQueue] Retrying task 7a3a1ad55b428edebb75cd610805676fe2dfe5eff96f2bf862a843573d630c11
+[debug] [2018-10-09T21:11:37.091Z] [uploadQueue] Retrying task ff62d092de1422a681b67c2bca781f273f9dc07a90ac3cf1f83fde18c94802ac
+[debug] [2018-10-09T21:11:37.887Z] [uploadQueue] Retrying task 27f348e2933ec8417c089a41847591e5ee1417418b17ec8df3c321c1dcf2cab4
+[debug] [2018-10-09T21:11:37.895Z] [uploadQueue] Retrying task d4449064f4a74857e72fd9048f5e9c689bea882df8e51e0a8ab233132ee1d766
+[debug] [2018-10-09T21:11:37.895Z] [uploadQueue] Retrying task e5982b7a4ccc4a5b71f8dbfbf6a5abcd036d7d20128f00496fad7c460a90e113
+[debug] [2018-10-09T21:11:37.895Z] [uploadQueue] Retrying task 059633f4b012472a43e8ce88eac12e45bea92d716d01fd551181ad2c2f0bcc25
+[debug] [2018-10-09T21:11:37.896Z] [uploadQueue] Retrying task b2c79cc972a562ba7851d026ee147db3fa7d349f51c32e4384e67731302894c5
+[debug] [2018-10-09T21:11:37.896Z] [uploadQueue] Retrying task 15742fca1b8f46e8a8afac0abc06af24aebee9a7fc7cd3aaac653d08e95adf20
+[debug] [2018-10-09T21:11:37.896Z] [uploadQueue] Retrying task 96c262add6d2cf9061dbda30515819709c109796fe79bc62a95a4b6db9447b5f
+[debug] [2018-10-09T21:11:37.896Z] [uploadQueue] Retrying task 91fd34d2075dd08eb493933d70b82dbf3c7d5d93a63d05e080d59198375e17ae
+[debug] [2018-10-09T21:11:37.897Z] [uploadQueue] Retrying task af90eaedd58fee4c368d173a592eb8f85b6168cc6535e68e4c3c2e9a7cc684ef
+[debug] [2018-10-09T21:11:37.897Z] [uploadQueue] Retrying task 7d96fcaa2ffd769944761ab8878a193781e6fe3b9112e8dcdb7b89ab6d129607
+[debug] [2018-10-09T21:11:37.897Z] [uploadQueue] Retrying task 15fead32db45fb9f833c8681de6be70bdcda31dc9a766103ce337ace88375847
+[debug] [2018-10-09T21:11:37.897Z] [uploadQueue] Retrying task cb6362ef192178d7b27fe23d608dc36d7ba2fb22b4439e4ac4b5de0c41b0421f
+[debug] [2018-10-09T21:11:37.898Z] [uploadQueue] Retrying task 6183c3369de484d1bdedb0400d31cdc92206863d69e60f7773b249aec96808c7
+[debug] [2018-10-09T21:11:37.898Z] [uploadQueue] Retrying task 2d33af09cec4c40b7be1a373f42543b1c4ea39f1c8fc5844bdb54e7af04ff318
+[debug] [2018-10-09T21:11:37.898Z] [uploadQueue] Retrying task 7a3a1ad55b428edebb75cd610805676fe2dfe5eff96f2bf862a843573d630c11
+[debug] [2018-10-09T21:11:37.899Z] [uploadQueue] Retrying task ff62d092de1422a681b67c2bca781f273f9dc07a90ac3cf1f83fde18c94802ac
+[debug] [2018-10-09T21:11:39.488Z] [uploadQueue] Retrying task 27f348e2933ec8417c089a41847591e5ee1417418b17ec8df3c321c1dcf2cab4
+[debug] [2018-10-09T21:11:39.503Z] [uploadQueue] Retrying task d4449064f4a74857e72fd9048f5e9c689bea882df8e51e0a8ab233132ee1d766
+[debug] [2018-10-09T21:11:39.503Z] [uploadQueue] Retrying task e5982b7a4ccc4a5b71f8dbfbf6a5abcd036d7d20128f00496fad7c460a90e113
+[debug] [2018-10-09T21:11:39.503Z] [uploadQueue] Retrying task 059633f4b012472a43e8ce88eac12e45bea92d716d01fd551181ad2c2f0bcc25
+[debug] [2018-10-09T21:11:39.503Z] [uploadQueue] Retrying task b2c79cc972a562ba7851d026ee147db3fa7d349f51c32e4384e67731302894c5
+[debug] [2018-10-09T21:11:39.504Z] [uploadQueue] Retrying task 15742fca1b8f46e8a8afac0abc06af24aebee9a7fc7cd3aaac653d08e95adf20
+[debug] [2018-10-09T21:11:39.504Z] [uploadQueue] Retrying task 96c262add6d2cf9061dbda30515819709c109796fe79bc62a95a4b6db9447b5f
+[debug] [2018-10-09T21:11:39.504Z] [uploadQueue] Retrying task 91fd34d2075dd08eb493933d70b82dbf3c7d5d93a63d05e080d59198375e17ae
+[debug] [2018-10-09T21:11:39.504Z] [uploadQueue] Retrying task af90eaedd58fee4c368d173a592eb8f85b6168cc6535e68e4c3c2e9a7cc684ef
+[debug] [2018-10-09T21:11:39.505Z] [uploadQueue] Retrying task 7d96fcaa2ffd769944761ab8878a193781e6fe3b9112e8dcdb7b89ab6d129607
+[debug] [2018-10-09T21:11:39.505Z] [uploadQueue] Retrying task 15fead32db45fb9f833c8681de6be70bdcda31dc9a766103ce337ace88375847
+[debug] [2018-10-09T21:11:39.505Z] [uploadQueue] Retrying task cb6362ef192178d7b27fe23d608dc36d7ba2fb22b4439e4ac4b5de0c41b0421f
+[debug] [2018-10-09T21:11:39.506Z] [uploadQueue] Retrying task 6183c3369de484d1bdedb0400d31cdc92206863d69e60f7773b249aec96808c7
+[debug] [2018-10-09T21:11:39.506Z] [uploadQueue] Retrying task 2d33af09cec4c40b7be1a373f42543b1c4ea39f1c8fc5844bdb54e7af04ff318
+[debug] [2018-10-09T21:11:39.506Z] [uploadQueue] Retrying task 7a3a1ad55b428edebb75cd610805676fe2dfe5eff96f2bf862a843573d630c11
+[debug] [2018-10-09T21:11:39.507Z] [uploadQueue] Retrying task ff62d092de1422a681b67c2bca781f273f9dc07a90ac3cf1f83fde18c94802ac
+[debug] [2018-10-09T21:11:42.689Z] [uploadQueue] Retrying task 27f348e2933ec8417c089a41847591e5ee1417418b17ec8df3c321c1dcf2cab4
+[debug] [2018-10-09T21:11:42.711Z] [uploadQueue] Retrying task d4449064f4a74857e72fd9048f5e9c689bea882df8e51e0a8ab233132ee1d766
+[debug] [2018-10-09T21:11:42.711Z] [uploadQueue] Retrying task e5982b7a4ccc4a5b71f8dbfbf6a5abcd036d7d20128f00496fad7c460a90e113
+[debug] [2018-10-09T21:11:42.711Z] [uploadQueue] Retrying task 059633f4b012472a43e8ce88eac12e45bea92d716d01fd551181ad2c2f0bcc25
+[debug] [2018-10-09T21:11:42.712Z] [uploadQueue] Retrying task b2c79cc972a562ba7851d026ee147db3fa7d349f51c32e4384e67731302894c5
+[debug] [2018-10-09T21:11:42.712Z] [uploadQueue] Retrying task 15742fca1b8f46e8a8afac0abc06af24aebee9a7fc7cd3aaac653d08e95adf20
+[debug] [2018-10-09T21:11:42.712Z] [uploadQueue] Retrying task 96c262add6d2cf9061dbda30515819709c109796fe79bc62a95a4b6db9447b5f
+[debug] [2018-10-09T21:11:42.712Z] [uploadQueue] Retrying task 91fd34d2075dd08eb493933d70b82dbf3c7d5d93a63d05e080d59198375e17ae
+[debug] [2018-10-09T21:11:42.712Z] [uploadQueue] Retrying task af90eaedd58fee4c368d173a592eb8f85b6168cc6535e68e4c3c2e9a7cc684ef
+[debug] [2018-10-09T21:11:42.713Z] [uploadQueue] Retrying task 7d96fcaa2ffd769944761ab8878a193781e6fe3b9112e8dcdb7b89ab6d129607
+[debug] [2018-10-09T21:11:42.713Z] [uploadQueue] Retrying task 15fead32db45fb9f833c8681de6be70bdcda31dc9a766103ce337ace88375847
+[debug] [2018-10-09T21:11:42.713Z] [uploadQueue] Retrying task cb6362ef192178d7b27fe23d608dc36d7ba2fb22b4439e4ac4b5de0c41b0421f
+[debug] [2018-10-09T21:11:42.713Z] [uploadQueue] Retrying task 6183c3369de484d1bdedb0400d31cdc92206863d69e60f7773b249aec96808c7
+[debug] [2018-10-09T21:11:42.714Z] [uploadQueue] Retrying task 2d33af09cec4c40b7be1a373f42543b1c4ea39f1c8fc5844bdb54e7af04ff318
+[debug] [2018-10-09T21:11:42.714Z] [uploadQueue] Retrying task 7a3a1ad55b428edebb75cd610805676fe2dfe5eff96f2bf862a843573d630c11
+[debug] [2018-10-09T21:11:42.714Z] [uploadQueue] Retrying task ff62d092de1422a681b67c2bca781f273f9dc07a90ac3cf1f83fde18c94802ac
+[debug] [2018-10-09T21:11:49.091Z] [uploadQueue] Retrying task 27f348e2933ec8417c089a41847591e5ee1417418b17ec8df3c321c1dcf2cab4
+[debug] [2018-10-09T21:11:49.091Z] [uploadQueue] Retries exhausted for task 27f348e2933ec8417c089a41847591e5ee1417418b17ec8df3c321c1dcf2cab4 :
+[debug] [2018-10-09T21:11:49.092Z] [hosting][upload queue][FINAL]
+[debug] [2018-10-09T21:11:49.119Z] [uploadQueue] Retrying task d4449064f4a74857e72fd9048f5e9c689bea882df8e51e0a8ab233132ee1d766
+[debug] [2018-10-09T21:11:49.119Z] [uploadQueue] Retrying task e5982b7a4ccc4a5b71f8dbfbf6a5abcd036d7d20128f00496fad7c460a90e113
+[debug] [2018-10-09T21:11:49.120Z] [uploadQueue] Retrying task 059633f4b012472a43e8ce88eac12e45bea92d716d01fd551181ad2c2f0bcc25
+[debug] [2018-10-09T21:11:49.120Z] [uploadQueue] Retrying task b2c79cc972a562ba7851d026ee147db3fa7d349f51c32e4384e67731302894c5
+[debug] [2018-10-09T21:11:49.120Z] [uploadQueue] Retrying task 15742fca1b8f46e8a8afac0abc06af24aebee9a7fc7cd3aaac653d08e95adf20
+[debug] [2018-10-09T21:11:49.120Z] [uploadQueue] Retrying task 96c262add6d2cf9061dbda30515819709c109796fe79bc62a95a4b6db9447b5f
+[debug] [2018-10-09T21:11:49.120Z] [uploadQueue] Retrying task 91fd34d2075dd08eb493933d70b82dbf3c7d5d93a63d05e080d59198375e17ae
+[debug] [2018-10-09T21:11:49.120Z] [uploadQueue] Retrying task af90eaedd58fee4c368d173a592eb8f85b6168cc6535e68e4c3c2e9a7cc684ef
+[debug] [2018-10-09T21:11:49.120Z] [uploadQueue] Retrying task 7d96fcaa2ffd769944761ab8878a193781e6fe3b9112e8dcdb7b89ab6d129607
+[debug] [2018-10-09T21:11:49.121Z] [uploadQueue] Retrying task 15fead32db45fb9f833c8681de6be70bdcda31dc9a766103ce337ace88375847
+[debug] [2018-10-09T21:11:49.121Z] [uploadQueue] Retrying task cb6362ef192178d7b27fe23d608dc36d7ba2fb22b4439e4ac4b5de0c41b0421f
+[debug] [2018-10-09T21:11:49.121Z] [uploadQueue] Retrying task 6183c3369de484d1bdedb0400d31cdc92206863d69e60f7773b249aec96808c7
+[debug] [2018-10-09T21:11:49.121Z] [uploadQueue] Retrying task 2d33af09cec4c40b7be1a373f42543b1c4ea39f1c8fc5844bdb54e7af04ff318
+[debug] [2018-10-09T21:11:49.121Z] [uploadQueue] Retrying task 7a3a1ad55b428edebb75cd610805676fe2dfe5eff96f2bf862a843573d630c11
+[debug] [2018-10-09T21:11:49.121Z] [uploadQueue] Retrying task ff62d092de1422a681b67c2bca781f273f9dc07a90ac3cf1f83fde18c94802ac
+[debug] [2018-10-09T21:11:49.124Z] [uploadQueue] Retries exhausted for task d4449064f4a74857e72fd9048f5e9c689bea882df8e51e0a8ab233132ee1d766 :
+[debug] [2018-10-09T21:11:49.124Z] [uploadQueue] Retries exhausted for task e5982b7a4ccc4a5b71f8dbfbf6a5abcd036d7d20128f00496fad7c460a90e113 :
+[debug] [2018-10-09T21:11:49.124Z] [uploadQueue] Retries exhausted for task 059633f4b012472a43e8ce88eac12e45bea92d716d01fd551181ad2c2f0bcc25 :
+[debug] [2018-10-09T21:11:49.124Z] [uploadQueue] Retries exhausted for task b2c79cc972a562ba7851d026ee147db3fa7d349f51c32e4384e67731302894c5 :
+[debug] [2018-10-09T21:11:49.124Z] [uploadQueue] Retries exhausted for task 15742fca1b8f46e8a8afac0abc06af24aebee9a7fc7cd3aaac653d08e95adf20 :
+[debug] [2018-10-09T21:11:49.124Z] [uploadQueue] Retries exhausted for task 96c262add6d2cf9061dbda30515819709c109796fe79bc62a95a4b6db9447b5f :
+[debug] [2018-10-09T21:11:49.125Z] [uploadQueue] Retries exhausted for task 91fd34d2075dd08eb493933d70b82dbf3c7d5d93a63d05e080d59198375e17ae :
+[debug] [2018-10-09T21:11:49.125Z] [uploadQueue] Retries exhausted for task af90eaedd58fee4c368d173a592eb8f85b6168cc6535e68e4c3c2e9a7cc684ef :
+[debug] [2018-10-09T21:11:49.125Z] [uploadQueue] Retries exhausted for task 7d96fcaa2ffd769944761ab8878a193781e6fe3b9112e8dcdb7b89ab6d129607 :
+[debug] [2018-10-09T21:11:49.125Z] [uploadQueue] Retries exhausted for task 15fead32db45fb9f833c8681de6be70bdcda31dc9a766103ce337ace88375847 :
+[debug] [2018-10-09T21:11:49.125Z] [uploadQueue] Retries exhausted for task cb6362ef192178d7b27fe23d608dc36d7ba2fb22b4439e4ac4b5de0c41b0421f :
+[debug] [2018-10-09T21:11:49.125Z] [uploadQueue] Retries exhausted for task 6183c3369de484d1bdedb0400d31cdc92206863d69e60f7773b249aec96808c7 :
+[debug] [2018-10-09T21:11:49.127Z] [uploadQueue] Retries exhausted for task 2d33af09cec4c40b7be1a373f42543b1c4ea39f1c8fc5844bdb54e7af04ff318 :
+[debug] [2018-10-09T21:11:49.128Z] [uploadQueue] Retries exhausted for task 7a3a1ad55b428edebb75cd610805676fe2dfe5eff96f2bf862a843573d630c11 :
+[debug] [2018-10-09T21:11:49.128Z] [uploadQueue] Retries exhausted for task ff62d092de1422a681b67c2bca781f273f9dc07a90ac3cf1f83fde18c94802ac :
+[debug] [2018-10-09T21:11:49.552Z] TypeError: Path must be a string. Received undefined
+    at assertPath (path.js:28:11)
+    at Object.resolve (path.js:211:7)
+    at Uploader._zipStream (C:\Users\ADERSON BORGES\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\uploader.js:253:37)
+    at C:\Users\ADERSON BORGES\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\uploader.js:223:16
+    at new Promise (<anonymous>)
+    at C:\Users\ADERSON BORGES\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\uploader.js:222:16
+    at <anonymous>
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2018-10-09T21:17:40.884Z] ----------------------------------------------------------------------
+[debug] [2018-10-09T21:17:40.888Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ADERSON BORGES\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-10-09T21:17:40.888Z] CLI Version:   4.2.1
+[debug] [2018-10-09T21:17:40.888Z] Platform:      win32
+[debug] [2018-10-09T21:17:40.888Z] Node Version:  v8.11.4
+[debug] [2018-10-09T21:17:40.889Z] Time:          Tue Oct 09 2018 18:17:40 GMT-0300 (Hora oficial do Brasil)
+[debug] [2018-10-09T21:17:40.889Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-10-09T21:17:40.902Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-10-09T21:17:40.902Z] > authorizing via signed-in user
+[debug] [2018-10-09T21:17:40.905Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/huehue-bfa99  
+ 
+[debug] [2018-10-09T21:17:42.194Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'huehue-bfa99'...
+[info] 
+[info] i  deploying database, hosting
+[info] i  database: checking rules syntax...
+[debug] [2018-10-09T21:17:42.213Z] >>> HTTP REQUEST PUT https://huehue-bfa99.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  "rules": {
+    ".read": "true",
+    ".write": "true"
+  }
+}
+[debug] [2018-10-09T21:17:43.437Z] <<< HTTP RESPONSE 200
+[info] +  database: rules syntax for database huehue-bfa99 is valid
+[debug] [2018-10-09T21:17:43.445Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/huehue-bfa99/versions  
+
+[debug] [2018-10-09T21:17:45.419Z] <<< HTTP RESPONSE 200
+[info] i  hosting[huehue-bfa99]: beginning deploy...
+[info] i  hosting[huehue-bfa99]: found 31 files in MeAche
+[debug] [2018-10-09T21:17:45.469Z] [hosting] hash cache [TWVBY2hl] stored for 31 files
+[debug] [2018-10-09T21:17:45.469Z] [hosting][hash queue][FINAL]
+[debug] [2018-10-09T21:17:45.470Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/huehue-bfa99/versions/5c58191e1c44271b:populateFiles  
+ <request body omitted>
+[debug] [2018-10-09T21:17:47.393Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-09T21:17:47.405Z] [hosting][populate queue][FINAL]
+[debug] [2018-10-09T21:17:47.405Z] [hosting] uploads queued: 16
+[debug] [2018-10-09T21:17:47.807Z] [uploadQueue] Retrying task 7a3a1ad55b428edebb75cd610805676fe2dfe5eff96f2bf862a843573d630c11
+[debug] [2018-10-09T21:17:47.808Z] [uploadQueue] Retrying task e5982b7a4ccc4a5b71f8dbfbf6a5abcd036d7d20128f00496fad7c460a90e113
+[debug] [2018-10-09T21:17:47.809Z] [uploadQueue] Retrying task 91fd34d2075dd08eb493933d70b82dbf3c7d5d93a63d05e080d59198375e17ae
+[debug] [2018-10-09T21:17:47.809Z] [uploadQueue] Retrying task 6183c3369de484d1bdedb0400d31cdc92206863d69e60f7773b249aec96808c7
+[debug] [2018-10-09T21:17:47.809Z] [uploadQueue] Retrying task 27f348e2933ec8417c089a41847591e5ee1417418b17ec8df3c321c1dcf2cab4
+[debug] [2018-10-09T21:17:47.810Z] [uploadQueue] Retrying task 96c262add6d2cf9061dbda30515819709c109796fe79bc62a95a4b6db9447b5f
+[debug] [2018-10-09T21:17:47.810Z] [uploadQueue] Retrying task 059633f4b012472a43e8ce88eac12e45bea92d716d01fd551181ad2c2f0bcc25
+[debug] [2018-10-09T21:17:47.810Z] [uploadQueue] Retrying task d4449064f4a74857e72fd9048f5e9c689bea882df8e51e0a8ab233132ee1d766
+[debug] [2018-10-09T21:17:47.811Z] [uploadQueue] Retrying task 7d96fcaa2ffd769944761ab8878a193781e6fe3b9112e8dcdb7b89ab6d129607
+[debug] [2018-10-09T21:17:47.811Z] [uploadQueue] Retrying task b2c79cc972a562ba7851d026ee147db3fa7d349f51c32e4384e67731302894c5
+[debug] [2018-10-09T21:17:47.811Z] [uploadQueue] Retrying task 15fead32db45fb9f833c8681de6be70bdcda31dc9a766103ce337ace88375847
+[debug] [2018-10-09T21:17:47.811Z] [uploadQueue] Retrying task 2d33af09cec4c40b7be1a373f42543b1c4ea39f1c8fc5844bdb54e7af04ff318
+[debug] [2018-10-09T21:17:47.812Z] [uploadQueue] Retrying task 15742fca1b8f46e8a8afac0abc06af24aebee9a7fc7cd3aaac653d08e95adf20
+[debug] [2018-10-09T21:17:47.812Z] [uploadQueue] Retrying task cb6362ef192178d7b27fe23d608dc36d7ba2fb22b4439e4ac4b5de0c41b0421f
+[debug] [2018-10-09T21:17:47.812Z] [uploadQueue] Retrying task ff62d092de1422a681b67c2bca781f273f9dc07a90ac3cf1f83fde18c94802ac
+[debug] [2018-10-09T21:17:47.812Z] [uploadQueue] Retrying task af90eaedd58fee4c368d173a592eb8f85b6168cc6535e68e4c3c2e9a7cc684ef
+[debug] [2018-10-09T21:17:48.609Z] [uploadQueue] Retrying task 7a3a1ad55b428edebb75cd610805676fe2dfe5eff96f2bf862a843573d630c11
+[debug] [2018-10-09T21:17:48.618Z] [uploadQueue] Retrying task e5982b7a4ccc4a5b71f8dbfbf6a5abcd036d7d20128f00496fad7c460a90e113
+[debug] [2018-10-09T21:17:48.618Z] [uploadQueue] Retrying task 91fd34d2075dd08eb493933d70b82dbf3c7d5d93a63d05e080d59198375e17ae
+[debug] [2018-10-09T21:17:48.618Z] [uploadQueue] Retrying task 6183c3369de484d1bdedb0400d31cdc92206863d69e60f7773b249aec96808c7
+[debug] [2018-10-09T21:17:48.619Z] [uploadQueue] Retrying task 27f348e2933ec8417c089a41847591e5ee1417418b17ec8df3c321c1dcf2cab4
+[debug] [2018-10-09T21:17:48.619Z] [uploadQueue] Retrying task 96c262add6d2cf9061dbda30515819709c109796fe79bc62a95a4b6db9447b5f
+[debug] [2018-10-09T21:17:48.619Z] [uploadQueue] Retrying task 059633f4b012472a43e8ce88eac12e45bea92d716d01fd551181ad2c2f0bcc25
+[debug] [2018-10-09T21:17:48.619Z] [uploadQueue] Retrying task d4449064f4a74857e72fd9048f5e9c689bea882df8e51e0a8ab233132ee1d766
+[debug] [2018-10-09T21:17:48.619Z] [uploadQueue] Retrying task 7d96fcaa2ffd769944761ab8878a193781e6fe3b9112e8dcdb7b89ab6d129607
+[debug] [2018-10-09T21:17:48.620Z] [uploadQueue] Retrying task b2c79cc972a562ba7851d026ee147db3fa7d349f51c32e4384e67731302894c5
+[debug] [2018-10-09T21:17:48.620Z] [uploadQueue] Retrying task 15fead32db45fb9f833c8681de6be70bdcda31dc9a766103ce337ace88375847
+[debug] [2018-10-09T21:17:48.620Z] [uploadQueue] Retrying task 2d33af09cec4c40b7be1a373f42543b1c4ea39f1c8fc5844bdb54e7af04ff318
+[debug] [2018-10-09T21:17:48.621Z] [uploadQueue] Retrying task 15742fca1b8f46e8a8afac0abc06af24aebee9a7fc7cd3aaac653d08e95adf20
+[debug] [2018-10-09T21:17:48.621Z] [uploadQueue] Retrying task cb6362ef192178d7b27fe23d608dc36d7ba2fb22b4439e4ac4b5de0c41b0421f
+[debug] [2018-10-09T21:17:48.621Z] [uploadQueue] Retrying task ff62d092de1422a681b67c2bca781f273f9dc07a90ac3cf1f83fde18c94802ac
+[debug] [2018-10-09T21:17:48.621Z] [uploadQueue] Retrying task af90eaedd58fee4c368d173a592eb8f85b6168cc6535e68e4c3c2e9a7cc684ef
+[debug] [2018-10-09T21:17:50.210Z] [uploadQueue] Retrying task 7a3a1ad55b428edebb75cd610805676fe2dfe5eff96f2bf862a843573d630c11
+[debug] [2018-10-09T21:17:50.227Z] [uploadQueue] Retrying task e5982b7a4ccc4a5b71f8dbfbf6a5abcd036d7d20128f00496fad7c460a90e113
+[debug] [2018-10-09T21:17:50.227Z] [uploadQueue] Retrying task 91fd34d2075dd08eb493933d70b82dbf3c7d5d93a63d05e080d59198375e17ae
+[debug] [2018-10-09T21:17:50.227Z] [uploadQueue] Retrying task 6183c3369de484d1bdedb0400d31cdc92206863d69e60f7773b249aec96808c7
+[debug] [2018-10-09T21:17:50.228Z] [uploadQueue] Retrying task 27f348e2933ec8417c089a41847591e5ee1417418b17ec8df3c321c1dcf2cab4
+[debug] [2018-10-09T21:17:50.228Z] [uploadQueue] Retrying task 96c262add6d2cf9061dbda30515819709c109796fe79bc62a95a4b6db9447b5f
+[debug] [2018-10-09T21:17:50.228Z] [uploadQueue] Retrying task 059633f4b012472a43e8ce88eac12e45bea92d716d01fd551181ad2c2f0bcc25
+[debug] [2018-10-09T21:17:50.228Z] [uploadQueue] Retrying task d4449064f4a74857e72fd9048f5e9c689bea882df8e51e0a8ab233132ee1d766
+[debug] [2018-10-09T21:17:50.229Z] [uploadQueue] Retrying task 7d96fcaa2ffd769944761ab8878a193781e6fe3b9112e8dcdb7b89ab6d129607
+[debug] [2018-10-09T21:17:50.229Z] [uploadQueue] Retrying task b2c79cc972a562ba7851d026ee147db3fa7d349f51c32e4384e67731302894c5
+[debug] [2018-10-09T21:17:50.229Z] [uploadQueue] Retrying task 15fead32db45fb9f833c8681de6be70bdcda31dc9a766103ce337ace88375847
+[debug] [2018-10-09T21:17:50.229Z] [uploadQueue] Retrying task 2d33af09cec4c40b7be1a373f42543b1c4ea39f1c8fc5844bdb54e7af04ff318
+[debug] [2018-10-09T21:17:50.230Z] [uploadQueue] Retrying task 15742fca1b8f46e8a8afac0abc06af24aebee9a7fc7cd3aaac653d08e95adf20
+[debug] [2018-10-09T21:17:50.230Z] [uploadQueue] Retrying task cb6362ef192178d7b27fe23d608dc36d7ba2fb22b4439e4ac4b5de0c41b0421f
+[debug] [2018-10-09T21:17:50.230Z] [uploadQueue] Retrying task ff62d092de1422a681b67c2bca781f273f9dc07a90ac3cf1f83fde18c94802ac
+[debug] [2018-10-09T21:17:50.231Z] [uploadQueue] Retrying task af90eaedd58fee4c368d173a592eb8f85b6168cc6535e68e4c3c2e9a7cc684ef
+[debug] [2018-10-09T21:17:53.411Z] [uploadQueue] Retrying task 7a3a1ad55b428edebb75cd610805676fe2dfe5eff96f2bf862a843573d630c11
+[debug] [2018-10-09T21:17:53.434Z] [uploadQueue] Retrying task e5982b7a4ccc4a5b71f8dbfbf6a5abcd036d7d20128f00496fad7c460a90e113
+[debug] [2018-10-09T21:17:53.434Z] [uploadQueue] Retrying task 91fd34d2075dd08eb493933d70b82dbf3c7d5d93a63d05e080d59198375e17ae
+[debug] [2018-10-09T21:17:53.434Z] [uploadQueue] Retrying task 6183c3369de484d1bdedb0400d31cdc92206863d69e60f7773b249aec96808c7
+[debug] [2018-10-09T21:17:53.435Z] [uploadQueue] Retrying task 27f348e2933ec8417c089a41847591e5ee1417418b17ec8df3c321c1dcf2cab4
+[debug] [2018-10-09T21:17:53.435Z] [uploadQueue] Retrying task 96c262add6d2cf9061dbda30515819709c109796fe79bc62a95a4b6db9447b5f
+[debug] [2018-10-09T21:17:53.435Z] [uploadQueue] Retrying task 059633f4b012472a43e8ce88eac12e45bea92d716d01fd551181ad2c2f0bcc25
+[debug] [2018-10-09T21:17:53.435Z] [uploadQueue] Retrying task d4449064f4a74857e72fd9048f5e9c689bea882df8e51e0a8ab233132ee1d766
+[debug] [2018-10-09T21:17:53.436Z] [uploadQueue] Retrying task 7d96fcaa2ffd769944761ab8878a193781e6fe3b9112e8dcdb7b89ab6d129607
+[debug] [2018-10-09T21:17:53.436Z] [uploadQueue] Retrying task b2c79cc972a562ba7851d026ee147db3fa7d349f51c32e4384e67731302894c5
+[debug] [2018-10-09T21:17:53.436Z] [uploadQueue] Retrying task 15fead32db45fb9f833c8681de6be70bdcda31dc9a766103ce337ace88375847
+[debug] [2018-10-09T21:17:53.437Z] [uploadQueue] Retrying task 2d33af09cec4c40b7be1a373f42543b1c4ea39f1c8fc5844bdb54e7af04ff318
+[debug] [2018-10-09T21:17:53.437Z] [uploadQueue] Retrying task 15742fca1b8f46e8a8afac0abc06af24aebee9a7fc7cd3aaac653d08e95adf20
+[debug] [2018-10-09T21:17:53.437Z] [uploadQueue] Retrying task cb6362ef192178d7b27fe23d608dc36d7ba2fb22b4439e4ac4b5de0c41b0421f
+[debug] [2018-10-09T21:17:53.438Z] [uploadQueue] Retrying task ff62d092de1422a681b67c2bca781f273f9dc07a90ac3cf1f83fde18c94802ac
+[debug] [2018-10-09T21:17:53.438Z] [uploadQueue] Retrying task af90eaedd58fee4c368d173a592eb8f85b6168cc6535e68e4c3c2e9a7cc684ef
+[debug] [2018-10-09T21:17:59.813Z] [uploadQueue] Retrying task 7a3a1ad55b428edebb75cd610805676fe2dfe5eff96f2bf862a843573d630c11
+[debug] [2018-10-09T21:17:59.813Z] [uploadQueue] Retries exhausted for task 7a3a1ad55b428edebb75cd610805676fe2dfe5eff96f2bf862a843573d630c11 :
+[debug] [2018-10-09T21:17:59.814Z] [hosting][upload queue][FINAL]
+[debug] [2018-10-09T21:17:59.844Z] [uploadQueue] Retrying task e5982b7a4ccc4a5b71f8dbfbf6a5abcd036d7d20128f00496fad7c460a90e113
+[debug] [2018-10-09T21:17:59.844Z] [uploadQueue] Retrying task 91fd34d2075dd08eb493933d70b82dbf3c7d5d93a63d05e080d59198375e17ae
+[debug] [2018-10-09T21:17:59.844Z] [uploadQueue] Retrying task 6183c3369de484d1bdedb0400d31cdc92206863d69e60f7773b249aec96808c7
+[debug] [2018-10-09T21:17:59.845Z] [uploadQueue] Retrying task 27f348e2933ec8417c089a41847591e5ee1417418b17ec8df3c321c1dcf2cab4
+[debug] [2018-10-09T21:17:59.845Z] [uploadQueue] Retrying task 96c262add6d2cf9061dbda30515819709c109796fe79bc62a95a4b6db9447b5f
+[debug] [2018-10-09T21:17:59.845Z] [uploadQueue] Retrying task 059633f4b012472a43e8ce88eac12e45bea92d716d01fd551181ad2c2f0bcc25
+[debug] [2018-10-09T21:17:59.845Z] [uploadQueue] Retrying task d4449064f4a74857e72fd9048f5e9c689bea882df8e51e0a8ab233132ee1d766
+[debug] [2018-10-09T21:17:59.846Z] [uploadQueue] Retrying task 7d96fcaa2ffd769944761ab8878a193781e6fe3b9112e8dcdb7b89ab6d129607
+[debug] [2018-10-09T21:17:59.846Z] [uploadQueue] Retrying task b2c79cc972a562ba7851d026ee147db3fa7d349f51c32e4384e67731302894c5
+[debug] [2018-10-09T21:17:59.846Z] [uploadQueue] Retrying task 15fead32db45fb9f833c8681de6be70bdcda31dc9a766103ce337ace88375847
+[debug] [2018-10-09T21:17:59.847Z] [uploadQueue] Retrying task 2d33af09cec4c40b7be1a373f42543b1c4ea39f1c8fc5844bdb54e7af04ff318
+[debug] [2018-10-09T21:17:59.847Z] [uploadQueue] Retrying task 15742fca1b8f46e8a8afac0abc06af24aebee9a7fc7cd3aaac653d08e95adf20
+[debug] [2018-10-09T21:17:59.847Z] [uploadQueue] Retrying task cb6362ef192178d7b27fe23d608dc36d7ba2fb22b4439e4ac4b5de0c41b0421f
+[debug] [2018-10-09T21:17:59.848Z] [uploadQueue] Retrying task ff62d092de1422a681b67c2bca781f273f9dc07a90ac3cf1f83fde18c94802ac
+[debug] [2018-10-09T21:17:59.848Z] [uploadQueue] Retrying task af90eaedd58fee4c368d173a592eb8f85b6168cc6535e68e4c3c2e9a7cc684ef
+[debug] [2018-10-09T21:17:59.852Z] [uploadQueue] Retries exhausted for task e5982b7a4ccc4a5b71f8dbfbf6a5abcd036d7d20128f00496fad7c460a90e113 :
+[debug] [2018-10-09T21:17:59.853Z] [uploadQueue] Retries exhausted for task 91fd34d2075dd08eb493933d70b82dbf3c7d5d93a63d05e080d59198375e17ae :
+[debug] [2018-10-09T21:17:59.853Z] [uploadQueue] Retries exhausted for task 6183c3369de484d1bdedb0400d31cdc92206863d69e60f7773b249aec96808c7 :
+[debug] [2018-10-09T21:17:59.853Z] [uploadQueue] Retries exhausted for task 27f348e2933ec8417c089a41847591e5ee1417418b17ec8df3c321c1dcf2cab4 :
+[debug] [2018-10-09T21:17:59.853Z] [uploadQueue] Retries exhausted for task 96c262add6d2cf9061dbda30515819709c109796fe79bc62a95a4b6db9447b5f :
+[debug] [2018-10-09T21:17:59.853Z] [uploadQueue] Retries exhausted for task 059633f4b012472a43e8ce88eac12e45bea92d716d01fd551181ad2c2f0bcc25 :
+[debug] [2018-10-09T21:17:59.853Z] [uploadQueue] Retries exhausted for task d4449064f4a74857e72fd9048f5e9c689bea882df8e51e0a8ab233132ee1d766 :
+[debug] [2018-10-09T21:17:59.853Z] [uploadQueue] Retries exhausted for task 7d96fcaa2ffd769944761ab8878a193781e6fe3b9112e8dcdb7b89ab6d129607 :
+[debug] [2018-10-09T21:17:59.854Z] [uploadQueue] Retries exhausted for task b2c79cc972a562ba7851d026ee147db3fa7d349f51c32e4384e67731302894c5 :
+[debug] [2018-10-09T21:17:59.854Z] [uploadQueue] Retries exhausted for task 15fead32db45fb9f833c8681de6be70bdcda31dc9a766103ce337ace88375847 :
+[debug] [2018-10-09T21:17:59.854Z] [uploadQueue] Retries exhausted for task 2d33af09cec4c40b7be1a373f42543b1c4ea39f1c8fc5844bdb54e7af04ff318 :
+[debug] [2018-10-09T21:17:59.854Z] [uploadQueue] Retries exhausted for task 15742fca1b8f46e8a8afac0abc06af24aebee9a7fc7cd3aaac653d08e95adf20 :
+[debug] [2018-10-09T21:17:59.854Z] [uploadQueue] Retries exhausted for task cb6362ef192178d7b27fe23d608dc36d7ba2fb22b4439e4ac4b5de0c41b0421f :
+[debug] [2018-10-09T21:17:59.854Z] [uploadQueue] Retries exhausted for task ff62d092de1422a681b67c2bca781f273f9dc07a90ac3cf1f83fde18c94802ac :
+[debug] [2018-10-09T21:17:59.855Z] [uploadQueue] Retries exhausted for task af90eaedd58fee4c368d173a592eb8f85b6168cc6535e68e4c3c2e9a7cc684ef :
+[debug] [2018-10-09T21:18:00.315Z] TypeError: Path must be a string. Received undefined
+    at assertPath (path.js:28:11)
+    at Object.resolve (path.js:211:7)
+    at Uploader._zipStream (C:\Users\ADERSON BORGES\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\uploader.js:253:37)
+    at C:\Users\ADERSON BORGES\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\uploader.js:223:16
+    at new Promise (<anonymous>)
+    at C:\Users\ADERSON BORGES\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\uploader.js:222:16
+    at <anonymous>
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2018-10-09T21:19:38.144Z] ----------------------------------------------------------------------
+[debug] [2018-10-09T21:19:38.148Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ADERSON BORGES\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase use --add
+[debug] [2018-10-09T21:19:38.148Z] CLI Version:   4.2.1
+[debug] [2018-10-09T21:19:38.148Z] Platform:      win32
+[debug] [2018-10-09T21:19:38.148Z] Node Version:  v8.11.4
+[debug] [2018-10-09T21:19:38.148Z] Time:          Tue Oct 09 2018 18:19:38 GMT-0300 (Hora oficial do Brasil)
+[debug] [2018-10-09T21:19:38.148Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-10-09T21:19:38.161Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2018-10-09T21:19:38.162Z] > authorizing via signed-in user
+[debug] [2018-10-09T21:19:38.164Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-10-09T21:19:38.165Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+
+[debug] [2018-10-09T21:19:38.692Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-09T21:19:38.734Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+ 
+[debug] [2018-10-09T21:19:39.813Z] <<< HTTP RESPONSE 200
