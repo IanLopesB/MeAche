@@ -99,7 +99,6 @@ span.psw {
 }
 
 .fundo-span {
-<<<<<<< HEAD
   background-color: #363434;
   display: none; 
   position: fixed; 
@@ -116,7 +115,6 @@ span.psw {
   border-bottom: solid;
   border-color: black;
 
-=======
   display: none;
   position: fixed;
   z-index: 1;
@@ -138,7 +136,6 @@ span.psw {
   width: 90%;
   border-radius : 10px;
 }
->>>>>>> 0daf06ec67b283aae861b1374cd5770dbc919faa
 
 }
 .close1 {
@@ -175,14 +172,12 @@ span.psw {
 
 
 #total-parcial {
-<<<<<<< HEAD
+
   width: 100%;
   position: absolute;
     bottom: 0;
-=======
     background-color:#f7f7f7;
     border-radius: 10px;
->>>>>>> 0daf06ec67b283aae861b1374cd5770dbc919faa
 }
 
 
