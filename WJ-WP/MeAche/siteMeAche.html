@@ -45,8 +45,12 @@
  <!-- Cardápio -->
  <div id="categorias" class="w3-container">
   <a class="w3-row w3-center" data-toggle="collapse" data-target="#collapsePet">
-    <div class="div-categoria w3-col tablink w3-padding-large w3-text-white w3-round" style="background-color: #DA4453">
-      <h3 class="menuTitulo"><b>Petiscos </b><img src="img/sandwich.png" width="35" height="35"></h3>
+<<<<<<< HEAD
+    <div class="div-categoria w3-col tablink w3-padding-large w3-text-white w3-round" style="background-color: #be3737">
+=======
+    <div class="div-categoria w3-col tablink w3-padding-large w3-text-white w3-round" style="background-color: #768b8a">
+>>>>>>> dee9643a19adbd84cc3546e0a39434329aed74a2
+      <h3 class="menuTitulo"><b>Petiscos</b></h3>
     </div>
   </a>
  <div id="Petiscos" class="menu">
@@ -86,8 +90,8 @@
   </div>
 
   <a class="w3-row w3-center" data-toggle="collapse" data-target="#collapseEsp" aria-haspopup="true" aria-expanded="false">
-    <div class="w3-col tablink w3-padding-large w3-text-white w3-round" style="background-color: #89216B;">
-      <h3 class="menuTitle"><b>Espetos </b><img src="img/brochette.png" width="35" height="35"></h3>
+    <div class="w3-col tablink w3-padding-large w3-text-white w3-round" style="background-color: #990000;">
+      <h3 class="menuTitle"><b>Espetos</b></h3>
     </div>
   </a>
   <div id="Espetos" class="menu">
@@ -117,8 +121,8 @@
   </div>
 
   <a class="w3-row w3-center" data-toggle="collapse" data-target="#collapseSuco">
-    <div class="w3-col tablink w3-padding-large  w3-text-white w3-round" style="background-color: #3c1053;">
-      <h3 class="menuTitle"><b>Sucos </b><img src="img/fruit.png" width="35" height="35"></h3>
+    <div class="w3-col tablink w3-padding-large  w3-text-white w3-round" style="background-color: #990000;">
+      <h3 class="menuTitle"><b>Sucos</b></h3>
     </div>
   </a>
   <div id="Sucos" class="menu">
@@ -149,8 +153,8 @@
    </ul>
   </div>
   <a class="w3-row w3-center" data-toggle="collapse" data-target="#collapseRefri">
-    <div class="w3-col tablink w3-padding-large w3-text-white w3-round" style="background-color: #159957;">
-      <h3 class="menuTitle"><b>Refrigerantes</b><img src="img/cola.png" width="35" height="35"></h3>
+    <div class="w3-col tablink w3-padding-large w3-text-white w3-round" style="background-color: #990000;">
+      <h3 class="menuTitle"><b>Refrigerantes</b></h3>
     </div>
   </a>
   <div id="Refrigerantes" class="menu">
@@ -173,8 +177,8 @@
    </ul>
   </div>
 <a class="w3-row w3-center" data-toggle="collapse" data-target="#collapseCerveja">
-    <div class="w3-col tablink w3-padding-large w3-text-white w3-round" style="background-color: #605C3C;">
-      <h3 class="menuTitle"><b>Cervejas </b><img src="img/pint.png" width="35" height="35"></h3>
+    <div class="w3-col tablink w3-padding-large w3-text-white w3-round" style="background-color: #990000;">
+      <h3 class="menuTitle"><b>Cervejas</b></h3>
     </div>
   </a>
   <div id="Cervejas" class="menu">
@@ -211,44 +215,44 @@
   <br>
 
 <!-- Subtotal -->
+<<<<<<< HEAD
+  <div id="subtotal" class="footer w3-center w3-animate-top" onclick="mostrarSubtotal()">
+
+    <h3 class="w3-center w3-text-white ">
+=======
   <div id="subtotal" class="footer w3-center " onclick="mostrarSubtotal()">
 
     <h3 class="w3-center w3-text-white">
+>>>>>>> dee9643a19adbd84cc3546e0a39434329aed74a2
      <i class="fa fa-shopping-cart w3-text-white"></i>
       <span> <b>R$:</b> <b id="totalValue">0.00</b></span>
     </h3>
   </div>
 
  <!-- Span 1 do Subtotal -->
-   <div id="id01" style="display: none;" class=" fundo-span">
-            <div class="animate">
-
-                <div class="w3-container"> <span onclick="document.getElementById('id01').style.display='none'" class="close1" title=" Fechar Span"> &times; </span> </div>
+   <div id="id01" style="display: none;" class="fundo-span">
+            <div class="fundo-span-conteudo animate">
+                <div id="botao-fechar-span"> <span onclick="document.getElementById('id01').style.display='none'" class="close1" title=" Fechar Span"> &times; </span> </div>
                 <div class="infos-pedido">
-                	<div id="meu-pedido"  class="w3-container w3-dark-grey">
                     <h3 class="w3-center w3-text-white"> <b>Meu pedido:</b> </h3>
-                   
-                    </div>
-
-
-                    <!-- tabela-pedidos 
-tablePedidos
-totalValue2 -->
-
-                        <div id="corpo-span-subtotal1" class=" w3-text-white">
-             <br>
-
-<li class="w3-display-container">PRATO ESCOLHIDO
-  <span class=" w3-display-right">PREÇO</span>
-</li>
-
-
-                    <div id="total-parcial" class=" infos-pedido">
-                        <h4 class=" w3-text-black"><b>Total: </b> <b>R$ </b><b id="">0.00</b></h4> 
-                    <button onclick="sendPedido(); confirma()" id="botao-span2" class="w3-button w3-text-black ">Continuar Compra</button></div>
                     <br>
+                    <div id="tabela-pedidos" class="w3-text-white">
+
+                        <table id="tabela" class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="w3-center">Quant</th>
+                                    <th scope="col" class="w3-center">Pedido</th>
+                                    <th scope="col" class="w3-center">Preço</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tablePedidos"> </tbody>
+                        </table>
                     </div>
-                    
+                    <div id="total-parcial" class=" infos-pedido">
+                        <h4 class=" w3-text-black"><b>Total: </b> <b>R$ </b><b id="totalValue2">0.00</b></h4> </div>
+                    <br>
+                    <button onclick="sendPedido(); confirma()" id="botao-span2" class="w3-button w3-green ">Pedir</button>
                 </div>
                 <br>
                 <br> </div>
@@ -307,8 +311,12 @@ totalValue2 -->
                 <div id="textos" class="w3-container">
                     <div id="descricao">
                         <h5>Descrição do Prato
+<<<<<<< HEAD
+                        .............................................................................</h5> </div>
+=======
                         ..............................................
                       ...............................</h5> </div>
+>>>>>>> dee9643a19adbd84cc3546e0a39434329aed74a2
                     <br>
 
 
@@ -343,7 +351,12 @@ totalValue2 -->
                         <h5>Descrição do prato ..................................... </h5> </div>
                     <br>
                     <div id="requisicao">
-
+<<<<<<< HEAD
+                        <div id="nome-requisicao" class="animate" onclick="mostrarInputReq()">
+                            <h5><i class="fa fa-plus"></i>Observações do Cliente</h5> </div>
+=======
+                        
+>>>>>>> dee9643a19adbd84cc3546e0a39434329aed74a2
                         <div id="input-requisiçoes" class="input-group animate">
                             <textarea id="input-req-real" type="" class="form-control" placeholder="Observações" rows="1"> </textarea> <span> <button class="btn btn-default" type="button" onclick="mostrarNomeReq()">OK</button> </span> </div>
                     </div>
@@ -418,7 +431,12 @@ totalValue2 -->
                         <h5>Descrição do prato ................................ </h5> </div>
                     <br>
                     <div id="requisicao">
-
+<<<<<<< HEAD
+                        <div id="nome-requisicao" class="animate" onclick="mostrarInputReq()">
+                            <h5><i class="fa fa-plus"></i>Observações do Cliente</h5> </div>
+=======
+                        
+>>>>>>> dee9643a19adbd84cc3546e0a39434329aed74a2
                         <div id="input-requisiçoes" class="input-group animate">
                             <textarea id="input-req-real" type="" class="form-control" placeholder="Observações" rows="1"> </textarea> <span> <button class="btn btn-default" type="button" onclick="mostrarNomeReq()">OK</button> </span> </div>
                     </div>
@@ -455,7 +473,12 @@ totalValue2 -->
                         <h5>Descrição do prato .............................</h5> </div>
                     <br>
                     <div id="requisicao">
-
+<<<<<<< HEAD
+                        <div id="nome-requisicao" class="animate" onclick="mostrarInputReq()">
+                            <h5><i class="fa fa-plus"></i>Observações do Cliente</h5> </div>
+=======
+                        
+>>>>>>> dee9643a19adbd84cc3546e0a39434329aed74a2
                         <div id="input-requisiçoes" class="input-group animate">
                             <textarea id="input-req-real" type="" class="form-control" placeholder="Observações" rows="1"> </textarea> <span> <button class="btn btn-default" type="button" onclick="mostrarNomeReq()">OK</button> </span> </div>
                     </div>
@@ -492,7 +515,12 @@ totalValue2 -->
                         <h5>Descrição do prato ................ </h5> </div>
                     <br>
                     <div id="requisicao">
-
+<<<<<<< HEAD
+                        <div id="nome-requisicao" class="animate" onclick="mostrarInputReq()">
+                            <h5><i class="fa fa-plus"></i>Observações do Cliente</h5> </div>
+=======
+                        
+>>>>>>> dee9643a19adbd84cc3546e0a39434329aed74a2
                         <div id="input-requisiçoes" class="input-group animate">
                             <textarea id="input-req-real" type="" class="form-control" placeholder="Observações" rows="1"> </textarea> <span> <button class="btn btn-default" type="button" onclick="mostrarNomeReq()">OK</button> </span> </div>
                     </div>
@@ -528,7 +556,12 @@ totalValue2 -->
                     <h5>Descrição do prato ............................... </h5> </div>
                 <br>
                 <div id="requisicao">
-
+<<<<<<< HEAD
+                    <div id="nome-requisicao" class="animate" onclick="mostrarInputReq()">
+                        <h5><i class="fa fa-plus"></i>Observações do Cliente</h5> </div>
+=======
+                   
+>>>>>>> dee9643a19adbd84cc3546e0a39434329aed74a2
                     <div id="input-requisiçoes" class="input-group animate">
                         <textarea id="input-req-real" type="" class="form-control" placeholder="Observações" rows="1"> </textarea> <span> <button class="btn btn-default" type="button" onclick="mostrarNomeReq()">OK</button> </span> </div>
                 </div>
@@ -563,7 +596,12 @@ totalValue2 -->
                     <h5>Descrição do prato .......................................................................... </h5> </div>
                 <br>
                 <div id="requisicao">
-
+<<<<<<< HEAD
+                    <div id="nome-requisicao" class="animate" onclick="mostrarInputReq()">
+                        <h5><i class="fa fa-plus"></i>Observações do Cliente</h5> </div>
+=======
+                    
+>>>>>>> dee9643a19adbd84cc3546e0a39434329aed74a2
                     <div id="input-requisiçoes" class="input-group animate">
                         <textarea id="input-req-real" type="" class="form-control" placeholder="Observações" rows="1"> </textarea> <span> <button class="btn btn-default" type="button" onclick="mostrarNomeReq()">OK</button> </span> </div>
                 </div>
@@ -599,7 +637,12 @@ totalValue2 -->
                     <h5>Descrição do prato ..................................... </h5> </div>
                 <br>
                 <div id="requisicao">
-
+<<<<<<< HEAD
+                    <div id="nome-requisicao" class="animate" onclick="mostrarInputReq()">
+                        <h5><i class="fa fa-plus"></i>Observações do Cliente</h5> </div>
+=======
+                    
+>>>>>>> dee9643a19adbd84cc3546e0a39434329aed74a2
                     <div id="input-requisiçoes" class="input-group animate">
                         <textarea id="input-req-real" type="" class="form-control" placeholder="Observações" rows="1"> </textarea> <span> <button class="btn btn-default" type="button" onclick="mostrarNomeReq()">OK</button> </span> </div>
                 </div>
@@ -635,7 +678,12 @@ totalValue2 -->
                     <h5>Descrição do prato ..................................... </h5> </div>
                 <br>
                 <div id="requisicao">
-
+<<<<<<< HEAD
+                    <div id="nome-requisicao" class="animate" onclick="mostrarInputReq()">
+                        <h5><i class="fa fa-plus"></i>Observações do Cliente</h5> </div>
+=======
+                    
+>>>>>>> dee9643a19adbd84cc3546e0a39434329aed74a2
                     <div id="input-requisiçoes" class="input-group animate">
                         <textarea id="input-req-real" type="" class="form-control" placeholder="Observações" rows="1"> </textarea> <span> <button class="btn btn-default" type="button" onclick="mostrarNomeReq()">OK</button> </span> </div>
                 </div>
@@ -672,7 +720,12 @@ totalValue2 -->
                     <h5>Descrição do prato ..................................... </h5> </div>
                 <br>
                 <div id="requisicao">
-
+<<<<<<< HEAD
+                    <div id="nome-requisicao" class="animate" onclick="mostrarInputReq()">
+                        <h5><i class="fa fa-plus"></i>Observações do Cliente</h5> </div>
+=======
+                   
+>>>>>>> dee9643a19adbd84cc3546e0a39434329aed74a2
                     <div id="input-requisiçoes" class="input-group animate">
                         <textarea id="input-req-real" type="" class="form-control" placeholder="Observações" rows="1"> </textarea> <span> <button class="btn btn-default" type="button" onclick="mostrarNomeReq()">OK</button> </span> </div>
                 </div>
@@ -708,7 +761,12 @@ totalValue2 -->
                     <h5>Descrição do prato ..................................... </h5> </div>
                 <br>
                 <div id="requisicao">
-
+<<<<<<< HEAD
+                    <div id="nome-requisicao" class="animate" onclick="mostrarInputReq()">
+                        <h5><i class="fa fa-plus"></i>Observações do Cliente</h5> </div>
+=======
+                    
+>>>>>>> dee9643a19adbd84cc3546e0a39434329aed74a2
                     <div id="input-requisiçoes" class="input-group animate">
                         <textarea id="input-req-real" type="" class="form-control" placeholder="Observações" rows="1"> </textarea> <span> <button class="btn btn-default" type="button" onclick="mostrarNomeReq()">OK</button> </span> </div>
                 </div>
@@ -743,8 +801,12 @@ totalValue2 -->
                     <h5>Descrição do prato ..................................... </h5> </div>
                 <br>
                 <div id="requisicao">
+<<<<<<< HEAD
                     <div id="nome-requisicao" class="animate" onclick="mostrarInputReq()">
                         <h5><i class="fa fa-plus"></i>Observações do Cliente</h5> </div>
+=======
+                    
+>>>>>>> dee9643a19adbd84cc3546e0a39434329aed74a2
                     <div id="input-requisiçoes" class="input-group animate">
                         <textarea id="input-req-real" type="" class="form-control" placeholder="Observações" rows="1"> </textarea> <span> <button class="btn btn-default" type="button" onclick="mostrarNomeReq()">OK</button> </span> </div>
                 </div>
@@ -779,8 +841,12 @@ totalValue2 -->
                     <h5>Descrição do prato ..................................... </h5> </div>
                 <br>
                 <div id="requisicao">
+<<<<<<< HEAD
                     <div id="nome-requisicao" class="animate" onclick="mostrarInputReq()">
                         <h5><i class="fa fa-plus"></i>Observações do Cliente</h5> </div>
+=======
+                   
+>>>>>>> dee9643a19adbd84cc3546e0a39434329aed74a2
                     <div id="input-requisiçoes" class="input-group animate">
                         <textarea id="input-req-real" type="" class="form-control" placeholder="Observações" rows="1"> </textarea> <span> <button class="btn btn-default" type="button" onclick="mostrarNomeReq()">OK</button> </span> </div>
                 </div>
@@ -815,8 +881,12 @@ totalValue2 -->
                     <h5>Descrição do prato ..................................... </h5> </div>
                 <br>
                 <div id="requisicao">
+<<<<<<< HEAD
                     <div id="nome-requisicao" class="animate" onclick="mostrarInputReq()">
                         <h5><i class="fa fa-plus"></i>Observações do Cliente</h5> </div>
+=======
+                    
+>>>>>>> dee9643a19adbd84cc3546e0a39434329aed74a2
                     <div id="input-requisiçoes" class="input-group animate">
                         <textarea id="input-req-real" type="" class="form-control" placeholder="Observações" rows="1"> </textarea> <span> <button class="btn btn-default" type="button" onclick="mostrarNomeReq()">OK</button> </span> </div>
                 </div>
@@ -851,8 +921,12 @@ totalValue2 -->
                     <h5>Descrição do prato ..................................... </h5> </div>
                 <br>
                 <div id="requisicao">
+<<<<<<< HEAD
                     <div id="nome-requisicao" class="animate" onclick="mostrarInputReq()">
                         <h5><i class="fa fa-plus"></i>Observações do Cliente</h5> </div>
+=======
+                    
+>>>>>>> dee9643a19adbd84cc3546e0a39434329aed74a2
                     <div id="input-requisiçoes" class="input-group animate">
                         <textarea id="input-req-real" type="" class="form-control" placeholder="Observações" rows="1"> </textarea> <span> <button class="btn btn-default" type="button" onclick="mostrarNomeReq()">OK</button> </span> </div>
                 </div>
@@ -887,8 +961,12 @@ totalValue2 -->
                     <h5>Descrição do prato ..................................... </h5> </div>
                 <br>
                 <div id="requisicao">
+<<<<<<< HEAD
                     <div id="nome-requisicao" class="animate" onclick="mostrarInputReq()">
                         <h5><i class="fa fa-plus"></i>Observações do Cliente</h5> </div>
+=======
+                   
+>>>>>>> dee9643a19adbd84cc3546e0a39434329aed74a2
                     <div id="input-requisiçoes" class="input-group animate">
                         <textarea id="input-req-real" type="" class="form-control" placeholder="Observações" rows="1"> </textarea> <span> <button class="btn btn-default" type="button" onclick="mostrarNomeReq()">OK</button> </span> </div>
                 </div>
@@ -924,8 +1002,12 @@ totalValue2 -->
                     <h5>Descrição do prato ..................................... </h5> </div>
                 <br>
                 <div id="requisicao">
+<<<<<<< HEAD
                     <div id="nome-requisicao" class="animate" onclick="mostrarInputReq()">
                         <h5><i class="fa fa-plus"></i>Observações do Cliente</h5> </div>
+=======
+                    
+>>>>>>> dee9643a19adbd84cc3546e0a39434329aed74a2
                     <div id="input-requisiçoes" class="input-group animate">
                         <textarea id="input-req-real" type="" class="form-control" placeholder="Observações" rows="1"> </textarea> <span> <button class="btn btn-default" type="button" onclick="mostrarNomeReq()">OK</button> </span> </div>
                 </div>
@@ -961,8 +1043,12 @@ totalValue2 -->
                     <h5>Descrição do prato ..................................... </h5> </div>
                 <br>
                 <div id="requisicao">
+<<<<<<< HEAD
                     <div id="nome-requisicao" class="animate" onclick="mostrarInputReq()">
                         <h5><i class="fa fa-plus"></i>Observações do Cliente</h5> </div>
+=======
+                    
+>>>>>>> dee9643a19adbd84cc3546e0a39434329aed74a2
                     <div id="input-requisiçoes" class="input-group animate">
                         <textarea id="input-req-real" type="" class="form-control" placeholder="Observações" rows="1"> </textarea> <span> <button class="btn btn-default" type="button" onclick="mostrarNomeReq()">OK</button> </span> </div>
                 </div>
@@ -997,8 +1083,12 @@ totalValue2 -->
                     <h5>Descrição do prato ..................................... </h5> </div>
                 <br>
                 <div id="requisicao">
+<<<<<<< HEAD
                     <div id="nome-requisicao" class="animate" onclick="mostrarInputReq()">
                         <h5><i class="fa fa-plus"></i>Observações do Cliente</h5> </div>
+=======
+                   
+>>>>>>> dee9643a19adbd84cc3546e0a39434329aed74a2
                     <div id="input-requisiçoes" class="input-group animate">
                         <textarea id="input-req-real" type="" class="form-control" placeholder="Observações" rows="1"> </textarea> <span> <button class="btn btn-default" type="button" onclick="mostrarNomeReq()">OK</button> </span> </div>
                 </div>
@@ -1034,8 +1124,12 @@ totalValue2 -->
                     <h5>Descrição do prato ..................................... </h5> </div>
                 <br>
                 <div id="requisicao">
+<<<<<<< HEAD
                     <div id="nome-requisicao" class="animate" onclick="mostrarInputReq()">
                         <h5><i class="fa fa-plus"></i>Observações do Cliente</h5> </div>
+=======
+                    
+>>>>>>> dee9643a19adbd84cc3546e0a39434329aed74a2
                     <div id="input-requisiçoes" class="input-group animate">
                         <textarea id="input-req-real" type="" class="form-control" placeholder="Observações" rows="1"> </textarea> <span> <button class="btn btn-default" type="button" onclick="mostrarNomeReq()">OK</button> </span> </div>
                 </div>
@@ -1071,8 +1165,12 @@ totalValue2 -->
                     <h5>Descrição do prato ..........................</h5> </div>
                 <br>
                 <div id="requisicao">
+<<<<<<< HEAD
                     <div id="nome-requisicao" class="animate" onclick="mostrarInputReq()">
                         <h5><i class="fa fa-plus"></i>Observações do Cliente</h5> </div>
+=======
+                    
+>>>>>>> dee9643a19adbd84cc3546e0a39434329aed74a2
                     <div id="input-requisiçoes" class="input-group animate">
                         <textarea id="input-req-real" type="" class="form-control" placeholder="Observações" rows="1"> </textarea> <span> <button class="btn btn-default" type="button" onclick="mostrarNomeReq()">OK</button> </span> </div>
                 </div>
@@ -1108,8 +1206,12 @@ totalValue2 -->
                     <h5>Descrição do prato ..................................... </h5> </div>
                 <br>
                 <div id="requisicao">
+<<<<<<< HEAD
                     <div id="nome-requisicao" class="animate" onclick="mostrarInputReq()">
                         <h5><i class="fa fa-plus"></i>Observações do Cliente</h5> </div>
+=======
+                    
+>>>>>>> dee9643a19adbd84cc3546e0a39434329aed74a2
                     <div id="input-requisiçoes" class="input-group animate">
                         <textarea id="input-req-real" type="" class="form-control" placeholder="Observações" rows="1"> </textarea> <span> <button class="btn btn-default" type="button" onclick="mostrarNomeReq()">OK</button> </span> </div>
                 </div>
@@ -1145,8 +1247,12 @@ totalValue2 -->
                     <h5>Descrição do prato ..................................... </h5> </div>
                 <br>
                 <div id="requisicao">
+<<<<<<< HEAD
                     <div id="nome-requisicao" class="animate" onclick="mostrarInputReq()">
                         <h5><i class="fa fa-plus"></i>Observações do Cliente</h5> </div>
+=======
+                   
+>>>>>>> dee9643a19adbd84cc3546e0a39434329aed74a2
                     <div id="input-requisiçoes" class="input-group animate">
                         <textarea id="input-req-real" type="" class="form-control" placeholder="Observações" rows="1"> </textarea> <span> <button class="btn btn-default" type="button" onclick="mostrarNomeReq()">OK</button> </span> </div>
                 </div>
@@ -1182,8 +1288,12 @@ totalValue2 -->
                     <h5>Descrição do prato ..................................... </h5> </div>
                 <br>
                 <div id="requisicao">
+<<<<<<< HEAD
                     <div id="nome-requisicao" class="animate" onclick="mostrarInputReq()">
                         <h5><i class="fa fa-plus"></i>Observações do Cliente</h5> </div>
+=======
+                    
+>>>>>>> dee9643a19adbd84cc3546e0a39434329aed74a2
                     <div id="input-requisiçoes" class="input-group animate">
                         <textarea id="input-req-real" type="" class="form-control" placeholder="Observações" rows="1"> </textarea> <span> <button class="btn btn-default" type="button" onclick="mostrarNomeReq()">OK</button> </span> </div>
                 </div>
@@ -1219,8 +1329,12 @@ totalValue2 -->
                     <h5>Descrição do prato ..................................... </h5> </div>
                 <br>
                 <div id="requisicao">
+<<<<<<< HEAD
                     <div id="nome-requisicao" class="animate" onclick="mostrarInputReq()">
                         <h5><i class="fa fa-plus"></i>Observações do Cliente</h5> </div>
+=======
+                    
+>>>>>>> dee9643a19adbd84cc3546e0a39434329aed74a2
                     <div id="input-requisiçoes" class="input-group animate">
                         <textarea id="input-req-real" type="" class="form-control" placeholder="Observações" rows="1"> </textarea> <span> <button class="btn btn-default" type="button" onclick="mostrarNomeReq()">OK</button> </span> </div>
                 </div>
@@ -1256,8 +1370,12 @@ totalValue2 -->
                     <h5>Descrição do prato ..................................... </h5> </div>
                 <br>
                 <div id="requisicao">
+<<<<<<< HEAD
                     <div id="nome-requisicao" class="animate" onclick="mostrarInputReq()">
                         <h5><i class="fa fa-plus"></i>Observações do Cliente</h5> </div>
+=======
+                    
+>>>>>>> dee9643a19adbd84cc3546e0a39434329aed74a2
                     <div id="input-requisiçoes" class="input-group animate">
                         <textarea id="input-req-real" type="" class="form-control" placeholder="Observações" rows="1"> </textarea> <span> <button class="btn btn-default" type="button" onclick="mostrarNomeReq()">OK</button> </span> </div>
                 </div>
@@ -1294,8 +1412,12 @@ totalValue2 -->
                     <h5>Descrição do prato ..................................... </h5> </div>
                 <br>
                 <div id="requisicao">
+<<<<<<< HEAD
                     <div id="nome-requisicao" class="animate" onclick="mostrarInputReq()">
                         <h5><i class="fa fa-plus"></i>Observações do Cliente</h5> </div>
+=======
+                    
+>>>>>>> dee9643a19adbd84cc3546e0a39434329aed74a2
                     <div id="input-requisiçoes" class="input-group animate">
                         <textarea id="input-req-real" type="" class="form-control" placeholder="Observações" rows="1"> </textarea> <span> <button class="btn btn-default" type="button" onclick="mostrarNomeReq()">OK</button> </span> </div>
                 </div>
@@ -1331,8 +1453,12 @@ totalValue2 -->
                     <h5>Descrição do prato ..................................... </h5> </div>
                 <br>
                 <div id="requisicao">
+<<<<<<< HEAD
                     <div id="nome-requisicao" class="animate" onclick="mostrarInputReq()">
                         <h5><i class="fa fa-plus"></i>Observações do Cliente</h5> </div>
+=======
+                    
+>>>>>>> dee9643a19adbd84cc3546e0a39434329aed74a2
                     <div id="input-requisiçoes" class="input-group animate">
                         <textarea id="input-req-real" type="" class="form-control" placeholder="Observações" rows="1"> </textarea> <span> <button class="btn btn-default" type="button" onclick="mostrarNomeReq()">OK</button> </span> </div>
                 </div>
