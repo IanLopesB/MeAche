@@ -1,9 +1,10 @@
 body {
   margin: 0;
   padding: 0;
-  
+
   background-color: rgb(30, 30, 30);  
 }
+
 
 /*Imagem*/
 
@@ -54,15 +55,14 @@ body {
   display: inline-block;
 }
 
-
-
-.menu {
-  margin: 15px;
+.pratos {
+  display: inline-block;
+  width: 100%;
 }
 
-.pratos {
-  text-align: center;
-  font-size: 80%;
+.menu {
+  margin-left: -15px;
+  margin-right: 25px;
 }
 
 @media only screen and (min-height: 750px) {
