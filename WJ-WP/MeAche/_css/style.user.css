@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  
+  background-color:  #000000;
 }
 
 /*Imagem*/
@@ -225,7 +225,7 @@ float: right;
 }
 
 #mais {
-  
+
   width: 27px;
   border: solid;
   border-radius: 15px;
@@ -338,9 +338,13 @@ textarea {outline: none;resize: none;}
   background-color: #efecec ;
   width: 100%;
   font-size: 20px;
+<<<<<<< HEAD
   height: 60px;
   color: rgba(234, 234, 234, 0.8);
   
+=======
+
+>>>>>>> f6a01b478e5d56bf029a7cb64875ce235b7a09e8
 
 }
 .pratos {

@@ -1,7 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-
+  
+  background-color: rgb(30, 30, 30);  
 }
 
 /*Imagem*/
@@ -88,7 +89,7 @@ body {
 
 .footer h3 span {
   font-size: 20px;
-  vertical-align: middle; 
+  vertical-align: middle;
 }
 
 
@@ -99,25 +100,32 @@ span.psw {
 }
 
 .fundo-span {
-  background-color: #363434;
-  display: none; 
-  position: fixed; 
+  display: none;
+  position: fixed;
+  z-index: 1;
   left: 0;
   top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-    
-}
-
-#meu-pedido{
-  border-bottom: solid;
-  border-color: black;
-height: 60px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 60px;
 
 }
+
+.fundo-span-conteudo {
+  background-color: #2a2829;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 90%;
+  border-radius : 10px;
+}
+
 .close1 {
-  position: absolute;
+   float: left;
+   margin-right: 20%;
+   position: absolute;
    margin-top: 0%;
    color: white;
    font-size: 29px;
@@ -138,31 +146,22 @@ height: 60px;
 }
 
 @-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0)} 
+    from {-webkit-transform: scale(0)}
     to {-webkit-transform: scale(1)}
 }
-    
+
 @keyframes animatezoom {
-    from {transform: scale(0)} 
+    from {transform: scale(0)}
     to {transform: scale(1)}
 }
 
 
 
 #total-parcial {
-  width: 100%;
-  position: absolute;
-    bottom: 0;
+    background-color:#f7f7f7;
+    border-radius: 10px;
 }
 
-#preco-subtotal{
-  float: right;
-}
-
-#barra-subtotal {
-
-border-color: green;
-}
 
 @media only screen and (min-height: 750px) {
   .fundo-span-conteudo {
@@ -171,6 +170,7 @@ border-color: green;
 }
 
 .infos-pedido{
+  padding: 16px;
   font-size: 18px;
 }
 
@@ -179,7 +179,7 @@ border-color: green;
 
 #total-pedido {
     background-color:#f7f7f7;
-    border-bottom-right-radius: 10px; 
+    border-bottom-right-radius: 10px;
     border-bottom-left-radius:10px;
 }
 
@@ -196,31 +196,46 @@ border-color: green;
    color: white;
    font-size: 35px;
    font-weight: bold;
-    
+
 }
 
 
-#botao-span2 {
-
- background-color: #EFECEC;
-height: 60px;
-width: 100%;
-font-size: 20px;
+#span2 {
+float: right;
 }
 
 /* Span Detalhes do Prato */
 
 #menos {
-  border: none;
-  width: 25px;
-  background-color: white;
+  width: 27px;
+  border: solid;
+  border-radius: 15px;
+  border-width: 2px;
+  border-left-color: black;
+  background-color:  #363434;
+}
+#borda {
+  border-color: green;
+}
+
+#quantPet1{
+  background-color: #363434;
+
 }
 
 #mais {
+  
+  width: 27px;
+  border: solid;
+  border-radius: 15px;
+  border-width: 2px;
+  border-left-color: black;
+  background-color: #363434;
+}
+#modificarMAISeMENOS{
+  float: right;
 
-  border: none;
-  width: 25px;
-  background-color: white;
+
 }
 
 .btn {
@@ -231,10 +246,14 @@ font-size: 20px;
 .numero {
 border: none;
 font-size: 17px;
+
 }
 
 #quantidade {
   width: 100%;
+  position: absolute;
+  bottom: 7%;
+  bottom: 0%;
 }
 
 #nome-requisicao {
@@ -242,35 +261,23 @@ font-size: 17px;
 }
 
 #nome-prato {
-  height: 5%;
-  top: 0%;
+  text-align: center;
   border-bottom: solid;
   border-width: 2px;
-  border-top-left-radius: 10px ;
-  border-top-right-radius: 10px;
   border-bottom-color: grey;
 }
 
 .fundo-span-2 {
-  display: none; 
-  position: fixed; 
-  z-index: 1; 
+
+  background-color: #363434;
+  display: none;
+  position: fixed;
+  z-index: 1;
   left: 0;
   top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0,0.4);
-  padding-top: 40px;
-    
-}
-
-.fundo-span-conteudo-2 {
-  background-color: white;
-  margin: 5% auto 15% auto; 
-  width: 90%; 
-  border-radius : 10px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
 }
 
 
@@ -284,6 +291,7 @@ font-size: 17px;
 
 #botao-adicionar {
   float: right;
+
 }
 
 #input-requisiçoes {
@@ -291,7 +299,7 @@ font-size: 17px;
   display: none;
 }
 
-.botao-fechar-span { 
+.botao-fechar-span {
   float: right;
   text-align: center;
   margin: 24px 0 12px 0;
@@ -323,8 +331,11 @@ textarea {outline: none;resize: none;}
 }
 
 #addButton {
+  background-color: #efecec ;
+  width: 100%;
+  font-size: 20px;
+  
 
-   background-color: #8B0000 ;
 }
 .pratos {
   font-size: 20px;
@@ -340,15 +351,3 @@ list-style-type: none;
 }
 
 
-#pedido-vazio {
-
-  display: block;
-  color: rgba(234,234,234,0.30000000000000004);
-  font-family: Trebuchet MS, sans-serif;
-}
-
-#corpo-span-subtotal1 {
-
-  font-family: Trebuchet MS, sans-serif;
-  font-size: 21px;
-}
