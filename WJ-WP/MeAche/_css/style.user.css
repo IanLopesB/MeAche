@@ -1,11 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-<<<<<<< HEAD
   background-color:  #000000;
-=======
-  
->>>>>>> refs/remotes/origin/master
 }
 
 /*Imagem*/
@@ -227,7 +223,7 @@ float: right;
 }
 
 #mais {
-  
+
   width: 27px;
   border: solid;
   border-radius: 15px;
@@ -337,7 +333,7 @@ textarea {outline: none;resize: none;}
   background-color: #efecec ;
   width: 100%;
   font-size: 20px;
-  
+
 
 }
 .pratos {
