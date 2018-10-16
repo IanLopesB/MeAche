@@ -112,7 +112,7 @@ span.psw {
 
 #meu-pedido{
   border-bottom: solid;
-  border-color: black;
+  border-color: grey;
 height: 60px;
 
 }
@@ -161,7 +161,7 @@ height: 60px;
 
 #barra-subtotal {
 
-border-color: green;
+border-color: grey;
 }
 
 @media only screen and (min-height: 750px) {
@@ -206,6 +206,8 @@ border-color: green;
 height: 60px;
 width: 100%;
 font-size: 20px;
+position: fixed;
+bottom: 0;
 }
 
 /* Span Detalhes do Prato */
@@ -345,6 +347,7 @@ list-style-type: none;
   display: block;
   color: rgba(234,234,234,0.30000000000000004);
   font-family: Trebuchet MS, sans-serif;
+  position: absolute;
 }
 
 #corpo-span-subtotal1 {
