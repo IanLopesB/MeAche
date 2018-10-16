@@ -1,7 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  background-color:  #000000;
+  
+  background-color: rgb(30, 30, 30);  
 }
 
 /*Imagem*/
@@ -223,7 +224,7 @@ float: right;
 }
 
 #mais {
-
+  
   width: 27px;
   border: solid;
   border-radius: 15px;
@@ -333,7 +334,7 @@ textarea {outline: none;resize: none;}
   background-color: #efecec ;
   width: 100%;
   font-size: 20px;
-
+  
 
 }
 .pratos {
