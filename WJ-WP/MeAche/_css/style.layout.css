@@ -111,10 +111,9 @@ span.psw {
 }
 
 #meu-pedido{
-  text-align: center;
   border-bottom: solid;
   border-color: black;
-
+height: 60px;
 
 }
 .close1 {
@@ -206,7 +205,6 @@ border-color: green;
  background-color: #EFECEC;
 height: 60px;
 width: 100%;
-
 font-size: 20px;
 }
 
@@ -345,5 +343,12 @@ list-style-type: none;
 #pedido-vazio {
 
   display: block;
-  color: rgb(234,234,234,0.30000000000000004);
+  color: rgba(234,234,234,0.30000000000000004);
+  font-family: Trebuchet MS, sans-serif;
+}
+
+#corpo-span-subtotal1 {
+
+  font-family: Trebuchet MS, sans-serif;
+  font-size: 21px;
 }

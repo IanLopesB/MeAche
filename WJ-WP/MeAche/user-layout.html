@@ -221,9 +221,9 @@
 
  <!-- Span 1 do Subtotal -->
    <div id="id01" style="display: none;" class=" fundo-span">
-            <div class="">
+            
 
-                <div class="w3-container"> <span onclick="document.getElementById('id01').style.display='none'" class="close1" title=" Fechar Span"> &times; </span> </div>
+                <div class="w3-container w3-left"> <span onclick="document.getElementById('id01').style.display='none'" class="close1" title=" Fechar Span"> &times; </span> </div>
                 <div class="infos-pedido">
                 	<div id="meu-pedido"  class="w3-container w3-dark-grey">
                     <h3 class="w3-center w3-text-white"> <b>Meu pedido:</b> </h3>
@@ -239,24 +239,33 @@ totalValue2 -->
              <br>
 
 
-<li class="w3-display-container w3-container ">10X PRATO ESCOLHIDO
+<li class="w3-display-container w3-container ">10X Prato Escolhido
 
-  <span class=" w3-display-right w3-container">PREÇO</span>
+  <span class=" w3-display-right w3-container">Preço</span>
 </li>
 
 
                     <div id="total-parcial" class=" infos-pedido">
-                    	<hr id="barra-subtotal">
-                        <h4 class=" w3-text-white w3-container line"><b>Subtotal: </b> <b>R$ </b><b id="preco-subtotal">0.00</b></h4> 
 
-                    <button onclick="sendPedido(); confirma()" id="botao-span2" class="w3-button w3-text-black ">Continuar Compra</button></div>
-                    <br>
-                    <br>
-                  
-                    <div id="pedido-vazio" class="w3-center w3-container"><li class="w3-jumbo "><i class="fa fa-home"></i></li><p>Seu Carrinho Está Vazio</p>
+                    	<div id="pedido-vazio" class="w3-center w3-container"><li class="w3-jumbo "><i class="fa fa-home"></i></li><p>Seu Carrinho Está Vazio</p>
                      <p>Navegue pelo nosso menu e comece a adicionar itens ao seu pedido</p>
 
                     </div>
+
+                    <br>
+                    <br>
+                    <br>
+
+                    	<hr id="barra-subtotal">
+                    	
+                        <p class=" w3-text-white w3-container line"><b>Subtotal: </b> <b>R$ </b><b id="preco-subtotal">0.00</b></p> 
+
+
+                    <button onclick="sendPedido(); confirma()" id="botao-span2" class="w3-button w3-text-black "><b>CONTINUAR COMPRA</b></button></div>
+                    <br>
+                    <br>
+                  
+                    
                     </div>
                     
                 </div>
