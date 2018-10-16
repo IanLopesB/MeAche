@@ -299,18 +299,26 @@
                   <h3 class="animate "><b><label id="asinha"><li>Asinha de Frango</li></label></b></h3>
                 </div>
                 <br>
-                <div id="textos" class=" w3-text-white">
+                <br>
+                <br>
+                <br>
+                <div id="textos" >
                     <div id="descricao">
-                        <h5>Descrição do Prato
+                      <h5 class="w3-container">Descrição do Prato
                         ..............................................
-                      ...............................</h5> </div>
+                      </h5>
+                    </div>
+                    <hr>
+                    <div class="pedido-especial">
+                      
+                    </div>
                     <br>
 
 
                     <div id="quantidade" class="">
                         <div data-app="product.quantity" id="quantidade">
                           <hr id="borda">
-                            <label>  Quantidade </label>
+                            <label class="w3-container">  Quantidade </label>
                             <div id="modificarMAISeMENOS" class="w3-container">
                             <input type="button" id="menos" value='-' onclick="process(-1)">
                             <input id="quantPet1" name="quantPet1" class="numero w3-center w3-text-white" size="1" type="text" value="0" maxlength="2">
@@ -318,7 +326,7 @@
                             </div>
                             <br>
                             <br>
-                            <button type="submit" id="addButton" class="w3-button w3-text-black" onclick="fecharPrato1();mandardados1();"><i class="fa fa-plus"></i> Adicionar ao Meu Pedido</button>
+                            <button type="submit" id="addButton" class="w3-button w3-text-black" onclick="fecharPrato1();mandardados1();"><i class="fa fa-plus"></i> ADICIONAR AO MEU PEDIDO</button>
                         </div>
                         <br>
                         <br>
@@ -1369,10 +1377,8 @@
 
 <!-- Connection Firebase JS -->
 <script type="text/javascript" src="_js/connection.firebase.js"></script>
-
 <!-- Functions JS -->
 <script type="text/javascript" src="_js/user.functions.js"></script>
-
 <!-- Connection Firebase JS -->
 <script type="text/javascript" src="_js/connection.firebase.js"></script>
 <script type="text/javascript" src="_js/application.js"></script>

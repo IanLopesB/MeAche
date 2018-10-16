@@ -122,8 +122,8 @@ span.psw {
 }
 
 .close1 {
-   float: left;
-   margin-right: 20%;
+   float: right;
+   margin-left: 83%;
    position: absolute;
    margin-top: 0%;
    color: white;
@@ -210,11 +210,13 @@ float: right;
   border: solid;
   border-radius: 15px;
   border-width: 2px;
-  border-left-color: black;
+  border-color: white;
+  color: white;
   background-color:  #363434;
 }
 #borda {
-  border-color: green;
+  
+  border-color: grey;
 }
 
 #quantPet1{
@@ -228,11 +230,13 @@ float: right;
   border: solid;
   border-radius: 15px;
   border-width: 2px;
-  border-left-color: black;
+  border-color: white;
+  color: white;
   background-color: #363434;
 }
 #modificarMAISeMENOS{
   float: right;
+  
 
 
 }
@@ -253,6 +257,7 @@ font-size: 17px;
   position: absolute;
   bottom: 7%;
   bottom: 0%;
+  color: rgba(234, 234, 234, 0.8);
 }
 
 #nome-requisicao {
@@ -333,6 +338,8 @@ textarea {outline: none;resize: none;}
   background-color: #efecec ;
   width: 100%;
   font-size: 20px;
+  height: 60px;
+  color: rgba(234, 234, 234, 0.8);
   
 
 }
@@ -343,6 +350,12 @@ textarea {outline: none;resize: none;}
 .pratos-descricao {
 
   text-align: left;
+
+
+}
+
+#descricao{
+  color: rgba(234, 234, 234, 0.8);
 }
 
 li {
