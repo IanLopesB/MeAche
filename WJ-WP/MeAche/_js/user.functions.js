@@ -21,6 +21,16 @@ function confirma(){
   }
 }
 
+function pedidosEspeciais(){
+  var texts = document.getElementById('pedido-adicionais');
+
+  if (texts.style.display === "none") {
+    texts.style.display = "block";
+  } else {
+    texts.style.display = "none";
+  }
+}
+
 
 function mostrarInputReq() {
 
