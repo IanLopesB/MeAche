@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
 
+  background-color: rgb(30, 30, 30);
 }
 
 /*Imagem*/
@@ -55,13 +56,14 @@ body {
 
 
 
-.menu {
-  margin: 15px;
+.pratos {
+  display: inline-block;
+  width: 100%;
 }
 
-.pratos {
-  text-align: center;
-  font-size: 80%;
+.menu {
+  margin-left: -15px;
+  margin-right: 25px;
 }
 
 @media only screen and (min-height: 750px) {
@@ -328,10 +330,6 @@ textarea {outline: none;resize: none;}
 
    background-color: #8B0000 ;
 }
-.pratos {
-  font-size: 20px;
-}
-
 .pratos-descricao {
 
   text-align: left;
