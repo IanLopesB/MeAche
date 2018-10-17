@@ -272,7 +272,7 @@ font-size: 17px;
 }
 
 #nome-prato {
-  height: 5%;
+  height: 60pxs;
   top: 0%;
   border-bottom: solid;
   border-width: 2px;
@@ -353,6 +353,7 @@ textarea {outline: none;resize: none;}
   font-size: 20px;
   height: 60px;
   color: rgba(234, 234, 234, 0.8);
+  position: absolute;
 
 }
 .pratos-descricao {
@@ -384,18 +385,20 @@ list-style-type: none;
 
 #descricao{
   color: rgba(234, 234, 234, 0.8);
+  position: relative;
 }
 
 #pedido-especial{
   color: rgba(234, 234, 234, 0.8);
   font-size: 20px;
+  position: relative;
   
 }
 #pedido-adicionais{
   color: rgba(234, 234, 234, 0.8);
   font-size: 15px;
   background-color: #363434;
-  
+  position: relative;
 }
 
 input[type=text]{
