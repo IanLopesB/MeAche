@@ -277,8 +277,6 @@ font-size: 17px;
   top: 0%;
   border-bottom: solid;
   border-width: 2px;
-  border-top-left-radius: 10px ;
-  border-top-right-radius: 10px;
   border-bottom-color: grey;
 }
 
@@ -299,7 +297,6 @@ font-size: 17px;
   background-color: white;
   margin: 5% auto 15% auto; 
   width: 90%; 
-  border-radius : 10px;
 }
 
 
