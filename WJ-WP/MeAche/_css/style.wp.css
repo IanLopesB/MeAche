@@ -119,7 +119,9 @@ height: 60px;
 
 }
 .close1 {
-  position: absolute;
+   float: right;
+   margin-left: 83%;
+   position: absolute;
    margin-top: 0%;
    color: white;
    font-size: 29px;
@@ -213,18 +215,39 @@ bottom: 0;
 }
 
 /* Span Detalhes do Prato */
+#borda {
+  
+  border-color: grey;
+}
+
+#quantPet1{
+  background-color: #363434;
+
+}
 
 #menos {
-  border: none;
-  width: 25px;
-  background-color: white;
+  width: 27px;
+  border: solid;
+  border-radius: 15px;
+  border-width: 2px;
+  border-color: white;
+  color: white;
+  background-color:  #363434;
 }
 
 #mais {
 
-  border: none;
-  width: 25px;
-  background-color: white;
+  width: 27px;
+  border: solid;
+  border-radius: 15px;
+  border-width: 2px;
+  border-color: white;
+  color: white;
+  background-color: #363434;
+}
+
+#modificarMAISeMENOS{
+  float: right;
 }
 
 .btn {
@@ -239,6 +262,10 @@ font-size: 17px;
 
 #quantidade {
   width: 100%;
+  position: absolute;
+  bottom: 7%;
+  bottom: 0%;
+  color: rgba(234, 234, 234, 0.8);
 }
 
 #nome-requisicao {
@@ -256,17 +283,15 @@ font-size: 17px;
 }
 
 .fundo-span-2 {
-  display: none; 
-  position: fixed; 
-  z-index: 1; 
+   background-color: #363434;
+  display: none;
+  position: fixed;
+  z-index: 1;
   left: 0;
   top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0,0.4);
-  padding-top: 40px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
     
 }
 
@@ -327,8 +352,12 @@ textarea {outline: none;resize: none;}
 }
 
 #addButton {
+  background-color: #efecec ;
+  width: 100%;
+  font-size: 20px;
+  height: 60px;
+  color: rgba(234, 234, 234, 0.8);
 
-   background-color: #8B0000 ;
 }
 .pratos-descricao {
 
@@ -352,4 +381,30 @@ list-style-type: none;
 
   font-family: Trebuchet MS, sans-serif;
   font-size: 21px;
+}
+
+
+
+
+#descricao{
+  color: rgba(234, 234, 234, 0.8);
+}
+
+#pedido-especial{
+  color: rgba(234, 234, 234, 0.8);
+  font-size: 20px;
+  
+}
+#pedido-adicionais{
+  color: rgba(234, 234, 234, 0.8);
+  font-size: 15px;
+  background-color: #363434;
+  
+}
+
+input[type=text]{
+  outline: 0; 
+  background-color: #363434;
+  border:0 none;
+  color: rgba(234, 234, 234, 0.8);
 }

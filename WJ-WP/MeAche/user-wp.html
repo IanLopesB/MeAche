@@ -335,38 +335,60 @@
 
 <!-- Span da Descrição do Prato 1-->
 
- <div id="prato1" style="display: none;" class="fundo-span-2" value="1">
-            <div class="fundo-span-conteudo-2 animate">
-                <div id="botao-fechar-span"> <span onclick="document.getElementById('prato1').style.display='none'" class="close1" title=" Fechar Span">&times; </span> </div>
-                <div id="nome-prato" class="w3-container w3-text-white dark-red">
-                    <h3 class="animate "><b><label id="asinha"><li>Asinha de Frango</li></label></b></h3> </div>
+ <div id="prato1" style="display: none;" class=" fundo-span-2 " value="1">
+            <div class=" ">
+                <div class="w3-container"> <span onclick="document.getElementById('prato1').style.display='none'" class="close1" title=" Fechar Span">&times; </span> </div>
+                <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
+                  <h3 class=""><b><label id="asinha"><li>Asinha de Frango</li></label></b></h3>
+                </div>
                 <br>
-                <div id="textos" class="w3-container">
+                <br>
+                <br>
+                <br>
+                <div id="textos" >
                     <div id="descricao">
-                        <h5>Descrição do Prato
+                      <h5 class="w3-container">Descrição do Prato
                         ..............................................
-                      ...............................</h5> </div>
+                      </h5>
+                    </div>
+                    <hr>
+                    <div id="pedido-especial" class="w3-container" onclick="">
+                      <h3 class="fa fa-plus"> Pedidos Especiais?</h3>
+                    </div>
+                    <br>
+                    <br>
+                    <div id="pedido-adicionais" class="w3-container" >
+                      <input type="text" name="" placeholder="Quais São Seus Pedidos">
+                      <br>
+                      <br>
+                      <p>* Custo adicionais podem ser adicionados.</p>
+                      
+                    </div>
                     <br>
 
-
-                    <div id="quantidade" class="animate">
+                    <div id="quantidade" class="">
                         <div data-app="product.quantity" id="quantidade">
-                            <label>Quantidade: </label>
+                          <hr id="borda">
+                            <label class="w3-container">  Quantidade </label>
+                            <div id="modificarMAISeMENOS" class="w3-container">
                             <input type="button" id="menos" value='-' onclick="process(-1)">
-                            <input id="quantPet1" name="quantPet1" class="numero w3-center" size="1" type="text" value="0" maxlength="2">
-                            <input type="button" id="mais" class="" value='+' onclick="process(1)" /> </div>
-                        <br>
-                        <br>
-                        <div id="botao-adicionar" class="animate">
-                            <button type="submit" id="addButton" class="w3-button w3-text-white" onclick="fecharPrato1();mandardados1();">Adicionar</button>
+                            <input id="quantPet1" name="quantPet1" class="numero w3-center w3-text-white" size="1" type="text" value="0" maxlength="2">
+                            <input type="button" id="mais" class="" value='+' onclick="process(1)" />
+                            </div>
+                            <br>
+                            <br>
+                            <button type="submit" id="addButton" class="w3-button w3-text-black" onclick="fecharPrato1();mandardados1();"><i class="fa fa-plus"></i> ADICIONAR AO MEU PEDIDO</button>
                         </div>
                         <br>
                         <br>
+                            <br>
+                        <br>
+
                         <br> </div>
                 </div>
+
             </div>
         </div>
-
  <!-- Span da Descrição do Prato 2 -->
 
  <div id="prato2" style="display: none;" class="fundo-span-2">
