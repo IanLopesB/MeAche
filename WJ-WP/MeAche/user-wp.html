@@ -258,34 +258,38 @@
     </h3>
   </div>
 
- <!-- Span 1 do Subtotal -->
-   <div id="id01" style="display: none;" class="fundo-span">
-            <div class="fundo-span-conteudo animate">
-                <div id="botao-fechar-span"> <span onclick="document.getElementById('id01').style.display='none'" class="close1" title=" Fechar Span"> &times; </span> </div>
-                <div class="infos-pedido">
-                    <h3 class="w3-center w3-text-white"> <b>Meu pedido:</b> </h3>
-                    <br>
-                    <div id="tabela-pedidos" class="w3-text-white">
-
-                        <table id="tabela" class="table">
-                            <thead>
-                                <tr>
-                                    <th scope="col" class="w3-center">Quant</th>
-                                    <th scope="col" class="w3-center">Pedido</th>
-                                    <th scope="col" class="w3-center">Preço</th>
-                                </tr>
-                            </thead>
-                            <tbody id="tablePedidos"> </tbody>
-                        </table>
-                    </div>
-                    <div id="total-parcial" class=" infos-pedido">
-                        <h4 class=" w3-text-black"><b>Total: </b> <b>R$ </b><b id="totalValue2">0.00</b></h4> </div>
-                    <br>
-                    <button onclick="sendPedido(); confirma()" id="botao-span2" class="w3-button w3-green ">Pedir</button>
-                </div>
-                <br>
-                <br> </div>
-        </div>
+ <div id="id01" style="display:none" class="fundo-span">
+    <div class="w3-container w3-left"> 
+      <span onclick="document.getElementById('id01').style.display='none'" class="close1" title=" Fechar Span"> &times; </span> 
+    </div>
+    <div class="infos-pedido">
+      <div id="meu-pedido" class="w3-container w3-dark-grey">
+        <h3 class="w3-center w3-text-white"> <b>Meu pedido:</b> </h3>
+      </div>
+      <div id="corpo-span-subtotal1" class="w3-text-white">
+        <br>
+        <li class="w3-display-container w3-container">10X Prato Escolhido
+          <span class="w3-display-right w3-container">Preço</span>
+        </li>
+        <div id="pedido-vazio" class="w3-center w3-container">
+          <li class="w3-jumbo"><i class="fa fa-home"></i></li>
+            <p>Seu Carrinho Está Vazio</p>
+            <p>Navegue pelo nosso menu e comece a adicionar itens ao seu pedido</p>
+          </div>
+          <div id="total-parcial" class="infos-pedido">
+            <br>
+            <hr id="barra-subtotal">
+            <p class="w3-text-white w3-container" style="background-color:#363434"><b>Subtotal: </b> <b>R$ </b><b id="preco-subtotal">0.00</b></p>
+            <button onclick="sendPedido();confirma()" id="botao-span2" class="w3-button w3-text-black"><b>CONTINUAR COMPRA</b></button>
+          </div>
+          <br>
+          <br>
+      </div>
+    </div>
+    <br>
+    <br> 
+  </div>
+  </div>
 
  <!-- Span 2 do Subtotal -->
 <div id="id02" class="fundo-span">
