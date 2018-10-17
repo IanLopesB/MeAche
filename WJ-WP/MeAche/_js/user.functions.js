@@ -26,6 +26,7 @@ function pedidosEspeciais(){
 
   if (texts.style.display === "none") {
     texts.style.display = "block";
+    document.getElementById('escrevaOBS').focus();
   } else {
     texts.style.display = "none";
   }
