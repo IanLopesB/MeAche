@@ -206,7 +206,7 @@ border-color: grey;
 
 #botao-span2 {
 
- background-color: #EFECEC;
+background-color: #EFECEC;
 height: 60px;
 width: 100%;
 font-size: 20px;
@@ -264,6 +264,7 @@ font-size: 17px;
   position: absolute;
   bottom: 7%;
   bottom: 0%;
+  position: fixed;
   color: rgba(234, 234, 234, 0.8);
 }
 
@@ -272,7 +273,7 @@ font-size: 17px;
 }
 
 #nome-prato {
-  height: 60pxs;
+  height: 60px;
   top: 0%;
   border-bottom: solid;
   border-width: 2px;
@@ -353,7 +354,8 @@ textarea {outline: none;resize: none;}
   font-size: 20px;
   height: 60px;
   color: rgba(234, 234, 234, 0.8);
-  position: absolute;
+  
+
 
 }
 .pratos-descricao {
