@@ -251,7 +251,7 @@
   <br>
 
 <!-- Subtotal -->
-  <div id="subtotal" class="footer w3-center " onclick="mostrarSubtotal()">
+  <div id="subtotal" class="footer w3-center " onclick="mostrarSubtotal();telaSubtotal();">
 
     <h3 class="w3-center w3-text-white">
      <i class="fa fa-shopping-cart w3-text-white"></i>
@@ -282,7 +282,7 @@
 
       <div id="corpo-span-subtotal1" class="w3-text-white">
         <br>
-        <div id="pedido-vazio" class="w3-center w3-container" style="display: none;">
+        <div id="pedido-vazio" class="w3-center w3-container" style="display: block;">
           <li class="w3-jumbo"><i class="fa fa-shopping-cart"></i></li>
             <p>Seu Carrinho Está Vazio</p>
             <p>Navegue pelo nosso menu e comece a adicionar itens ao seu pedido</p>
@@ -291,7 +291,7 @@
             <br>
             <hr id="barra-subtotal">
             <p class="w3-text-white w3-container" style="background-color:#363434"><b>Subtotal: </b> <b>R$ </b><b id="preco-subtotal">0.00</b></p>
-            <button onclick="sendPedido();confirma()" id="botao-span2" class="w3-button w3-text-black"><b>CONTINUAR COMPRA</b></button>
+            <button onclick="sendPedido();confirma();" id="botao-span2" class="w3-button w3-text-black"><b>CONTINUAR COMPRA</b></button>
           </div>
           <br>
           <br>
@@ -326,17 +326,8 @@
                       <h3 class="fa fa-plus" onclick="pedidosEspeciais()"> Observações</h3>
                     </div>
                     <br>
-
                     <div id="pedido-adicionais" class="w3-container" style="display: none;">
-<<<<<<< HEAD
-                      <input type="text" name="" placeholder="Escreva suas observações">
-                      <br>
-                      <br>
-                      <p>*Custos adicionais podem ser adicionados.</p>
-=======
                       <input type="text" id="escrevaOBS" placeholder="Escreva suas observações">
-                                        
->>>>>>> ee5b84fdf97482a116c8e03f4d78453e298168c4
                     </div>
                     </div>
                     <br>

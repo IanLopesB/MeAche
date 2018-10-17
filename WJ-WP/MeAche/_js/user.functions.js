@@ -92,12 +92,13 @@ function openMenu(evt, menuName) {
   evt.currentTarget.firstElementChild.className += " w3-red";
 }
 
-function telaSubtotal {
+function telaSubtotal() {
 
-  if(documen.totalValue<=0){
-
+  if(document.getElementById('totalValue')>0){
+ document.getElementById('pedido-vazio').style.display = "none";
+  }else{
+     document.getElementById('pedido-vazio').style.display = "block";
   }
 }
-
 
 
