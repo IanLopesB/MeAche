@@ -94,10 +94,12 @@ function openMenu(evt, menuName) {
 
 function telaSubtotal() {
 
-  if(document.getElementById('totalValue')>0){
+  if(document.getElementById('totalValue')>=0){
  document.getElementById('pedido-vazio').style.display = "none";
+ document.getElementById('tabela').style.display = "block";
   }else{
      document.getElementById('pedido-vazio').style.display = "block";
+     document.getElementById('tabela').style.display = "none";
   }
 }
 
