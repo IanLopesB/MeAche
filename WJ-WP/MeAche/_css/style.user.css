@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  background-color:  #000000;
 }
 
 /*Imagem*/
@@ -359,6 +358,25 @@ textarea {outline: none;resize: none;}
 }
 
 #descricao{
+  color: rgba(234, 234, 234, 0.8);
+}
+
+#pedido-especial{
+  color: rgba(234, 234, 234, 0.8);
+  font-size: 20px;
+  
+}
+#pedido-adicionais{
+  color: rgba(234, 234, 234, 0.8);
+  font-size: 15px;
+  background-color: #363434;
+  
+}
+
+input[type=text]{
+  outline: 0; 
+  background-color: #363434;
+  border:0 none;
   color: rgba(234, 234, 234, 0.8);
 }
 
