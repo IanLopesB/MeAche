@@ -39,7 +39,7 @@ var x = document.getElementById("nome-requisicao");
        }
 }
 
-function mostrarNomeReq() {
+ function mostrarNomeReq() {
 
 var x = document.getElementById("nome-requisicao");
        if (x.style.display === "none") {

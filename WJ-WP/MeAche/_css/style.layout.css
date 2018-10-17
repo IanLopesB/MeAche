@@ -153,8 +153,10 @@ height: 60px;
 
 #total-parcial {
   width: 100%;
-  position: absolute;
+  position: fixed;
     bottom: 0;
+  font-size: 18px;
+}
 }
 
 #preco-subtotal{
@@ -172,9 +174,7 @@ border-color: grey;
   }
 }
 
-.infos-pedido{
-  font-size: 18px;
-}
+
 
 
 /* Span Pedido Parte 2*/
@@ -208,7 +208,6 @@ border-color: grey;
 height: 60px;
 width: 100%;
 font-size: 20px;
-position: fixed;
 bottom: 0;
 }
 
@@ -345,11 +344,17 @@ list-style-type: none;
   display: block;
   color: rgba(234,234,234,0.30000000000000004);
   font-family: Trebuchet MS, sans-serif;
-  position: absolute;
+  position: relative;
 }
 
 #corpo-span-subtotal1 {
 
   font-family: Trebuchet MS, sans-serif;
   font-size: 21px;
+}
+
+
+#id01 {
+
+  position: absolute;
 }
