@@ -16,8 +16,8 @@ function confirma(){
     location.reload();
   }
   else {
-    alert("Nada Selecionado");    
-    meuPedido.style.display = "none";    
+    alert("Nada Selecionado");
+    meuPedido.style.display = "none";
   }
 }
 
@@ -91,3 +91,13 @@ function openMenu(evt, menuName) {
   document.getElementById(menuName).style.display = "block";
   evt.currentTarget.firstElementChild.className += " w3-red";
 }
+
+function telaSubtotal {
+
+  if(documen.totalValue<=0){
+
+  }
+}
+
+
+

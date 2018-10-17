@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" href="_css/icon.css">
+ <link rel="stylesheet" type="text/css" href="_css/animate.css">
 
   <!-- Load the Firebase library before loading the body. -->
   <script src="_js/firebase.js"></script>
@@ -259,8 +260,8 @@
   </div>
 
  <div id="id01" style="display:none" class="fundo-span">
-    <div class="w3-container w3-left"> 
-      <span onclick="document.getElementById('id01').style.display='none'" class="close1" title=" Fechar Span"> &times; </span> 
+    <div class="w3-container w3-left">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close1" title=" Fechar Span"> &times; </span>
     </div>
     <div class="infos-pedido">
       <div id="meu-pedido" class="w3-container w3-dark-grey">
@@ -275,12 +276,13 @@
                      <th scope="col" class="w3-center">Preço</th>
                   </tr>
                </thead>
-               <tbody id="tablePedidos">                 
+               <tbody id="tablePedidos">
                </tbody>
             </table>
+
       <div id="corpo-span-subtotal1" class="w3-text-white">
         <br>
-        <div id="pedido-vazio" class="w3-center w3-container">
+        <div id="pedido-vazio" class="w3-center w3-container" style="display: none;">
           <li class="w3-jumbo"><i class="fa fa-shopping-cart"></i></li>
             <p>Seu Carrinho Está Vazio</p>
             <p>Navegue pelo nosso menu e comece a adicionar itens ao seu pedido</p>
@@ -296,7 +298,7 @@
       </div>
     </div>
     <br>
-    <br> 
+    <br>
   </div>
   </div>
 
@@ -304,7 +306,7 @@
 <!-- Span da Descrição do Prato 1-->
 
  <div id="prato1" style="display: none;" class=" fundo-span-2 " value="1">
-            
+
                 <div class="w3-container"> <span onclick="document.getElementById('prato1').style.display='none'" class="close1" title=" Fechar Span">&times; </span> </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center"><b><label id="asinha"><li>Asinha de Frango</li></label></b></h3>
@@ -324,10 +326,17 @@
                       <h3 class="fa fa-plus" onclick="pedidosEspeciais()"> Observações</h3>
                     </div>
                     <br>
-                    
+
                     <div id="pedido-adicionais" class="w3-container" style="display: none;">
+<<<<<<< HEAD
+                      <input type="text" name="" placeholder="Escreva suas observações">
+                      <br>
+                      <br>
+                      <p>*Custos adicionais podem ser adicionados.</p>
+=======
                       <input type="text" id="escrevaOBS" placeholder="Escreva suas observações">
                                         
+>>>>>>> ee5b84fdf97482a116c8e03f4d78453e298168c4
                     </div>
                     </div>
                 <br>
@@ -356,9 +365,9 @@
                         <br>
 
                         <br> </div>
-                
 
-          
+
+
         </div>
  <!-- Span da Descrição do Prato 2 -->
 
