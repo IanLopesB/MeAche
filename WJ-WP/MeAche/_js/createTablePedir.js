@@ -82,7 +82,6 @@ if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 |
 		(preco29 * value29));
 	var mult = (preco1 * value1);
 
-	document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 	document.getElementById('precoPetisco1').innerHTML = mult.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
 }
@@ -152,7 +151,6 @@ if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 |
 		(preco29 * value29));
 	var mult = (preco1 * value1);
 
-	document.getElementById('totalValue2').innerHTML = result.toFixed(2);
 	document.getElementById('precoPetisco1').innerHTML = mult.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
 
@@ -4675,4 +4673,4 @@ td_precoPetisco29.style.textAlign="center";
 }
 }
 }
-
+}
