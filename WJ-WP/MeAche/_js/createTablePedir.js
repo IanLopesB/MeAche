@@ -249,7 +249,7 @@ function mandardados2(){
 	document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 	document.getElementById('precoPetisco2').innerHTML = mult.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
-
+}
     } else {
 if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
@@ -4675,4 +4675,4 @@ td_precoPetisco29.style.textAlign="center";
 }
 }
 }
-}
+
