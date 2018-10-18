@@ -93,13 +93,13 @@ function openMenu(evt, menuName) {
 }
 
 function telaSubtotal() {
-
-  if(document.getElementById('totalValue')>=0){
+var valorT = document.getElementById('totalValue').innerHTML;
+  if(valorT >0.00){
  document.getElementById('pedido-vazio').style.display = "none";
- document.getElementById('tabela').style.display = "block";
+ document.getElementById('tabelaCreate').style.display = "block";
   }else{
      document.getElementById('pedido-vazio').style.display = "block";
-     document.getElementById('tabela').style.display = "none";
+     document.getElementById('tabelaCreate').style.display = "none";
   }
 }
 
