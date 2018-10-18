@@ -1204,8 +1204,8 @@ function mandardados8(){
 	var quantPetisco8 = document.getElementById('quantPetisco8');
 	quantPetisco8.innerText = value8;
 
-	var batata = document.getElementById('batata').firstChild.innerHTML;
-	document.getElementById('namePrato8').innerHTML = batata;
+	var baiao = document.getElementById('baiao').firstChild.innerHTML;
+	document.getElementById('namePrato8').innerHTML = baiao;
 
 	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
 		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
@@ -1273,8 +1273,8 @@ if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 |
 	var quantPetisco8 = document.getElementById('quantPetisco8');
 	quantPetisco8.innerText = value8;
 
-	var batata = document.getElementById('batata').firstChild.innerHTML;
-	document.getElementById('namePrato8').innerHTML = batata;
+	var baiao = document.getElementById('baiao').firstChild.innerHTML;
+	document.getElementById('namePrato8').innerHTML = baiao;
 
 	var result = ((preco1 * value1) + (preco2 * value2) + (preco3 * value3) + (preco4 * value4) +
 		(preco5 * value5) + (preco6 * value6) + (preco7 * value7) + (preco8 * value8) +
