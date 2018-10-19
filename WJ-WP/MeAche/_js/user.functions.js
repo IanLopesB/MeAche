@@ -7,6 +7,23 @@ function mostrarSubtotal(){
        }
 }
 
+function arrows(){
+  var arrowUp = document.getElementById('arrowUp'),
+      arrowDown = document.getElementById('arrowDown');
+
+  var linkPetisco = document.getElementById('collapsePetisco').getAttribute('aria-expanded');
+
+  if (linkPetisco = "true"){
+    arrowDown.style.display = "none";
+    arrowUp.style.display = "block";
+  }
+
+  else if (linkPetisco = "false"){
+    arrowDown.style.display = "block";
+    arrowUp.style.display = "none";
+  }
+}
+
 function confirma(){
   var meuPedido = document.getElementById('id01');
 
