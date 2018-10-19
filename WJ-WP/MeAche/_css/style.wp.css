@@ -81,9 +81,9 @@ body {
   height: 70px;
 }
 #subtotal-meuPedido {
-  background-color: rgb(30, 30, 30);
   margin-top: 15px;
 }
+
 
 .footer {
   position: fixed;
@@ -160,7 +160,7 @@ height: 85px;
 #total-parcial {
   width: 100%;
   position: fixed;
-    bottom: 0;
+  bottom: 0;
 }
 
 #preco-subtotal{
@@ -174,9 +174,11 @@ margin: 0;
 }
 #subtotal-meupedido {
   margin-top: 15px;
-  background-color: rgb(30, 30, 30);
 }
-
+#subtotal-hrP {
+  background-color: rgb(30, 30, 30);
+  height: 60px;
+}
 
 
 .infos-pedido{
