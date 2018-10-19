@@ -166,6 +166,11 @@ height: 85px;
 #barra-subtotal {
 
 border-color: grey;
+margin: 0;
+}
+#subtotal-meupedido {
+  margin-top: 15px;
+  background-color: rgb(30, 30, 30);
 }
 
 
