@@ -7,21 +7,6 @@ function mostrarSubtotal(){
        }
 }
 
-function arrows(value){
-  var arrowUp = document.getElementById('arrowUp'+value),
-      arrowDown = document.getElementById('arrowDown'+value);
-
-  var linkPetisco = document.getElementById('collapsePetisco').getAttribute('aria-expanded');
-
-  if (linkPetisco === "true"){
-    arrowDown.style.display = "block";
-    arrowUp.style.display = "none";
-  } else if (linkPetisco ==="false"){
-    arrowDown.style.display = "none";
-    arrowUp.style.display = "block";
-  }
-}
-
 function confirma(){
   var meuPedido = document.getElementById('id01');
 
@@ -118,4 +103,63 @@ var valorT = document.getElementById('totalValue').innerHTML;
   }
 }
 
-
+function arrows1(){
+  var arrowUp = document.getElementById("arrowUp1"),
+          arrowDown = document.getElementById("arrowDown1"),
+          linkPetisco = document.getElementById("collapse1").getAttribute('aria-expanded');
+  if (linkPetisco === "true"){
+    arrowDown.style.display = "block";
+    arrowUp.style.display = "none";
+  } else if (linkPetisco ==="false"){
+    arrowDown.style.display = "none";
+    arrowUp.style.display = "block";
+  }
+}
+function arrows2(){
+  var arrowUp = document.getElementById("arrowUp2"),
+          arrowDown = document.getElementById("arrowDown2"),
+          linkPetisco = document.getElementById("collapse2").getAttribute('aria-expanded');
+  if (linkPetisco === "true"){
+    arrowDown.style.display = "block";
+    arrowUp.style.display = "none";
+  } else if (linkPetisco ==="false"){
+    arrowDown.style.display = "none";
+    arrowUp.style.display = "block";
+  }
+}
+function arrows3(){
+  var arrowUp = document.getElementById("arrowUp3"),
+          arrowDown = document.getElementById("arrowDown3"),
+          linkPetisco = document.getElementById("collapse3").getAttribute('aria-expanded');
+  if (linkPetisco === "true"){
+    arrowDown.style.display = "block";
+    arrowUp.style.display = "none";
+  } else if (linkPetisco ==="false"){
+    arrowDown.style.display = "none";
+    arrowUp.style.display = "block";
+  }
+}
+function arrows4(){
+  var arrowUp = document.getElementById("arrowUp4"),
+          arrowDown = document.getElementById("arrowDown4"),
+          linkPetisco = document.getElementById("collapse4").getAttribute('aria-expanded');
+  if (linkPetisco === "true"){
+    arrowDown.style.display = "block";
+    arrowUp.style.display = "none";
+  } else if (linkPetisco ==="false"){
+    arrowDown.style.display = "none";
+    arrowUp.style.display = "block";
+  }
+}
+function arrows5(){
+  var arrowUp = document.getElementById("arrowUp5"),
+          arrowDown = document.getElementById("arrowDown5"),
+          linkPetisco = document.getElementById("collapse5").getAttribute('aria-expanded');
+  if (linkPetisco === "true"){
+    arrowDown.style.display = "block";
+    arrowUp.style.display = "none";
+  } else if (linkPetisco ==="false"){
+    arrowDown.style.display = "none";
+    arrowUp.style.display = "block";
+  }
+}
