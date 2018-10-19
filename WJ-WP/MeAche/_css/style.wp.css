@@ -115,7 +115,7 @@ span.psw {
 #meu-pedido{
   border-bottom: solid;
   border-color: grey;
-height: 60px;
+height: 85px;
 
 }
 .close1 {
@@ -168,11 +168,7 @@ height: 60px;
 border-color: grey;
 }
 
-@media only screen and (min-height: 750px) {
-  .fundo-span-conteudo {
-    width: 50%;
-  }
-}
+
 
 .infos-pedido{
   font-size: 18px;
@@ -330,11 +326,6 @@ span.psw {
 }
 
 
-@media only screen and (min-height: 750px) {
-  .fundo-span-conteudo-2 {
-    width: 50%;
-  }
-}
 
 
 /* Estilização dos Inputs e Extras*/
@@ -409,3 +400,4 @@ input[type=text]{
   border:0 none;
   color: rgba(234, 234, 234, 0.8);
 }
+
