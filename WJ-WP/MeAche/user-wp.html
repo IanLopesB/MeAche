@@ -46,11 +46,11 @@
 
  <!-- Cardápio -->
  <div id="categorias">
-  <a class="w3-row" id="collapse1"  data-toggle="collapse" data-target="#collapsePet" aria-expanded="false"onclick="arrows1();">
+  <a class="w3-row" id="collapse1" data-toggle="collapse" data-target="#collapsePet" aria-expanded="false" onclick="arrows1()">
     <div class="div-categoria w3-col tablink w3-padding-large w3-text-white w3-round">
       <b class="w3-large">Petiscos </b>
-      <i class="fas fa-angle-down w3-right" id="arrowDown1"  style="display: block;"></i>
-      <i class="fas fa-angle-up w3-right" id="arrowUp1"  style="display: none;"></i>
+      <i class="fas fa-angle-down w3-right" id="arrowDown1" style="display: block;"></i>
+      <i class="fas fa-angle-up w3-right" id="arrowUp1" style="display: none;"></i>
     </div>
   </a>
  <div id="Petiscos" class="menu">
@@ -99,11 +99,11 @@
    </ul>
   </div>
 
-  <a class="w3-row" id="collapse2" data-toggle="collapse" data-target="#collapseEsp"  aria-expanded="false"onclick="arrows2();">
+  <a class="w3-row" id="collapse2" data-toggle="collapse" data-target="#collapseEsp" aria-expanded="false" onclick="arrows2()">
     <div class="w3-col tablink w3-padding-large w3-text-white w3-round">
       <b class="w3-large">Espetos </b>
       <i class="fas fa-angle-down w3-right" id="arrowDown2" style="display: block;"></i>
-      <i class="fas fa-angle-up w3-right" id="arrowUp2"  style="display: none;"></i>
+      <i class="fas fa-angle-up w3-right" id="arrowUp2" style="display: none;"></i>
     </div>
   </a>
   <div id="Espetos" class="menu">
@@ -138,11 +138,11 @@
    </ul>
   </div>
 
-  <a class="w3-row" id="collapse3" data-toggle="collapse" data-target="#collapseSuco"  aria-expanded="false" onclick="arrows3();">
+  <a class="w3-row" id="collapse3" data-toggle="collapse" data-target="#collapseSuco" aria-expanded="false" onclick="arrows3()">
     <div class="w3-col tablink w3-padding-large w3-text-white w3-round">
       <b class="w3-large">Sucos </b>
       <i class="fas fa-angle-down w3-right" id="arrowDown3" style="display: block;"></i>
-      <i class="fas fa-angle-up w3-right" id="arrowUp3"  style="display: none;"></i>
+      <i class="fas fa-angle-up w3-right" id="arrowUp3" style="display: none;"></i>
     </div>
   </a>
   <div id="Sucos" class="menu">
@@ -180,11 +180,11 @@
       <hr>
    </ul>
   </div>
-  <a class="w3-row" id="collapse4"data-toggle="collapse" data-target="#collapseRefri"  aria-expanded="false" onclick="arrows4();">
+  <a class="w3-row" id="collapse4" data-toggle="collapse" data-target="#collapseRefri" aria-expanded="false" onclick="arrows4()">
     <div class="w3-col tablink w3-padding-large w3-text-white w3-round">
       <b class="w3-large">Refrigerantes</b>
       <i class="fas fa-angle-down w3-right" id="arrowDown4" style="display: block;"></i>
-      <i class="fas fa-angle-up w3-right" id="arrowUp4"  style="display: none;"></i>
+      <i class="fas fa-angle-up w3-right" id="arrowUp4" style="display: none;"></i>
     </div>
   </a>
   <div id="Refrigerantes" class="menu">
@@ -212,11 +212,11 @@
       <hr>
    </ul>
   </div>
-<a class="w3-row" id="collapse5" data-toggle="collapse" data-target="#collapseCerveja"  aria-expanded="false" onclick="arrows5();">
+  <a class="w3-row" id="collapse5" data-toggle="collapse" data-target="#collapseCerveja" aria-expanded="false" onclick="arrows5()">
     <div class="w3-col tablink w3-padding-large w3-text-white w3-round">
       <b class="w3-large">Cervejas </b>
       <i class="fas fa-angle-down w3-right" id="arrowDown5" style="display: block;"></i>
-      <i class="fas fa-angle-up w3-right" id="arrowUp5"  style="display: none;"></i>
+      <i class="fas fa-angle-up w3-right" id="arrowUp5" style="display: none;"></i>
     </div>
   </a>
   <div id="Cervejas" class="menu">
@@ -279,7 +279,6 @@
 
         <h3 class="w3-center w3-text-white"> <b>Meu pedido:</b> </h3>
       </div>
-
       <div id="div-tabela" class=" w3-text-white" >
             <table id="tbCreate" class="table" style="display: none;">
                <thead>
@@ -292,6 +291,7 @@
                <tbody id="tablePedidos" >
                </tbody>
             </table>
+      </div>
       <div id="corpo-span-subtotal1" class="w3-text-white">
         <br>
         <div id="pedido-vazio" class="w3-center w3-container" style="display: block;">
@@ -302,13 +302,13 @@
           <div id="total-parcial" class="infos-pedido">
             <br>
             <hr id="barra-subtotal">
-            <p class="w3-text-white w3-container" id="subtotal-meupedido" style="background-color:#363434"><b>Subtotal: </b> <b>R$ </b><b id="preco-subtotal">0.00</b></p>
+            <p class="w3-text-white w3-container" style="background-color:#363434"><b>Subtotal: </b> <b>R$ </b><b id="preco-subtotal">0.00</b></p>
             <button onclick="sendPedido();confirma()" id="botao-span2" class="w3-button w3-text-black"><b>CONTINUAR COMPRA</b></button>
           </div>
           <br>
           <br>
       </div>
-
+    </div>
     <br>
     <br>
   </div>

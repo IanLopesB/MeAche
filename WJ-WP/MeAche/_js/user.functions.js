@@ -7,6 +7,23 @@ function mostrarSubtotal(){
        }
 }
 
+function arrows(){
+  var arrowUp = document.getElementById('arrowUp'),
+      arrowDown = document.getElementById('arrowDown');
+
+  var linkPetisco = document.getElementById('collapsePetisco').getAttribute('aria-expanded');
+
+  if (linkPetisco = "true"){
+    arrowDown.style.display = "none";
+    arrowUp.style.display = "block";
+  }
+
+  else if (linkPetisco = "false"){
+    arrowDown.style.display = "block";
+    arrowUp.style.display = "none";
+  }
+}
+
 function confirma(){
   var meuPedido = document.getElementById('id01');
 
@@ -96,17 +113,17 @@ function telaSubtotal() {
 var valorT = document.getElementById('totalValue').innerHTML;
   if(valorT >0.00){
  document.getElementById('pedido-vazio').style.display = "none";
- document.getElementById('tbCreate').style.display = "block";
+ document.getElementById('tbCreate').style.display = "inline-table";
   }else{
      document.getElementById('pedido-vazio').style.display = "block";
-     document.getElementById('tbCreate').style.display = "none";
+     document.getElementById('tbCreate').style.display = "none";                
   }
 }
 
 function arrows1(){
   var arrowUp = document.getElementById("arrowUp1"),
-          arrowDown = document.getElementById("arrowDown1"),
-          linkPetisco = document.getElementById("collapse1").getAttribute('aria-expanded');
+      arrowDown = document.getElementById("arrowDown1"),
+      linkPetisco = document.getElementById("collapse1").getAttribute('aria-expanded');
   if (linkPetisco === "true"){
     arrowDown.style.display = "block";
     arrowUp.style.display = "none";
@@ -115,6 +132,8 @@ function arrows1(){
     arrowUp.style.display = "block";
   }
 }
+
+
 function arrows2(){
   var arrowUp = document.getElementById("arrowUp2"),
           arrowDown = document.getElementById("arrowDown2"),
