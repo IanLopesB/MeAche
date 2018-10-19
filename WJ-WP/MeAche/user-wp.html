@@ -272,14 +272,14 @@
  <div id="id01" style="display:none" class="fundo-span">
     <div class="w3-container w3-left">
       <br>
-      <span onclick="document.getElementById('id01').style.display='none'" class="close1" title=" Fechar Span"> &times; </span>
+      <span onclick="document.getElementById('id01').style.display='none'" class="close1 fadeInDown animate" title=" Fechar Span"> &times; </span>
     </div>
     <div class="infos-pedido">
       <div id="meu-pedido" class="w3-container w3-dark-grey">
 
-        <h3 class="w3-center w3-text-white"> <b>Meu pedido:</b> </h3>
+        <h3 class="w3-center w3-text-white fadeInDown animate "> <b>Meu pedido:</b> </h3>
       </div>
-      <div id="div-tabela" class=" w3-text-white" >
+      <div id="div-tabela" class=" w3-text-white fadeIn animate" >
             <table id="tbCreate" class="table" style="display: none;">
                <thead>
                   <tr>
@@ -294,15 +294,17 @@
       </div>
       <div id="corpo-span-subtotal1" class="w3-text-white">
         <br>
-        <div id="pedido-vazio" class="w3-center w3-container" style="display: block;">
+        <div id="pedido-vazio" class="w3-center w3-container fadeIn animate" style="display: block;">
           <li class="w3-jumbo"><i class="fa fa-shopping-cart"></i></li>
             <p>Seu Carrinho Está Vazio</p>
             <p>Navegue pelo nosso menu e comece a adicionar itens ao seu pedido</p>
           </div>
           <div id="total-parcial" class="infos-pedido">
             <br>
-            <hr id="barra-subtotal">
-            <p class="w3-text-white w3-container" id="subtotal-meuPedido" style="background-color:#363434"><b>Subtotal: </b> <b>R$ </b><b id="preco-subtotal">0.00</b></p>
+            <div id="subtotal-hrP">
+              <hr id="barra-subtotal">
+              <p class="w3-text-white w3-container fadeInUp animate" id="subtotal-meuPedido"><b>Subtotal: </b> <b>R$ </b><b id="preco-subtotal">0.00</b></p>
+            </div>
             <button onclick="sendPedido();confirma()" id="botao-span2" class="w3-button w3-text-black"><b>CONTINUAR COMPRA</b></button>
           </div>
           <br>
