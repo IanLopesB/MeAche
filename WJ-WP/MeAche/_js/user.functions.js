@@ -111,10 +111,10 @@ function telaSubtotal() {
 var valorT = document.getElementById('totalValue').innerHTML;
   if(valorT >0.00){
  document.getElementById('pedido-vazio').style.display = "none";
- document.getElementById('tabela').style.display = "block";
+ document.getElementById('tbCreate').style.display = "block";
   }else{
      document.getElementById('pedido-vazio').style.display = "block";
-     document.getElementById('tabela').style.display = "none";
+     document.getElementById('tbCreate').style.display = "none";
   }
 }
 
