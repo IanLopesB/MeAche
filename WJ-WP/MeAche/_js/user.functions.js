@@ -7,20 +7,18 @@ function mostrarSubtotal(){
        }
 }
 
-function arrows(){
-  var arrowUp = document.getElementById('arrowUp'),
-      arrowDown = document.getElementById('arrowDown');
+function arrows(value){
+  var arrowUp = document.getElementById('arrowUp'+value),
+      arrowDown = document.getElementById('arrowDown'+value);
 
   var linkPetisco = document.getElementById('collapsePetisco').getAttribute('aria-expanded');
 
-  if (linkPetisco = "true"){
-    arrowDown.style.display = "none";
-    arrowUp.style.display = "block";
-  }
-
-  else if (linkPetisco = "false"){
+  if (linkPetisco === "true"){
     arrowDown.style.display = "block";
     arrowUp.style.display = "none";
+  } else if (linkPetisco ==="false"){
+    arrowDown.style.display = "none";
+    arrowUp.style.display = "block";
   }
 }
 
@@ -113,10 +111,10 @@ function telaSubtotal() {
 var valorT = document.getElementById('totalValue').innerHTML;
   if(valorT >0.00){
  document.getElementById('pedido-vazio').style.display = "none";
- document.getElementById('tabelaCreate').style.display = "block";
+ document.getElementById('tabela').style.display = "block";
   }else{
      document.getElementById('pedido-vazio').style.display = "block";
-     document.getElementById('tabelaCreate').style.display = "none";
+     document.getElementById('tabela').style.display = "none";
   }
 }
 

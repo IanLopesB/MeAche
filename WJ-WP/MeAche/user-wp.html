@@ -45,12 +45,12 @@
   <hr id="barra">
 
  <!-- Cardápio -->
- <div id="categorias" class="" onclick="arrows()">
-  <a class="w3-row" id="collapsePetisco" data-toggle="collapse" data-target="#collapsePet" aria-expanded="false">
+ <div id="categorias">
+  <a class="w3-row" id="collapsePetisco" data-toggle="collapse" data-target="#collapsePet" aria-expanded="false" onclick="arrows(this.value);">
     <div class="div-categoria w3-col tablink w3-padding-large w3-text-white w3-round">
       <b class="w3-large">Petiscos </b>
-      <i class="fas fa-angle-down w3-right" id="arrowDown" style="display: block;"></i>
-      <i class="fas fa-angle-up w3-right" id="arrowUp" style="display: none;"></i>
+      <i class="fas fa-angle-down w3-right" id="arrowDown1" style="display: block;"value="1"></i>
+      <i class="fas fa-angle-up w3-right" id="arrowUp1" style="display: none;"value="1"></i>
     </div>
   </a>
  <div id="Petiscos" class="menu">
@@ -99,9 +99,11 @@
    </ul>
   </div>
 
-  <a class="w3-row" data-toggle="collapse" data-target="#collapseEsp" aria-haspopup="true" aria-expanded="false">
+  <a class="w3-row" data-toggle="collapse" data-target="#collapseEsp" aria-haspopup="true" aria-expanded="false" onclick="arrows(this.value);">
     <div class="w3-col tablink w3-padding-large w3-text-white w3-round">
-      <b class="w3-large">Espetos </b><i class="fas fa-angle-down w3-right"></i>
+      <b class="w3-large">Espetos </b>
+      <i class="fas fa-angle-down w3-right" id="arrowDown2" style="display: block;"value="2"></i>
+      <i class="fas fa-angle-up w3-right" id="arrowUp2" style="display: none;"value="2"></i>
     </div>
   </a>
   <div id="Espetos" class="menu">
