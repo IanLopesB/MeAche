@@ -1,6 +1,6 @@
 firebase.database().ref('pedidos').on('value', function (snapshot) {
 
-  var trbody = document.getElementById('tableAdm');
+  var trbody = document.getElementById('pedidos_pendentes');
       trbody.innerHTML = '';
 
   snapshot.forEach(function (item) {

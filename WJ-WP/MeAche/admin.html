@@ -25,12 +25,13 @@
 <body>
     <div id="logo" class="w3-center"> <img id="img-logo" class="img-fluid w3-center" src="http://pluspng.com/img-png/beats-electronics-logo-vector-png-beats-electronics-logo-png-828.png"> </div>
     <hr id="barra">
-    <ul id="alimentsList"> </ul>
+
     <div class="container">
-        <button class="btn btn-secondary dropdown-toggle accordion-toggle estiloButton" type="button" id="dropdownMenuButton" data-toggle="collapse" aria-haspopup="true" aria-expanded="false" data-target="#collapseTwo">Lista de pedidos</button>
-        <div class="collapse in show" id="collapseTwo">
+      <div>
+        <button class="btn btn-secondary dropdown-toggle accordion-toggle estiloButton" type="button" data-toggle="collapse" data-target="#collapseOne">Pedidos Pendentes</button>
+        <div class="collapse in show" id="collapseOne">
             <table class="table users-table">
-                <tbody id="tableAdm">
+                <tbody id="pedidos_pendentes">
                     <tr>
                         <th scope="row"></th>
                         <td>Pedidos</td>
@@ -39,8 +40,25 @@
                 </tbody>
             </table>
         </div>
+      </div>
+      <br>
+      <br>
+      <div>
+        <button class="btn btn-secondary dropdown-toggle accordion-toggle estiloButton" type="button" data-toggle="collapse" data-target="#collapseTwo">Pedidos Concluídos</button>
+        <div class="collapse in show" id="collapseTwo">
+            <table class="table users-table">
+                <tbody id="pedidos_concluidos">
+                    <tr>
+                        <th scope="row"></th>
+                        <td>Pedidos</td>
+                        <td>Nº Pedidos</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+      </div>
     </div>
-    </div>
+    
 </body>
 <!-- Connection Firebase JS -->
 <script type="text/javascript" src="_js/connection.firebase.js"></script>
