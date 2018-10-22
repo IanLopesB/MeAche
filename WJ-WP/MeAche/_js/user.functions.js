@@ -13,6 +13,8 @@ function fecharSubtotal(){
            x.style.display = "none";
        } else {
            x.style.display = "block";
+         }
+    }
 function mostrarSubtotal1(){
      var x = document.getElementById("id02");
        if (x.style.display === "none") {
