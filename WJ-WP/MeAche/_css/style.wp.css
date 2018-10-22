@@ -219,11 +219,6 @@ margin: 0;
 
 /* Span Pedido Parte 2*/
 
-#total-pedido {
-    background-color:#f7f7f7;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius:10px;
-}
 
 .close2:hover,
 .close2:focus {
@@ -251,6 +246,14 @@ font-size: 20px;
 bottom: 0;
 }
 
+#pedir {
+
+  border-top: solid;
+  border-width: 1px;
+  line-height: 40px;
+  width: 70%;
+}
+
 .fundo-span-3 {
   display: none; 
   position: fixed; 
@@ -267,11 +270,12 @@ bottom: 0;
 }
 
 .fundo-span-conteudo-3 {
-  background-color: grey;
+  background-color:  rgb(30, 30, 30);
   margin: 50% auto 15% auto; 
   border: 1px solid #888;
-  width: 90%; 
-  border-radius : 10px;
+  width: 70%; 
+  border-radius : 5px;
+  color: rgb(234, 234, 234);
 }
 
 
