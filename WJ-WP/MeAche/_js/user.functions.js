@@ -6,12 +6,21 @@ function mostrarSubtotal(){
            x.style.display = "none";
        }
 }
+<<<<<<< HEAD
+function fecharSubtotal(){
+     var x = document.getElementById("id01");
+       if (x.style.display === "block") {
+           x.style.display = "none";
+       } else {
+           x.style.display = "block";
+=======
 function mostrarSubtotal1(){
      var x = document.getElementById("id02");
        if (x.style.display === "none") {
            x.style.display = "block";
        } else {
            x.style.display = "none";
+>>>>>>> f5269d5c3851935053250aa03df27b0ef62d0184
        }
 }
 
@@ -35,7 +44,7 @@ function arrows(){
 function confirma(){
   var meuPedido = document.getElementById('id01');
 
-  if (document.getElementById('totalValue2').innerHTML != 0.00 ){
+  if (document.getElementById('totalValue').innerHTML != 0.00 ){
     alert("Pedido enviado com sucesso!");
     meuPedido.style.display = "none";
     location.reload();
@@ -124,7 +133,7 @@ var valorT = document.getElementById('totalValue').innerHTML;
  document.getElementById('tbCreate').style.display = "inline-table";
   }else{
      document.getElementById('pedido-vazio').style.display = "block";
-     document.getElementById('tbCreate').style.display = "none";                
+     document.getElementById('tbCreate').style.display = "none";
   }
 }
 
