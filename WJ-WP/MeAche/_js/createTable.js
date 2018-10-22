@@ -14,7 +14,6 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
   var linebreak = document.createElement('br');
 
   var ul = document.createElement('ul');
-      ul.setAttribute("id", "ulAdmin");
 
   // li - Petiscos
   var li1 = document.createElement('li'),
@@ -147,6 +146,13 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
     for (var i = 0; i < trId.length; i++) {
       trId[i].id = "tr" + (i + 1);}
   //! set "tr" ID that does not repeat !//
+
+  // set "ul" ID that does not repeat
+    ul.setAttribute("class", "ulClass");
+    var ulID = document.getElementsByClassName("ulClass");
+    for (var i = 0; i < ulID.length; i++) {
+      ulID[i].id = "ul" + (i + 1);}
+  //! set "ul" ID that does not repeat !//
 
   // set the "input" ID that is not repeated //
     input_checkbox.setAttribute("class", "inputClass");

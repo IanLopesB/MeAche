@@ -12,7 +12,7 @@
     <!-- Custom style CSS -->
     <link rel="stylesheet" type="text/css" href="_css/style.admin.css">
     <link rel="stylesheet" href="_css/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="_css/icon.css">
     <!-- Load the Firebase library before loading the body. -->
     <script src="_js/firebase.js"></script>
@@ -28,7 +28,11 @@
 
     <div class="container">
       <div>
-        <button class="btn btn-secondary dropdown-toggle accordion-toggle estiloButton" type="button" data-toggle="collapse" data-target="#collapseOne">Pedidos Pendentes</button>
+        <button id="collapse6" class="btn btn-secondary accordion-toggle estiloButton" type="button" aria-expanded="true" data-toggle="collapse" data-target="#collapseOne" onclick="arrows6()">
+            <span>Pedidos Pendentes</span>
+            <i class="fas fa-angle-down w3-right" id="arrowDown6" style="display: none;"></i>
+            <i class="fas fa-angle-up w3-right" id="arrowUp6" style="display: block;"></i>
+        </button>
         <div class="collapse in show" id="collapseOne">
             <table class="table users-table">
                 <tbody id="pedidos_pendentes">
@@ -44,8 +48,13 @@
       <br>
       <br>
       <div>
-        <button class="btn btn-secondary dropdown-toggle accordion-toggle estiloButton" type="button" data-toggle="collapse" data-target="#collapseTwo">Pedidos Concluídos</button>
-        <div class="collapse in show" id="collapseTwo">
+        <button id="collapse7" class="btn btn-secondary accordion-toggle estiloButton" aria-expanded="false" type="button" data-toggle="collapse" data-target="#collapseTwo" onclick="arrows7()">
+            <span>Pedidos Concluídos</span>
+            <i class="fas fa-angle-down w3-right" id="arrowDown7" style="display: block;"></i>
+            <i class="fas fa-angle-up w3-right" id="arrowUp7" style="display: none;"></i>
+        </button>
+      </div>
+        <div class="collapse" id="collapseTwo">
             <table class="table users-table">
                 <tbody id="pedidos_concluidos">
                     <tr>
@@ -66,5 +75,6 @@
 <!-- Functions JS -->
 <script type="text/javascript" src="_js/checkbox.js"></script>
 <script type="text/javascript" src="_js/createTable.js"></script>
+<script type="text/javascript" src="_js/user.functions.js"></script>
 
 </html>

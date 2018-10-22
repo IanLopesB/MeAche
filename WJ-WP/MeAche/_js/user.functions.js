@@ -182,3 +182,27 @@ function arrows5(){
     arrowUp.style.display = "block";
   }
 }
+function arrows6(){
+  var arrowUp = document.getElementById("arrowUp6"),
+          arrowDown = document.getElementById("arrowDown6"),
+          linkPetisco = document.getElementById("collapse6").getAttribute('aria-expanded');
+  if (linkPetisco === "true"){
+    arrowDown.style.display = "block";
+    arrowUp.style.display = "none";
+  } else if (linkPetisco ==="false"){
+    arrowDown.style.display = "none";
+    arrowUp.style.display = "block";
+  }
+}
+function arrows7(){
+  var arrowUp = document.getElementById("arrowUp7"),
+          arrowDown = document.getElementById("arrowDown7"),
+          linkPetisco = document.getElementById("collapse7").getAttribute('aria-expanded');
+  if (linkPetisco === "true"){
+    arrowDown.style.display = "block";
+    arrowUp.style.display = "none";
+  } else if (linkPetisco ==="false"){
+    arrowDown.style.display = "none";
+    arrowUp.style.display = "block";
+  }
+}
