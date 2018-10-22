@@ -45,11 +45,14 @@ function confirma(){
   var meuPedido = document.getElementById('id01');
 
   if (document.getElementById('totalValue').innerHTML != 0.00 ){
-    alert("Pedido enviado com sucesso!");
-    meuPedido.style.display = "none";
+  var x = document.getElementById("id02");
+       if (x.style.display === "none") {
+           x.style.display = "block";
+       } else {
+           x.style.display = "none";
+       }
     location.reload();
-  }
-  else {
+  }else {
     alert("Nada Selecionado");
     meuPedido.style.display = "none";
   }
