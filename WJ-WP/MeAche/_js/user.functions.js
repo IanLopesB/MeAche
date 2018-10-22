@@ -6,6 +6,14 @@ function mostrarSubtotal(){
            x.style.display = "none";
        }
 }
+function fecharSubtotal(){
+     var x = document.getElementById("id01");
+       if (x.style.display === "block") {
+           x.style.display = "none";
+       } else {
+           x.style.display = "block";
+       }
+}
 
 function arrows(){
   var arrowUp = document.getElementById('arrowUp'),
@@ -27,7 +35,7 @@ function arrows(){
 function confirma(){
   var meuPedido = document.getElementById('id01');
 
-  if (document.getElementById('totalValue2').innerHTML != 0.00 ){
+  if (document.getElementById('totalValue').innerHTML != 0.00 ){
     alert("Pedido enviado com sucesso!");
     meuPedido.style.display = "none";
     location.reload();
@@ -116,7 +124,7 @@ var valorT = document.getElementById('totalValue').innerHTML;
  document.getElementById('tbCreate').style.display = "inline-table";
   }else{
      document.getElementById('pedido-vazio').style.display = "block";
-     document.getElementById('tbCreate').style.display = "none";                
+     document.getElementById('tbCreate').style.display = "none";
   }
 }
 
