@@ -15,14 +15,6 @@ function fecharSubtotal(){
            x.style.display = "block";
          }
     }
-function mostrarSubtotal1(){
-     var x = document.getElementById("id02");
-       if (x.style.display === "none") {
-           x.style.display = "block";
-       } else {
-           x.style.display = "none";
-       }
-}
 
 function arrows(){
   var arrowUp = document.getElementById('arrowUp'),
@@ -51,7 +43,6 @@ function confirma(){
        } else {
            x.style.display = "none";
        }
-    location.reload();
   }else {
     alert("Nada Selecionado");
     meuPedido.style.display = "none";
