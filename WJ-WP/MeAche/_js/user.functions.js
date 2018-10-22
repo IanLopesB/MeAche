@@ -15,6 +15,18 @@ function fecharSubtotal(){
            x.style.display = "block";
          }
     }
+function fecharid02(){
+     var x = document.getElementById("id02");
+       if (x.style.display === "block") {
+           x.style.display = "none";
+
+        location.reload();
+       } else {
+           x.style.display = "block";
+         }
+    }
+
+
 
 function arrows(){
   var arrowUp = document.getElementById('arrowUp'),
