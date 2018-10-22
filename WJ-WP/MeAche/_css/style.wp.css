@@ -79,6 +79,38 @@ body {
 #subtotal {
   background-color: #2a2829;
   height: 70px;
+  width: 40%;
+}
+#subtotal-meuPedido {
+  margin-top: 15px;
+}
+
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width:100%;
+}
+
+.footer h3 span {
+  font-size: 20px;
+  vertical-align: middle; 
+}
+
+/*Barra do Subtotal1*/
+#seta{
+  margin-top: 10px;
+}
+
+#subtotal1 {
+  background-color: #2a2829;
+  height: 70px;
+  width: 60%;
+  margin-left: 40%;
+  border-left: solid;
+  border-width: 1px;
+  border-color: white;
 }
 #subtotal-meuPedido {
   margin-top: 15px;
