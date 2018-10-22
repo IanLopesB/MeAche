@@ -43,7 +43,7 @@ img {
 }
 
 
-#ulAdmin {
+.ulClass {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -53,13 +53,9 @@ img {
     margin-bottom: 5px;
 }
 
-#ulAdmin:hover {
+.ulClass:hover {
     white-space: normal;
     max-height: none;
-}
-
-#ulAdmin li {
-    margin-left: -10px;
 }
 
 #barra {
@@ -73,6 +69,15 @@ img {
     white-space: nowrap;
     text-align: center;
 }
+
+/* icons arrow down and up style */
+    .fa-angle-down {
+        margin-top: 5px;
+    }
+    .fa-angle-up {
+        margin-top: 5px;
+    }
+/*! icons arrow down and up style !*/
 
 @media (min-width: 320px) {
     #img-logo {
@@ -88,7 +93,7 @@ img {
         background-color: grey;
         font-size: 18px;
         font-variant: small-caps;
-        margin-bottom: -11%;
+        margin-bottom: -8%;
     }
 }
 
