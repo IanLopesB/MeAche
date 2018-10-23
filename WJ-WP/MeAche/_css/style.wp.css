@@ -54,7 +54,10 @@ body {
   display: inline-block;
 }
 
-
+.font-categoria {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 25px;
+}
 
 .pratos {
   display: inline-block;
@@ -273,20 +276,34 @@ bottom: 0;
   top: 0;
   width: 100%; 
   height: 100%; 
-  overflow: auto; 
+  overflow: hidden; 
   background-color: rgb(0,0,0); 
   background-color: rgba(0,0,0,0.4);
-  padding-top: 60px;
-    
+
 }
 
 .fundo-span-conteudo-3 {
+  background-size: cover;
+    background-repeat: no-repeat;
   background-color:  rgb(30, 30, 30);
-  margin: 50% auto 15% auto; 
+  margin: 50% auto 15% auto;
   border: 1px solid #888;
   width: 70%; 
   border-radius : 5px;
   color: rgb(234, 234, 234);
+}
+
+
+@media only screen and (min-height: 750px) {
+  .fundo-span-conteudo-3 {
+   margin-top: 20%;
+  }
+}
+
+@media only screen and (min-height: 1140px) {
+  .fundo-span-conteudo-3 {
+    margin-top: 10%;
+  }
 }
 
 
