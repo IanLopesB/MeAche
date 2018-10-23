@@ -270,13 +270,15 @@ bottom: 0;
   top: 0;
   width: 100%; 
   height: 100%; 
-  overflow: auto; 
+  overflow: hidden; 
   background-color: rgb(0,0,0); 
   background-color: rgba(0,0,0,0.4);
 
 }
 
 .fundo-span-conteudo-3 {
+  background-size: cover;
+    background-repeat: no-repeat;
   background-color:  rgb(30, 30, 30);
   margin: 50% auto 15% auto;
   border: 1px solid #888;
