@@ -246,12 +246,17 @@ font-size: 20px;
 bottom: 0;
 }
 
+#numero-pedido {
+
+  line-height: 50px;
+}
+
 #pedir {
 
   border-top: solid;
   border-width: 1px;
   line-height: 40px;
-  width: 70%;
+  width: 100%;
 }
 
 .fundo-span-3 {
