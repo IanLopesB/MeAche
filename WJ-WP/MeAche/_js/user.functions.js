@@ -26,6 +26,15 @@ function fecharid02(){
          }
     }
 
+    function fecharid03(){
+     var x = document.getElementById("id03");
+       if (x.style.display === "block") {
+           x.style.display = "none";
+       } else {
+           x.style.display = "block";
+         }
+    }
+
 
 
 function arrows(){
@@ -46,20 +55,22 @@ function arrows(){
 }
 
 function confirma(){
-  var meuPedido = document.getElementById('id01');
-
-  if (document.getElementById('totalValue').innerHTML != 0.00 ){
+var ttValue = document.getElementById('totalValue').innerHTML;
+  if (ttValue > 0.00 ){
   var x = document.getElementById("id02");
        if (x.style.display === "none") {
            x.style.display = "block";
        } else {
            x.style.display = "none";
        }
-  }else {
-    alert("Nada Selecionado");
-    meuPedido.style.display = "none";
-  }
-}
+  }else if (ttValue <= 0.00){
+     var xx = document.getElementById("id03");
+       if (xx.style.display === "none") {
+           xx.style.display = "block";
+       } else {
+           xx.style.display = "none";
+       }
+}}
 
 function pedidosEspeciais(){
   var texts = document.getElementById('pedido-adicionais');
