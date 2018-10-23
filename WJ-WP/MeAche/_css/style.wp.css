@@ -53,7 +53,9 @@ body {
   display: inline-block;
 }
 
-
+.font-categoria {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
 
 .pratos {
   display: inline-block;
