@@ -250,6 +250,48 @@ font-size: 20px;
 bottom: 0;
 }
 
+<<<<<<< HEAD
+=======
+#numero-pedido {
+
+  line-height: 50px;
+}
+
+#pedir {
+
+  border-top: solid;
+  border-width: 1px;
+  line-height: 40px;
+  width: 100%;
+}
+
+.fundo-span-3 {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 60px;
+    
+}
+
+.fundo-span-conteudo-3 {
+  background-color:  rgb(30, 30, 30);
+  margin: 50% auto 15% auto; 
+  border: 1px solid #888;
+  width: 70%; 
+  border-radius : 5px;
+  color: rgb(234, 234, 234);
+}
+
+
+
+>>>>>>> e905490635dc778840441e087227d43b6719e358
 /* Span Detalhes do Prato */
 #borda {
   
