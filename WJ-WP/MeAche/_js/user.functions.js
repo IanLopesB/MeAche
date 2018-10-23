@@ -7,6 +7,36 @@ function mostrarSubtotal(){
        }
 }
 
+function fecharSubtotal(){
+     var x = document.getElementById("id01");
+       if (x.style.display === "block") {
+           x.style.display = "none";
+       } else {
+           x.style.display = "block";
+         }
+    }
+function fecharid02(){
+     var x = document.getElementById("id02");
+       if (x.style.display === "block") {
+           x.style.display = "none";
+
+        location.reload();
+       } else {
+           x.style.display = "block";
+         }
+    }
+
+    function fecharid03(){
+     var x = document.getElementById("id03");
+       if (x.style.display === "block") {
+           x.style.display = "none";
+       } else {
+           x.style.display = "block";
+         }
+    }
+
+
+
 function arrows(){
   var arrowUp = document.getElementById('arrowUp'),
       arrowDown = document.getElementById('arrowDown');
@@ -25,18 +55,22 @@ function arrows(){
 }
 
 function confirma(){
-  var meuPedido = document.getElementById('id01');
-
-  if (document.getElementById('totalValue2').innerHTML != 0.00 ){
-    alert("Pedido enviado com sucesso!");
-    meuPedido.style.display = "none";
-    location.reload();
-  }
-  else {
-    alert("Nada Selecionado");
-    meuPedido.style.display = "none";
-  }
-}
+var ttValue = document.getElementById('totalValue').innerHTML;
+  if (ttValue > 0.00 ){
+  var x = document.getElementById("id02");
+       if (x.style.display === "none") {
+           x.style.display = "block";
+       } else {
+           x.style.display = "none";
+       }
+  }else if (ttValue <= 0.00){
+     var xx = document.getElementById("id03");
+       if (xx.style.display === "none") {
+           xx.style.display = "block";
+       } else {
+           xx.style.display = "none";
+       }
+}}
 
 function pedidosEspeciais(){
   var texts = document.getElementById('pedido-adicionais');
@@ -116,7 +150,7 @@ var valorT = document.getElementById('totalValue').innerHTML;
  document.getElementById('tbCreate').style.display = "inline-table";
   }else{
      document.getElementById('pedido-vazio').style.display = "block";
-     document.getElementById('tbCreate').style.display = "none";                
+     document.getElementById('tbCreate').style.display = "none";
   }
 }
 
@@ -174,6 +208,30 @@ function arrows5(){
   var arrowUp = document.getElementById("arrowUp5"),
           arrowDown = document.getElementById("arrowDown5"),
           linkPetisco = document.getElementById("collapse5").getAttribute('aria-expanded');
+  if (linkPetisco === "true"){
+    arrowDown.style.display = "block";
+    arrowUp.style.display = "none";
+  } else if (linkPetisco ==="false"){
+    arrowDown.style.display = "none";
+    arrowUp.style.display = "block";
+  }
+}
+function arrows6(){
+  var arrowUp = document.getElementById("arrowUp6"),
+          arrowDown = document.getElementById("arrowDown6"),
+          linkPetisco = document.getElementById("collapse6").getAttribute('aria-expanded');
+  if (linkPetisco === "true"){
+    arrowDown.style.display = "block";
+    arrowUp.style.display = "none";
+  } else if (linkPetisco ==="false"){
+    arrowDown.style.display = "none";
+    arrowUp.style.display = "block";
+  }
+}
+function arrows7(){
+  var arrowUp = document.getElementById("arrowUp7"),
+          arrowDown = document.getElementById("arrowDown7"),
+          linkPetisco = document.getElementById("collapse7").getAttribute('aria-expanded');
   if (linkPetisco === "true"){
     arrowDown.style.display = "block";
     arrowUp.style.display = "none";

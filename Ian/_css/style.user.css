@@ -168,12 +168,6 @@ span.psw {
 
 /* Span Pedido Parte 2*/
 
-#total-pedido {
-    background-color:#f7f7f7;
-    border-bottom-right-radius: 10px; 
-    border-bottom-left-radius:10px;
-}
-
 .close2:hover,
 .close2:focus {
     color: red;
@@ -281,10 +275,10 @@ border: none;
   position: relative;
 }
 
-.infos-pedido{
+.infos-pedidos {
+
   padding: 16px;
 }
-
 span.psw {
   float: right;
 }
