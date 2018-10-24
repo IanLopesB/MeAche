@@ -137,7 +137,7 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
 
   // to set checkbox function
     input_checkbox.setAttribute("type", "checkbox");
-    input_checkbox.setAttribute("onclick", "check_tb(this.value)");
+    input_checkbox.setAttribute("onclick","check_tb(this.value)");
   //! to set checkbox function !//
 
   // set "tr" ID that does not repeat
