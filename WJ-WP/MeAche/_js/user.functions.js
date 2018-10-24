@@ -20,6 +20,10 @@ function fecharid02(){
        if (x.style.display === "block") {
            x.style.display = "none";
 
+
+           
+           
+
         location.reload();
        } else {
            x.style.display = "block";
@@ -35,6 +39,14 @@ function fecharid02(){
          }
     }
 
+function verificacao(){
+     var x = document.getElementById("verificacao");
+       if (x.style.display === "none") {
+           x.style.display = "block";
+       } else {
+           x.style.display = "none";
+         }
+    }
 
 
 function arrows(){
