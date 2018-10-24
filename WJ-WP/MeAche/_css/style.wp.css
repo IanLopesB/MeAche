@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-
   background-color: rgb(30, 30, 30);
  overflow: hidden;
 }
@@ -110,13 +109,9 @@ body {
 
 .footer h3 span {
   font-size: 20px;
-  vertical-align: middle; 
+  vertical-align: middle;
 }
 
-<<<<<<< HEAD
-/*Barra do Subtotal1*/
-
-=======
 #pedido-vazio {
 
   display: block;
@@ -130,7 +125,6 @@ body {
 #seta{
   margin-top: 10px;
 }
->>>>>>> ad0720c68e02cd55874ed39a6f929adaa694a0d0
 
 #subtotal1 {
   background-color: #2a2829;
@@ -155,7 +149,7 @@ body {
 
 .footer h3 span {
   font-size: 20px;
-  vertical-align: middle; 
+  vertical-align: middle;
 }
 
 /*Span do Subtotal*/
@@ -171,27 +165,20 @@ span.psw {
 }
 .fundo-span {
   background-color: #363434;
-  display: none; 
-  position: fixed; 
+  display: none;
+  position: fixed;
   left: 0;
   top: 0;
-<<<<<<< HEAD
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-    
-=======
   width: 100%;
   height: 100%;
   overflow: hidden;
 
->>>>>>> 1ae031ece12b0b5dd80a9a76b9ede31136ff55cd
 }
 
 #meu-pedido{
   border-bottom: solid;
   border-color: grey;
-height: 85px;
+height: 75px;
 
 }
 .close1 {
@@ -216,12 +203,12 @@ height: 85px;
 }
 
 @-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0)} 
+    from {-webkit-transform: scale(0)}
     to {-webkit-transform: scale(1)}
 }
-    
+
 @keyframes animatezoom {
-    from {transform: scale(0)} 
+    from {transform: scale(0)}
     to {transform: scale(1)}
 }
 
@@ -254,17 +241,8 @@ margin: 0;
 
 /* Span do Pedido Feito e "Nada Selecionado" */
 
-<<<<<<< HEAD
-/* Span Pedido Parte 2*/
-
-#total-pedido {
-    background-color:#f7f7f7;
-    border-bottom-right-radius: 10px; 
-    border-bottom-left-radius:10px;
-=======
 #numero-pedido {
   line-height: 50px;
->>>>>>> ad0720c68e02cd55874ed39a6f929adaa694a0d0
 }
 
 .close2:hover,
@@ -280,7 +258,7 @@ margin: 0;
    color: white;
    font-size: 35px;
    font-weight: bold;
-    
+
 }
 
 #botao-span2 {
@@ -291,16 +269,6 @@ font-size: 20px;
 bottom: 0;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-#numero-pedido {
-
-  line-height: 50px;
-}
-
-=======
->>>>>>> ad0720c68e02cd55874ed39a6f929adaa694a0d0
 #pedir {
   border-top: solid;
   border-width: 1px;
@@ -351,26 +319,19 @@ bottom: 0;
   }
 }
 
-@media only screen and (min-width:  970px) {
+@media only screen and (min-width: 970px) {
   .fundo-span-conteudo-3  {
     width: 40%;
   }
 }
 
-<<<<<<< HEAD
->>>>>>> e905490635dc778840441e087227d43b6719e358
-/* Span Detalhes do Prato */
-#borda {
-  
-=======
 @media only screen and (min-width: 1140px) {
   .fundo-span-conteudo-3  {
-    width: 25%;
+    width: 10%;
   }
 }
 /* Span Detalhes do Prato */
 #borda {
->>>>>>> ad0720c68e02cd55874ed39a6f929adaa694a0d0
   border-color: grey;
 }
 #pedido-especial{
@@ -460,25 +421,15 @@ font-size: 17px;
   top: 0;
   width: 100%;
   height: 100%;
-<<<<<<< HEAD
-  overflow: auto;
-    
-=======
   overflow: hidden;
 
->>>>>>> 1ae031ece12b0b5dd80a9a76b9ede31136ff55cd
 }
 
 .fundo-span-conteudo-2 {
   background-color: white;
-<<<<<<< HEAD
-  margin: 5% auto 15% auto; 
-  width: 90%; 
-=======
   margin: 5% auto 15% auto;
   width: 90%;
   overflow: hidden; 
->>>>>>> ad0720c68e02cd55874ed39a6f929adaa694a0d0
 }
 
 
@@ -499,7 +450,7 @@ font-size: 17px;
   display: none;
 }
 
-.botao-fechar-span { 
+.botao-fechar-span {
   float: right;
   text-align: center;
   margin: 24px 0 12px 0;
@@ -516,11 +467,6 @@ span.psw {
   font-size: 20px;
   height: 60px;
   color: rgba(234, 234, 234, 0.8);
-<<<<<<< HEAD
-  
-
-=======
->>>>>>> ad0720c68e02cd55874ed39a6f929adaa694a0d0
 
 }
 
@@ -534,47 +480,8 @@ li {
 list-style-type: none;
 }
 
-<<<<<<< HEAD
-
-#pedido-vazio {
-
-  display: block;
-  color: rgba(234,234,234,0.30000000000000004);
-  font-family: Trebuchet MS, sans-serif;
-  position: relative;
-}
-
-#corpo-span-subtotal1 {
-
-  font-family: Trebuchet MS, sans-serif;
-  font-size: 21px;
-}
-
-
-
-
-#descricao{
-  color: rgba(234, 234, 234, 0.8);
-  position: relative;
-}
-
-#pedido-especial{
-  color: rgba(234, 234, 234, 0.8);
-  font-size: 20px;
-  position: relative;
-  
-}
-#pedido-adicionais{
-  color: rgba(234, 234, 234, 0.8);
-  font-size: 15px;
-  background-color: #363434;
-  position: relative;
-}
-
-=======
->>>>>>> ad0720c68e02cd55874ed39a6f929adaa694a0d0
 input[type=text]{
-  outline: 0; 
+  outline: 0;
   background-color: #363434;
   border:0 none;
   color: rgba(234, 234, 234, 0.8);
