@@ -72,18 +72,6 @@ var ttValue = document.getElementById('totalValue').innerHTML;
        }
 }}
 
-function pedidosEspeciais(){
-  var texts = document.getElementById('pedido-adicionais');
-
-  if (texts.style.display === "none") {
-    texts.style.display = "block";
-    document.getElementById('escrevaOBS').focus();
-  } else {
-    texts.style.display = "none";
-  }
-}
-
-
 function mostrarInputReq() {
 
 var x = document.getElementById("input-requisiçoes");

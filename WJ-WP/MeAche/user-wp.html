@@ -63,7 +63,7 @@
       <hr>
       <li class="pratos w3-medium" onclick="mostrarPrato2()">
        <span class="w3-tag w3-round w3-dark-grey w3-right">R$ 25,00</span> <span class="w3-left w3-large ">Camarão Alho <br>e Óleo </span>
-        
+
       </li>
       <hr>
       <li class="pratos w3-medium" onclick="mostrarPrato3()">
@@ -351,7 +351,7 @@
 
 <!-- Span da Descrição do Prato 1-->
 
- <div id="prato1" style="display: none;" class=" fundo-span-2 " value="1">
+ <div id="prato1" style="display: none;" class=" fundo-span-2 " value="1" onclick="pedidosEspeciaisAction();">
 
                 <div class="w3-container"> <span onclick="document.getElementById('prato1').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate"></i></span> </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
@@ -374,9 +374,7 @@
                     <br>
 
                     <div id="pedido-adicionais" class="w3-container" style="display: none;">
-
-                      <input type="text" id="escrevaOBS" placeholder="Escreva suas observações">
-
+                      <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS" placeholder="Escreva suas observações"></textarea>
                     </div>
                     </div>
                 <br>
@@ -399,15 +397,12 @@
                             <br>
                             <button type="submit" id="addButton" class="w3-button w3-text-black w3-center" onclick="fecharPrato1();mandardados1();"><i class="fa fa-plus"></i> ADICIONAR AO MEU PEDIDO</button>
                         </div>
-                        <br>
-                        <br>
-                            <br>
-                        <br>
-
-                        <br> </div>
-
-
-
+                              <br>
+                              <br>
+                              <br>
+                              <br>
+                              <br>
+                      </div>
         </div>
  <!-- Span da Descrição do Prato 2 -->
 
@@ -433,7 +428,7 @@
                     <br>
 
                     <div id="pedido-adicionais" class="w3-container" style="display: none;">
-                      <input type="text" id="escrevaOBS" placeholder="Escreva suas observações">
+                      <input type="text" class="form-control" id="escrevaOBS" placeholder="Escreva suas observações">
 
                     </div>
                     </div>
@@ -1957,12 +1952,6 @@
 
                         <br> </div>
         </div>
-
-
-
-
-
-
 </div>
 </body>
 
@@ -1979,6 +1968,7 @@
 <script type="text/javascript" src="_js/tela.prato.functions.js"></script>
 <script type="text/javascript" src="_js/mostrar.prato.functions.js"></script>
 <script type="text/javascript" src="_js/createTablePedir.js"></script>
+<script type="text/javascript" src="_js/pedidosEspeciais.js"></script>
 
 </html>
 
