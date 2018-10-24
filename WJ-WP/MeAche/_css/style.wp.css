@@ -143,10 +143,17 @@ span.psw {
   position: fixed; 
   left: 0;
   top: 0;
+<<<<<<< HEAD
   width: 100%; 
   height: 100%; 
   overflow: auto; 
     
+=======
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+>>>>>>> 1ae031ece12b0b5dd80a9a76b9ede31136ff55cd
 }
 
 #meu-pedido{
@@ -385,8 +392,13 @@ font-size: 17px;
   top: 0;
   width: 100%;
   height: 100%;
+<<<<<<< HEAD
   overflow: auto;
     
+=======
+  overflow: hidden;
+
+>>>>>>> 1ae031ece12b0b5dd80a9a76b9ede31136ff55cd
 }
 
 .fundo-span-conteudo-2 {
