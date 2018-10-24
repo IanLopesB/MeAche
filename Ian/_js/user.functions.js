@@ -7,9 +7,7 @@ function mostrarSubtotal(){
        }
 }
 
-
 function mostrarInputReq() {
-
 var x = document.getElementById("input-requisiçoes");
        if (x.style.display === "none") {
            x.style.display = "block";

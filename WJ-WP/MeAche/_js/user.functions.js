@@ -19,14 +19,13 @@ function fecharid02(){
      var x = document.getElementById("id02");
        if (x.style.display === "block") {
            x.style.display = "none";
-
         location.reload();
        } else {
            x.style.display = "block";
          }
     }
 
-    function fecharid03(){
+ function fecharid03(){
      var x = document.getElementById("id03");
        if (x.style.display === "block") {
            x.style.display = "none";
@@ -34,7 +33,6 @@ function fecharid02(){
            x.style.display = "block";
          }
     }
-
 
 
 function arrows(){
