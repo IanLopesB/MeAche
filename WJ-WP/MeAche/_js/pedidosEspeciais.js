@@ -258,18 +258,18 @@ function pedidosEspeciaisAction13() {
 }
 
 
-function pedidosEspeciais(){
-  var texts = document.getElementById('pedido-adicionais');
+function pedidosEspeciais14(){
+  var texts = document.getElementById('pedido-adicionais14');
 
   if (texts.style.display === "none") {
     texts.style.display = "block";
-    document.getElementById('escrevaOBS').focus();
+    document.getElementById('escrevaOBS14').focus();
   } else {
     texts.style.display = "none";
   }
 }
-function pedidosEspeciaisAction() {
-    var texts = document.getElementById('pedido-adicionais');
+function pedidosEspeciaisAction14() {
+    var texts = document.getElementById('pedido-adicionais14');
     var x = document.activeElement.tagName;
     var action= x;
       if (action!= "TEXTAREA"){
@@ -278,18 +278,18 @@ function pedidosEspeciaisAction() {
 }
 
 
-function pedidosEspeciais(){
-  var texts = document.getElementById('pedido-adicionais');
+function pedidosEspeciais15(){
+  var texts = document.getElementById('pedido-adicionais15');
 
   if (texts.style.display === "none") {
     texts.style.display = "block";
-    document.getElementById('escrevaOBS').focus();
+    document.getElementById('escrevaOBS15').focus();
   } else {
     texts.style.display = "none";
   }
 }
-function pedidosEspeciaisAction() {
-    var texts = document.getElementById('pedido-adicionais');
+function pedidosEspeciaisAction15() {
+    var texts = document.getElementById('pedido-adicionais15');
     var x = document.activeElement.tagName;
     var action= x;
       if (action!= "TEXTAREA"){
@@ -298,18 +298,18 @@ function pedidosEspeciaisAction() {
 }
 
 
-function pedidosEspeciais(){
-  var texts = document.getElementById('pedido-adicionais');
+function pedidosEspeciais16(){
+  var texts = document.getElementById('pedido-adicionais16');
 
   if (texts.style.display === "none") {
     texts.style.display = "block";
-    document.getElementById('escrevaOBS').focus();
+    document.getElementById('escrevaOBS16').focus();
   } else {
     texts.style.display = "none";
   }
 }
-function pedidosEspeciaisAction() {
-    var texts = document.getElementById('pedido-adicionais');
+function pedidosEspeciaisAction16() {
+    var texts = document.getElementById('pedido-adicionais16');
     var x = document.activeElement.tagName;
     var action= x;
       if (action!= "TEXTAREA"){
@@ -318,18 +318,18 @@ function pedidosEspeciaisAction() {
 }
 
 
-function pedidosEspeciais(){
-  var texts = document.getElementById('pedido-adicionais');
+function pedidosEspeciais17(){
+  var texts = document.getElementById('pedido-adicionais17');
 
   if (texts.style.display === "none") {
     texts.style.display = "block";
-    document.getElementById('escrevaOBS').focus();
+    document.getElementById('escrevaOBS17').focus();
   } else {
     texts.style.display = "none";
   }
 }
-function pedidosEspeciaisAction() {
-    var texts = document.getElementById('pedido-adicionais');
+function pedidosEspeciaisAction17() {
+    var texts = document.getElementById('pedido-adicionais17');
     var x = document.activeElement.tagName;
     var action= x;
       if (action!= "TEXTAREA"){
@@ -338,18 +338,18 @@ function pedidosEspeciaisAction() {
 }
 
 
-function pedidosEspeciais(){
-  var texts = document.getElementById('pedido-adicionais');
+function pedidosEspeciais18(){
+  var texts = document.getElementById('pedido-adicionais18');
 
   if (texts.style.display === "none") {
     texts.style.display = "block";
-    document.getElementById('escrevaOBS').focus();
+    document.getElementById('escrevaOBS18').focus();
   } else {
     texts.style.display = "none";
   }
 }
-function pedidosEspeciaisAction() {
-    var texts = document.getElementById('pedido-adicionais');
+function pedidosEspeciaisAction18() {
+    var texts = document.getElementById('pedido-adicionais18');
     var x = document.activeElement.tagName;
     var action= x;
       if (action!= "TEXTAREA"){
@@ -358,18 +358,18 @@ function pedidosEspeciaisAction() {
 }
 
 
-function pedidosEspeciais(){
-  var texts = document.getElementById('pedido-adicionais');
+function pedidosEspeciais19(){
+  var texts = document.getElementById('pedido-adicionais19');
 
   if (texts.style.display === "none") {
     texts.style.display = "block";
-    document.getElementById('escrevaOBS').focus();
+    document.getElementById('escrevaOBS19').focus();
   } else {
     texts.style.display = "none";
   }
 }
-function pedidosEspeciaisAction() {
-    var texts = document.getElementById('pedido-adicionais');
+function pedidosEspeciaisAction19() {
+    var texts = document.getElementById('pedido-adicionais19');
     var x = document.activeElement.tagName;
     var action= x;
       if (action!= "TEXTAREA"){
@@ -378,18 +378,18 @@ function pedidosEspeciaisAction() {
 }
 
 
-function pedidosEspeciais(){
-  var texts = document.getElementById('pedido-adicionais');
+function pedidosEspeciais20(){
+  var texts = document.getElementById('pedido-adicionais20');
 
   if (texts.style.display === "none") {
     texts.style.display = "block";
-    document.getElementById('escrevaOBS').focus();
+    document.getElementById('escrevaOBS20').focus();
   } else {
     texts.style.display = "none";
   }
 }
-function pedidosEspeciaisAction() {
-    var texts = document.getElementById('pedido-adicionais');
+function pedidosEspeciaisAction20() {
+    var texts = document.getElementById('pedido-adicionais20');
     var x = document.activeElement.tagName;
     var action= x;
       if (action!= "TEXTAREA"){
@@ -398,18 +398,18 @@ function pedidosEspeciaisAction() {
 }
 
 
-function pedidosEspeciais(){
-  var texts = document.getElementById('pedido-adicionais');
+function pedidosEspeciais21(){
+  var texts = document.getElementById('pedido-adicionais21');
 
   if (texts.style.display === "none") {
     texts.style.display = "block";
-    document.getElementById('escrevaOBS').focus();
+    document.getElementById('escrevaOBS21').focus();
   } else {
     texts.style.display = "none";
   }
 }
-function pedidosEspeciaisAction() {
-    var texts = document.getElementById('pedido-adicionais');
+function pedidosEspeciaisAction21() {
+    var texts = document.getElementById('pedido-adicionais21');
     var x = document.activeElement.tagName;
     var action= x;
       if (action!= "TEXTAREA"){
@@ -418,18 +418,18 @@ function pedidosEspeciaisAction() {
 }
 
 
-function pedidosEspeciais(){
-  var texts = document.getElementById('pedido-adicionais');
+function pedidosEspeciais22(){
+  var texts = document.getElementById('pedido-adicionais22');
 
   if (texts.style.display === "none") {
     texts.style.display = "block";
-    document.getElementById('escrevaOBS').focus();
+    document.getElementById('escrevaOBS22').focus();
   } else {
     texts.style.display = "none";
   }
 }
-function pedidosEspeciaisAction() {
-    var texts = document.getElementById('pedido-adicionais');
+function pedidosEspeciaisAction22() {
+    var texts = document.getElementById('pedido-adicionais22');
     var x = document.activeElement.tagName;
     var action= x;
       if (action!= "TEXTAREA"){
@@ -438,18 +438,18 @@ function pedidosEspeciaisAction() {
 }
 
 
-function pedidosEspeciais(){
-  var texts = document.getElementById('pedido-adicionais');
+function pedidosEspeciais23(){
+  var texts = document.getElementById('pedido-adicionais23');
 
   if (texts.style.display === "none") {
     texts.style.display = "block";
-    document.getElementById('escrevaOBS').focus();
+    document.getElementById('escrevaOBS23').focus();
   } else {
     texts.style.display = "none";
   }
 }
-function pedidosEspeciaisAction() {
-    var texts = document.getElementById('pedido-adicionais');
+function pedidosEspeciaisAction23() {
+    var texts = document.getElementById('pedido-adicionais23');
     var x = document.activeElement.tagName;
     var action= x;
       if (action!= "TEXTAREA"){
@@ -458,18 +458,18 @@ function pedidosEspeciaisAction() {
 }
 
 
-function pedidosEspeciais(){
-  var texts = document.getElementById('pedido-adicionais');
+function pedidosEspeciais24(){
+  var texts = document.getElementById('pedido-adicionais24');
 
   if (texts.style.display === "none") {
     texts.style.display = "block";
-    document.getElementById('escrevaOBS').focus();
+    document.getElementById('escrevaOBS24').focus();
   } else {
     texts.style.display = "none";
   }
 }
-function pedidosEspeciaisAction() {
-    var texts = document.getElementById('pedido-adicionais');
+function pedidosEspeciaisAction24() {
+    var texts = document.getElementById('pedido-adicionais24');
     var x = document.activeElement.tagName;
     var action= x;
       if (action!= "TEXTAREA"){
@@ -478,18 +478,18 @@ function pedidosEspeciaisAction() {
 }
 
 
-function pedidosEspeciais(){
-  var texts = document.getElementById('pedido-adicionais');
+function pedidosEspeciais25(){
+  var texts = document.getElementById('pedido-adicionais25');
 
   if (texts.style.display === "none") {
     texts.style.display = "block";
-    document.getElementById('escrevaOBS').focus();
+    document.getElementById('escrevaOBS25').focus();
   } else {
     texts.style.display = "none";
   }
 }
-function pedidosEspeciaisAction() {
-    var texts = document.getElementById('pedido-adicionais');
+function pedidosEspeciaisAction25() {
+    var texts = document.getElementById('pedido-adicionais25');
     var x = document.activeElement.tagName;
     var action= x;
       if (action!= "TEXTAREA"){
@@ -498,18 +498,18 @@ function pedidosEspeciaisAction() {
 }
 
 
-function pedidosEspeciais(){
-  var texts = document.getElementById('pedido-adicionais');
+function pedidosEspeciais26(){
+  var texts = document.getElementById('pedido-adicionais26');
 
   if (texts.style.display === "none") {
     texts.style.display = "block";
-    document.getElementById('escrevaOBS').focus();
+    document.getElementById('escrevaOBS26').focus();
   } else {
     texts.style.display = "none";
   }
 }
-function pedidosEspeciaisAction() {
-    var texts = document.getElementById('pedido-adicionais');
+function pedidosEspeciaisAction26() {
+    var texts = document.getElementById('pedido-adicionais26');
     var x = document.activeElement.tagName;
     var action= x;
       if (action!= "TEXTAREA"){
@@ -518,18 +518,18 @@ function pedidosEspeciaisAction() {
 }
 
 
-function pedidosEspeciais(){
-  var texts = document.getElementById('pedido-adicionais');
+function pedidosEspeciais27(){
+  var texts = document.getElementById('pedido-adicionais27');
 
   if (texts.style.display === "none") {
     texts.style.display = "block";
-    document.getElementById('escrevaOBS').focus();
+    document.getElementById('escrevaOBS27').focus();
   } else {
     texts.style.display = "none";
   }
 }
-function pedidosEspeciaisAction() {
-    var texts = document.getElementById('pedido-adicionais');
+function pedidosEspeciaisAction27() {
+    var texts = document.getElementById('pedido-adicionais27');
     var x = document.activeElement.tagName;
     var action= x;
       if (action!= "TEXTAREA"){
@@ -538,18 +538,18 @@ function pedidosEspeciaisAction() {
 }
 
 
-function pedidosEspeciais(){
-  var texts = document.getElementById('pedido-adicionais');
+function pedidosEspeciais28(){
+  var texts = document.getElementById('pedido-adicionais28');
 
   if (texts.style.display === "none") {
     texts.style.display = "block";
-    document.getElementById('escrevaOBS').focus();
+    document.getElementById('escrevaOBS28').focus();
   } else {
     texts.style.display = "none";
   }
 }
-function pedidosEspeciaisAction() {
-    var texts = document.getElementById('pedido-adicionais');
+function pedidosEspeciaisAction28() {
+    var texts = document.getElementById('pedido-adicionais28');
     var x = document.activeElement.tagName;
     var action= x;
       if (action!= "TEXTAREA"){
@@ -558,18 +558,18 @@ function pedidosEspeciaisAction() {
 }
 
 
-function pedidosEspeciais(){
-  var texts = document.getElementById('pedido-adicionais');
+function pedidosEspeciais29(){
+  var texts = document.getElementById('pedido-adicionais29');
 
   if (texts.style.display === "none") {
     texts.style.display = "block";
-    document.getElementById('escrevaOBS').focus();
+    document.getElementById('escrevaOBS29').focus();
   } else {
     texts.style.display = "none";
   }
 }
-function pedidosEspeciaisAction() {
-    var texts = document.getElementById('pedido-adicionais');
+function pedidosEspeciaisAction29() {
+    var texts = document.getElementById('pedido-adicionais29');
     var x = document.activeElement.tagName;
     var action= x;
       if (action!= "TEXTAREA"){
@@ -578,21 +578,3 @@ function pedidosEspeciaisAction() {
 }
 
 
-function pedidosEspeciais(){
-  var texts = document.getElementById('pedido-adicionais');
-
-  if (texts.style.display === "none") {
-    texts.style.display = "block";
-    document.getElementById('escrevaOBS').focus();
-  } else {
-    texts.style.display = "none";
-  }
-}
-function pedidosEspeciaisAction() {
-    var texts = document.getElementById('pedido-adicionais');
-    var x = document.activeElement.tagName;
-    var action= x;
-      if (action!= "TEXTAREA"){
-      texts.style.display = "none";
-    }
-}
