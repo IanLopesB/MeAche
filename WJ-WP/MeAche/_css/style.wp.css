@@ -11,6 +11,11 @@ body {
   width: 25%;
 }
 
+.fundo-quantidades {
+  background-color: rgb(30, 30, 30);
+  height: 60px;
+}
+
 @media only screen and (min-height: 750px) {
   #img-logo {
     width: 13%;
@@ -347,10 +352,6 @@ bottom: 0;
   position: relative;
 }
 
-#quantPet1{
-  background-color: #363434;
-
-}
 
 #descricao{
   color: rgba(234, 234, 234, 0.8);
@@ -364,7 +365,7 @@ bottom: 0;
   border-width: 2px;
   border-color: white;
   color: white;
-  background-color:  #363434;
+  background-color: rgb(30, 30, 30);
 }
 
 #mais {
@@ -374,11 +375,12 @@ bottom: 0;
   border-width: 2px;
   border-color: white;
   color: white;
-  background-color: #363434;
+  background-color: rgb(30, 30, 30);
 }
 
 #modificarMAISeMENOS{
   float: right;
+  margin-top: -5px;
 }
 
 .btn {
@@ -480,8 +482,9 @@ list-style-type: none;
 
 input[type=text]{
   outline: 0;
-  background-color: #363434;
+  background-color: rgb(30, 30, 30);
   border:0 none;
   color: rgba(234, 234, 234, 0.8);
 }
+
 
