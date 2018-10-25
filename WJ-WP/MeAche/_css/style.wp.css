@@ -184,7 +184,15 @@ span.psw {
   border-bottom: solid;
   border-color: grey;
 height: 70px;
+}
 
+.nome-meu-pedido {
+
+margin-top: 20px;
+}
+
+.x-icon {
+margin-top: 10px;
 }
 .close1 {
    float: right;
@@ -407,7 +415,7 @@ font-size: 17px;
 }
 
 #nome-prato {
-  height: 60px;
+  height: 70px;
   top: 0%;
   border-bottom: solid;
   border-width: 2px;
@@ -480,7 +488,7 @@ li {
 list-style-type: none;
 }
 
-input[type=text]{
+input{
   outline: 0;
   background-color: rgb(30, 30, 30);
   border:0 none;
