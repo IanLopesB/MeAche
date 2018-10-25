@@ -25,14 +25,9 @@
 <body>
     <div id="logo" class="w3-center"> <img id="img-logo" class="img-fluid w3-center" src="http://pluspng.com/img-png/beats-electronics-logo-vector-png-beats-electronics-logo-png-828.png"> </div>
     <hr id="barra">
-
     <div class="container">
         <div>
-            <button id="collapse6" class="btn btn-secondary accordion-toggle estiloButton" type="button" aria-expanded="true" data-toggle="collapse" data-target="#collapseOne" onclick="arrows6()">
-                <span>Pedidos Pendentes</span>
-                <i class="fas fa-angle-down w3-right" id="arrowDown6" style="display: none;"></i>
-                <i class="fas fa-angle-up w3-right" id="arrowUp6" style="display: block;"></i>
-            </button>
+            <button id="collapse6" class="btn btn-secondary accordion-toggle estiloButton" type="button" aria-expanded="true" data-toggle="collapse" data-target="#collapseOne" onclick="arrows6()"> <span>Pedidos Pendentes</span> <i class="fas fa-angle-down w3-right" id="arrowDown6" style="display: none;"></i> <i class="fas fa-angle-up w3-right" id="arrowUp6" style="display: block;"></i> </button>
         </div>
         <div class="collapse in show" id="collapseOne">
             <table class="table users-table">
@@ -40,38 +35,31 @@
                     <tr>
                         <th scope="row"></th>
                         <th>Pedidos</td>
-                        <th>Nº Pedidos</td>
+                            <th>Nº Pedidos</td>
                     </tr>
                 </thead>
-                <tbody id="pedidos_pendentes" class="w3-center">
-                </tbody>
+                <tbody id="pedidos_pendentes" class="w3-center"> </tbody>
             </table>
         </div>
-      <br>
-      <br>
-      <div>
-        <button id="collapse7" class="btn btn-secondary accordion-toggle estiloButton" aria-expanded="false" type="button" data-toggle="collapse" data-target="#collapseTwo" onclick="arrows7()">
-            <span>Pedidos Concluídos</span>
-            <i class="fas fa-angle-down w3-right" id="arrowDown7" style="display: block;"></i>
-            <i class="fas fa-angle-up w3-right" id="arrowUp7" style="display: none;"></i>
-        </button>
-      </div>
+        <br>
+        <br>
+        <div>
+            <button id="collapse7" class="btn btn-secondary accordion-toggle estiloButton" aria-expanded="false" type="button" data-toggle="collapse" data-target="#collapseTwo" onclick="arrows7()"> <span>Pedidos Concluídos</span> <i class="fas fa-angle-down w3-right" id="arrowDown7" style="display: block;"></i> <i class="fas fa-angle-up w3-right" id="arrowUp7" style="display: none;"></i> </button>
+        </div>
         <div class="collapse" id="collapseTwo">
             <table class="table users-table">
                 <thead class="w3-center">
                     <tr>
                         <th scope="row"></th>
                         <th>Pedidos</td>
-                        <th>Nº Pedidos</td>
+                            <th>Nº Pedidos</td>
                     </tr>
                 </thead>
-                <tbody id="pedidos_concluidos" class="w3-center">
-                </tbody>
+                <tbody id="pedidos_concluidos" class="w3-center"> </tbody>
             </table>
         </div>
-      </div>
     </div>
-
+    </div>
 </body>
 <!-- Connection Firebase JS -->
 <script type="text/javascript" src="_js/connection.firebase.js"></script>
