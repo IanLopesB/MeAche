@@ -189,12 +189,12 @@ function process19(quantPet19){
 }
 
 function process20(quantPet20){
-  var value = parseInt(document.getElementById("quantPet21").value);
+  var value = parseInt(document.getElementById("quantPet20").value);
   value += quantPet20;
   if(value < 1){
-    document.getElementById("quantPet21").value = 0;
+    document.getElementById("quantPet20").value = 0;
   }else{
-  document.getElementById("quantPet21").value = value;
+  document.getElementById("quantPet20").value = value;
   }
 }
 
