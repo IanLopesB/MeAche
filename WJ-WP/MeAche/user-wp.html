@@ -385,15 +385,16 @@
                 <br>
                     <div id="quantidade" class="">
                         <div data-app="product.quantity" id="quantidade">
-                          <hr id="borda">
+                          <div class="fundo-quantidades">
+                            <hr id="borda">
                             <label class="w3-container fadeInUp animate">  Quantidade </label>
                             <div id="modificarMAISeMENOS" class="w3-container fadeInUp animate">
-                            <input type="button" id="menos" value='-' onclick="process(-1)">
-                            <input id="quantPet1" name="quantPet1" class="numero w3-center w3-text-white" size="1" type="text" value="0" maxlength="2" disabled="disabled">
-                            <input type="button" id="mais" class="" value='+' onclick="process(1)" />
+                              <input type="button" id="menos" value='-' onclick="process(-1)">
+                              <input type="text" id="quantPet1" value="1" name="quantPet1" class="numero w3-center w3-text-white" size="1"   maxlength="2" disabled="disabled">
+                              <input type="button" id="mais" class="" value='+' onclick="process(1)" />
                             </div>
-                            <br>
-                            <br>
+                          </div>
+                            
                             <button type="submit" id="addButton" class="w3-button w3-text-black w3-center" onclick="fecharPrato1();mandardados1();"><i class="fa fa-plus"></i> ADICIONAR AO MEU PEDIDO</button>
                         </div>
                               <br>
@@ -437,14 +438,19 @@
                 <br>
                 <br>
                 <br>
+                <br>
+                    <div id="quantidade" class="">
+                        <div data-app="product.quantity" id="quantidade">
+                          <div class="fundo-quantidades">
+                            <hr id="borda">
                             <label class="w3-container fadeInUp animate">  Quantidade </label>
                             <div id="modificarMAISeMENOS" class="w3-container fadeInUp animate">
                             <input type="button" id="menos" value='-' onclick="process2(-1)">
-                            <input id="quantPet2" name="quantPet2" class="numero w3-center w3-text-white" size="1" type="text" value="0" maxlength="2" disabled="disabled">
+                            <input id="quantPet2" name="quantPet2" class="numero w3-center w3-text-white" size="1" type="text" value="1" maxlength="2" disabled="disabled">
                             <input type="button" id="mais" class="" value='+' onclick="process2(1)" />
                             </div>
-                            <br>
-                            <br>
+                          </div>
+                            
                             <button type="submit" id="addButton" class="w3-button w3-text-black" onclick="fecharPrato2();mandardados2();"><i class="fa fa-plus"></i> ADICIONAR AO MEU PEDIDO</button>
                         </div>
                         <br>
@@ -461,7 +467,7 @@
         <div id="prato3" style="display: none;" class="fundo-span-2" onclick="pedidosEspeciaisAction3();">
             <div class="w3-container"> <span onclick="document.getElementById('prato3').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate"></i></span> </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center fadeInUp animate"><b><label id="calabresa"><li>Calabresa Com Fritas</li></label></b></h3>
+                  <h3 class="w3-center fadeInDown animate"><b><label id="calabresa"><li>Calabresa Com Fritas</li></label></b></h3>
                 </div>
                 <br>
                 <br>
@@ -479,7 +485,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais" class="w3-container" style="display: none;">
+                    <div id="pedido-adicionais3" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS3" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -493,15 +499,17 @@
                 <br>
                     <div id="quantidade" class="">
                         <div data-app="product.quantity" id="quantidade">
-                          <hr id="borda">
+                          <div class="fundo-quantidades">
+                            <hr id="borda">
                             <label class="w3-container fadeInUp animate">  Quantidade </label>
                             <div id="modificarMAISeMENOS" class="w3-container fadeInUp animate">
                             <input type="button" id="menos" value='-' onclick="process3(-1)">
                             <input id="quantPet3" name="quantPet3" class="numero w3-center w3-text-white" size="1" type="text" value="0" maxlength="2" disabled="disabled">
                             <input type="button" id="mais" class="" value='+' onclick="process3(1)" />
+
                             </div>
-                            <br>
-                            <br>
+                          </div>
+
                             <button type="submit" id="addButton" class="w3-button w3-text-black" onclick="fecharPrato3();mandardados3();"><i class="fa fa-plus"></i> ADICIONAR AO MEU PEDIDO</button>
                         </div>
                         <br>
@@ -535,7 +543,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais4" class="w3-container" style="display: none;">
+                    <div id="pedido-adicionais" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS4" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -549,15 +557,15 @@
                 <br>
                     <div id="quantidade" class="">
                         <div data-app="product.quantity" id="quantidade">
-                          <hr id="borda">
+                          <div class="fundo-quantidades">
+                            <hr id="borda">
                             <label class="w3-container fadeInUp animate">  Quantidade </label>
                             <div id="modificarMAISeMENOS" class="w3-container fadeInUp animate">
                             <input type="button" id="menos" value='-' onclick="process4(-1)">
                             <input id="quantPet4" name="quantPet4" class="numero w3-center w3-text-white" size="1" type="text" value="0" maxlength="2" disabled="disabled">
                             <input type="button" id="mais" class="" value='+' onclick="process4(1)" />
                             </div>
-                            <br>
-                            <br>
+                          </div>
                             <button type="submit" id="addButton" class="w3-button w3-text-black" onclick="fecharPrato4();mandardados4();"><i class="fa fa-plus"></i> ADICIONAR AO MEU PEDIDO</button>
                         </div>
                         <br>
@@ -578,9 +586,6 @@
                 <br>
                 <br>
                 <br>
-                    <div id="quantidade" class="">
-                        <div data-app="product.quantity" id="quantidade">
-                          <hr id="borda">
                 <br>
                 <br>
                 <div id="textos" class="fadeIn animate" >
@@ -595,7 +600,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais5" class="w3-container" style="display: none;">
+                    <div id="pedido-adicionais" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS5" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -609,15 +614,15 @@
                 <br>
                     <div id="quantidade" class="">
                         <div data-app="product.quantity" id="quantidade">
-                          <hr id="borda">
+                          <div class="fundo-quantidades">
+                            <hr id="borda">
                             <label class="w3-container fadeInUp animate">  Quantidade </label>
                             <div id="modificarMAISeMENOS" class="w3-container fadeInUp animate">
                             <input type="button" id="menos" value='-' onclick="process5(-1)">
                             <input id="quantPet5" name="quantPet5" class="numero w3-center w3-text-white" size="1" type="text" value="0" maxlength="2" disabled="disabled">
                             <input type="button" id="mais" class="" value='+' onclick="process5(1)" />
                             </div>
-                            <br>
-                            <br>
+                          </div>
                             <button type="submit" id="addButton" class="w3-button w3-text-black" onclick="fecharPrato5();mandardados5();"><i class="fa fa-plus"></i> ADICIONAR AO MEU PEDIDO</button>
                         </div>
                         <br>
@@ -639,7 +644,7 @@
                 <br>
                 <br>
                 <br>
-                <div id="textos" class="fadeInDown animate">
+                <div id="textos" class="fadeIn animate">
                     <div id="descricao">
                       <h5 class="w3-container">Descrição do Prato
                         ..............................................
@@ -651,7 +656,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais6" class="w3-container" style="display: none;">
+                    <div id="pedido-adicionais" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS6" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -665,15 +670,15 @@
                 <br>
                     <div id="quantidade" class="">
                         <div data-app="product.quantity" id="quantidade">
-                          <hr id="borda">
+                          <div class="fundo-quantidades">
+                            <hr id="borda">
                             <label class="w3-container fadeInUp animate">  Quantidade </label>
                             <div id="modificarMAISeMENOS" class="w3-container fadeInUp animate">
                             <input type="button" id="menos" value='-' onclick="process6(-1)">
                             <input id="quantPet6" name="quantPet6" class="numero w3-center w3-text-white" size="1" type="text" value="0" maxlength="2" disabled="disabled">
                             <input type="button" id="mais" class="" value='+' onclick="process6(1)" />
                             </div>
-                            <br>
-                            <br>
+                          </div>
                             <button type="submit" id="addButton" class="w3-button w3-text-black" onclick="fecharPrato6();mandardados6();"><i class="fa fa-plus"></i> ADICIONAR AO MEU PEDIDO</button>
                         </div>
                         <br>
@@ -706,7 +711,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais7" class="w3-container" style="display: none;">
+                    <div id="pedido-adicionais" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS7" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -720,15 +725,15 @@
                 <br>
                     <div id="quantidade" class="">
                         <div data-app="product.quantity" id="quantidade">
-                          <hr id="borda">
+                          <div class="fundo-quantidades">
+                            <hr id="borda">
                             <label class="w3-container fadeInUp animate">  Quantidade </label>
                             <div id="modificarMAISeMENOS" class="w3-container fadeInUp animate">
                             <input type="button" id="menos" value='-' onclick="process7(-1)">
                             <input id="quantPet7" name="quantPet7" class="numero w3-center w3-text-white" size="1" type="text" value="0" maxlength="2" disabled="disabled">
                             <input type="button" id="mais" class="" value='+' onclick="process7(1)" />
                             </div>
-                            <br>
-                            <br>
+                          </div>
                             <button type="submit" id="addButton" class="w3-button w3-text-black" onclick="fecharPrato7();mandardados7();"><i class="fa fa-plus"></i> ADICIONAR AO MEU PEDIDO</button>
                         </div>
                         <br>
@@ -761,7 +766,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais8" class="w3-container" style="display: none;">
+                    <div id="pedido-adicionais" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS8" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -775,15 +780,15 @@
                 <br>
                     <div id="quantidade" class="">
                         <div data-app="product.quantity" id="quantidade">
-                          <hr id="borda">
+                          <div class="fundo-quantidades">
+                            <hr id="borda">
                             <label class="w3-container fadeInUp animate">  Quantidade </label>
                             <div id="modificarMAISeMENOS" class="w3-container fadeInUp animate">
                             <input type="button" id="menos" value='-' onclick="process8(-1)">
-                            <input id="quantPet8" name="quantPet8" class="numero w3-center w3-text-white" size="1" type="text" value="0" maxlength="2" disabled="disabled">
+                            <input id="quantPet8" name="quantPet8" class="numero w3-center w3-text-white" size="1" type="text" value="1" maxlength="2" disabled="disabled">
                             <input type="button" id="mais" class="" value='+' onclick="process8(1)" />
                             </div>
-                            <br>
-                            <br>
+                          </div>
                             <button type="submit" id="addButton" class="w3-button w3-text-black" onclick="fecharPrato8();mandardados8();"><i class="fa fa-plus"></i> ADICIONAR AO MEU PEDIDO</button>
                         </div>
                         <br>
@@ -816,7 +821,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais9" class="w3-container" style="display: none;">
+                    <div id="pedido-adicionais" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS9" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -830,15 +835,15 @@
                 <br>
                     <div id="quantidade" class="">
                         <div data-app="product.quantity" id="quantidade">
-                          <hr id="borda">
+                          <div class="fundo-quantidades">
+                            <hr id="borda">
                             <label class="w3-container fadeInUp animate">  Quantidade </label>
                             <div id="modificarMAISeMENOS" class="w3-container fadeInUp animate">
                             <input type="button" id="menos" value='-' onclick="process9(-1)">
-                            <input id="quantPet9" name="quantPet9" class="numero w3-center w3-text-white" size="1" type="text" value="0" maxlength="2" disabled="disabled">
+                            <input id="quantPet9" name="quantPet9" class="numero w3-center w3-text-white" size="1" type="text" value="1" maxlength="2" disabled="disabled">
                             <input type="button" id="mais" class="" value='+' onclick="process9(1)" />
                             </div>
-                            <br>
-                            <br>
+                          </div>
                             <button type="submit" id="addButton" class="w3-button w3-text-black" onclick="fecharPrato9();mandardados9();"><i class="fa fa-plus"></i> ADICIONAR AO MEU PEDIDO</button>
                         </div>
                         <br>
@@ -871,7 +876,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais10" class="w3-container" style="display: none;">
+                    <div id="pedido-adicionais" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS10" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -885,15 +890,15 @@
                 <br>
                     <div id="quantidade" class="">
                         <div data-app="product.quantity" id="quantidade">
+                          <div class="fundo-quantidades">
                           <hr id="borda">
                             <label class="w3-container fadeInUp animate">  Quantidade </label>
                             <div id="modificarMAISeMENOS" class="w3-container fadeInUp animate">
                             <input type="button" id="menos" value='-' onclick="process10(-1)">
-                            <input id="quantPet10" name="quantPet10" class="numero w3-center w3-text-white" size="1" type="text" value="0" maxlength="2" disabled="disabled">
+                            <input id="quantPet10" name="quantPet10" class="numero w3-center w3-text-white" size="1" type="text" value="1" maxlength="2" disabled="disabled">
                             <input type="button" id="mais" class="" value='+' onclick="process10(1)" />
                             </div>
-                            <br>
-                            <br>
+                            </div>
                             <button type="submit" id="addButton" class="w3-button w3-text-black" onclick="fecharPrato10();mandardados10();"><i class="fa fa-plus"></i> ADICIONAR AO MEU PEDIDO</button>
                         </div>
                         <br>
@@ -926,7 +931,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais11" class="w3-container" style="display: none;">
+                    <div id="pedido-adicionais" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS11" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -940,15 +945,15 @@
                 <br>
                     <div id="quantidade" class="">
                         <div data-app="product.quantity" id="quantidade">
+                          <div class="fundo-quantidades">
                           <hr id="borda">
                             <label class="w3-container fadeInUp animate">  Quantidade </label>
                             <div id="modificarMAISeMENOS" class="w3-container fadeInUp animate">
                             <input type="button" id="menos" value='-' onclick="process11(-1)">
-                            <input id="quantPet11" name="quantPet11" class="numero w3-center w3-text-white" size="1" type="text" value="0" maxlength="2" disabled="disabled">
+                            <input id="quantPet11" name="quantPet11" class="numero w3-center w3-text-white" size="1" type="text" value="1" maxlength="2" disabled="disabled">
                             <input type="button" id="mais" class="" value='+' onclick="process11(1)" />
                             </div>
-                            <br>
-                            <br>
+                            </div>
                             <button type="submit" id="addButton" class="w3-button w3-text-black" onclick="fecharPrato11();mandardados11();"><i class="fa fa-plus"></i> ADICIONAR AO MEU PEDIDO</button>
                         </div>
                         <br>
@@ -982,7 +987,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais12" class="w3-container" style="display: none;">
+                    <div id="pedido-adicionais" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS12" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -996,15 +1001,15 @@
                 <br>
                     <div id="quantidade" class="">
                         <div data-app="product.quantity" id="quantidade">
+                          <div class="fundo-quantidades">
                           <hr id="borda">
                             <label class="w3-container fadeInUp animate">  Quantidade </label>
                             <div id="modificarMAISeMENOS" class="w3-container">
                             <input type="button" id="menos" value='-' onclick="process12(-1)">
-                            <input id="quantPet12" name="quantPet12" class="numero w3-center w3-text-white" size="1" type="text" value="0" maxlength="2" disabled="disabled">
+                            <input id="quantPet12" name="quantPet12" class="numero w3-center w3-text-white" size="1" type="text" value="1" maxlength="2" disabled="disabled">
                             <input type="button" id="mais" class="" value='+' onclick="process12(1)" />
                             </div>
-                            <br>
-                            <br>
+                            </div>
                             <button type="submit" id="addButton" class="w3-button w3-text-black" onclick="fecharPrato12();mandardados12();"><i class="fa fa-plus"></i> ADICIONAR AO MEU PEDIDO</button>
                         </div>
                         <br>
@@ -1021,13 +1026,13 @@
     <div id="prato13" style="display: none;" class="fundo-span-2" value="1" onclick="pedidosEspeciaisAction13();">
          <div class="w3-container"> <span onclick="document.getElementById('prato13').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate"></i></span>  </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center"><b><label id="porco"><li>Porco</li></label></b></h3>
+                  <h3 class="w3-center fadeInDown animate"><b><label id="porco"><li>Porco</li></label></b></h3>
                 </div>
                 <br>
                 <br>
                 <br>
                 <br>
-                <div id="textos" >
+                <div id="textos" class="fadeIn animate">
                     <div id="descricao">
                       <h5 class="w3-container">Descrição do Prato
                         ..............................................
@@ -1039,7 +1044,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais13" class="w3-container" style="display: none;">
+                    <div id="pedido-adicionais" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS13" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -1053,15 +1058,15 @@
                 <br>
                     <div id="quantidade" class="">
                         <div data-app="product.quantity" id="quantidade">
+                          <div class="fundo-quantidades">
                           <hr id="borda">
-                            <label class="w3-container">  Quantidade </label>
-                            <div id="modificarMAISeMENOS" class="w3-container">
+                            <label class="w3-container fadeInUp animate">  Quantidade </label>
+                            <div id="modificarMAISeMENOS" class="w3-container fadeInUp animate">
                             <input type="button" id="menos" value='-' onclick="process13(-1)">
-                            <input id="quantPet13" name="quantPet13" class="numero w3-center w3-text-white" size="1" type="text" value="0" maxlength="2" disabled="disabled">
+                            <input id="quantPet13" name="quantPet13" class="numero w3-center w3-text-white" size="1" type="text" value="1" maxlength="2" disabled="disabled">
                             <input type="button" id="mais" class="" value='+' onclick="process13(1)" />
                             </div>
-                            <br>
-                            <br>
+                            </div>
                             <button type="submit" id="addButton" class="w3-button w3-text-black" onclick="fecharPrato13();mandardados13();"><i class="fa fa-plus"></i> ADICIONAR AO MEU PEDIDO</button>
                         </div>
                         <br>
@@ -1076,13 +1081,13 @@
     <div id="prato14" style="display: none;" class="fundo-span-2" value="1" onclick="pedidosEspeciaisAction14();">
          <div class="w3-container"> <span onclick="document.getElementById('prato14').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate"></i></span> </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center"><b><label id="caja"><li>Cajá</li></label></b></h3>
+                  <h3 class="w3-center fadeInDown animate"><b><label id="caja"><li>Cajá</li></label></b></h3>
                 </div>
                 <br>
                 <br>
                 <br>
                 <br>
-                <div id="textos" >
+                <div id="textos" class="fadeIn animate">
                     <div id="descricao">
                       <h5 class="w3-container">Descrição do Prato
                         ..............................................
@@ -1094,7 +1099,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais14" class="w3-container" style="display: none;">
+                    <div id="pedido-adicionais" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS14" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -1108,15 +1113,15 @@
                 <br>
                     <div id="quantidade" class="">
                         <div data-app="product.quantity" id="quantidade">
+                          <div class="fundo-quantidades">
                           <hr id="borda">
-                            <label class="w3-container">  Quantidade </label>
-                            <div id="modificarMAISeMENOS" class="w3-container">
+                            <label class="w3-container fadeInUp animate">  Quantidade </label>
+                            <div id="modificarMAISeMENOS" class="w3-container fadeInUp animate">
                             <input type="button" id="menos" value='-' onclick="process14(-1)">
-                            <input id="quantPet14" name="quantPet14" class="numero w3-center w3-text-white" size="1" type="text" value="0" maxlength="2" disabled="disabled">
+                            <input id="quantPet14" name="quantPet14" class="numero w3-center w3-text-white" size="1" type="text" value="1" maxlength="2" disabled="disabled">
                             <input type="button" id="mais" class="" value='+' onclick="process14(1)" />
                             </div>
-                            <br>
-                            <br>
+                            </div>
                             <button type="submit" id="addButton" class="w3-button w3-text-black" onclick="fecharPrato14();mandardados14();"><i class="fa fa-plus"></i> ADICIONAR AO MEU PEDIDO</button>
                         </div>
                         <br>
@@ -1131,13 +1136,13 @@
     <div id="prato15" style="display: none;" class="fundo-span-2" value="1" onclick="pedidosEspeciaisAction15();">
          <div class="w3-container"> <span onclick="document.getElementById('prato15').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate"></i></span>  </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center"><b><label id="laranja"><li>Laranja</li></label></b></h3>
+                  <h3 class="w3-center fadeInDown animate"><b><label id="laranja"><li>Laranja</li></label></b></h3>
                 </div>
                 <br>
                 <br>
                 <br>
                 <br>
-                <div id="textos" >
+                <div id="textos" class="fadeIn animate">
                     <div id="descricao">
                       <h5 class="w3-container">Descrição do Prato
                         ..............................................
@@ -1149,7 +1154,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais15" class="w3-container" style="display: none;">
+                    <div id="pedido-adicionais" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS15" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -1163,15 +1168,15 @@
                 <br>
                     <div id="quantidade" class="">
                         <div data-app="product.quantity" id="quantidade">
+                          <div class="fundo-quantidades">
                           <hr id="borda">
-                            <label class="w3-container">  Quantidade </label>
-                            <div id="modificarMAISeMENOS" class="w3-container">
+                            <label class="w3-container fadeInUp animate">  Quantidade </label>
+                            <div id="modificarMAISeMENOS" class="w3-container fadeInUp animate">
                             <input type="button" id="menos" value='-' onclick="process15(-1)">
-                            <input id="quantPet15" name="quantPet15" class="numero w3-center w3-text-white" size="1" type="text" value="0" maxlength="2" disabled="disabled">
+                            <input id="quantPet15" name="quantPet15" class="numero w3-center w3-text-white" size="1" type="text" value="1" maxlength="2" disabled="disabled">
                             <input type="button" id="mais" class="" value='+' onclick="process15(1)" />
                             </div>
-                            <br>
-                            <br>
+                           </div>
                             <button type="submit" id="addButton" class="w3-button w3-text-black" onclick="fecharPrato15();mandardados15();"><i class="fa fa-plus"></i> ADICIONAR AO MEU PEDIDO</button>
                         </div>
                         <br>
@@ -1186,13 +1191,13 @@
     <div id="prato16" style="display: none;" class="fundo-span-2" value="1" onclick="pedidosEspeciaisAction16();">
          <div class="w3-container"> <span onclick="document.getElementById('prato16').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate"></i></span>  </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center"><b><label id="maracuja"><li>Maracujá</li></label></b></h3>
+                  <h3 class="w3-center fadeInDown animate"><b><label id="maracuja"><li>Maracujá</li></label></b></h3>
                 </div>
                 <br>
                 <br>
                 <br>
                 <br>
-                <div id="textos" >
+                <div id="textos" class="fadeIn animate">
                     <div id="descricao">
                       <h5 class="w3-container">Descrição do Prato
                         ..............................................
@@ -1204,7 +1209,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais16" class="w3-container" style="display: none;">
+                    <div id="pedido-adicionais" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS16" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -1218,15 +1223,15 @@
                 <br>
                     <div id="quantidade" class="">
                         <div data-app="product.quantity" id="quantidade">
+                          <div class="fundo-quantidades">
                           <hr id="borda">
-                            <label class="w3-container">  Quantidade </label>
-                            <div id="modificarMAISeMENOS" class="w3-container">
+                            <label class="w3-container fadeInUp animate">  Quantidade </label>
+                            <div id="modificarMAISeMENOS" class="w3-container fadeInUp animate">
                             <input type="button" id="menos" value='-' onclick="process16(-1)">
-                            <input id="quantPet16" name="quantPet16" class="numero w3-center w3-text-white" size="1" type="text" value="0" maxlength="2" disabled="disabled">
+                            <input id="quantPet16" name="quantPet16" class="numero w3-center w3-text-white" size="1" type="text" value="1" maxlength="2" disabled="disabled">
                             <input type="button" id="mais" class="" value='+' onclick="process16(1)" />
                             </div>
-                            <br>
-                            <br>
+                           </div>
                             <button type="submit" id="addButton" class="w3-button w3-text-black" onclick="fecharPrato16();mandardados16();"><i class="fa fa-plus"></i> ADICIONAR AO MEU PEDIDO</button>
                         </div>
                         <br>
@@ -1241,13 +1246,13 @@
     <div id="prato17" style="display: none;" class="fundo-span-2" value="1" onclick="pedidosEspeciaisAction17();">
          <div class="w3-container"> <span onclick="document.getElementById('prato17').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate"></i></span>  </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center"><b><label id="acerola"><li>Acerola</li></label></b></h3>
+                  <h3 class="w3-center fadeInDown animate"><b><label id="acerola"><li>Acerola</li></label></b></h3>
                 </div>
                 <br>
                 <br>
                 <br>
                 <br>
-                <div id="textos" >
+                <div id="textos" class="fadeIn animate">
                     <div id="descricao">
                       <h5 class="w3-container">Descrição do Prato
                         ..............................................
@@ -1259,7 +1264,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais17" class="w3-container" style="display: none;">
+                    <div id="pedido-adicionais" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS17" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -1273,15 +1278,15 @@
                 <br>
                     <div id="quantidade" class="">
                         <div data-app="product.quantity" id="quantidade">
+                          <div class="fundo-quantidades">
                           <hr id="borda">
-                            <label class="w3-container">  Quantidade </label>
-                            <div id="modificarMAISeMENOS" class="w3-container">
+                            <label class="w3-container fadeInUp animate">  Quantidade </label>
+                            <div id="modificarMAISeMENOS" class="w3-container fadeInUp animate">
                             <input type="button" id="menos" value='-' onclick="process17(-1)">
-                            <input id="quantPet17" name="quantPet17" class="numero w3-center w3-text-white" size="1" type="text" value="0" maxlength="2" disabled="disabled">
+                            <input id="quantPet17" name="quantPet17" class="numero w3-center w3-text-white" size="1" type="text" value="1" maxlength="2" disabled="disabled">
                             <input type="button" id="mais" class="" value='+' onclick="process17(1)" />
                             </div>
-                            <br>
-                            <br>
+                          </div>
                             <button type="submit" id="addButton" class="w3-button w3-text-black" onclick="fecharPrato17();mandardados17();"><i class="fa fa-plus"></i> ADICIONAR AO MEU PEDIDO</button>
                         </div>
                         <br>
@@ -1296,13 +1301,13 @@
     <div id="prato18" style="display: none;" class="fundo-span-2" value="1" onclick="pedidosEspeciaisAction18();">
          <div class="w3-container"> <span onclick="document.getElementById('prato18').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate"></i></span>  </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center"><b><label id="goiaba"><li>Goiaba</li></label></b></h3>
+                  <h3 class="w3-center fadeInDown animate"><b><label id="goiaba"><li>Goiaba</li></label></b></h3>
                 </div>
                 <br>
                 <br>
                 <br>
                 <br>
-                <div id="textos" >
+                <div id="textos" class="fadeIn animate">
                     <div id="descricao">
                       <h5 class="w3-container">Descrição do Prato
                         ..............................................
@@ -1314,7 +1319,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais18" class="w3-container" style="display: none;">
+                    <div id="pedido-adicionais" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS18" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -1328,15 +1333,15 @@
                 <br>
                     <div id="quantidade" class="">
                         <div data-app="product.quantity" id="quantidade">
+                          <div class="fundo-quantidades">
                           <hr id="borda">
-                            <label class="w3-container">  Quantidade </label>
-                            <div id="modificarMAISeMENOS" class="w3-container">
+                            <label class="w3-container fadeInUp animate">  Quantidade </label>
+                            <div id="modificarMAISeMENOS" class="w3-container fadeInUp animate">
                             <input type="button" id="menos" value='-' onclick="process18(-1)">
-                            <input id="quantPet18" name="quantPet18" class="numero w3-center w3-text-white" size="1" type="text" value="0" maxlength="2" disabled="disabled">
+                            <input id="quantPet18" name="quantPet18" class="numero w3-center w3-text-white" size="1" type="text" value="1" maxlength="2" disabled="disabled">
                             <input type="button" id="mais" class="" value='+' onclick="process18(1)" />
                             </div>
-                            <br>
-                            <br>
+                          </div>
                             <button type="submit" id="addButton" class="w3-button w3-text-black" onclick="fecharPrato18();mandardados18();"><i class="fa fa-plus"></i> ADICIONAR AO MEU PEDIDO</button>
                         </div>
                         <br>
@@ -1351,13 +1356,13 @@
     <div id="prato19" style="display: none;" class="fundo-span-2" value="1" onclick="pedidosEspeciaisAction19();">
         <div class="w3-container"> <span onclick="document.getElementById('prato19').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate"></i></span>  </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center"><b><label id="jarra"><li>Jarra de Suco</li></label></b></h3>
+                  <h3 class="w3-center fadeInDown animate"><b><label id="jarra"><li>Jarra de Suco</li></label></b></h3>
                 </div>
                 <br>
                 <br>
                 <br>
                 <br>
-                <div id="textos" >
+                <div id="textos" class="fadeIn animate">
                     <div id="descricao">
                       <h5 class="w3-container">Descrição do Prato
                         ..............................................
@@ -1369,7 +1374,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais19" class="w3-container" style="display: none;">
+                    <div id="pedido-adicionais" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS19" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -1383,15 +1388,15 @@
                 <br>
                     <div id="quantidade" class="">
                         <div data-app="product.quantity" id="quantidade">
+                          <div class="fundo-quantidades">
                           <hr id="borda">
-                            <label class="w3-container">  Quantidade </label>
-                            <div id="modificarMAISeMENOS" class="w3-container">
+                            <label class="w3-container fadeInUp animate">  Quantidade </label>
+                            <div id="modificarMAISeMENOS" class="w3-container fadeInUp animate">
                             <input type="button" id="menos" value='-' onclick="process19(-1)">
-                            <input id="quantPet19" name="quantPet19" class="numero w3-center w3-text-white" size="1" type="text" value="0" maxlength="2" disabled="disabled">
+                            <input id="quantPet19" name="quantPet19" class="numero w3-center w3-text-white" size="1" type="text" value="1" maxlength="2" disabled="disabled">
                             <input type="button" id="mais" class="" value='+' onclick="process19(1)" />
                             </div>
-                            <br>
-                            <br>
+                           </div>
                             <button type="submit" id="addButton" class="w3-button w3-text-black" onclick="fecharPrato19();mandardados19();"><i class="fa fa-plus"></i> ADICIONAR AO MEU PEDIDO</button>
                         </div>
                         <br>
@@ -1406,13 +1411,13 @@
     <div id="prato20" style="display: none;" class="fundo-span-2" value="1" onclick="pedidosEspeciaisAction20();">
          <div class="w3-container"> <span onclick="document.getElementById('prato20').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate"></i></span> </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center"><b><label id="cocaCola"><li>Coca-Cola</li></label></b></h3>
+                  <h3 class="w3-center fadeInDown animate"><b><label id="cocaCola"><li>Coca-Cola</li></label></b></h3>
                 </div>
                 <br>
                 <br>
                 <br>
                 <br>
-                <div id="textos" >
+                <div id="textos" class="fadeIn animate">
                     <div id="descricao">
                       <h5 class="w3-container">Descrição do Prato
                         ..............................................
@@ -1424,7 +1429,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais20" class="w3-container" style="display: none;">
+                    <div id="pedido-adicionais" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS20" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -1438,15 +1443,15 @@
                 <br>
                     <div id="quantidade" class="">
                         <div data-app="product.quantity" id="quantidade">
+                          <div class="fundo-quantidades">
                           <hr id="borda">
-                            <label class="w3-container">  Quantidade </label>
-                            <div id="modificarMAISeMENOS" class="w3-container">
+                            <label class="w3-container fadeInUp animate">  Quantidade </label>
+                            <div id="modificarMAISeMENOS" class="w3-container fadeInUp animate">
                             <input type="button" id="menos" value='-' onclick="process20(-1)">
-                            <input id="quantPet20" name="quantPet20" class="numero w3-center w3-text-white" size="1" type="text" value="0" maxlength="2" disabled="disabled">
+                            <input id="quantPet20" name="quantPet20" class="numero w3-center w3-text-white" size="1" type="text" value="1" maxlength="2" disabled="disabled">
                             <input type="button" id="mais" class="" value='+' onclick="process20(1)" />
                             </div>
-                            <br>
-                            <br>
+                            </div>
                             <button type="submit" id="addButton" class="w3-button w3-text-black" onclick="fecharPrato20();mandardados20();"><i class="fa fa-plus"></i> ADICIONAR AO MEU PEDIDO</button>
                         </div>
                         <br>
@@ -1461,13 +1466,13 @@
     <div id="prato21" style="display: none;" class="fundo-span-2" value="1" onclick="pedidosEspeciaisAction21();">
          <div class="w3-container"> <span onclick="document.getElementById('prato21').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate"></i></span>  </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center"><b><label id="guarana"><li>Guaraná</li></label></b></h3>
+                  <h3 class="w3-center fadeInDown animate"><b><label id="guarana"><li>Guaraná</li></label></b></h3>
                 </div>
                 <br>
                 <br>
                 <br>
                 <br>
-                <div id="textos" >
+                <div id="textos" class="fadeIn animate">
                     <div id="descricao">
                       <h5 class="w3-container">Descrição do Prato
                         ..............................................
@@ -1479,7 +1484,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais21" class="w3-container" style="display: none;">
+                    <div id="pedido-adicionais" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS21" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -1493,15 +1498,15 @@
                 <br>
                     <div id="quantidade" class="">
                         <div data-app="product.quantity" id="quantidade">
+                          <div class="fundo-quantidades">
                           <hr id="borda">
-                            <label class="w3-container">  Quantidade </label>
-                            <div id="modificarMAISeMENOS" class="w3-container">
+                            <label class="w3-container fadeInUp animate">  Quantidade </label>
+                            <div id="modificarMAISeMENOS" class="w3-container fadeInUp animate">
                             <input type="button" id="menos" value='-' onclick="process21(-1)">
-                            <input id="quantPet21" name="quantPet21" class="numero w3-center w3-text-white" size="1" type="text" value="0" maxlength="2" disabled="disabled">
+                            <input id="quantPet21" name="quantPet21" class="numero w3-center w3-text-white" size="1" type="text" value="1" maxlength="2" disabled="disabled">
                             <input type="button" id="mais" class="" value='+' onclick="process21(1)" />
                             </div>
-                            <br>
-                            <br>
+                           </div>
                             <button type="submit" id="addButton" class="w3-button w3-text-black" onclick="fecharPrato21();mandardados21();"><i class="fa fa-plus"></i> ADICIONAR AO MEU PEDIDO</button>
                         </div>
                         <br>
@@ -1511,18 +1516,18 @@
 
                         <br> </div>
         </div>
-    <!-- Span da Descrição do Prato 22-->
 
+    <!-- Span da Descrição do Prato 22-->
     <div id="prato22" style="display: none;" class="fundo-span-2" value="1" onclick="pedidosEspeciaisAction22();">
-         <div class="w3-container"> <span onclick="document.getElementById('prato 22').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate"></i></span> </div>
+         <div class="w3-container"> <span onclick="document.getElementById('prato22').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate"></i></span> </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center"><b><label id="fanta"><li>Fanta</li></label></b></h3>
+                  <h3 class="w3-center fadeInDown animate"><b><label id="fanta"><li>Fanta</li></label></b></h3>
                 </div>
                 <br>
                 <br>
                 <br>
                 <br>
-                <div id="textos" >
+                <div id="textos" class="fadeIn animate">
                     <div id="descricao">
                       <h5 class="w3-container">Descrição do Prato
                         ..............................................
@@ -1534,7 +1539,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais22" class="w3-container" style="display: none;">
+                    <div id="pedido-adicionais" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS22" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -1548,15 +1553,15 @@
                 <br>
                     <div id="quantidade" class="">
                         <div data-app="product.quantity" id="quantidade">
+                          <div class="fundo-quantidades">
                           <hr id="borda">
-                            <label class="w3-container">  Quantidade </label>
-                            <div id="modificarMAISeMENOS" class="w3-container">
+                            <label class="w3-container fadeInUp animate">  Quantidade </label>
+                            <div id="modificarMAISeMENOS" class="w3-container fadeInUp animate">
                             <input type="button" id="menos" value='-' onclick="process22(-1)">
-                            <input id="quantPet22" name="quantPet22" class="numero w3-center w3-text-white" size="1" type="text" value="0" maxlength="2" disabled="disabled">
+                            <input id="quantPet22" name="quantPet22" class="numero w3-center w3-text-white" size="1" type="text" value="1" maxlength="2" disabled="disabled">
                             <input type="button" id="mais" class="" value='+' onclick="process22(1)" />
                             </div>
-                            <br>
-                            <br>
+                           </div>
                             <button type="submit" id="addButton" class="w3-button w3-text-black" onclick="fecharPrato22();mandardados22();"><i class="fa fa-plus"></i> ADICIONAR AO MEU PEDIDO</button>
                         </div>
                         <br>
@@ -1571,13 +1576,13 @@
     <div id="prato23" style="display: none;" class="fundo-span-2" value="1" onclick="pedidosEspeciaisAction23();">
         <div class="w3-container"> <span onclick="document.getElementById('prato23').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate"></i></span>  </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center"><b><label id="aguaMineral"><li>Água Mineral</li></label></b></h3>
+                  <h3 class="w3-center fadeInDown animate"><b><label id="aguaMineral"><li>Água Mineral</li></label></b></h3>
                 </div>
                 <br>
                 <br>
                 <br>
                 <br>
-                <div id="textos" >
+                <div id="textos" class="fadeIn animate">
                     <div id="descricao">
                       <h5 class="w3-container">Descrição do Prato
                         ..............................................
@@ -1589,7 +1594,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais23" class="w3-container" style="display: none;">
+                    <div id="pedido-adicionais" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS23" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -1603,15 +1608,15 @@
                 <br>
                     <div id="quantidade" class="">
                         <div data-app="product.quantity" id="quantidade">
+                          <div class="fundo-quantidades">
                           <hr id="borda">
-                            <label class="w3-container">  Quantidade </label>
-                            <div id="modificarMAISeMENOS" class="w3-container">
+                            <label class="w3-container fadeInUp animate">  Quantidade </label>
+                            <div id="modificarMAISeMENOS" class="w3-container fadeInUp animate">
                             <input type="button" id="menos" value='-' onclick="process23(-1)">
-                            <input id="quantPet23" name="quantPet23" class="numero w3-center w3-text-white" size="1" type="text" value="0" maxlength="2" disabled="disabled">
+                            <input id="quantPet23" name="quantPet23" class="numero w3-center w3-text-white" size="1" type="text" value="1" maxlength="2" disabled="disabled">
                             <input type="button" id="mais" class="" value='+' onclick="process23(1)" />
                             </div>
-                            <br>
-                            <br>
+                           </div>
                             <button type="submit" id="addButton" class="w3-button w3-text-black" onclick="fecharPrato23();mandardados23();"><i class="fa fa-plus"></i> ADICIONAR AO MEU PEDIDO</button>
                         </div>
                         <br>
@@ -1626,13 +1631,13 @@
     <div id="prato24" style="display: none;" class="fundo-span-2" value="1" onclick="pedidosEspeciaisAction24();">
          <div class="w3-container"> <span onclick="document.getElementById('prato24').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate"></i></span> </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center"><b><label id="skol"><li>Skol</li></label></b></h3>
+                  <h3 class="w3-center fadeInDown animate"><b><label id="skol"><li>Skol</li></label></b></h3>
                 </div>
                 <br>
                 <br>
                 <br>
                 <br>
-                <div id="textos" >
+                <div id="textos" class="fadeIn animate">
                     <div id="descricao">
                       <h5 class="w3-container">Descrição do Prato
                         ..............................................
@@ -1644,7 +1649,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais24" class="w3-container" style="display: none;">
+                    <div id="pedido-adicionais" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS24" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -1658,15 +1663,15 @@
                 <br>
                     <div id="quantidade" class="">
                         <div data-app="product.quantity" id="quantidade">
+                          <div class="fundo-quantidades">
                           <hr id="borda">
-                            <label class="w3-container">  Quantidade </label>
-                            <div id="modificarMAISeMENOS" class="w3-container">
+                            <label class="w3-container fadeInUp animate">  Quantidade </label>
+                            <div id="modificarMAISeMENOS" class="w3-container fadeInUp animate">
                             <input type="button" id="menos" value='-' onclick="process24(-1)">
-                            <input id="quantPet24" name="quantPet24" class="numero w3-center w3-text-white" size="1" type="text" value="0" maxlength="2" disabled="disabled">
+                            <input id="quantPet24" name="quantPet24" class="numero w3-center w3-text-white" size="1" type="text" value="1" maxlength="2" disabled="disabled">
                             <input type="button" id="mais" class="" value='+' onclick="process24(1)" />
                             </div>
-                            <br>
-                            <br>
+                          </div>
                             <button type="submit" id="addButton" class="w3-button w3-text-black" onclick="fecharPrato24();mandardados24();"><i class="fa fa-plus"></i> ADICIONAR AO MEU PEDIDO</button>
                         </div>
                         <br>
@@ -1681,13 +1686,13 @@
     <div id="prato25" style="display: none;" class="fundo-span-2" value="1">
          <div class="w3-container"> <span onclick="document.getElementById('prato25').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate"></i></span> </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center"><b><label id="itaipava"><li>Itaipava</li></label></b></h3>
+                  <h3 class="w3-center fadeInDown animate"><b><label id="itaipava"><li>Itaipava</li></label></b></h3>
                 </div>
                 <br>
                 <br>
                 <br>
                 <br>
-                <div id="textos" >
+                <div id="textos" class="fadeIn animate">
                     <div id="descricao">
                       <h5 class="w3-container">Descrição do Prato
                         ..............................................
@@ -1699,7 +1704,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais25" class="w3-container" style="display: none;">
+                    <div id="pedido-adicionais" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS25" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -1713,15 +1718,15 @@
                 <br>
                     <div id="quantidade" class="">
                         <div data-app="product.quantity" id="quantidade">
+                          <div class="fundo-quantidades">
                           <hr id="borda">
-                            <label class="w3-container">  Quantidade </label>
-                            <div id="modificarMAISeMENOS" class="w3-container">
+                            <label class="w3-container fadeInUp animate">  Quantidade </label>
+                            <div id="modificarMAISeMENOS" class="w3-container fadeInUp animate">
                             <input type="button" id="menos" value='-' onclick="process25(-1)">
-                            <input id="quantPet25" name="quantPet25" class="numero w3-center w3-text-white" size="1" type="text" value="0" maxlength="2" disabled="disabled">
+                            <input id="quantPet25" name="quantPet25" class="numero w3-center w3-text-white" size="1" type="text" value="1" maxlength="2" disabled="disabled">
                             <input type="button" id="mais" class="" value='+' onclick="process25(1)" />
                             </div>
-                            <br>
-                            <br>
+                          </div>
                             <button type="submit" id="addButton" class="w3-button w3-text-black" onclick="fecharPrato25();mandardados25();"><i class="fa fa-plus"></i> ADICIONAR AO MEU PEDIDO</button>
                         </div>
                         <br>
@@ -1736,13 +1741,13 @@
     <div id="prato26" style="display: none;" class="fundo-span-2" value="1" onclick="pedidosEspeciaisAction26();">
          <div class="w3-container"> <span onclick="document.getElementById('prato26').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate"></i></span> </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center"><b><label id="original"><li>Original</li></label></b></h3>
+                  <h3 class="w3-center fadeInDown animate"><b><label id="original"><li>Original</li></label></b></h3>
                 </div>
                 <br>
                 <br>
                 <br>
                 <br>
-                <div id="textos" >
+                <div id="textos" class="fadeIn animate">
                     <div id="descricao">
                       <h5 class="w3-container">Descrição do Prato
                         ..............................................
@@ -1754,7 +1759,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais26" class="w3-container" style="display: none;">
+                    <div id="pedido-adicionais" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS26" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -1768,15 +1773,15 @@
                 <br>
                     <div id="quantidade" class="">
                         <div data-app="product.quantity" id="quantidade">
+                          <div class="fundo-quantidades">
                           <hr id="borda">
-                            <label class="w3-container">  Quantidade </label>
-                            <div id="modificarMAISeMENOS" class="w3-container">
+                            <label class="w3-container fadeInUp animate">  Quantidade </label>
+                            <div id="modificarMAISeMENOS" class="w3-container fadeInUp animate">
                             <input type="button" id="menos" value='-' onclick="process26(-1)">
-                            <input id="quantPet26" name="quantPet26" class="numero w3-center w3-text-white" size="1" type="text" value="0" maxlength="2" disabled="disabled">
+                            <input id="quantPet26" name="quantPet26" class="numero w3-center w3-text-white" size="1" type="text" value="1" maxlength="2" disabled="disabled">
                             <input type="button" id="mais" class="" value='+' onclick="process26(1)" />
                             </div>
-                            <br>
-                            <br>
+                          </div>
                             <button type="submit" id="addButton" class="w3-button w3-text-black" onclick="fecharPrato26();mandardados26();"><i class="fa fa-plus"></i> ADICIONAR AO MEU PEDIDO</button>
                         </div>
                         <br>
@@ -1791,13 +1796,13 @@
     <div id="prato27" style="display: none;" class="fundo-span-2" value="1" onclick="pedidosEspeciaisAction27();">
          <div class="w3-container"> <span onclick="document.getElementById('prato27').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate"></i></span> </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center"><b><label id="burdweiser"><li>Burdweiser</li></label></b></h3>
+                  <h3 class="w3-center fadeInDown animate"><b><label id="burdweiser"><li>Burdweiser</li></label></b></h3>
                 </div>
                 <br>
                 <br>
                 <br>
                 <br>
-                <div id="textos" >
+                <div id="textos" class="fadeIn animate">
                     <div id="descricao">
                       <h5 class="w3-container">Descrição do Prato
                         ..............................................
@@ -1809,7 +1814,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais27" class="w3-container" style="display: none;">
+                    <div id="pedido-adicionais" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS27" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -1823,15 +1828,15 @@
                 <br>
                     <div id="quantidade" class="">
                         <div data-app="product.quantity" id="quantidade">
+                          <div class="fundo-quantidades">
                           <hr id="borda">
-                            <label class="w3-container">  Quantidade </label>
-                            <div id="modificarMAISeMENOS" class="w3-container">
+                            <label class="w3-container fadeInUp animate">  Quantidade </label>
+                            <div id="modificarMAISeMENOS" class="w3-container fadeInUp animate">
                             <input type="button" id="menos" value='-' onclick="process27(-1)">
-                            <input id="quantPet27" name="quantPet27" class="numero w3-center w3-text-white" size="1" type="text" value="0" maxlength="2" disabled="disabled">
+                            <input id="quantPet27" name="quantPet27" class="numero w3-center w3-text-white" size="1" type="text" value="1" maxlength="2" disabled="disabled">
                             <input type="button" id="mais" class="" value='+' onclick="process27(1)" />
                             </div>
-                            <br>
-                            <br>
+                          </div>
                             <button type="submit" id="addButton" class="w3-button w3-text-black" onclick="fecharPrato27();mandardados27();"><i class="fa fa-plus"></i> ADICIONAR AO MEU PEDIDO</button>
                         </div>
                         <br>
@@ -1846,13 +1851,13 @@
     <div id="prato28" style="display: none;" class="fundo-span-2" value="1" onclick="pedidosEspeciaisAction28();">
          <div class="w3-container"> <span onclick="document.getElementById('prato28').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate"></i></span> </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center"><b><label id="eisenbahn"><li>Eisenbahn</li></label></b></h3>
+                  <h3 class="w3-center fadeInDown animate"><b><label id="eisenbahn"><li>Eisenbahn</li></label></b></h3>
                 </div>
                 <br>
                 <br>
                 <br>
                 <br>
-                <div id="textos" >
+                <div id="textos" class="fadeIn animate">
                     <div id="descricao">
                       <h5 class="w3-container">Descrição do Prato
                         ..............................................
@@ -1864,7 +1869,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais28" class="w3-container" style="display: none;">
+                    <div id="pedido-adicionais" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS28" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -1878,15 +1883,15 @@
                 <br>
                     <div id="quantidade" class="">
                         <div data-app="product.quantity" id="quantidade">
+                          <div class="fundo-quantidades">
                           <hr id="borda">
-                            <label class="w3-container">  Quantidade </label>
-                            <div id="modificarMAISeMENOS" class="w3-container">
+                            <label class="w3-container fadeInUp animate">  Quantidade </label>
+                            <div id="modificarMAISeMENOS" class="w3-container fadeInUp animate">
                             <input type="button" id="menos" value='-' onclick="process28(-1)">
-                            <input id="quantPet28" name="quantPet28" class="numero w3-center w3-text-white" size="1" type="text" value="0" maxlength="2" disabled="disabled">
+                            <input id="quantPet28" name="quantPet28" class="numero w3-center w3-text-white" size="1" type="text" value="1" maxlength="2" disabled="disabled">
                             <input type="button" id="mais" class="" value='+' onclick="process28(1)" />
                             </div>
-                            <br>
-                            <br>
+                          </div>
                             <button type="submit" id="addButton" class="w3-button w3-text-black" onclick="fecharPrato28();mandardados28();"><i class="fa fa-plus"></i> ADICIONAR AO MEU PEDIDO</button>
                         </div>
                         <br>
@@ -1901,13 +1906,13 @@
     <div id="prato29" style="display: none;" class="fundo-span-2" value="1" onclick="pedidosEspeciaisAction29();">
          <div class="w3-container"> <span onclick="document.getElementById('prato29').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate"></i></span>  </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center"><b><label id="heineken"><li>Heineken</li></label></b></h3>
+                  <h3 class="w3-center fadeInDown animate"><b><label id="heineken"><li>Heineken</li></label></b></h3>
                 </div>
                 <br>
                 <br>
                 <br>
                 <br>
-                <div id="textos" >
+                <div id="textos" class="fadeIn animate">
                     <div id="descricao">
                       <h5 class="w3-container">Descrição do Prato
                         ..............................................
@@ -1919,7 +1924,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais29" class="w3-container" style="display: none;">
+                    <div id="pedido-adicionais" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS29" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -1933,15 +1938,15 @@
                 <br>
                     <div id="quantidade" class="">
                         <div data-app="product.quantity" id="quantidade">
+                          <div class="fundo-quantidades">
                           <hr id="borda">
-                            <label class="w3-container">  Quantidade </label>
-                            <div id="modificarMAISeMENOS" class="w3-container">
+                            <label class="w3-container fadeInUp animate">  Quantidade </label>
+                            <div id="modificarMAISeMENOS" class="w3-container fadeInUp animate">
                             <input type="button" id="menos" value='-' onclick="process29(-1)">
-                            <input id="quantPet29" name="quantPet29" class="numero w3-center w3-text-white" size="1" type="text" value="0" maxlength="2" disabled="disabled">
+                            <input id="quantPet29" name="quantPet29" class="numero w3-center w3-text-white" size="1" type="text" value="1" maxlength="2" disabled="disabled">
                             <input type="button" id="mais" class="" value='+' onclick="process29(1)" />
                             </div>
-                            <br>
-                            <br>
+                          </div>
                             <button type="submit" id="addButton" class="w3-button w3-text-black" onclick="fecharPrato29();mandardados29();"><i class="fa fa-plus"></i> ADICIONAR AO MEU PEDIDO</button>
                         </div>
                         <br>
