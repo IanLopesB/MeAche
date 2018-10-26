@@ -89,12 +89,12 @@ function process9(quantPet9){
 }
 
 function process10(quantPet10){
-  var value = parseInt(document.getElementById("quantPet10").value);
+  var value = parseInt(document.getElementById("quantPet11").value);
   value += quantPet10;
   if(value < 1){
-    document.getElementById("quantPet10").value = 0;
+    document.getElementById("quantPet11").value = 0;
   }else{
-  document.getElementById("quantPet10").value = value;
+  document.getElementById("quantPet11").value = value;
   }
 }
 
