@@ -93,6 +93,8 @@ var cerv_1 = document.createTextNode(item.val().Skol + "x" + " Skol"),
   cerv_5 = document.createTextNode(item.val().Eisenbahn + "x" + " Eisenbahn"),
   cerv_6 = document.createTextNode(item.val().Heineken + "x" + " Heineken");
 
+var numberPedido = document.createTextNode(item.val().Numero_Pedido);
+
 // appends childs //
 trbody.appendChild(tr);
 tr.appendChild(th);
@@ -101,6 +103,7 @@ tr.appendChild(td_num_pedidos);
 th.appendChild(input_checkbox);
 
 td_pedidos.appendChild(ul);
+td_num_pedidos.appendChild(numberPedido);
 ul.appendChild(li1);
 ul.appendChild(li2);
 ul.appendChild(li3);
