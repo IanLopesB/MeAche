@@ -37,9 +37,14 @@ var skol = document.getElementById('quantPet24'),
   eisenbahn = document.getElementById('quantPet28'),
   heineken = document.getElementById('quantPet29');
 
+var numPedido = document.getElementById('novoNumero');
+
 
 function sendPedido() {
 var pedido = {
+
+  Numero_Pedido: numPedido.innerHTML,
+
   // Petiscos
   Asinha_de_frango: asinha.value,
   Camarao_Alho_Oleo: camarao.value,
