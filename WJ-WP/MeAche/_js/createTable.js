@@ -170,6 +170,7 @@ td_pedidos.setAttribute('class', 'td_pedidos');
 
 td_num_pedidos.setAttribute("colspan", "2");
 td_num_pedidos.setAttribute('id', 'td_num_pedidos');
+td_num_pedidos.setAttribute('class', 'w3-center');
 
 // check if value equal to zero to delete from firebase //
 // Petiscos //
