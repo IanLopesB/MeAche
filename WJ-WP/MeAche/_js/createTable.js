@@ -55,7 +55,7 @@ var li23 = document.createElement('li')
   li29 = document.createElement('li');
 
 // Petiscos
-var petiscos_1 = document.createTextNode(item.val().Asinha_de_frango + "x" + " Asinha de Frango");
+var petiscos_1 = document.createTextNode(item.val().Asinha_de_frango + "x" + " Asinha de Frango"+" OBS: "+item.val().Test1);
 var petiscos_2 = document.createTextNode(item.val().Camarao_Alho_Oleo + "x" + " Camarão Alho e Óleo");
 var petiscos_3 = document.createTextNode(item.val().Calabresa + "x" + " Calabresa com Fritas");
 var petiscos_4 = document.createTextNode(item.val().Carne_de_Sol + "x" + " Carne de Sol C/ Macaxeira");

@@ -39,10 +39,10 @@ var skol = document.getElementById('quantPet24'),
 
 var numPedido = document.getElementById('novoNumero');
 
-
 function sendPedido() {
 var pedido = {
 
+  Test1: document.getElementById('escrevaOBS').value,
   Numero_Pedido: numPedido.innerHTML,
 
   // Petiscos
