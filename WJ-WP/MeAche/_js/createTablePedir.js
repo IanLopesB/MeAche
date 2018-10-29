@@ -570,8 +570,7 @@ document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 		var tr = document.getElementById("tr4");
 		tr.parentNode.removeChild(tr); }
     } else {
-if (value1>=1 || value2>=1 || value3>=1 || value
-	4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
