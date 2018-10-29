@@ -55,43 +55,43 @@ var li23 = document.createElement('li')
   li29 = document.createElement('li');
 
 // Petiscos
-var petiscos_1 = document.createTextNode(item.val().Asinha_de_frango + "x" + " Asinha de Frango"+" OBS: "+item.val().Test1);
-var petiscos_2 = document.createTextNode(item.val().Camarao_Alho_Oleo + "x" + " Camarão Alho e Óleo");
-var petiscos_3 = document.createTextNode(item.val().Calabresa + "x" + " Calabresa com Fritas");
-var petiscos_4 = document.createTextNode(item.val().Carne_de_Sol + "x" + " Carne de Sol C/ Macaxeira");
-var petiscos_5 = document.createTextNode(item.val().Torresmo + "x" + " Torresmo");
-var petiscos_6 = document.createTextNode(item.val().Batata_Frita + "x" + " Batata Frita");
-var petiscos_7 = document.createTextNode(item.val().Macaxeira + "x" + " Torresmo");
-var petiscos_8 = document.createTextNode(item.val().Baiao_de_Dois + "x" + " Batata Frita");
+var petiscos_1 = document.createTextNode(item.val().Asinha_de_frango + "x" + " Asinha de Frango"+" OBS: "+item.val().Text1);
+var petiscos_2 = document.createTextNode(item.val().Camarao_Alho_Oleo + "x" + " Camarão Alho e Óleo"+" OBS: "+item.val().Text2);
+var petiscos_3 = document.createTextNode(item.val().Calabresa + "x" + " Calabresa com Fritas"+" OBS: "+item.val().Text3);
+var petiscos_4 = document.createTextNode(item.val().Carne_de_Sol + "x" + " Carne de Sol C/ Macaxeira"+" OBS: "+item.val().Text4);
+var petiscos_5 = document.createTextNode(item.val().Torresmo + "x" + " Torresmo"+" OBS: "+item.val().Text5);
+var petiscos_6 = document.createTextNode(item.val().Batata_Frita + "x" + " Batata Frita"+" OBS: "+item.val().Text6);
+var petiscos_7 = document.createTextNode(item.val().Macaxeira + "x" + " Torresmo"+" OBS: "+item.val().Text7);
+var petiscos_8 = document.createTextNode(item.val().Baiao_de_Dois + "x" + " Batata Frita"+" OBS: "+item.val().Text8);
 
 // Espetos
-var espetos_1 = document.createTextNode(item.val().Boi + "x" + " Boi"),
-  espetos_2 = document.createTextNode(item.val().Franbacon + "x" + " Franbacon"),
-  espetos_3 = document.createTextNode(item.val().Frango + "x" + " Frango"),
-  espetos_4 = document.createTextNode(item.val().Coracao_de_Frango + "x" + " Coração de Frango"),
-  espetos_5 = document.createTextNode(item.val().Porco + "x" + " Porco");
+var espetos_1 = document.createTextNode(item.val().Boi + "x" + " Boi"+" OBS: "+item.val().Text9),
+  espetos_2 = document.createTextNode(item.val().Franbacon + "x" + " Franbacon"+" OBS: "+item.val().Text10),
+  espetos_3 = document.createTextNode(item.val().Frango + "x" + " Frango"+" OBS: "+item.val().Text11),
+  espetos_4 = document.createTextNode(item.val().Coracao_de_Frango + "x" + " Coração de Frango"+" OBS: "+item.val().Text12),
+  espetos_5 = document.createTextNode(item.val().Porco + "x" + " Porco"+" OBS: "+item.val().Text13);
 
 // Sucos
-var sucos_1 = document.createTextNode(item.val().Caja + "x" + " Cajá"),
-  sucos_2 = document.createTextNode(item.val().Laranja + "x" + " Laranja"),
-  sucos_3 = document.createTextNode(item.val().Maracuja + "x" + " Maracujá"),
-  sucos_4 = document.createTextNode(item.val().Acerola + "x" + " Acerola"),
-  sucos_5 = document.createTextNode(item.val().Goiaba + "x" + " Goiaba"),
-  sucos_6 = document.createTextNode(item.val().Jarra_de_Suco + "x" + " Jarra de Suco");
+var sucos_1 = document.createTextNode(item.val().Caja + "x" + " Cajá"+" OBS: "+item.val().Text14),
+  sucos_2 = document.createTextNode(item.val().Laranja + "x" + " Laranja"+" OBS: "+item.val().Text15),
+  sucos_3 = document.createTextNode(item.val().Maracuja + "x" + " Maracujá"+" OBS: "+item.val().Text16),
+  sucos_4 = document.createTextNode(item.val().Acerola + "x" + " Acerola"+" OBS: "+item.val().Text17),
+  sucos_5 = document.createTextNode(item.val().Goiaba + "x" + " Goiaba"+" OBS: "+item.val().Text18),
+  sucos_6 = document.createTextNode(item.val().Jarra_de_Suco + "x" + " Jarra de Suco"+" OBS: "+item.val().Text19);
 
 // Refrigerates
-var refri_1 = document.createTextNode(item.val().Coca_cola + "x" + " Coca-Cola"),
-  refri_2 = document.createTextNode(item.val().Guarana + "x" + " Guaraná"),
-  refri_3 = document.createTextNode(item.val().Fanta + "x" + " Fanta"),
-  refri_4 = document.createTextNode(item.val().Agua_Mineral + "x" + " Àgua Mineral");
+var refri_1 = document.createTextNode(item.val().Coca_cola + "x" + " Coca-Cola"+" OBS: "+item.val().Text20),
+  refri_2 = document.createTextNode(item.val().Guarana + "x" + " Guaraná"+" OBS: "+item.val().Text21),
+  refri_3 = document.createTextNode(item.val().Fanta + "x" + " Fanta"+" OBS: "+item.val().Text22),
+  refri_4 = document.createTextNode(item.val().Agua_Mineral + "x" + " Àgua Mineral"+" OBS: "+item.val().Text23);
 
 // Cervejas
-var cerv_1 = document.createTextNode(item.val().Skol + "x" + " Skol"),
-  cerv_2 = document.createTextNode(item.val().Itaipava + "x" + " Itaipava"),
-  cerv_3 = document.createTextNode(item.val().Original + "x" + " Original"),
-  cerv_4 = document.createTextNode(item.val().Burdweiser + "x" + " Burdweiser"),
-  cerv_5 = document.createTextNode(item.val().Eisenbahn + "x" + " Eisenbahn"),
-  cerv_6 = document.createTextNode(item.val().Heineken + "x" + " Heineken");
+var cerv_1 = document.createTextNode(item.val().Skol + "x" + " Skol"+" OBS: "+item.val().Text24),
+  cerv_2 = document.createTextNode(item.val().Itaipava + "x" + " Itaipava"+" OBS: "+item.val().Text25),
+  cerv_3 = document.createTextNode(item.val().Original + "x" + " Original"+" OBS: "+item.val().Text26),
+  cerv_4 = document.createTextNode(item.val().Burdweiser + "x" + " Burdweiser"+" OBS: "+item.val().Text27),
+  cerv_5 = document.createTextNode(item.val().Eisenbahn + "x" + " Eisenbahn"+" OBS: "+item.val().Text28),
+  cerv_6 = document.createTextNode(item.val().Heineken + "x" + " Heineken"+" OBS: "+item.val().Text29);
 
 var numberPedido = document.createTextNode(item.val().Numero_Pedido);
 
