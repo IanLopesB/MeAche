@@ -81,8 +81,10 @@ function mandardados1(){
 	document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 	document.getElementById('precoPetisco1').innerHTML = mult.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
-    } else {
-
+	if(value1<=0){
+		var tr = document.getElementById("tr1");
+		tr.parentNode.removeChild(tr); }
+		}else {
 if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
@@ -241,6 +243,9 @@ function mandardados2(){
 	document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 	document.getElementById('precoPetisco2').innerHTML = mult.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+   	if(value1<=0){
+		var tr = document.getElementById("tr1");
+		tr.parentNode.removeChild(tr); }
     } else {
 if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
@@ -400,6 +405,9 @@ function mandardados3(){
 document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 	document.getElementById('precoPetisco3').innerHTML = mult.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+	if(value1<=0){
+		var tr = document.getElementById("tr1");
+		tr.parentNode.removeChild(tr); }
 
     } else {
 if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
@@ -558,8 +566,12 @@ function mandardados4(){
 document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 	document.getElementById('precoPetisco4').innerHTML = mult.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+		if(value1<=0){
+		var tr = document.getElementById("tr1");
+		tr.parentNode.removeChild(tr); }
     } else {
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || value3>=1 || value
+	4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -715,8 +727,12 @@ function mandardados5(){
 document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 	document.getElementById('precoPetisco5').innerHTML = mult.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+		if(value1<=0){
+		var tr = document.getElementById("tr1");
+		tr.parentNode.removeChild(tr); }
     } else {
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || value3>=1 || value
+	4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -872,9 +888,12 @@ function mandardados6(){
 document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 	document.getElementById('precoPetisco6').innerHTML = mult.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
-
+	if(value1<=0){
+		var tr = document.getElementById("tr1");
+		tr.parentNode.removeChild(tr); }
     } else {
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || value
+	3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -1030,8 +1049,12 @@ function mandardados7(){
 document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 	document.getElementById('precoPetisco7').innerHTML = mult.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+		if(value1<=0){
+		var tr = document.getElementById("tr1");
+		tr.parentNode.removeChild(tr); }
     } else {
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || value3>=1 || value
+	4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -1186,8 +1209,12 @@ function mandardados8(){
 document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 	document.getElementById('precoPetisco8').innerHTML = mult.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+		if(value1<=0){
+		var tr = document.getElementById("tr1");
+		tr.parentNode.removeChild(tr); }
     } else {
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || value3>=1 || value
+	4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -1343,8 +1370,12 @@ function mandardados9(){
 document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 	document.getElementById('precoPetisco9').innerHTML = mult.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+		if(value1<=0){
+		var tr = document.getElementById("tr1");
+		tr.parentNode.removeChild(tr); }
     } else {
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || value3>=1 || value
+	4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -1498,8 +1529,12 @@ function mandardados10(){
 document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 	document.getElementById('precoPetisco10').innerHTML = mult.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+		if(value1<=0){
+		var tr = document.getElementById("tr1");
+		tr.parentNode.removeChild(tr); }
     } else {
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || value3>=1 || value
+	4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -1654,9 +1689,13 @@ function mandardados11(){
 document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 	document.getElementById('precoPetisco11').innerHTML = mult.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+		if(value1<=0){
+		var tr = document.getElementById("tr1");
+		tr.parentNode.removeChild(tr); }
 
     } else {
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || value
+	3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -1811,9 +1850,12 @@ function mandardados12(){
 document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 	document.getElementById('precoPetisco12').innerHTML = mult.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
-
+	if(value1<=0){
+		var tr = document.getElementById("tr1");
+		tr.parentNode.removeChild(tr); }
     } else {
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || value
+	3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -1970,7 +2012,10 @@ document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 	document.getElementById('precoPetisco13').innerHTML = mult.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
 
-    } else {
+   	if(value1<=0){
+		var tr = document.getElementById("tr1");
+		tr.parentNode.removeChild(tr); }
+	} else {
 
 if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
@@ -2126,9 +2171,13 @@ function mandardados14(){
 	var mult = (preco14 * value14);
 document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 	document.getElementById('precoPetisco14').innerHTML = mult.toFixed(2);
-	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+		document.getElementById('totalValue').innerHTML = result.toFixed(2);
+		if(value1<=0){
+		var tr = document.getElementById("tr1");
+		tr.parentNode.removeChild(tr); }
     } else {
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || value3>=1 || value
+	4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -2283,8 +2332,12 @@ function mandardados15(){
 document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 	document.getElementById('precoPetisco15').innerHTML = mult.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+		if(value1<=0){
+		var tr = document.getElementById("tr1");
+		tr.parentNode.removeChild(tr);}
     } else {
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || value3>=1 || value
+	4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -2440,7 +2493,10 @@ document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 	document.getElementById('precoPetisco16').innerHTML = mult.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
     } else {
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+	if(value1<=0){
+		var tr = document.getElementById("tr1");
+		tr.parentNode.removeChild(tr); }if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 ||
+ value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -2595,9 +2651,12 @@ function mandardados17(){
 document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 	document.getElementById('precoPetisco17').innerHTML = mult.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
-
+	if(value1<=0){
+		var tr = document.getElementById("tr1");
+		tr.parentNode.removeChild(tr); }
     } else {
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || value
+	3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -2753,9 +2812,12 @@ document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 	document.getElementById('precoPetisco18').innerHTML = mult.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
 
-
+	if(value1<=0){
+		var tr = document.getElementById("tr1");
+		tr.parentNode.removeChild(tr); }
     } else {
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || valu
+	e3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -2911,7 +2973,10 @@ function mandardados19(){
 document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 	document.getElementById('precoPetisco19').innerHTML = mult.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
-    } else {
+    	if(value1<=0){
+		var tr = document.getElementById("tr1");
+		tr.parentNode.removeChild(tr); }}
+     else {
 if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
@@ -3068,9 +3133,12 @@ function mandardados20(){
 	var mult = (preco20 * value20);
 document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 	document.getElementById('precoPetisco20').innerHTML = mult.toFixed(2);
-	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+		if(value1<=0){
+		var tr = document.getElementById("tr1");
+		tr.parentNode.removeChild(tr); }document.getElementById('totalValue').innerHTML = result.toFixed(2);
     } else {
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || value3>=1 || value
+	4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -3224,9 +3292,12 @@ function mandardados21(){
 	var mult = (preco21 * value21);
 document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 	document.getElementById('precoPetisco21').innerHTML = mult.toFixed(2);
-	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+		if(value1<=0){
+		var tr = document.getElementById("tr1");
+		tr.parentNode.removeChild(tr); }document.getElementById('totalValue').innerHTML = result.toFixed(2);
     } else {
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || value3>=1 || value
+	4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -3380,9 +3451,12 @@ function mandardados22(){
 	var mult = (preco22 * value22);
 document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 	document.getElementById('precoPetisco22').innerHTML = mult.toFixed(2);
-	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+		if(value1<=0){
+		var tr = document.getElementById("tr1");
+		tr.parentNode.removeChild(tr); }document.getElementById('totalValue').innerHTML = result.toFixed(2);
     } else {
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || value3>=1 || value
+	4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -3537,9 +3611,12 @@ function mandardados23(){
 	var mult = (preco23 * value23);
 document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 	document.getElementById('precoPetisco23').innerHTML = mult.toFixed(2);
-	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+		if(value1<=0){
+		var tr = document.getElementById("tr1");
+		tr.parentNode.removeChild(tr); }document.getElementById('totalValue').innerHTML = result.toFixed(2);
     } else {
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || value3>=1 || value
+	4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -3693,9 +3770,12 @@ function mandardados24(){
 	var mult = (preco24 * value24);
 document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 	document.getElementById('precoPetisco24').innerHTML = mult.toFixed(2);
-	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+		if(value1<=0){
+		var tr = document.getElementById("tr1");
+		tr.parentNode.removeChild(tr); }document.getElementById('totalValue').innerHTML = result.toFixed(2);
     } else {
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || value3>=1 || value
+	4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -3851,9 +3931,12 @@ function mandardados25(){
 document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 	document.getElementById('precoPetisco25').innerHTML = mult.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
-
+	if(value1<=0){
+		var tr = document.getElementById("tr1");
+		tr.parentNode.removeChild(tr); }
     } else {
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || value
+	3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -4008,9 +4091,12 @@ function mandardados26(){
 document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 	document.getElementById('precoPetisco26').innerHTML = mult.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
-
+	if(value1<=0){
+		var tr = document.getElementById("tr1");
+		tr.parentNode.removeChild(tr); }
     } else {
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || value
+	3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -4165,9 +4251,12 @@ function mandardados27(){
 document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 	document.getElementById('precoPetisco27').innerHTML = mult.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
-
+	if(value1<=0){
+		var tr = document.getElementById("tr1");
+		tr.parentNode.removeChild(tr); }
     } else {
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || value
+	3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -4323,9 +4412,12 @@ function mandardados28(){
 document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 	document.getElementById('precoPetisco28').innerHTML = mult.toFixed(2);
 	document.getElementById('totalValue').innerHTML = result.toFixed(2);
-
+	if(value1<=0){
+		var tr = document.getElementById("tr1");
+		tr.parentNode.removeChild(tr); }
     } else {
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || value
+	3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -4479,9 +4571,12 @@ function mandardados29(){
 	var mult = (preco29 * value29);
 document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 	document.getElementById('precoPetisco29').innerHTML = mult.toFixed(2);
-	document.getElementById('totalValue').innerHTML = result.toFixed(2);
+		if(value1<=0){
+		var tr = document.getElementById("tr1");
+		tr.parentNode.removeChild(tr); }document.getElementById('totalValue').innerHTML = result.toFixed(2);
     } else {
-if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || value3>=1 || value
+	4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
