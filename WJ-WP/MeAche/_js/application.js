@@ -42,7 +42,7 @@ var numPedido = document.getElementById('novoNumero');
 function sendPedido() {
 var pedido = {
   //Textarea
-  Text1: document.getElementById('escrevaOBS1').value,
+  Text1: document.getElementById('escrevaOBS').value,
   Text2: document.getElementById('escrevaOBS2').value,
   Text3: document.getElementById('escrevaOBS3').value,
   Text4: document.getElementById('escrevaOBS4').value,
@@ -71,7 +71,7 @@ var pedido = {
   Text27: document.getElementById('escrevaOBS27').value,
   Text28: document.getElementById('escrevaOBS28').value,
   Text29: document.getElementById('escrevaOBS29').value,
-  
+
 
 
   Numero_Pedido: numPedido.innerHTML,
