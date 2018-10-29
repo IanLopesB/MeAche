@@ -33,7 +33,7 @@
 </head>
 
 <body>
-  
+
 <br>
 
 <!-- Logo do ME Ache  -->
@@ -50,7 +50,7 @@
     <div class="div-categoria w3-col tablink w3-padding-large w3-text-white w3-round">
       <b class=" font-categoria">Petiscos </b>
       <i class="fas fa-angle-down w3-right" id="arrowDown1" style="display: block;"></i>
-      <i class="fas fa-angle-up w3-right" id="arrowUp1"></i>
+      <i class="fas fa-angle-up w3-right" id="arrowUp1" style="display: none;"></i>
     </div>
   </a>
  <div id="Petiscos" class="menu">
@@ -324,20 +324,20 @@
 
 <!-- Span do Pedido Feito -->
 
-  <div id="pedido-enviado" class="fundo-span-3 fadeIn animate">
+  <div id="pedido-enviado" class="fundo-span-3 fadeIn animate" style="display: none;">
    <div class="fundo-span-conteudo-3 ">
 
     <h4 class="w3-center"> Pedido Enviado </h4>
 
 
-    <h4 class="w3-center" id="numero-pedido"><b>Nº do Pedido: <div id="novoNumero"></div> </b></h4>
+    <h4 class="w3-center" id="numero-pedido"><b>Nº do Pedido: 1234 </b></h4>
     <h4 class="w3-container w3-center ">Apresente esse número ao efetuar o pagamento</h4>
     <div id="pedir" onclick="fecharPedEnv();" class="w3-center">OK</div>
   </div>
 </div>
 
 <!-- Span do "Nada Selecionado" -->
-<div id="id03" class="fundo-span-3 fadeIn animate">
+<div id="id03" class="fundo-span-3 fadeIn animate" style="display: none;">
    <div class="fundo-span-conteudo-3 ">
 
 
@@ -350,8 +350,9 @@
 
 <!-- Span da Descrição do Prato 1-->
 
- <div id="prato1" class=" fundo-span-2 " value="0" onclick="pedidosEspeciaisAction();">
-<div class="w3-container"> <span onclick="document.getElementById('prato1').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span> </div>
+ <div id="prato1" style="display: none;" class=" fundo-span-2 " value="0" onclick="pedidosEspeciaisAction();">
+
+                <div class="w3-container"> <span onclick="document.getElementById('prato1').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span> </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="asinha"><li>Asinha de Frango</li></label></b></h3>
                 </div>
@@ -370,7 +371,7 @@
                       <h3 class="fa fa-plus" onclick="pedidosEspeciais()"> Observações</h3>
                     </div>
                     <br>
-                    <div id="pedido-adicionais" class="w3-container">
+                    <div id="pedido-adicionais" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS" placeholder="Escreva suas observações"></textarea>
                     </div>
                     </div>
@@ -405,7 +406,7 @@
         </div>
  <!-- Span da Descrição do Prato 2 -->
 
- <div id="prato2" class="fundo-span-2" onclick="pedidosEspeciaisAction2();">
+ <div id="prato2" style="display: none;" class="fundo-span-2" onclick="pedidosEspeciaisAction2();">
      <div class="w3-container"> <span onclick="document.getElementById('prato2').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span></div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="camarao"><li>Camarão Alho e Óleo</li></label></b></h3>
@@ -426,7 +427,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais2" class="w3-container">
+                    <div id="pedido-adicionais2" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS2" placeholder="Escreva suas observações"></textarea>
                     </div>
                     </div>
@@ -462,7 +463,7 @@
 
 <!-- Span da Descrição do Prato 3 -->
 
-        <div id="prato3" class="fundo-span-2" onclick="pedidosEspeciaisAction3();">
+        <div id="prato3" style="display: none;" class="fundo-span-2" onclick="pedidosEspeciaisAction3();">
             <div class="w3-container"> <span onclick="document.getElementById('prato3').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span> </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="calabresa"><li>Calabresa Com Fritas</li></label></b></h3>
@@ -483,7 +484,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais3" class="w3-container">
+                    <div id="pedido-adicionais3" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS3" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -520,7 +521,7 @@
 
    <!-- Span da Descrição do Prato 4 -->
 
-        <div id="prato4" class="fundo-span-2" onclick="pedidosEspeciaisAction4();">
+        <div id="prato4" style="display: none;" class="fundo-span-2" onclick="pedidosEspeciaisAction4();">
              <div class="w3-container"> <span onclick="document.getElementById('prato4').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span> </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="carneSol"><li>Carne de Sol C/ Macaxeira</li></label></b></h3>
@@ -541,7 +542,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais4" class="w3-container">
+                    <div id="pedido-adicionais4" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS4" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -576,7 +577,7 @@
 
 <!-- Span da Descrição do Prato 5 -->
 
-        <div id="prato5" class="fundo-span-2" onclick="pedidosEspeciaisAction5();">
+        <div id="prato5" style="display: none;" class="fundo-span-2" onclick="pedidosEspeciaisAction5();">
              <div class="w3-container"> <span onclick="document.getElementById('prato5').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span>  </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="torresmo"><li>Torresmo</li></label></b></h3>
@@ -598,7 +599,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais5" class="w3-container">
+                    <div id="pedido-adicionais5" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS5" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -633,7 +634,7 @@
 
 <!-- Span da Descrição do Prato 6 -->
 
-        <div id="prato6" class="fundo-span-2" onclick="pedidosEspeciaisAction6();">
+        <div id="prato6" style="display: none;" class="fundo-span-2" onclick="pedidosEspeciaisAction6();">
              <div class="w3-container"> <span onclick="document.getElementById('prato6').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span> </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="batata"><li>Batata Frita</li></label></b></h3>
@@ -654,7 +655,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais6" class="w3-container">
+                    <div id="pedido-adicionais6" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS6" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -688,7 +689,7 @@
         </div>
     <!-- Span da Descrição do Prato 7 -->
 
-    <div id="prato7" class="fundo-span-2" onclick="pedidosEspeciaisAction7();">
+    <div id="prato7" style="display: none;" class="fundo-span-2" onclick="pedidosEspeciaisAction7();">
          <div class="w3-container"> <span onclick="document.getElementById('prato7').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span>  </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="macaxeira"><li>Macaxeira</li></label></b></h3>
@@ -708,7 +709,7 @@
                       <h3 class="fa fa-plus" onclick="pedidosEspeciais7()"> Observações</h3>
                     </div>
                 <br>
-                    <div id="pedido-adicionais7" class="w3-container">
+                    <div id="pedido-adicionais7" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS7" placeholder="Escreva suas observações"></textarea>
                     </div>
                     </div>
@@ -741,7 +742,7 @@
         </div>
     <!-- Span da Descrição do Prato 8 -->
 
-    <div id="prato8" class="fundo-span-2" onclick="pedidosEspeciaisAction8();">
+    <div id="prato8" style="display: none;" class="fundo-span-2" onclick="pedidosEspeciaisAction8();">
          <div class="w3-container"> <span onclick="document.getElementById('prato8').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span>  </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="baiao"><li>Baião de Dois</li></label></b></h3>
@@ -762,7 +763,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais8" class="w3-container">
+                    <div id="pedido-adicionais8" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS8" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -796,7 +797,7 @@
         </div>
 
             <!-- Span da Descrição do Prato 9-->
-    <div id="prato9" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction9();">
+    <div id="prato9" style="display: none;" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction9();">
          <div class="w3-container"> <span onclick="document.getElementById('prato9').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span>  </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="boi"><li>Boi</li></label></b></h3>
@@ -817,7 +818,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais9" class="w3-container">
+                    <div id="pedido-adicionais9" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS9" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -851,7 +852,7 @@
         </div>
     <!-- Span da Descrição do Prato 10-->
 
-    <div id="prato10" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction10();">
+    <div id="prato10" style="display: none;" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction10();">
          <div class="w3-container"> <span onclick="document.getElementById('prato10').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span>  </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="franbacon"><li>Franbacon</li></label></b></h3>
@@ -872,7 +873,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais10" class="w3-container">
+                    <div id="pedido-adicionais10" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS10" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -906,7 +907,7 @@
     </div>
     <!-- Span da Descrição do Prato 11-->
 
-    <div id="prato11" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction11();">
+    <div id="prato11" style="display: none;" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction11();">
          <div class="w3-container"> <span onclick="document.getElementById('prato11').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span> </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="frango"><li>Frango</li></label></b></h3>
@@ -927,7 +928,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais11" class="w3-container">
+                    <div id="pedido-adicionais11" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS11" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -962,7 +963,7 @@
 
 <!-- Span da Descrição do Prato 12-->
 
-    <div id="prato12" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction12();">
+    <div id="prato12" style="display: none;" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction12();">
          <div class="w3-container"> <span onclick="document.getElementById('prato12').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span>  </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="coracaoDeFrango"><li>Coração de Frango</li></label></b></h3>
@@ -983,7 +984,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais12" class="w3-container">
+                    <div id="pedido-adicionais12" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS12" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -1019,7 +1020,7 @@
 
     <!-- Span da Descrição do Prato 13-->
 
-    <div id="prato13" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction13();">
+    <div id="prato13" style="display: none;" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction13();">
          <div class="w3-container"> <span onclick="document.getElementById('prato13').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span>  </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="porco"><li>Porco</li></label></b></h3>
@@ -1040,7 +1041,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais13" class="w3-container">
+                    <div id="pedido-adicionais13" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS13" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -1074,7 +1075,7 @@
         </div>
     <!-- Span da Descrição do Prato 14-->
 
-    <div id="prato14" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction14();">
+    <div id="prato14" style="display: none;" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction14();">
          <div class="w3-container"> <span onclick="document.getElementById('prato14').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span> </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="caja"><li>Cajá</li></label></b></h3>
@@ -1095,7 +1096,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais14" class="w3-container">
+                    <div id="pedido-adicionais14" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS14" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -1129,7 +1130,7 @@
         </div>
     <!-- Span da Descrição do Prato 15-->
 
-    <div id="prato15" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction15();">
+    <div id="prato15" style="display: none;" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction15();">
          <div class="w3-container"> <span onclick="document.getElementById('prato15').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span>  </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="laranja"><li>Laranja</li></label></b></h3>
@@ -1150,7 +1151,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais15" class="w3-container">
+                    <div id="pedido-adicionais15" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS15" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -1184,7 +1185,7 @@
         </div>
     <!-- Span da Descrição do Prato 16-->
 
-    <div id="prato16" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction16();">
+    <div id="prato16" style="display: none;" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction16();">
          <div class="w3-container"> <span onclick="document.getElementById('prato16').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span>  </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="maracuja"><li>Maracujá</li></label></b></h3>
@@ -1205,7 +1206,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais16" class="w3-container">
+                    <div id="pedido-adicionais16" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS16" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -1239,7 +1240,7 @@
         </div>
     <!-- Span da Descrição do Prato 17-->
 
-    <div id="prato17" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction17();">
+    <div id="prato17" style="display: none;" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction17();">
          <div class="w3-container"> <span onclick="document.getElementById('prato17').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span>  </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="acerola"><li>Acerola</li></label></b></h3>
@@ -1260,7 +1261,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais17" class="w3-container">
+                    <div id="pedido-adicionais17" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS17" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -1294,7 +1295,7 @@
         </div>
     <!-- Span da Descrição do Prato 18-->
 
-    <div id="prato18" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction18();">
+    <div id="prato18" style="display: none;" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction18();">
          <div class="w3-container"> <span onclick="document.getElementById('prato18').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span>  </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="goiaba"><li>Goiaba</li></label></b></h3>
@@ -1315,7 +1316,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais18" class="w3-container">
+                    <div id="pedido-adicionais18" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS18" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -1349,7 +1350,7 @@
         </div>
     <!-- Span da Descrição do Prato 19-->
 
-    <div id="prato19" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction19();">
+    <div id="prato19" style="display: none;" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction19();">
         <div class="w3-container"> <span onclick="document.getElementById('prato19').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span>  </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="jarra"><li>Jarra de Suco</li></label></b></h3>
@@ -1370,7 +1371,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais19" class="w3-container">
+                    <div id="pedido-adicionais19" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS19" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -1404,7 +1405,7 @@
         </div>
     <!-- Span da Descrição do Prato 20-->
 
-    <div id="prato20" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction20();">
+    <div id="prato20" style="display: none;" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction20();">
          <div class="w3-container"> <span onclick="document.getElementById('prato20').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span> </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="cocaCola"><li>Coca-Cola</li></label></b></h3>
@@ -1425,7 +1426,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais20" class="w3-container">
+                    <div id="pedido-adicionais20" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS20" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -1459,7 +1460,7 @@
         </div>
     <!-- Span da Descrição do Prato 21-->
 
-    <div id="prato21" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction21();">
+    <div id="prato21" style="display: none;" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction21();">
          <div class="w3-container"> <span onclick="document.getElementById('prato21').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span>  </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="guarana"><li>Guaraná</li></label></b></h3>
@@ -1480,7 +1481,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais21" class="w3-container">
+                    <div id="pedido-adicionais21" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS21" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -1514,7 +1515,7 @@
         </div>
 
     <!-- Span da Descrição do Prato 22-->
-    <div id="prato22" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction22();">
+    <div id="prato22" style="display: none;" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction22();">
          <div class="w3-container"> <span onclick="document.getElementById('prato22').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span> </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="fanta"><li>Fanta</li></label></b></h3>
@@ -1535,7 +1536,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais22" class="w3-container">
+                    <div id="pedido-adicionais22" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS22" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -1569,7 +1570,7 @@
         </div>
     <!-- Span da Descrição do Prato 23-->
 
-    <div id="prato23" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction23();">
+    <div id="prato23" style="display: none;" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction23();">
         <div class="w3-container"> <span onclick="document.getElementById('prato23').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span>  </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="aguaMineral"><li>Água Mineral</li></label></b></h3>
@@ -1590,7 +1591,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais23" class="w3-container">
+                    <div id="pedido-adicionais23" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS23" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -1624,7 +1625,7 @@
         </div>
     <!-- Span da Descrição do Prato 24-->
 
-    <div id="prato24" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction24();">
+    <div id="prato24" style="display: none;" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction24();">
          <div class="w3-container"> <span onclick="document.getElementById('prato24').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span> </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="skol"><li>Skol</li></label></b></h3>
@@ -1645,7 +1646,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais24" class="w3-container">
+                    <div id="pedido-adicionais24" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS24" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -1679,7 +1680,7 @@
         </div>
     <!-- Span da Descrição do Prato 25-->
 
-    <div id="prato25" class="fundo-span-2" value="0">
+    <div id="prato25" style="display: none;" class="fundo-span-2" value="0">
          <div class="w3-container"> <span onclick="document.getElementById('prato25').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span> </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="itaipava"><li>Itaipava</li></label></b></h3>
@@ -1700,7 +1701,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais25" class="w3-container">
+                    <div id="pedido-adicionais25" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS25" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -1734,7 +1735,7 @@
         </div>
     <!-- Span da Descrição do Prato 26-->
 
-    <div id="prato26" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction26();">
+    <div id="prato26" style="display: none;" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction26();">
          <div class="w3-container"> <span onclick="document.getElementById('prato26').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span> </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="original"><li>Original</li></label></b></h3>
@@ -1755,7 +1756,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais26" class="w3-container">
+                    <div id="pedido-adicionais26" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS26" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -1789,7 +1790,7 @@
         </div>
     <!-- Span da Descrição do Prato 27-->
 
-    <div id="prato27" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction27();">
+    <div id="prato27" style="display: none;" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction27();">
          <div class="w3-container"> <span onclick="document.getElementById('prato27').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span> </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="burdweiser"><li>Burdweiser</li></label></b></h3>
@@ -1810,7 +1811,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais27" class="w3-container">
+                    <div id="pedido-adicionais27" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS27" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -1844,7 +1845,7 @@
     </div>
     <!-- Span da Descrição do Prato 28-->
 
-    <div id="prato28" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction28();">
+    <div id="prato28" style="display: none;" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction28();">
          <div class="w3-container"> <span onclick="document.getElementById('prato28').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span> </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="eisenbahn"><li>Eisenbahn</li></label></b></h3>
@@ -1865,8 +1866,8 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais28" class="w3-container">
-                      <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS" placeholder="Escreva suas observações"></textarea>
+                    <div id="pedido-adicionais28" class="w3-container" style="display: none;">
+                      <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS28" placeholder="Escreva suas observações"></textarea>
 
                     </div>
                     </div>
@@ -1899,7 +1900,7 @@
         </div>
     <!-- Span da Descrição do Prato 29-->
 
-    <div id="prato29" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction29();">
+    <div id="prato29" style="display: none;" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction29();">
          <div class="w3-container"> <span onclick="document.getElementById('prato29').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span>  </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
                   <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="heineken"><li>Heineken</li></label></b></h3>
@@ -1920,7 +1921,7 @@
                     </div>
                     <br>
 
-                    <div id="pedido-adicionais29" class="w3-container">
+                    <div id="pedido-adicionais29" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS29" placeholder="Escreva suas observações"></textarea>
 
                     </div>
@@ -1970,7 +1971,6 @@
 <script type="text/javascript" src="_js/mostrar.prato.functions.js"></script>
 <script type="text/javascript" src="_js/createTablePedir.js"></script>
 <script type="text/javascript" src="_js/pedidosEspeciais.js"></script>
-<script type="text/javascript" src="_js/random.number.js"></script>
 
 </html>
 
