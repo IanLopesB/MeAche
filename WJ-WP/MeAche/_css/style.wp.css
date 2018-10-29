@@ -267,6 +267,10 @@ margin: 0;
   line-height: 50px;
 }
 
+#novoNumero {
+height: 100px
+}
+
 .close2:hover,
 .close2:focus {
     color: red;

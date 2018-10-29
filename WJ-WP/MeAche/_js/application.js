@@ -41,8 +41,39 @@ var numPedido = document.getElementById('novoNumero');
 
 function sendPedido() {
 var pedido = {
+  //Textarea
+  Text1: document.getElementById('escrevaOBS').value,
+  Text2: document.getElementById('escrevaOBS2').value,
+  Text3: document.getElementById('escrevaOBS3').value,
+  Text4: document.getElementById('escrevaOBS4').value,
+  Text5: document.getElementById('escrevaOBS5').value,
+  Text6: document.getElementById('escrevaOBS6').value,
+  Text7: document.getElementById('escrevaOBS7').value,
+  Text8: document.getElementById('escrevaOBS8').value,
+  Text9: document.getElementById('escrevaOBS9').value,
+  Text10: document.getElementById('escrevaOBS10').value,
+  Text11: document.getElementById('escrevaOBS11').value,
+  Text12: document.getElementById('escrevaOBS12').value,
+  Text13: document.getElementById('escrevaOBS13').value,
+  Text14: document.getElementById('escrevaOBS14').value,
+  Text15: document.getElementById('escrevaOBS15').value,
+  Text16: document.getElementById('escrevaOBS16').value,
+  Text17: document.getElementById('escrevaOBS17').value,
+  Text18: document.getElementById('escrevaOBS18').value,
+  Text19: document.getElementById('escrevaOBS19').value,
+  Text20: document.getElementById('escrevaOBS20').value,
+  Text21: document.getElementById('escrevaOBS21').value,
+  Text22: document.getElementById('escrevaOBS22').value,
+  Text23: document.getElementById('escrevaOBS23').value,
+  Text24: document.getElementById('escrevaOBS24').value,
+  Text25: document.getElementById('escrevaOBS25').value,
+  Text26: document.getElementById('escrevaOBS26').value,
+  Text27: document.getElementById('escrevaOBS27').value,
+  Text28: document.getElementById('escrevaOBS28').value,
+  Text29: document.getElementById('escrevaOBS29').value,
 
-  Test1: document.getElementById('escrevaOBS').value,
+
+
   Numero_Pedido: numPedido.innerHTML,
 
   // Petiscos
