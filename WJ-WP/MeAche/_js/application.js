@@ -38,12 +38,11 @@ var skol = document.getElementById('quantPet24'),
   heineken = document.getElementById('quantPet29');
 
 var numPedido = document.getElementById('novoNumero');
-var  test1= document.getElementById('escrevaOBS');
 
 function sendPedido() {
 var pedido = {
 
-  Test1: escrevaOBS.innerHTML,
+  Test1: document.getElementById('escrevaOBS').value,
   Numero_Pedido: numPedido.innerHTML,
 
   // Petiscos
