@@ -730,8 +730,7 @@ document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 		var tr = document.getElementById("tr5");
 		tr.parentNode.removeChild(tr); }
     } else {
-if (value1>=1 || value2>=1 || value3>=1 || value
-	4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -891,8 +890,7 @@ document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 		var tr = document.getElementById("tr6");
 		tr.parentNode.removeChild(tr); }
     } else {
-if (value1>=1 || value2>=1 || value
-	3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -1052,8 +1050,7 @@ document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 		var tr = document.getElementById("tr7");
 		tr.parentNode.removeChild(tr); }
     } else {
-if (value1>=1 || value2>=1 || value3>=1 || value
-	4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -1212,8 +1209,7 @@ document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 		var tr = document.getElementById("tr8");
 		tr.parentNode.removeChild(tr); }
     } else {
-if (value1>=1 || value2>=1 || value3>=1 || value
-	4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -1373,8 +1369,7 @@ document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 		var tr = document.getElementById("tr9");
 		tr.parentNode.removeChild(tr); }
     } else {
-if (value1>=1 || value2>=1 || value3>=1 || value
-	4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -1532,8 +1527,7 @@ document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 		var tr = document.getElementById("tr10");
 		tr.parentNode.removeChild(tr); }
     } else {
-if (value1>=1 || value2>=1 || value3>=1 || value
-	4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -1693,8 +1687,7 @@ document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 		tr.parentNode.removeChild(tr); }
 
     } else {
-if (value1>=1 || value2>=1 || value
-	3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -1853,8 +1846,7 @@ document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 		var tr = document.getElementById("tr12");
 		tr.parentNode.removeChild(tr); }
     } else {
-if (value1>=1 || value2>=1 || value
-	3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -2175,8 +2167,7 @@ document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 		var tr = document.getElementById("tr14");
 		tr.parentNode.removeChild(tr); }
     } else {
-if (value1>=1 || value2>=1 || value3>=1 || value
-	4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -2335,8 +2326,7 @@ document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 		var tr = document.getElementById("tr1");
 		tr.parentNode.removeChild(tr);}
     } else {
-if (value1>=1 || value2>=1 || value3>=1 || value
-	4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -2655,8 +2645,7 @@ document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 		var tr = document.getElementById("tr17");
 		tr.parentNode.removeChild(tr); }
     } else {
-if (value1>=1 || value2>=1 || value
-	3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -2816,8 +2805,7 @@ document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 		var tr = document.getElementById("tr18");
 		tr.parentNode.removeChild(tr); }
     } else {
-if (value1>=1 || value2>=1 || valu
-	e3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -3138,8 +3126,7 @@ document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 		var tr = document.getElementById("tr20");
 		tr.parentNode.removeChild(tr); }
     } else {
-if (value1>=1 || value2>=1 || value3>=1 || value
-	4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -3298,8 +3285,7 @@ document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 		var tr = document.getElementById("tr21");
 		tr.parentNode.removeChild(tr);
     } else {
-if (value1>=1 || value2>=1 || value3>=1 || value
-	4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -3458,8 +3444,7 @@ document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 		var tr = document.getElementById("tr22");
 		tr.parentNode.removeChild(tr); }
     } else {
-if (value1>=1 || value2>=1 || value3>=1 || value
-	4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -3619,8 +3604,7 @@ document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 		var tr = document.getElementById("tr23");
 		tr.parentNode.removeChild(tr);
     } else {
-if (value1>=1 || value2>=1 || value3>=1 || value
-	4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -3779,8 +3763,7 @@ document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 		var tr = document.getElementById("tr24");
 		tr.parentNode.removeChild(tr); }
     } else {
-if (value1>=1 || value2>=1 || value3>=1 || value
-	4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -3940,8 +3923,7 @@ document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 		var tr = document.getElementById("tr25");
 		tr.parentNode.removeChild(tr); }
     } else {
-if (value1>=1 || value2>=1 || value
-	3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -4100,8 +4082,7 @@ document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 		var tr = document.getElementById("tr26");
 		tr.parentNode.removeChild(tr); }
     } else {
-if (value1>=1 || value2>=1 || value
-	3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -4260,8 +4241,7 @@ document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 		var tr = document.getElementById("tr27");
 		tr.parentNode.removeChild(tr); }
     } else {
-if (value1>=1 || value2>=1 || value
-	3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -4421,8 +4401,7 @@ document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 		var tr = document.getElementById("tr28");
 		tr.parentNode.removeChild(tr); }
     } else {
-if (value1>=1 || value2>=1 || value
-	3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
@@ -4581,8 +4560,7 @@ document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 		var tr = document.getElementById("tr29");
 		tr.parentNode.removeChild(tr); }
     } else {
-if (value1>=1 || value2>=1 || value3>=1 || value
-	4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
+if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
 	value21>=1 || value22>=1 || value23>=1 || value24>=1 || value25>=1 || value26>=1 || value27>=1 || value28>=1 || value29>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
