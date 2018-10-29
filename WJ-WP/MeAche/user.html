@@ -33,7 +33,7 @@
 </head>
 
 <body>
-
+  
 <br>
 
 <!-- Logo do ME Ache  -->
@@ -54,7 +54,7 @@
     </div>
   </a>
  <div id="Petiscos" class="menu">
-   <ul  id="collapsePet" class="collapse in hide w3-text-white">
+   <ul  id="collapsePet" class="collapse in hide w3-text-white fadeIn animate">
       <hr>
       <li class="pratos w3-medium" onclick="mostrarPrato1()">
         <div class="w3-left w3-large">Asinha de <br>Frango</div>
@@ -106,7 +106,7 @@
     </div>
   </a>
   <div id="Espetos" class="menu">
-    <ul id="collapseEsp" class="collapse in hide w3-text-white">
+    <ul id="collapseEsp" class="collapse in hide w3-text-white fadeIn animate">
 <hr>
       <li class="pratos w3-medium" onclick="mostrarPrato9()">
         <span class="w3-left w3-large">Boi</span>
@@ -144,7 +144,7 @@
     </div>
   </a>
   <div id="Sucos" class="menu">
-    <ul  id="collapseSuco" class="collapse in hide w3-text-white">
+    <ul  id="collapseSuco" class="collapse in hide w3-text-white fadeIn animate">
 <hr>
       <li class="pratos w3-medium" onclick="mostrarPrato14()">
         <span class="w3-left w3-large">Cajá</span>
@@ -186,7 +186,7 @@
     </div>
   </a>
   <div id="Refrigerantes" class="menu">
-    <ul  id="collapseRefri" class="collapse in hide w3-text-white">
+    <ul  id="collapseRefri" class="collapse in hide w3-text-white fadeIn animate">
 <hr>
       <li class="pratos w3-medium" onclick="mostrarPrato20()">
         <span class="w3-left w3-large">Coca-Cola</span>
@@ -218,7 +218,7 @@
     </div>
   </a>
   <div id="Cervejas" class="menu">
-    <ul  id="collapseCerveja" class="collapse in hide w3-text-white">
+    <ul  id="collapseCerveja" class="collapse in hide w3-text-white fadeIn animate">
 <hr>
       <li class="pratos w3-medium" onclick="mostrarPrato24()">
         <span class="w3-left w3-large">Skol</span>
@@ -284,7 +284,7 @@
   </div>
   <div class="infos-pedido">
     <div id="meu-pedido" class="w3-container w3-dark-grey">
-      <h3 class="w3-center w3-text-white fadeInDown animate nome-meu-pedido"> <b>Meu pedido:</b> </h3>
+      <h3 class="w3-center w3-text-white fadeInDown animate"> <b>Meu pedido:</b> </h3>
     </div>
     <div id="div-tabela" class=" w3-text-white fadeIn animate" >
       <table id="tbCreate" class="table">
@@ -324,15 +324,15 @@
 
 <!-- Span do Pedido Feito -->
 
-  <div id="id02" class="fundo-span-3 fadeIn animate" style="display: none;">
+  <div id="pedido-enviado" class="fundo-span-3 fadeIn animate" style="display: none;">
    <div class="fundo-span-conteudo-3 ">
 
     <h4 class="w3-center"> Pedido Enviado </h4>
 
 
-    <h4 class="w3-center" id="numero-pedido"><b>Nº do Pedido: 1234 </b></h4>
+    <h4 class="w3-center" id="numero-pedido"><b>Nº do Pedido: <div id="novoNumero"></div> </b></h4>
     <h4 class="w3-container w3-center ">Apresente esse número ao efetuar o pagamento</h4>
-    <div id="pedir" onclick="fecharid02();" class="w3-center">OK</div>
+    <div id="pedir" onclick="fecharPedEnv();" class="w3-center">OK</div>
   </div>
 </div>
 
@@ -704,15 +704,13 @@
                         ..............................................
                       </h5>
                     </div>
-                    <hr>
+                <hr>
                     <div  class="w3-container  pedidos-especiais" onclick="">
                       <h3 class="fa fa-plus" onclick="pedidosEspeciais7()"> Observações</h3>
                     </div>
-                    <br>
-
+                <br>
                     <div id="pedido-adicionais7" class="w3-container" style="display: none;">
                       <textarea class="form-control z-depth-1" rows="4"  id="escrevaOBS7" placeholder="Escreva suas observações"></textarea>
-
                     </div>
                     </div>
                 <br>
@@ -800,9 +798,9 @@
 
             <!-- Span da Descrição do Prato 9-->
     <div id="prato9" style="display: none;" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction9();">
-         <div class="w3-container"> <span onclick="document.getElementById('prato9').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate"></i></span>  </div>
+         <div class="w3-container"> <span onclick="document.getElementById('prato9').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span>  </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center fadeInDown animate"><b><label id="boi"><li>Boi</li></label></b></h3>
+                  <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="boi"><li>Boi</li></label></b></h3>
                 </div>
                 <br>
                 <br>
@@ -855,9 +853,9 @@
     <!-- Span da Descrição do Prato 10-->
 
     <div id="prato10" style="display: none;" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction10();">
-         <div class="w3-container"> <span onclick="document.getElementById('prato10').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate"></i></span>  </div>
+         <div class="w3-container"> <span onclick="document.getElementById('prato10').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span>  </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center fadeInDown animate"><b><label id="franbacon"><li>Franbacon</li></label></b></h3>
+                  <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="franbacon"><li>Franbacon</li></label></b></h3>
                 </div>
                 <br>
                 <br>
@@ -910,9 +908,9 @@
     <!-- Span da Descrição do Prato 11-->
 
     <div id="prato11" style="display: none;" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction11();">
-         <div class="w3-container"> <span onclick="document.getElementById('prato11').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate"></i></span> </div>
+         <div class="w3-container"> <span onclick="document.getElementById('prato11').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span> </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center fadeInDown animate"><b><label id="frango"><li>Frango</li></label></b></h3>
+                  <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="frango"><li>Frango</li></label></b></h3>
                 </div>
                 <br>
                 <br>
@@ -966,9 +964,9 @@
 <!-- Span da Descrição do Prato 12-->
 
     <div id="prato12" style="display: none;" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction12();">
-         <div class="w3-container"> <span onclick="document.getElementById('prato12').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate"></i></span>  </div>
+         <div class="w3-container"> <span onclick="document.getElementById('prato12').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span>  </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center fadeInDown animate"><b><label id="coracaoDeFrango"><li>Coração de Frango</li></label></b></h3>
+                  <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="coracaoDeFrango"><li>Coração de Frango</li></label></b></h3>
                 </div>
                 <br>
                 <br>
@@ -1023,9 +1021,9 @@
     <!-- Span da Descrição do Prato 13-->
 
     <div id="prato13" style="display: none;" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction13();">
-         <div class="w3-container"> <span onclick="document.getElementById('prato13').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate"></i></span>  </div>
+         <div class="w3-container"> <span onclick="document.getElementById('prato13').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span>  </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center fadeInDown animate"><b><label id="porco"><li>Porco</li></label></b></h3>
+                  <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="porco"><li>Porco</li></label></b></h3>
                 </div>
                 <br>
                 <br>
@@ -1078,9 +1076,9 @@
     <!-- Span da Descrição do Prato 14-->
 
     <div id="prato14" style="display: none;" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction14();">
-         <div class="w3-container"> <span onclick="document.getElementById('prato14').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate"></i></span> </div>
+         <div class="w3-container"> <span onclick="document.getElementById('prato14').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span> </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center fadeInDown animate"><b><label id="caja"><li>Cajá</li></label></b></h3>
+                  <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="caja"><li>Cajá</li></label></b></h3>
                 </div>
                 <br>
                 <br>
@@ -1133,9 +1131,9 @@
     <!-- Span da Descrição do Prato 15-->
 
     <div id="prato15" style="display: none;" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction15();">
-         <div class="w3-container"> <span onclick="document.getElementById('prato15').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate"></i></span>  </div>
+         <div class="w3-container"> <span onclick="document.getElementById('prato15').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span>  </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center fadeInDown animate"><b><label id="laranja"><li>Laranja</li></label></b></h3>
+                  <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="laranja"><li>Laranja</li></label></b></h3>
                 </div>
                 <br>
                 <br>
@@ -1188,9 +1186,9 @@
     <!-- Span da Descrição do Prato 16-->
 
     <div id="prato16" style="display: none;" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction16();">
-         <div class="w3-container"> <span onclick="document.getElementById('prato16').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate"></i></span>  </div>
+         <div class="w3-container"> <span onclick="document.getElementById('prato16').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span>  </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center fadeInDown animate"><b><label id="maracuja"><li>Maracujá</li></label></b></h3>
+                  <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="maracuja"><li>Maracujá</li></label></b></h3>
                 </div>
                 <br>
                 <br>
@@ -1243,9 +1241,9 @@
     <!-- Span da Descrição do Prato 17-->
 
     <div id="prato17" style="display: none;" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction17();">
-         <div class="w3-container"> <span onclick="document.getElementById('prato17').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate"></i></span>  </div>
+         <div class="w3-container"> <span onclick="document.getElementById('prato17').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span>  </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center fadeInDown animate"><b><label id="acerola"><li>Acerola</li></label></b></h3>
+                  <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="acerola"><li>Acerola</li></label></b></h3>
                 </div>
                 <br>
                 <br>
@@ -1298,9 +1296,9 @@
     <!-- Span da Descrição do Prato 18-->
 
     <div id="prato18" style="display: none;" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction18();">
-         <div class="w3-container"> <span onclick="document.getElementById('prato18').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate"></i></span>  </div>
+         <div class="w3-container"> <span onclick="document.getElementById('prato18').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span>  </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center fadeInDown animate"><b><label id="goiaba"><li>Goiaba</li></label></b></h3>
+                  <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="goiaba"><li>Goiaba</li></label></b></h3>
                 </div>
                 <br>
                 <br>
@@ -1353,9 +1351,9 @@
     <!-- Span da Descrição do Prato 19-->
 
     <div id="prato19" style="display: none;" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction19();">
-        <div class="w3-container"> <span onclick="document.getElementById('prato19').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate"></i></span>  </div>
+        <div class="w3-container"> <span onclick="document.getElementById('prato19').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span>  </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center fadeInDown animate"><b><label id="jarra"><li>Jarra de Suco</li></label></b></h3>
+                  <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="jarra"><li>Jarra de Suco</li></label></b></h3>
                 </div>
                 <br>
                 <br>
@@ -1408,9 +1406,9 @@
     <!-- Span da Descrição do Prato 20-->
 
     <div id="prato20" style="display: none;" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction20();">
-         <div class="w3-container"> <span onclick="document.getElementById('prato20').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate"></i></span> </div>
+         <div class="w3-container"> <span onclick="document.getElementById('prato20').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span> </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center fadeInDown animate"><b><label id="cocaCola"><li>Coca-Cola</li></label></b></h3>
+                  <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="cocaCola"><li>Coca-Cola</li></label></b></h3>
                 </div>
                 <br>
                 <br>
@@ -1463,9 +1461,9 @@
     <!-- Span da Descrição do Prato 21-->
 
     <div id="prato21" style="display: none;" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction21();">
-         <div class="w3-container"> <span onclick="document.getElementById('prato21').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate"></i></span>  </div>
+         <div class="w3-container"> <span onclick="document.getElementById('prato21').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span>  </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center fadeInDown animate"><b><label id="guarana"><li>Guaraná</li></label></b></h3>
+                  <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="guarana"><li>Guaraná</li></label></b></h3>
                 </div>
                 <br>
                 <br>
@@ -1518,9 +1516,9 @@
 
     <!-- Span da Descrição do Prato 22-->
     <div id="prato22" style="display: none;" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction22();">
-         <div class="w3-container"> <span onclick="document.getElementById('prato22').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate"></i></span> </div>
+         <div class="w3-container"> <span onclick="document.getElementById('prato22').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span> </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center fadeInDown animate"><b><label id="fanta"><li>Fanta</li></label></b></h3>
+                  <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="fanta"><li>Fanta</li></label></b></h3>
                 </div>
                 <br>
                 <br>
@@ -1573,9 +1571,9 @@
     <!-- Span da Descrição do Prato 23-->
 
     <div id="prato23" style="display: none;" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction23();">
-        <div class="w3-container"> <span onclick="document.getElementById('prato23').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate"></i></span>  </div>
+        <div class="w3-container"> <span onclick="document.getElementById('prato23').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span>  </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center fadeInDown animate"><b><label id="aguaMineral"><li>Água Mineral</li></label></b></h3>
+                  <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="aguaMineral"><li>Água Mineral</li></label></b></h3>
                 </div>
                 <br>
                 <br>
@@ -1628,9 +1626,9 @@
     <!-- Span da Descrição do Prato 24-->
 
     <div id="prato24" style="display: none;" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction24();">
-         <div class="w3-container"> <span onclick="document.getElementById('prato24').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate"></i></span> </div>
+         <div class="w3-container"> <span onclick="document.getElementById('prato24').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span> </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center fadeInDown animate"><b><label id="skol"><li>Skol</li></label></b></h3>
+                  <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="skol"><li>Skol</li></label></b></h3>
                 </div>
                 <br>
                 <br>
@@ -1683,9 +1681,9 @@
     <!-- Span da Descrição do Prato 25-->
 
     <div id="prato25" style="display: none;" class="fundo-span-2" value="0">
-         <div class="w3-container"> <span onclick="document.getElementById('prato25').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate"></i></span> </div>
+         <div class="w3-container"> <span onclick="document.getElementById('prato25').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span> </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center fadeInDown animate"><b><label id="itaipava"><li>Itaipava</li></label></b></h3>
+                  <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="itaipava"><li>Itaipava</li></label></b></h3>
                 </div>
                 <br>
                 <br>
@@ -1738,9 +1736,9 @@
     <!-- Span da Descrição do Prato 26-->
 
     <div id="prato26" style="display: none;" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction26();">
-         <div class="w3-container"> <span onclick="document.getElementById('prato26').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate"></i></span> </div>
+         <div class="w3-container"> <span onclick="document.getElementById('prato26').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span> </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center fadeInDown animate"><b><label id="original"><li>Original</li></label></b></h3>
+                  <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="original"><li>Original</li></label></b></h3>
                 </div>
                 <br>
                 <br>
@@ -1793,9 +1791,9 @@
     <!-- Span da Descrição do Prato 27-->
 
     <div id="prato27" style="display: none;" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction27();">
-         <div class="w3-container"> <span onclick="document.getElementById('prato27').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate"></i></span> </div>
+         <div class="w3-container"> <span onclick="document.getElementById('prato27').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span> </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center fadeInDown animate"><b><label id="burdweiser"><li>Burdweiser</li></label></b></h3>
+                  <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="burdweiser"><li>Burdweiser</li></label></b></h3>
                 </div>
                 <br>
                 <br>
@@ -1848,9 +1846,9 @@
     <!-- Span da Descrição do Prato 28-->
 
     <div id="prato28" style="display: none;" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction28();">
-         <div class="w3-container"> <span onclick="document.getElementById('prato28').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate"></i></span> </div>
+         <div class="w3-container"> <span onclick="document.getElementById('prato28').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span> </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center fadeInDown animate"><b><label id="eisenbahn"><li>Eisenbahn</li></label></b></h3>
+                  <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="eisenbahn"><li>Eisenbahn</li></label></b></h3>
                 </div>
                 <br>
                 <br>
@@ -1903,9 +1901,9 @@
     <!-- Span da Descrição do Prato 29-->
 
     <div id="prato29" style="display: none;" class="fundo-span-2" value="0" onclick="pedidosEspeciaisAction29();">
-         <div class="w3-container"> <span onclick="document.getElementById('prato29').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate"></i></span>  </div>
+         <div class="w3-container"> <span onclick="document.getElementById('prato29').style.display='none'" class="close1" title=" Fechar Span"><i class="fas fa-times fadeInDown animate x-icon"></i></span>  </div>
                 <div id="nome-prato" class="w3-container w3-text-white w3-dark-grey">
-                  <h3 class="w3-center fadeInDown animate"><b><label id="heineken"><li>Heineken</li></label></b></h3>
+                  <h3 class="w3-center fadeInDown animate nome-meu-pedido"><b><label id="heineken"><li>Heineken</li></label></b></h3>
                 </div>
                 <br>
                 <br>
@@ -1973,6 +1971,7 @@
 <script type="text/javascript" src="_js/mostrar.prato.functions.js"></script>
 <script type="text/javascript" src="_js/createTablePedir.js"></script>
 <script type="text/javascript" src="_js/pedidosEspeciais.js"></script>
+<script type="text/javascript" src="_js/random.number.js"></script>
 
 </html>
 

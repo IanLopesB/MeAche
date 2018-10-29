@@ -2,7 +2,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgb(30, 30, 30);
- overflow: hidden;
 }
 
 /*Imagem da Logo*/
@@ -59,7 +58,6 @@ body {
 }
 
 /* Cardápio */
-
 
 .menuTitulo {
   font-size: 175%;
@@ -128,7 +126,7 @@ body {
 /* Subtotal1 */
 
 #seta{
-  margin-top: 10px;
+  transform: rotate(0deg);
 }
 
 #subtotal1 {
@@ -158,6 +156,11 @@ body {
 }
 
 /*Span do Subtotal*/
+
+#id01 {
+
+  display: none;
+}
 
 span.psw {
   float: right;
@@ -254,6 +257,12 @@ margin: 0;
 
 /* Span do Pedido Feito e "Nada Selecionado" */
 
+
+#id02, #id03 {
+
+  display: none;
+}
+
 #numero-pedido {
   line-height: 50px;
 }
@@ -344,6 +353,13 @@ bottom: 0;
   }
 }
 /* Span Detalhes do Prato */
+
+#prato1, #prato2, #prato3 ,#prato4, #prato5, #prato6, #prato7, #prato8, #prato9, #prato10, #prato11, #prato12, #prato13,
+#prato14, #prato15, #prato16, #prato17, #prato18, #prato19, #prato20, #prato21, #prato22, #prato23, #prato34, #prato25,
+#prato26, #prato27, #prato28, #prato29 {
+  display: none;
+}
+
 #borda {
   border-color: grey;
 }
@@ -353,7 +369,12 @@ bottom: 0;
   position: relative;
 
 }
-#pedido-adicionais{
+#pedido-adicionais, #pedido-adicionais2, #pedido-adicionais3, #pedido-adicionais4, #pedido-adicionais5, #pedido-adicionais6,
+#pedido-adicionais7, #pedido-adicionais8, #pedido-adicionais9, #pedido-adicionais10, #pedido-adicionais11, #pedido-adicionais12,
+#pedido-adicionais13, #pedido-adicionais14, #pedido-adicionais15, #pedido-adicionais16, #pedido-adicionais17, #pedido-adicionais18,
+#pedido-adicionais19, #pedido-adicionais20, #pedido-adicionais21, #pedido-adicionais22, #pedido-adicionais23, #pedido-adicionais24,
+#pedido-adicionais25, #pedido-adicionais26, #pedido-adicionais27, #pedido-adicionais28, #pedido-adicionais29 {
+  display: none;
   color: rgba(234, 234, 234, 0.8);
   font-size: 15px;
   background-color: #363434;
