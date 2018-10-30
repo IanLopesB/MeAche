@@ -443,6 +443,14 @@ font-size: 17px;
   border-bottom-color: grey;
 }
 
+#nome-prato2{
+  height: 83px;
+  top: 0%;
+  border-bottom: solid;
+  border-width: 2px;
+  border-bottom-color: grey;
+}
+
 .fundo-span-2 {
    background-color: #363434;
   display: none;

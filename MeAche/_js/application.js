@@ -42,7 +42,37 @@ var numPedido = document.getElementById('novoNumero');
 function sendPedido() {
 var pedido = {
 
-  Test1: document.getElementById('escrevaOBS').value,
+  //Textarea
+  Text1: document.getElementById('escrevaOBS').value,
+  Text2: document.getElementById('escrevaOBS2').value,
+  Text3: document.getElementById('escrevaOBS3').value,
+  Text4: document.getElementById('escrevaOBS4').value,
+  Text5: document.getElementById('escrevaOBS5').value,
+  Text6: document.getElementById('escrevaOBS6').value,
+  Text7: document.getElementById('escrevaOBS7').value,
+  Text8: document.getElementById('escrevaOBS8').value,
+  Text9: document.getElementById('escrevaOBS9').value,
+  Text10: document.getElementById('escrevaOBS10').value,
+  Text11: document.getElementById('escrevaOBS11').value,
+  Text12: document.getElementById('escrevaOBS12').value,
+  Text13: document.getElementById('escrevaOBS13').value,
+  Text14: document.getElementById('escrevaOBS14').value,
+  Text15: document.getElementById('escrevaOBS15').value,
+  Text16: document.getElementById('escrevaOBS16').value,
+  Text17: document.getElementById('escrevaOBS17').value,
+  Text18: document.getElementById('escrevaOBS18').value,
+  Text19: document.getElementById('escrevaOBS19').value,
+  Text20: document.getElementById('escrevaOBS20').value,
+  Text21: document.getElementById('escrevaOBS21').value,
+  Text22: document.getElementById('escrevaOBS22').value,
+  Text23: document.getElementById('escrevaOBS23').value,
+  Text24: document.getElementById('escrevaOBS24').value,
+  Text25: document.getElementById('escrevaOBS25').value,
+  Text26: document.getElementById('escrevaOBS26').value,
+  Text27: document.getElementById('escrevaOBS27').value,
+  Text28: document.getElementById('escrevaOBS28').value,
+  Text29: document.getElementById('escrevaOBS29').value,
+
   Numero_Pedido: numPedido.innerHTML,
 
   // Petiscos
@@ -123,6 +153,37 @@ if (original.value == 0){delete pedido.Original};
 if (burdweiser.value == 0){delete pedido.Burdweiser};
 if (eisenbahn.value == 0){delete pedido.Eisenbahn};
 if (heineken.value == 0){delete pedido.Heineken};
+
+// Textareas
+if(document.getElementById('escrevaOBS').value==""){delete pedido.Text1};
+if(document.getElementById('escrevaOBS2').value==""){delete pedido.Text2};
+if(document.getElementById('escrevaOBS3').value==""){delete pedido.Text3};
+if(document.getElementById('escrevaOBS4').value==""){delete pedido.Text4};
+if(document.getElementById('escrevaOBS5').value==""){delete pedido.Text5};
+if(document.getElementById('escrevaOBS6').value==""){delete pedido.Text6};
+if(document.getElementById('escrevaOBS7').value==""){delete pedido.Text7};
+if(document.getElementById('escrevaOBS8').value==""){delete pedido.Text8};
+if(document.getElementById('escrevaOBS9').value==""){delete pedido.Text9};
+if(document.getElementById('escrevaOBS10').value==""){delete pedido.Text10};
+if(document.getElementById('escrevaOBS11').value==""){delete pedido.Text11};
+if(document.getElementById('escrevaOBS12').value==""){delete pedido.Text12};
+if(document.getElementById('escrevaOBS13').value==""){delete pedido.Text13};
+if(document.getElementById('escrevaOBS14').value==""){delete pedido.Text14};
+if(document.getElementById('escrevaOBS15').value==""){delete pedido.Text15};
+if(document.getElementById('escrevaOBS16').value==""){delete pedido.Text16};
+if(document.getElementById('escrevaOBS17').value==""){delete pedido.Text17};
+if(document.getElementById('escrevaOBS18').value==""){delete pedido.Text18};
+if(document.getElementById('escrevaOBS19').value==""){delete pedido.Text19};
+if(document.getElementById('escrevaOBS20').value==""){delete pedido.Text20};
+if(document.getElementById('escrevaOBS21').value==""){delete pedido.Text21};
+if(document.getElementById('escrevaOBS22').value==""){delete pedido.Text22};
+if(document.getElementById('escrevaOBS23').value==""){delete pedido.Text23};
+if(document.getElementById('escrevaOBS24').value==""){delete pedido.Text24};
+if(document.getElementById('escrevaOBS25').value==""){delete pedido.Text25};
+if(document.getElementById('escrevaOBS26').value==""){delete pedido.Text26};
+if(document.getElementById('escrevaOBS27').value==""){delete pedido.Text27};
+if(document.getElementById('escrevaOBS28').value==""){delete pedido.Text28};
+if(document.getElementById('escrevaOBS29').value==""){delete pedido.Text29};
 
 return firebase.database().ref().child('pedidos').push(pedido);
 }
