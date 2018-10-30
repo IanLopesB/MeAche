@@ -376,6 +376,11 @@ td_num_pedidos.setAttribute('class', 'w3-center');
     li29.appendChild(espetos_3);
   }
 //! Cervejas !//
+
+//Textareas//
+  if (item.val().Text1 == undefined){delete item.val().Text1;}
+//!Textareas!//
+
 //! check if value equal to zero to delete from firebase !//
 
 input_checkbox.setAttribute("name", "number");
