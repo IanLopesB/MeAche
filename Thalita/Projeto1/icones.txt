@@ -1,4 +1,0 @@
-icones
-
-https://getbootstrap.com/docs/3.3/components/
-https://www.w3schools.com/bootstrap/bootstrap_ref_comp_glyphs.asp
