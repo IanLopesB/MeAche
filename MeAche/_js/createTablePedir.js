@@ -3280,10 +3280,10 @@ function mandardados21(){
 	var mult = (preco21 * value21);
 document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 	document.getElementById('precoPetisco21').innerHTML = mult.toFixed(2);
-	}document.getElementById('totalValue').innerHTML = result.toFixed(2);
+	document.getElementById('totalValue').innerHTML = result.toFixed(2);
 		if(value1<=0){
 		var tr = document.getElementById("tr21");
-		tr.parentNode.removeChild(tr);
+		tr.parentNode.removeChild(tr);}
     } else {
 if (value1>=1 || value2>=1 || value3>=1 || value4>=1 || value5>=1 || value6>=1 || value7>=1 || value8>=1 || value9>=1 || value10>=1 ||
 	value11>=1 || value12>=1 || value13>=1 || value14>=1 || value15>=1 || value16>=1 || value17>=1 || value18>=1 || value19>=1 || value20>=1 ||
