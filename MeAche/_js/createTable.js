@@ -93,6 +93,7 @@ var cerv_1 = document.createTextNode(item.val().Skol + "x" + " Skol"+" OBS: "+it
   cerv_5 = document.createTextNode(item.val().Eisenbahn + "x" + " Eisenbahn"+" OBS: "+item.val().Text28),
   cerv_6 = document.createTextNode(item.val().Heineken + "x" + " Heineken"+" OBS: "+item.val().Text29);
 
+
 var numberPedido = document.createTextNode(item.val().Numero_Pedido);
 
 // appends childs //
@@ -376,6 +377,10 @@ td_num_pedidos.setAttribute('class', 'w3-center');
     li29.appendChild(espetos_3);
   }
 //! Cervejas !//
+
+//NovoNúmero//
+
+//!NovoNúmero!//
 
 //Textareas//
   if (item.val().Text1 == undefined){delete item.val().Text1;}
