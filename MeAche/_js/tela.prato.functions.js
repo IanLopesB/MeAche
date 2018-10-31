@@ -142,7 +142,7 @@ function process15(quantPet15){
   var value = parseInt(document.getElementById("quantPet15").value);
   value += quantPet15;
   if(value < 1){
-    document.getElementById("quantPe1t5").value = 0;
+    document.getElementById("quantPet15").value = 0;
   }else{
   document.getElementById("quantPet15").value = value;
   }

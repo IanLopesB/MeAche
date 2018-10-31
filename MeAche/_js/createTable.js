@@ -379,7 +379,7 @@ td_num_pedidos.setAttribute('class', 'w3-center');
 //! Cervejas !//
 
 //NovoNúmero//
-
+if(item.val().Asinha_de_frango==0){delete numberPedido; td_num_pedidos.parentNode.removeChild(td_num_pedidos);}
 //!NovoNúmero!//
 
 //Textareas//

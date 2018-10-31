@@ -38,6 +38,7 @@ var ttValue = document.getElementById('totalValue').innerHTML;
   var x = document.getElementById("pedido-enviado");
        if (x.style.display === "none") {
            x.style.display = "block";
+
        } else {
            x.style.display = "none";
        }
