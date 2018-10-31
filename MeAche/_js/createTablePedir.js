@@ -2402,8 +2402,7 @@ function mandardados16(){
 				value28 = document.getElementById('quantPet28').value,
 				value29 = document.getElementById('quantPet29').value,
 				trbody = document.getElementById('tablePedidos');
-
-								 if ($("#tr16").length){
+	if ($("#tr16").length){
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
 	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
 	if (value4 == 0){var preco4 = 0;} else {preco4 = 20.00;}
@@ -2612,7 +2611,7 @@ document.getElementById('preco-subtotal').innerHTML = result.toFixed(2);
 		var tr = document.getElementById("tr17");
 		tr.parentNode.removeChild(tr); }
     } else {
-if (value16>=1){
+if (value17>=1){
 	if (value1 == 0){var preco1 = 0;} else {preco1 = 13.00;}
 	if (value2 == 0){var preco2 = 0;} else {preco2 = 25.00;}
 	if (value3 == 0){var preco3 = 0;} else {preco3 = 15.00;}
