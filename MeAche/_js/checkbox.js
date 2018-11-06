@@ -1,20 +1,26 @@
 function check_tb(value){
-  var inputs = document.getElementById("checkb" + value);
-  var tr = document.getElementById("tr"+ value);
-  var ul = document.getElementById("ul" + value);
+  var inputs = $("#checkb" + value);
+  var tr = $("#tr"+ value);
+  var ul = $("#ul" + value);
 
-  var pedidos_pendentes = document.getElementById('pedidos_pendentes'),
-      pedidos_concluidos = document.getElementById('pedidos_concluidos');
+  var pedidos_pendentes = $('#pedidos_pendentes'),
+      pedidos_concluidos = $('#pedidos_concluidos');
 
-    if (inputs.checked == true) {
-      ul.style.textDecoration = "line-through";
-      tr.style.color = "red";
-      pedidos_concluidos.appendChild(tr);
+    if (inputs.prop('checked') == true) {
+      localStorage.setItem('checkb' + value, 'true');
+
+      ul.css("textDecoration", "line-through");
+      tr.css("color", "red");
+      pedidos_concluidos.append(tr);
       }
     else {
-      ul.style.textDecoration = "none";
-      tr.style.color = "black";
-      pedidos_pendentes.appendChild(tr);
-    }
+      localStorage.setItem('checkb' + value, 'false');
+      ul.css("textDecoration", "none");
+      tr.css("color", "black");
+      pedidos_pendentes.append(tr);
+  }    
 }
 
+  $(document).ready(function(value){
+    localStorage.getItem('checkb' + value);
+      })
