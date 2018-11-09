@@ -1,398 +1,382 @@
 firebase.database().ref('pedidos').on('value', function (snapshot) {
 
-var trbody = document.getElementById('pedidos_pendentes');
-  trbody.innerHTML = '';
+  var trbody = document.getElementById('pedidos_pendentes');
+      trbody.innerHTML = '';
 
-snapshot.forEach(function (item) {
+  snapshot.forEach(function (item) {
 
-var tr = document.createElement('tr');
-var th = document.createElement('th');
-var input_checkbox = document.createElement('input');
-var td_pedidos = document.createElement('td');
-var td_num_pedidos = document.createElement('td');
-var space = document.createTextNode('');
-var linebreak = document.createElement('br');
+    var tr = document.createElement('tr');
+    var th = document.createElement('th');
+    var input_checkbox = document.createElement('input');
+    var td_pedidos = document.createElement('td');
+    var td_num_pedidos = document.createElement('td');
+    var space = document.createTextNode('');
+    var linebreak = document.createElement('br');
+    var ul = document.createElement('ul');
 
-var ul = document.createElement('ul');
+    var numberPedido = document.createTextNode(item.val().Numero_Pedido);
 
-// li - Petiscos
-var li1 = document.createElement('li'),
-  li2 = document.createElement('li'),
-  li3 = document.createElement('li'),
-  li4 = document.createElement('li'),
-  li5 = document.createElement('li'),
-  li6 = document.createElement('li'),
-  li7 = document.createElement('li'),
-  li8 = document.createElement('li');
+    // li's //
+      var lis = [];
+      for(x = 1; x <= 29; x++) {
+          var createLis = $('<li></li>');
+          lis.push(createLis);
+      }
+      $(ul).append(lis);
+    //! li's !//
 
-// li - Espetos
-var li9 = document.createElement('li'),
-  li10 = document.createElement('li'),
-  li11 = document.createElement('li'),
-  li12 = document.createElement('li');
+    // petiscos //
+      var itensPet = [item.val().Asinha_de_frango, item.val().Camarao_Alho_Oleo, item.val().Calabresa, 
+          item.val().Carne_de_Sol, item.val().Torresmo, item.val().Batata_Frita, item.val().Macaxeira, 
+          item.val().Baiao_de_Dois];
 
-// li - Sucos
-var li13 = document.createElement('li'),
-  li14 = document.createElement('li'),
-  li15 = document.createElement('li'),
-  li16 = document.createElement('li'),
-  li17 = document.createElement('li'),
-  li18 = document.createElement('li');
+      var petiscos_1 = (itensPet[0] + "x Asinha de Frango");
+      var obs1 = (" - Obs: " + item.val().Text1);
+          var somPet1 = petiscos_1 + obs1;
 
-// li - Refrigerantes
-var li19 = document.createElement('li'),
-  li20 = document.createElement('li'),
-  li21 = document.createElement('li'),
-  li22 = document.createElement('li');
+      var petiscos_2 = (itensPet[1] + "x Camarão Alho e Óleo"); 
+      var obs2 = (" - Obs: " + item.val().Text2);
+          var somPet2 = petiscos_2 + obs2;
 
-// li - Cervejas
-var li23 = document.createElement('li')
-  li24 = document.createElement('li'),
-  li25 = document.createElement('li'),
-  li26 = document.createElement('li'),
-  li27 = document.createElement('li'),
-  li28 = document.createElement('li'),
-  li29 = document.createElement('li');
+      var petiscos_3 = (itensPet[2] + "x Calabresa com Fritas");
+      var obs3 = (' - Obs: '  + item.val().Text3);
+          var somPet3 = petiscos_3 + obs3;
 
-// Petiscos
-var petiscos_1 = document.createTextNode(item.val().Asinha_de_frango + "x" + " Asinha de Frango"+" OBS: "+item.val().Text1);
-var petiscos_2 = document.createTextNode(item.val().Camarao_Alho_Oleo + "x" + " Camarão Alho e Óleo"+" OBS: "+item.val().Text2);
-var petiscos_3 = document.createTextNode(item.val().Calabresa + "x" + " Calabresa com Fritas"+" OBS: "+item.val().Text3);
-var petiscos_4 = document.createTextNode(item.val().Carne_de_Sol + "x" + " Carne de Sol C/ Macaxeira"+" OBS: "+item.val().Text4);
-var petiscos_5 = document.createTextNode(item.val().Torresmo + "x" + " Torresmo"+" OBS: "+item.val().Text5);
-var petiscos_6 = document.createTextNode(item.val().Batata_Frita + "x" + " Batata Frita"+" OBS: "+item.val().Text6);
-var petiscos_7 = document.createTextNode(item.val().Macaxeira + "x" + " Torresmo"+" OBS: "+item.val().Text7);
-var petiscos_8 = document.createTextNode(item.val().Baiao_de_Dois + "x" + " Batata Frita"+" OBS: "+item.val().Text8);
+      var petiscos_4 = (itensPet[3] + "x Carne de Sol C/ Macaxeira");
+      var obs4 = (' - Obs: ' + item.val().Text4);
+          var somPet4 = petiscos_4 + obs4;
 
-// Espetos
-var espetos_1 = document.createTextNode(item.val().Boi + "x" + " Boi"+" OBS: "+item.val().Text9),
-  espetos_2 = document.createTextNode(item.val().Franbacon + "x" + " Franbacon"+" OBS: "+item.val().Text10),
-  espetos_3 = document.createTextNode(item.val().Frango + "x" + " Frango"+" OBS: "+item.val().Text11),
-  espetos_4 = document.createTextNode(item.val().Coracao_de_Frango + "x" + " Coração de Frango"+" OBS: "+item.val().Text12),
-  espetos_5 = document.createTextNode(item.val().Porco + "x" + " Porco"+" OBS: "+item.val().Text13);
+      var petiscos_5 = (itensPet[4] + "x Torresmo");
+      var obs5 = (' - Obs: '  + item.val().Text5);
+          var somPet5 = petiscos_5 + obs5;
 
-// Sucos
-var sucos_1 = document.createTextNode(item.val().Caja + "x" + " Cajá"+" OBS: "+item.val().Text14),
-  sucos_2 = document.createTextNode(item.val().Laranja + "x" + " Laranja"+" OBS: "+item.val().Text15),
-  sucos_3 = document.createTextNode(item.val().Maracuja + "x" + " Maracujá"+" OBS: "+item.val().Text16),
-  sucos_4 = document.createTextNode(item.val().Acerola + "x" + " Acerola"+" OBS: "+item.val().Text17),
-  sucos_5 = document.createTextNode(item.val().Goiaba + "x" + " Goiaba"+" OBS: "+item.val().Text18),
-  sucos_6 = document.createTextNode(item.val().Jarra_de_Suco + "x" + " Jarra de Suco"+" OBS: "+item.val().Text19);
+      var petiscos_6 = (itensPet[5] + "x Batata Frita");
+      var obs6 = (' - Obs: '  + item.val().Text6);
+          var somPet6 = petiscos_6 + obs6;
 
-// Refrigerates
-var refri_1 = document.createTextNode(item.val().Coca_cola + "x" + " Coca-Cola"+" OBS: "+item.val().Text20),
-  refri_2 = document.createTextNode(item.val().Guarana + "x" + " Guaraná"+" OBS: "+item.val().Text21),
-  refri_3 = document.createTextNode(item.val().Fanta + "x" + " Fanta"+" OBS: "+item.val().Text22),
-  refri_4 = document.createTextNode(item.val().Agua_Mineral + "x" + " Àgua Mineral"+" OBS: "+item.val().Text23);
+      var petiscos_7 = (itensPet[6] + "x Torresmo");
+      var obs7 = (' - Obs: '  + item.val().Text7);
+          var somPet7 = petiscos_7 + obs7;
 
-// Cervejas
-var cerv_1 = document.createTextNode(item.val().Skol + "x" + " Skol"+" OBS: "+item.val().Text24),
-  cerv_2 = document.createTextNode(item.val().Itaipava + "x" + " Itaipava"+" OBS: "+item.val().Text25),
-  cerv_3 = document.createTextNode(item.val().Original + "x" + " Original"+" OBS: "+item.val().Text26),
-  cerv_4 = document.createTextNode(item.val().Burdweiser + "x" + " Burdweiser"+" OBS: "+item.val().Text27),
-  cerv_5 = document.createTextNode(item.val().Eisenbahn + "x" + " Eisenbahn"+" OBS: "+item.val().Text28),
-  cerv_6 = document.createTextNode(item.val().Heineken + "x" + " Heineken"+" OBS: "+item.val().Text29);
+      var petiscos_8 = (itensPet[7] + "x Batata Frita"); 
+      var obs8 = (' - Obs: '  + item.val().Text8);
+          var somPet8 = petiscos_8 + obs8;
+    //! petiscos ! //
 
+    // espetos //
+      var espetos_1 = (item.val().Boi + "x  Boi"),
+          obs9 = (" - Obs: " + item.val().Text9),
+          somEsp1 = espetos_1 + obs9;
 
-var numberPedido = document.createTextNode(item.val().Numero_Pedido);
+      var espetos_2 = (item.val().Franbacon + "x Franbacon"),
+          obs10 = (" - Obs: " + item.val().Text10),
+          somEsp2 = espetos_1 + obs10;
 
-// appends childs //
-trbody.appendChild(tr);
-tr.appendChild(th);
-tr.appendChild(td_pedidos);
-tr.appendChild(td_num_pedidos);
-th.appendChild(input_checkbox);
+      var espetos_3 = (item.val().Frango + "x Frango"),
+          obs11 = (" - Obs: " + item.val().Text11),
+          somEsp3 = espetos_3 + obs11;
 
-td_pedidos.appendChild(ul);
-td_num_pedidos.appendChild(numberPedido);
-ul.appendChild(li1);
-ul.appendChild(li2);
-ul.appendChild(li3);
-ul.appendChild(li4);
-ul.appendChild(li5);
-ul.appendChild(li6);
-ul.appendChild(li7);
-ul.appendChild(li8);
-ul.appendChild(li9);
-ul.appendChild(li10);
-ul.appendChild(li11);
-ul.appendChild(li12);
-ul.appendChild(li13);
-ul.appendChild(li14);
-ul.appendChild(li15);
-ul.appendChild(li16);
-ul.appendChild(li17);
-ul.appendChild(li18);
-ul.appendChild(li19);
-ul.appendChild(li20);
-ul.appendChild(li21);
-ul.appendChild(li22);
-ul.appendChild(li23);
-ul.appendChild(li24);
-ul.appendChild(li25);
-ul.appendChild(li26);
-ul.appendChild(li27);
-ul.appendChild(li28);
-ul.appendChild(li29);
-//! appends childs !//
+      var espetos_4 = (item.val().Coracao_de_Frango + "x Coração de Frango"),
+          obs12 = (" - Obs: " + item.val().Text12),
+          somEsp4 = espetos_4 + obs12;
 
-th.setAttribute("scope", "row");
-th.setAttribute('class', 'input_checkbox');
+      var espetos_5 = (item.val().Porco + "x Porco"),
+          obs13 = (" - Obs: " + item.val().Text13),
+          somEsp5 = espetos_5 + obs13;
+    //! espetos !//
 
-// to set checkbox function
-input_checkbox.setAttribute("type", "checkbox");
-input_checkbox.setAttribute("onclick","check_tb(this.value)");
-//! to set checkbox function !//
+    // sucos //
+      var sucos_1 = (item.val().Caja + "x Cajá" + item.val().Text14),
+          sucos_2 = (item.val().Laranja + "x Laranja" + item.val().Text15),
+          sucos_3 = (item.val().Maracuja + "x Maracujá" + item.val().Text16),
+          sucos_4 = (item.val().Acerola + "x Acerola" + item.val().Text17),
+          sucos_5 = (item.val().Goiaba + "x Goiaba" + item.val().Text18),
+          sucos_6 = (item.val().Jarra_de_Suco + "x Jarra de Suco" + item.val().Text19);
+    //! sucos !//
 
-// set "tr" ID that does not repeat
-tr.setAttribute("class", "trClass");
-var trId = document.getElementsByClassName("trClass");
-for (var i = 0; i < trId.length; i++) {
-  trId[i].id = "tr" + (i + 1);}
-//! set "tr" ID that does not repeat !//
+    // refrigerates //
+      var refri_1 = document.createTextNode(item.val().Coca_cola + "x" + " Coca-Cola" + item.val().Text20),
+          refri_2 = document.createTextNode(item.val().Guarana + "x" + " Guaraná" + item.val().Text21),
+          refri_3 = document.createTextNode(item.val().Fanta + "x" + " Fanta" + item.val().Text22),
+          refri_4 = document.createTextNode(item.val().Agua_Mineral + "x" + " Àgua Mineral" + item.val().Text23);
+    //! refrigerantes !//
 
-// set "ul" ID that does not repeat
-ul.setAttribute("class", "ulClass");
-var ulID = document.getElementsByClassName("ulClass");
-for (var i = 0; i < ulID.length; i++) {
-  ulID[i].id = "ul" + (i + 1);}
-//! set "ul" ID that does not repeat !//
+    // cervejas //
+      var cerv_1 = document.createTextNode(item.val().Skol + "x" + " Skol" + item.val().Text24),
+          cerv_2 = document.createTextNode(item.val().Itaipava + "x" + " Itaipava" + item.val().Text25),
+          cerv_3 = document.createTextNode(item.val().Original + "x" + " Original" + item.val().Text26),
+          cerv_4 = document.createTextNode(item.val().Burdweiser + "x" + " Burdweiser" + item.val().Text27),
+          cerv_5 = document.createTextNode(item.val().Eisenbahn + "x" + " Eisenbahn" + item.val().Text28),
+          cerv_6 = document.createTextNode(item.val().Heineken + "x" + " Heineken" + item.val().Text29);
+    //! cervejas !//
 
-// set the "input" ID that is not repeated //
-input_checkbox.setAttribute("class", "inputClass");
-var inputId = document.getElementsByClassName("inputClass");
-  for (var i = 0; i < trId.length; i++) {
-    inputId[i].id = "checkb" + (i + 1);}
-//! set the "input" ID that is not repeated !//
+    // appends childs //
+      $(trbody).append(tr);
+      $(tr).append(th);
+      $(tr).append(td_pedidos);
+      $(tr).append(td_num_pedidos);
+      $(th).append(input_checkbox);
 
-td_pedidos.setAttribute("colspan", "2");
-td_pedidos.setAttribute('id', 'td_pedidos');
-td_pedidos.setAttribute('class', 'td_pedidos');
+      $(td_pedidos).append(ul);
+      $(td_num_pedidos).append(numberPedido);
+    //! appends childs !//
 
-td_num_pedidos.setAttribute("colspan", "2");
-td_num_pedidos.setAttribute('id', 'td_num_pedidos');
-td_num_pedidos.setAttribute('class', 'w3-center');
+    th.setAttribute("scope", "row");
+    th.setAttribute('class', 'input_checkbox');
 
-// check if value equal to zero to delete from firebase //
-// Petiscos //
-  if (item.val().Asinha_de_frango == undefined){
-    delete petiscos_1;
-    li1.parentNode.removeChild(li1);
-  }else {
-    li1.appendChild(petiscos_1);
-  }
+    // to set checkbox function
+      input_checkbox.setAttribute("type", "checkbox");
+      input_checkbox.setAttribute("onclick","check_tb(this.value)");
+    //! to set checkbox function !//
 
-  if (item.val().Camarao_Alho_Oleo == undefined){
-    delete petiscos_2;
-    li2.parentNode.removeChild(li2);
-  }else {
-    li2.appendChild(petiscos_2);
-  }
+    // set "tr" ID that does not repeat
+      tr.setAttribute("class", "trClass");
+      var trId = document.getElementsByClassName("trClass");
+      for (var i = 0; i < trId.length; i++) {
+        trId[i].id = "tr" + (i + 1);}
+    //! set "tr" ID that does not repeat !//
 
-  if (item.val().Calabresa == undefined){
-    delete petiscos_3;
-    li3.parentNode.removeChild(li3);
-  }else {
-    li3.appendChild(petiscos_3);
-  }
+    // set "ul" ID that does not repeat
+      ul.setAttribute("class", "ulClass");
+      var ulID = document.getElementsByClassName("ulClass");
+      for (var i = 0; i < ulID.length; i++) {
+        ulID[i].id = "ul" + (i + 1);}
+    //! set "ul" ID that does not repeat !//
 
-  if (item.val().Carne_de_Sol == undefined){
-    delete petiscos_4;
-    li4.parentNode.removeChild(li4);
-  }else {
-    li4.appendChild(petiscos_4);
-  }
+    // set the "input" ID that is not repeated //
+      input_checkbox.setAttribute("class", "inputClass");
+      var inputId = document.getElementsByClassName("inputClass");
+        for (var i = 0; i < trId.length; i++) {
+          inputId[i].id = "checkb" + (i + 1);}
+    //! set the "input" ID that is not repeated !//
 
-  if (item.val().Torresmo == undefined){
-    delete petiscos_5;
-    li5.parentNode.removeChild(li5);
-  }else {
-    li5.appendChild(petiscos_5);
-  }
+    td_pedidos.setAttribute("colspan", "2");
+    td_pedidos.setAttribute('id', 'td_pedidos');
+    td_pedidos.setAttribute('class', 'td_pedidos');
 
-  if (item.val().Batata_Frita == undefined){
-    delete petiscos_6;
-    li6.parentNode.removeChild(li6);
-  }else {
-    li6.appendChild(petiscos_6);
-  }
+    td_num_pedidos.setAttribute("colspan", "2");
+    td_num_pedidos.setAttribute('id', 'td_num_pedidos');
+    td_num_pedidos.setAttribute('class', 'w3-center');
 
-    if (item.val().Macaxeira == undefined){
-    delete petiscos_7;
-    li7.parentNode.removeChild(li7);
-  }else {
-    li7.appendChild(petiscos_7);
-  }
+    // check if value equal to zero to delete from firebase //
+      // Petiscos //
+        if (item.val().Asinha_de_frango == undefined){
+          delete petiscos_1;
+         lis[0].remove();
+        }else {
+          $(lis[0]).append(somPet1);
+        }
 
-    if (item.val().Baiao_de_Dois == undefined){
-    delete petiscos_8;
-    li8.parentNode.removeChild(li8);
-  }else {
-    li8.appendChild(petiscos_8);
-  }
-//! Petiscos !//
+        if (item.val().Camarao_Alho_Oleo == undefined){
+          delete petiscos_2;
+         lis[1].remove();
+        }else {
+          $(lis[1]).append(somPet2);
+        }
 
-// Espetos //
-  if (item.val().Boi == undefined){
-    delete espetos_1;
-    li9.parentNode.removeChild(li9);
-  }else {
-    li9.appendChild(espetos_1);
-  }
+        if (item.val().Calabresa == undefined){
+          delete petiscos_3;
+         $( lis[2]).remove();
+        }else {
+          $(lis[2]).append(somPet3);
+        }
 
-  if (item.val().Franbacon == undefined){
-    delete espetos_2;
-    li10.parentNode.removeChild(li10);
-  }else {
-    li10.appendChild(espetos_2);
-  }
+        if (item.val().Carne_de_Sol == undefined){
+          delete petiscos_4;
+         $( lis[3]).remove();
+        }else {
+          $(lis[3]).append(somPet4);
+        }
 
-  if (item.val().Coracao_de_Frango == undefined){
-    delete espetos_4;
-    li11.parentNode.removeChild(li11);
-  }else {
-    li11.appendChild(espetos_4);
-  }
+        if (item.val().Torresmo == undefined){
+          delete petiscos_5;
+         $( lis[4]).remove();
+        }else {
+          $(lis[4]).append(somPet5);
+        }
 
-  if (item.val().Porco == undefined){
-    delete espetos_5;
-    li12.parentNode.removeChild(li12);
-  }else {
-    li12.appendChild(espetos_5);
-  }
-//! Espetos !//
+        if (item.val().Batata_Frita == undefined){
+          delete petiscos_6;
+         $( lis[5]).remove();
+        }else {
+          $(lis[5]).append(somPet6);
+        }
 
-// Sucos //
-  if (item.val().Caja == undefined){
-    delete sucos_1;
-    li13.parentNode.removeChild(li13);
-  }else {
-    li13.appendChild(sucos_1);
-  }
+          if (item.val().Macaxeira == undefined){
+          delete petiscos_7;
+         $( lis[6]).remove();
+        }else {
+          $(lis[6]).append(somPet7);
+        }
 
-  if (item.val().Laranja == undefined){
-    delete sucos_2;
-    li14.parentNode.removeChild(li14);
-  }else {
-    li14.appendChild(sucos_2);
-  }
+          if (item.val().Baiao_de_Dois == undefined){
+          delete petiscos_8;
+         $( lis[7]).remove();
+        }else {
+          $(lis[7]).append(somPet8);
+        }
+      //! Petiscos !//
 
-  if (item.val().Maracuja == undefined){
-    delete sucos_3;
-    li15.parentNode.removeChild(li15);
-  }else {
-    li15.appendChild(sucos_3);
-  }
+      // Espetos //
+        if (item.val().Boi == undefined){
+          delete espetos_1;
+         $( lis[8]).remove();
+        }else {
+          $(lis[8]).appendChild(somEsp1);
+        }
 
-  if (item.val().Acerola == undefined){
-    delete sucos_4;
-    li16.parentNode.removeChild(li16);
-  }else {
-    li16.appendChild(sucos_4);
-  }
+        if (item.val().Franbacon == undefined){
+          delete espetos_2;
+         $( lis[9]).remove();
+        }else {
+          $(lis[9]).append(somEsp2);
+        }
 
-  if (item.val().Goiaba == undefined){
-    delete sucos_5;
-    li17.parentNode.removeChild(li17);
-  }else {
-    li17.appendChild(sucos_5);
-  }
+        if (item.val().Coracao_de_Frango == undefined){
+          delete espetos_4;
+          $(lis[10]).remove();
+        }else {
+          $(lis[10]).append(somEsp4);
+        }
 
-  if (item.val().Jarra_de_Suco == undefined){
-    delete sucos_6;
-    li18.parentNode.removeChild(li18);
-  }else {
-    li18.appendChild(sucos_6);
-  }
-//! Sucos !//
+        if (item.val().Porco == undefined){
+          delete espetos_5;
+          $(lis[11]).remove();
+        }else {
+          $(lis[11]).append(somEsp5);
+        }
+      //! Espetos !//
 
-// Refrigerantes //
-  if (item.val().Coca_cola == undefined){
-    delete refri_1;
-    li19.parentNode.removeChild(li19);
-  }else {
-    li19.appendChild(refri_1);
-  }
-  if (item.val().Guarana == undefined){
-    delete refri_2;
-    li20.parentNode.removeChild(li20);
-  }else {
-    li20.appendChild(refri_2);
-  }
-  if (item.val().Fanta == undefined){
-    delete refri_3;
-    li21.parentNode.removeChild(li21);
-  }else {
-    li21.appendChild(refri_3);
-  }
-  if (item.val().Agua_Mineral == undefined){
-    delete refri_4;
-    li22.parentNode.removeChild(li22);
-  }else {
-    li22.appendChild(refri_4);
-  }
-//! Refrigerantes !//
+      // Sucos //
+        if (item.val().Caja == undefined){
+          delete sucos_1;
+          $(lis[12]).remove();
+        }else {
+          $(lis[12]).append(sucos_1);
+        }
 
-// Cervejas //
-  if (item.val().Skol == undefined){
-    delete cerv_1;
-    li23.parentNode.removeChild(li23);
-  }else {
-    li23.appendChild(cerv_1);
-  }
-  if (item.val().Itaipava == undefined){
-    delete cerv_2;
-    li24.parentNode.removeChild(li24);
-  }else {
-    li24.appendChild(cerv_2);
-  }
-  if (item.val().Original == undefined){
-    delete cerv_3;
-    li25.parentNode.removeChild(li25);
-  }else {
-    li25.appendChild(cerv_3);
-  }
-  if (item.val().Burdweiser == undefined){
-    delete cerv_4;
-    li26.parentNode.removeChild(li26);
-  }else {
-    li26.appendChild(cerv_4);
-  }
-  if (item.val().Eisenbahn == undefined){
-    delete cerv_5;
-    li27.parentNode.removeChild(li27);
-  }else {
-    li27.appendChild(cerv_5);
-  }
-  if (item.val().Heineken == undefined){
-    delete cerv_6;
-    li28.parentNode.removeChild(li28);
-  }else {
-    li28.appendChild(cerv_6);
-  }
-  if (item.val().Frango == undefined){
-    delete espetos_3;
-    li29.parentNode.removeChild(li29);
-  }else {
-    li29.appendChild(espetos_3);
-  }
-//! Cervejas !//
+        if (item.val().Laranja == undefined){
+          delete sucos_2;
+          $(lis[13]).remove();
+        }else {
+          $(lis[13]).append(sucos_2);
+        }
 
-//NovoNúmero//
-if(item.val().Asinha_de_frango==0){delete numberPedido; td_num_pedidos.parentNode.removeChild(td_num_pedidos);}
-//!NovoNúmero!//
+        if (item.val().Maracuja == undefined){
+          delete sucos_3;
+          $(lis[14]).remove();
+        }else {
+          $(lis[14]).append(sucos_3);
+        }
 
-//Textareas//
-  if (item.val().Text1 == undefined){delete item.val().Text1;}
-//!Textareas!//
+        if (item.val().Acerola == undefined){
+          delete sucos_4;
+          $(lis[15]).remove();
+        }else {
+          $(lis[15]).append(sucos_4);
+        }
 
-//! check if value equal to zero to delete from firebase !//
+        if (item.val().Goiaba == undefined){
+          delete sucos_5;
+          $(lis[16]).remove();
+        }else {
+          $(lis[16]).append(sucos_5);
+        }
 
-input_checkbox.setAttribute("name", "number");
+        if (item.val().Jarra_de_Suco == undefined){
+          delete sucos_6;
+          $(lis[17]).remove();
+        }else {
+          $(lis[17]).append(sucos_6);
+        }
+      //! Sucos !//
 
-$("input[name='number']").each(function(ind) {
-$(this).val(ind + 1);
-});
+      // Refrigerantes //
+        if (item.val().Coca_cola == undefined){
+          delete refri_1;
+          $(lis[18]).remove();
+        }else {
+          $(lis[18]).append(refri_1);
+        }
+        if (item.val().Guarana == undefined){
+          delete refri_2;
+          $(lis[19]).remove();
+        }else {
+          $(lis[19]).append(refri_2);
+        }
+        if (item.val().Fanta == undefined){
+          delete refri_3;
+          $(lis[20]).remove();
+        }else {
+          $(lis[20]).append(refri_3);
+        }
+        if (item.val().Agua_Mineral == undefined){
+          delete refri_4;
+          $(lis[21]).remove();
+        }else {
+          $(lis[21]).append(refri_4);
+        }
+      //! Refrigerantes !//
 
-});
+      // Cervejas //
+        if (item.val().Skol == undefined){
+          delete cerv_1;
+          $(lis[22]).remove();
+        }else {
+          $(lis[22]).append(cerv_1);
+        }
+        if (item.val().Itaipava == undefined){
+          delete cerv_2;
+          $(lis[23]).remove();
+        }else {
+          $(lis[23]).append(cerv_2);
+        }
+        if (item.val().Original == undefined){
+          delete cerv_3;
+          $(lis[24]).remove();
+        }else {
+          $(lis[24]).append(cerv_3);
+        }
+        if (item.val().Burdweiser == undefined){
+          delete cerv_4;
+          $(lis[25]).remove();
+        }else {
+          $(lis[25]).append(cerv_4);
+        }
+        if (item.val().Eisenbahn == undefined){
+          delete cerv_5;
+          $(lis[26]).remove();
+        }else {
+          $(lis[26]).append(cerv_5);
+        }
+        if (item.val().Heineken == undefined){
+          delete cerv_6;
+          $(lis[27]).remove();
+        }else {
+          $(lis[27]).append(cerv_6);
+        }
+        if (item.val().Frango == undefined){
+          delete espetos_3;
+          $(lis[28]).remove();
+        }else {
+          $(lis[28]).append(somEsp3);
+        }
+      //! Cervejas !//
+
+      //NovoNúmero//
+      if(item.val().Asinha_de_frango==0){delete numberPedido; td_num_pedidos.parentNode.removeCum_pedidos;}
+      //!NovoNúmero!//
+
+      //Textareas//
+        if (item.val().Text1 == ""){delete obs1;}
+        console.log(obs1)
+      //!Textareas!//
+    //! check if value equal to zero to delete from firebase !//
+
+    input_checkbox.setAttribute("name", "number");
+    $("input[name='number']").each(function(ind) {
+    $(this).val(ind + 1);
+    });
+
+  });
 });

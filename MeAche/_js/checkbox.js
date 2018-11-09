@@ -4,12 +4,11 @@ function check_tb(value){
   var ul = $("#ul" + value);
 
   var pedidos_pendentes = $('#pedidos_pendentes'),
-      pedidos_concluidos = $('#pedidos_concluidos');
-
-  localStorage.setItem('checkb' + value, 'true');    
+      pedidos_concluidos = $('#pedidos_concluidos');    
 
     if (inputs.prop('checked') == true) {
-      localStorage.getItem('checkb' + value);
+      var text = $('<p></p>').text('okok');
+      localStorage.setItem('checkb' + value, 'true');
       console.log(localStorage.getItem('checkb' + value));
 
       ul.css("textDecoration", "line-through");
@@ -17,13 +16,15 @@ function check_tb(value){
       pedidos_concluidos.append(tr);
       }
     else {
-      
+      localStorage.setItem('checkb' + value, 'false'); 
+      console.log(localStorage.getItem('checkb' + value));
+
       ul.css("textDecoration", "none");
       tr.css("color", "black");
       pedidos_pendentes.append(tr);
   }    
 }
 
-  $(document).ready(function(){      
-    
+  $(document).ready(function(){     
+   
   })
