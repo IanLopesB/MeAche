@@ -26,15 +26,16 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
     //! li's !//
 
     // petiscos //
-      var itensPet = [item.val().Asinha_de_frango, item.val().Camarao_Alho_Oleo, item.val().Calabresa, 
-          item.val().Carne_de_Sol, item.val().Torresmo, item.val().Batata_Frita, item.val().Macaxeira, 
+      var itensPet = [item.val().Asinha_de_frango, item.val().Camarao_Alho_Oleo, item.val().Calabresa,
+          item.val().Carne_de_Sol, item.val().Torresmo, item.val().Batata_Frita, item.val().Macaxeira,
           item.val().Baiao_de_Dois];
 
-      var petiscos_1 = (itensPet[0] + "x Asinha de Frango");
-      var obs1 = (" - Obs: " + item.val().Text1);
-          var somPet1 = petiscos_1 + obs1;
+        var petiscos_1 = (itensPet[0] + "x Asinha de Frango");
+        var obs1 = (" - Obs: " + item.val().Text1);
+        var somPet1 = petiscos_1 + obs1;
+          console.log(item.val().Text1)
 
-      var petiscos_2 = (itensPet[1] + "x Camarão Alho e Óleo"); 
+      var petiscos_2 = (itensPet[1] + "x Camarão Alho e Óleo");
       var obs2 = (" - Obs: " + item.val().Text2);
           var somPet2 = petiscos_2 + obs2;
 
@@ -58,7 +59,7 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
       var obs7 = (' - Obs: '  + item.val().Text7);
           var somPet7 = petiscos_7 + obs7;
 
-      var petiscos_8 = (itensPet[7] + "x Batata Frita"); 
+      var petiscos_8 = (itensPet[7] + "x Batata Frita");
       var obs8 = (' - Obs: '  + item.val().Text8);
           var somPet8 = petiscos_8 + obs8;
     //! petiscos ! //
@@ -363,14 +364,10 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
         }
       //! Cervejas !//
 
-      //NovoNúmero//
-      if(item.val().Asinha_de_frango==0){delete numberPedido; td_num_pedidos.parentNode.removeCum_pedidos;}
-      //!NovoNúmero!//
-
       //Textareas//
-        if (item.val().Text1 == ""){delete obs1;}
-        console.log(obs1)
+        if (item.val().Text1 == undefined){delete somPet1;}
       //!Textareas!//
+
     //! check if value equal to zero to delete from firebase !//
 
     input_checkbox.setAttribute("name", "number");
