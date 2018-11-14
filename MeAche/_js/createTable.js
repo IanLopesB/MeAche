@@ -26,39 +26,42 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
     //! li's !//
 
     // petiscos //
-      var itensPet = [item.val().Asinha_de_frango, item.val().Camarao_Alho_Oleo, item.val().Calabresa, 
-          item.val().Carne_de_Sol, item.val().Torresmo, item.val().Batata_Frita, item.val().Macaxeira, 
-          item.val().Baiao_de_Dois];
+      var itensPet = [item.val().Asinha_de_frango + "x Asinha de Frango", item.val().Camarao_Alho_Oleo + "x Camarão Alho e Óleo",
+                      item.val().Calabresa + "x Calabresa com Fritas", item.val().Carne_de_Sol + "x Carne de Sol C/ Macaxeira", 
+                      item.val().Torresmo + "x Torresmo", item.val().Batata_Frita + "x Batata Frita",
+                      item.val().Macaxeira + "x Macaxeira", item.val().Baiao_de_Dois + "x Baião de Dois"];
 
-      var petiscos_1 = (itensPet[0] + "x Asinha de Frango");
+      var petiscos_1 = (itensPet[0]);
       var obs1 = (" - Obs: " + item.val().Text1);
           var somPet1 = petiscos_1 + obs1;
 
-      var petiscos_2 = (itensPet[1] + "x Camarão Alho e Óleo"); 
+            console.log(item.val().Text1)
+
+      var petiscos_2 = (itensPet[1]); 
       var obs2 = (" - Obs: " + item.val().Text2);
           var somPet2 = petiscos_2 + obs2;
 
-      var petiscos_3 = (itensPet[2] + "x Calabresa com Fritas");
+      var petiscos_3 = (itensPet[2]);
       var obs3 = (' - Obs: '  + item.val().Text3);
           var somPet3 = petiscos_3 + obs3;
 
-      var petiscos_4 = (itensPet[3] + "x Carne de Sol C/ Macaxeira");
+      var petiscos_4 = (itensPet[3]);
       var obs4 = (' - Obs: ' + item.val().Text4);
           var somPet4 = petiscos_4 + obs4;
 
-      var petiscos_5 = (itensPet[4] + "x Torresmo");
+      var petiscos_5 = (itensPet[4]);
       var obs5 = (' - Obs: '  + item.val().Text5);
           var somPet5 = petiscos_5 + obs5;
 
-      var petiscos_6 = (itensPet[5] + "x Batata Frita");
+      var petiscos_6 = (itensPet[5]);
       var obs6 = (' - Obs: '  + item.val().Text6);
           var somPet6 = petiscos_6 + obs6;
 
-      var petiscos_7 = (itensPet[6] + "x Torresmo");
+      var petiscos_7 = (itensPet[6]);
       var obs7 = (' - Obs: '  + item.val().Text7);
           var somPet7 = petiscos_7 + obs7;
 
-      var petiscos_8 = (itensPet[7] + "x Batata Frita"); 
+      var petiscos_8 = (itensPet[7]); 
       var obs8 = (' - Obs: '  + item.val().Text8);
           var somPet8 = petiscos_8 + obs8;
     //! petiscos ! //
@@ -222,7 +225,7 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
           delete espetos_1;
          $( lis[8]).remove();
         }else {
-          $(lis[8]).appendChild(somEsp1);
+          $(lis[8]).append(somEsp1);
         }
 
         if (item.val().Franbacon == undefined){
@@ -364,12 +367,11 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
       //! Cervejas !//
 
       //NovoNúmero//
-      if(item.val().Asinha_de_frango==0){delete numberPedido; td_num_pedidos.parentNode.removeCum_pedidos;}
       //!NovoNúmero!//
 
       //Textareas//
-        if (item.val().Text1 == ""){delete obs1;}
-        console.log(obs1)
+        if (item.val().Text1 == undefined){delete obs1;}
+        
       //!Textareas!//
     //! check if value equal to zero to delete from firebase !//
 
