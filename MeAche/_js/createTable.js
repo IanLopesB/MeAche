@@ -32,60 +32,45 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
                       item.val().Macaxeira + "x Macaxeira", item.val().Baiao_de_Dois + "x Baião de Dois"];
 
       var petiscos_1 = (itensPet[0]);
-      var obs1 = (" - Obs: " + item.val().Text1);
-          var somPet1 = petiscos_1 + obs1;
+      var obs1 = (' - Obs: ' + item.val().Text1);
 
-            console.log(item.val().Text1)
-
-      var petiscos_2 = (itensPet[1]); 
-      var obs2 = (" - Obs: " + item.val().Text2);
-          var somPet2 = petiscos_2 + obs2;
+      var petiscos_2 = (itensPet[1]);
+      var obs2 = (' - Obs: '  + item.val().Text2); 
 
       var petiscos_3 = (itensPet[2]);
       var obs3 = (' - Obs: '  + item.val().Text3);
-          var somPet3 = petiscos_3 + obs3;
 
       var petiscos_4 = (itensPet[3]);
       var obs4 = (' - Obs: ' + item.val().Text4);
-          var somPet4 = petiscos_4 + obs4;
 
       var petiscos_5 = (itensPet[4]);
       var obs5 = (' - Obs: '  + item.val().Text5);
-          var somPet5 = petiscos_5 + obs5;
 
       var petiscos_6 = (itensPet[5]);
       var obs6 = (' - Obs: '  + item.val().Text6);
-          var somPet6 = petiscos_6 + obs6;
 
       var petiscos_7 = (itensPet[6]);
       var obs7 = (' - Obs: '  + item.val().Text7);
-          var somPet7 = petiscos_7 + obs7;
 
       var petiscos_8 = (itensPet[7]); 
       var obs8 = (' - Obs: '  + item.val().Text8);
-          var somPet8 = petiscos_8 + obs8;
     //! petiscos ! //
 
     // espetos //
       var espetos_1 = (item.val().Boi + "x  Boi"),
-          obs9 = (" - Obs: " + item.val().Text9),
-          somEsp1 = espetos_1 + obs9;
+          obs9 = (" - Obs: " + item.val().Text9);
 
       var espetos_2 = (item.val().Franbacon + "x Franbacon"),
-          obs10 = (" - Obs: " + item.val().Text10),
-          somEsp2 = espetos_1 + obs10;
+          obs10 = (" - Obs: " + item.val().Text10);
 
       var espetos_3 = (item.val().Frango + "x Frango"),
-          obs11 = (" - Obs: " + item.val().Text11),
-          somEsp3 = espetos_3 + obs11;
+          obs11 = (" - Obs: " + item.val().Text11);
 
       var espetos_4 = (item.val().Coracao_de_Frango + "x Coração de Frango"),
-          obs12 = (" - Obs: " + item.val().Text12),
-          somEsp4 = espetos_4 + obs12;
+          obs12 = (" - Obs: " + item.val().Text12);
 
       var espetos_5 = (item.val().Porco + "x Porco"),
-          obs13 = (" - Obs: " + item.val().Text13),
-          somEsp5 = espetos_5 + obs13;
+          obs13 = (" - Obs: " + item.val().Text13);
     //! espetos !//
 
     // sucos //
@@ -167,56 +152,96 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
           delete petiscos_1;
          lis[0].remove();
         }else {
-          $(lis[0]).append(somPet1);
+          $(lis[0]).append(petiscos_1);
+        }
+        if (item.val().Text1 == undefined){
+          delete obs1;
+        } else {
+          $(lis[0]).append(obs1);
         }
 
         if (item.val().Camarao_Alho_Oleo == undefined){
           delete petiscos_2;
          lis[1].remove();
         }else {
-          $(lis[1]).append(somPet2);
+          $(lis[1]).append(petiscos_2);
+        }
+        if (item.val().Text2 == undefined){
+          delete obs2;
+        } else {
+          $(lis[1]).append(obs2);
         }
 
         if (item.val().Calabresa == undefined){
           delete petiscos_3;
          $( lis[2]).remove();
         }else {
-          $(lis[2]).append(somPet3);
+          $(lis[2]).append(petiscos_3);
+        }
+        if (item.val().Text3 == undefined){
+          delete obs3;
+        } else {
+          $(lis[2]).append(obs3);
         }
 
         if (item.val().Carne_de_Sol == undefined){
           delete petiscos_4;
          $( lis[3]).remove();
         }else {
-          $(lis[3]).append(somPet4);
+          $(lis[3]).append(petiscos_4);
+        }
+        if (item.val().Text4 == undefined){
+          delete obs4;
+        } else {
+          $(lis[3]).append(obs4);
         }
 
         if (item.val().Torresmo == undefined){
           delete petiscos_5;
          $( lis[4]).remove();
         }else {
-          $(lis[4]).append(somPet5);
+          $(lis[4]).append(petiscos_5);
+        }
+        if (item.val().Text5 == undefined){
+          delete obs5;
+        } else {
+          $(lis[4]).append(obs5);
         }
 
         if (item.val().Batata_Frita == undefined){
           delete petiscos_6;
          $( lis[5]).remove();
         }else {
-          $(lis[5]).append(somPet6);
+          $(lis[5]).append(petiscos_6);
+        }
+        if (item.val().Text6 == undefined){
+          delete obs6;
+        } else {
+          $(lis[5]).append(obs6);
         }
 
           if (item.val().Macaxeira == undefined){
           delete petiscos_7;
          $( lis[6]).remove();
         }else {
-          $(lis[6]).append(somPet7);
+          $(lis[6]).append(petiscos_7);
+        }
+        if (item.val().Text7 == undefined){
+          delete obs7;
+        } else {
+          $(lis[6]).append(obs7);
         }
 
           if (item.val().Baiao_de_Dois == undefined){
           delete petiscos_8;
          $( lis[7]).remove();
         }else {
-          $(lis[7]).append(somPet8);
+          $(lis[7]).append(petiscos_8);
+        }
+        if (item.val().Text8 == undefined){
+          delete obs8;
+        } else {
+          $(lis[7]).append(obs8);
         }
       //! Petiscos !//
 
@@ -225,28 +250,48 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
           delete espetos_1;
          $( lis[8]).remove();
         }else {
-          $(lis[8]).append(somEsp1);
+          $(lis[8]).append(espetos_1);
+        }
+        if (item.val().Text9 == undefined){
+          delete obs9;
+        } else {
+          $(lis[8]).append(obs9);
         }
 
         if (item.val().Franbacon == undefined){
           delete espetos_2;
          $( lis[9]).remove();
         }else {
-          $(lis[9]).append(somEsp2);
+          $(lis[9]).append(espetos_2);
+        }
+         if (item.val().Text10 == undefined){
+          delete obs10;
+        } else {
+          $(lis[9]).append(obs10);
         }
 
         if (item.val().Coracao_de_Frango == undefined){
           delete espetos_4;
           $(lis[10]).remove();
         }else {
-          $(lis[10]).append(somEsp4);
+          $(lis[10]).append(espetos_4);
+        }
+         if (item.val().Text11 == undefined){
+          delete obs11;
+        } else {
+          $(lis[10]).append(obs11);
         }
 
         if (item.val().Porco == undefined){
           delete espetos_5;
           $(lis[11]).remove();
         }else {
-          $(lis[11]).append(somEsp5);
+          $(lis[11]).append(espetos_5);
+        }
+         if (item.val().Text12 == undefined){
+          delete obs12;
+        } else {
+          $(lis[11]).append(obs12);
         }
       //! Espetos !//
 
@@ -257,12 +302,22 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
         }else {
           $(lis[12]).append(sucos_1);
         }
+         if (item.val().Text13 == undefined){
+          delete obs13;
+        } else {
+          $(lis[12]).append(obs13);
+        }
 
         if (item.val().Laranja == undefined){
           delete sucos_2;
           $(lis[13]).remove();
         }else {
           $(lis[13]).append(sucos_2);
+        }
+         if (item.val().Text14 == undefined){
+          delete obs14;
+        } else {
+          $(lis[13]).append(obs14);
         }
 
         if (item.val().Maracuja == undefined){
@@ -271,12 +326,22 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
         }else {
           $(lis[14]).append(sucos_3);
         }
+         if (item.val().Text15 == undefined){
+          delete obs15;
+        } else {
+          $(lis[14]).append(obs15);
+        }
 
         if (item.val().Acerola == undefined){
           delete sucos_4;
           $(lis[15]).remove();
         }else {
           $(lis[15]).append(sucos_4);
+        }
+         if (item.val().Text16 == undefined){
+          delete obs16;
+        } else {
+          $(lis[15]).append(obs16);
         }
 
         if (item.val().Goiaba == undefined){
@@ -285,12 +350,22 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
         }else {
           $(lis[16]).append(sucos_5);
         }
+         if (item.val().Text17 == undefined){
+          delete obs17;
+        } else {
+          $(lis[16]).append(obs17);
+        }
 
         if (item.val().Jarra_de_Suco == undefined){
           delete sucos_6;
           $(lis[17]).remove();
         }else {
           $(lis[17]).append(sucos_6);
+        }
+         if (item.val().Text18 == undefined){
+          delete obs18;
+        } else {
+          $(lis[17]).append(obs18);
         }
       //! Sucos !//
 
@@ -301,23 +376,46 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
         }else {
           $(lis[18]).append(refri_1);
         }
+         if (item.val().Text19 == undefined){
+          delete obs19;
+        } else {
+          $(lis[18]).append(obs19);
+        }
+
         if (item.val().Guarana == undefined){
           delete refri_2;
           $(lis[19]).remove();
         }else {
           $(lis[19]).append(refri_2);
         }
+         if (item.val().Text20 == undefined){
+          delete obs20;
+        } else {
+          $(lis[19]).append(obs20);
+        }
+
         if (item.val().Fanta == undefined){
           delete refri_3;
           $(lis[20]).remove();
         }else {
           $(lis[20]).append(refri_3);
         }
+         if (item.val().Text21 == undefined){
+          delete obs21;
+        } else {
+          $(lis[20]).append(obs21);
+        }
+
         if (item.val().Agua_Mineral == undefined){
           delete refri_4;
           $(lis[21]).remove();
         }else {
           $(lis[21]).append(refri_4);
+        }
+         if (item.val().Text22 == undefined){
+          delete obs22;
+        } else {
+          $(lis[21]).append(obs22);
         }
       //! Refrigerantes !//
 
@@ -328,51 +426,88 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
         }else {
           $(lis[22]).append(cerv_1);
         }
+         if (item.val().Text23 == undefined){
+          delete obs23;
+        } else {
+          $(lis[22]).append(obs23);
+        }
+
         if (item.val().Itaipava == undefined){
           delete cerv_2;
           $(lis[23]).remove();
         }else {
           $(lis[23]).append(cerv_2);
         }
+         if (item.val().Text24 == undefined){
+          delete obs24;
+        } else {
+          $(lis[23]).append(obs24);
+        }
+
         if (item.val().Original == undefined){
           delete cerv_3;
           $(lis[24]).remove();
         }else {
           $(lis[24]).append(cerv_3);
         }
+         if (item.val().Text25 == undefined){
+          delete obs25;
+        } else {
+          $(lis[24]).append(obs25);
+        }
+
         if (item.val().Burdweiser == undefined){
           delete cerv_4;
           $(lis[25]).remove();
         }else {
           $(lis[25]).append(cerv_4);
         }
+         if (item.val().Text26 == undefined){
+          delete obs26;
+        } else {
+          $(lis[25]).append(obs26);
+        }
+
         if (item.val().Eisenbahn == undefined){
           delete cerv_5;
           $(lis[26]).remove();
         }else {
           $(lis[26]).append(cerv_5);
         }
+         if (item.val().Text27 == undefined){
+          delete obs27;
+        } else {
+          $(lis[26]).append(obs27);
+        }
+
         if (item.val().Heineken == undefined){
           delete cerv_6;
           $(lis[27]).remove();
         }else {
           $(lis[27]).append(cerv_6);
         }
+         if (item.val().Text28 == undefined){
+          delete obs28;
+        } else {
+          $(lis[27]).append(obs28);
+        }
+
         if (item.val().Frango == undefined){
           delete espetos_3;
           $(lis[28]).remove();
         }else {
-          $(lis[28]).append(somEsp3);
+          $(lis[28]).append(espetos_3);
+        }
+         if (item.val().Text29 == undefined){
+          delete obs29;
+        } else {
+          $(lis[28]).append(obs29);
         }
       //! Cervejas !//
 
       //NovoNúmero//
       //!NovoNúmero!//
 
-      //Textareas//
-        if (item.val().Text1 == undefined){delete obs1;}
-        
-      //!Textareas!//
     //! check if value equal to zero to delete from firebase !//
 
     input_checkbox.setAttribute("name", "number");
