@@ -3,7 +3,6 @@ function mandardados1(){
 				var listaQuantidades = []
 				for(var i =1;i<=29;i++){
 								var elementId = 'quantPet'+i;
-								console.log(document.getElementById(elementId).value)
 								listaQuantidades.push(parseInt(document.getElementById(elementId).value))
 				}
 				var listaPrecos = [

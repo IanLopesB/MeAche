@@ -3,7 +3,7 @@ function pedidosEspeciais(){
 
   if (texts.style.display === "none") {
     texts.style.display = "block";
-    document.getElementById('escrevaOBS').focus();
+    document.getElementById('escrevaOBS1').focus();
   } else {
     texts.style.display = "none";
   }

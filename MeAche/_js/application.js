@@ -66,7 +66,7 @@ function criarUnico() {
 var pedido = {
 
   //Textarea
-  Text1: document.getElementById('escrevaOBS').value,
+  Text1: document.getElementById('escrevaOBS1').value,
   Text2: document.getElementById('escrevaOBS2').value,
   Text3: document.getElementById('escrevaOBS3').value,
   Text4: document.getElementById('escrevaOBS4').value,
@@ -178,7 +178,7 @@ if (eisenbahn.value == 0){delete pedido.Eisenbahn;delete pedido.Text28};
 if (heineken.value == 0){delete pedido.Heineken;delete pedido.Text29};
 
 // Textareas
-if(document.getElementById('escrevaOBS').value===""){delete pedido.Text1};
+if(document.getElementById('escrevaOBS1').value===""){delete pedido.Text1};
 if(document.getElementById('escrevaOBS2').value===""){delete pedido.Text2};
 if(document.getElementById('escrevaOBS3').value===""){delete pedido.Text3};
 if(document.getElementById('escrevaOBS4').value===""){delete pedido.Text4};
