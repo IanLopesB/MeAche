@@ -1,7 +1,7 @@
 firebase.database().ref('pedidos').on('value', function (snapshot) {
 
-  var trbody = document.getElementById('pedidos_pendentes');
-      trbody.innerHTML = '';
+  var trbody = $('#pedidos_pendentes');
+      trbody.html('');
 
   snapshot.forEach(function (item) {
 
