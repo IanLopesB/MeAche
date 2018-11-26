@@ -25,5 +25,7 @@ function check_tb(value){
 }
 
   $(document).ready(function(){     
-   
+    $('.ulClass').mouseenter(function(){
+      alert("ok");
+    })
   })
