@@ -34,16 +34,8 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
       var petiscos_1 = (itensPet[0]);
       var obs1 = (' - Obs: ' + item.val().Text1);
 
-<<<<<<< HEAD
-            console.log(item.val().Text1)
-
       var petiscos_2 = (itensPet[1]);
-      var obs2 = (" - Obs: " + item.val().Text2);
-          var somPet2 = petiscos_2 + obs2;
-=======
-      var petiscos_2 = (itensPet[1]);
-      var obs2 = (' - Obs: '  + item.val().Text2); 
->>>>>>> 063d788706b5f34328b6c6edbec6321c7d8b981d
+      var obs2 = (' - Obs: '  + item.val().Text2);
 
       var petiscos_3 = (itensPet[2]);
       var obs3 = (' - Obs: '  + item.val().Text3);
@@ -82,12 +74,18 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
     //! espetos !//
 
     // sucos //
-      var sucos_1 = (item.val().Caja + "x Cajá" + item.val().Text14),
-          sucos_2 = (item.val().Laranja + "x Laranja" + item.val().Text15),
-          sucos_3 = (item.val().Maracuja + "x Maracujá" + item.val().Text16),
-          sucos_4 = (item.val().Acerola + "x Acerola" + item.val().Text17),
-          sucos_5 = (item.val().Goiaba + "x Goiaba" + item.val().Text18),
-          sucos_6 = (item.val().Jarra_de_Suco + "x Jarra de Suco" + item.val().Text19);
+      var sucos_1 = (item.val().Caja + "x Cajá"),
+            obs14 = (" - Obs: " + item.val().Text14);
+      var sucos_2 = (item.val().Laranja + "x Laranja"),
+            obs15 = (" - Obs: " + item.val().Text15);
+      var sucos_3 = (item.val().Maracuja + "x Maracujá"),
+            obs16 = (" - Obs: " + item.val().Text16);
+      var sucos_4 = (item.val().Acerola + "x Acerola"),
+            obs17 = (" - Obs: " + item.val().Text17);
+      var sucos_5 = (item.val().Goiaba + "x Goiaba"),
+            obs18 = (" - Obs: " + item.val().Text18);
+      var sucos_6 = (item.val().Jarra_de_Suco + "x Jarra de Suco");
+            obs19 = (" - Obs: " + item.val().Text19);
     //! sucos !//
 
     // refrigerates //
@@ -512,15 +510,6 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
           $(lis[28]).append(obs29);
         }
       //! Cervejas !//
-
-<<<<<<< HEAD
-      //Textareas//
-        //if (item.val().Text1 == undefined){delete obs1;}
-      //!Textareas!//
-=======
-      //NovoNúmero//
-      //!NovoNúmero!//
->>>>>>> 063d788706b5f34328b6c6edbec6321c7d8b981d
 
     //! check if value equal to zero to delete from firebase !//
 
