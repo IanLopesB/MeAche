@@ -514,9 +514,25 @@ firebase.database().ref('pedidos').on('value', function (snapshot) {
     //! check if value equal to zero to delete from firebase !//
 
     input_checkbox.setAttribute("name", "number");
+      $("input[name='number']").each(function(ind) {
+      $(this).val(ind + 1);
+      });
+
     $("input[name='number']").each(function(ind) {
-    $(this).val(ind + 1);
-    });
+
+
+      if(localStorage.getItem('checkb'+(ind))){
+        console.log($(this).val());
+        console.log("dentro")
+
+        console.log($(this)[0].checked);
+
+      $(this)[].checked= true;
+
+
+     }
+
+         });
 
   });
 });
